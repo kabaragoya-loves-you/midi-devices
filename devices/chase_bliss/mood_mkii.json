@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Audio Mood MkII",
+  "displayName": "Chase Bliss Audio Mood MkII",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss Audio",
+    "model": "Mood MkII",
+    "version": "1.0"
+  },
+  "receives": ["PROGRAM_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 16,
+      "name": "Clock Division",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Length",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Modify",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Wet FX Select",
+      "additionalInfo": "Selects wet side effect type",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Delay", "value": 0 },
+          { "name": "Slip", "value": 25 },
+          { "name": "Envelope", "value": 51 },
+          { "name": "Sample & Hold", "value": 76 },
+          { "name": "Chord", "value": 102 },
+          { "name": "Tremolo", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Dry FX Select",
+      "additionalInfo": "Selects dry side effect type",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stretch", "value": 0 },
+          { "name": "Blur", "value": 25 },
+          { "name": "Filter", "value": 51 },
+          { "name": "Freq Shift", "value": 76 },
+          { "name": "Pitch Shift", "value": 102 },
+          { "name": "Reverb", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Channel Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stereo", "value": 0 },
+          { "name": "Wet Left / Dry Right", "value": 64 },
+          { "name": "Dry Left / Wet Right", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engage", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Tap Tempo",
+      "additionalInfo": "Send 127 to tap tempo",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 0,
+    "count": 122
+  }
+}
+

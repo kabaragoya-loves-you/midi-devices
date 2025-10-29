@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "generatedAt": "2025-10-29T02:34:42Z",
+  "count": 2,
+  "devices": [
+    {
+      "slug": "chase_bliss.mood_mkii@0",
+      "vendor": "chase-bliss",
+      "product": "mood-mkii",
+      "version": "0",
+      "path": "devices/chase_bliss/mood_mkii.json",
+      "sha256": "977a8d17cbf0b0b5c388144feafdae3c6058993b7d83335c329ef60ffa5fd641",
+      "size": 2815,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 10,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 122
+      }
+    },
+    {
+      "slug": "empress.reverb@0",
+      "vendor": "empress",
+      "product": "reverb",
+      "version": "0",
+      "path": "devices/empress/reverb.json",
+      "sha256": "9ee5c216ebbcc045d77892887b1be5a645d89cb9e293ba2f4e3098e780aa38af",
+      "size": 3050,
+      "receives": [],
+      "transmits": [],
+      "ccCount": 17,
+      "nrpnCount": 0
+    }
+  ]
+}

@@ -108,6 +108,8 @@
   "x_pc": {
     "indexBase": 0,
     "count": 122
-  }
+  },
+
+  "x_midiTrs": "TYPE_B"
 }
 

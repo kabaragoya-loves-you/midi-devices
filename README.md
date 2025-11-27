@@ -39,6 +39,16 @@ Bank select support:
 "x_pcNote": "Responds to CC#0/32 bank select before PC."
 ```
 
+**TRS/TS MIDI Wiring Type**
+```json
+"x_midiTrs": "TYPE_A"
+```
+
+Specifies the physical MIDI TRS/TS wiring standard required:
+- `TYPE_A` - MIDI signal on tip (standard for Empress, 1010music, Red Panda, etc.)
+- `TYPE_B` - MIDI signal on ring (Chase Bliss Audio)
+- `TYPE_CS` - Two-wire connection (Disaster Area, Source Audio, etc.)
+
 ## Structure
 
 ```
@@ -53,6 +63,7 @@ Each device file contains:
 - `controlChangeCommands` - CC parameter definitions
 - `nrpnCommands` - NRPN parameter definitions (if supported)
 - `x_pc` - Program change configuration (if supported)
+- `x_midiTrs` - TRS/TS MIDI wiring type (if applicable)
 
 ## Manifest
 

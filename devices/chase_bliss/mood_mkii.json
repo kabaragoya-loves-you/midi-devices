@@ -109,6 +109,8 @@
     "indexBase": 0,
     "count": 122,
     "bankSelect": "none"
-  }
+  },
+
+  "x_midiTrs": "TYPE_B"
 }
 

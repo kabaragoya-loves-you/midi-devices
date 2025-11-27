@@ -124,6 +124,12 @@
         ]
       }
     }
-  ]
+  ],
+
+  "x_pc": {
+    "indexBase": 0,
+    "count": 35,
+    "bankSelect": "none"
+  }
 }
 

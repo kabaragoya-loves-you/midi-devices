@@ -107,7 +107,8 @@
 
   "x_pc": {
     "indexBase": 0,
-    "count": 122
+    "count": 122,
+    "bankSelect": "none"
   }
 }
 

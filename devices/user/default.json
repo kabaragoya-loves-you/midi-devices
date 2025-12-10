@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Custom Device",
+  "displayName": "Custom Device",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "Custom Device",
+    "manufacturer": "User",
+    "model": "Custom",
+    "version": "1.0"
+  },
+  "receives": ["PROGRAM_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": []
+}

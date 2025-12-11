@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Billy Strings Wombtone",
+  "displayName": "Billy Strings Wombtone",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Billy Strings Wombtone",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Feed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Form",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Ramp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Note Division",
+      "additionalInfo": "0 = whole, 1 = half, 2 = quarter triplet, 3 = quarter, 4 = eighth, 5 = sixteenth",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Whole" },
+          { "value": 1, "name": "Half" },
+          { "value": 2, "name": "Quarter Triplet" },
+          { "value": 3, "name": "Quarter" },
+          { "value": 4, "name": "Eighth" },
+          { "value": 5, "name": "Sixteenth" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "Pedal off = 0–63, pedal on = 64–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (<= 63)" },
+          { "value": 64, "name": "On (>= 64)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap",
+      "additionalInfo": "0–127 (tap footswitch emulation)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "EOM (Expression Over MIDI)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "MIDI Clock Ignore",
+      "additionalInfo": "off = 0, listening = 127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Ignore Clock" },
+          { "value": 127, "name": "Listen for Clock" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

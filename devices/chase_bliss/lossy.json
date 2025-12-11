@@ -1,0 +1,459 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Lossy",
+  "displayName": "Lossy",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Lossy",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Filter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Global",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Reverb",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Loss",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Ramp Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 24,
+      "name": "Gate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Freezer",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Verb Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Limiter Threshold",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Auto Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Loss Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 33,
+      "name": "Weighting",
+      "additionalInfo": "DARK = 0–1, NEUTRAL = 2, BRIGHT = 3–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Dark" },
+          { "value": 2, "name": "Neutral" },
+          { "value": 3, "name": "Bright" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Filter Slope",
+      "additionalInfo": "6 dB = 0–1, 24 dB = 2, 96 dB = 3–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "6 dB" },
+          { "value": 2, "name": "24 dB" },
+          { "value": 3, "name": "96 dB" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Packet Mode",
+      "additionalInfo": "REPEAT = 0–1, CLEAN = 2, LOSS = 3–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Repeat" },
+          { "value": 2, "name": "Clean" },
+          { "value": 3, "name": "Loss" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Loss Mode",
+      "additionalInfo": "INVERSE = 0–1, STANDARD = 2, JITTER = 3–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Inverse" },
+          { "value": 2, "name": "Standard" },
+          { "value": 3, "name": "Jitter" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "Pedal off = 0, on = 1–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypassed" },
+          { "value": 1, "name": "Engaged (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Freeze Slushie",
+      "additionalInfo": "Press left switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Alt Menu",
+      "additionalInfo": "Hold both switches; ALT exit = 0, ALT enter = 1–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "ALT Exit" },
+          { "value": 1, "name": "ALT Enter (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Freeze Solid",
+      "additionalInfo": "Hold left switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Gate (Footswitch)",
+      "additionalInfo": "Hold right switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 61,
+      "name": "DIP Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "DIP Freq",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "DIP Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "DIP Loss",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "DIP Verb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "DIP Bounce",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "DIP Sweep",
+      "additionalInfo": "B = 0, T = 1–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bottom (B)" },
+          { "value": 1, "name": "Top (T, ≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "DIP Polarity",
+      "additionalInfo": "F = 0, R = 1–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Forward (F)" },
+          { "value": 1, "name": "Reverse (R, ≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 71,
+      "name": "DIP Miso",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "DIP Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "DIP Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "DIP Latch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "DIP Pre/Post",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "DIP Slow",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "DIP Invert",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "DIP All Wet",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "EOM (Expression Over MIDI)",
+      "additionalInfo": "0 = heel, 127 = toe",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Preset Save",
+      "additionalInfo": "Send preset number (1–122) while holding both footswitches",
+      "valueRange": { "min": 0, "max": 122 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Ramp/Bounce",
+      "additionalInfo": "off = 0, on = 1–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Factory Reset",
+      "additionalInfo": "0–127 (see manual for exact procedure)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Dry Kill",
+      "additionalInfo": "off = 0, on = 1–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Dry On" },
+          { "value": 1, "name": "Dry Kill (≥ 1)" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Habit",
+  "displayName": "Habit",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Habit",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Repeats",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Size",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Spread",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Scan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Ramp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Mod Number",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Left" },
+          { "value": 2, "name": "Middle" },
+          { "value": 3, "name": "Right" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mod Bank",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Left" },
+          { "value": 2, "name": "Middle" },
+          { "value": 3, "name": "Right" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Mode",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Left" },
+          { "value": 2, "name": "Middle" },
+          { "value": 3, "name": "Right" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass / Engage",
+      "additionalInfo": "Pedal off = 0, pedal on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypassed" },
+          { "value": 1, "name": "Engaged (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "additionalInfo": "Send any value to simulate pressing TAP",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Loop (R Hold)",
+      "additionalInfo": "Loop off = 0, loop on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Loop Off" },
+          { "value": 1, "name": "Loop On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Scan (L Hold)",
+      "additionalInfo": "Scan off = 0, scan on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Scan Off" },
+          { "value": 1, "name": "Scan On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Clear (Both Hold)",
+      "additionalInfo": "Send any value to clear",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "EOM (Expression Over MIDI)",
+      "additionalInfo": "0 = heel, 127 = toe (expression target set by dips)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "MIDI Clock Ignore",
+      "additionalInfo": "Ignore clock = 0, listen = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Ignore Clock" },
+          { "value": 1, "name": "Listen (≥ 1)" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

@@ -74,8 +74,8 @@ Dir.glob(devices_dir.join("**/*.json").to_s).sort.each do |fp|
 
   entries << {
     "slug" => slug,
-    "vendor" => vendor.tr("_", "-"),
-    "product" => product.tr("_", "-"),
+    "vendor" => vendor,
+    "product" => product,
     "version" => version,
     "path" => rel,
     "sha256" => sha,

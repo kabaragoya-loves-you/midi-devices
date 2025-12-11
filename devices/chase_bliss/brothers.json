@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Brothers",
+  "displayName": "Brothers",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Brothers Analog Gainstage",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Gain A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Master",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Gain B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Tone A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Mix / Stack",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Tone B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Channel A Effect Select",
+      "additionalInfo": "1 = Boost, 2 = Drive, 3 = Fuzz",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Boost" },
+          { "value": 2, "name": "Drive" },
+          { "value": 3, "name": "Fuzz" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "PARA / A >> B / B >> A Select",
+      "additionalInfo": "1 = PARA, 2 = A >> B, 3 = B >> A",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "PARA" },
+          { "value": 2, "name": "A >> B" },
+          { "value": 3, "name": "B >> A" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Channel B Effect Select",
+      "additionalInfo": "1 = Fuzz, 2 = Drive, 3 = Boost",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Fuzz" },
+          { "value": 2, "name": "Drive" },
+          { "value": 3, "name": "Boost" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "additionalInfo": "0 = heel, 127 = toe (expression target set by dips)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass Switch (Last Saved Channels)",
+      "additionalInfo": "0 = bypass both channels, 127 = engage last saved channels",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (both channels off)" },
+          { "value": 127, "name": "Engage last saved channels" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Bypass Switch (Explicit Channel Routing)",
+      "additionalInfo": "0 = bypass both; 45 = B only; 85 = A only; 127 = A+B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (both channels off)" },
+          { "value": 45, "name": "Channel B on, Channel A bypassed" },
+          { "value": 85, "name": "Channel A on, Channel B bypassed" },
+          { "value": 127, "name": "Both channels on" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

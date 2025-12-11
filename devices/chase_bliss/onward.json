@@ -1,0 +1,571 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Onward",
+  "displayName": "Onward",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Onward",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 102,
+      "name": "Freeze Bypass",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypassed" },
+          { "value": 1, "name": "Engaged (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Glitch Bypass",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypassed" },
+          { "value": 1, "name": "Engaged (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Alt Menu",
+      "additionalInfo": "ALT exit = 0, ALT enter = 1 or higher (hold both switches)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "ALT Exit" },
+          { "value": 1, "name": "ALT Enter (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Glitch Hold",
+      "additionalInfo": "off = 0, on = 1 or higher (hold left switch)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Freeze Hold",
+      "additionalInfo": "off = 0, on = 1 or higher (hold right switch)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Retrigger Glitch",
+      "additionalInfo": "send any value to retrigger glitch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Retrigger Freeze",
+      "additionalInfo": "send any value to retrigger freeze",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 14,
+      "name": "Size",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Octave",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Error",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Sustain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Texture",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Ramp Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Error Type",
+      "additionalInfo": "TIMING = 0–1, CONDITION = 2, PLAYBACK = 3 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Timing" },
+          { "value": 2, "name": "Condition" },
+          { "value": 3, "name": "Playback (≥ 3)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Fade",
+      "additionalInfo": "LONG = 0–1, USER = 2, SHORT = 3 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Long" },
+          { "value": 2, "name": "User" },
+          { "value": 3, "name": "Short (≥ 3)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Animate",
+      "additionalInfo": "VIBRATO = 0–1, OFF = 2, CHORUS = 3 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Vibrato" },
+          { "value": 2, "name": "Off" },
+          { "value": 3, "name": "Chorus (≥ 3)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 61,
+      "name": "Size DIP",
+      "additionalInfo": "left bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Error DIP",
+      "additionalInfo": "left bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Sustain DIP",
+      "additionalInfo": "left bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Texture DIP",
+      "additionalInfo": "left bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Octave DIP",
+      "additionalInfo": "left bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Bounce DIP",
+      "additionalInfo": "left bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Sweep DIP",
+      "additionalInfo": "left bank; B = 0, T = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bottom (B)" },
+          { "value": 1, "name": "Top (T, ≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Polarity DIP",
+      "additionalInfo": "left bank; F = 0, R = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Forward (F)" },
+          { "value": 1, "name": "Reverse (R, ≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 71,
+      "name": "Miso DIP",
+      "additionalInfo": "right bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Spread DIP",
+      "additionalInfo": "right bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Latch DIP",
+      "additionalInfo": "right bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Sidechain DIP",
+      "additionalInfo": "right bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Duck DIP",
+      "additionalInfo": "right bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Reverse DIP",
+      "additionalInfo": "right bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Half Speed DIP",
+      "additionalInfo": "right bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Manual DIP",
+      "additionalInfo": "right bank; off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 24,
+      "name": "Sensitivity",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Balance",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Duck Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Error Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "User Fade",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Filter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 31,
+      "name": "Error Routing",
+      "additionalInfo": "GLITCH = 0–1, BOTH = 2, FREEZE = 3 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Glitch" },
+          { "value": 2, "name": "Both" },
+          { "value": 3, "name": "Freeze (≥ 3)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Sustain Routing",
+      "additionalInfo": "GLITCH = 0–1, BOTH = 2, FREEZE = 3 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Glitch" },
+          { "value": 2, "name": "Both" },
+          { "value": 3, "name": "Freeze (≥ 3)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Effects Routing",
+      "additionalInfo": "GLITCH = 0–1, BOTH = 2, FREEZE = 3 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Glitch" },
+          { "value": 2, "name": "Both" },
+          { "value": 3, "name": "Freeze (≥ 3)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "EOM (Expression Over MIDI)",
+      "additionalInfo": "0 = heel, 127 = toe",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Preset Save",
+      "additionalInfo": "send preset number (1–122) while holding both footswitches",
+      "valueRange": { "min": 0, "max": 122 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "MIDI Clock Ignore",
+      "additionalInfo": "0 = ignore, >0 = follow clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Ignore Clock" },
+          { "value": 1, "name": "Follow Clock (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Ramp/Bounce",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "MIDI Sync Subdivision",
+      "additionalInfo": "0–8 map to specific note values",
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          { "value": 0, "name": "Whole" },
+          { "value": 1, "name": "Dotted Half" },
+          { "value": 2, "name": "Half" },
+          { "value": 3, "name": "Dotted Quarter" },
+          { "value": 4, "name": "Quarter" },
+          { "value": 5, "name": "Dotted Eighth" },
+          { "value": 6, "name": "Eighth" },
+          { "value": 7, "name": "Eighth Triplet" },
+          { "value": 8, "name": "Sixteenth" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Factory Reset",
+      "additionalInfo": "send any value (see manual for full procedure)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Dry Kill",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Dry On" },
+          { "value": 1, "name": "Dry Kill (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Trails",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Trails Off" },
+          { "value": 1, "name": "Trails On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "additionalInfo": "send any value to tap (alt CC, shared with 107)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Tap Tempo (Alt)",
+      "additionalInfo": "send any value to tap (alternate CC number)",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

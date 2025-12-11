@@ -132,6 +132,8 @@
     "bankSelect": "none"
   },
 
-  "x_midiTrs": "TYPE_A"
+  "x_midiTrs": "TYPE_A",
+
+  "x_midiChannel": 1
 }
 

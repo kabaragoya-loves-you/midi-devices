@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Preamp MKII",
+  "displayName": "Preamp MKII",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Preamp MKII",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mids",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 22,
+      "name": "Jump",
+      "additionalInfo": "1 = Off, 2 = 0 dB, 3 = +5 dB",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Off" },
+          { "value": 2, "name": "0 dB" },
+          { "value": 3, "name": "+5 dB" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Mids Toggle",
+      "additionalInfo": "1 = Off, 2 = Pre, 3 = Post",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Off" },
+          { "value": 2, "name": "Pre" },
+          { "value": 3, "name": "Post" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Q",
+      "additionalInfo": "1 = Low, 2 = Mid, 3 = High",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Low" },
+          { "value": 2, "name": "Mid" },
+          { "value": 3, "name": "High" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Diode",
+      "additionalInfo": "1 = Off, 2 = Silicon, 3 = Germanium",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Off" },
+          { "value": 2, "name": "Silicon" },
+          { "value": 3, "name": "Germanium" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Fuzz",
+      "additionalInfo": "1 = Off, 2 = Open, 3 = Gated",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Off" },
+          { "value": 2, "name": "Open" },
+          { "value": 3, "name": "Gated" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 27,
+      "name": "Preset Save",
+      "additionalInfo": "Value (0–29) selects preset slot to save current settings into",
+      "valueRange": { "min": 0, "max": 29 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "EOM (Expression Over MIDI)",
+      "additionalInfo": "0 = heel, 127 = toe",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0 = bypassed, 1 or higher = engaged",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypassed" },
+          { "value": 1, "name": "Engaged (≥ 1)" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 0,
+    "count": 30,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

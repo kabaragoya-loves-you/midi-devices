@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Generation Loss MKII",
+  "displayName": "Generation Loss MKII",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Generation Loss MKII",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Wow",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Model / LP",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Flutter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Saturate / Gen",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Failure / HP",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Ramp Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Aux Toggle",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Left" },
+          { "value": 2, "name": "Middle" },
+          { "value": 3, "name": "Right" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Dry Toggle",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Left" },
+          { "value": 2, "name": "Middle" },
+          { "value": 3, "name": "Right" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Noise Toggle",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Left" },
+          { "value": 2, "name": "Middle" },
+          { "value": 3, "name": "Right" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "EOM (Expression Over MIDI)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Preset Save",
+      "additionalInfo": "Send preset number to save (1–122)",
+      "valueRange": { "min": 1, "max": 122 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Aux Onset Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "DSP Bypass Mode",
+      "additionalInfo": "True bypass < 64, DSP bypass > 64",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "True Bypass (≤ 63)" },
+          { "value": 64, "name": "DSP Bypass (≥ 64)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Hiss Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Mechanical Noise Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Crinkle / Pop Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Input Gain",
+      "additionalInfo": "1 = line, 2 = instrument, 3 = high gain",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Line Level" },
+          { "value": 2, "name": "Instrument Level" },
+          { "value": 3, "name": "High Gain" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Ramp/Bounce",
+      "additionalInfo": "Off = 0, on = 1 or >",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 16,
+      "name": "Model Select",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off / Unfiltered" },
+          { "value": 15, "name": "CPR-3300 Gen 1" },
+          { "value": 24, "name": "CPR-3300 Gen 2" },
+          { "value": 33, "name": "CPR-3300 Gen 3" },
+          { "value": 43, "name": "Portamax-RT" },
+          { "value": 53, "name": "Portamax-HT" },
+          { "value": 72, "name": "CAM-8" },
+          { "value": 62, "name": "Dictatron-EX" },
+          { "value": 82, "name": "Dictatron-IN" },
+          { "value": 91, "name": "Fishy 60" },
+          { "value": 101, "name": "MS-Walker" },
+          { "value": 111, "name": "AMU-2" },
+          { "value": 127, "name": "M-PEX" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass / Engage",
+      "additionalInfo": "Pedal off = 0, on = 1 or >",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypassed" },
+          { "value": 1, "name": "Engaged (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Aux Footswitch",
+      "additionalInfo": "Off = 0, on = 1 or >",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Alt Mode (Both Switches Hold)",
+      "additionalInfo": "ALT enter = 0, ALT exit = 1 or >",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "ALT Enter" },
+          { "value": 1, "name": "ALT Exit (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Left Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Center Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Right Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 61,
+      "name": "Wow Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Flutter Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Sat / Gen Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Failure / HP Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Model / LP Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Bounce Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Random Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Sweep Dip",
+      "additionalInfo": "B = 0, T = 1 or >",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bottom (B)" },
+          { "value": 1, "name": "Top (T, ≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 71,
+      "name": "Polarity Dip",
+      "additionalInfo": "F = 0, R = 1 or >",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Forward (F)" },
+          { "value": 1, "name": "Reverse (R, ≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Classic Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "MISO Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Spread Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Dry Type Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Drop Bypass Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Snag Bypass Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Hum Bypass Dip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On (≥ 1)" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

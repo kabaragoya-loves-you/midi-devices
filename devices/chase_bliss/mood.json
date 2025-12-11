@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss MOOD",
+  "displayName": "MOOD",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "MOOD",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Regen (left)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Tone / Modifier (right)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 17,
+      "name": "Time (left)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Envelope / Time Stretch (right)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 19,
+      "name": "Balance",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 20,
+      "name": "Ramp Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Left Channel Mode",
+      "additionalInfo": "0–1 = Mode 1, 2 = Mode 2, 3–127 = Mode 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Mode 1 (Micro Loop)" },
+          { "value": 2, "name": "Mode 2 (Envelope)" },
+          { "value": 3, "name": "Mode 3 (Glide ≥ 3)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 22,
+      "name": "Routing",
+      "additionalInfo": "0–1 = L→R, 2 = L↔R, 3–127 = R→L",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Left → Right" },
+          { "value": 2, "name": "Ping-Pong (L ↔ R)" },
+          { "value": 3, "name": "Right → Left" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 23,
+      "name": "Right Channel Mode",
+      "additionalInfo": "0–1 = Mode 4, 2 = Mode 5, 3–127 = Mode 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Mode 4 (Slip)" },
+          { "value": 2, "name": "Mode 5 (Stretch)" },
+          { "value": 3, "name": "Mode 6 (Envelope ≥ 3)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 24,
+      "name": "Clock Division",
+      "additionalInfo": "0–11 = divisions from 32nd → double whole",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          { "value": 0, "name": "Thirty-second" },
+          { "value": 1, "name": "Sixteenth" },
+          { "value": 2, "name": "Triplet Sixteenth" },
+          { "value": 3, "name": "Eighth" },
+          { "value": 4, "name": "Triplet Eighth" },
+          { "value": 5, "name": "Dotted Eighth" },
+          { "value": 6, "name": "Quarter" },
+          { "value": 7, "name": "Triplet Quarter" },
+          { "value": 8, "name": "Dotted Quarter" },
+          { "value": 9, "name": "Half" },
+          { "value": 10, "name": "Dotted Half" },
+          { "value": 11, "name": "Whole/Double Whole" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 51,
+      "name": "MIDI Clock Ignore",
+      "additionalInfo": "0 = ignore MIDI clock, 1–127 = listen",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Ignore" },
+          { "value": 1, "name": "Listen (≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap",
+      "additionalInfo": "Simulates pressing TAP",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "EOM (Expression Over MIDI)",
+      "additionalInfo": "0 = heel, 127 = toe",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0 = bypassed, 127 = engaged",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypassed" },
+          { "value": 127, "name": "Engaged" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

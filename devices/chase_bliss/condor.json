@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Condor",
+  "displayName": "Condor",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Condor Analog EQ/Pre/Filter",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Mids",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "LPF",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Bass Toggle Select",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Left" },
+          { "value": 2, "name": "Middle" },
+          { "value": 3, "name": "Right" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mids Toggle Select",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Left" },
+          { "value": 2, "name": "Middle" },
+          { "value": 3, "name": "Right" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "LPF Toggle Select",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Left" },
+          { "value": 2, "name": "Middle" },
+          { "value": 3, "name": "Right" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass Switch",
+      "additionalInfo": "0 = bypass; 127 = engage last saved bypass state",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "Engage (last saved state)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Bypass Switch (Drive Routing)",
+      "additionalInfo": "0 = bypass pedal & drive; 45 = pedal on, OD bypassed; 85 = drive on, pedal bypassed; 127 = pedal & drive engaged",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass Pedal & Drive" },
+          { "value": 45, "name": "Pedal On, OD Bypassed" },
+          { "value": 85, "name": "Drive On, Pedal Bypassed" },
+          { "value": 127, "name": "Pedal & Drive Engaged" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Warped Vinyl HiFi",
+  "displayName": "Warped Vinyl HiFi",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Warped Vinyl HiFi",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "RPM",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Warp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Ramp Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Wave Shape",
+      "additionalInfo": "Sine = 0–1, Triangle = 2, Ramp = 3–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Sine" },
+          { "value": 2, "name": "Triangle" },
+          { "value": 3, "name": "Ramp (≥ 3)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 22,
+      "name": "Wave Center",
+      "additionalInfo": "Left = 0–1, Center = 2, Right = 3–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Left" },
+          { "value": 2, "name": "Center" },
+          { "value": 3, "name": "Right (≥ 3)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 23,
+      "name": "Mode",
+      "additionalInfo": "Chorus = 0–1, Vibrato = 2, Left/Right = 3–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Chorus" },
+          { "value": 2, "name": "Vibrato" },
+          { "value": 3, "name": "Left/Right (≥ 3)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 24,
+      "name": "Tap Division",
+      "additionalInfo": "0 = quarter, 1 = dotted eighth, 2 = eighth triplet, 3 = eighth, 4 = sixteenth triplet, 5 = sixteenth",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Quarter" },
+          { "value": 1, "name": "Dotted Eighth" },
+          { "value": 2, "name": "Eighth Triplet" },
+          { "value": 3, "name": "Eighth" },
+          { "value": 4, "name": "Sixteenth Triplet" },
+          { "value": 5, "name": "Sixteenth" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 51,
+      "name": "MIDI Clock Ignore",
+      "additionalInfo": "0 = ignore MIDI clock, 1–127 = listen to MIDI clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Ignore Clock" },
+          { "value": 1, "name": "Follow Clock (≥ 1)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap",
+      "additionalInfo": "Any value simulates tapping the footswitch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Over MIDI",
+      "additionalInfo": "0 = heel, 127 = toe (mapping depends on DIP settings)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0 = bypassed, 127 = engaged; sending 127 while engaged resets ramp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypassed" },
+          { "value": 127, "name": "Engaged" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 4
+}

@@ -1,0 +1,347 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Chase Bliss Brothers AM",
+  "displayName": "Brothers AM",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Brothers AM",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Gain 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Volume 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Gain 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Tone 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Volume 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Tone 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Presence 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Presence 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Gain 2 Type",
+      "additionalInfo": "BOOST = 0–1, OD = 2, DIST = 3 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Boost" },
+          { "value": 2, "name": "OD" },
+          { "value": 3, "name": "Dist" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Treble Boost",
+      "additionalInfo": "FULL SUN = 0–1, OFF = 2, HALF SUN = 3 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Full Sun" },
+          { "value": 2, "name": "Off" },
+          { "value": 3, "name": "Half Sun" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Gain 1 Type",
+      "additionalInfo": "DIST = 0–1, OD = 2, BOOST = 3 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Dist" },
+          { "value": 2, "name": "OD" },
+          { "value": 3, "name": "Boost" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Channel 1 Bypass",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Channel 2 Bypass",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "EOM (Expression Over MIDI)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Preset Save",
+      "additionalInfo": "1–122: save current settings to that slot",
+      "valueRange": { "min": 1, "max": 122 }
+    },
+
+    {
+      "controlChangeNumber": 61,
+      "name": "Left Bank – Volume 1 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Left Bank – Volume 2 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Left Bank – Gain 1 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Left Bank – Gain 2 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Left Bank – Tone 1 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Left Bank – Tone 2 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Left Bank – Sweep DIP",
+      "additionalInfo": "B = 0 (Bottom), T = 1 or higher (Top)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bottom" },
+          { "value": 1, "name": "Top" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Left Bank – Polarity DIP",
+      "additionalInfo": "F = 0 (Forward), R = 1 or higher (Reverse)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Forward" },
+          { "value": 1, "name": "Reverse" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 71,
+      "name": "Right Bank – Hi Gain 1 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Right Bank – Hi Gain 2 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Right Bank – Motobyp 1 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Right Bank – Motobyp 2 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Right Bank – Pres Link 1 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Right Bank – Pres Link 2 DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Right Bank – Master DIP",
+      "additionalInfo": "off = 0, on = 1 or higher",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2
+}

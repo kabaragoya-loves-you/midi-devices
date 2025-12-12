@@ -45,9 +45,10 @@ Bank select support:
 ```
 
 Specifies the physical MIDI TRS/TS wiring standard required:
+- `BOTH` - MIDI signal sent on both TRS/RTS polarities (default)
 - `TYPE_A` - MIDI signal on tip (standard for Empress, 1010music, Red Panda, etc.)
 - `TYPE_B` - MIDI signal on ring (Chase Bliss Audio)
-- `TYPE_CS` - Two-wire connection (Disaster Area, Source Audio, etc.)
+- `TYPE_TS` - Tip/Sleeve (Disaster Area, Source Audio, etc.)
 
 ## Structure
 

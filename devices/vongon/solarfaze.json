@@ -1,0 +1,232 @@
+{
+  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "title": "Vongon Solarfaze",
+  "displayName": "Solarfaze",
+  "device": {
+    "manufacturer": "Vongon",
+    "model": "Solarfaze"
+  },
+  "controlChangeMessages": [
+    {
+      "controlChangeNumber": 13,
+      "name": "Detune Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Saturate Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Detune Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Detune Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Detune Env",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "Detune Size",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Bass Band Output Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Mid Band Output Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Treb Band Output Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Bass Band Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "+0 dB" },
+          { "value": 43, "name": "+6 dB" },
+          { "value": 86, "name": "+12 dB" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Mid Band Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "+0 dB" },
+          { "value": 43, "name": "+6 dB" },
+          { "value": 86, "name": "+12 dB" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Treb Band Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "+0 dB" },
+          { "value": 43, "name": "+6 dB" },
+          { "value": 86, "name": "+12 dB" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Bass Band Frequency",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Mid Band Frequency",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Treb Band Frequency",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Saturate Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Saturate Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Saturate Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Noise Gate Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 98,
+      "name": "Noise Gate Threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Effect Order",
+      "additionalInfo": "0–63: Detune → Saturate, 64–127: Saturate → Detune",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Detune → Saturate" },
+          { "value": 64, "name": "Saturate → Detune" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 9,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

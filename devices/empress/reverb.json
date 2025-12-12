@@ -9,8 +9,8 @@
     "model": "Reverb",
     "version": "6.02"
   },
-  "receives": [],
-  "transmits": [],
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["CONTROL_CHANGE"],
 
   "controlChangeCommands": [
     {

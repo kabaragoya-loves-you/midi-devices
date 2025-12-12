@@ -1,0 +1,307 @@
+{
+  "$schema": "[https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json](https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json)",
+  "title": "Beetronics SeaBee",
+  "displayName": "SeaBee",
+  "device": {
+    "manufacturer": "Beetronics",
+    "model": "SeaBee"
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": [],
+  "controlChangeMessages": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression Pedal",
+      "additionalInfo": "Emulates the expression pedal control",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Ramp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Tone / Pattern",
+      "additionalInfo": "Tone filter selection; Tone: 0 Off, 1 HP, 2 BP, 3 LP; Pattern selection is mode dependent",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Tone Off"
+          },
+          {
+            "value": 1,
+            "name": "Tone High-Pass"
+          },
+          {
+            "value": 2,
+            "name": "Tone Band-Pass"
+          },
+          {
+            "value": 3,
+            "name": "Tone Low-Pass"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Rate 1",
+      "additionalInfo": "Primary rate; in STING mode controls Delay Time 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Depth 1 / Harmony 1",
+      "additionalInfo": "ROTO: Depth 1; DUAL: Harmony 1 (0 = no harmony, 1–12 = steps); STING: Delay Time 2 (0–11 = steps); ARP/MAD: Harmonies (0–11 = chord select)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Rate 2",
+      "additionalInfo": "Secondary rate on ROTO and DUAL modes (0–11)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Depth 2 / Harmony 2",
+      "additionalInfo": "Depth 2 in ROTO mode; Harmony 2 in DUAL mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Manual Ramp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Mode",
+      "additionalInfo": "0 ROTO, 1 DEPTH, 2 STING, 3 DUAL, 4 ARP, 5 MAD",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "ROTO"
+          },
+          {
+            "value": 1,
+            "name": "DEPTH"
+          },
+          {
+            "value": 2,
+            "name": "STING"
+          },
+          {
+            "value": 3,
+            "name": "DUAL"
+          },
+          {
+            "value": 4,
+            "name": "ARP"
+          },
+          {
+            "value": 5,
+            "name": "MAD"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Ramp Type",
+      "additionalInfo": "0 A to B, 1 Up and Down, 2 Only Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "A to B"
+          },
+          {
+            "value": 1,
+            "name": "Up and Down"
+          },
+          {
+            "value": 2,
+            "name": "Only Up"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "Values >63: bypass on; values <=63: bypass off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Bypass Off"
+          },
+          {
+            "value": 127,
+            "name": "Bypass On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Extra Tap",
+      "additionalInfo": "Any value emulates an extra tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Extra Tap (Press and Release)",
+      "additionalInfo": "Values >63 emulate press, values <=63 emulate release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Extra Tap Release"
+          },
+          {
+            "value": 127,
+            "name": "Extra Tap Press"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Reset LFO",
+      "additionalInfo": "Any value resets the LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Double Click Action",
+      "additionalInfo": "Any value alternates between ramp up and ramp down positions",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Ramp Trigger",
+      "additionalInfo": "First value emulates a press and the second value emulates a release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Ramp Trigger (Press and Release)",
+      "additionalInfo": "Values >63 emulate press, values <=63 emulate release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Ramp Trigger Release"
+          },
+          {
+            "value": 127,
+            "name": "Ramp Trigger Press"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "MIDI Clock Enable",
+      "additionalInfo": "Values >63: MIDI clock on; values <=63: MIDI clock off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "MIDI Clock Off"
+          },
+          {
+            "value": 127,
+            "name": "MIDI Clock On"
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_TS",
+  "x_midiChannel": 11
+}

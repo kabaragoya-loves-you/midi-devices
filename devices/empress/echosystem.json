@@ -6,6 +6,8 @@
     "model": "Echosystem Dual Engine Delay",
     "version": "2.42"
   },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": [],
   "controls": [
     { "controlChangeNumber": 100, "name": "Mode A" },
     { "controlChangeNumber": 109, "name": "Mode B" },

@@ -1,0 +1,205 @@
+{
+  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "title": "Vongon Polyphrase",
+  "displayName": "Polyphrase",
+  "device": {
+    "manufacturer": "Vongon",
+    "model": "Polyphrase"
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": [],
+  "controlChangeMessages": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Slider L",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Slider R",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Time",
+      "additionalInfo": "0–8: 85 ms, 9–22: 170 ms, 23–37: 341 ms, 38–56: 682 ms, 57–74: 1.3 s, 75–91: 2.7 s, 92–106: 5.5 s, 107–120: 11 s, 121–127: 22 s",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "85 ms" },
+          { "value": 9, "name": "170 ms" },
+          { "value": 23, "name": "341 ms" },
+          { "value": 38, "name": "682 ms" },
+          { "value": 57, "name": "1.3 s" },
+          { "value": 75, "name": "2.7 s" },
+          { "value": 92, "name": "5.5 s" },
+          { "value": 107, "name": "11 s" },
+          { "value": 121, "name": "22 s" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Echo Style",
+      "additionalInfo": "0–43: Dual Stereo, 44–87: Ping Pong, 88–127: Mono",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Dual Stereo" },
+          { "value": 44, "name": "Ping Pong" },
+          { "value": 88, "name": "Mono" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Sync",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Trig Mode",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Bypass",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass Off" },
+          { "value": 64, "name": "Bypass On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Infinite",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Infinite Off" },
+          { "value": 64, "name": "Infinite On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Tap Tempo",
+      "additionalInfo": "Any CC value triggers tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Trails",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Trails Off" },
+          { "value": 64, "name": "Trails On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "MIDI Clock Enable",
+      "additionalInfo": "0–63: Enabled, 64–127: Disabled",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Clock Enabled" },
+          { "value": 64, "name": "Clock Disabled" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 9,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

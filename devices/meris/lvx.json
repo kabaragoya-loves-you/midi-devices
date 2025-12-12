@@ -10,8 +10,8 @@
     "version": ""
   },
 
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
-  "transmits": [],
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["CONTROL_CHANGE"],
 
   "controlChangeMessages": [
     { "controlChangeNumber": 1, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },

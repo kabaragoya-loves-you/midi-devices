@@ -11,8 +11,8 @@
     "version": ""
   },
 
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
-  "transmits": [],
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["CONTROL_CHANGE"],
 
   "controlChangeCommands": [
     {

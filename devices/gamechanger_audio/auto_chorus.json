@@ -1,0 +1,276 @@
+{
+  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "title": "Gamechanger Audio Auto Chorus",
+  "displayName": "Auto Chorus",
+  "device": {
+    "manufacturer": "Gamechanger Audio",
+    "model": "Auto Chorus"
+  },
+  "receives": ["CONTROL_CHANGE", "CLOCK"],
+  "transmits": [],
+  "controlChangeMessages": [
+    {
+      "controlChangeNumber": 8,
+      "name": "Level",
+      "additionalInfo": "[0–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Rate",
+      "additionalInfo": "[0–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Depth",
+      "additionalInfo": "[0–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Feedback",
+      "additionalInfo": "[0–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Dyn Time",
+      "additionalInfo": "[0–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Dyn Thres",
+      "additionalInfo": "[0–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Pitch Sens",
+      "additionalInfo": "[0–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Pitch Slew",
+      "additionalInfo": "[0–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Attenuverter CV In 1",
+      "additionalInfo": "[0–63] = [-1…0], [64–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Negative range (-1…0)" },
+          { "value": 64, "name": "Positive range (0…1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Attenuverter CV In 2",
+      "additionalInfo": "[0–63] = [-1…0], [64–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Negative range (-1…0)" },
+          { "value": 64, "name": "Positive range (0…1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Attenuverter CV In 3",
+      "additionalInfo": "[0–63] = [-1…0], [64–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Negative range (-1…0)" },
+          { "value": 64, "name": "Positive range (0…1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Attenuverter CV In 4",
+      "additionalInfo": "[0–63] = [-1…0], [64–127] = [0…1]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Negative range (-1…0)" },
+          { "value": 64, "name": "Positive range (0…1)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Dynamics Mode",
+      "additionalInfo": "[0–42] = FAST, [43–84] = SLOW, [85–127] = GATE",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Fast" },
+          { "value": 43, "name": "Slow" },
+          { "value": 85, "name": "Gate" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Pitchtrack Mode",
+      "additionalInfo": "[0–42] = NOTE, [43–84] = TONE, [85–127] = V/OCT",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Note" },
+          { "value": 43, "name": "Tone" },
+          { "value": 85, "name": "V/Oct" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Effect Type",
+      "additionalInfo": "[0–42] = CHORUS, [43–84] = ENSEMBLE, [85–127] = FLANGER",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Chorus" },
+          { "value": 43, "name": "Ensemble" },
+          { "value": 85, "name": "Flanger" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Shape",
+      "additionalInfo": "[0–42] = SAW, [43–84] = SINE, [85–127] = RAMP",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Saw" },
+          { "value": 43, "name": "Sine" },
+          { "value": 85, "name": "Ramp" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "CV Mode",
+      "additionalInfo": "[0–42] = SUM, [43–84] = EXT, [85–127] = ALT",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Sum" },
+          { "value": 43, "name": "Ext" },
+          { "value": 85, "name": "Alt" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Mix Mode",
+      "additionalInfo": "[0–42] = IN, [43–84] = WET, [85–127] = MIX",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "In" },
+          { "value": 43, "name": "Wet" },
+          { "value": 85, "name": "Mix" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Signal Level",
+      "additionalInfo": "[0–42] = INST, [43–84] = LINE, [85–127] = EU",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Inst" },
+          { "value": 43, "name": "Line" },
+          { "value": 85, "name": "EU" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Effect On",
+      "additionalInfo": "[0–63] = OFF, [64–127] = ON",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Auto On",
+      "additionalInfo": "[0–63] = OFF, [64–127] = ON",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 0,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

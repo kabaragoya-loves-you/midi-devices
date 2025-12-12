@@ -8,6 +8,8 @@
     "model": "Chroma Console",
     "version": "1.042"
   },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": [],
   "controls": [
     {
       "type": "controlChange",

@@ -1,0 +1,177 @@
+{
+  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "title": "Gamechanger Audio Motor Pedal",
+  "displayName": "Motor Pedal",
+  "device": {
+    "manufacturer": "Gamechanger Audio",
+    "model": "Motor Pedal"
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+  "controlChangeMessages": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Modwheel",
+      "additionalInfo": "[0–127] = [min MOD … max MOD]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Shift",
+      "additionalInfo": "[0–17] = -Oct, [18–35] = -5th, [36–53] = -4th, [54–72] = 0, [73–90] = +4th, [91–108] = +5th, [109–127] = +Oct",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "-Oct" },
+          { "value": 18, "name": "-5th" },
+          { "value": 36, "name": "-4th" },
+          { "value": 54, "name": "Unison" },
+          { "value": 73, "name": "+4th" },
+          { "value": 91, "name": "+5th" },
+          { "value": 109, "name": "+Oct" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Release",
+      "additionalInfo": "[0–127] = [min RELEASE … max RELEASE]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Vibr/Glide",
+      "additionalInfo": "[0–63] = [max VIBR … min VIBR], [64–127] = [min ACCEL … max ACCEL]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Mod",
+      "additionalInfo": "[0–127] = [min MOD … max MOD]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Engine",
+      "additionalInfo": "[0–25] = Engine 1: Motor, [26–51] = Engine 2: MxD, [52–76] = Engine 3: MWave, [77–102] = Engine 4: Coil, [103–127] = Engine 5: Vocoder",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Engine 1: Motor" },
+          { "value": 26, "name": "Engine 2: MxD" },
+          { "value": 52, "name": "Engine 3: MWave" },
+          { "value": 77, "name": "Engine 4: Coil" },
+          { "value": 103, "name": "Engine 5: Vocoder" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Pedal Mode",
+      "additionalInfo": "[0–25] = Pedal Mode 1: Accel, [26–51] = Pedal Mode 2: Brake, [52–76] = Pedal Mode 3: Clutch, [77–102] = Pedal Mode 4: Drift, [103–127] = Pedal Mode 5: Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Pedal Mode 1: Accel" },
+          { "value": 26, "name": "Pedal Mode 2: Brake" },
+          { "value": 52, "name": "Pedal Mode 3: Clutch" },
+          { "value": 77, "name": "Pedal Mode 4: Drift" },
+          { "value": 103, "name": "Pedal Mode 5: Volume" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Effect On (FSW)",
+      "additionalInfo": "[0–63] = Off, [64–127] = On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Pedal Value",
+      "additionalInfo": "[0–127] = [off … fully pressed (normal range)]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Floor-It Value",
+      "additionalInfo": "[0–127] = [pressed … max pressure (floor-it)]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "MIDI Note Only Mode",
+      "additionalInfo": "Disable instrument input pitch tracker (e.g. for vocoding); [0–63] = Off, [64–127] = On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Instrument + Pitch Tracker" },
+          { "value": 64, "name": "MIDI Note Only" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Pedal + Pressure Value",
+      "additionalInfo": "[0–90] = [off … fully pressed (normal range)], [91–102] = [deadzone], [103–127] = [pressed … max pressure (floor-it)]",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Normal Range" },
+          { "value": 91, "name": "Deadzone" },
+          { "value": 103, "name": "Floor-It Range" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 15,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "x_midiNoteIn": {
+    "supportsNoteOnOff": true,
+    "modesWithNoteControl": [],
+    "modesWithoutNoteControl": [],
+    "supportsPitchBend": false,
+    "supportsModWheel": true
+  }
+}

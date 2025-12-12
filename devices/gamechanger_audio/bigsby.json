@@ -1,0 +1,438 @@
+{
+  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "title": "Gamechanger Audio Bigsby",
+  "displayName": "Bigsby",
+  "device": {
+    "manufacturer": "Gamechanger Audio",
+    "model": "Bigsby"
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "PITCH_BEND", "CLOCK"],
+  "transmits": [],
+  "controlChangeMessages": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Rate MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Rate LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Detune MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Detune LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Blend MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Blend LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Pitch Down Range",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Pitch Up Range",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Tone MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Tone LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "EXP Out Range MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "EXP Out Range LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "EXP Out Offset MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "EXP Out Offset LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "EXP Out Direction",
+      "additionalInfo": "0–63: normal, 64–127: invert",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Normal" },
+          { "value": 64, "name": "Invert" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Pedal Position (Full Range)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Pedal Position MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Pedal Position LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Pedal Downward MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Pedal Downward LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Pedal Upward MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Pedal Upward LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Flutter Trigger & Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Auto Mode Phase Offset",
+      "additionalInfo": "0–127 maps to 0°–180°",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "EXP Out Auto Mode",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Auto Mode Off" },
+          { "value": 64, "name": "Auto Mode On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "EXP Out Override Enable",
+      "additionalInfo": "0–63: Off, 64–127: Override",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Override Off" },
+          { "value": 64, "name": "Override On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "EXP Out Override Value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "EXP Out Override Value MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "EXP Out Override Value LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Latch",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Latch Off" },
+          { "value": 64, "name": "Latch On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Latch Direction",
+      "additionalInfo": "0–63: Down, 64–127: Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 64, "name": "Up" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 118,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "x_programChangeMessages": [
+    { "program": 1, "name": "Load preset slot 1" },
+    { "program": 2, "name": "Load preset slot 2" },
+    { "program": 3, "name": "Load preset slot 3" },
+    { "program": 4, "name": "Load preset slot 4" },
+    { "program": 5, "name": "Load preset slot 5" },
+    { "program": 6, "name": "Load preset slot 6" },
+    { "program": 7, "name": "Load preset slot 7" },
+    { "program": 8, "name": "Load preset slot 8" },
+    { "program": 9, "name": "Load preset slot 9" },
+    { "program": 10, "name": "Load preset slot 10" },
+    { "program": 11, "name": "Save preset slot 1" },
+    { "program": 12, "name": "Save preset slot 2" },
+    { "program": 13, "name": "Save preset slot 3" },
+    { "program": 14, "name": "Save preset slot 4" },
+    { "program": 15, "name": "Save preset slot 5" },
+    { "program": 16, "name": "Save preset slot 6" },
+    { "program": 17, "name": "Save preset slot 7" },
+    { "program": 18, "name": "Save preset slot 8" },
+    { "program": 19, "name": "Save preset slot 9" },
+    { "program": 20, "name": "Save preset slot 10" },
+    { "program": 21, "name": "Return to knob values" },
+    { "program": 24, "name": "Pitch range up/down 0 semitone" },
+    { "program": 25, "name": "Pitch range up/down sixteenth tone" },
+    { "program": 26, "name": "Pitch range up/down eighth tone" },
+    { "program": 27, "name": "Pitch range up/down quarter tone" },
+    { "program": 28, "name": "Pitch range up/down 1 semitone" },
+    { "program": 29, "name": "Pitch range up/down 2 semitones" },
+    { "program": 30, "name": "Pitch range up/down 3 semitones" },
+    { "program": 31, "name": "Pitch range up/down 4 semitones" },
+    { "program": 32, "name": "Pitch range up/down 5 semitones" },
+    { "program": 33, "name": "Pitch range up/down 6 semitones" },
+    { "program": 34, "name": "Pitch range up/down 7 semitones" },
+    { "program": 35, "name": "Pitch range up/down 8 semitones" },
+    { "program": 36, "name": "Pitch range up/down 9 semitones" },
+    { "program": 37, "name": "Pitch range up/down 10 semitones" },
+    { "program": 38, "name": "Pitch range up/down 11 semitones" },
+    { "program": 39, "name": "Pitch range up/down 12 semitones" },
+    { "program": 40, "name": "Pitch range down 0 semitone" },
+    { "program": 41, "name": "Pitch range down sixteenth tone" },
+    { "program": 42, "name": "Pitch range down eighth tone" },
+    { "program": 43, "name": "Pitch range down quarter tone" },
+    { "program": 44, "name": "Pitch range down 1 semitone" },
+    { "program": 45, "name": "Pitch range down 2 semitones" },
+    { "program": 46, "name": "Pitch range down 3 semitones" },
+    { "program": 47, "name": "Pitch range down 4 semitones" },
+    { "program": 48, "name": "Pitch range down 5 semitones" },
+    { "program": 49, "name": "Pitch range down 6 semitones" },
+    { "program": 50, "name": "Pitch range down 7 semitones" },
+    { "program": 51, "name": "Pitch range down 8 semitones" },
+    { "program": 52, "name": "Pitch range down 9 semitones" },
+    { "program": 53, "name": "Pitch range down 10 semitones" },
+    { "program": 54, "name": "Pitch range down 11 semitones" },
+    { "program": 55, "name": "Pitch range down 12 semitones" },
+    { "program": 56, "name": "Pitch range up 0 semitone" },
+    { "program": 57, "name": "Pitch range up sixteenth tone" },
+    { "program": 58, "name": "Pitch range up eighth tone" },
+    { "program": 59, "name": "Pitch range up quarter tone" },
+    { "program": 60, "name": "Pitch range up 1 semitone" },
+    { "program": 61, "name": "Pitch range up 2 semitones" },
+    { "program": 62, "name": "Pitch range up 3 semitones" },
+    { "program": 63, "name": "Pitch range up 4 semitones" },
+    { "program": 64, "name": "Pitch range up 5 semitones" },
+    { "program": 65, "name": "Pitch range up 6 semitones" },
+    { "program": 66, "name": "Pitch range up 7 semitones" },
+    { "program": 67, "name": "Pitch range up 8 semitones" },
+    { "program": 68, "name": "Pitch range up 9 semitones" },
+    { "program": 69, "name": "Pitch range up 10 semitones" },
+    { "program": 70, "name": "Pitch range up 11 semitones" },
+    { "program": 71, "name": "Pitch range up 12 semitones" },
+    { "program": 72, "name": "Range invert on" },
+    { "program": 73, "name": "Range invert off" },
+    { "program": 74, "name": "Range invert toggle" },
+    { "program": 75, "name": "EXP out invert on" },
+    { "program": 76, "name": "EXP out invert off" },
+    { "program": 77, "name": "EXP out invert toggle" },
+    { "program": 78, "name": "EXP out modulated on (Auto Mode)" },
+    { "program": 79, "name": "EXP out modulated off (Auto Mode)" },
+    { "program": 80, "name": "EXP out modulated toggle (Auto Mode)" },
+    { "program": 81, "name": "EXP out MIDI override on" },
+    { "program": 82, "name": "EXP out MIDI override off" },
+    { "program": 83, "name": "EXP out MIDI override toggle" },
+    { "program": 84, "name": "Synced beat division off" },
+    { "program": 85, "name": "Synced beat division 2 notes" },
+    { "program": 86, "name": "Synced beat division 1.5 notes" },
+    { "program": 87, "name": "Synced beat division whole note" },
+    { "program": 88, "name": "Synced beat division 3/4" },
+    { "program": 89, "name": "Synced beat division 1/2" },
+    { "program": 90, "name": "Synced beat division 3/8" },
+    { "program": 91, "name": "Synced beat division 1/3" },
+    { "program": 92, "name": "Synced beat division 1/4" },
+    { "program": 93, "name": "Synced beat division 3/16" },
+    { "program": 94, "name": "Synced beat division 1/6" },
+    { "program": 95, "name": "Synced beat division 1/8" },
+    { "program": 96, "name": "Synced beat division 1/12" },
+    { "program": 97, "name": "Synced beat division 1/16" },
+    { "program": 98, "name": "Synced beat division 1/24" },
+    { "program": 99, "name": "Synced beat division 1/32" },
+    { "program": 100, "name": "Audio bypass on" },
+    { "program": 101, "name": "Audio bypass off" },
+    { "program": 102, "name": "Audio bypass toggle" },
+    { "program": 103, "name": "EXP bypass on" },
+    { "program": 104, "name": "EXP bypass off" },
+    { "program": 105, "name": "EXP bypass toggle" },
+    { "program": 106, "name": "Audio and EXP bypass on" },
+    { "program": 107, "name": "Audio and EXP bypass off" },
+    { "program": 108, "name": "Audio and EXP bypass toggle" },
+    { "program": 109, "name": "Toggle between audio and EXP bypass" },
+    { "program": 110, "name": "Latch on" },
+    { "program": 111, "name": "Latch off" },
+    { "program": 112, "name": "Latch toggle" },
+    { "program": 113, "name": "Latch direction up" },
+    { "program": 114, "name": "Latch direction down" },
+    { "program": 115, "name": "Latch direction toggle" },
+    { "program": 116, "name": "Knob lock on" },
+    { "program": 117, "name": "Knob lock off" },
+    { "program": 118, "name": "Knob lock toggle" }
+  ]
+}

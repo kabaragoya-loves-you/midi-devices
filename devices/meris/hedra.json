@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Meris Hedra",
+  "displayName": "Hedra",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Meris",
+    "model": "Hedra",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 9,
+      "name": "Half Speed Enable",
+      "additionalInfo": "0–63 = normal speed, 64–127 = half speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Normal Speed (0–63)" },
+          { "value": 64, "name": "Half Speed (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 14,
+      "name": "Bypass",
+      "additionalInfo": "0–63 = FX bypass, 64–127 = FX enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "FX Bypass (0–63)" },
+          { "value": 64, "name": "FX Enable (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 15,
+      "name": "Tempo",
+      "additionalInfo": "10 msec intervals; 0–120",
+      "valueRange": { "min": 0, "max": 120 }
+    },
+
+    {
+      "controlChangeNumber": 16,
+      "name": "Key",
+      "additionalInfo": "Key selection in semitone steps",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "C (0–2)" },
+          { "value": 3, "name": "D♭ (3–11)" },
+          { "value": 12, "name": "D (12–25)" },
+          { "value": 26, "name": "E♭ (26–37)" },
+          { "value": 38, "name": "E (38–47)" },
+          { "value": 48, "name": "F (48–58)" },
+          { "value": 59, "name": "G♭ (59–66)" },
+          { "value": 67, "name": "G (67–77)" },
+          { "value": 78, "name": "A♭ (78–87)" },
+          { "value": 88, "name": "A (88–97)" },
+          { "value": 98, "name": "B♭ (98–108)" },
+          { "value": 109, "name": "B (109–119)" },
+          { "value": 120, "name": "Chromatic (120–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 17,
+      "name": "Micro Tune",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 18,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 19,
+      "name": "Pitch 1",
+      "additionalInfo": "Pitch 1 interval; mapping depends on chromatic/diatonic/pentatonic mode",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 20,
+      "name": "Pitch 2",
+      "additionalInfo": "Pitch 2 interval; mapping depends on chromatic/diatonic/pentatonic mode",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Pitch 3",
+      "additionalInfo": "Pitch 3 interval; mapping depends on chromatic/diatonic/pentatonic mode",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 22,
+      "name": "Scale Type",
+      "additionalInfo": "Scale choice for diatonic/pentatonic modes",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Major (0–11)" },
+          { "value": 12, "name": "Minor (12–37)" },
+          { "value": 38, "name": "Melodic Minor (38–58)" },
+          { "value": 59, "name": "Harmonic Minor (59–78)" },
+          { "value": 79, "name": "Double Harmonic Minor (79–97)" },
+          { "value": 98, "name": "Lydian Pentatonic (98–119)" },
+          { "value": 120, "name": "Minor Pentatonic (120–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 23,
+      "name": "Pitch Correction + Glide",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 24,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 25,
+      "name": "Time Division 1",
+      "additionalInfo": "Time division for delay line 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0)" },
+          { "value": 1, "name": "Micro Range (1–14)" },
+          { "value": 15, "name": "1/6 – 16th-note triplets (15–25)" },
+          { "value": 26, "name": "1/4 – 16th note (26–36)" },
+          { "value": 37, "name": "1/3 – 8th-note triplet (37–47)" },
+          { "value": 48, "name": "3/8 – dotted 16th (48–58)" },
+          { "value": 59, "name": "1/2 – 8th note (59–69)" },
+          { "value": 70, "name": "5/8 – dotted 16th tied to 16th (70–80)" },
+          { "value": 81, "name": "2/3 – 8th-note triplet tied to 8th-note triplet (81–91)" },
+          { "value": 92, "name": "3/4 – dotted 8th (92–102)" },
+          { "value": 103, "name": "5/6 – 8th tied to two 16th-note triplets (103–113)" },
+          { "value": 114, "name": "7/8 – double dotted 8th note (114–124)" },
+          { "value": 125, "name": "1 – quarter note (125–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 26,
+      "name": "Time Division 2",
+      "additionalInfo": "Same mapping as Time Division 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 27,
+      "name": "Time Division 3",
+      "additionalInfo": "Same mapping as Time Division 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 28,
+      "name": "Tap",
+      "additionalInfo": "127 = tap press",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 127, "name": "Tap Press" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 29,
+      "name": "Delay Mode",
+      "additionalInfo": "0–31 = Series + Pitch FDBK, 32–63 = Series, 64–95 = Dual + Cross FDBK, 96–127 = Dual",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Series + Pitch Feedback (0–31)" },
+          { "value": 32, "name": "Series (32–63)" },
+          { "value": 64, "name": "Dual + Cross Feedback (64–95)" },
+          { "value": 96, "name": "Dual (96–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 30,
+      "name": "Pitch Control Smoothing",
+      "additionalInfo": "0–63 = smoothing off, 64–127 = smoothing on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Smoothing Off (0–63)" },
+          { "value": 64, "name": "Smoothing On (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 31,
+      "name": "Volume Swell Enable",
+      "additionalInfo": "0–63 = swell off, 64–127 = swell on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Swell Off (0–63)" },
+          { "value": 64, "name": "Swell On (64–127)" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 16,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

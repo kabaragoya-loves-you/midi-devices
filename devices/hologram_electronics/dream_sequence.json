@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/master/schema/schema.json",
+  "title": "Hologram Electronics Dream Sequence",
+  "displayName": "Dream Sequence",
+  "device": {
+    "manufacturer": "Hologram Electronics",
+    "family": "Dream Sequence",
+    "model": "Dream Sequence"
+  },
+  "controls": [
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 20,
+      "name": "Octave Up Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 21,
+      "name": "Middle Octave Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 22,
+      "name": "Octave Down Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 23,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Effect Off (0–63)" },
+          { "value": 64, "name": "Effect On (64–127)" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 35,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

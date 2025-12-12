@@ -1,0 +1,435 @@
+{
+  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/master/schema/schema.json",
+  "title": "Hologram Electronics Chroma Console",
+  "displayName": "Chroma Console",
+  "device": {
+    "manufacturer": "Hologram Electronics",
+    "family": "Chroma Console",
+    "model": "Chroma Console",
+    "version": "1.042"
+  },
+  "controls": [
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 64,
+      "name": "Tilt",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 65,
+      "name": "Amount Character",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 66,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 67,
+      "name": "Amount Movement",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 68,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 69,
+      "name": "Amount Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 70,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 71,
+      "name": "Amount Texture",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 72,
+      "name": "Sensitivity",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 73,
+      "name": "Effect Vol Character",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 74,
+      "name": "Drift Movement",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 75,
+      "name": "Effect Vol Movement",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 76,
+      "name": "Drift Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 77,
+      "name": "Effect Vol Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 78,
+      "name": "Output Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 79,
+      "name": "Effect Vol Texture",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 16,
+      "name": "Character Module",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Drive (0–21)" },
+          { "value": 22, "name": "Sweeten (22–43)" },
+          { "value": 44, "name": "Fuzz (44–65)" },
+          { "value": 66, "name": "Howl (66–87)" },
+          { "value": 88, "name": "Swell (88–109)" },
+          { "value": 110, "name": "Off (110–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 17,
+      "name": "Movement Module",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Doubler (0–21)" },
+          { "value": 22, "name": "Vibrato (22–43)" },
+          { "value": 44, "name": "Phaser (44–65)" },
+          { "value": 66, "name": "Tremolo (66–87)" },
+          { "value": 88, "name": "Pitch (88–109)" },
+          { "value": 110, "name": "Off (110–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 18,
+      "name": "Diffusion Module",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Cascade (0–21)" },
+          { "value": 22, "name": "Reels (22–43)" },
+          { "value": 44, "name": "Space (44–65)" },
+          { "value": 66, "name": "Collage (66–87)" },
+          { "value": 88, "name": "Reverse (88–109)" },
+          { "value": 110, "name": "Off (110–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 19,
+      "name": "Texture Module",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Filter (0–21)" },
+          { "value": 22, "name": "Squash (22–43)" },
+          { "value": 44, "name": "Cassette (44–65)" },
+          { "value": 66, "name": "Broken (66–87)" },
+          { "value": 88, "name": "Interference (88–109)" },
+          { "value": 110, "name": "Off (110–127)" }
+        ]
+      }
+    },
+
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 91,
+      "name": "Standard Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (0–63)" },
+          { "value": 64, "name": "Engage (64–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 92,
+      "name": "Dual Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Total Bypass (0–31)" },
+          { "value": 32, "name": "Dual Bypass (32–63)" },
+          { "value": 64, "name": "Total Engage (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 103,
+      "name": "Character Module Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (0–63)" },
+          { "value": 64, "name": "Engage (64–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 104,
+      "name": "Movement Module Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (0–63)" },
+          { "value": 64, "name": "Engage (64–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 105,
+      "name": "Diffusion Module Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (0–63)" },
+          { "value": 64, "name": "Engage (64–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 106,
+      "name": "Texture Module Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (0–63)" },
+          { "value": 64, "name": "Engage (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 80,
+      "name": "Gesture Play/Record",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Play (0–63)" },
+          { "value": 64, "name": "Record (64–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 81,
+      "name": "Gesture Stop/Erase",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 82,
+      "name": "Capture Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Stop/Clear (0–43)" },
+          { "value": 44, "name": "Play (44–87)" },
+          { "value": 88, "name": "Record (88–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 83,
+      "name": "Capture Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Post-FX (0–63)" },
+          { "value": 64, "name": "Pre-FX (64–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": []
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 84,
+      "name": "Filter Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "LPF (0–43)" },
+          { "value": 44, "name": "Tilt (44–87)" },
+          { "value": 88, "name": "HPF (88–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 94,
+      "name": "Calibration Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Low (0–31)" },
+          { "value": 32, "name": "Medium (32–63)" },
+          { "value": 64, "name": "High (64–95)" },
+          { "value": 96, "name": "Very High (96–127)" }
+        ]
+      }
+    },
+    {
+      "type": "controlChange",
+      "controlChangeNumber": 95,
+      "name": "Calibration Menu",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Exit (0–63)" },
+          { "value": 64, "name": "Enter (64–127)" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 80,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

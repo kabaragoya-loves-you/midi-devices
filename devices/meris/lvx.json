@@ -1,0 +1,350 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "Meris LVX",
+  "displayName": "LVX",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Meris",
+    "model": "LVX",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeMessages": [
+    { "controlChangeNumber": 1, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 2, "name": "Dry Trim", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 3, "name": "Wet Trim", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 4, "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 5,
+      "name": "Preamp Type",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Off (0–18)" },
+        { "value": 19, "name": "Volume Pedal (19–36)" },
+        { "value": 37, "name": "Tube (37–54)" },
+        { "value": 55, "name": "Transistor (55–73)" },
+        { "value": 74, "name": "Op-Amp (74–91)" },
+        { "value": 92, "name": "Drive (92–109)" },
+        { "value": 110, "name": "Bitcrusher (110–127)" }
+      ]
+    },
+
+    {
+      "controlChangeNumber": 6,
+      "name": "Preamp Location",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Pre + Dry (0–31)" },
+        { "value": 32, "name": "Pre (32–63)" },
+        { "value": 64, "name": "Feedback (64–95)" },
+        { "value": 96, "name": "Post (96–127)" }
+      ]
+    },
+
+    { "controlChangeNumber": 7, "name": "Preamp Param 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 8, "name": "Preamp Param 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 9, "name": "Preamp Param 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 10, "name": "Preamp Param 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 11, "name": "Preamp Param 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 12, "name": "Preamp Param 6", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 13,
+      "name": "Delay Structure",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Standard (0–21)" },
+        { "value": 22, "name": "Multitap (22–42)" },
+        { "value": 43, "name": "Multifilter (43–63)" },
+        { "value": 64, "name": "Poly (64–85)" },
+        { "value": 86, "name": "Reverse (86–106)" },
+        { "value": 107, "name": "Series (107–127)" }
+      ]
+    },
+
+    {
+      "controlChangeNumber": 14,
+      "name": "Bypass",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0–63 = FX Bypass, 64–127 = FX Enable"
+    },
+
+    { "controlChangeNumber": 15, "name": "Delay Time", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 16,
+      "name": "Delay Type",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Digital (0–42)" },
+        { "value": 43, "name": "BBD (43–85)" },
+        { "value": 86, "name": "Tape (86–127)" }
+      ]
+    },
+
+    { "controlChangeNumber": 17, "name": "Left Note Division", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 18, "name": "Right Note Division", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 19, "name": "Feedback", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 20, "name": "Cross Feedback", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 21, "name": "Delay Mod", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 22, "name": "Delay Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 23, "name": "Delay Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 24, "name": "Delay Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 25, "name": "Delay Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 26, "name": "Delay Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 27, "name": "Delay Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 28, "name": "Delay Parameter 7", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 29, "name": "Delay Parameter 8", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 30, "name": "Delay Parameter 9", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 31, "name": "Delay Parameter 10", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 32, "name": "Delay Parameter 11", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 33, "name": "Delay Parameter 12", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 34, "name": "Delay Parameter 13", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 35, "name": "Delay Parameter 14", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 36, "name": "Delay Parameter 15", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 37, "name": "Delay Parameter 16", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 38, "name": "Delay Parameter 17", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 39, "name": "Delay Parameter 18", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 40, "name": "Delay Parameter 19", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 41, "name": "Delay Parameter 20", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 42, "name": "Delay Parameter 21", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 43, "name": "Delay Parameter 22", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 44, "name": "Delay Parameter 23", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 45, "name": "Delay Parameter 24", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 46, "name": "Delay Parameter 25", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 47, "name": "Delay Parameter 26", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 48, "name": "Delay Parameter 27", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 49, "name": "Delay Parameter 28", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 50, "name": "Delay Parameter 29", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 51, "name": "Delay Parameter 30", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 52, "name": "Delay Parameter 31", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 53, "name": "Delay Parameter 32", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 54, "name": "Delay Parameter 33", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 55, "name": "Delay Parameter 34", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 56, "name": "Delay Parameter 35", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 57, "name": "Delay Parameter 36", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 58, "name": "Delay Parameter 37", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 59, "name": "Delay Parameter 38", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 60, "name": "Delay Parameter 39", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 61, "name": "Delay Parameter 40", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 62,
+      "name": "Dynamic Type",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Off (0–25)" },
+        { "value": 26, "name": "Compressor (26–51)" },
+        { "value": 52, "name": "Swell (52–76)" },
+        { "value": 77, "name": "Diffusion (77–102)" },
+        { "value": 103, "name": "Limiter (103–127)" }
+      ]
+    },
+
+    {
+      "controlChangeNumber": 63,
+      "name": "Dynamic Location",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Pre + Dry (0–31)" },
+        { "value": 32, "name": "Pre (32–63)" },
+        { "value": 64, "name": "Feedback (64–95)" },
+        { "value": 96, "name": "Post (96–127)" }
+      ]
+    },
+
+    { "controlChangeNumber": 64, "name": "Dynamic Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 65, "name": "Dynamic Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 66, "name": "Dynamic Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 67, "name": "Dynamic Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 68, "name": "Dynamic Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 69, "name": "Dynamic Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 70,
+      "name": "Pitch Type",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Off (0–21)" },
+        { "value": 22, "name": "Poly Chroma (22–42)" },
+        { "value": 43, "name": "Harmony (43–63)" },
+        { "value": 64, "name": "Micro Tune (64–85)" },
+        { "value": 86, "name": "Mono Chroma (86–106)" },
+        { "value": 107, "name": "Lo-Fi (107–127)" }
+      ]
+    },
+
+    {
+      "controlChangeNumber": 71,
+      "name": "Pitch Location",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Pre + Dry (0–31)" },
+        { "value": 32, "name": "Pre (32–63)" },
+        { "value": 64, "name": "Feedback (64–95)" },
+        { "value": 96, "name": "Post (96–127)" }
+      ]
+    },
+
+    { "controlChangeNumber": 72, "name": "Pitch Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 73, "name": "Pitch Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 74, "name": "Pitch Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 75, "name": "Pitch Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 76, "name": "Pitch Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 77, "name": "Pitch Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 78,
+      "name": "Filter Type",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Off (0–25)" },
+        { "value": 26, "name": "Ladder (26–51)" },
+        { "value": 52, "name": "State Variable (52–76)" },
+        { "value": 77, "name": "Comb (77–102)" },
+        { "value": 103, "name": "Parametric (103–127)" }
+      ]
+    },
+
+    {
+      "controlChangeNumber": 79,
+      "name": "Filter Location",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Pre + Dry (0–31)" },
+        { "value": 32, "name": "Pre (32–63)" },
+        { "value": 64, "name": "Feedback (64–95)" },
+        { "value": 96, "name": "Post (96–127)" }
+      ]
+    },
+
+    { "controlChangeNumber": 80, "name": "Filter Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 81, "name": "Filter Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 82, "name": "Filter Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 83, "name": "Filter Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 84, "name": "Filter Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 85, "name": "Filter Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 86,
+      "name": "Mod Type",
+      "valueRange": { "min": 0, "max": 127 },
+      "discreteValues": [
+        { "value": 0, "name": "Off (0–15)" },
+        { "value": 16, "name": "Chorus (16–31)" },
+        { "value": 32, "name": "Flanger (32–47)" },
+        { "value": 48, "name": "Dynamic Flanger (48–63)" },
+        { "value": 64, "name": "Cassette (64–79)" },
+        { "value": 80, "name": "Barberpole (80–95)" },
+        { "value": 96, "name": "Granulize (96–111)" },
+        { "value": 112, "name": "Ring Mod (112–127)" }
+      ]
+    },
+
+    {
+      "controlChangeNumber": 87,
+      "name": "Mod Location",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0–31 Pre+Dry, 32–63 Pre, 64–95 Feedback, 96–127 Post"
+    },
+
+    { "controlChangeNumber": 88, "name": "Mod Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 89, "name": "Mod Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 90, "name": "Mod Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 91, "name": "Mod Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 92, "name": "Mod Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 93, "name": "Mod Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 94,
+      "name": "Looper Location",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Post, 103–127 Post Mix"
+    },
+
+    { "controlChangeNumber": 95, "name": "Looper Level", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 96, "name": "Looper Feedback", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 97, "name": "Looper FX1 Select", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 98, "name": "Looper FX2 Select", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 99,
+      "name": "Tap Tempo",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Press = 127"
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "Looper Record/Overdub Press",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Press = 127"
+    },
+
+    {
+      "controlChangeNumber": 101,
+      "name": "Looper Play/Stop Press",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Press = 127"
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Looper FX1 Press",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Press = 127"
+    },
+
+    {
+      "controlChangeNumber": 103,
+      "name": "Looper FX2 Press",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0–63 Reverse, 64–127 Half Speed"
+    },
+
+    {
+      "controlChangeNumber": 117,
+      "name": "Toggle Tuner Mode",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Press = 127"
+    },
+
+    {
+      "controlChangeNumber": 118,
+      "name": "Trigger Hold Modifier",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Press = 127"
+    },
+
+    {
+      "controlChangeNumber": 119,
+      "name": "Delay Half Speed",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0–63 Off, 64–127 On"
+    },
+
+    { "controlChangeNumber": 120, "name": "Delay Damping", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 121,
+      "name": "MIDI Clock Mode",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0–42 Use Global, 43–85 Force Listen, 86–127 Force Ignore"
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

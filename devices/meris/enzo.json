@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Meris Enzo",
+  "displayName": "Enzo",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Meris",
+    "model": "Enzo",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 9,
+      "name": "Envelope Type",
+      "additionalInfo": "0–63 = Triggered Env, 64–127 = Env Follower",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Triggered Env (0–63)" },
+          { "value": 64, "name": "Env Follower (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 14,
+      "name": "Bypass",
+      "additionalInfo": "0–63 = FX Bypass, 64–127 = FX Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "FX Bypass (0–63)" },
+          { "value": 64, "name": "FX Enable (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 15,
+      "name": "Tempo",
+      "additionalInfo": "10 ms intervals; 0–120",
+      "valueRange": { "min": 0, "max": 120 }
+    },
+
+    {
+      "controlChangeNumber": 16,
+      "name": "Pitch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Filter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Sustain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Filter Envelope",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Modulation",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Portamento",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Filter Type",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Delay Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Ring Modulation",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Filter Bandwidth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Delay Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 28,
+      "name": "Tap",
+      "additionalInfo": "127 = Tap press",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 127, "name": "Tap Press" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 29,
+      "name": "Synth Mode",
+      "additionalInfo": "0–31 = Dry, 32–63 = Mono Synth, 64–95 = Arp Synth, 96–127 = Poly Synth",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Dry (0–31)" },
+          { "value": 32, "name": "Mono Synth (32–63)" },
+          { "value": 64, "name": "Arp Synth (64–95)" },
+          { "value": 96, "name": "Poly Synth (96–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 30,
+      "name": "Synth Waveshape",
+      "additionalInfo": "0–63 = Sawtooth, 64–127 = Square",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Sawtooth (0–63)" },
+          { "value": 64, "name": "Square (64–127)" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 16,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

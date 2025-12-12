@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Meris Polymoon",
+  "displayName": "Polymoon",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Meris",
+    "model": "Polymoon",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 9,
+      "name": "Dotted 8th",
+      "additionalInfo": "0–63 = quarter note, 64–127 = dotted eighth",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Quarter (0–63)" },
+          { "value": 64, "name": "Dotted 8th (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 14,
+      "name": "Bypass",
+      "additionalInfo": "0–63 = FX bypass, 64–127 = FX enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "FX Bypass (0–63)" },
+          { "value": 64, "name": "FX Enable (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 15,
+      "name": "Tempo",
+      "additionalInfo": "10 ms intervals; 0–120",
+      "valueRange": { "min": 0, "max": 120 }
+    },
+
+    {
+      "controlChangeNumber": 16,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 17,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 18,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 19,
+      "name": "Multiply",
+      "additionalInfo": "1–6 multipliers mapped to CC ranges",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "1× (0–7)" },
+          { "value": 8, "name": "2× (8–32)" },
+          { "value": 33, "name": "3× (33–62)" },
+          { "value": 63, "name": "4× (63–87)" },
+          { "value": 88, "name": "5× (88–115)" },
+          { "value": 116, "name": "6× (116–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 20,
+      "name": "Dimension",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 21,
+      "name": "Dynamics",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 22,
+      "name": "Early Modulations",
+      "additionalInfo": "Multi-range modulation table",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0–7)" },
+          { "value": 8, "name": "Slow Speed + Shallow Depth (8–15)" },
+          { "value": 16, "name": "Moderate Speed + Shallow Depth (16–23)" },
+          { "value": 24, "name": "Moderate Speed + Wide Depth (24–31)" },
+          { "value": 32, "name": "Fast Speed + Wide Depth (32–39)" },
+          { "value": 40, "name": "Fast Speed + Exaggerated Depth (40–47)" },
+          { "value": 48, "name": "FM Modulation – 24 Hz (48–55)" },
+          { "value": 56, "name": "FM Modulation – 48 Hz (56–63)" },
+          { "value": 64, "name": "FM Modulation – 96 Hz (64–71)" },
+          { "value": 72, "name": "Major 2nd Down + Major 2nd Up (72–79)" },
+          { "value": 80, "name": "Octave Down + Minor 3rd Up (80–87)" },
+          { "value": 88, "name": "Perfect 5th Down + Perfect 4th Up (88–95)" },
+          { "value": 96, "name": "Tremolo Mute + Perfect 4th Up (96–103)" },
+          { "value": 104, "name": "Octave Down + Perfect 5th Up (104–111)" },
+          { "value": 112, "name": "Perfect 5th Down + Octave Up (112–119)" },
+          { "value": 120, "name": "Octave Down + Octave Up (120–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 23,
+      "name": "Feedback Filter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 24,
+      "name": "Delay Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 25,
+      "name": "Late Modulation",
+      "additionalInfo": "Same structure as Early Modulations table",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0–7)" },
+          { "value": 8, "name": "Slow Speed + Shallow Depth (8–15)" },
+          { "value": 16, "name": "Moderate Speed + Shallow Depth (16–23)" },
+          { "value": 24, "name": "Moderate Speed + Wide Depth (24–31)" },
+          { "value": 32, "name": "Fast Speed + Wide Depth (32–39)" },
+          { "value": 40, "name": "Fast Speed + Exaggerated Depth (40–47)" },
+          { "value": 48, "name": "FM Modulation – 24 Hz (48–55)" },
+          { "value": 56, "name": "FM Modulation – 48 Hz (56–63)" },
+          { "value": 64, "name": "FM Modulation – 96 Hz (64–71)" },
+          { "value": 72, "name": "Major 2nd Down + Major 2nd Up (72–79)" },
+          { "value": 80, "name": "Octave Down + Minor 3rd Up (80–87)" },
+          { "value": 88, "name": "Perfect 5th Down + Perfect 4th Up (88–95)" },
+          { "value": 96, "name": "Tremolo Mute + Perfect 4th Up (96–103)" },
+          { "value": 104, "name": "Octave Down + Perfect 5th Up (104–111)" },
+          { "value": 112, "name": "Perfect 5th Down + Octave Up (112–119)" },
+          { "value": 120, "name": "Octave Down + Octave Up (120–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 26,
+      "name": "Dynamic Flanger Mode",
+      "additionalInfo": "0–32 = Envelope Down, 33–88 = Envelope Up, 89–127 = LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Envelope Down (0–32)" },
+          { "value": 33, "name": "Envelope Up (33–88)" },
+          { "value": 89, "name": "LFO (89–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 27,
+      "name": "Dynamic Flanger Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 28,
+      "name": "Tap",
+      "additionalInfo": "127 = Tap press",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 127, "name": "Tap Press" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 29,
+      "name": "Phaser Mode",
+      "additionalInfo": "0–31 = Off, 32–63 = Slow, 64–95 = Sync Slow, 96–127 = Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0–31)" },
+          { "value": 32, "name": "Slow (32–63)" },
+          { "value": 64, "name": "Sync Slow (64–95)" },
+          { "value": 96, "name": "Sync (96–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 30,
+      "name": "Flanger Feedback",
+      "additionalInfo": "0–63 = Feedback Off, 64–127 = Feedback On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Feedback Off (0–63)" },
+          { "value": 64, "name": "Feedback On (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 31,
+      "name": "Half Speed",
+      "additionalInfo": "0–63 = Full Speed, 64–127 = Half Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Full Speed (0–63)" },
+          { "value": 64, "name": "Half Speed (64–127)" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 16,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

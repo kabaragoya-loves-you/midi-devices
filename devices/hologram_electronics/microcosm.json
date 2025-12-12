@@ -1,0 +1,352 @@
+{
+  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "schemaVersion": "1.0.0",
+  "title": "Hologram Microcosm",
+  "displayName": "Microcosm",
+  "device": {
+    "manufacturer": "Hologram Electronics",
+    "model": "Microcosm",
+    "displayName": "Hologram Microcosm",
+    "version": "1.0.0"
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "controlChangeMessages": [
+    {
+      "controlChangeNumber": 5,
+      "name": "Subdiv",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "1/4" },
+          { "value": 1, "name": "1/2" },
+          { "value": 2, "name": "Tap" },
+          { "value": 3, "name": "2x" },
+          { "value": 4, "name": "4x" },
+          { "value": 5, "name": "8x" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Activity",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Shape",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Filter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Repeats",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Space",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Loop Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mod Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Filter Resonance",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Effect Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Looper Playback Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Looper Playback (Stepped)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "1/4" },
+          { "value": 1, "name": "1/2" },
+          { "value": 2, "name": "Tap" },
+          { "value": 3, "name": "2x" },
+          { "value": 4, "name": "4x" },
+          { "value": 5, "name": "8x" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Reverb Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Looper Fade Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Looper On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Looper Playback Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Forward" },
+          { "value": 64, "name": "Reverse" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Looper Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Post-FX" },
+          { "value": 64, "name": "Pre-FX" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Looper Only Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Looper & Effects" },
+          { "value": 64, "name": "Looper Only" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Looper Burst Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Default" },
+          { "value": 64, "name": "Burst" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Looper Quantized Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Free" },
+          { "value": 64, "name": "Quantize" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Looper Record",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Looper Play",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Looper Overdub",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Looper Stop",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Looper Erase",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Looper Undo",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Copy Preset",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Save Preset",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Reverse Effect",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Hold Sampler",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 64, "name": "Engage" }
+        ]
+      }
+    }
+  ],
+  "x_programChangeMessages": [
+    { "program": 1, "name": "ARP A" },
+    { "program": 2, "name": "ARP B" },
+    { "program": 3, "name": "ARP C" },
+    { "program": 4, "name": "ARP D" },
+
+    { "program": 5, "name": "INTERRUPT A" },
+    { "program": 6, "name": "INTERRUPT B" },
+    { "program": 7, "name": "INTERRUPT C" },
+    { "program": 8, "name": "INTERRUPT D" },
+
+    { "program": 9, "name": "BLOCKS A" },
+    { "program": 10, "name": "BLOCKS B" },
+    { "program": 11, "name": "BLOCKS C" },
+    { "program": 12, "name": "BLOCKS D" },
+
+    { "program": 13, "name": "GLIDE A" },
+    { "program": 14, "name": "GLIDE B" },
+    { "program": 15, "name": "GLIDE C" },
+    { "program": 16, "name": "GLIDE D" },
+
+    { "program": 17, "name": "SEQ A" },
+    { "program": 18, "name": "SEQ B" },
+    { "program": 19, "name": "SEQ C" },
+    { "program": 20, "name": "SEQ D" },
+
+    { "program": 21, "name": "MOSAIC A" },
+    { "program": 22, "name": "MOSAIC B" },
+    { "program": 23, "name": "MOSAIC C" },
+    { "program": 24, "name": "MOSAIC D" },
+
+    { "program": 25, "name": "HAZE A" },
+    { "program": 26, "name": "HAZE B" },
+    { "program": 27, "name": "HAZE C" },
+    { "program": 28, "name": "HAZE D" },
+
+    { "program": 29, "name": "TUNNEL A" },
+    { "program": 30, "name": "TUNNEL B" },
+    { "program": 31, "name": "TUNNEL C" },
+    { "program": 32, "name": "TUNNEL D" },
+
+    { "program": 33, "name": "STRUM A" },
+    { "program": 34, "name": "STRUM B" },
+    { "program": 35, "name": "STRUM C" },
+    { "program": 36, "name": "STRUM D" },
+
+    { "program": 37, "name": "PATTERN A" },
+    { "program": 38, "name": "PATTERN B" },
+    { "program": 39, "name": "PATTERN C" },
+    { "program": 40, "name": "PATTERN D" },
+
+    { "program": 41, "name": "WARP A" },
+    { "program": 42, "name": "WARP B" },
+    { "program": 43, "name": "WARP C" },
+    { "program": 44, "name": "WARP D" },
+
+    { "program": 45, "name": "USER 1A" },
+    { "program": 46, "name": "USER 1B" },
+    { "program": 47, "name": "USER 1C" },
+    { "program": 48, "name": "USER 1D" },
+
+    { "program": 49, "name": "USER 2A" },
+    { "program": 50, "name": "USER 2B" },
+    { "program": 51, "name": "USER 2C" },
+    { "program": 52, "name": "USER 2D" },
+
+    { "program": 53, "name": "USER 3A" },
+    { "program": 54, "name": "USER 3B" },
+    { "program": 55, "name": "USER 3C" },
+    { "program": 56, "name": "USER 3D" },
+
+    { "program": 57, "name": "USER 4A" },
+    { "program": 58, "name": "USER 4B" },
+    { "program": 59, "name": "USER 4C" },
+    { "program": 60, "name": "USER 4D" }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 60,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

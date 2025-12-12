@@ -1,0 +1,304 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Meris Mercury X",
+  "displayName": "Mercury X",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Meris",
+    "model": "Mercury X",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    { "controlChangeNumber": 1,  "name": "Mix",           "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 2,  "name": "Dry Trim",      "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 3,  "name": "Wet Trim",      "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 4,  "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 5,
+      "name": "Preamp Type",
+      "additionalInfo": "0–25 Off, 26–51 Volume Pedal, 52–76 Tube, 77–102 Transistor, 103–127 Op-Amp",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0–25)" },
+          { "value": 26, "name": "Volume Pedal (26–51)" },
+          { "value": 52, "name": "Tube (52–76)" },
+          { "value": 77, "name": "Transistor (77–102)" },
+          { "value": 103, "name": "Op-Amp (103–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 6,
+      "name": "Preamp Location",
+      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Pre + Dry (0–25)" },
+          { "value": 26, "name": "Pre (26–51)" },
+          { "value": 52, "name": "Feedback (52–76)" },
+          { "value": 77, "name": "Pre Tank (77–102)" },
+          { "value": 103, "name": "Post (103–127)" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 7, "name": "Gain / Volume Pedal Level", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 8, "name": "Balance",                   "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 11, "name": "Preamp Level",             "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 13,
+      "name": "Delay Structure",
+      "additionalInfo": "0–63 Standard, 64–127 Reverse",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Standard (0–63)" },
+          { "value": 64, "name": "Reverse (64–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 14,
+      "name": "Bypass",
+      "additionalInfo": "0–63 FX Bypass, 64–127 FX Enable",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "FX Bypass (0–63)" },
+          { "value": 64, "name": "FX Enable (64–127)" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 15, "name": "Time", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 16,
+      "name": "Type",
+      "additionalInfo": "0–42 Digital, 43–85 BBD, 86–127 Magnetic",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Digital (0–42)" },
+          { "value": 43, "name": "BBD (43–85)" },
+          { "value": 86, "name": "Magnetic (86–127)" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 17, "name": "Left Note Division",  "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 18, "name": "Right Note Division", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 19, "name": "Feedback",            "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 20, "name": "Cross Feedback",      "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 21, "name": "Modulation",          "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 22, "name": "Damping",             "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 23, "name": "Dry Blend",           "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 24, "name": "Half Speed",          "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 28,
+      "name": "MIDI Clock",
+      "additionalInfo": "0–42 Use Global, 43–85 Force Listen, 86–127 Force Ignore",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Use Global (0–42)" },
+          { "value": 43, "name": "Force Listen (43–85)" },
+          { "value": 86, "name": "Force Ignore (86–127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 32,
+      "name": "Reverb Structure",
+      "additionalInfo": "0–15 Ultraplate, 16–31 Cathedra, 32–47 Spring, 48–63 ’78 Room, 64–79 ’78 Plate, 80–95 ’78 Hall, 96–111 Prism, 112–127 Gravity",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Ultraplate (0–15)" },
+          { "value": 16, "name": "Cathedra (16–31)" },
+          { "value": 32, "name": "Spring (32–47)" },
+          { "value": 48, "name": "’78 Room (48–63)" },
+          { "value": 64, "name": "’78 Plate (64–79)" },
+          { "value": 80, "name": "’78 Hall (80–95)" },
+          { "value": 96, "name": "Prism (96–111)" },
+          { "value": 112, "name": "Gravity (112–127)" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 33, "name": "Reverb Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 34, "name": "Reverb Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 35, "name": "Reverb Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 36, "name": "Reverb Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 37, "name": "Reverb Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 38, "name": "Reverb Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 39, "name": "Reverb Parameter 7", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 40, "name": "Reverb Parameter 8", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 41, "name": "Reverb Parameter 9", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 42, "name": "Predelay Blend",     "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 43, "name": "Gate Attack", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 44, "name": "Gate Hold",   "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 45, "name": "Gate Decay",  "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 62,
+      "name": "Dynamics Type",
+      "additionalInfo": "0–15 Off, 16–31 Compressor, 32–47 Compressor Link, 48–63 Swell, 64–79 Diffusion, 80–95 Limiter, 96–111 Limiter Link, 112–127 Freeze",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 16, "name": "Compressor" },
+          { "value": 32, "name": "Compressor Link" },
+          { "value": 48, "name": "Swell" },
+          { "value": 64, "name": "Diffusion" },
+          { "value": 80, "name": "Limiter" },
+          { "value": 96, "name": "Limiter Link" },
+          { "value": 112, "name": "Freeze" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 63,
+      "name": "Dynamics Location",
+      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Pre + Dry" },
+          { "value": 26, "name": "Pre" },
+          { "value": 52, "name": "Feedback" },
+          { "value": 77, "name": "Pre Tank" },
+          { "value": 103, "name": "Post" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 64, "name": "Dynamics Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 65, "name": "Dynamics Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 66, "name": "Dynamics Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 67, "name": "Dynamics Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 68, "name": "Dynamics Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 69, "name": "Dynamics Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 70,
+      "name": "Pitch Type",
+      "additionalInfo": "0–31 Off, 32–63 Poly Chroma, 64–95 Micro Shift, 96–127 Lo-Fi",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0,  "name": "Off" },
+          { "value": 32, "name": "Poly Chroma" },
+          { "value": 64, "name": "Micro Shift" },
+          { "value": 96, "name": "Lo-Fi" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 71,
+      "name": "Pitch Location",
+      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    { "controlChangeNumber": 72, "name": "Pitch Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 73, "name": "Pitch Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 74, "name": "Pitch Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 75, "name": "Pitch Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 76, "name": "Pitch Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 77, "name": "Pitch Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 78,
+      "name": "Filter Type",
+      "additionalInfo": "0–31 Off, 32–63 Ladder, 64–95 State Variable, 96–127 Parametric",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 79,
+      "name": "Filter Location",
+      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    { "controlChangeNumber": 80, "name": "Filter Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 81, "name": "Filter Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 82, "name": "Filter Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 83, "name": "Filter Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 84, "name": "Filter Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 85, "name": "Filter Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 86,
+      "name": "Mod Type",
+      "additionalInfo": "0–21 Off, 22–42 Chorus, 43–63 Vibrato, 64–85 Vowel Mod, 86–106 Tremolo, 107–127 Hazy",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 87,
+      "name": "Mod Location",
+      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    { "controlChangeNumber": 88, "name": "Mod Parameter 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 89, "name": "Mod Parameter 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 90, "name": "Mod Parameter 3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 91, "name": "Mod Parameter 4", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 92, "name": "Mod Parameter 5", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 93, "name": "Mod Parameter 6", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 117,
+      "name": "Toggle Tuner Mode",
+      "additionalInfo": "Press = 127",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [{ "value": 127, "name": "Toggle Tuner" }]
+      }
+    },
+
+    {
+      "controlChangeNumber": 118,
+      "name": "Trigger Hold Modifier",
+      "additionalInfo": "Press = 127, Release = 0",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Release" },
+          { "value": 127, "name": "Press" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelect": "none"
+  },
+
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

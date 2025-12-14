@@ -1,13 +1,15 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Build a compact manifest for /devices/**/v*.json
+# Build a compact manifest for /devices/**/*.json
 # Usage:
-#   ruby tools/build_manifest.rb [--root PATH] [--out PATH]
+#   ruby tools/build_manifest.rb [--root PATH] [--out PATH] [--skip-validate]
 #
 # Defaults:
 #   --root = repo root of this script (../../)
 #   --out  = <root>/manifest.json
+#
+# Runs validate_devices.rb before building unless --skip-validate is passed.
 
 require "json"
 require "digest"
@@ -17,12 +19,14 @@ require "pathname"
 
 options = {
   root: Pathname.new(__dir__).join("..").expand_path.to_s,
-  out:  nil
+  out: nil,
+  skip_validate: false
 }
 
 OptionParser.new do |opts|
   opts.on("--root PATH", "Repo root (default: parent of tools/)") { |v| options[:root] = v }
-  opts.on("--out PATH",  "Output manifest path (default: <root>/manifest.json)") { |v| options[:out] = v }
+  opts.on("--out PATH", "Output manifest path (default: <root>/manifest.json)") { |v| options[:out] = v }
+  opts.on("--skip-validate", "Skip device validation") { options[:skip_validate] = true }
 end.parse!
 
 root = Pathname.new(options[:root]).expand_path
@@ -30,6 +34,21 @@ out_path = options[:out] ? Pathname.new(options[:out]).expand_path : root.join("
 
 devices_dir = root.join("devices")
 abort "ERR: devices directory not found: #{devices_dir}" unless devices_dir.exist?
+
+# Run validation first unless skipped
+unless options[:skip_validate]
+  validate_script = Pathname.new(__dir__).join("validate_devices.rb")
+  if validate_script.exist?
+    puts "Running device validation..."
+    result = system("ruby", validate_script.to_s, "--root", root.to_s)
+    unless result
+      abort "ERR: Device validation failed. Fix errors or use --skip-validate to bypass."
+    end
+    puts
+  else
+    warn "WARN: validate_devices.rb not found, skipping validation"
+  end
+end
 
 def sha256_hex(io)
   digest = Digest::SHA256.new

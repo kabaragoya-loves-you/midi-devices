@@ -6,9 +6,13 @@
     "manufacturer": "Beetronics",
     "model": "SeaBee"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CONTROL_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-  "controlChangeMessages": [
+  "controlChangeCommands": [
     {
       "controlChangeNumber": 4,
       "name": "Expression Pedal",

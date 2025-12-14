@@ -1,23 +1,632 @@
 {
   "schema": 1,
-  "generatedAt": "2025-10-29T02:34:42Z",
-  "count": 2,
+  "generatedAt": "2025-12-14T09:10:12Z",
+  "count": 49,
   "devices": [
     {
+      "slug": "beetronics.seabee@",
+      "vendor": "beetronics",
+      "product": "seabee",
+      "version": "",
+      "path": "devices/beetronics/seabee.json",
+      "sha256": "8c8cae638e670165792100f4ccdc4dc255dd918aafc9887721561f0acf100f15",
+      "size": 7479,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 20,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.billy_strings_wombtone@0",
+      "vendor": "chase_bliss",
+      "product": "billy_strings_wombtone",
+      "version": "0",
+      "path": "devices/chase_bliss/billy_strings_wombtone.json",
+      "sha256": "6dc774aa163d4ef000dd492a5ce028939bb440fb194413e8866b53d1520784af",
+      "size": 2887,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.bliss_factory@0",
+      "vendor": "chase_bliss",
+      "product": "bliss_factory",
+      "version": "0",
+      "path": "devices/chase_bliss/bliss_factory.json",
+      "sha256": "bbcd5dc52cae2ae346e9080f1c2b82c81af5800afaefbbbb90080d6e55bf33b1",
+      "size": 3123,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.blooper@0",
+      "vendor": "chase_bliss",
+      "product": "blooper",
+      "version": "0",
+      "path": "devices/chase_bliss/blooper.json",
+      "sha256": "c8db88540a85dee1f4cd8ceafcc5f79064e108d38bd44a37c562362edf165b40",
+      "size": 5991,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 26,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.brothers@0",
+      "vendor": "chase_bliss",
+      "product": "brothers",
+      "version": "0",
+      "path": "devices/chase_bliss/brothers.json",
+      "sha256": "c81ede86c0a038d007aeddbfaba5aa9b99ace69e115308d33acb2e3465893547",
+      "size": 3508,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.brothers_am@0",
+      "vendor": "chase_bliss",
+      "product": "brothers_am",
+      "version": "0",
+      "path": "devices/chase_bliss/brothers_am.json",
+      "sha256": "65191cc9d3226d47b11b699cfa7a5e2499498900e7ddea3f7c6fd3d6a25d4a3b",
+      "size": 8523,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 30,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.clean@0",
+      "vendor": "chase_bliss",
+      "product": "clean",
+      "version": "0",
+      "path": "devices/chase_bliss/clean.json",
+      "sha256": "806749915c02089a442331d22b3adcf3f8d25e82a9c16b2a4a3b1a2abbb472ce",
+      "size": 10186,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 35,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.condor@0",
+      "vendor": "chase_bliss",
+      "product": "condor",
+      "version": "0",
+      "path": "devices/chase_bliss/condor.json",
+      "sha256": "d4eec767d5c57e1b19983949258485376a593e9c633aa689744078b1876a68ce",
+      "size": 3190,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.condor_hifi@0",
+      "vendor": "chase_bliss",
+      "product": "condor_hifi",
+      "version": "0",
+      "path": "devices/chase_bliss/condor_hifi.json",
+      "sha256": "81a07dbbd61364e193326722f2d15a4665d624f15a5ddeebe027a1d89e06e394",
+      "size": 2948,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.cxm_1978@0",
+      "vendor": "chase_bliss",
+      "product": "cxm_1978",
+      "version": "0",
+      "path": "devices/chase_bliss/cxm_1978.json",
+      "sha256": "6f3ece496138829a1e9cba4cc054d5f4216a63683c307f76310d1a1e7aeabee9",
+      "size": 3953,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 19,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 30,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.dark_world@0",
+      "vendor": "chase_bliss",
+      "product": "dark_world",
+      "version": "0",
+      "path": "devices/chase_bliss/dark_world.json",
+      "sha256": "20ca80748e6db23d8a4159bf47ef87c7ec23f362bfca8d058288cd16ca4ba226",
+      "size": 2959,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.generation_loss@0",
+      "vendor": "chase_bliss",
+      "product": "generation_loss",
+      "version": "0",
+      "path": "devices/chase_bliss/generation_loss.json",
+      "sha256": "ef08e420812669c631d4cb7d1b64ec5054e31536630c2dae651c353a3083fdbf",
+      "size": 2909,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.generation_loss_mkii@0",
+      "vendor": "chase_bliss",
+      "product": "generation_loss_mkii",
+      "version": "0",
+      "path": "devices/chase_bliss/generation_loss_mkii.json",
+      "sha256": "61e50ee67a6f792eeb81e9970f7300da0c91d8b968de81d6b46595ecdafbad67",
+      "size": 11265,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 42,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.gravitas@0",
+      "vendor": "chase_bliss",
+      "product": "gravitas",
+      "version": "0",
+      "path": "devices/chase_bliss/gravitas.json",
+      "sha256": "967ca11aa0c2523a3fd63396c26e4ba749e9a10695cb7de08980d6380bb62cc2",
+      "size": 2999,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.habit@0",
+      "vendor": "chase_bliss",
+      "product": "habit",
+      "version": "0",
+      "path": "devices/chase_bliss/habit.json",
+      "sha256": "6a8af83607b3090a157354c0dd0ec8cd8ef8fd971bd929b9b43fd4f1682010ef",
+      "size": 4161,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 17,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.lossy@0",
+      "vendor": "chase_bliss",
+      "product": "lossy",
+      "version": "0",
+      "path": "devices/chase_bliss/lossy.json",
+      "sha256": "85e78922dd9bc24dd91c544f27583bf9fe3e6379adb5f6a89b9ab70cd60f704c",
+      "size": 10785,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 43,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.lost+found@0",
+      "vendor": "chase_bliss",
+      "product": "lost+found",
+      "version": "0",
+      "path": "devices/chase_bliss/lost+found.json",
+      "sha256": "0eb1049bdf59b4063671e8fb44258a0c775ba0c91f85495776f4a668298d9c63",
+      "size": 15084,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 51,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.mood@0",
+      "vendor": "chase_bliss",
+      "product": "mood",
+      "version": "0",
+      "path": "devices/chase_bliss/mood.json",
+      "sha256": "c4a332a68e02488f46ea244ed07096af40bdb5b01cc85084333010d68db8b586",
+      "size": 4482,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 15,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
       "slug": "chase_bliss.mood_mkii@0",
-      "vendor": "chase-bliss",
-      "product": "mood-mkii",
+      "vendor": "chase_bliss",
+      "product": "mood_mkii",
       "version": "0",
       "path": "devices/chase_bliss/mood_mkii.json",
-      "sha256": "977a8d17cbf0b0b5c388144feafdae3c6058993b7d83335c329ef60ffa5fd641",
-      "size": 2815,
-      "receives": ["PROGRAM_CHANGE"],
+      "sha256": "cc70b18ddacdb8e73db9d6e90a91d87f020e81ca48061157bbe810c4d9d2e9ee",
+      "size": 4444,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
       "transmits": [],
       "ccCount": 10,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
-        "count": 122
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.onward@0",
+      "vendor": "chase_bliss",
+      "product": "onward",
+      "version": "0",
+      "path": "devices/chase_bliss/onward.json",
+      "sha256": "0c3e9ce79c9dfa6d380d134c0af1e568bd2391bcdb15dd3a2087be3863e543a6",
+      "size": 14787,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 52,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.preamp_mkii@0",
+      "vendor": "chase_bliss",
+      "product": "preamp_mkii",
+      "version": "0",
+      "path": "devices/chase_bliss/preamp_mkii.json",
+      "sha256": "10262144294ed23d64ffe233e6237a30c9cdca014df66f563cc303b24ab43536",
+      "size": 3683,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 30,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.reverse_mode_c@0",
+      "vendor": "chase_bliss",
+      "product": "reverse_mode_c",
+      "version": "0",
+      "path": "devices/chase_bliss/reverse_mode_c.json",
+      "sha256": "c33efedc8c12040f706234ddebd33eda9181def23dd9601903b7832b1ce3b914",
+      "size": 13530,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 46,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.spectre@0",
+      "vendor": "chase_bliss",
+      "product": "spectre",
+      "version": "0",
+      "path": "devices/chase_bliss/spectre.json",
+      "sha256": "152d82c2f94a0463bd278fa3f54bfb78dccf983bc99677b0009e9912b8711570",
+      "size": 2981,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.thermae@0",
+      "vendor": "chase_bliss",
+      "product": "thermae",
+      "version": "0",
+      "path": "devices/chase_bliss/thermae.json",
+      "sha256": "8148ad4329b7f0f5fe1a39442979c144d85268e33fd0873ccf5f42d83abf8229",
+      "size": 5330,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 23,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.tonal_recall@0",
+      "vendor": "chase_bliss",
+      "product": "tonal_recall",
+      "version": "0",
+      "path": "devices/chase_bliss/tonal_recall.json",
+      "sha256": "869a922843fc94e065b8c7575aad8c3ba1edc39e6fd57d1651c7e3a46203508c",
+      "size": 3054,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.warped_vinyl_hifi@0",
+      "vendor": "chase_bliss",
+      "product": "warped_vinyl_hifi",
+      "version": "0",
+      "path": "devices/chase_bliss/warped_vinyl_hifi.json",
+      "sha256": "e1d947bf39ff63de2bec9262f61a9384fc6618a812d84ca5082b0872a74609ce",
+      "size": 4225,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 15,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.warped_vinyl_mkii@0",
+      "vendor": "chase_bliss",
+      "product": "warped_vinyl_mkii",
+      "version": "0",
+      "path": "devices/chase_bliss/warped_vinyl_mkii.json",
+      "sha256": "ae1e624bc992b4032b6f34a62d06a144c2c1496746e1bdf0cdd902dca546e7ef",
+      "size": 3011,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.wombtone_mkii@0",
+      "vendor": "chase_bliss",
+      "product": "wombtone_mkii",
+      "version": "0",
+      "path": "devices/chase_bliss/wombtone_mkii.json",
+      "sha256": "9179ec45cca51e4edacdbe503011a7a95783113aa20ff47574dc5d35ee61f069",
+      "size": 3022,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 122,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "empress.echosystem@",
+      "vendor": "empress",
+      "product": "echosystem",
+      "version": "",
+      "path": "devices/empress/echosystem.json",
+      "sha256": "e3c18f742d30b0fb3652b4d46cc2d7400b0285b824d12358cc781dbda79b55a3",
+      "size": 4524,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 31,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 35,
+        "bankSelect": "none"
       }
     },
     {
@@ -26,12 +635,431 @@
       "product": "reverb",
       "version": "0",
       "path": "devices/empress/reverb.json",
-      "sha256": "9ee5c216ebbcc045d77892887b1be5a645d89cb9e293ba2f4e3098e780aa38af",
-      "size": 3050,
+      "sha256": "13f970185b0fa80cf9cf1afe5167c0e2cf9995a2e1d2a9fe8434fda9784ee5ad",
+      "size": 3377,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CONTROL_CHANGE"],
+      "ccCount": 17,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 35,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "gamechanger_audio.auto_chorus@",
+      "vendor": "gamechanger_audio",
+      "product": "auto_chorus",
+      "version": "",
+      "path": "devices/gamechanger_audio/auto_chorus.json",
+      "sha256": "d6a5475edbee9278b71ab95f1510af0960b89f11297f3a643be336dd95360af5",
+      "size": 8581,
+      "receives": [
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 21,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 0,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "gamechanger_audio.auto_delay@",
+      "vendor": "gamechanger_audio",
+      "product": "auto_delay",
+      "version": "",
+      "path": "devices/gamechanger_audio/auto_delay.json",
+      "sha256": "f242361382b9e575505136f8c2c2044f538dbe7a4e2437b55c5433e0822aa314",
+      "size": 9159,
+      "receives": [
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 22,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 0,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "gamechanger_audio.auto_reverb@",
+      "vendor": "gamechanger_audio",
+      "product": "auto_reverb",
+      "version": "",
+      "path": "devices/gamechanger_audio/auto_reverb.json",
+      "sha256": "82873ac274f1b9698d7afc65f01b2f06466d2acdb0425e7ac57e485702ff80cb",
+      "size": 9156,
+      "receives": [
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 22,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 0,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "gamechanger_audio.bigsby@",
+      "vendor": "gamechanger_audio",
+      "product": "bigsby",
+      "version": "",
+      "path": "devices/gamechanger_audio/bigsby.json",
+      "sha256": "b19c22617c598e1ca6289c91fe7d1c5de4ac50d51a66e5fab25a5ae223668b51",
+      "size": 16762,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "PITCH_BEND",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 31,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 118,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "gamechanger_audio.motor_pedal@",
+      "vendor": "gamechanger_audio",
+      "product": "motor_pedal",
+      "version": "",
+      "path": "devices/gamechanger_audio/motor_pedal.json",
+      "sha256": "ce99883c12163af0f99032f1191608558aee6c7005051259fbc6a6eef3c6a9b0",
+      "size": 6376,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 15,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "hologram_electronics.chroma_console@",
+      "vendor": "hologram_electronics",
+      "product": "chroma_console",
+      "version": "",
+      "path": "devices/hologram_electronics/chroma_console.json",
+      "sha256": "b1932f4711c21bb06eb236a857fe0642288c265b229ce699f83fd531fb41f4b0",
+      "size": 13061,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 34,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 80,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "hologram_electronics.dream_sequence@",
+      "vendor": "hologram_electronics",
+      "product": "dream_sequence",
+      "version": "",
+      "path": "devices/hologram_electronics/dream_sequence.json",
+      "sha256": "f960fa189e4541cadc62daaacd51ae98e2e7fcb5de32c383452ff42013efb5f4",
+      "size": 1664,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 4,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 35,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "hologram_electronics.microcosm@",
+      "vendor": "hologram_electronics",
+      "product": "microcosm",
+      "version": "",
+      "path": "devices/hologram_electronics/microcosm.json",
+      "sha256": "b3da90c34b96aad385983a2e2d93ee4556b69c125dabdebf80da25d224376843",
+      "size": 12389,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "ccCount": 35,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 60,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "meris.enzo@0",
+      "vendor": "meris",
+      "product": "enzo",
+      "version": "0",
+      "path": "devices/meris/enzo.json",
+      "sha256": "a8846d66f601ff81222770eda9aed18ca1bab6d2f11187f2a0aca855c8b3a7ec",
+      "size": 4082,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CONTROL_CHANGE"],
+      "ccCount": 19,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 16,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "meris.enzo_x@0",
+      "vendor": "meris",
+      "product": "enzo_x",
+      "version": "0",
+      "path": "devices/meris/enzo_x.json",
+      "sha256": "2c6e7dbc79c3b284eebe8334d3f2840e9946a51a99b924a880eb83602d9d3efc",
+      "size": 15525,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CONTROL_CHANGE"],
+      "ccCount": 75,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 99,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "meris.hedra@0",
+      "vendor": "meris",
+      "product": "hedra",
+      "version": "0",
+      "path": "devices/meris/hedra.json",
+      "sha256": "6c6f523fe6f46ca0d57029fb6b263b9034f166d137592b9761012174ff02e323",
+      "size": 7369,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CONTROL_CHANGE"],
+      "ccCount": 20,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 16,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "meris.lvx@",
+      "vendor": "meris",
+      "product": "lvx",
+      "version": "",
+      "path": "devices/meris/lvx.json",
+      "sha256": "e7e9c60c61424a57953dd414622ba7bbdf1b38ca1eec415da56556cb39c7f533",
+      "size": 23161,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CONTROL_CHANGE"],
+      "ccCount": 108,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 99,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "meris.mercury_7@0",
+      "vendor": "meris",
+      "product": "mercury_7",
+      "version": "0",
+      "path": "devices/meris/mercury_7.json",
+      "sha256": "de20352c29dab0038a3ed7df9d89ad4d345679368692f3fb5e2ffa05fe0d6729",
+      "size": 3099,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 16,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "meris.mercury_x@0",
+      "vendor": "meris",
+      "product": "mercury_x",
+      "version": "0",
+      "path": "devices/meris/mercury_x.json",
+      "sha256": "89a8fc429319c968e74903308eded54cf829cb444f48bcd1b961635be5195cde",
+      "size": 12953,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CONTROL_CHANGE"],
+      "ccCount": 70,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 99,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "meris.ottobit_jr@0",
+      "vendor": "meris",
+      "product": "ottobit_jr",
+      "version": "0",
+      "path": "devices/meris/ottobit_jr.json",
+      "sha256": "27ebd9e153a2a9de8a9ac0ba4b8ec7a8a8b2b8b5b4275752745af0ae706b6ed9",
+      "size": 3554,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CONTROL_CHANGE"],
+      "ccCount": 18,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 16,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "meris.polymoon@0",
+      "vendor": "meris",
+      "product": "polymoon",
+      "version": "0",
+      "path": "devices/meris/polymoon.json",
+      "sha256": "2874257ebab3d080a48835235ba509345bccd2c127a651cdaecfe97245989f41",
+      "size": 7862,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CONTROL_CHANGE"],
+      "ccCount": 20,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 16,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "user.default@0",
+      "vendor": "user",
+      "product": "default",
+      "version": "0",
+      "path": "devices/user/default.json",
+      "sha256": "c34ac91af3660574aef0d6b6a4daf032450f00c0a8e47ea7296b7b303ed601e7",
+      "size": 491,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "vongon.polyphrase@",
+      "vendor": "vongon",
+      "product": "polyphrase",
+      "version": "",
+      "path": "devices/vongon/polyphrase.json",
+      "sha256": "bc23ba0e144b24449c0973829348b8fcb226f4ba871a6906e8d76115e2046d80",
+      "size": 6065,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 9,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "vongon.solarfaze@",
+      "vendor": "vongon",
+      "product": "solarfaze",
+      "version": "",
+      "path": "devices/vongon/solarfaze.json",
+      "sha256": "9499641c92271780d88f63c31c84cd32a6597102283a325c638ec146f9eb4586",
+      "size": 5897,
       "receives": [],
       "transmits": [],
-      "ccCount": 17,
-      "nrpnCount": 0
+      "ccCount": 21,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 9,
+        "bankSelect": "none"
+      }
     }
   ]
 }

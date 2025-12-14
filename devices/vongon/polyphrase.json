@@ -6,9 +6,13 @@
     "manufacturer": "Vongon",
     "model": "Polyphrase"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CONTROL_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-  "controlChangeMessages": [
+  "controlChangeCommands": [
     {
       "controlChangeNumber": 1,
       "name": "Repeats",
@@ -80,15 +84,42 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "85 ms" },
-          { "value": 9, "name": "170 ms" },
-          { "value": 23, "name": "341 ms" },
-          { "value": 38, "name": "682 ms" },
-          { "value": 57, "name": "1.3 s" },
-          { "value": 75, "name": "2.7 s" },
-          { "value": 92, "name": "5.5 s" },
-          { "value": 107, "name": "11 s" },
-          { "value": 121, "name": "22 s" }
+          {
+            "value": 0,
+            "name": "85 ms"
+          },
+          {
+            "value": 9,
+            "name": "170 ms"
+          },
+          {
+            "value": 23,
+            "name": "341 ms"
+          },
+          {
+            "value": 38,
+            "name": "682 ms"
+          },
+          {
+            "value": 57,
+            "name": "1.3 s"
+          },
+          {
+            "value": 75,
+            "name": "2.7 s"
+          },
+          {
+            "value": 92,
+            "name": "5.5 s"
+          },
+          {
+            "value": 107,
+            "name": "11 s"
+          },
+          {
+            "value": 121,
+            "name": "22 s"
+          }
         ]
       }
     },
@@ -100,9 +131,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Dual Stereo" },
-          { "value": 44, "name": "Ping Pong" },
-          { "value": 88, "name": "Mono" }
+          {
+            "value": 0,
+            "name": "Dual Stereo"
+          },
+          {
+            "value": 44,
+            "name": "Ping Pong"
+          },
+          {
+            "value": 88,
+            "name": "Mono"
+          }
         ]
       }
     },
@@ -114,8 +154,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -127,8 +173,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -140,8 +192,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass Off" },
-          { "value": 64, "name": "Bypass On" }
+          {
+            "value": 0,
+            "name": "Bypass Off"
+          },
+          {
+            "value": 64,
+            "name": "Bypass On"
+          }
         ]
       }
     },
@@ -153,8 +211,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Infinite Off" },
-          { "value": 64, "name": "Infinite On" }
+          {
+            "value": 0,
+            "name": "Infinite Off"
+          },
+          {
+            "value": 64,
+            "name": "Infinite On"
+          }
         ]
       }
     },
@@ -176,8 +240,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Trails Off" },
-          { "value": 64, "name": "Trails On" }
+          {
+            "value": 0,
+            "name": "Trails Off"
+          },
+          {
+            "value": 64,
+            "name": "Trails On"
+          }
         ]
       }
     },
@@ -189,8 +259,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Clock Enabled" },
-          { "value": 64, "name": "Clock Disabled" }
+          {
+            "value": 0,
+            "name": "Clock Enabled"
+          },
+          {
+            "value": 64,
+            "name": "Clock Disabled"
+          }
         ]
       }
     }

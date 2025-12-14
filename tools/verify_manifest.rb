@@ -1,7 +1,12 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Verify hashes/sizes in manifest.json
+# Verify file hashes and sizes in manifest.json match actual files on disk.
+# This ensures the manifest is up-to-date with the device files.
+#
+# NOTE: This does NOT validate JSON schema compliance.
+# Use validate_devices.rb for schema validation.
+#
 # Usage:
 #   ruby tools/verify_manifest.rb [--root PATH] [--manifest PATH]
 

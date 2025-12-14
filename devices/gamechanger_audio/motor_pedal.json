@@ -6,9 +6,12 @@
     "manufacturer": "Gamechanger Audio",
     "model": "Motor Pedal"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CONTROL_CHANGE"
+  ],
   "transmits": [],
-  "controlChangeMessages": [
+  "controlChangeCommands": [
     {
       "controlChangeNumber": 1,
       "name": "Modwheel",
@@ -27,13 +30,34 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "-Oct" },
-          { "value": 18, "name": "-5th" },
-          { "value": 36, "name": "-4th" },
-          { "value": 54, "name": "Unison" },
-          { "value": 73, "name": "+4th" },
-          { "value": 91, "name": "+5th" },
-          { "value": 109, "name": "+Oct" }
+          {
+            "value": 0,
+            "name": "-Oct"
+          },
+          {
+            "value": 18,
+            "name": "-5th"
+          },
+          {
+            "value": 36,
+            "name": "-4th"
+          },
+          {
+            "value": 54,
+            "name": "Unison"
+          },
+          {
+            "value": 73,
+            "name": "+4th"
+          },
+          {
+            "value": 91,
+            "name": "+5th"
+          },
+          {
+            "value": 109,
+            "name": "+Oct"
+          }
         ]
       }
     },
@@ -75,11 +99,26 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Engine 1: Motor" },
-          { "value": 26, "name": "Engine 2: MxD" },
-          { "value": 52, "name": "Engine 3: MWave" },
-          { "value": 77, "name": "Engine 4: Coil" },
-          { "value": 103, "name": "Engine 5: Vocoder" }
+          {
+            "value": 0,
+            "name": "Engine 1: Motor"
+          },
+          {
+            "value": 26,
+            "name": "Engine 2: MxD"
+          },
+          {
+            "value": 52,
+            "name": "Engine 3: MWave"
+          },
+          {
+            "value": 77,
+            "name": "Engine 4: Coil"
+          },
+          {
+            "value": 103,
+            "name": "Engine 5: Vocoder"
+          }
         ]
       }
     },
@@ -91,11 +130,26 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pedal Mode 1: Accel" },
-          { "value": 26, "name": "Pedal Mode 2: Brake" },
-          { "value": 52, "name": "Pedal Mode 3: Clutch" },
-          { "value": 77, "name": "Pedal Mode 4: Drift" },
-          { "value": 103, "name": "Pedal Mode 5: Volume" }
+          {
+            "value": 0,
+            "name": "Pedal Mode 1: Accel"
+          },
+          {
+            "value": 26,
+            "name": "Pedal Mode 2: Brake"
+          },
+          {
+            "value": 52,
+            "name": "Pedal Mode 3: Clutch"
+          },
+          {
+            "value": 77,
+            "name": "Pedal Mode 4: Drift"
+          },
+          {
+            "value": 103,
+            "name": "Pedal Mode 5: Volume"
+          }
         ]
       }
     },
@@ -107,8 +161,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -140,8 +200,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Instrument + Pitch Tracker" },
-          { "value": 64, "name": "MIDI Note Only" }
+          {
+            "value": 0,
+            "name": "Instrument + Pitch Tracker"
+          },
+          {
+            "value": 64,
+            "name": "MIDI Note Only"
+          }
         ]
       }
     },
@@ -153,9 +219,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Normal Range" },
-          { "value": 91, "name": "Deadzone" },
-          { "value": 103, "name": "Floor-It Range" }
+          {
+            "value": 0,
+            "name": "Normal Range"
+          },
+          {
+            "value": 91,
+            "name": "Deadzone"
+          },
+          {
+            "value": 103,
+            "name": "Floor-It Range"
+          }
         ]
       }
     }

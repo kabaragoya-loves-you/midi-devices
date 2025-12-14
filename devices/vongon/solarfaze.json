@@ -6,7 +6,9 @@
     "manufacturer": "Vongon",
     "model": "Solarfaze"
   },
-  "controlChangeMessages": [
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
     {
       "controlChangeNumber": 13,
       "name": "Detune Bypass",
@@ -14,8 +16,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -26,8 +34,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -101,9 +115,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "+0 dB" },
-          { "value": 43, "name": "+6 dB" },
-          { "value": 86, "name": "+12 dB" }
+          {
+            "value": 0,
+            "name": "+0 dB"
+          },
+          {
+            "value": 43,
+            "name": "+6 dB"
+          },
+          {
+            "value": 86,
+            "name": "+12 dB"
+          }
         ]
       }
     },
@@ -114,9 +137,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "+0 dB" },
-          { "value": 43, "name": "+6 dB" },
-          { "value": 86, "name": "+12 dB" }
+          {
+            "value": 0,
+            "name": "+0 dB"
+          },
+          {
+            "value": 43,
+            "name": "+6 dB"
+          },
+          {
+            "value": 86,
+            "name": "+12 dB"
+          }
         ]
       }
     },
@@ -127,9 +159,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "+0 dB" },
-          { "value": 43, "name": "+6 dB" },
-          { "value": 86, "name": "+12 dB" }
+          {
+            "value": 0,
+            "name": "+0 dB"
+          },
+          {
+            "value": 43,
+            "name": "+6 dB"
+          },
+          {
+            "value": 86,
+            "name": "+12 dB"
+          }
         ]
       }
     },
@@ -194,8 +235,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -216,8 +263,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Detune → Saturate" },
-          { "value": 64, "name": "Saturate → Detune" }
+          {
+            "value": 0,
+            "name": "Detune → Saturate"
+          },
+          {
+            "value": 64,
+            "name": "Saturate → Detune"
+          }
         ]
       }
     }

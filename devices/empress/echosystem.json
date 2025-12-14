@@ -6,25 +6,77 @@
     "model": "Echosystem Dual Engine Delay",
     "version": "2.42"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CONTROL_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-  "controls": [
-    { "controlChangeNumber": 100, "name": "Mode A" },
-    { "controlChangeNumber": 109, "name": "Mode B" },
-    { "controlChangeNumber": 101, "name": "Delay Time / Ratio A" },
-    { "controlChangeNumber": 110, "name": "Delay Time / Ratio B" },
-    { "controlChangeNumber": 102, "name": "Mix A" },
-    { "controlChangeNumber": 111, "name": "Mix B" },
-    { "controlChangeNumber": 103, "name": "Volume A" },
-    { "controlChangeNumber": 112, "name": "Volume B" },
-    { "controlChangeNumber": 104, "name": "Feedback A" },
-    { "controlChangeNumber": 113, "name": "Feedback B" },
-    { "controlChangeNumber": 105, "name": "Tone A" },
-    { "controlChangeNumber": 114, "name": "Tone B" },
-    { "controlChangeNumber": 106, "name": "Thing 1 A" },
-    { "controlChangeNumber": 115, "name": "Thing 1 B" },
-    { "controlChangeNumber": 107, "name": "Thing 2 A" },
-    { "controlChangeNumber": 116, "name": "Thing 2 B" },
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 100,
+      "name": "Mode A"
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Mode B"
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "Delay Time / Ratio A"
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Delay Time / Ratio B"
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Mix A"
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Mix B"
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Volume A"
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Volume B"
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Feedback A"
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Feedback B"
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Tone A"
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Tone B"
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Thing 1 A"
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Thing 1 B"
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Thing 2 A"
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Thing 2 B"
+    },
     {
       "controlChangeNumber": 108,
       "name": "Delay Source",
@@ -32,9 +84,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "label": "Global" },
-          { "value": 1, "label": "Local" },
-          { "value": 2, "label": "Knob" }
+          {
+            "value": 0,
+            "label": "Global"
+          },
+          {
+            "value": 1,
+            "label": "Local"
+          },
+          {
+            "value": 2,
+            "label": "Knob"
+          }
         ]
       }
     },
@@ -45,10 +106,22 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "label": "Trails" },
-          { "value": 1, "label": "Parallel" },
-          { "value": 2, "label": "Serial" },
-          { "value": 3, "label": "Left/Right" }
+          {
+            "value": 0,
+            "label": "Trails"
+          },
+          {
+            "value": 1,
+            "label": "Parallel"
+          },
+          {
+            "value": 2,
+            "label": "Serial"
+          },
+          {
+            "value": 3,
+            "label": "Left/Right"
+          }
         ]
       }
     },
@@ -57,28 +130,70 @@
       "name": "Engage / Bypass",
       "valueRange": {
         "discreteValues": [
-          { "value": 0, "label": "Bypass" },
-          { "value": 127, "label": "Engage" }
+          {
+            "value": 0,
+            "label": "Bypass"
+          },
+          {
+            "value": 127,
+            "label": "Engage"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 11, "name": "Recall Preset" },
-    { "controlChangeNumber": 10, "name": "Expression Pedal" },
-    { "controlChangeNumber": 35, "name": "Left Stomp – Tap" },
-    { "controlChangeNumber": 36, "name": "Middle Stomp – Scroll" },
-    { "controlChangeNumber": 37, "name": "Right Stomp – Bypass" },
-    { "controlChangeNumber": 38, "name": "Shift Button" },
-    { "controlChangeNumber": 39, "name": "Save Preset" },
-    { "controlChangeNumber": 40, "name": "Engine Order Swap" },
-    { "controlChangeNumber": 41, "name": "Solo Engine A" },
-    { "controlChangeNumber": 42, "name": "Solo Engine B" },
+    {
+      "controlChangeNumber": 11,
+      "name": "Recall Preset"
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Expression Pedal"
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Left Stomp – Tap"
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Middle Stomp – Scroll"
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Right Stomp – Bypass"
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Shift Button"
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Save Preset"
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Engine Order Swap"
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Solo Engine A"
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Solo Engine B"
+    },
     {
       "controlChangeNumber": 51,
       "name": "MIDI Clock Listener A",
       "valueRange": {
         "discreteValues": [
-          { "value": 0, "label": "Ignore MIDI Clock" },
-          { "value": 127, "label": "Listen for MIDI Clock" }
+          {
+            "value": 0,
+            "label": "Ignore MIDI Clock"
+          },
+          {
+            "value": 127,
+            "label": "Listen for MIDI Clock"
+          }
         ]
       }
     },
@@ -87,8 +202,14 @@
       "name": "MIDI Clock Listener B",
       "valueRange": {
         "discreteValues": [
-          { "value": 0, "label": "Ignore MIDI Clock" },
-          { "value": 127, "label": "Listen for MIDI Clock" }
+          {
+            "value": 0,
+            "label": "Ignore MIDI Clock"
+          },
+          {
+            "value": 127,
+            "label": "Listen for MIDI Clock"
+          }
         ]
       }
     }

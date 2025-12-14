@@ -6,9 +6,12 @@
     "manufacturer": "Gamechanger Audio",
     "model": "Auto Reverb"
   },
-  "receives": ["CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "CONTROL_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-  "controlChangeMessages": [
+  "controlChangeCommands": [
     {
       "controlChangeNumber": 8,
       "name": "Level",
@@ -97,8 +100,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative range (-1…0)" },
-          { "value": 64, "name": "Positive range (0…1)" }
+          {
+            "value": 0,
+            "name": "Negative range (-1…0)"
+          },
+          {
+            "value": 64,
+            "name": "Positive range (0…1)"
+          }
         ]
       }
     },
@@ -110,8 +119,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative range (-1…0)" },
-          { "value": 64, "name": "Positive range (0…1)" }
+          {
+            "value": 0,
+            "name": "Negative range (-1…0)"
+          },
+          {
+            "value": 64,
+            "name": "Positive range (0…1)"
+          }
         ]
       }
     },
@@ -123,8 +138,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative range (-1…0)" },
-          { "value": 64, "name": "Positive range (0…1)" }
+          {
+            "value": 0,
+            "name": "Negative range (-1…0)"
+          },
+          {
+            "value": 64,
+            "name": "Positive range (0…1)"
+          }
         ]
       }
     },
@@ -136,8 +157,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative range (-1…0)" },
-          { "value": 64, "name": "Positive range (0…1)" }
+          {
+            "value": 0,
+            "name": "Negative range (-1…0)"
+          },
+          {
+            "value": 64,
+            "name": "Positive range (0…1)"
+          }
         ]
       }
     },
@@ -149,9 +176,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Fast" },
-          { "value": 43, "name": "Slow" },
-          { "value": 85, "name": "Gate" }
+          {
+            "value": 0,
+            "name": "Fast"
+          },
+          {
+            "value": 43,
+            "name": "Slow"
+          },
+          {
+            "value": 85,
+            "name": "Gate"
+          }
         ]
       }
     },
@@ -163,9 +199,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Note" },
-          { "value": 43, "name": "Tone" },
-          { "value": 85, "name": "V/Oct" }
+          {
+            "value": 0,
+            "name": "Note"
+          },
+          {
+            "value": 43,
+            "name": "Tone"
+          },
+          {
+            "value": 85,
+            "name": "V/Oct"
+          }
         ]
       }
     },
@@ -177,9 +222,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Plate" },
-          { "value": 43, "name": "Spring" },
-          { "value": 85, "name": "Hall" }
+          {
+            "value": 0,
+            "name": "Plate"
+          },
+          {
+            "value": 43,
+            "name": "Spring"
+          },
+          {
+            "value": 85,
+            "name": "Hall"
+          }
         ]
       }
     },
@@ -191,9 +245,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 43, "name": "50%" },
-          { "value": 85, "name": "100%" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 43,
+            "name": "50%"
+          },
+          {
+            "value": 85,
+            "name": "100%"
+          }
         ]
       }
     },
@@ -205,9 +268,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Sum" },
-          { "value": 43, "name": "Ext" },
-          { "value": 85, "name": "Alt" }
+          {
+            "value": 0,
+            "name": "Sum"
+          },
+          {
+            "value": 43,
+            "name": "Ext"
+          },
+          {
+            "value": 85,
+            "name": "Alt"
+          }
         ]
       }
     },
@@ -219,9 +291,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "In" },
-          { "value": 43, "name": "Wet" },
-          { "value": 85, "name": "Mix" }
+          {
+            "value": 0,
+            "name": "In"
+          },
+          {
+            "value": 43,
+            "name": "Wet"
+          },
+          {
+            "value": 85,
+            "name": "Mix"
+          }
         ]
       }
     },
@@ -233,9 +314,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Inst" },
-          { "value": 43, "name": "Line" },
-          { "value": 85, "name": "EU" }
+          {
+            "value": 0,
+            "name": "Inst"
+          },
+          {
+            "value": 43,
+            "name": "Line"
+          },
+          {
+            "value": 85,
+            "name": "EU"
+          }
         ]
       }
     },
@@ -247,8 +337,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -260,8 +356,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -273,9 +375,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Tails Off with Clear" },
-          { "value": 43, "name": "Tails Off without Clear" },
-          { "value": 85, "name": "Tails On" }
+          {
+            "value": 0,
+            "name": "Tails Off with Clear"
+          },
+          {
+            "value": 43,
+            "name": "Tails Off without Clear"
+          },
+          {
+            "value": 85,
+            "name": "Tails On"
+          }
         ]
       }
     }

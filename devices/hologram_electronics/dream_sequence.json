@@ -7,7 +7,13 @@
     "family": "Dream Sequence",
     "model": "Dream Sequence"
   },
-  "controls": [
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CONTROL_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
     {
       "type": "controlChange",
       "controlChangeNumber": 20,
@@ -46,8 +52,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Effect Off (0–63)" },
-          { "value": 64, "name": "Effect On (64–127)" }
+          {
+            "value": 0,
+            "name": "Effect Off (0–63)"
+          },
+          {
+            "value": 64,
+            "name": "Effect On (64–127)"
+          }
         ]
       }
     }

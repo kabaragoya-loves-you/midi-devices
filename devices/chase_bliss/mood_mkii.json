@@ -9,7 +9,7 @@
     "model": "Mood MkII",
     "version": "1.0"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK", "NOTE_ON", "NOTE_OFF"],
   "transmits": [],
 
   "controlChangeCommands": [

@@ -18,8 +18,7 @@
       "additionalInfo": "[0–127] = [0…1]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -28,8 +27,7 @@
       "additionalInfo": "[0–127] = [0…1]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -38,8 +36,7 @@
       "additionalInfo": "[0–127] = [0…1]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -48,8 +45,7 @@
       "additionalInfo": "[0–127] = [0…1]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -58,8 +54,7 @@
       "additionalInfo": "[0–127] = [0…1]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -68,8 +63,7 @@
       "additionalInfo": "[0–127] = [0…1]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -78,8 +72,7 @@
       "additionalInfo": "[0–127] = [0…1]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -88,8 +81,7 @@
       "additionalInfo": "[0–127] = [0…1]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {

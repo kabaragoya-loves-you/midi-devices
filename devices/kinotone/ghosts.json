@@ -1,0 +1,293 @@
+{
+  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "title": "Kinotone Ghosts",
+  "displayName": "Ghosts",
+  "device": {
+    "manufacturer": "Kinotone",
+    "model": "Ghosts"
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK", "SYSEX", "NOTE_ON", "NOTE_OFF"],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Root",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Chord",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Touch 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Touch 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Position",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Voicing",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Reverb Mix & Placement",
+      "additionalInfo": "0–63: Pre Resonator Mix, 64–127: Post Resonator Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Pre Resonator Mix" },
+          { "value": 64, "name": "Post Resonator Mix" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Reverb Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Touch Pre/Post",
+      "additionalInfo": "0–63: Pre, 64–127: Post",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Pre" },
+          { "value": 64, "name": "Post" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Touch 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Limiter Threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Mic Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Input Filter",
+      "additionalInfo": "0–63: High Pass, 64–127: Low Pass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "High Pass" },
+          { "value": 64, "name": "Low Pass" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Exciter Type",
+      "additionalInfo": "0–31: Pluck / Strike, 32–63: Air, 64–95: Vocoder, 96–127: Vocoder Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Pluck / Strike" },
+          { "value": 32, "name": "Air" },
+          { "value": 64, "name": "Vocoder" },
+          { "value": 96, "name": "Vocoder Hold" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Touch Mode",
+      "additionalInfo": "0–31: Terrazzo, 32–63: Endless Loop, 64–95: Rhythm Generator, 96–127: Shepard Shifter",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Terrazzo" },
+          { "value": 32, "name": "Endless Loop" },
+          { "value": 64, "name": "Rhythm Generator" },
+          { "value": 96, "name": "Shepard Shifter" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Model",
+      "additionalInfo": "0–42: Strings, 43–85: Tubes, 86–127: Bars",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Strings" },
+          { "value": 43, "name": "Tubes" },
+          { "value": 86, "name": "Bars" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Mic On / Off",
+      "additionalInfo": "0–64: Off, 65–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 65, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Ignore MIDI Clock",
+      "additionalInfo": "0: Ignore, 1–127: Listen",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Ignore" },
+          { "value": 1, "name": "Listen" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Ignore MIDI Start",
+      "additionalInfo": "0: Ignore, 1–127: Listen",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Ignore" },
+          { "value": 1, "name": "Listen" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Clear Endless Loop",
+      "additionalInfo": "0–64: False, 65–127: True",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "False" },
+          { "value": 65, "name": "True" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Touch Footswitch",
+      "additionalInfo": "0–64: Off, 65–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 65, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Bypass Footswitch",
+      "additionalInfo": "0–64: Off, 65–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 65, "name": "On" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 32,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

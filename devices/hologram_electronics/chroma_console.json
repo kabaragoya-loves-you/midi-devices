@@ -21,8 +21,7 @@
       "name": "Tilt",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -31,8 +30,7 @@
       "name": "Amount Character",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -41,8 +39,7 @@
       "name": "Rate",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -51,8 +48,7 @@
       "name": "Amount Movement",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -61,8 +57,7 @@
       "name": "Time",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -71,8 +66,7 @@
       "name": "Amount Diffusion",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -81,8 +75,7 @@
       "name": "Mix",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -91,8 +84,7 @@
       "name": "Amount Texture",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -101,8 +93,7 @@
       "name": "Sensitivity",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -111,8 +102,7 @@
       "name": "Effect Vol Character",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -121,8 +111,7 @@
       "name": "Drift Movement",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -131,8 +120,7 @@
       "name": "Effect Vol Movement",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -141,8 +129,7 @@
       "name": "Drift Diffusion",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -151,8 +138,7 @@
       "name": "Effect Vol Diffusion",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -161,8 +147,7 @@
       "name": "Output Level",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -171,8 +156,7 @@
       "name": "Effect Vol Texture",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -458,8 +442,7 @@
       "name": "Gesture Stop/Erase",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -510,8 +493,7 @@
       "name": "Tap Tempo",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {

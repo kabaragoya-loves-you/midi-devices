@@ -20,8 +20,7 @@
       "name": "Octave Up Level",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -30,8 +29,7 @@
       "name": "Middle Octave Level",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -40,8 +38,7 @@
       "name": "Octave Down Level",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {

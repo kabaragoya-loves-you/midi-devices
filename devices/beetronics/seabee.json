@@ -19,8 +19,7 @@
       "additionalInfo": "Emulates the expression pedal control",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -28,8 +27,7 @@
       "name": "Ramp",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -65,8 +63,7 @@
       "additionalInfo": "Primary rate; in STING mode controls Delay Time 1",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -75,8 +72,7 @@
       "additionalInfo": "ROTO: Depth 1; DUAL: Harmony 1 (0 = no harmony, 1–12 = steps); STING: Delay Time 2 (0–11 = steps); ARP/MAD: Harmonies (0–11 = chord select)",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -84,8 +80,7 @@
       "name": "Feedback",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -93,8 +88,7 @@
       "name": "Mix",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -103,8 +97,7 @@
       "additionalInfo": "Secondary rate on ROTO and DUAL modes (0–11)",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -113,8 +106,7 @@
       "additionalInfo": "Depth 2 in ROTO mode; Harmony 2 in DUAL mode",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -122,8 +114,7 @@
       "name": "Manual Ramp",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -209,8 +200,7 @@
       "additionalInfo": "Any value emulates an extra tap",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -238,8 +228,7 @@
       "additionalInfo": "Any value resets the LFO",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -248,8 +237,7 @@
       "additionalInfo": "Any value alternates between ramp up and ramp down positions",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -258,8 +246,7 @@
       "additionalInfo": "First value emulates a press and the second value emulates a release",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {

@@ -18,8 +18,7 @@
       "name": "Repeats",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -27,8 +26,7 @@
       "name": "Tone",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -36,8 +34,7 @@
       "name": "Depth",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -45,8 +42,7 @@
       "name": "Rate",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -54,8 +50,7 @@
       "name": "Slider L",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -63,8 +58,7 @@
       "name": "Slider R",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -72,8 +66,7 @@
       "name": "Mix",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -228,8 +221,7 @@
       "additionalInfo": "Any CC value triggers tap",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {

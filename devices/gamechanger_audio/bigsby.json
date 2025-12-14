@@ -19,8 +19,7 @@
       "name": "Rate MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -28,8 +27,7 @@
       "name": "Rate LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -37,8 +35,7 @@
       "name": "Detune MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -46,8 +43,7 @@
       "name": "Detune LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -55,8 +51,7 @@
       "name": "Blend MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -64,8 +59,7 @@
       "name": "Blend LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -73,8 +67,7 @@
       "name": "Pitch Down Range",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -82,8 +75,7 @@
       "name": "Pitch Up Range",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -91,8 +83,7 @@
       "name": "Tone MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -100,8 +91,7 @@
       "name": "Tone LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -109,8 +99,7 @@
       "name": "EXP Out Range MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -118,8 +107,7 @@
       "name": "EXP Out Range LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -127,8 +115,7 @@
       "name": "EXP Out Offset MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -136,8 +123,7 @@
       "name": "EXP Out Offset LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -164,8 +150,7 @@
       "name": "Pedal Position (Full Range)",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -173,8 +158,7 @@
       "name": "Pedal Position MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -182,8 +166,7 @@
       "name": "Pedal Position LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -191,8 +174,7 @@
       "name": "Pedal Downward MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -200,8 +182,7 @@
       "name": "Pedal Downward LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -209,8 +190,7 @@
       "name": "Pedal Upward MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -218,8 +198,7 @@
       "name": "Pedal Upward LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -227,8 +206,7 @@
       "name": "Flutter Trigger & Amount",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -237,8 +215,7 @@
       "additionalInfo": "0–127 maps to 0°–180°",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -284,8 +261,7 @@
       "name": "EXP Out Override Value",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -293,8 +269,7 @@
       "name": "EXP Out Override Value MSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -302,8 +277,7 @@
       "name": "EXP Out Override Value LSB",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {

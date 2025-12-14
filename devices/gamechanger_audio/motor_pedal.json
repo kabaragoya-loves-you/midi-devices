@@ -18,8 +18,7 @@
       "additionalInfo": "[0–127] = [min MOD … max MOD]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -67,8 +66,7 @@
       "additionalInfo": "[0–127] = [min RELEASE … max RELEASE]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -77,8 +75,7 @@
       "additionalInfo": "[0–63] = [max VIBR … min VIBR], [64–127] = [min ACCEL … max ACCEL]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -87,8 +84,7 @@
       "additionalInfo": "[0–127] = [min MOD … max MOD]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -178,8 +174,7 @@
       "additionalInfo": "[0–127] = [off … fully pressed (normal range)]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {
@@ -188,8 +183,7 @@
       "additionalInfo": "[0–127] = [pressed … max pressure (floor-it)]",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": []
+        "max": 127
       }
     },
     {

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Walrus Mako MkII R1",
+  "displayName": "Mako MkII R1",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Walrus Audio",
+    "model": "Mako MkII R1",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 3, "name": "Decay", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 9, "name": "Pre Delay", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 14, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 15, "name": "Rate", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 20, "name": "Depth", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 21, "name": "Swell", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 22, "name": "Duck", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 23, "name": "EQ Low", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 24, "name": "EQ High", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 25, "name": "Size", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 26,
+      "name": "Diffuse",
+      "additionalInfo": "Shimmer amount for Air program",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    { "controlChangeNumber": 27, "name": "Feedback EQ", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 28,
+      "name": "Program Select",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Program 0" },
+          { "value": 1, "name": "Program 1" },
+          { "value": 2, "name": "Program 2" },
+          { "value": 3, "name": "Program 3" },
+          { "value": 4, "name": "Program 4" },
+          { "value": 5, "name": "Program 5" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 30,
+      "name": "Bypass",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Sustain",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Time",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 81, "name": "Octave Type", "valueRange": { "min": 0, "max": 127 } }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

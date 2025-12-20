@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Walrus ACS1 MkII",
+  "displayName": "ACS1 MkII",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Walrus Audio",
+    "model": "ACS1 MkII",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 3, "name": "Bass Left", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 9, "name": "Bass Right", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 14, "name": "Mid Left", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 15, "name": "Mid Right", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 20, "name": "Treble Left", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 21, "name": "Treble Right", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 22, "name": "Vol Left", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 23, "name": "Vol Right", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 24, "name": "Gain Left", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 25, "name": "Gain Right", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 26,
+      "name": "Cab Left",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          { "value": 0, "name": "Cab 0" },
+          { "value": 1, "name": "Cab 1" },
+          { "value": 2, "name": "Cab 2" },
+          { "value": 3, "name": "Cab 3" },
+          { "value": 4, "name": "Cab 4" },
+          { "value": 5, "name": "Cab 5" },
+          { "value": 6, "name": "Cab 6" },
+          { "value": 7, "name": "Cab 7" },
+          { "value": 8, "name": "Cab 8" },
+          { "value": 9, "name": "Cab 9" },
+          { "value": 10, "name": "Cab 10" },
+          { "value": 11, "name": "Cab 11" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Cab Right",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          { "value": 0, "name": "Cab 0" },
+          { "value": 1, "name": "Cab 1" },
+          { "value": 2, "name": "Cab 2" },
+          { "value": 3, "name": "Cab 3" },
+          { "value": 4, "name": "Cab 4" },
+          { "value": 5, "name": "Cab 5" },
+          { "value": 6, "name": "Cab 6" },
+          { "value": 7, "name": "Cab 7" },
+          { "value": 8, "name": "Cab 8" },
+          { "value": 9, "name": "Cab 9" },
+          { "value": 10, "name": "Cab 10" },
+          { "value": 11, "name": "Cab 11" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Amp Left",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Amp 0" },
+          { "value": 1, "name": "Amp 1" },
+          { "value": 2, "name": "Amp 2" },
+          { "value": 3, "name": "Amp 3" },
+          { "value": 4, "name": "Amp 4" },
+          { "value": 5, "name": "Amp 5" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Amp Right",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Amp 0" },
+          { "value": 1, "name": "Amp 1" },
+          { "value": 2, "name": "Amp 2" },
+          { "value": 3, "name": "Amp 3" },
+          { "value": 4, "name": "Amp 4" },
+          { "value": 5, "name": "Amp 5" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass 0" },
+          { "value": 1, "name": "Bypass 1" },
+          { "value": 2, "name": "Bypass 2" },
+          { "value": 3, "name": "Bypass 3" },
+          { "value": 4, "name": "Bypass 4" },
+          { "value": 5, "name": "Bypass 5" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Boost Engage",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "IR Bypass",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Amp Bypass",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 89, "name": "Gate Threshold", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 90, "name": "Gate Release", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Room Select",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Room 0" },
+          { "value": 1, "name": "Room 1" },
+          { "value": 2, "name": "Room 2" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 103, "name": "Room Decay", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 104, "name": "Presence", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 105, "name": "Resonance", "valueRange": { "min": 0, "max": 127 } }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

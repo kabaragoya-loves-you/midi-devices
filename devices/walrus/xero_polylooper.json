@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Walrus Xero Polylooper",
+  "displayName": "Xero Polylooper",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Walrus Audio",
+    "model": "Xero Polylooper",
+    "version": ""
+  },
+  "receives": ["CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["CONTROL_CHANGE", "CLOCK"],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 0, "name": "Track 1 Pan", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 1, "name": "Track 2 Pan", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 2, "name": "Track 1 Volume", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 3, "name": "Track 2 Volume", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 4,
+      "name": "Track 1 Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "x0.5" },
+          { "value": 1, "name": "x1" },
+          { "value": 2, "name": "x2" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Track 2 Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "x0.5" },
+          { "value": 1, "name": "x1" },
+          { "value": 2, "name": "x2" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Track 1 Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Forward" },
+          { "value": 1, "name": "Reverse" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Track 2 Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Forward" },
+          { "value": 1, "name": "Reverse" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Track 1 FX On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Track 2 FX On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Loop Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Sync Mode" },
+          { "value": 1, "name": "Unsynced Mode" },
+          { "value": 2, "name": "Poly Mode" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Channel Select",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Channel 1" },
+          { "value": 1, "name": "Channel 2" },
+          { "value": 2, "name": "Both Channels" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Play",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Channel 1" },
+          { "value": 1, "name": "Channel 2" },
+          { "value": 2, "name": "Channel 1 & 2" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Stop",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Channel 1" },
+          { "value": 1, "name": "Channel 2" },
+          { "value": 2, "name": "Channel 1 & 2" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Record",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Channel 1" },
+          { "value": 1, "name": "Channel 2" },
+          { "value": 2, "name": "Channel 1 & 2" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Stop Record",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Channel 1" },
+          { "value": 1, "name": "Channel 2" },
+          { "value": 2, "name": "Channel 1 & 2" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Undo",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Channel 1" },
+          { "value": 1, "name": "Channel 2" },
+          { "value": 2, "name": "Channel 1 & 2" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 0,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

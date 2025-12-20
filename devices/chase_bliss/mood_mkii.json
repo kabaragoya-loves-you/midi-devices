@@ -1,11 +1,11 @@
 {
   "schemaVersion": "0.1.1",
-  "title": "Chase Bliss Audio Mood MkII",
-  "displayName": "Chase Bliss Audio Mood MkII",
+  "title": "Chase Bliss Mood MkII",
+  "displayName": "Chase Bliss Mood MkII",
   "implementationVersion": "0",
   "device": {
     "displayName": "",
-    "manufacturer": "Chase Bliss Audio",
+    "manufacturer": "Chase Bliss",
     "model": "Mood MkII",
     "version": "1.0"
   },

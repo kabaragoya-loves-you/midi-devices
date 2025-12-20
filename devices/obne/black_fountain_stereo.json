@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "OBNE Black Fountain Stereo",
+  "displayName": "Black Fountain Stereo",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Old Blood Noise Endeavors",
+    "model": "Black Fountain Stereo",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 11, "name": "Expression", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 14, "name": "Dry Volume", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 15, "name": "Wet Volume", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 16, "name": "Space", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 17, "name": "Rate", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 18, "name": "Depth", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 19, "name": "Tone", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 20, "name": "Grit", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 21, "name": "Time L", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 22,
+      "name": "Subdivisions L",
+      "additionalInfo": "0–21: sixteenth, 22–42: dotted sixteenth, 43–63: eighth, 64–84: triplet, 85–105: dotted eighth, 106–127: quarter",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Sixteenth" },
+          { "value": 22, "name": "Dotted Sixteenth" },
+          { "value": 43, "name": "Eighth" },
+          { "value": 64, "name": "Triplet" },
+          { "value": 85, "name": "Dotted Eighth" },
+          { "value": 106, "name": "Quarter" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 23, "name": "Time R", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 24,
+      "name": "Subdivisions R",
+      "additionalInfo": "0–21: sixteenth, 22–42: dotted sixteenth, 43–63: eighth, 64–84: triplet, 85–105: dotted eighth, 106–127: quarter",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Sixteenth" },
+          { "value": 22, "name": "Dotted Sixteenth" },
+          { "value": 43, "name": "Eighth" },
+          { "value": 64, "name": "Triplet" },
+          { "value": 85, "name": "Dotted Eighth" },
+          { "value": 106, "name": "Quarter" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 25, "name": "Feedback", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 26,
+      "name": "Bypass Switch",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Tap Tempo Switch",
+      "additionalInfo": "Tap pulse at value 0",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Preset Saving Switch",
+      "additionalInfo": "0–42: Cancel Save, 43–85: Start Save, 86–127: Confirm Save",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Cancel Save" },
+          { "value": 43, "name": "Start Save" },
+          { "value": 86, "name": "Confirm Save" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "MIDI Clock Input Mode",
+      "additionalInfo": "0–31: Accept Clock In & Send Thru, 32–63: Accept Clock In Only, 64–95: Send Clock Out Only, 96–127: Deactivate Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Accept In & Send Thru" },
+          { "value": 32, "name": "Accept In Only" },
+          { "value": 64, "name": "Send Out Only" },
+          { "value": 96, "name": "Deactivate Clock" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Trails Setting",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Stereo Setting",
+      "additionalInfo": "0–42: Mono, 43–85: Mono In Stereo Out, 86–127: Stereo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Mono" },
+          { "value": 43, "name": "Mono In Stereo Out" },
+          { "value": 86, "name": "Stereo" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "MIDI Channel",
+      "additionalInfo": "1–16",
+      "valueRange": { "min": 1, "max": 16 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 127,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

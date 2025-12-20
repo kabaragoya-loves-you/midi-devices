@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Walrus Mako MkII D1",
+  "displayName": "Mako MkII D1",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Walrus Audio",
+    "model": "Mako MkII D1",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 14, "name": "Time", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 15, "name": "Repeats", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 20, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 21, "name": "Mod", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 22, "name": "Tone", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 23, "name": "Age", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 25, "name": "Duck", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 24,
+      "name": "Program Select",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Program 0" },
+          { "value": 1, "name": "Program 1" },
+          { "value": 2, "name": "Program 2" },
+          { "value": 3, "name": "Program 3" },
+          { "value": 4, "name": "Program 4" },
+          { "value": 5, "name": "Program 5" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 28,
+      "name": "Div Left",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Div 0" },
+          { "value": 1, "name": "Div 1" },
+          { "value": 2, "name": "Div 2" },
+          { "value": 3, "name": "Div 3" },
+          { "value": 4, "name": "Div 4" },
+          { "value": 5, "name": "Div 5" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Div Right",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Div 0" },
+          { "value": 1, "name": "Div 1" },
+          { "value": 2, "name": "Div 2" },
+          { "value": 3, "name": "Div 3" },
+          { "value": 4, "name": "Div 4" },
+          { "value": 5, "name": "Div 5" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Feedback Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Mode 0" },
+          { "value": 1, "name": "Mode 1" },
+          { "value": 2, "name": "Mode 2" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Mod Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Shape 0" },
+          { "value": 1, "name": "Shape 1" },
+          { "value": 2, "name": "Shape 2" },
+          { "value": 3, "name": "Shape 3" },
+          { "value": 4, "name": "Shape 4" },
+          { "value": 5, "name": "Shape 5" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Grain Pitch",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "value": 0, "name": "Pitch 0" },
+          { "value": 1, "name": "Pitch 1" },
+          { "value": 2, "name": "Pitch 2" },
+          { "value": 3, "name": "Pitch 3" },
+          { "value": 4, "name": "Pitch 4" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Reverse Mode",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 36, "name": "Ramp", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 37, "name": "Mod Rate", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 38, "name": "Grain Size", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 39, "name": "Grain X", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 29,
+      "name": "Bypass",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Tap",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 98, "name": "Spread", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 89,
+      "name": "MIDI Clock Ignore",
+      "additionalInfo": "0: Off, 127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

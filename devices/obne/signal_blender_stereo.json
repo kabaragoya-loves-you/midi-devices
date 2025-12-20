@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "OBNE Signal Blender Stereo",
+  "displayName": "Signal Blender Stereo",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Old Blood Noise Endeavors",
+    "model": "Signal Blender Stereo",
+    "version": ""
+  },
+  "receives": ["CONTROL_CHANGE"],
+  "transmits": ["CONTROL_CHANGE"],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 15,
+      "name": "A Switch",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "B Switch",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Clean Switch",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Trails A Switch",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Trails B Switch",
+      "additionalInfo": "0–63: Off, 64–127: On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Assign All Bypass Switches",
+      "additionalInfo": "0: Clean Off, B Off, A Off; 1: Clean Off, B Off, A On; 2: Clean Off, B On, A Off; 3: Clean Off, B On, A On; 4: Clean On, B Off, A Off; 5: Clean On, B Off, A On; 6: Clean On, B On, A Off; 7: Clean On, B On, A On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Clean Off, B Off, A Off" },
+          { "value": 1, "name": "Clean Off, B Off, A On" },
+          { "value": 2, "name": "Clean Off, B On, A Off" },
+          { "value": 3, "name": "Clean Off, B On, A On" },
+          { "value": 4, "name": "Clean On, B Off, A Off" },
+          { "value": 5, "name": "Clean On, B Off, A On" },
+          { "value": 6, "name": "Clean On, B On, A Off" },
+          { "value": 7, "name": "Clean On, B On, A On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Allow Kill Dry",
+      "additionalInfo": "0–63: Off (default; clean turns on automatically when all sections are off in trails mode), 64–127: On (clean always matches user assignment)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "MIDI Channel",
+      "additionalInfo": "1–16",
+      "valueRange": { "min": 1, "max": 16 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 0,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

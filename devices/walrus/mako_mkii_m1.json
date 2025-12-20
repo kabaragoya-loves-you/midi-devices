@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Walrus Mako MkII M1",
+  "displayName": "Mako MkII M1",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Walrus Audio",
+    "model": "Mako MkII M1",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 3, "name": "Rate", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 9, "name": "Depth", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 14, "name": "Lo-Fi Mix", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 15,
+      "name": "Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Shape 0" },
+          { "value": 1, "name": "Shape 1" },
+          { "value": 2, "name": "Shape 2" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Division",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Div 0" },
+          { "value": 1, "name": "Div 1" },
+          { "value": 2, "name": "Div 2" },
+          { "value": 3, "name": "Div 3" },
+          { "value": 4, "name": "Div 4" },
+          { "value": 5, "name": "Div 5" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Type",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Type 0" },
+          { "value": 1, "name": "Type 1" },
+          { "value": 2, "name": "Type 2" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 19, "name": "Tone", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 20, "name": "Symmetry", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 21, "name": "X", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 22, "name": "Lo-Fi Envelope", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 23, "name": "Lo-Fi Drive", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 24, "name": "Lo-Fi Space", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 25,
+      "name": "Lo-Fi Age",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "value": 0, "name": "Age 0" },
+          { "value": 1, "name": "Age 1" },
+          { "value": 2, "name": "Age 2" },
+          { "value": 3, "name": "Age 3" },
+          { "value": 4, "name": "Age 4" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 26, "name": "Lo-Fi Noise", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 27, "name": "Lo-Fi Warble", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 18,
+      "name": "Program Select",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "Program 0" },
+          { "value": 1, "name": "Program 1" },
+          { "value": 2, "name": "Program 2" },
+          { "value": 3, "name": "Program 3" },
+          { "value": 4, "name": "Program 4" },
+          { "value": 5, "name": "Program 5" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 127, "name": "Tap" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Tap Held",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 127, "name": "Held" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Rotary Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Slow" },
+          { "value": 127, "name": "Fast" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 88, "name": "Output Gain", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 89,
+      "name": "MIDI Clock Ignore",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Listen" },
+          { "value": 127, "name": "Ignore" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 104, "name": "Wet Dry Mix", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 105, "name": "Flange Feedback", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 106, "name": "Rotary Slow Rate", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 107, "name": "Rotary Fast Rate", "valueRange": { "min": 0, "max": 127 } }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

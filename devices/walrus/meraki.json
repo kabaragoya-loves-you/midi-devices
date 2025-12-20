@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Walrus Meraki",
+  "displayName": "Meraki",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Walrus Audio",
+    "model": "Meraki",
+    "version": ""
+  },
+  "receives": ["CONTROL_CHANGE", "CLOCK"],
+  "transmits": [],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 14, "name": "Time L", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 15, "name": "Time R", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 22, "name": "Mod Depth L", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 23, "name": "Mod Depth R", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 24, "name": "Mod Rate L", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 25, "name": "Mod Rate R", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 26,
+      "name": "Sync",
+      "additionalInfo": "0–42: L, 43–85: R, 86–127: S",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "L" },
+          { "value": 43, "name": "R" },
+          { "value": 86, "name": "S" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Division L",
+      "additionalInfo": "0–42: .1/8, 43–85: 1/8, 86–127: 1/4",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": ".1/8" },
+          { "value": 43, "name": "1/8" },
+          { "value": 86, "name": "1/4" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Division R",
+      "additionalInfo": "0–42: .1/8, 43–85: 1/8, 86–127: 1/4",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": ".1/8" },
+          { "value": 43, "name": "1/8" },
+          { "value": 86, "name": "1/4" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 29,
+      "name": "Bypass",
+      "additionalInfo": "Off: 0, On: 127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Tap Tempo",
+      "additionalInfo": "Send 127 to trigger",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "value": 127, "name": "Tap" }]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Feedback Path",
+      "additionalInfo": "0–42: P-P, 43–85: S, 86–127: P",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "P-P" },
+          { "value": 43, "name": "S" },
+          { "value": 86, "name": "P" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 85,
+      "name": "Feedback Ramp",
+      "additionalInfo": "Off: 0, On: 127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Expression Destination",
+      "additionalInfo": "0–21: Time L, 22–42: Mod Depth L, 43–63: Time R, 64–85: Mod Depth R, 86–106: Mod Rate L, 107–127: Mod Rate R",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Time L" },
+          { "value": 22, "name": "Mod Depth L" },
+          { "value": 43, "name": "Time R" },
+          { "value": 64, "name": "Mod Depth R" },
+          { "value": 86, "name": "Mod Rate L" },
+          { "value": 107, "name": "Mod Rate R" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Bypass Mode",
+      "additionalInfo": "Trails: 0, No Trails: 127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Trails" },
+          { "value": 127, "name": "No Trails" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Clock Bypass",
+      "additionalInfo": "Off: 0, On: 127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Mod Shape L",
+      "additionalInfo": "0–42: Square, 43–85: Random, 86–127: Sine",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Square" },
+          { "value": 43, "name": "Random" },
+          { "value": 86, "name": "Sine" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Mod Shape R",
+      "additionalInfo": "0–42: Square, 43–85: Random, 86–127: Sine",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Square" },
+          { "value": 43, "name": "Random" },
+          { "value": 86, "name": "Sine" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Mod Phase",
+      "additionalInfo": "0–42: 180, 43–85: 90, 86–127: 0",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "180" },
+          { "value": 43, "name": "90" },
+          { "value": 86, "name": "0" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 0,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

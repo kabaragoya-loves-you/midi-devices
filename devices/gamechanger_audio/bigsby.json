@@ -788,7 +788,7 @@
   "x_pc": {
     "indexBase": 1,
     "count": 118,
-    "bankSelect": "none"
+    "bankSelectMode": "none"
   },
   "x_midiTrs": "TYPE_B",
   "x_midiChannel": 1

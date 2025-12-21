@@ -17,7 +17,7 @@
   "x_pc": {
     "indexBase": 0,
     "count": 128,
-    "bankSelect": "none"
+    "bankSelectMode": "none"
   },
 
   "x_midiTrs": "BOTH",

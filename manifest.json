@@ -1,16 +1,52 @@
 {
   "schema": 1,
-  "generatedAt": "2025-12-21T04:47:12Z",
-  "count": 89,
+  "generatedAt": "2025-12-21T08:44:46Z",
+  "count": 93,
   "devices": [
+    {
+      "slug": "aerospace_audio.atmosphere_v2@0",
+      "vendor": "aerospace_audio",
+      "product": "atmosphere_v2",
+      "version": "0",
+      "path": "devices/aerospace_audio/atmosphere_v2.json",
+      "sha256": "0ebe7c0619829120837907603f044b37a7dd938c59cb2e4ebb00598190c452ba",
+      "size": 4709,
+      "receives": ["CONTROL_CHANGE"],
+      "transmits": [],
+      "ccCount": 9,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 0,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "aerospace_audio.atmosphere_v3@0",
+      "vendor": "aerospace_audio",
+      "product": "atmosphere_v3",
+      "version": "0",
+      "path": "devices/aerospace_audio/atmosphere_v3.json",
+      "sha256": "4fe14a6051b60ac8e37034db5456ca0db626b30f92df888390df8b9d7a9d77e0",
+      "size": 4270,
+      "receives": ["CONTROL_CHANGE"],
+      "transmits": [],
+      "ccCount": 11,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 0,
+        "bankSelectMode": "none"
+      }
+    },
     {
       "slug": "beetronics.seabee@",
       "vendor": "beetronics",
       "product": "seabee",
       "version": "",
       "path": "devices/beetronics/seabee.json",
-      "sha256": "e1164c5148cb6835aad528637ec4da82590a7d7cf1d08f93470c9e26b6c93df6",
-      "size": 7076,
+      "sha256": "f8cf943450df0f479e6698902fee1c92e933d4e20fef0d91fa0cb3b86b6fa1bb",
+      "size": 7080,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -22,7 +58,50 @@
       "x_pc": {
         "indexBase": 0,
         "count": 16,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "bondi_effects.art_van_delay@0",
+      "vendor": "bondi_effects",
+      "product": "art_van_delay",
+      "version": "0",
+      "path": "devices/bondi_effects/art_van_delay.json",
+      "sha256": "0fa5b3126c0effbaabdddc4a71b03847b7571ec57c9c53bcdc0e3816213378db",
+      "size": 2018,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 9,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "chaos_audio.stratus@0",
+      "vendor": "chaos_audio",
+      "product": "stratus",
+      "version": "0",
+      "path": "devices/chaos_audio/stratus.json",
+      "sha256": "a3ac0b605dcbd67087f646d3310fe63984b91dc37877ac0dbc20cfd182712bb8",
+      "size": 1661,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 6,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
       }
     },
     {
@@ -31,8 +110,8 @@
       "product": "billy_strings_wombtone",
       "version": "0",
       "path": "devices/chase_bliss/billy_strings_wombtone.json",
-      "sha256": "6dc774aa163d4ef000dd492a5ce028939bb440fb194413e8866b53d1520784af",
-      "size": 2887,
+      "sha256": "432a391c43e23bc7697c352d1c726dd904195225def0403d2cda825a6e9f9440",
+      "size": 2891,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -44,7 +123,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -53,8 +132,8 @@
       "product": "bliss_factory",
       "version": "0",
       "path": "devices/chase_bliss/bliss_factory.json",
-      "sha256": "bbcd5dc52cae2ae346e9080f1c2b82c81af5800afaefbbbb90080d6e55bf33b1",
-      "size": 3123,
+      "sha256": "87be7bad7e203c51fa10a2b362079bf3ccf763f9f25a489592e5ca762f34ade7",
+      "size": 3127,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -65,7 +144,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -74,8 +153,8 @@
       "product": "blooper",
       "version": "0",
       "path": "devices/chase_bliss/blooper.json",
-      "sha256": "c8db88540a85dee1f4cd8ceafcc5f79064e108d38bd44a37c562362edf165b40",
-      "size": 5991,
+      "sha256": "737aaef25675eec59f7c8ba1414fe78e814920dc1eb25a399eea801e2c59ffcd",
+      "size": 5995,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -87,7 +166,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 16,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -96,8 +175,8 @@
       "product": "brothers",
       "version": "0",
       "path": "devices/chase_bliss/brothers.json",
-      "sha256": "c81ede86c0a038d007aeddbfaba5aa9b99ace69e115308d33acb2e3465893547",
-      "size": 3508,
+      "sha256": "097f38fcc38417682b9a205116c40f2fbb4fbdd3c39d56ca54435cb9db5e0e8d",
+      "size": 3512,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -108,7 +187,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -117,8 +196,8 @@
       "product": "brothers_am",
       "version": "0",
       "path": "devices/chase_bliss/brothers_am.json",
-      "sha256": "65191cc9d3226d47b11b699cfa7a5e2499498900e7ddea3f7c6fd3d6a25d4a3b",
-      "size": 8523,
+      "sha256": "e625b67e16d67916ed4d5d7266afdb6abe8a2db3e73152314c03db850c779791",
+      "size": 8527,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -129,7 +208,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -138,8 +217,8 @@
       "product": "clean",
       "version": "0",
       "path": "devices/chase_bliss/clean.json",
-      "sha256": "806749915c02089a442331d22b3adcf3f8d25e82a9c16b2a4a3b1a2abbb472ce",
-      "size": 10186,
+      "sha256": "aa9c693bc3e7bd30c9d30aed233689258a389ef3259b29fd0af64799cfc85b3b",
+      "size": 10190,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -150,7 +229,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -159,8 +238,8 @@
       "product": "condor",
       "version": "0",
       "path": "devices/chase_bliss/condor.json",
-      "sha256": "d4eec767d5c57e1b19983949258485376a593e9c633aa689744078b1876a68ce",
-      "size": 3190,
+      "sha256": "e375ac484e5586bb12831639f064e320146ce855cd05ca497b31999a1a4b1a44",
+      "size": 3194,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -171,7 +250,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -180,8 +259,8 @@
       "product": "condor_hifi",
       "version": "0",
       "path": "devices/chase_bliss/condor_hifi.json",
-      "sha256": "81a07dbbd61364e193326722f2d15a4665d624f15a5ddeebe027a1d89e06e394",
-      "size": 2948,
+      "sha256": "0d719df3b89e29dd9d0aa26ca6a17229063c7c3f285a6452bfb63b51762f4f14",
+      "size": 2952,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -192,7 +271,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -201,8 +280,8 @@
       "product": "cxm_1978",
       "version": "0",
       "path": "devices/chase_bliss/cxm_1978.json",
-      "sha256": "6f3ece496138829a1e9cba4cc054d5f4216a63683c307f76310d1a1e7aeabee9",
-      "size": 3953,
+      "sha256": "d7fe8597769e900a1d7b122ff0335b8d52e2f55bcacff104d1770645d423a4a7",
+      "size": 3957,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -213,7 +292,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 30,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -222,8 +301,8 @@
       "product": "dark_world",
       "version": "0",
       "path": "devices/chase_bliss/dark_world.json",
-      "sha256": "20ca80748e6db23d8a4159bf47ef87c7ec23f362bfca8d058288cd16ca4ba226",
-      "size": 2959,
+      "sha256": "0f5c3ed15ac998808d6da57803d18c2ab2f800eab8c80f96fd730ca960dcae10",
+      "size": 2963,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -234,7 +313,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -243,8 +322,8 @@
       "product": "generation_loss",
       "version": "0",
       "path": "devices/chase_bliss/generation_loss.json",
-      "sha256": "ef08e420812669c631d4cb7d1b64ec5054e31536630c2dae651c353a3083fdbf",
-      "size": 2909,
+      "sha256": "2b22570c7c75ebccd5b7d364f30f1af356f1d9efffa5eaa0783b683b530ef9f2",
+      "size": 2913,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -255,7 +334,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -264,8 +343,8 @@
       "product": "generation_loss_mkii",
       "version": "0",
       "path": "devices/chase_bliss/generation_loss_mkii.json",
-      "sha256": "61e50ee67a6f792eeb81e9970f7300da0c91d8b968de81d6b46595ecdafbad67",
-      "size": 11265,
+      "sha256": "686d294a697ded77e0205b9028c9ed928dac50f1520e362e206e9d20ff49dea5",
+      "size": 11269,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -276,7 +355,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -285,8 +364,8 @@
       "product": "gravitas",
       "version": "0",
       "path": "devices/chase_bliss/gravitas.json",
-      "sha256": "967ca11aa0c2523a3fd63396c26e4ba749e9a10695cb7de08980d6380bb62cc2",
-      "size": 2999,
+      "sha256": "7083bcf5ffe6c33eb17fb2f46b157f1b07ede925094b66d5bc75bdc77084d5d8",
+      "size": 3003,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -298,7 +377,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -307,8 +386,8 @@
       "product": "habit",
       "version": "0",
       "path": "devices/chase_bliss/habit.json",
-      "sha256": "6a8af83607b3090a157354c0dd0ec8cd8ef8fd971bd929b9b43fd4f1682010ef",
-      "size": 4161,
+      "sha256": "b810d6fa0ee7c998816b7867e360070a46220348c63b1d78dc4d79b1dbb73d5e",
+      "size": 4165,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -320,7 +399,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -329,8 +408,8 @@
       "product": "lossy",
       "version": "0",
       "path": "devices/chase_bliss/lossy.json",
-      "sha256": "85e78922dd9bc24dd91c544f27583bf9fe3e6379adb5f6a89b9ab70cd60f704c",
-      "size": 10785,
+      "sha256": "9a9be35c89067016901349376b2b09c79461bb478ab8885568b15b8fbaf7ec7c",
+      "size": 10789,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -341,7 +420,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -350,8 +429,8 @@
       "product": "lost+found",
       "version": "0",
       "path": "devices/chase_bliss/lost+found.json",
-      "sha256": "0eb1049bdf59b4063671e8fb44258a0c775ba0c91f85495776f4a668298d9c63",
-      "size": 15084,
+      "sha256": "e1d689c46e5326da961c7db20460e4f887bd313880b24b501d90fedd2ea699f6",
+      "size": 15088,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -363,7 +442,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -372,8 +451,8 @@
       "product": "mood",
       "version": "0",
       "path": "devices/chase_bliss/mood.json",
-      "sha256": "c4a332a68e02488f46ea244ed07096af40bdb5b01cc85084333010d68db8b586",
-      "size": 4482,
+      "sha256": "44bc7370b5f8394ef8a4a3fe7c91a78a5590cc7e5c24ae13ffbc4d0a8d69cc2b",
+      "size": 4486,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -385,7 +464,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -394,8 +473,8 @@
       "product": "mood_mkii",
       "version": "0",
       "path": "devices/chase_bliss/mood_mkii.json",
-      "sha256": "aa132c185337e2c3c38e1b4f1f566786d04d46525202741147cf619767566a71",
-      "size": 4449,
+      "sha256": "f9c60e279fdcd2370e3d8c4c5e8c04b9ce32ed9337917d120bd303ebc981be06",
+      "size": 4441,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -409,7 +488,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -418,8 +497,8 @@
       "product": "onward",
       "version": "0",
       "path": "devices/chase_bliss/onward.json",
-      "sha256": "0c3e9ce79c9dfa6d380d134c0af1e568bd2391bcdb15dd3a2087be3863e543a6",
-      "size": 14787,
+      "sha256": "b1bc6aecc7cb55bb8725aa072267f51b7d36dd90a4fbb38af5d3db92d23a13b4",
+      "size": 14791,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -431,7 +510,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -440,8 +519,8 @@
       "product": "preamp_mkii",
       "version": "0",
       "path": "devices/chase_bliss/preamp_mkii.json",
-      "sha256": "10262144294ed23d64ffe233e6237a30c9cdca014df66f563cc303b24ab43536",
-      "size": 3683,
+      "sha256": "423230dbec1532f4c3a2a0ea554c8b3037f54aab225cbdf04199c75265d2545c",
+      "size": 3687,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -452,7 +531,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 30,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -461,8 +540,8 @@
       "product": "reverse_mode_c",
       "version": "0",
       "path": "devices/chase_bliss/reverse_mode_c.json",
-      "sha256": "c33efedc8c12040f706234ddebd33eda9181def23dd9601903b7832b1ce3b914",
-      "size": 13530,
+      "sha256": "9c5dbca0003efbd1e54bb9f3a174af10a8c5bd992b092a55de6b0d2abfbdc7b1",
+      "size": 13534,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -474,7 +553,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -483,8 +562,8 @@
       "product": "spectre",
       "version": "0",
       "path": "devices/chase_bliss/spectre.json",
-      "sha256": "152d82c2f94a0463bd278fa3f54bfb78dccf983bc99677b0009e9912b8711570",
-      "size": 2981,
+      "sha256": "217592e7de739c87d936f6ab905bf4f827bcacf96be98823516558001851789a",
+      "size": 2985,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -496,7 +575,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -505,8 +584,8 @@
       "product": "thermae",
       "version": "0",
       "path": "devices/chase_bliss/thermae.json",
-      "sha256": "8148ad4329b7f0f5fe1a39442979c144d85268e33fd0873ccf5f42d83abf8229",
-      "size": 5330,
+      "sha256": "6bbeb430cce8b92486ba0f8028b13fc22277b241db3976ff6fb1cd2cd4503fd2",
+      "size": 5334,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -518,7 +597,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -527,8 +606,8 @@
       "product": "tonal_recall",
       "version": "0",
       "path": "devices/chase_bliss/tonal_recall.json",
-      "sha256": "869a922843fc94e065b8c7575aad8c3ba1edc39e6fd57d1651c7e3a46203508c",
-      "size": 3054,
+      "sha256": "4be873f885117a5be0ad7baf16aeb44591d250069a699ab8f7fb0e8eff9d6ec3",
+      "size": 3058,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -540,7 +619,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -549,8 +628,8 @@
       "product": "warped_vinyl_hifi",
       "version": "0",
       "path": "devices/chase_bliss/warped_vinyl_hifi.json",
-      "sha256": "e1d947bf39ff63de2bec9262f61a9384fc6618a812d84ca5082b0872a74609ce",
-      "size": 4225,
+      "sha256": "082c9bc4feabcbaccf97a8ba8d5cb5a365747b8d95780cd0256940b2b1f236ee",
+      "size": 4229,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -562,7 +641,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -571,8 +650,8 @@
       "product": "warped_vinyl_mkii",
       "version": "0",
       "path": "devices/chase_bliss/warped_vinyl_mkii.json",
-      "sha256": "ae1e624bc992b4032b6f34a62d06a144c2c1496746e1bdf0cdd902dca546e7ef",
-      "size": 3011,
+      "sha256": "6eebaf0ad4d08adbc69a1fac7aa250e016de9011409c53882210ded06ba875f6",
+      "size": 3015,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -584,7 +663,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -593,8 +672,8 @@
       "product": "wombtone_mkii",
       "version": "0",
       "path": "devices/chase_bliss/wombtone_mkii.json",
-      "sha256": "9179ec45cca51e4edacdbe503011a7a95783113aa20ff47574dc5d35ee61f069",
-      "size": 3022,
+      "sha256": "a0ef80a9555e2a79f20e4084e84dea6d27b73c770011961fb5046c99c4c24875",
+      "size": 3026,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -606,7 +685,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 122,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -615,8 +694,8 @@
       "product": "echosystem",
       "version": "",
       "path": "devices/empress/echosystem.json",
-      "sha256": "e3c18f742d30b0fb3652b4d46cc2d7400b0285b824d12358cc781dbda79b55a3",
-      "size": 4524,
+      "sha256": "99ac6b0af7661a18c4bddcc0ba4324e70d683bf16f87c03f55a7b98a6d3ebeb3",
+      "size": 4528,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -628,7 +707,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 35,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -637,8 +716,8 @@
       "product": "reverb",
       "version": "0",
       "path": "devices/empress/reverb.json",
-      "sha256": "13f970185b0fa80cf9cf1afe5167c0e2cf9995a2e1d2a9fe8434fda9784ee5ad",
-      "size": 3377,
+      "sha256": "37a725cf8260a4843b20204486cb27a51b46f753f20394003e6832762c7a4865",
+      "size": 3381,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -650,7 +729,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 35,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -659,8 +738,8 @@
       "product": "echolocator",
       "version": "0",
       "path": "devices/erica_synths/echolocator.json",
-      "sha256": "a76e57bcdb91583b7908740de3dff87b19e83c952e2a6bc32d80b15bf8a59241",
-      "size": 2173,
+      "sha256": "8222c871b3778abd1c9f192ddea7b37205dfa75a1147b92969bb9f668100d69d",
+      "size": 2177,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -671,7 +750,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 100,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -680,8 +759,8 @@
       "product": "nightverb",
       "version": "0",
       "path": "devices/erica_synths/nightverb.json",
-      "sha256": "9634bbc96464af41011f3bdadb5c3e714c8476413f85831e71c911a2d0311501",
-      "size": 2267,
+      "sha256": "472a6fef932e723dd883433b2e514f6e080acb2df8ad8eebf094cd36fb6abbc3",
+      "size": 2271,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -692,7 +771,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 100,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -701,8 +780,8 @@
       "product": "xenodrive",
       "version": "0",
       "path": "devices/erica_synths/xenodrive.json",
-      "sha256": "677768f759d59cbf5f123d3ffd872de6ee7ba528738715f588367466ea01a3e8",
-      "size": 2249,
+      "sha256": "026e15e0dc6cc61388769deca1ee544ab0c31163ea358c0032f4b3670e0e7f4f",
+      "size": 2253,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -713,7 +792,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 100,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -722,8 +801,8 @@
       "product": "zen_delay",
       "version": "0",
       "path": "devices/erica_synths/zen_delay.json",
-      "sha256": "95ceb0d2f78a14d9e5737700535a0deac12f1841756042ad2b645d9daed67182",
-      "size": 452,
+      "sha256": "ce584833473ccbfc45e7ffe6ceb14cd6a3bed34999a9177c9b8329a131a7afc1",
+      "size": 456,
       "receives": ["CLOCK"],
       "transmits": [],
       "ccCount": 0,
@@ -731,7 +810,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 0,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -740,8 +819,8 @@
       "product": "auto_chorus",
       "version": "",
       "path": "devices/gamechanger_audio/auto_chorus.json",
-      "sha256": "34c64d6c27f5adf912489ec2029ada332152db67a819beaa7c3c97164787261d",
-      "size": 8333,
+      "sha256": "5bd82c838c68ae776a6662ad66c71331f0d267ae6b3277ab76d2b217d9aa3c37",
+      "size": 8337,
       "receives": [
         "CONTROL_CHANGE",
         "CLOCK"
@@ -752,7 +831,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 0,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -761,8 +840,8 @@
       "product": "auto_delay",
       "version": "",
       "path": "devices/gamechanger_audio/auto_delay.json",
-      "sha256": "2370d661b3de7087cd46ea021e007e6a6a899722a9c95df37c210b17721853f4",
-      "size": 8911,
+      "sha256": "98fe0f7c6f09a18f086ab1c866f081bd83919eea2712df603e2eb883eb785aa8",
+      "size": 8915,
       "receives": [
         "CONTROL_CHANGE",
         "CLOCK"
@@ -773,7 +852,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 0,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -782,8 +861,8 @@
       "product": "auto_reverb",
       "version": "",
       "path": "devices/gamechanger_audio/auto_reverb.json",
-      "sha256": "619ba2e029392a84f73d9e3e1d836ae559eee57afb46e2736b90fa210a6019cf",
-      "size": 8908,
+      "sha256": "e637d7b3aade2dab7593cff17c927cb76e66034293f3d6eac8cabd0dc517fc44",
+      "size": 8912,
       "receives": [
         "CONTROL_CHANGE",
         "CLOCK"
@@ -794,7 +873,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 0,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -803,8 +882,8 @@
       "product": "bigsby",
       "version": "",
       "path": "devices/gamechanger_audio/bigsby.json",
-      "sha256": "b2ced5f6e9b43ba9ceb9ee13b0c59d9b888d9c47f3c91079d0e34253d0ecda23",
-      "size": 15956,
+      "sha256": "5f2309ad9136d94ad371512cc1ecd99e61098754d22c3b0f9ce8fb5dd4dcfc19",
+      "size": 15960,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -817,7 +896,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 118,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -826,8 +905,8 @@
       "product": "motor_pedal",
       "version": "",
       "path": "devices/gamechanger_audio/motor_pedal.json",
-      "sha256": "3d2e7b8470b6a8230d9600d4291f07f796f436fe85b87834e4dba29813c95cf3",
-      "size": 6190,
+      "sha256": "c37ad9fbb422b2bbf083da14337b82d70f2df1a0374d34536e776a2a853a24ff",
+      "size": 6194,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -838,7 +917,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 15,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -847,8 +926,8 @@
       "product": "chroma_console",
       "version": "",
       "path": "devices/hologram_electronics/chroma_console.json",
-      "sha256": "13723701bf2d8776a1cb11bf55fc8df9482bd8dca6e8bb38e7623d54b84be19e",
-      "size": 12503,
+      "sha256": "56db94297573c11b8cfce295b33711d07fb7a0b40fce7812f0297b783be5ecb7",
+      "size": 12507,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -860,7 +939,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 80,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -869,8 +948,8 @@
       "product": "dream_sequence",
       "version": "",
       "path": "devices/hologram_electronics/dream_sequence.json",
-      "sha256": "3eee8e2df5b1c9cdcce57448cf9673df275b4fda6d2c64f3abd14f00ea6e0f90",
-      "size": 1571,
+      "sha256": "03ee98f08c9eff8adbb806d9a6bd79185ba997a654d53c4f533a1453398563f1",
+      "size": 1575,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -882,7 +961,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 35,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -891,8 +970,8 @@
       "product": "microcosm",
       "version": "",
       "path": "devices/hologram_electronics/microcosm.json",
-      "sha256": "b3da90c34b96aad385983a2e2d93ee4556b69c125dabdebf80da25d224376843",
-      "size": 12389,
+      "sha256": "fb47c704d492f6937b336f1044783c6b6a45fe32500fab5e5fbf054bbbdd0ffa",
+      "size": 12393,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -908,7 +987,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 60,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -917,8 +996,8 @@
       "product": "ghosts",
       "version": "",
       "path": "devices/kinotone/ghosts.json",
-      "sha256": "a73bad8ae3cebc7c5dd37387a50fb04d645624e20510576a6b62b53ae93e07c4",
-      "size": 6791,
+      "sha256": "ff5db96767029c5c3ef7a50bcf29174c9abcf4e8c81696c35d3e42e1cde9c532",
+      "size": 6795,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -933,7 +1012,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 32,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -942,8 +1021,8 @@
       "product": "ribbons",
       "version": "",
       "path": "devices/kinotone/ribbons.json",
-      "sha256": "4a52e6309eba1e6d372abfd22b19c28c54658c2c03334dfab05997cbcedf8ec9",
-      "size": 8751,
+      "sha256": "69defa5f72e3018f00d001ee238a8ac55a5850680f1c50c830865f2b2dd3a4e9",
+      "size": 8755,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -957,7 +1036,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 32,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -966,8 +1045,8 @@
       "product": "sparks",
       "version": "",
       "path": "devices/kinotone/sparks.json",
-      "sha256": "fad1dd016472556c5f1b534385e6896054c8f3f60abe90999d6b40d290ecf64c",
-      "size": 14426,
+      "sha256": "1b7a2fdabe15aac092778dcb726a8c015af92c23dd434fae227b63c4b021a287",
+      "size": 14430,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -979,7 +1058,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 32,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -988,8 +1067,8 @@
       "product": "enzo",
       "version": "0",
       "path": "devices/meris/enzo.json",
-      "sha256": "a8846d66f601ff81222770eda9aed18ca1bab6d2f11187f2a0aca855c8b3a7ec",
-      "size": 4082,
+      "sha256": "eba77abb26f7975d666a53dfb4e203357c62dc651b652db1c82a7e42fbced3e6",
+      "size": 4086,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1001,7 +1080,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 16,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1010,8 +1089,8 @@
       "product": "enzo_x",
       "version": "0",
       "path": "devices/meris/enzo_x.json",
-      "sha256": "2c6e7dbc79c3b284eebe8334d3f2840e9946a51a99b924a880eb83602d9d3efc",
-      "size": 15525,
+      "sha256": "b0253e6f5eb9d32fd03c3a7745c4ed669708258329005edacb0ee7bfa9c1528f",
+      "size": 15529,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1023,7 +1102,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 99,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1032,8 +1111,8 @@
       "product": "hedra",
       "version": "0",
       "path": "devices/meris/hedra.json",
-      "sha256": "6c6f523fe6f46ca0d57029fb6b263b9034f166d137592b9761012174ff02e323",
-      "size": 7369,
+      "sha256": "5eceab6744dcc31735deaa98bae3659ee12b7e069360944317d07d02d3412ab4",
+      "size": 7373,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1045,7 +1124,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 16,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1054,8 +1133,8 @@
       "product": "lvx",
       "version": "",
       "path": "devices/meris/lvx.json",
-      "sha256": "e7e9c60c61424a57953dd414622ba7bbdf1b38ca1eec415da56556cb39c7f533",
-      "size": 23161,
+      "sha256": "5234d636a6991ac3d636f10a019dc795bacece109dcf340b3aeb6a82a222c0c8",
+      "size": 23165,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1067,7 +1146,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 99,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1076,8 +1155,8 @@
       "product": "mercury_7",
       "version": "0",
       "path": "devices/meris/mercury_7.json",
-      "sha256": "de20352c29dab0038a3ed7df9d89ad4d345679368692f3fb5e2ffa05fe0d6729",
-      "size": 3099,
+      "sha256": "4c68efb607c4e545b90c0fc6c333dc16719f2ec548ce03850f9b4c0719284cae",
+      "size": 3103,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -1088,7 +1167,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 16,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1097,8 +1176,8 @@
       "product": "mercury_x",
       "version": "0",
       "path": "devices/meris/mercury_x.json",
-      "sha256": "89a8fc429319c968e74903308eded54cf829cb444f48bcd1b961635be5195cde",
-      "size": 12953,
+      "sha256": "81b106cb8a2f84fc7a98ea6b864b3ae5b818b36978113c364e54a5c68cc175a0",
+      "size": 12957,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1110,7 +1189,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 99,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1119,8 +1198,8 @@
       "product": "ottobit_jr",
       "version": "0",
       "path": "devices/meris/ottobit_jr.json",
-      "sha256": "27ebd9e153a2a9de8a9ac0ba4b8ec7a8a8b2b8b5b4275752745af0ae706b6ed9",
-      "size": 3554,
+      "sha256": "e0ba93aecfdf978850becbe6e53741abaf761509a58ee621ef16cd3ef955c285",
+      "size": 3558,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1132,7 +1211,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 16,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1141,8 +1220,8 @@
       "product": "polymoon",
       "version": "0",
       "path": "devices/meris/polymoon.json",
-      "sha256": "2874257ebab3d080a48835235ba509345bccd2c127a651cdaecfe97245989f41",
-      "size": 7862,
+      "sha256": "70e3ccf403766714981c01a2f4a0c8b820dd028beb3ca2b94124aa3f36c05cf4",
+      "size": 7866,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1154,7 +1233,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 16,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1163,8 +1242,8 @@
       "product": "bathing",
       "version": "0",
       "path": "devices/obne/bathing.json",
-      "sha256": "29d71d2ea8cb8d0e3543c2cd16034b7c812594cdc89b7028defadb3892f4ed20",
-      "size": 5972,
+      "sha256": "adf21eb576baa8019676032c59e00a97b4b93ccd349fee0e777d983256fcb1cb",
+      "size": 5976,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1180,7 +1259,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 127,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1189,8 +1268,8 @@
       "product": "black_fountain_stereo",
       "version": "0",
       "path": "devices/obne/black_fountain_stereo.json",
-      "sha256": "a2e9b56d87aba575f6829383fc337dc7a8a2c11594ad1cf6c9570ca01348a882",
-      "size": 5227,
+      "sha256": "7cc61d49b390d775a2bb6cdfceba02c47dd9221cdc14bc8c1a3c71a9697b5087",
+      "size": 5231,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1206,7 +1285,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 127,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1215,8 +1294,8 @@
       "product": "dark_star_stereo",
       "version": "0",
       "path": "devices/obne/dark_star_stereo.json",
-      "sha256": "2c22af1598641fa98ce6b4eddedd5bc1fce9d7fd14abe795d77e57ccb0b75687",
-      "size": 3949,
+      "sha256": "97edf711bd6e410559992f8b7907eed1d84eb56061e29eab9a6ec9eec10c9199",
+      "size": 3953,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -1230,7 +1309,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 127,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1239,8 +1318,8 @@
       "product": "signal_blender_stereo",
       "version": "0",
       "path": "devices/obne/signal_blender_stereo.json",
-      "sha256": "1dc6a744f85b306e6a6aca2e8f7ad6a6efd6433a8dd563e007745764eda91d1a",
-      "size": 3600,
+      "sha256": "0d2e96885df89932d3253a286551d378ea0662481b25b8855626e777ad2e5ae4",
+      "size": 3604,
       "receives": ["CONTROL_CHANGE"],
       "transmits": ["CONTROL_CHANGE"],
       "ccCount": 8,
@@ -1248,7 +1327,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 0,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1257,8 +1336,8 @@
       "product": "sunlight_stereo",
       "version": "0",
       "path": "devices/obne/sunlight_stereo.json",
-      "sha256": "736cb5b912162735f886c3919cc0c5cad8a4e0a417f2fcb7ba0ca2ba46b15884",
-      "size": 7155,
+      "sha256": "7878fe2c8c172c00bc5150a3dcef9222573de729277827e7b73331f05307a8c0",
+      "size": 7159,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1274,7 +1353,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 127,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1283,8 +1362,8 @@
       "product": "bigsky",
       "version": "0",
       "path": "devices/strymon/bigsky.json",
-      "sha256": "1b77181c998c4da6b473fefa168e67be70cb3c9c046b0b29879971e2dd5d9f54",
-      "size": 9231,
+      "sha256": "8bfe86966e63f229bec77fdde6460f7e0919ee9cd7c4ebffcbf6a252266e2e57",
+      "size": 9235,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1296,7 +1375,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1305,8 +1384,8 @@
       "product": "bigsky_mx",
       "version": "0",
       "path": "devices/strymon/bigsky_mx.json",
-      "sha256": "8ab92bc2619bbbf150925e839c779e66f7d95e0a3c6f536ea86efd3411123509",
-      "size": 30312,
+      "sha256": "5cec6d80640a1d4b9679b52d6cc616397fbc8f0a9607c96f5a8d321fbffcc733",
+      "size": 30316,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1322,7 +1401,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1331,8 +1410,8 @@
       "product": "bluesky",
       "version": "0",
       "path": "devices/strymon/bluesky.json",
-      "sha256": "c485b09dffff19ed2f1984f3f56faf4e2646132328e71f4e9139e91a011a66c9",
-      "size": 3000,
+      "sha256": "abc09698d0f812b3d67f6dc97a72e8a40cfbea2eef651563f920089193273e13",
+      "size": 3004,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1344,7 +1423,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1353,8 +1432,8 @@
       "product": "brig",
       "version": "0",
       "path": "devices/strymon/brig.json",
-      "sha256": "989e45bbc0df8457ee74adb33e9b70037e5e78756563411648382e781d118b66",
-      "size": 2818,
+      "sha256": "96feac26cdccb15d17829dad567503c6eda06e327a4644dae3fcae03e8672476",
+      "size": 2822,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1366,7 +1445,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1375,8 +1454,8 @@
       "product": "cloudburst",
       "version": "0",
       "path": "devices/strymon/cloudburst.json",
-      "sha256": "5e4fea1d62a9627eb222a81153d2fab2e373cb0ec24f86d05817d752d21709eb",
-      "size": 3351,
+      "sha256": "fe890a964cccb867e5aa1aa6e52275138516c2e8c108c02adf5f6602e870184c",
+      "size": 3355,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1388,7 +1467,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1397,8 +1476,8 @@
       "product": "compadre",
       "version": "0",
       "path": "devices/strymon/compadre.json",
-      "sha256": "7c6315e591281b424f8823c42f81684b1a46e816afcd8cdf7e1c19c756df5639",
-      "size": 1552,
+      "sha256": "594d8551c2649dc5c58b18ead028e18fba11003185ed7b127f805f5da5852d65",
+      "size": 1556,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -1409,7 +1488,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1418,8 +1497,8 @@
       "product": "deco",
       "version": "0",
       "path": "devices/strymon/deco.json",
-      "sha256": "c237641f73f6f5fd3854c76492a69457435ce07eec1619196305085b175a9139",
-      "size": 5036,
+      "sha256": "718e0ffb4f0b8fa510e62401cb4de374bd7346e9e7a59f4f274ac1bc31c3f19f",
+      "size": 5040,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1431,7 +1510,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1440,8 +1519,8 @@
       "product": "dig",
       "version": "0",
       "path": "devices/strymon/dig.json",
-      "sha256": "bae93ae15b98eee76191ec0d5113acef14b3a437f00457835259283059e93e77",
-      "size": 5349,
+      "sha256": "e82446c84308dcedccd3471d9ddaf3361ef6ba2b34c5181ddf48b5556b437e84",
+      "size": 5353,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1453,7 +1532,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1462,8 +1541,8 @@
       "product": "ec-1",
       "version": "0",
       "path": "devices/strymon/ec-1.json",
-      "sha256": "b1dbef1a24db5ec630eb138b0c739fe668c6cad16e996fe5341d8b2c60b4d998",
-      "size": 4007,
+      "sha256": "3ce8fd94241bb091f277157a0fa57bb64c508c13abf72c2faab1edee2a587ec1",
+      "size": 4011,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1479,7 +1558,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1488,8 +1567,8 @@
       "product": "el_capistan",
       "version": "0",
       "path": "devices/strymon/el_capistan.json",
-      "sha256": "7078e172c6e3d346093ad09abcfc672db7cfab762e97e5015f76c5195c117c78",
-      "size": 4901,
+      "sha256": "83000a7051db84f66c0c1dca34844d916835eda8b9fa0e3e76964012143c5d42",
+      "size": 4905,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1501,7 +1580,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1510,8 +1589,8 @@
       "product": "flint",
       "version": "0",
       "path": "devices/strymon/flint.json",
-      "sha256": "95a4b6070a279315a8dab6d03f3762be7534e73729435b0fde5af2ceed6c0389",
-      "size": 5331,
+      "sha256": "a0f4cc572db81a4c92e117a05e709e03285143a55afe973d22a43306458e39c9",
+      "size": 5335,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1523,7 +1602,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1532,8 +1611,8 @@
       "product": "iridium",
       "version": "0",
       "path": "devices/strymon/iridium.json",
-      "sha256": "cae8c8373e70570092dea1a590e1fc19bb7b76cbc107087695044ff381ed200a",
-      "size": 3772,
+      "sha256": "ceae583d8b7dda174fba59fbf3c55cbc00c8d0a60039650a99cd3bb8230d24f6",
+      "size": 3776,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -1544,7 +1623,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1553,8 +1632,8 @@
       "product": "lex",
       "version": "0",
       "path": "devices/strymon/lex.json",
-      "sha256": "c2876170321e80d20b471f837821a779d1dbe87ba7e4d7301492f8979b127fcd",
-      "size": 4989,
+      "sha256": "dd6304cc2c1e4eff2fed3db696cab13a80fb0251e1f8a4aeb16b7a893c78bdea",
+      "size": 4993,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1566,7 +1645,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1575,8 +1654,8 @@
       "product": "nightsky",
       "version": "0",
       "path": "devices/strymon/nightsky.json",
-      "sha256": "4abb311ebfdb616dbd9f412495dc8146700883ab60051a3aaec4e1aa868f5a09",
-      "size": 12626,
+      "sha256": "97dba25dc39e27061e6c4d27dea35f40ec35efd8b1962eda2e5d5f0b04c7c6e4",
+      "size": 12630,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1590,7 +1669,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1599,8 +1678,8 @@
       "product": "olivera",
       "version": "0",
       "path": "devices/strymon/olivera.json",
-      "sha256": "36d906dc900f381cc4ca8ca177e040d8a6b1bb3d3c3843a5de86de2650e9cc98",
-      "size": 3137,
+      "sha256": "a79bb16289496800c33a84986a3675fd8329beea82d024c04eb7285c16c6349a",
+      "size": 3141,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1618,7 +1697,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1627,8 +1706,8 @@
       "product": "riverside",
       "version": "0",
       "path": "devices/strymon/riverside.json",
-      "sha256": "76d684521b8ed475cb444900fdafa2650307b5003111d258a331294a02ee84ce",
-      "size": 3453,
+      "sha256": "fb64b8af85facf38a7931cf2cffc0c3f72026ad97ace2f0dd62b7a6f16562c43",
+      "size": 3457,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -1639,7 +1718,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1648,8 +1727,8 @@
       "product": "sunset",
       "version": "0",
       "path": "devices/strymon/sunset.json",
-      "sha256": "87702b8e79ee7fb114847c93f84d1307d0d5ef048c13df6122bfba509df7a7f3",
-      "size": 4183,
+      "sha256": "cadb6fc902a362e68501de40a17abc36badd2d0d49d4231284fc7959c3676661",
+      "size": 4187,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -1660,7 +1739,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1669,8 +1748,8 @@
       "product": "timeline",
       "version": "0",
       "path": "devices/strymon/timeline.json",
-      "sha256": "b861cdbfbf8edb9ce3c144d6d6dc61c332f91a36ce2e79f5a04a0f744926318a",
-      "size": 8101,
+      "sha256": "051e54385cac4d442d7464fd9ea384cf53367ec7132ace3335e6cab31a6e5277",
+      "size": 8105,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1686,7 +1765,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 200,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1695,8 +1774,8 @@
       "product": "ultraviolet",
       "version": "0",
       "path": "devices/strymon/ultraviolet.json",
-      "sha256": "342fb9fe151dc34aca664f271cc4f1d2aa34c91816fdba4d662c4868461ad72d",
-      "size": 2423,
+      "sha256": "d0029fc47667b77625fd9ec10274df0e78560a4128e68207cc1f64ea22312fe7",
+      "size": 2427,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1708,7 +1787,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1717,8 +1796,8 @@
       "product": "zelzah",
       "version": "0",
       "path": "devices/strymon/zelzah.json",
-      "sha256": "2cbb799b3d6731fec45ce227577a503afdec955e0b169ea464913faee4eb4298",
-      "size": 4973,
+      "sha256": "6dd97a70831ed1b39f997ab522d3f9b91c107698fce6582232a9d9e4b4854650",
+      "size": 4977,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1730,7 +1809,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 300,
-        "bankSelect": "cc0"
+        "bankSelectMode": "CC0"
       }
     },
     {
@@ -1739,8 +1818,8 @@
       "product": "default",
       "version": "0",
       "path": "devices/user/default.json",
-      "sha256": "c34ac91af3660574aef0d6b6a4daf032450f00c0a8e47ea7296b7b303ed601e7",
-      "size": 491,
+      "sha256": "e7b9f8957a00787abd955299e81ce12605232a51d6e4079aa14267d2807967cc",
+      "size": 495,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 0,
@@ -1748,7 +1827,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 128,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1757,8 +1836,8 @@
       "product": "polyphrase",
       "version": "",
       "path": "devices/vongon/polyphrase.json",
-      "sha256": "ade03f08e94b572159af6a00419bd2e8cec508bab613578e50f6568c4a7a0521",
-      "size": 5817,
+      "sha256": "e38c5ed8ed532c712ef650623182e83d1e0c8a2d86135218d943902d8443de92",
+      "size": 5821,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1770,7 +1849,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 9,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1779,8 +1858,8 @@
       "product": "solarfaze",
       "version": "",
       "path": "devices/vongon/solarfaze.json",
-      "sha256": "ef539843e65e3ad41867a8e3333700231a25a4b97d50ea89c08391f2bea86141",
-      "size": 5463,
+      "sha256": "9acc32444806aad12bc0fdacdae741994fe41bdbd22a30d2e136dd4a76574ba6",
+      "size": 5467,
       "receives": [],
       "transmits": [],
       "ccCount": 21,
@@ -1788,7 +1867,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 9,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1797,8 +1876,8 @@
       "product": "acs1_mkii",
       "version": "0",
       "path": "devices/walrus/acs1_mkii.json",
-      "sha256": "cfc5065c3bd40d92c7c5144cf888a395da37ceded71739aa6895f286575486eb",
-      "size": 5902,
+      "sha256": "c64741571340684d36369dfd279dcfa092e8082cbda617ffdaabe68d76bf92cd",
+      "size": 5906,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE"
@@ -1812,7 +1891,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 128,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1821,8 +1900,8 @@
       "product": "dfx-1",
       "version": "0",
       "path": "devices/walrus/dfx-1.json",
-      "sha256": "fcfff6b16ff33019d7a2b8e5be4f662774ee598837b3b0a8dba3e457433874b5",
-      "size": 4469,
+      "sha256": "34a6b73e9e6ed8597c360c7cdd7b3dc31cda0870e4a43999c3e0c4f33920f940",
+      "size": 4473,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1838,7 +1917,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 128,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1847,8 +1926,8 @@
       "product": "mako_mkii_d1",
       "version": "0",
       "path": "devices/walrus/mako_mkii_d1.json",
-      "sha256": "793e8f89fe6c61e6eaea8072739f4e91436feb7cd606e412e95c772d2b5fbe27",
-      "size": 5358,
+      "sha256": "ea798029e28d787c0f659270e4965541cae146b378a1917dfa44af1df8f25e72",
+      "size": 5362,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1864,7 +1943,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 128,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1873,8 +1952,8 @@
       "product": "mako_mkii_m1",
       "version": "0",
       "path": "devices/walrus/mako_mkii_m1.json",
-      "sha256": "3dec79fa253a7a2285f3e7e1adddcb03b1ba9162e563229d25677c82eca31184",
-      "size": 5223,
+      "sha256": "4909df16a325c7d393df7d003a7474a550fb184bf016da3bf2e4284f65a159c2",
+      "size": 5227,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1890,7 +1969,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 128,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1899,8 +1978,8 @@
       "product": "mako_mkii_r1",
       "version": "0",
       "path": "devices/walrus/mako_mkii_r1.json",
-      "sha256": "4bf95f41110a0de75731b00f20dc5afd10dd9b5ceef9056b58e1685c37cee882",
-      "size": 3198,
+      "sha256": "8dd59236cb0ebb6791c242c9324e07099653c8cf2072763641ca47766b4b129c",
+      "size": 3202,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1916,7 +1995,7 @@
       "x_pc": {
         "indexBase": 0,
         "count": 128,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1925,8 +2004,8 @@
       "product": "meraki",
       "version": "0",
       "path": "devices/walrus/meraki.json",
-      "sha256": "67addc8564df738fbcb0541d489f7be910f3160a42875f20488aa3cf17576b29",
-      "size": 5766,
+      "sha256": "539329292cc21dff8aaddaecd52625f00dc984667c9ca395889632854dfd9724",
+      "size": 5770,
       "receives": [
         "CONTROL_CHANGE",
         "CLOCK"
@@ -1937,7 +2016,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 0,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1946,8 +2025,8 @@
       "product": "qi_etheralizer",
       "version": "0",
       "path": "devices/walrus/qi_etheralizer.json",
-      "sha256": "12ba500139b0666f7b5de8f033d3ec6f2715392fd67fd008be16986cf84c46f1",
-      "size": 5129,
+      "sha256": "228396a6ea0f3f42dde5ce40fe6ebaec5cab4c2bd3db8f1882420109cb4fcaaf",
+      "size": 5133,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -1963,7 +2042,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 127,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     },
     {
@@ -1972,8 +2051,8 @@
       "product": "xero_polylooper",
       "version": "0",
       "path": "devices/walrus/xero_polylooper.json",
-      "sha256": "8b90f38d92f0df594b177130f2a8d7cd907bef69af53f3dab226eeb1ee956ab5",
-      "size": 4807,
+      "sha256": "a45b813579f69f38c1fd85e873638e4b4877eb629c5d910a095c9fca95eb291e",
+      "size": 4811,
       "receives": [
         "CONTROL_CHANGE",
         "CLOCK"
@@ -1987,7 +2066,7 @@
       "x_pc": {
         "indexBase": 1,
         "count": 0,
-        "bankSelect": "none"
+        "bankSelectMode": "none"
       }
     }
   ]

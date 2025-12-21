@@ -175,7 +175,7 @@
   "x_pc": {
     "indexBase": 0,
     "count": 300,
-    "bankSelect": "cc0"
+    "bankSelectMode": "CC0"
   },
   "x_midiTrs": "BOTH",
   "x_midiChannel": 1

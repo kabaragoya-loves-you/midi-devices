@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Bondi Effects Art Van Delay",
+  "displayName": "Art Van Delay",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Bondi Effects",
+    "model": "Art Van Delay",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 50,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Subdivision",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "1/8 Note (0–31)" },
+          { "value": 32, "name": "1/4 Note (32–63)" },
+          { "value": 64, "name": "Dotted 1/8 (64–95)" },
+          { "value": 96, "name": "Triplet (96–127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypassed (0–63)" },
+          { "value": 64, "name": "Engaged (64–127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

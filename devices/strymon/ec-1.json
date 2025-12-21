@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Strymon EC-1",
+  "displayName": "EC-1",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "EC-1",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Bank 1" },
+          { "value": 1, "name": "Bank 2" },
+          { "value": 2, "name": "Bank 3" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 11,
+      "name": "Rec Level",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Low" },
+          { "value": 2, "name": "Med" },
+          { "value": 3, "name": "High" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 12, "name": "Time", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 13, "name": "Tape Age", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 14, "name": "Repeats", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 15, "name": "Mechanics", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 16, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 17,
+      "name": "Preamp Select",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "value": 0, "name": "Reserved/Unknown" },
+          { "value": 1, "name": "Off" },
+          { "value": 2, "name": "Modded EP" },
+          { "value": 3, "name": "Original EP" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 18,
+      "name": "Tap Division",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "value": 0, "name": "Eighth Triplet" },
+          { "value": 1, "name": "Eighth" },
+          { "value": 2, "name": "Dotted Eighth" },
+          { "value": 3, "name": "Quarter" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 19, "name": "Preamp Boost", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 27,
+      "name": "Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Release" },
+          { "value": 127, "name": "Press" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 60,
+      "name": "MIDI Expression Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 63,
+      "name": "MIDI Clock Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 97,
+      "name": "Infinite",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Release" },
+          { "value": 127, "name": "Hold" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 100, "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass/Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "Engage" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelect": "cc0"
+  },
+
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

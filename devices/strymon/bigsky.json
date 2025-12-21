@@ -1,0 +1,265 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Strymon BigSky",
+  "displayName": "BigSky",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "BigSky",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": [],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "MIDI Patch Bank (Bank Select)",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Bank 0 (Presets 00A–42B)" },
+          { "value": 1, "name": "Bank 1 (Presets 42C–85A)" },
+          { "value": 2, "name": "Bank 2 (Presets 85B–99C)" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 19, "name": "Type Encoder", "valueRange": { "min": 0, "max": 11 } },
+    {
+      "controlChangeNumber": 20,
+      "name": "Value Encoder",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Scroll CCW" },
+          { "value": 1, "name": "Scroll CW" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 17, "name": "Decay", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 18, "name": "Pre-Delay", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 15, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 3, "name": "Tone", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 9, "name": "Param 1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 16, "name": "Param 2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 14, "name": "Mod", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 23, "name": "Boost", "valueRange": { "min": 0, "max": 60 } },
+    {
+      "controlChangeNumber": 22,
+      "name": "Persist Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Freeze/Infinite",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "MIDI Expression Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "MIDI Clock Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 61, "name": "ROOM - Low End", "valueRange": { "min": 0, "max": 20 } },
+    {
+      "controlChangeNumber": 59,
+      "name": "ROOM - Size",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Studio" },
+          { "value": 1, "name": "Club" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 58, "name": "ROOM - Diffusion", "valueRange": { "min": 0, "max": 20 } },
+
+    { "controlChangeNumber": 39, "name": "HALL - Low End", "valueRange": { "min": 0, "max": 20 } },
+    {
+      "controlChangeNumber": 40,
+      "name": "HALL - Size",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Concert" },
+          { "value": 1, "name": "Arena" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 42, "name": "HALL - Mid", "valueRange": { "min": 0, "max": 20 } },
+
+    { "controlChangeNumber": 69, "name": "PLATE - Low End", "valueRange": { "min": 0, "max": 20 } },
+    {
+      "controlChangeNumber": 68,
+      "name": "PLATE - Size",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Small" },
+          { "value": 1, "name": "Large" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 64, "name": "SPRING - Low End", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 63, "name": "SPRING - Dwell", "valueRange": { "min": 0, "max": 3 } },
+    {
+      "controlChangeNumber": 62,
+      "name": "SPRING - # Springs",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "One Spring" },
+          { "value": 1, "name": "Two Springs" },
+          { "value": 2, "name": "Three Springs" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 65, "name": "SWELL - Low End", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 66, "name": "SWELL - Rise", "valueRange": { "min": 0, "max": 22 } },
+    {
+      "controlChangeNumber": 67,
+      "name": "SWELL - Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Wet" },
+          { "value": 1, "name": "Dry" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 31, "name": "BLOOM - Low End", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 32, "name": "BLOOM - Length", "valueRange": { "min": 0, "max": 17 } },
+    { "controlChangeNumber": 30, "name": "BLOOM - Feedback", "valueRange": { "min": 0, "max": 17 } },
+
+    { "controlChangeNumber": 38, "name": "CLOUD - Low End", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 37, "name": "CLOUD - Diffusion", "valueRange": { "min": 0, "max": 20 } },
+
+    { "controlChangeNumber": 33, "name": "CHORALE - Vowel", "valueRange": { "min": 0, "max": 6 } },
+    { "controlChangeNumber": 34, "name": "CHORALE - Resonance", "valueRange": { "min": 0, "max": 2 } },
+
+    { "controlChangeNumber": 24, "name": "SHIMMER - Low End", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 25, "name": "SHIMMER - Shift 1", "valueRange": { "min": 0, "max": 27 } },
+    { "controlChangeNumber": 26, "name": "SHIMMER - Shift 2", "valueRange": { "min": 0, "max": 28 } },
+    { "controlChangeNumber": 27, "name": "SHIMMER - Amount", "valueRange": { "min": 0, "max": 18 } },
+    { "controlChangeNumber": 28, "name": "SHIMMER - Mode", "valueRange": { "min": 0, "max": 2 } },
+
+    { "controlChangeNumber": 55, "name": "MAGNETO - Low End", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 56, "name": "MAGNETO - Diffusion", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 57, "name": "MAGNETO - Heads", "valueRange": { "min": 0, "max": 2 } },
+    {
+      "controlChangeNumber": 54,
+      "name": "MAGNETO - Spacing",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Even" },
+          { "value": 1, "name": "Uneven" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 44, "name": "NONLINEAR - Low End", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 46, "name": "NONLINEAR - Shape", "valueRange": { "min": 0, "max": 5 } },
+    { "controlChangeNumber": 45, "name": "NONLINEAR - Diffusion", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 47, "name": "NONLINEAR - Late Decay", "valueRange": { "min": 0, "max": 17 } },
+    { "controlChangeNumber": 48, "name": "NONLINEAR - Late Level", "valueRange": { "min": 0, "max": 18 } },
+    { "controlChangeNumber": 43, "name": "NONLINEAR - Mod Speed", "valueRange": { "min": 0, "max": 17 } },
+
+    { "controlChangeNumber": 52, "name": "REFLECTIONS - Low End", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 50, "name": "REFLECTIONS - Loc Y", "valueRange": { "min": 0, "max": 6 } },
+    { "controlChangeNumber": 49, "name": "REFLECTIONS - Loc X", "valueRange": { "min": 0, "max": 6 } },
+    { "controlChangeNumber": 51, "name": "REFLECTIONS - Shape", "valueRange": { "min": 0, "max": 2 } },
+
+    { "controlChangeNumber": 80, "name": "A Footswitch", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 82, "name": "B Footswitch", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 81, "name": "C Footswitch", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 97,
+      "name": "Press/Hold Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 93, "name": "Remote TAP", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 100, "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "Engaged" }
+        ]
+      }
+    }
+  ],
+
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelect": "cc0"
+  },
+
+  "x_midiChannel": 1,
+  "x_midiTrsType": "BOTH"
+}

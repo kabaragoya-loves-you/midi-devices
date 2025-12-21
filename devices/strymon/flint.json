@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Strymon Flint",
+  "displayName": "Flint",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "Flint",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["CLOCK"],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Bank 1" },
+          { "value": 1, "name": "Bank 2" },
+          { "value": 2, "name": "Bank 3" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Tremolo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Tremolo Type",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "61" },
+          { "value": 2, "name": "63 Tube" },
+          { "value": 3, "name": "65 Photo" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Intensity",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Tap Subdivision",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Tremolo Boost/Cut",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Reverb Type",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "60s" },
+          { "value": 2, "name": "70s" },
+          { "value": 3, "name": "80s" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Color",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Reverb Pre-Delay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Reverb Boost/Cut",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Effect Order",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Reverb > Tremolo" },
+          { "value": 127, "name": "Tremolo > Reverb" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "MIDI Clock Division",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          { "value": 0, "name": "x1/4" },
+          { "value": 1, "name": "x1/3" },
+          { "value": 2, "name": "x1/2" },
+          { "value": 3, "name": "x1" },
+          { "value": 4, "name": "x2" },
+          { "value": 5, "name": "x3" },
+          { "value": 6, "name": "x4" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Footswitch A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Release" },
+          { "value": 127, "name": "Press" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Footswitch B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Release" },
+          { "value": 127, "name": "Press" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Bypass A and B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "MIDI Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "MIDI Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelect": "cc0"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

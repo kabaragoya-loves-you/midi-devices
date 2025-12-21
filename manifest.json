@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2025-12-20T11:24:49Z",
-  "count": 65,
+  "generatedAt": "2025-12-21T04:47:12Z",
+  "count": 89,
   "devices": [
     {
       "slug": "beetronics.seabee@",
@@ -394,8 +394,8 @@
       "product": "mood_mkii",
       "version": "0",
       "path": "devices/chase_bliss/mood_mkii.json",
-      "sha256": "635081162ada9706048de30c1f106da650a6e9cb6d8854a2feacd3cbe5688e07",
-      "size": 4467,
+      "sha256": "aa132c185337e2c3c38e1b4f1f566786d04d46525202741147cf619767566a71",
+      "size": 4449,
       "receives": [
         "PROGRAM_CHANGE",
         "CONTROL_CHANGE",
@@ -650,6 +650,87 @@
       "x_pc": {
         "indexBase": 0,
         "count": 35,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "erica_synths.echolocator@0",
+      "vendor": "erica_synths",
+      "product": "echolocator",
+      "version": "0",
+      "path": "devices/erica_synths/echolocator.json",
+      "sha256": "a76e57bcdb91583b7908740de3dff87b19e83c952e2a6bc32d80b15bf8a59241",
+      "size": 2173,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 100,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "erica_synths.nightverb@0",
+      "vendor": "erica_synths",
+      "product": "nightverb",
+      "version": "0",
+      "path": "devices/erica_synths/nightverb.json",
+      "sha256": "9634bbc96464af41011f3bdadb5c3e714c8476413f85831e71c911a2d0311501",
+      "size": 2267,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 100,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "erica_synths.xenodrive@0",
+      "vendor": "erica_synths",
+      "product": "xenodrive",
+      "version": "0",
+      "path": "devices/erica_synths/xenodrive.json",
+      "sha256": "677768f759d59cbf5f123d3ffd872de6ee7ba528738715f588367466ea01a3e8",
+      "size": 2249,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 100,
+        "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "erica_synths.zen_delay@0",
+      "vendor": "erica_synths",
+      "product": "zen_delay",
+      "version": "0",
+      "path": "devices/erica_synths/zen_delay.json",
+      "sha256": "95ceb0d2f78a14d9e5737700535a0deac12f1841756042ad2b645d9daed67182",
+      "size": 452,
+      "receives": ["CLOCK"],
+      "transmits": [],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 0,
         "bankSelect": "none"
       }
     },
@@ -1194,6 +1275,462 @@
         "indexBase": 0,
         "count": 127,
         "bankSelect": "none"
+      }
+    },
+    {
+      "slug": "strymon.bigsky@0",
+      "vendor": "strymon",
+      "product": "bigsky",
+      "version": "0",
+      "path": "devices/strymon/bigsky.json",
+      "sha256": "1b77181c998c4da6b473fefa168e67be70cb3c9c046b0b29879971e2dd5d9f54",
+      "size": 9231,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 62,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.bigsky_mx@0",
+      "vendor": "strymon",
+      "product": "bigsky_mx",
+      "version": "0",
+      "path": "devices/strymon/bigsky_mx.json",
+      "sha256": "8ab92bc2619bbbf150925e839c779e66f7d95e0a3c6f536ea86efd3411123509",
+      "size": 30312,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "ccCount": 121,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.bluesky@0",
+      "vendor": "strymon",
+      "product": "bluesky",
+      "version": "0",
+      "path": "devices/strymon/bluesky.json",
+      "sha256": "c485b09dffff19ed2f1984f3f56faf4e2646132328e71f4e9139e91a011a66c9",
+      "size": 3000,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.brig@0",
+      "vendor": "strymon",
+      "product": "brig",
+      "version": "0",
+      "path": "devices/strymon/brig.json",
+      "sha256": "989e45bbc0df8457ee74adb33e9b70037e5e78756563411648382e781d118b66",
+      "size": 2818,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.cloudburst@0",
+      "vendor": "strymon",
+      "product": "cloudburst",
+      "version": "0",
+      "path": "devices/strymon/cloudburst.json",
+      "sha256": "5e4fea1d62a9627eb222a81153d2fab2e373cb0ec24f86d05817d752d21709eb",
+      "size": 3351,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.compadre@0",
+      "vendor": "strymon",
+      "product": "compadre",
+      "version": "0",
+      "path": "devices/strymon/compadre.json",
+      "sha256": "7c6315e591281b424f8823c42f81684b1a46e816afcd8cdf7e1c19c756df5639",
+      "size": 1552,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 10,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.deco@0",
+      "vendor": "strymon",
+      "product": "deco",
+      "version": "0",
+      "path": "devices/strymon/deco.json",
+      "sha256": "c237641f73f6f5fd3854c76492a69457435ce07eec1619196305085b175a9139",
+      "size": 5036,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 22,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.dig@0",
+      "vendor": "strymon",
+      "product": "dig",
+      "version": "0",
+      "path": "devices/strymon/dig.json",
+      "sha256": "bae93ae15b98eee76191ec0d5113acef14b3a437f00457835259283059e93e77",
+      "size": 5349,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 21,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.ec-1@0",
+      "vendor": "strymon",
+      "product": "ec-1",
+      "version": "0",
+      "path": "devices/strymon/ec-1.json",
+      "sha256": "b1dbef1a24db5ec630eb138b0c739fe668c6cad16e996fe5341d8b2c60b4d998",
+      "size": 4007,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "ccCount": 17,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.el_capistan@0",
+      "vendor": "strymon",
+      "product": "el_capistan",
+      "version": "0",
+      "path": "devices/strymon/el_capistan.json",
+      "sha256": "7078e172c6e3d346093ad09abcfc672db7cfab762e97e5015f76c5195c117c78",
+      "size": 4901,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 22,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.flint@0",
+      "vendor": "strymon",
+      "product": "flint",
+      "version": "0",
+      "path": "devices/strymon/flint.json",
+      "sha256": "95a4b6070a279315a8dab6d03f3762be7534e73729435b0fde5af2ceed6c0389",
+      "size": 5331,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 23,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.iridium@0",
+      "vendor": "strymon",
+      "product": "iridium",
+      "version": "0",
+      "path": "devices/strymon/iridium.json",
+      "sha256": "cae8c8373e70570092dea1a590e1fc19bb7b76cbc107087695044ff381ed200a",
+      "size": 3772,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 18,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.lex@0",
+      "vendor": "strymon",
+      "product": "lex",
+      "version": "0",
+      "path": "devices/strymon/lex.json",
+      "sha256": "c2876170321e80d20b471f837821a779d1dbe87ba7e4d7301492f8979b127fcd",
+      "size": 4989,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 22,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.nightsky@0",
+      "vendor": "strymon",
+      "product": "nightsky",
+      "version": "0",
+      "path": "devices/strymon/nightsky.json",
+      "sha256": "4abb311ebfdb616dbd9f412495dc8146700883ab60051a3aaec4e1aa868f5a09",
+      "size": 12626,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK",
+        "NOTE_ON",
+        "NOTE_OFF"
+      ],
+      "transmits": [],
+      "ccCount": 54,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.olivera@0",
+      "vendor": "strymon",
+      "product": "olivera",
+      "version": "0",
+      "path": "devices/strymon/olivera.json",
+      "sha256": "36d906dc900f381cc4ca8ca177e040d8a6b1bb3d3c3843a5de86de2650e9cc98",
+      "size": 3137,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK",
+        "SYSEX"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK",
+        "SYSEX"
+      ],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.riverside@0",
+      "vendor": "strymon",
+      "product": "riverside",
+      "version": "0",
+      "path": "devices/strymon/riverside.json",
+      "sha256": "76d684521b8ed475cb444900fdafa2650307b5003111d258a331294a02ee84ce",
+      "size": 3453,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.sunset@0",
+      "vendor": "strymon",
+      "product": "sunset",
+      "version": "0",
+      "path": "devices/strymon/sunset.json",
+      "sha256": "87702b8e79ee7fb114847c93f84d1307d0d5ef048c13df6122bfba509df7a7f3",
+      "size": 4183,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE"
+      ],
+      "transmits": [],
+      "ccCount": 18,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.timeline@0",
+      "vendor": "strymon",
+      "product": "timeline",
+      "version": "0",
+      "path": "devices/strymon/timeline.json",
+      "sha256": "b861cdbfbf8edb9ce3c144d6d6dc61c332f91a36ce2e79f5a04a0f744926318a",
+      "size": 8101,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "ccCount": 62,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 200,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.ultraviolet@0",
+      "vendor": "strymon",
+      "product": "ultraviolet",
+      "version": "0",
+      "path": "devices/strymon/ultraviolet.json",
+      "sha256": "342fb9fe151dc34aca664f271cc4f1d2aa34c91816fdba4d662c4868461ad72d",
+      "size": 2423,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 11,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
+      }
+    },
+    {
+      "slug": "strymon.zelzah@0",
+      "vendor": "strymon",
+      "product": "zelzah",
+      "version": "0",
+      "path": "devices/strymon/zelzah.json",
+      "sha256": "2cbb799b3d6731fec45ce227577a503afdec955e0b169ea464913faee4eb4298",
+      "size": 4973,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CONTROL_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 21,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelect": "cc0"
       }
     },
     {

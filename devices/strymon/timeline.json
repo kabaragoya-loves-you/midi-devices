@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Strymon TimeLine",
+  "displayName": "TimeLine",
+  "implementationVersion": "0",
+
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "TimeLine",
+    "version": ""
+  },
+
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "MIDI Patch Bank (Bank Select)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Bank 0 (Presets 00A–63B)" },
+          { "value": 1, "name": "Bank 1 (Presets 64A–99B)" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 3, "name": "Time", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 9, "name": "Repeats", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 14, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 15, "name": "Filter", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 16, "name": "Grit", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 17, "name": "Speed", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 18, "name": "Depth", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 19, "name": "Type Encoder", "valueRange": { "min": 0, "max": 11 } },
+
+    { "controlChangeNumber": 21, "name": "Tap Division", "valueRange": { "min": 0, "max": 4 } },
+    { "controlChangeNumber": 22, "name": "Persist Off/On", "valueRange": { "min": 0, "max": 1 } },
+    { "controlChangeNumber": 23, "name": "Boost", "valueRange": { "min": 0, "max": 60 } },
+
+    { "controlChangeNumber": 25, "name": "ICE - Blend", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 28, "name": "FILTER - LFO", "valueRange": { "min": 0, "max": 10 } },
+    { "controlChangeNumber": 29, "name": "TREM - LFO", "valueRange": { "min": 0, "max": 4 } },
+    { "controlChangeNumber": 30, "name": "ICE - Interval", "valueRange": { "min": 0, "max": 29 } },
+
+    { "controlChangeNumber": 32, "name": "DUAL - Time 2", "valueRange": { "min": 0, "max": 26 } },
+    { "controlChangeNumber": 33, "name": "DUAL - Mix 2", "valueRange": { "min": 0, "max": 18 } },
+    { "controlChangeNumber": 34, "name": "DUAL - Repeats 2", "valueRange": { "min": 0, "max": 18 } },
+    { "controlChangeNumber": 36, "name": "DUAL - Config", "valueRange": { "min": 0, "max": 1 } },
+    { "controlChangeNumber": 37, "name": "DUCK - Sensitivity", "valueRange": { "min": 0, "max": 17 } },
+    { "controlChangeNumber": 38, "name": "Smear", "valueRange": { "min": 0, "max": 18 } },
+    { "controlChangeNumber": 39, "name": "PATTERN - Pattern", "valueRange": { "min": 0, "max": 15 } },
+    { "controlChangeNumber": 40, "name": "FILTER - Q", "valueRange": { "min": 0, "max": 11 } },
+    { "controlChangeNumber": 41, "name": "FILTER - Depth", "valueRange": { "min": 0, "max": 18 } },
+    { "controlChangeNumber": 42, "name": "FILTER - Speed", "valueRange": { "min": 0, "max": 34 } },
+    { "controlChangeNumber": 43, "name": "FILTER - Location", "valueRange": { "min": 0, "max": 1 } },
+    { "controlChangeNumber": 44, "name": "SWELL - Rise Time", "valueRange": { "min": 0, "max": 27 } },
+    { "controlChangeNumber": 45, "name": "dBUCKET - Range", "valueRange": { "min": 0, "max": 1 } },
+    { "controlChangeNumber": 46, "name": "ICE - Slice", "valueRange": { "min": 0, "max": 2 } },
+    { "controlChangeNumber": 47, "name": "High Pass", "valueRange": { "min": 0, "max": 20 } },
+
+    { "controlChangeNumber": 49, "name": "LO-FI - Sample Rate", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 50, "name": "LO-FI - Bit Depth", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 51, "name": "LO-FI - Mix", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 52, "name": "LO-FI - Vinyl", "valueRange": { "min": 0, "max": 18 } },
+    { "controlChangeNumber": 53, "name": "LO-FI - Filter", "valueRange": { "min": 0, "max": 8 } },
+    { "controlChangeNumber": 54, "name": "DUCK - Feedback", "valueRange": { "min": 0, "max": 1 } },
+    { "controlChangeNumber": 55, "name": "DUCK - Release", "valueRange": { "min": 0, "max": 20 } },
+    { "controlChangeNumber": 56, "name": "DIGITAL - Repeat Dynamics", "valueRange": { "min": 0, "max": 1 } },
+    { "controlChangeNumber": 57, "name": "TREM - Depth", "valueRange": { "min": 0, "max": 18 } },
+    { "controlChangeNumber": 58, "name": "dTAPE - Tape Speed", "valueRange": { "min": 0, "max": 1 } },
+    { "controlChangeNumber": 59, "name": "dTAPE - Low End", "valueRange": { "min": 0, "max": 20 } },
+
+    {
+      "controlChangeNumber": 60,
+      "name": "Expression Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 61, "name": "TREM - Speed", "valueRange": { "min": 0, "max": 34 } },
+
+    {
+      "controlChangeNumber": 63,
+      "name": "MIDI Clock Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 80,
+      "name": "A Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "TAP Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "B Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 85, "name": "Looper - Stop", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 86, "name": "Looper - Play", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 87, "name": "Looper - Record", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 89, "name": "Looper - Undo (to initial loop)", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 90, "name": "Looper - Redo", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 93, "name": "Remote TAP", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 94, "name": "Looper - Reverse (toggle)", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 95, "name": "Looper - Full/Half Speed (toggle)", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 96, "name": "Looper - Pre/Post (toggle)", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 97,
+      "name": "Infinite Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 98, "name": "Looper Level", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 100, "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "Engage" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 125, "name": "Phase Reset", "valueRange": { "min": 0, "max": 127 } }
+  ],
+
+  "x_pc": {
+    "indexBase": 0,
+    "count": 200,
+    "bankSelect": "cc0"
+  },
+
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

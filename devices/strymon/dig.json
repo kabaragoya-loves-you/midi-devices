@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Strymon DIG",
+  "displayName": "DIG",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "DIG",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": ["CLOCK"],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Bank 1" },
+          { "value": 1, "name": "Bank 2" },
+          { "value": 2, "name": "Bank 3" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Mod",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Off" },
+          { "value": 2, "name": "Light" },
+          { "value": 3, "name": "Deep" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Time 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Type",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "24/96" },
+          { "value": 2, "name": "ADM" },
+          { "value": 3, "name": "12 Bit" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Mix 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Repeats",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Delay 1 Subdivision",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Dotted Eighth" },
+          { "value": 1, "name": "Quarter" },
+          { "value": 2, "name": "Half" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Delay 2 Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Delay" },
+          { "value": 127, "name": "Track" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Sync/Free",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Sync" },
+          { "value": 1, "name": "Free" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Config",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Series" },
+          { "value": 1, "name": "Ping Pong" },
+          { "value": 2, "name": "Parallel" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Dry Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Dry Level (0–126)" },
+          { "value": 127, "name": "Track Mix (127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "MIDI Clock Tempo Mult/Div",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          { "value": 0, "name": "x4" },
+          { "value": 1, "name": "x3" },
+          { "value": 2, "name": "x2" },
+          { "value": 3, "name": "x1" },
+          { "value": 4, "name": "1/2" },
+          { "value": 5, "name": "1/3" },
+          { "value": 6, "name": "1/4" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "MIDI Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "MIDI Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "additionalInfo": "Any value triggers tap",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Circular Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Release" },
+          { "value": 127, "name": "Hold" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelect": "cc0"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

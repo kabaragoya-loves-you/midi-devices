@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Strymon Deco",
+  "displayName": "Deco",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "Deco",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Bank 1" },
+          { "value": 1, "name": "Bank 2" },
+          { "value": 2, "name": "Bank 3" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Tape Saturation",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Voice",
+      "valueRange": {
+        "min": 1,
+        "max": 2,
+        "discreteValues": [
+          { "value": 1, "name": "Classic" },
+          { "value": 2, "name": "Cassette" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Saturation",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Low Trim",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Doubletracker",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Type",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "value": 1, "name": "Sum" },
+          { "value": 2, "name": "Invert" },
+          { "value": 3, "name": "Bounce" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Lag Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Wobble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Doubletracker Boost/Cut",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Auto-Flange Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Wide Stereo Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "MIDI Clock Tempo Mult/Div",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          { "value": 0, "name": "x2/3" },
+          { "value": 1, "name": "x1" },
+          { "value": 2, "name": "x2" },
+          { "value": 3, "name": "x3" },
+          { "value": 4, "name": "x4" },
+          { "value": 5, "name": "x6" },
+          { "value": 6, "name": "x8" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Bypass/On A and B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "MIDI Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "MIDI Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "additionalInfo": "Any value triggers tap",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Auto-Flange",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelect": "cc0"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

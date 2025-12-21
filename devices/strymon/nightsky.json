@@ -1,0 +1,382 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Strymon NightSky",
+  "displayName": "NightSky",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "NightSky",
+    "version": "1.0"
+  },
+  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK", "NOTE_ON", "NOTE_OFF"],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Bank 0", "value": 0 },
+          { "name": "Bank 1", "value": 1 },
+          { "name": "Bank 2", "value": 2 }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 11, "name": "Mix - Reverb Level", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 12, "name": "Mix - Dry Level", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 13, "name": "Mod - Speed", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mod - Target",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Verb", "value": 0 },
+          { "name": "Pitch", "value": 1 },
+          { "name": "Filter", "value": 2 }
+        ]
+      }
+    },
+    { "controlChangeNumber": 15, "name": "Mod - Depth", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mod - Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "name": "Triangle", "value": 0 },
+          { "name": "Square", "value": 1 },
+          { "name": "Ramp", "value": 2 },
+          { "name": "Saw", "value": 3 },
+          { "name": "Random", "value": 4 },
+          { "name": "Envelope", "value": 5 }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 17, "name": "Decay - Pre-Delay", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 18, "name": "Decay - Length", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 19,
+      "name": "Decay - Texture",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Sparse", "value": 0 },
+          { "name": "Dense", "value": 1 },
+          { "name": "Diffuse", "value": 2 }
+        ]
+      }
+    },
+    { "controlChangeNumber": 20, "name": "Decay - Size/Pitch", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 21,
+      "name": "Decay - Quantize",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Smooth", "value": 0 },
+          { "name": "Half Step", "value": 1 },
+          { "name": "Scale", "value": 2 }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 22, "name": "Tone - Low Cut", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 23, "name": "Tone - High Cut", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 24,
+      "name": "Tone - Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Regen", "value": 0 },
+          { "name": "Lowpass", "value": 1 }
+        ]
+      }
+    },
+    { "controlChangeNumber": 25, "name": "Tone - Lowpass Q", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 26,
+      "name": "Voice - Interval",
+      "additionalInfo": "Interval steps (0–25).",
+      "valueRange": {
+        "min": 0,
+        "max": 25,
+        "discreteValues": [
+          { "name": "-Octave", "value": 0 },
+          { "name": "-Major 7th", "value": 1 },
+          { "name": "-Minor 7th", "value": 2 },
+          { "name": "-Major 6th", "value": 3 },
+          { "name": "-Minor 6th", "value": 4 },
+          { "name": "-Perfect 5th", "value": 5 },
+          { "name": "-Tritone", "value": 6 },
+          { "name": "-Perfect 4th", "value": 7 },
+          { "name": "-Major 3rd", "value": 8 },
+          { "name": "-Minor 3rd", "value": 9 },
+          { "name": "-Major 2nd", "value": 10 },
+          { "name": "-Minor 2nd", "value": 11 },
+          { "name": "-Detune", "value": 12 },
+          { "name": "+Detune", "value": 13 },
+          { "name": "+Minor 2nd", "value": 14 },
+          { "name": "+Major 2nd", "value": 15 },
+          { "name": "+Minor 3rd", "value": 16 },
+          { "name": "+Major 3rd", "value": 17 },
+          { "name": "+Perfect 4th", "value": 18 },
+          { "name": "+Tritone", "value": 19 },
+          { "name": "+Perfect 5th", "value": 20 },
+          { "name": "+Minor 6th", "value": 21 },
+          { "name": "+Major 6th", "value": 22 },
+          { "name": "+Minor 7th", "value": 23 },
+          { "name": "+Major 7th", "value": 24 },
+          { "name": "+Octave", "value": 25 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Voice - Scale Select",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Minor Pentatonic", "value": 0 },
+          { "name": "Major Pentatonic", "value": 1 },
+          { "name": "Major", "value": 2 },
+          { "name": "Dorian", "value": 3 },
+          { "name": "Minor Blues", "value": 4 },
+          { "name": "Harmonic Minor", "value": 5 },
+          { "name": "Whole Tone", "value": 6 },
+          { "name": "Diminished", "value": 7 }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 28,
+      "name": "Voice - Shimmer",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Input", "value": 0 },
+          { "name": "Regen", "value": 1 }
+        ]
+      }
+    },
+    { "controlChangeNumber": 29, "name": "Voice - Shimmer Level", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 30,
+      "name": "Voice - Glimmer",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "High", "value": 1 },
+          { "name": "Low", "value": 2 }
+        ]
+      }
+    },
+    { "controlChangeNumber": 31, "name": "Voice - Glimmer Gain", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 33,
+      "name": "Voice - Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Pre", "value": 1 },
+          { "name": "Post", "value": 2 }
+        ]
+      }
+    },
+    { "controlChangeNumber": 34, "name": "Voice - Drive Level", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 35,
+      "name": "Freeze",
+      "additionalInfo": "0=Off, 1–127=On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Morph",
+      "additionalInfo": "0=Off, 1–127=On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    { "controlChangeNumber": 37, "name": "Morph Speed", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 41,
+      "name": "Sequence Mode",
+      "additionalInfo": "0=Preset mode, 1–127=Sequence mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Preset", "value": 0 },
+          { "name": "Sequence", "value": 127 }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 42, "name": "Sequencer Step 1 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 43, "name": "Sequencer Step 2 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 44, "name": "Sequencer Step 3 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 45, "name": "Sequencer Step 4 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 46, "name": "Sequencer Step 5 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 47, "name": "Sequencer Step 6 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 48, "name": "Sequencer Step 7 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 49, "name": "Sequencer Step 8 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 50, "name": "Sequencer Step 1 Size", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 51, "name": "Sequencer Step 2 Size", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 52, "name": "Sequencer Step 3 Size", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 53, "name": "Sequencer Step 4 Size", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 54, "name": "Sequencer Step 5 Size", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 55, "name": "Sequencer Step 6 Size", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 56, "name": "Sequencer Step 7 Size", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 57, "name": "Sequencer Step 8 Size", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 58, "name": "Sequence Glide", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 60,
+      "name": "MIDI Expression Off/On",
+      "additionalInfo": "0=Off, 1–127=On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "MIDI Clock Off/On",
+      "additionalInfo": "0=Off, 1–127=On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 80,
+      "name": "Footswitch On",
+      "additionalInfo": "0=Release, 1–127=Press",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Footswitch Favorite",
+      "additionalInfo": "0=Release, 1–127=Press",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Footswitch Infinite",
+      "additionalInfo": "0=Release, 1–127=Press",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Persist",
+      "additionalInfo": "0=Persist Off, 1–127=Persist On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 93, "name": "Sequence Tap", "additionalInfo": "Any value", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 100, "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass/On",
+      "additionalInfo": "0=Bypass, 1–127=On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelect": "cc0"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "x_midiNoteIn": {
+    "supportsNoteOnOff": true,
+    "supportsVelocity": false,
+    "supportsPitchBend": false,
+    "supportsModWheel": false,
+    "noteRange": "C-2–C0"
+  }
+}

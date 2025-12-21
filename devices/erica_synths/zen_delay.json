@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Erica Synths Zen Delay",
+  "displayName": "Zen Delay",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Erica Synths",
+    "model": "Zen Delay",
+    "version": ""
+  },
+  "receives": ["CLOCK"],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 0,
+    "bankSelect": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

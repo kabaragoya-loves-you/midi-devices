@@ -156,7 +156,7 @@
     {
       "controlChangeNumber": 38,
       "name": "Map LFO Filter Cutoff",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -169,7 +169,7 @@
     {
       "controlChangeNumber": 39,
       "name": "Map LFO Filter Mode",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -182,7 +182,7 @@
     {
       "controlChangeNumber": 40,
       "name": "Map LFO Filter Resonance",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -195,7 +195,7 @@
     {
       "controlChangeNumber": 41,
       "name": "Map LFO Gain",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -208,7 +208,7 @@
     {
       "controlChangeNumber": 42,
       "name": "Map LFO Level",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -221,7 +221,7 @@
     {
       "controlChangeNumber": 43,
       "name": "Map LFO Drive / Fold",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -234,7 +234,7 @@
     {
       "controlChangeNumber": 44,
       "name": "Map LFO Blend",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -247,7 +247,7 @@
     {
       "controlChangeNumber": 45,
       "name": "Map LFO Low Cut",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -260,7 +260,7 @@
     {
       "controlChangeNumber": 46,
       "name": "Map LFO Gate",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -273,7 +273,7 @@
     {
       "controlChangeNumber": 47,
       "name": "Map LFO ENV Attack",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -286,7 +286,7 @@
     {
       "controlChangeNumber": 48,
       "name": "Map LFO ENV Sens",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -299,7 +299,7 @@
     {
       "controlChangeNumber": 49,
       "name": "Map LFO Spin",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -318,7 +318,7 @@
     {
       "controlChangeNumber": 51,
       "name": "Ignore MIDI Clock",
-      "additionalInfo": "0: Ignore, 1–127: Listen",
+      "additionalInfo": "0: Ignore, 1-127: Listen",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -332,7 +332,7 @@
     {
       "controlChangeNumber": 52,
       "name": "Map ENV Filter Cutoff",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -345,7 +345,7 @@
     {
       "controlChangeNumber": 53,
       "name": "Map ENV Filter Mode",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -358,7 +358,7 @@
     {
       "controlChangeNumber": 54,
       "name": "Map ENV Filter Resonance",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -371,7 +371,7 @@
     {
       "controlChangeNumber": 55,
       "name": "Map ENV Gain",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -384,7 +384,7 @@
     {
       "controlChangeNumber": 56,
       "name": "Map ENV Level",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -397,7 +397,7 @@
     {
       "controlChangeNumber": 57,
       "name": "Map ENV Drive / Fold",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -410,7 +410,7 @@
     {
       "controlChangeNumber": 58,
       "name": "Map ENV Blend",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -423,7 +423,7 @@
     {
       "controlChangeNumber": 59,
       "name": "Map ENV Low Cut",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -436,7 +436,7 @@
     {
       "controlChangeNumber": 60,
       "name": "Map ENV Gate",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -449,7 +449,7 @@
     {
       "controlChangeNumber": 61,
       "name": "Map ENV LFO Rate",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -462,7 +462,7 @@
     {
       "controlChangeNumber": 62,
       "name": "Map ENV LFO Shape",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -475,7 +475,7 @@
     {
       "controlChangeNumber": 63,
       "name": "Map ENV Spin",
-      "additionalInfo": "0–64: [-], 65–127: [+]",
+      "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -489,7 +489,7 @@
     {
       "controlChangeNumber": 80,
       "name": "Preset Footswitch",
-      "additionalInfo": "0: Off, 1–127: On",
+      "additionalInfo": "0: Off, 1-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -502,7 +502,7 @@
     {
       "controlChangeNumber": 81,
       "name": "Bypass Footswitch",
-      "additionalInfo": "0: Off, 1–127: On",
+      "additionalInfo": "0: Off, 1-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -515,13 +515,13 @@
     {
       "controlChangeNumber": 82,
       "name": "LFO Range",
-      "additionalInfo": "0–2",
+      "additionalInfo": "0-2",
       "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 83,
       "name": "Currently Selected Preset",
-      "additionalInfo": "0–31",
+      "additionalInfo": "0-31",
       "valueRange": { "min": 0, "max": 127 }
     },
     {
@@ -545,7 +545,7 @@
     {
       "controlChangeNumber": 89,
       "name": "Gate Dry Signal",
-      "additionalInfo": "0: No, 1–127: Yes",
+      "additionalInfo": "0: No, 1-127: Yes",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -558,7 +558,7 @@
     {
       "controlChangeNumber": 90,
       "name": "Gate Response Style",
-      "additionalInfo": "0: Smooth, 1–127: Choppy",
+      "additionalInfo": "0: Smooth, 1-127: Choppy",
       "valueRange": {
         "min": 0,
         "max": 127,

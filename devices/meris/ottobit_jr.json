@@ -24,13 +24,13 @@
     {
       "controlChangeNumber": 14,
       "name": "Bypass",
-      "additionalInfo": "0–63 = FX Bypass, 64–127 = FX Enable",
+      "additionalInfo": "0-63 = FX Bypass, 64-127 = FX Enable",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0–63)" },
-          { "value": 64, "name": "FX Enable (64–127)" }
+          { "value": 0, "name": "FX Bypass (0-63)" },
+          { "value": 64, "name": "FX Enable (64-127)" }
         ]
       }
     },
@@ -124,14 +124,14 @@
     {
       "controlChangeNumber": 29,
       "name": "Sequencer Type",
-      "additionalInfo": "0–62 = Pitch, 63 = Sample Rate, 64–127 = Filter",
+      "additionalInfo": "0-62 = Pitch, 63 = Sample Rate, 64-127 = Filter",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pitch (0–62)" },
+          { "value": 0, "name": "Pitch (0-62)" },
           { "value": 63, "name": "Sample Rate (63)" },
-          { "value": 64, "name": "Filter (64–127)" }
+          { "value": 64, "name": "Filter (64-127)" }
         ]
       }
     },
@@ -139,13 +139,13 @@
     {
       "controlChangeNumber": 31,
       "name": "Stutter Hold",
-      "additionalInfo": "0–63 = Hold Off, 64–127 = Hold On",
+      "additionalInfo": "0-63 = Hold Off, 64-127 = Hold On",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Hold Off (0–63)" },
-          { "value": 64, "name": "Hold On (64–127)" }
+          { "value": 0, "name": "Hold Off (0-63)" },
+          { "value": 64, "name": "Hold On (64-127)" }
         ]
       }
     }

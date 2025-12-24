@@ -109,7 +109,7 @@
     {
       "controlChangeNumber": 26,
       "name": "Voice - Interval",
-      "additionalInfo": "Interval steps (0–25).",
+      "additionalInfo": "Interval steps (0-25).",
       "valueRange": {
         "min": 0,
         "max": 25,
@@ -208,7 +208,7 @@
     {
       "controlChangeNumber": 35,
       "name": "Freeze",
-      "additionalInfo": "0=Off, 1–127=On",
+      "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -221,7 +221,7 @@
     {
       "controlChangeNumber": 36,
       "name": "Morph",
-      "additionalInfo": "0=Off, 1–127=On",
+      "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -236,7 +236,7 @@
     {
       "controlChangeNumber": 41,
       "name": "Sequence Mode",
-      "additionalInfo": "0=Preset mode, 1–127=Sequence mode",
+      "additionalInfo": "0=Preset mode, 1-127=Sequence mode",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -247,14 +247,14 @@
       }
     },
 
-    { "controlChangeNumber": 42, "name": "Sequencer Step 1 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 43, "name": "Sequencer Step 2 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 44, "name": "Sequencer Step 3 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 45, "name": "Sequencer Step 4 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 46, "name": "Sequencer Step 5 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 47, "name": "Sequencer Step 6 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 48, "name": "Sequencer Step 7 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 49, "name": "Sequencer Step 8 Off/On", "additionalInfo": "0=Off, 1–127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 42, "name": "Sequencer Step 1 Off/On", "additionalInfo": "0=Off, 1-127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 43, "name": "Sequencer Step 2 Off/On", "additionalInfo": "0=Off, 1-127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 44, "name": "Sequencer Step 3 Off/On", "additionalInfo": "0=Off, 1-127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 45, "name": "Sequencer Step 4 Off/On", "additionalInfo": "0=Off, 1-127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 46, "name": "Sequencer Step 5 Off/On", "additionalInfo": "0=Off, 1-127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 47, "name": "Sequencer Step 6 Off/On", "additionalInfo": "0=Off, 1-127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 48, "name": "Sequencer Step 7 Off/On", "additionalInfo": "0=Off, 1-127=On", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 49, "name": "Sequencer Step 8 Off/On", "additionalInfo": "0=Off, 1-127=On", "valueRange": { "min": 0, "max": 127 } },
 
     { "controlChangeNumber": 50, "name": "Sequencer Step 1 Size", "valueRange": { "min": 0, "max": 127 } },
     { "controlChangeNumber": 51, "name": "Sequencer Step 2 Size", "valueRange": { "min": 0, "max": 127 } },
@@ -270,7 +270,7 @@
     {
       "controlChangeNumber": 60,
       "name": "MIDI Expression Off/On",
-      "additionalInfo": "0=Off, 1–127=On",
+      "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -283,7 +283,7 @@
     {
       "controlChangeNumber": 63,
       "name": "MIDI Clock Off/On",
-      "additionalInfo": "0=Off, 1–127=On",
+      "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -297,7 +297,7 @@
     {
       "controlChangeNumber": 80,
       "name": "Footswitch On",
-      "additionalInfo": "0=Release, 1–127=Press",
+      "additionalInfo": "0=Release, 1-127=Press",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -310,7 +310,7 @@
     {
       "controlChangeNumber": 81,
       "name": "Footswitch Favorite",
-      "additionalInfo": "0=Release, 1–127=Press",
+      "additionalInfo": "0=Release, 1-127=Press",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -323,7 +323,7 @@
     {
       "controlChangeNumber": 82,
       "name": "Footswitch Infinite",
-      "additionalInfo": "0=Release, 1–127=Press",
+      "additionalInfo": "0=Release, 1-127=Press",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -336,7 +336,7 @@
     {
       "controlChangeNumber": 83,
       "name": "Persist",
-      "additionalInfo": "0=Persist Off, 1–127=Persist On",
+      "additionalInfo": "0=Persist Off, 1-127=Persist On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -354,7 +354,7 @@
     {
       "controlChangeNumber": 102,
       "name": "Bypass/On",
-      "additionalInfo": "0=Bypass, 1–127=On",
+      "additionalInfo": "0=Bypass, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -377,6 +377,6 @@
     "supportsVelocity": false,
     "supportsPitchBend": false,
     "supportsModWheel": false,
-    "noteRange": "C-2–C0"
+    "noteRange": "C-2-C0"
   }
 }

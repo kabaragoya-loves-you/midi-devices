@@ -23,15 +23,15 @@
     {
       "controlChangeNumber": 5,
       "name": "Preamp Type",
-      "additionalInfo": "0–25 Off, 26–51 Volume Pedal, 52–76 Tube, 77–102 Transistor, 103–127 Op-Amp",
+      "additionalInfo": "0-25 Off, 26-51 Volume Pedal, 52-76 Tube, 77-102 Transistor, 103-127 Op-Amp",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0–25)" },
-          { "value": 26, "name": "Volume Pedal (26–51)" },
-          { "value": 52, "name": "Tube (52–76)" },
-          { "value": 77, "name": "Transistor (77–102)" },
-          { "value": 103, "name": "Op-Amp (103–127)" }
+          { "value": 0, "name": "Off (0-25)" },
+          { "value": 26, "name": "Volume Pedal (26-51)" },
+          { "value": 52, "name": "Tube (52-76)" },
+          { "value": 77, "name": "Transistor (77-102)" },
+          { "value": 103, "name": "Op-Amp (103-127)" }
         ]
       }
     },
@@ -39,15 +39,15 @@
     {
       "controlChangeNumber": 6,
       "name": "Preamp Location",
-      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "additionalInfo": "0-25 Pre+Dry, 26-51 Pre, 52-76 Feedback, 77-102 Pre Tank, 103-127 Post",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre + Dry (0–25)" },
-          { "value": 26, "name": "Pre (26–51)" },
-          { "value": 52, "name": "Feedback (52–76)" },
-          { "value": 77, "name": "Pre Tank (77–102)" },
-          { "value": 103, "name": "Post (103–127)" }
+          { "value": 0, "name": "Pre + Dry (0-25)" },
+          { "value": 26, "name": "Pre (26-51)" },
+          { "value": 52, "name": "Feedback (52-76)" },
+          { "value": 77, "name": "Pre Tank (77-102)" },
+          { "value": 103, "name": "Post (103-127)" }
         ]
       }
     },
@@ -60,12 +60,12 @@
     {
       "controlChangeNumber": 13,
       "name": "Delay Structure",
-      "additionalInfo": "0–63 Standard, 64–127 Reverse",
+      "additionalInfo": "0-63 Standard, 64-127 Reverse",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Standard (0–63)" },
-          { "value": 64, "name": "Reverse (64–127)" }
+          { "value": 0, "name": "Standard (0-63)" },
+          { "value": 64, "name": "Reverse (64-127)" }
         ]
       }
     },
@@ -73,12 +73,12 @@
     {
       "controlChangeNumber": 14,
       "name": "Bypass",
-      "additionalInfo": "0–63 FX Bypass, 64–127 FX Enable",
+      "additionalInfo": "0-63 FX Bypass, 64-127 FX Enable",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0–63)" },
-          { "value": 64, "name": "FX Enable (64–127)" }
+          { "value": 0, "name": "FX Bypass (0-63)" },
+          { "value": 64, "name": "FX Enable (64-127)" }
         ]
       }
     },
@@ -88,13 +88,13 @@
     {
       "controlChangeNumber": 16,
       "name": "Type",
-      "additionalInfo": "0–42 Digital, 43–85 BBD, 86–127 Magnetic",
+      "additionalInfo": "0-42 Digital, 43-85 BBD, 86-127 Magnetic",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Digital (0–42)" },
-          { "value": 43, "name": "BBD (43–85)" },
-          { "value": 86, "name": "Magnetic (86–127)" }
+          { "value": 0, "name": "Digital (0-42)" },
+          { "value": 43, "name": "BBD (43-85)" },
+          { "value": 86, "name": "Magnetic (86-127)" }
         ]
       }
     },
@@ -111,13 +111,13 @@
     {
       "controlChangeNumber": 28,
       "name": "MIDI Clock",
-      "additionalInfo": "0–42 Use Global, 43–85 Force Listen, 86–127 Force Ignore",
+      "additionalInfo": "0-42 Use Global, 43-85 Force Listen, 86-127 Force Ignore",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Use Global (0–42)" },
-          { "value": 43, "name": "Force Listen (43–85)" },
-          { "value": 86, "name": "Force Ignore (86–127)" }
+          { "value": 0, "name": "Use Global (0-42)" },
+          { "value": 43, "name": "Force Listen (43-85)" },
+          { "value": 86, "name": "Force Ignore (86-127)" }
         ]
       }
     },
@@ -125,18 +125,18 @@
     {
       "controlChangeNumber": 32,
       "name": "Reverb Structure",
-      "additionalInfo": "0–15 Ultraplate, 16–31 Cathedra, 32–47 Spring, 48–63 ’78 Room, 64–79 ’78 Plate, 80–95 ’78 Hall, 96–111 Prism, 112–127 Gravity",
+      "additionalInfo": "0-15 Ultraplate, 16-31 Cathedra, 32-47 Spring, 48-63 ’78 Room, 64-79 ’78 Plate, 80-95 ’78 Hall, 96-111 Prism, 112-127 Gravity",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ultraplate (0–15)" },
-          { "value": 16, "name": "Cathedra (16–31)" },
-          { "value": 32, "name": "Spring (32–47)" },
-          { "value": 48, "name": "’78 Room (48–63)" },
-          { "value": 64, "name": "’78 Plate (64–79)" },
-          { "value": 80, "name": "’78 Hall (80–95)" },
-          { "value": 96, "name": "Prism (96–111)" },
-          { "value": 112, "name": "Gravity (112–127)" }
+          { "value": 0, "name": "Ultraplate (0-15)" },
+          { "value": 16, "name": "Cathedra (16-31)" },
+          { "value": 32, "name": "Spring (32-47)" },
+          { "value": 48, "name": "’78 Room (48-63)" },
+          { "value": 64, "name": "’78 Plate (64-79)" },
+          { "value": 80, "name": "’78 Hall (80-95)" },
+          { "value": 96, "name": "Prism (96-111)" },
+          { "value": 112, "name": "Gravity (112-127)" }
         ]
       }
     },
@@ -159,7 +159,7 @@
     {
       "controlChangeNumber": 62,
       "name": "Dynamics Type",
-      "additionalInfo": "0–15 Off, 16–31 Compressor, 32–47 Compressor Link, 48–63 Swell, 64–79 Diffusion, 80–95 Limiter, 96–111 Limiter Link, 112–127 Freeze",
+      "additionalInfo": "0-15 Off, 16-31 Compressor, 32-47 Compressor Link, 48-63 Swell, 64-79 Diffusion, 80-95 Limiter, 96-111 Limiter Link, 112-127 Freeze",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
@@ -178,7 +178,7 @@
     {
       "controlChangeNumber": 63,
       "name": "Dynamics Location",
-      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "additionalInfo": "0-25 Pre+Dry, 26-51 Pre, 52-76 Feedback, 77-102 Pre Tank, 103-127 Post",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
@@ -201,7 +201,7 @@
     {
       "controlChangeNumber": 70,
       "name": "Pitch Type",
-      "additionalInfo": "0–31 Off, 32–63 Poly Chroma, 64–95 Micro Shift, 96–127 Lo-Fi",
+      "additionalInfo": "0-31 Off, 32-63 Poly Chroma, 64-95 Micro Shift, 96-127 Lo-Fi",
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
@@ -216,7 +216,7 @@
     {
       "controlChangeNumber": 71,
       "name": "Pitch Location",
-      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "additionalInfo": "0-25 Pre+Dry, 26-51 Pre, 52-76 Feedback, 77-102 Pre Tank, 103-127 Post",
       "valueRange": { "min": 0, "max": 127 }
     },
 
@@ -230,14 +230,14 @@
     {
       "controlChangeNumber": 78,
       "name": "Filter Type",
-      "additionalInfo": "0–31 Off, 32–63 Ladder, 64–95 State Variable, 96–127 Parametric",
+      "additionalInfo": "0-31 Off, 32-63 Ladder, 64-95 State Variable, 96-127 Parametric",
       "valueRange": { "min": 0, "max": 127 }
     },
 
     {
       "controlChangeNumber": 79,
       "name": "Filter Location",
-      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "additionalInfo": "0-25 Pre+Dry, 26-51 Pre, 52-76 Feedback, 77-102 Pre Tank, 103-127 Post",
       "valueRange": { "min": 0, "max": 127 }
     },
 
@@ -251,14 +251,14 @@
     {
       "controlChangeNumber": 86,
       "name": "Mod Type",
-      "additionalInfo": "0–21 Off, 22–42 Chorus, 43–63 Vibrato, 64–85 Vowel Mod, 86–106 Tremolo, 107–127 Hazy",
+      "additionalInfo": "0-21 Off, 22-42 Chorus, 43-63 Vibrato, 64-85 Vowel Mod, 86-106 Tremolo, 107-127 Hazy",
       "valueRange": { "min": 0, "max": 127 }
     },
 
     {
       "controlChangeNumber": 87,
       "name": "Mod Location",
-      "additionalInfo": "0–25 Pre+Dry, 26–51 Pre, 52–76 Feedback, 77–102 Pre Tank, 103–127 Post",
+      "additionalInfo": "0-25 Pre+Dry, 26-51 Pre, 52-76 Feedback, 77-102 Pre Tank, 103-127 Post",
       "valueRange": { "min": 0, "max": 127 }
     },
 

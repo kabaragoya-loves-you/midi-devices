@@ -31,7 +31,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Pre" },
-          { "value": 127, "name": "Post (1–127)" }
+          { "value": 127, "name": "Post (1-127)" }
         ]
       }
     },
@@ -85,7 +85,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Enabled" },
-          { "value": 127, "name": "Disabled (1–127)" }
+          { "value": 127, "name": "Disabled (1-127)" }
         ]
       }
     },
@@ -98,7 +98,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press (1–127)" }
+          { "value": 127, "name": "Press (1-127)" }
         ]
       }
     },
@@ -110,7 +110,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press (1–127)" }
+          { "value": 127, "name": "Press (1-127)" }
         ]
       }
     },
@@ -123,7 +123,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On (1–127)" }
+          { "value": 127, "name": "On (1-127)" }
         ]
       }
     },
@@ -138,7 +138,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "On (1–127)" }
+          { "value": 127, "name": "On (1-127)" }
         ]
       }
     }

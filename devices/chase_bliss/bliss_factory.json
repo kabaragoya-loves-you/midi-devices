@@ -99,7 +99,7 @@
     {
       "controlChangeNumber": 101,
       "name": "AUX FUNC",
-      "additionalInfo": "0 = AUX off, 1–127 = AUX on",
+      "additionalInfo": "0 = AUX off, 1-127 = AUX on",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -112,7 +112,7 @@
     {
       "controlChangeNumber": 102,
       "name": "Bypass Switch",
-      "additionalInfo": "0 = bypass, 1–127 = engage",
+      "additionalInfo": "0 = bypass, 1-127 = engage",
       "valueRange": {
         "min": 0,
         "max": 127,

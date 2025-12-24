@@ -169,27 +169,27 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Drive (0–21)"
+            "name": "Drive (0-21)"
           },
           {
             "value": 22,
-            "name": "Sweeten (22–43)"
+            "name": "Sweeten (22-43)"
           },
           {
             "value": 44,
-            "name": "Fuzz (44–65)"
+            "name": "Fuzz (44-65)"
           },
           {
             "value": 66,
-            "name": "Howl (66–87)"
+            "name": "Howl (66-87)"
           },
           {
             "value": 88,
-            "name": "Swell (88–109)"
+            "name": "Swell (88-109)"
           },
           {
             "value": 110,
-            "name": "Off (110–127)"
+            "name": "Off (110-127)"
           }
         ]
       }
@@ -204,27 +204,27 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Doubler (0–21)"
+            "name": "Doubler (0-21)"
           },
           {
             "value": 22,
-            "name": "Vibrato (22–43)"
+            "name": "Vibrato (22-43)"
           },
           {
             "value": 44,
-            "name": "Phaser (44–65)"
+            "name": "Phaser (44-65)"
           },
           {
             "value": 66,
-            "name": "Tremolo (66–87)"
+            "name": "Tremolo (66-87)"
           },
           {
             "value": 88,
-            "name": "Pitch (88–109)"
+            "name": "Pitch (88-109)"
           },
           {
             "value": 110,
-            "name": "Off (110–127)"
+            "name": "Off (110-127)"
           }
         ]
       }
@@ -239,27 +239,27 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Cascade (0–21)"
+            "name": "Cascade (0-21)"
           },
           {
             "value": 22,
-            "name": "Reels (22–43)"
+            "name": "Reels (22-43)"
           },
           {
             "value": 44,
-            "name": "Space (44–65)"
+            "name": "Space (44-65)"
           },
           {
             "value": 66,
-            "name": "Collage (66–87)"
+            "name": "Collage (66-87)"
           },
           {
             "value": 88,
-            "name": "Reverse (88–109)"
+            "name": "Reverse (88-109)"
           },
           {
             "value": 110,
-            "name": "Off (110–127)"
+            "name": "Off (110-127)"
           }
         ]
       }
@@ -274,27 +274,27 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Filter (0–21)"
+            "name": "Filter (0-21)"
           },
           {
             "value": 22,
-            "name": "Squash (22–43)"
+            "name": "Squash (22-43)"
           },
           {
             "value": 44,
-            "name": "Cassette (44–65)"
+            "name": "Cassette (44-65)"
           },
           {
             "value": 66,
-            "name": "Broken (66–87)"
+            "name": "Broken (66-87)"
           },
           {
             "value": 88,
-            "name": "Interference (88–109)"
+            "name": "Interference (88-109)"
           },
           {
             "value": 110,
-            "name": "Off (110–127)"
+            "name": "Off (110-127)"
           }
         ]
       }
@@ -309,11 +309,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Bypass (0–63)"
+            "name": "Bypass (0-63)"
           },
           {
             "value": 64,
-            "name": "Engage (64–127)"
+            "name": "Engage (64-127)"
           }
         ]
       }
@@ -328,15 +328,15 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Total Bypass (0–31)"
+            "name": "Total Bypass (0-31)"
           },
           {
             "value": 32,
-            "name": "Dual Bypass (32–63)"
+            "name": "Dual Bypass (32-63)"
           },
           {
             "value": 64,
-            "name": "Total Engage (64–127)"
+            "name": "Total Engage (64-127)"
           }
         ]
       }
@@ -351,11 +351,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Bypass (0–63)"
+            "name": "Bypass (0-63)"
           },
           {
             "value": 64,
-            "name": "Engage (64–127)"
+            "name": "Engage (64-127)"
           }
         ]
       }
@@ -370,11 +370,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Bypass (0–63)"
+            "name": "Bypass (0-63)"
           },
           {
             "value": 64,
-            "name": "Engage (64–127)"
+            "name": "Engage (64-127)"
           }
         ]
       }
@@ -389,11 +389,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Bypass (0–63)"
+            "name": "Bypass (0-63)"
           },
           {
             "value": 64,
-            "name": "Engage (64–127)"
+            "name": "Engage (64-127)"
           }
         ]
       }
@@ -408,11 +408,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Bypass (0–63)"
+            "name": "Bypass (0-63)"
           },
           {
             "value": 64,
-            "name": "Engage (64–127)"
+            "name": "Engage (64-127)"
           }
         ]
       }
@@ -427,11 +427,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Play (0–63)"
+            "name": "Play (0-63)"
           },
           {
             "value": 64,
-            "name": "Record (64–127)"
+            "name": "Record (64-127)"
           }
         ]
       }
@@ -455,15 +455,15 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Stop/Clear (0–43)"
+            "name": "Stop/Clear (0-43)"
           },
           {
             "value": 44,
-            "name": "Play (44–87)"
+            "name": "Play (44-87)"
           },
           {
             "value": 88,
-            "name": "Record (88–127)"
+            "name": "Record (88-127)"
           }
         ]
       }
@@ -478,11 +478,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Post-FX (0–63)"
+            "name": "Post-FX (0-63)"
           },
           {
             "value": 64,
-            "name": "Pre-FX (64–127)"
+            "name": "Pre-FX (64-127)"
           }
         ]
       }
@@ -506,15 +506,15 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "LPF (0–43)"
+            "name": "LPF (0-43)"
           },
           {
             "value": 44,
-            "name": "Tilt (44–87)"
+            "name": "Tilt (44-87)"
           },
           {
             "value": 88,
-            "name": "HPF (88–127)"
+            "name": "HPF (88-127)"
           }
         ]
       }
@@ -529,19 +529,19 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Low (0–31)"
+            "name": "Low (0-31)"
           },
           {
             "value": 32,
-            "name": "Medium (32–63)"
+            "name": "Medium (32-63)"
           },
           {
             "value": 64,
-            "name": "High (64–95)"
+            "name": "High (64-95)"
           },
           {
             "value": 96,
-            "name": "Very High (96–127)"
+            "name": "Very High (96-127)"
           }
         ]
       }
@@ -556,11 +556,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Exit (0–63)"
+            "name": "Exit (0-63)"
           },
           {
             "value": 64,
-            "name": "Enter (64–127)"
+            "name": "Enter (64-127)"
           }
         ]
       }

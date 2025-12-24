@@ -151,15 +151,15 @@
     },
     {
       "controlChangeNumber": 35,
-      "name": "Left Stomp – Tap"
+      "name": "Left Stomp - Tap"
     },
     {
       "controlChangeNumber": 36,
-      "name": "Middle Stomp – Scroll"
+      "name": "Middle Stomp - Scroll"
     },
     {
       "controlChangeNumber": 37,
-      "name": "Right Stomp – Bypass"
+      "name": "Right Stomp - Bypass"
     },
     {
       "controlChangeNumber": 38,

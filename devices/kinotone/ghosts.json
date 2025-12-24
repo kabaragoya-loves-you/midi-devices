@@ -92,7 +92,7 @@
     {
       "controlChangeNumber": 24,
       "name": "Reverb Mix & Placement",
-      "additionalInfo": "0–63: Pre Resonator Mix, 64–127: Post Resonator Mix",
+      "additionalInfo": "0-63: Pre Resonator Mix, 64-127: Post Resonator Mix",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -113,7 +113,7 @@
     {
       "controlChangeNumber": 26,
       "name": "Touch Pre/Post",
-      "additionalInfo": "0–63: Pre, 64–127: Post",
+      "additionalInfo": "0-63: Pre, 64-127: Post",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -150,7 +150,7 @@
     {
       "controlChangeNumber": 30,
       "name": "Input Filter",
-      "additionalInfo": "0–63: High Pass, 64–127: Low Pass",
+      "additionalInfo": "0-63: High Pass, 64-127: Low Pass",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -163,7 +163,7 @@
     {
       "controlChangeNumber": 31,
       "name": "Exciter Type",
-      "additionalInfo": "0–31: Pluck / Strike, 32–63: Air, 64–95: Vocoder, 96–127: Vocoder Hold",
+      "additionalInfo": "0-31: Pluck / Strike, 32-63: Air, 64-95: Vocoder, 96-127: Vocoder Hold",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -178,7 +178,7 @@
     {
       "controlChangeNumber": 32,
       "name": "Touch Mode",
-      "additionalInfo": "0–31: Terrazzo, 32–63: Endless Loop, 64–95: Rhythm Generator, 96–127: Shepard Shifter",
+      "additionalInfo": "0-31: Terrazzo, 32-63: Endless Loop, 64-95: Rhythm Generator, 96-127: Shepard Shifter",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -193,7 +193,7 @@
     {
       "controlChangeNumber": 33,
       "name": "Model",
-      "additionalInfo": "0–42: Strings, 43–85: Tubes, 86–127: Bars",
+      "additionalInfo": "0-42: Strings, 43-85: Tubes, 86-127: Bars",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -207,7 +207,7 @@
     {
       "controlChangeNumber": 34,
       "name": "Mic On / Off",
-      "additionalInfo": "0–64: Off, 65–127: On",
+      "additionalInfo": "0-64: Off, 65-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -220,7 +220,7 @@
     {
       "controlChangeNumber": 51,
       "name": "Ignore MIDI Clock",
-      "additionalInfo": "0: Ignore, 1–127: Listen",
+      "additionalInfo": "0: Ignore, 1-127: Listen",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -233,7 +233,7 @@
     {
       "controlChangeNumber": 52,
       "name": "Ignore MIDI Start",
-      "additionalInfo": "0: Ignore, 1–127: Listen",
+      "additionalInfo": "0: Ignore, 1-127: Listen",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -246,7 +246,7 @@
     {
       "controlChangeNumber": 60,
       "name": "Clear Endless Loop",
-      "additionalInfo": "0–64: False, 65–127: True",
+      "additionalInfo": "0-64: False, 65-127: True",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -259,7 +259,7 @@
     {
       "controlChangeNumber": 80,
       "name": "Touch Footswitch",
-      "additionalInfo": "0–64: Off, 65–127: On",
+      "additionalInfo": "0-64: Off, 65-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -272,7 +272,7 @@
     {
       "controlChangeNumber": 81,
       "name": "Bypass Footswitch",
-      "additionalInfo": "0–64: Off, 65–127: On",
+      "additionalInfo": "0-64: Off, 65-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,

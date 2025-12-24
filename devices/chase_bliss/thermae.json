@@ -54,32 +54,32 @@
     {
       "controlChangeNumber": 21,
       "name": "Ratio 1",
-      "additionalInfo": "0–11 correspond to musical intervals",
+      "additionalInfo": "0-11 correspond to musical intervals",
       "valueRange": { "min": 0, "max": 11 }
     },
     {
       "controlChangeNumber": 22,
       "name": "Ratio 2",
-      "additionalInfo": "0–11 correspond to musical intervals",
+      "additionalInfo": "0-11 correspond to musical intervals",
       "valueRange": { "min": 0, "max": 11 }
     },
     {
       "controlChangeNumber": 23,
       "name": "Ratio 3",
-      "additionalInfo": "0–11 correspond to musical intervals",
+      "additionalInfo": "0-11 correspond to musical intervals",
       "valueRange": { "min": 0, "max": 11 }
     },
     {
       "controlChangeNumber": 24,
       "name": "Ratio 4",
-      "additionalInfo": "0–11 correspond to musical intervals",
+      "additionalInfo": "0-11 correspond to musical intervals",
       "valueRange": { "min": 0, "max": 11 }
     },
 
     {
       "controlChangeNumber": 25,
       "name": "Subdivision",
-      "additionalInfo": "0–5 = whole → sixteenth",
+      "additionalInfo": "0-5 = whole → sixteenth",
       "valueRange": {
         "min": 0,
         "max": 5,
@@ -96,7 +96,7 @@
     {
       "controlChangeNumber": 26,
       "name": "Sequence Glide",
-      "additionalInfo": "0 = off, 1–127 = on",
+      "additionalInfo": "0 = off, 1-127 = on",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -109,7 +109,7 @@
     {
       "controlChangeNumber": 27,
       "name": "Sequence Mode",
-      "additionalInfo": "0–1 = run, 2 = off, 3–127 = envelope",
+      "additionalInfo": "0-1 = run, 2 = off, 3-127 = envelope",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -140,7 +140,7 @@
     {
       "controlChangeNumber": 31,
       "name": "Pitch Mode",
-      "additionalInfo": "↓ = 0–1, ↕ = 2, ↑ = 3–127",
+      "additionalInfo": "↓ = 0-1, ↕ = 2, ↑ = 3-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -154,7 +154,7 @@
     {
       "controlChangeNumber": 32,
       "name": "Pitch Hold",
-      "additionalInfo": "HOLD = 0–1, SKIP = 2–127",
+      "additionalInfo": "HOLD = 0-1, SKIP = 2-127",
       "valueRange": {
         "min": 0,
         "max": 127,

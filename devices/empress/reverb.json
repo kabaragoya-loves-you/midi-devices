@@ -97,7 +97,7 @@
     {
       "controlChangeNumber": 39,
       "name": "Save Preset To",
-      "additionalInfo": "0–35 selects destination slot",
+      "additionalInfo": "0-35 selects destination slot",
       "valueRange": { "min": 0, "max": 35 }
     },
     {

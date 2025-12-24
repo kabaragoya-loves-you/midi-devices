@@ -244,7 +244,7 @@
     {
       "controlChangeNumber": 97,
       "name": "Effect Order",
-      "additionalInfo": "0–63: Detune → Saturate, 64–127: Saturate → Detune",
+      "additionalInfo": "0-63: Detune → Saturate, 64-127: Saturate → Detune",
       "valueRange": {
         "min": 0,
         "max": 127,

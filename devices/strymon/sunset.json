@@ -31,7 +31,7 @@
     {
       "controlChangeNumber": 10,
       "name": "A Bypass/On",
-      "additionalInfo": "0=Bypass, 1–127=On",
+      "additionalInfo": "0=Bypass, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -61,7 +61,7 @@
     {
       "controlChangeNumber": 15,
       "name": "B Bypass/On",
-      "additionalInfo": "0=Bypass, 1–127=On",
+      "additionalInfo": "0=Bypass, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,

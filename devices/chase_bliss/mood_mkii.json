@@ -127,14 +127,14 @@
     "outputTypes": [
       { "id": "open", "cc": 58, "value": 0, "description": "Drone (always sounding)" },
       { "id": "on_off", "cc": 58, "value": 1, "description": "Sound only when a note is held" },
-      { "id": "adsr", "cc": 58, "range": "2–127", "description": "Envelope-controlled attack/decay" }
+      { "id": "adsr", "cc": 58, "range": "2-127", "description": "Envelope-controlled attack/decay" }
     ],
 
     "controls": {
-      "attack":      { "cc": 80, "range": "0–127" },
-      "decay":       { "cc": 81, "range": "0–127" },
-      "sustain":     { "cc": 82, "range": "0–127" },
-      "release":     { "cc": 83, "range": "0–127" },
+      "attack":      { "cc": 80, "range": "0-127" },
+      "decay":       { "cc": 81, "range": "0-127" },
+      "sustain":     { "cc": 82, "range": "0-127" },
+      "release":     { "cc": 83, "range": "0-127" },
       "octaveTranspose": {
         "cc": 57,
         "steps": [
@@ -150,7 +150,7 @@
           { "semitones": 108, "value": 10  }
         ]
       },
-      "portamento":  { "cc": 84, "range": "0–127" }
+      "portamento":  { "cc": 84, "range": "0-127" }
     }
   }
 

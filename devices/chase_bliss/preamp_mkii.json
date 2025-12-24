@@ -120,7 +120,7 @@
     {
       "controlChangeNumber": 27,
       "name": "Preset Save",
-      "additionalInfo": "Value (0–29) selects preset slot to save current settings into",
+      "additionalInfo": "Value (0-29) selects preset slot to save current settings into",
       "valueRange": { "min": 0, "max": 29 }
     },
     {

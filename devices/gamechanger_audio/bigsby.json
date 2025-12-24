@@ -129,7 +129,7 @@
     {
       "controlChangeNumber": 108,
       "name": "EXP Out Direction",
-      "additionalInfo": "0–63: normal, 64–127: invert",
+      "additionalInfo": "0-63: normal, 64-127: invert",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -212,7 +212,7 @@
     {
       "controlChangeNumber": 102,
       "name": "Auto Mode Phase Offset",
-      "additionalInfo": "0–127 maps to 0°–180°",
+      "additionalInfo": "0-127 maps to 0°-180°",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -221,7 +221,7 @@
     {
       "controlChangeNumber": 103,
       "name": "EXP Out Auto Mode",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -240,7 +240,7 @@
     {
       "controlChangeNumber": 104,
       "name": "EXP Out Override Enable",
-      "additionalInfo": "0–63: Off, 64–127: Override",
+      "additionalInfo": "0-63: Off, 64-127: Override",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -283,7 +283,7 @@
     {
       "controlChangeNumber": 106,
       "name": "Latch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -302,7 +302,7 @@
     {
       "controlChangeNumber": 107,
       "name": "Latch Direction",
-      "additionalInfo": "0–63: Down, 64–127: Up",
+      "additionalInfo": "0-63: Down, 64-127: Up",
       "valueRange": {
         "min": 0,
         "max": 127,

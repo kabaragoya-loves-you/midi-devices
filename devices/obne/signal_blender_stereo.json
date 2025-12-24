@@ -15,7 +15,7 @@
     {
       "controlChangeNumber": 15,
       "name": "A Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -28,7 +28,7 @@
     {
       "controlChangeNumber": 16,
       "name": "B Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -41,7 +41,7 @@
     {
       "controlChangeNumber": 17,
       "name": "Clean Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -54,7 +54,7 @@
     {
       "controlChangeNumber": 18,
       "name": "Trails A Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -67,7 +67,7 @@
     {
       "controlChangeNumber": 19,
       "name": "Trails B Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -99,7 +99,7 @@
     {
       "controlChangeNumber": 21,
       "name": "Allow Kill Dry",
-      "additionalInfo": "0–63: Off (default; clean turns on automatically when all sections are off in trails mode), 64–127: On (clean always matches user assignment)",
+      "additionalInfo": "0-63: Off (default; clean turns on automatically when all sections are off in trails mode), 64-127: On (clean always matches user assignment)",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -112,7 +112,7 @@
     {
       "controlChangeNumber": 102,
       "name": "MIDI Channel",
-      "additionalInfo": "1–16",
+      "additionalInfo": "1-16",
       "valueRange": { "min": 1, "max": 16 }
     }
   ],

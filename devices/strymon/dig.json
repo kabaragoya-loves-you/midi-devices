@@ -138,7 +138,7 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Dry Level (0–126)" },
+          { "value": 0, "name": "Dry Level (0-126)" },
           { "value": 127, "name": "Track Mix (127)" }
         ]
       }

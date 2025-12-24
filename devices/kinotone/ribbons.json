@@ -28,7 +28,7 @@
     {
       "controlChangeNumber": 30,
       "name": "Touch Mode Select",
-      "additionalInfo": "0–18: Magnetic Dance, 19–36: Tape Stop, 37–54: Broken Machine, 55–73: Repeater, 74–91: Crushed Cassette, 92–109: Disintegration Loop, 110–127: UnrealPlayer",
+      "additionalInfo": "0-18: Magnetic Dance, 19-36: Tape Stop, 37-54: Broken Machine, 55-73: Repeater, 74-91: Crushed Cassette, 92-109: Disintegration Loop, 110-127: UnrealPlayer",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -46,7 +46,7 @@
     {
       "controlChangeNumber": 31,
       "name": "Ribbons Mode Select",
-      "additionalInfo": "0–64: Tape Effects, 65–127: Looper",
+      "additionalInfo": "0-64: Tape Effects, 65-127: Looper",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -59,7 +59,7 @@
     {
       "controlChangeNumber": 32,
       "name": "Change Looper Track",
-      "additionalInfo": "0–31: Track 1, 32–63: Track 2, 64–95: Track 3, 96–127: Track 4",
+      "additionalInfo": "0-31: Track 1, 32-63: Track 2, 64-95: Track 3, 96-127: Track 4",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -74,7 +74,7 @@
     {
       "controlChangeNumber": 33,
       "name": "Clear Current Looper Track",
-      "additionalInfo": "0–64: False, 65–127: True",
+      "additionalInfo": "0-64: False, 65-127: True",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -87,7 +87,7 @@
     {
       "controlChangeNumber": 34,
       "name": "Clear All Looper Tracks",
-      "additionalInfo": "0–64: False, 65–127: True",
+      "additionalInfo": "0-64: False, 65-127: True",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -116,7 +116,7 @@
     {
       "controlChangeNumber": 51,
       "name": "Ignore MIDI Clock",
-      "additionalInfo": "0: Ignore, 1–127: Listen",
+      "additionalInfo": "0: Ignore, 1-127: Listen",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -132,7 +132,7 @@
     {
       "controlChangeNumber": 55,
       "name": "UnrealPlayer Fidelity",
-      "additionalInfo": "0–64: Lo-fi, 65–127: Hi-fi",
+      "additionalInfo": "0-64: Lo-fi, 65-127: Hi-fi",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -148,7 +148,7 @@
     {
       "controlChangeNumber": 59,
       "name": "Switch between Compression or Saturation",
-      "additionalInfo": "0–64: Compression, 65–127: Saturation",
+      "additionalInfo": "0-64: Compression, 65-127: Saturation",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -161,7 +161,7 @@
     {
       "controlChangeNumber": 60,
       "name": "Clear Touch Mode Loops",
-      "additionalInfo": "0–64: False, 65–127: True",
+      "additionalInfo": "0-64: False, 65-127: True",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -174,7 +174,7 @@
     {
       "controlChangeNumber": 80,
       "name": "Touch Footswitch",
-      "additionalInfo": "0–64: Off, 65–127: On",
+      "additionalInfo": "0-64: Off, 65-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -187,7 +187,7 @@
     {
       "controlChangeNumber": 81,
       "name": "Bypass Footswitch",
-      "additionalInfo": "0–64: Off, 65–127: On",
+      "additionalInfo": "0-64: Off, 65-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,

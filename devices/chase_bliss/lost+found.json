@@ -156,12 +156,12 @@
     {
       "controlChangeNumber": 21,
       "name": "L Effects Mode",
-      "additionalInfo": "1 = 0–1, 2 = 2, 3 = 3–127",
+      "additionalInfo": "1 = 0-1, 2 = 2, 3 = 3-127",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mode 1 (values 0–1)" },
+          { "value": 0, "name": "Mode 1 (values 0-1)" },
           { "value": 2, "name": "Mode 2 (value 2)" },
           { "value": 3, "name": "Mode 3 (≥ 3)" }
         ]
@@ -170,12 +170,12 @@
     {
       "controlChangeNumber": 22,
       "name": "Routing",
-      "additionalInfo": "Three routing modes mapped to 0–1, 2, and 3–127",
+      "additionalInfo": "Three routing modes mapped to 0-1, 2, and 3-127",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Routing 1 (values 0–1)" },
+          { "value": 0, "name": "Routing 1 (values 0-1)" },
           { "value": 2, "name": "Routing 2 (value 2)" },
           { "value": 3, "name": "Routing 3 (≥ 3)" }
         ]
@@ -184,12 +184,12 @@
     {
       "controlChangeNumber": 23,
       "name": "R Effects Mode",
-      "additionalInfo": "4 = 0–1, 5 = 2, 6 = 3–127",
+      "additionalInfo": "4 = 0-1, 5 = 2, 6 = 3-127",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mode 4 (values 0–1)" },
+          { "value": 0, "name": "Mode 4 (values 0-1)" },
           { "value": 2, "name": "Mode 5 (value 2)" },
           { "value": 3, "name": "Mode 6 (≥ 3)" }
         ]
@@ -198,12 +198,12 @@
     {
       "controlChangeNumber": 32,
       "name": "Spread",
-      "additionalInfo": "L ONLY = 0–1, BOTH = 2, R ONLY = 3–127",
+      "additionalInfo": "L ONLY = 0-1, BOTH = 2, R ONLY = 3-127",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "L Only (values 0–1)" },
+          { "value": 0, "name": "L Only (values 0-1)" },
           { "value": 2, "name": "Both" },
           { "value": 3, "name": "R Only (≥ 3)" }
         ]
@@ -530,7 +530,7 @@
     {
       "controlChangeNumber": 111,
       "name": "Save Preset",
-      "additionalInfo": "Preset # = value (1–122)",
+      "additionalInfo": "Preset # = value (1-122)",
       "valueRange": { "min": 1, "max": 122 }
     },
     {

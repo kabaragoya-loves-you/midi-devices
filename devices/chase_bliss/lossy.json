@@ -85,7 +85,7 @@
     {
       "controlChangeNumber": 33,
       "name": "Weighting",
-      "additionalInfo": "DARK = 0–1, NEUTRAL = 2, BRIGHT = 3–127",
+      "additionalInfo": "DARK = 0-1, NEUTRAL = 2, BRIGHT = 3-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -100,7 +100,7 @@
     {
       "controlChangeNumber": 21,
       "name": "Filter Slope",
-      "additionalInfo": "6 dB = 0–1, 24 dB = 2, 96 dB = 3–127",
+      "additionalInfo": "6 dB = 0-1, 24 dB = 2, 96 dB = 3-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -114,7 +114,7 @@
     {
       "controlChangeNumber": 22,
       "name": "Packet Mode",
-      "additionalInfo": "REPEAT = 0–1, CLEAN = 2, LOSS = 3–127",
+      "additionalInfo": "REPEAT = 0-1, CLEAN = 2, LOSS = 3-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -128,7 +128,7 @@
     {
       "controlChangeNumber": 23,
       "name": "Loss Mode",
-      "additionalInfo": "INVERSE = 0–1, STANDARD = 2, JITTER = 3–127",
+      "additionalInfo": "INVERSE = 0-1, STANDARD = 2, JITTER = 3-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -143,7 +143,7 @@
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
-      "additionalInfo": "Pedal off = 0, on = 1–127",
+      "additionalInfo": "Pedal off = 0, on = 1-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -169,7 +169,7 @@
     {
       "controlChangeNumber": 104,
       "name": "Alt Menu",
-      "additionalInfo": "Hold both switches; ALT exit = 0, ALT enter = 1–127",
+      "additionalInfo": "Hold both switches; ALT exit = 0, ALT enter = 1-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -281,7 +281,7 @@
     {
       "controlChangeNumber": 67,
       "name": "DIP Sweep",
-      "additionalInfo": "B = 0, T = 1–127",
+      "additionalInfo": "B = 0, T = 1-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -294,7 +294,7 @@
     {
       "controlChangeNumber": 68,
       "name": "DIP Polarity",
-      "additionalInfo": "F = 0, R = 1–127",
+      "additionalInfo": "F = 0, R = 1-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -411,13 +411,13 @@
     {
       "controlChangeNumber": 111,
       "name": "Preset Save",
-      "additionalInfo": "Send preset number (1–122) while holding both footswitches",
+      "additionalInfo": "Send preset number (1-122) while holding both footswitches",
       "valueRange": { "min": 0, "max": 122 }
     },
     {
       "controlChangeNumber": 52,
       "name": "Ramp/Bounce",
-      "additionalInfo": "off = 0, on = 1–127",
+      "additionalInfo": "off = 0, on = 1-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -430,13 +430,13 @@
     {
       "controlChangeNumber": 56,
       "name": "Factory Reset",
-      "additionalInfo": "0–127 (see manual for exact procedure)",
+      "additionalInfo": "0-127 (see manual for exact procedure)",
       "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 57,
       "name": "Dry Kill",
-      "additionalInfo": "off = 0, on = 1–127",
+      "additionalInfo": "off = 0, on = 1-127",
       "valueRange": {
         "min": 0,
         "max": 127,

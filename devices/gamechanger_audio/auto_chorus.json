@@ -15,7 +15,7 @@
     {
       "controlChangeNumber": 8,
       "name": "Level",
-      "additionalInfo": "[0–127] = [0…1]",
+      "additionalInfo": "[0-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -24,7 +24,7 @@
     {
       "controlChangeNumber": 9,
       "name": "Rate",
-      "additionalInfo": "[0–127] = [0…1]",
+      "additionalInfo": "[0-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -33,7 +33,7 @@
     {
       "controlChangeNumber": 10,
       "name": "Depth",
-      "additionalInfo": "[0–127] = [0…1]",
+      "additionalInfo": "[0-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -42,7 +42,7 @@
     {
       "controlChangeNumber": 11,
       "name": "Feedback",
-      "additionalInfo": "[0–127] = [0…1]",
+      "additionalInfo": "[0-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -51,7 +51,7 @@
     {
       "controlChangeNumber": 12,
       "name": "Dyn Time",
-      "additionalInfo": "[0–127] = [0…1]",
+      "additionalInfo": "[0-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -60,7 +60,7 @@
     {
       "controlChangeNumber": 13,
       "name": "Dyn Thres",
-      "additionalInfo": "[0–127] = [0…1]",
+      "additionalInfo": "[0-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -69,7 +69,7 @@
     {
       "controlChangeNumber": 14,
       "name": "Pitch Sens",
-      "additionalInfo": "[0–127] = [0…1]",
+      "additionalInfo": "[0-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -78,7 +78,7 @@
     {
       "controlChangeNumber": 15,
       "name": "Pitch Slew",
-      "additionalInfo": "[0–127] = [0…1]",
+      "additionalInfo": "[0-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -87,7 +87,7 @@
     {
       "controlChangeNumber": 16,
       "name": "Attenuverter CV In 1",
-      "additionalInfo": "[0–63] = [-1…0], [64–127] = [0…1]",
+      "additionalInfo": "[0-63] = [-1…0], [64-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -106,7 +106,7 @@
     {
       "controlChangeNumber": 17,
       "name": "Attenuverter CV In 2",
-      "additionalInfo": "[0–63] = [-1…0], [64–127] = [0…1]",
+      "additionalInfo": "[0-63] = [-1…0], [64-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -125,7 +125,7 @@
     {
       "controlChangeNumber": 18,
       "name": "Attenuverter CV In 3",
-      "additionalInfo": "[0–63] = [-1…0], [64–127] = [0…1]",
+      "additionalInfo": "[0-63] = [-1…0], [64-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -144,7 +144,7 @@
     {
       "controlChangeNumber": 19,
       "name": "Attenuverter CV In 4",
-      "additionalInfo": "[0–63] = [-1…0], [64–127] = [0…1]",
+      "additionalInfo": "[0-63] = [-1…0], [64-127] = [0…1]",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -163,7 +163,7 @@
     {
       "controlChangeNumber": 20,
       "name": "Dynamics Mode",
-      "additionalInfo": "[0–42] = FAST, [43–84] = SLOW, [85–127] = GATE",
+      "additionalInfo": "[0-42] = FAST, [43-84] = SLOW, [85-127] = GATE",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -186,7 +186,7 @@
     {
       "controlChangeNumber": 21,
       "name": "Pitchtrack Mode",
-      "additionalInfo": "[0–42] = NOTE, [43–84] = TONE, [85–127] = V/OCT",
+      "additionalInfo": "[0-42] = NOTE, [43-84] = TONE, [85-127] = V/OCT",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -209,7 +209,7 @@
     {
       "controlChangeNumber": 22,
       "name": "Effect Type",
-      "additionalInfo": "[0–42] = CHORUS, [43–84] = ENSEMBLE, [85–127] = FLANGER",
+      "additionalInfo": "[0-42] = CHORUS, [43-84] = ENSEMBLE, [85-127] = FLANGER",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -232,7 +232,7 @@
     {
       "controlChangeNumber": 23,
       "name": "Shape",
-      "additionalInfo": "[0–42] = SAW, [43–84] = SINE, [85–127] = RAMP",
+      "additionalInfo": "[0-42] = SAW, [43-84] = SINE, [85-127] = RAMP",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -255,7 +255,7 @@
     {
       "controlChangeNumber": 24,
       "name": "CV Mode",
-      "additionalInfo": "[0–42] = SUM, [43–84] = EXT, [85–127] = ALT",
+      "additionalInfo": "[0-42] = SUM, [43-84] = EXT, [85-127] = ALT",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -278,7 +278,7 @@
     {
       "controlChangeNumber": 25,
       "name": "Mix Mode",
-      "additionalInfo": "[0–42] = IN, [43–84] = WET, [85–127] = MIX",
+      "additionalInfo": "[0-42] = IN, [43-84] = WET, [85-127] = MIX",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -301,7 +301,7 @@
     {
       "controlChangeNumber": 26,
       "name": "Signal Level",
-      "additionalInfo": "[0–42] = INST, [43–84] = LINE, [85–127] = EU",
+      "additionalInfo": "[0-42] = INST, [43-84] = LINE, [85-127] = EU",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -324,7 +324,7 @@
     {
       "controlChangeNumber": 27,
       "name": "Effect On",
-      "additionalInfo": "[0–63] = OFF, [64–127] = ON",
+      "additionalInfo": "[0-63] = OFF, [64-127] = ON",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -343,7 +343,7 @@
     {
       "controlChangeNumber": 28,
       "name": "Auto On",
-      "additionalInfo": "[0–63] = OFF, [64–127] = ON",
+      "additionalInfo": "[0-63] = OFF, [64-127] = ON",
       "valueRange": {
         "min": 0,
         "max": 127,

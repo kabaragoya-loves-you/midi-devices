@@ -64,7 +64,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press (1–127)" }
+          { "value": 127, "name": "Press (1-127)" }
         ]
       }
     },
@@ -83,7 +83,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Hold (1–127)" }
+          { "value": 127, "name": "Hold (1-127)" }
         ]
       }
     },
@@ -102,7 +102,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "Engaged (1–127)" }
+          { "value": 127, "name": "Engaged (1-127)" }
         ]
       }
     }

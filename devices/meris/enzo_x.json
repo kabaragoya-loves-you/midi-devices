@@ -39,17 +39,17 @@
     {
       "controlChangeNumber": 5,
       "name": "Drive Type",
-      "additionalInfo": "0–21 = Off, 22–42 = Volume Pedal, 43–63 = Tube, 64–85 = Transistor, 86–106 = Op-Amp, 107–127 = Bitcrusher",
+      "additionalInfo": "0-21 = Off, 22-42 = Volume Pedal, 43-63 = Tube, 64-85 = Transistor, 86-106 = Op-Amp, 107-127 = Bitcrusher",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0–21)" },
-          { "value": 22, "name": "Volume Pedal (22–42)" },
-          { "value": 43, "name": "Tube (43–63)" },
-          { "value": 64, "name": "Transistor (64–85)" },
-          { "value": 86, "name": "Op-Amp (86–106)" },
-          { "value": 107, "name": "Bitcrusher (107–127)" }
+          { "value": 0, "name": "Off (0-21)" },
+          { "value": 22, "name": "Volume Pedal (22-42)" },
+          { "value": 43, "name": "Tube (43-63)" },
+          { "value": 64, "name": "Transistor (64-85)" },
+          { "value": 86, "name": "Op-Amp (86-106)" },
+          { "value": 107, "name": "Bitcrusher (107-127)" }
         ]
       }
     },
@@ -57,15 +57,15 @@
     {
       "controlChangeNumber": 6,
       "name": "Drive Location",
-      "additionalInfo": "0–31 = Pre + Dry, 32–63 = Dry, 64–95 = Pre Ambience, 96–127 = Post Ambience",
+      "additionalInfo": "0-31 = Pre + Dry, 32-63 = Dry, 64-95 = Pre Ambience, 96-127 = Post Ambience",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre + Dry (0–31)" },
-          { "value": 32, "name": "Dry (32–63)" },
-          { "value": 64, "name": "Pre Ambience (64–95)" },
-          { "value": 96, "name": "Post Ambience (96–127)" }
+          { "value": 0, "name": "Pre + Dry (0-31)" },
+          { "value": 32, "name": "Dry (32-63)" },
+          { "value": 64, "name": "Pre Ambience (64-95)" },
+          { "value": 96, "name": "Post Ambience (96-127)" }
         ]
       }
     },
@@ -89,16 +89,16 @@
     {
       "controlChangeNumber": 10,
       "name": "Ambience Type",
-      "additionalInfo": "0–25 = Off, 26–51 = Echo, 52–76 = Small, 77–102 = Medium, 103–127 = Large",
+      "additionalInfo": "0-25 = Off, 26-51 = Echo, 52-76 = Small, 77-102 = Medium, 103-127 = Large",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0–25)" },
-          { "value": 26, "name": "Echo (26–51)" },
-          { "value": 52, "name": "Small (52–76)" },
-          { "value": 77, "name": "Medium (77–102)" },
-          { "value": 103, "name": "Large (103–127)" }
+          { "value": 0, "name": "Off (0-25)" },
+          { "value": 26, "name": "Echo (26-51)" },
+          { "value": 52, "name": "Small (52-76)" },
+          { "value": 77, "name": "Medium (77-102)" },
+          { "value": 103, "name": "Large (103-127)" }
         ]
       }
     },
@@ -112,13 +112,13 @@
     {
       "controlChangeNumber": 12,
       "name": "Half Speed",
-      "additionalInfo": "0–63 = Half Speed Off, 64–127 = Half Speed On",
+      "additionalInfo": "0-63 = Half Speed Off, 64-127 = Half Speed On",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Half Speed Off (0–63)" },
-          { "value": 64, "name": "Half Speed On (64–127)" }
+          { "value": 0, "name": "Half Speed Off (0-63)" },
+          { "value": 64, "name": "Half Speed On (64-127)" }
         ]
       }
     },
@@ -132,13 +132,13 @@
     {
       "controlChangeNumber": 14,
       "name": "Bypass",
-      "additionalInfo": "0–63 = FX Bypass, 64–127 = FX Enable",
+      "additionalInfo": "0-63 = FX Bypass, 64-127 = FX Enable",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0–63)" },
-          { "value": 64, "name": "FX Enable (64–127)" }
+          { "value": 0, "name": "FX Bypass (0-63)" },
+          { "value": 64, "name": "FX Enable (64-127)" }
         ]
       }
     },
@@ -178,14 +178,14 @@
     {
       "controlChangeNumber": 21,
       "name": "MIDI Clock",
-      "additionalInfo": "0–42 = Use Global, 43–85 = Force Listen, 86–127 = Force Ignore",
+      "additionalInfo": "0-42 = Use Global, 43-85 = Force Listen, 86-127 = Force Ignore",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Use Global (0–42)" },
-          { "value": 43, "name": "Force Listen (43–85)" },
-          { "value": 86, "name": "Force Ignore (86–127)" }
+          { "value": 0, "name": "Use Global (0-42)" },
+          { "value": 43, "name": "Force Listen (43-85)" },
+          { "value": 86, "name": "Force Ignore (86-127)" }
         ]
       }
     },
@@ -193,16 +193,16 @@
     {
       "controlChangeNumber": 22,
       "name": "Synth Mode",
-      "additionalInfo": "0–25 = Mono Synth, 26–51 = Poly Synth, 52–76 = Arp Synth, 77–102 = Dry Mono, 103–127 = Dry Poly",
+      "additionalInfo": "0-25 = Mono Synth, 26-51 = Poly Synth, 52-76 = Arp Synth, 77-102 = Dry Mono, 103-127 = Dry Poly",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mono Synth (0–25)" },
-          { "value": 26, "name": "Poly Synth (26–51)" },
-          { "value": 52, "name": "Arp Synth (52–76)" },
-          { "value": 77, "name": "Dry Mono (77–102)" },
-          { "value": 103, "name": "Dry Poly (103–127)" }
+          { "value": 0, "name": "Mono Synth (0-25)" },
+          { "value": 26, "name": "Poly Synth (26-51)" },
+          { "value": 52, "name": "Arp Synth (52-76)" },
+          { "value": 77, "name": "Dry Mono (77-102)" },
+          { "value": 103, "name": "Dry Poly (103-127)" }
         ]
       }
     },
@@ -282,13 +282,13 @@
     {
       "controlChangeNumber": 37,
       "name": "Arp Cycle Latch",
-      "additionalInfo": "0–63 = Off, 64–127 = On",
+      "additionalInfo": "0-63 = Off, 64-127 = On",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0–63)" },
-          { "value": 64, "name": "On (64–127)" }
+          { "value": 0, "name": "Off (0-63)" },
+          { "value": 64, "name": "On (64-127)" }
         ]
       }
     },
@@ -296,14 +296,14 @@
     {
       "controlChangeNumber": 38,
       "name": "Filter Type",
-      "additionalInfo": "0–42 = Ladder, 43–85 = State Variable, 86–127 = Twin",
+      "additionalInfo": "0-42 = Ladder, 43-85 = State Variable, 86-127 = Twin",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ladder (0–42)" },
-          { "value": 43, "name": "State Variable (43–85)" },
-          { "value": 86, "name": "Twin (86–127)" }
+          { "value": 0, "name": "Ladder (0-42)" },
+          { "value": 43, "name": "State Variable (43-85)" },
+          { "value": 86, "name": "Twin (86-127)" }
         ]
       }
     },
@@ -317,14 +317,14 @@
     {
       "controlChangeNumber": 40,
       "name": "Filter Typology",
-      "additionalInfo": "0–42 = Lowpass, 43–85 = Bandpass, 86–127 = Highpass",
+      "additionalInfo": "0-42 = Lowpass, 43-85 = Bandpass, 86-127 = Highpass",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Lowpass (0–42)" },
-          { "value": 43, "name": "Bandpass (43–85)" },
-          { "value": 86, "name": "Highpass (86–127)" }
+          { "value": 0, "name": "Lowpass (0-42)" },
+          { "value": 43, "name": "Bandpass (43-85)" },
+          { "value": 86, "name": "Highpass (86-127)" }
         ]
       }
     },
@@ -353,13 +353,13 @@
     {
       "controlChangeNumber": 46,
       "name": "Filter Envelope Type",
-      "additionalInfo": "0–63 = ADSR, 64–127 = Envelope",
+      "additionalInfo": "0-63 = ADSR, 64-127 = Envelope",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "ADSR (0–63)" },
-          { "value": 64, "name": "Envelope (64–127)" }
+          { "value": 0, "name": "ADSR (0-63)" },
+          { "value": 64, "name": "Envelope (64-127)" }
         ]
       }
     },
@@ -393,13 +393,13 @@
     {
       "controlChangeNumber": 52,
       "name": "Direction",
-      "additionalInfo": "0–63 = Up, 64–127 = Down",
+      "additionalInfo": "0-63 = Up, 64-127 = Down",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Up (0–63)" },
-          { "value": 64, "name": "Down (64–127)" }
+          { "value": 0, "name": "Up (0-63)" },
+          { "value": 64, "name": "Down (64-127)" }
         ]
       }
     },
@@ -476,17 +476,17 @@
     {
       "controlChangeNumber": 86,
       "name": "Mod Type",
-      "additionalInfo": "0–21 = Off, 22–42 = Chorus, 43–63 = Flanger, 64–85 = Vibrato, 86–106 = Phaser, 107–127 = Ring Mod",
+      "additionalInfo": "0-21 = Off, 22-42 = Chorus, 43-63 = Flanger, 64-85 = Vibrato, 86-106 = Phaser, 107-127 = Ring Mod",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0–21)" },
-          { "value": 22, "name": "Chorus (22–42)" },
-          { "value": 43, "name": "Flanger (43–63)" },
-          { "value": 64, "name": "Vibrato (64–85)" },
-          { "value": 86, "name": "Phaser (86–106)" },
-          { "value": 107, "name": "Ring Mod (107–127)" }
+          { "value": 0, "name": "Off (0-21)" },
+          { "value": 22, "name": "Chorus (22-42)" },
+          { "value": 43, "name": "Flanger (43-63)" },
+          { "value": 64, "name": "Vibrato (64-85)" },
+          { "value": 86, "name": "Phaser (86-106)" },
+          { "value": 107, "name": "Ring Mod (107-127)" }
         ]
       }
     },
@@ -494,15 +494,15 @@
     {
       "controlChangeNumber": 87,
       "name": "Mod Location",
-      "additionalInfo": "0–31 = Pre + Dry, 32–63 = Dry, 64–95 = Pre Ambience, 96–127 = Post Ambience",
+      "additionalInfo": "0-31 = Pre + Dry, 32-63 = Dry, 64-95 = Pre Ambience, 96-127 = Post Ambience",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre + Dry (0–31)" },
-          { "value": 32, "name": "Dry (32–63)" },
-          { "value": 64, "name": "Pre Ambience (64–95)" },
-          { "value": 96, "name": "Post Ambience (96–127)" }
+          { "value": 0, "name": "Pre + Dry (0-31)" },
+          { "value": 32, "name": "Dry (32-63)" },
+          { "value": 64, "name": "Pre Ambience (64-95)" },
+          { "value": 96, "name": "Post Ambience (96-127)" }
         ]
       }
     },

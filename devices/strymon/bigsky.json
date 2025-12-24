@@ -22,9 +22,9 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Bank 0 (Presets 00A–42B)" },
-          { "value": 1, "name": "Bank 1 (Presets 42C–85A)" },
-          { "value": 2, "name": "Bank 2 (Presets 85B–99C)" }
+          { "value": 0, "name": "Bank 0 (Presets 00A-42B)" },
+          { "value": 1, "name": "Bank 1 (Presets 42C-85A)" },
+          { "value": 2, "name": "Bank 2 (Presets 85B-99C)" }
         ]
       }
     },

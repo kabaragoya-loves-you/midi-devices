@@ -99,7 +99,7 @@
     {
       "controlChangeNumber": 111,
       "name": "Preset Save",
-      "additionalInfo": "Send preset number to save (1–122)",
+      "additionalInfo": "Send preset number to save (1-122)",
       "valueRange": { "min": 1, "max": 122 }
     },
     {

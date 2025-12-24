@@ -38,7 +38,7 @@
     {
       "controlChangeNumber": 18,
       "name": "Boost Off/On",
-      "additionalInfo": "0=Off, 1–127=On",
+      "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -96,7 +96,7 @@
     {
       "controlChangeNumber": 60,
       "name": "MIDI Expression Off/On",
-      "additionalInfo": "0=Off, 1–127=On",
+      "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -111,7 +111,7 @@
     {
       "controlChangeNumber": 102,
       "name": "Bypass/On",
-      "additionalInfo": "0=Off, 1–127=On",
+      "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
         "max": 127,

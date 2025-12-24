@@ -26,7 +26,7 @@
     {
       "controlChangeNumber": 23,
       "name": "Bypass Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -39,7 +39,7 @@
     {
       "controlChangeNumber": 24,
       "name": "Aux Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -52,7 +52,7 @@
     {
       "controlChangeNumber": 25,
       "name": "Preset Saving Switch",
-      "additionalInfo": "0–63: Start Save, 64–127: Confirm Save",
+      "additionalInfo": "0-63: Start Save, 64-127: Confirm Save",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -65,7 +65,7 @@
     {
       "controlChangeNumber": 80,
       "name": "Aux Setting",
-      "additionalInfo": "0–42: Filter, 43–85: Hold, 86–127: Pitch",
+      "additionalInfo": "0-42: Filter, 43-85: Hold, 86-127: Pitch",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -79,7 +79,7 @@
     {
       "controlChangeNumber": 81,
       "name": "Trails Setting",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -92,7 +92,7 @@
     {
       "controlChangeNumber": 82,
       "name": "Stereo Setting",
-      "additionalInfo": "0–42: Mono, 43–85: Mono In Stereo Out, 86–127: Stereo",
+      "additionalInfo": "0-42: Mono, 43-85: Mono In Stereo Out, 86-127: Stereo",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -106,7 +106,7 @@
     {
       "controlChangeNumber": 102,
       "name": "MIDI Channel",
-      "additionalInfo": "1–16",
+      "additionalInfo": "1-16",
       "valueRange": { "min": 1, "max": 16 }
     }
   ],

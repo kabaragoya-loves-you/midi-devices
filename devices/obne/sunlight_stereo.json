@@ -22,7 +22,7 @@
     {
       "controlChangeNumber": 20,
       "name": "Shape",
-      "additionalInfo": "0–10: Tape, 11–29: Triangle, 30–63: Square, 64–102: Ramp Up, 103–118: Ramp Down, 119–127: Random",
+      "additionalInfo": "0-10: Tape, 11-29: Triangle, 30-63: Square, 64-102: Ramp Up, 103-118: Ramp Down, 119-127: Random",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -42,7 +42,7 @@
     {
       "controlChangeNumber": 24,
       "name": "Subdivisions",
-      "additionalInfo": "+4: 0–18, +3: 19–36, +2: 37–54, x1: 55–72, x2: 73–90, x3: 91–108, x4: 109–127",
+      "additionalInfo": "+4: 0-18, +3: 19-36, +2: 37-54, x1: 55-72, x2: 73-90, x3: 91-108, x4: 109-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -60,7 +60,7 @@
     {
       "controlChangeNumber": 25,
       "name": "Filter Type",
-      "additionalInfo": "0–31: Low Pass, 32–63: Band Pass, 64–95: High Pass, 96–127: Band Reject",
+      "additionalInfo": "0-31: Low Pass, 32-63: Band Pass, 64-95: High Pass, 96-127: Band Reject",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -75,7 +75,7 @@
     {
       "controlChangeNumber": 26,
       "name": "On/Off Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -94,7 +94,7 @@
     {
       "controlChangeNumber": 28,
       "name": "Hold Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -107,7 +107,7 @@
     {
       "controlChangeNumber": 29,
       "name": "LFO Time Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -120,7 +120,7 @@
     {
       "controlChangeNumber": 30,
       "name": "LFO Freq Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -133,7 +133,7 @@
     {
       "controlChangeNumber": 31,
       "name": "LFO Wet Switch",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -146,7 +146,7 @@
     {
       "controlChangeNumber": 85,
       "name": "Trails Setting",
-      "additionalInfo": "0–63: Off, 64–127: On",
+      "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -159,7 +159,7 @@
     {
       "controlChangeNumber": 86,
       "name": "Stereo Setting",
-      "additionalInfo": "0–42: Mono, 43–85: Mono In Stereo Out, 86–127: Stereo",
+      "additionalInfo": "0-42: Mono, 43-85: Mono In Stereo Out, 86-127: Stereo",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -173,7 +173,7 @@
     {
       "controlChangeNumber": 87,
       "name": "MIDI Clock Input Mode",
-      "additionalInfo": "0–31: Accept Clock In & Send Thru, 32–63: Accept Clock In Only, 64–95: Send Clock Out Only, 96–127: Deactivate Clock",
+      "additionalInfo": "0-31: Accept Clock In & Send Thru, 32-63: Accept Clock In Only, 64-95: Send Clock Out Only, 96-127: Deactivate Clock",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -188,7 +188,7 @@
     {
       "controlChangeNumber": 89,
       "name": "Aux Switch Setting",
-      "additionalInfo": "0–42: Freeze, 43–85: Tap Tempo, 86–127: Preset",
+      "additionalInfo": "0-42: Freeze, 43-85: Tap Tempo, 86-127: Preset",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -202,7 +202,7 @@
     {
       "controlChangeNumber": 90,
       "name": "Preset Saving Switch",
-      "additionalInfo": "0–42: Cancel Save, 43–85: Start Save, 86–127: Confirm Save",
+      "additionalInfo": "0-42: Cancel Save, 43-85: Start Save, 86-127: Confirm Save",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -216,7 +216,7 @@
     {
       "controlChangeNumber": 102,
       "name": "MIDI Channel",
-      "additionalInfo": "1–16",
+      "additionalInfo": "1-16",
       "valueRange": { "min": 1, "max": 16 }
     }
   ],

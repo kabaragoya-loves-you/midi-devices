@@ -104,7 +104,7 @@
     {
       "controlChangeNumber": 103,
       "name": "Drive / Hold",
-      "additionalInfo": "0–29: pedal off, clean engaged; 30–59: pedal on, clean engaged; 60–89: pedal off, dirt engaged; 90–127: pedal on, dirt engaged.",
+      "additionalInfo": "0-29: pedal off, clean engaged; 30-59: pedal on, clean engaged; 60-89: pedal off, dirt engaged; 90-127: pedal on, dirt engaged.",
       "valueRange": { "min": 0, "max": 127 }
     },
 

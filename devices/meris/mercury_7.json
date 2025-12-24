@@ -24,13 +24,13 @@
     {
       "controlChangeNumber": 14,
       "name": "Bypass",
-      "additionalInfo": "0–63 = FX Bypass, 64–127 = FX Enable",
+      "additionalInfo": "0-63 = FX Bypass, 64-127 = FX Enable",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0–63)" },
-          { "value": 64, "name": "FX Enable (64–127)" }
+          { "value": 0, "name": "FX Bypass (0-63)" },
+          { "value": 64, "name": "FX Enable (64-127)" }
         ]
       }
     },
@@ -99,13 +99,13 @@
     {
       "controlChangeNumber": 28,
       "name": "Swell",
-      "additionalInfo": "0–63 = Swell Off, 64–127 = Swell On",
+      "additionalInfo": "0-63 = Swell Off, 64-127 = Swell On",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Swell Off (0–63)" },
-          { "value": 64, "name": "Swell On (64–127)" }
+          { "value": 0, "name": "Swell Off (0-63)" },
+          { "value": 64, "name": "Swell On (64-127)" }
         ]
       }
     },
@@ -113,13 +113,13 @@
     {
       "controlChangeNumber": 29,
       "name": "Algorithm Select",
-      "additionalInfo": "0–63 = Ultraplate, 64–127 = Cathedra",
+      "additionalInfo": "0-63 = Ultraplate, 64-127 = Cathedra",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ultraplate (0–63)" },
-          { "value": 64, "name": "Cathedra (64–127)" }
+          { "value": 0, "name": "Ultraplate (0-63)" },
+          { "value": 64, "name": "Cathedra (64-127)" }
         ]
       }
     }

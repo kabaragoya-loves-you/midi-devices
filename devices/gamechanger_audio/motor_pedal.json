@@ -15,7 +15,7 @@
     {
       "controlChangeNumber": 1,
       "name": "Modwheel",
-      "additionalInfo": "[0–127] = [min MOD … max MOD]",
+      "additionalInfo": "[0-127] = [min MOD … max MOD]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -24,7 +24,7 @@
     {
       "controlChangeNumber": 8,
       "name": "Shift",
-      "additionalInfo": "[0–17] = -Oct, [18–35] = -5th, [36–53] = -4th, [54–72] = 0, [73–90] = +4th, [91–108] = +5th, [109–127] = +Oct",
+      "additionalInfo": "[0-17] = -Oct, [18-35] = -5th, [36-53] = -4th, [54-72] = 0, [73-90] = +4th, [91-108] = +5th, [109-127] = +Oct",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -63,7 +63,7 @@
     {
       "controlChangeNumber": 9,
       "name": "Release",
-      "additionalInfo": "[0–127] = [min RELEASE … max RELEASE]",
+      "additionalInfo": "[0-127] = [min RELEASE … max RELEASE]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -72,7 +72,7 @@
     {
       "controlChangeNumber": 10,
       "name": "Vibr/Glide",
-      "additionalInfo": "[0–63] = [max VIBR … min VIBR], [64–127] = [min ACCEL … max ACCEL]",
+      "additionalInfo": "[0-63] = [max VIBR … min VIBR], [64-127] = [min ACCEL … max ACCEL]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -81,7 +81,7 @@
     {
       "controlChangeNumber": 11,
       "name": "Mod",
-      "additionalInfo": "[0–127] = [min MOD … max MOD]",
+      "additionalInfo": "[0-127] = [min MOD … max MOD]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -90,7 +90,7 @@
     {
       "controlChangeNumber": 12,
       "name": "Engine",
-      "additionalInfo": "[0–25] = Engine 1: Motor, [26–51] = Engine 2: MxD, [52–76] = Engine 3: MWave, [77–102] = Engine 4: Coil, [103–127] = Engine 5: Vocoder",
+      "additionalInfo": "[0-25] = Engine 1: Motor, [26-51] = Engine 2: MxD, [52-76] = Engine 3: MWave, [77-102] = Engine 4: Coil, [103-127] = Engine 5: Vocoder",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -121,7 +121,7 @@
     {
       "controlChangeNumber": 13,
       "name": "Pedal Mode",
-      "additionalInfo": "[0–25] = Pedal Mode 1: Accel, [26–51] = Pedal Mode 2: Brake, [52–76] = Pedal Mode 3: Clutch, [77–102] = Pedal Mode 4: Drift, [103–127] = Pedal Mode 5: Volume",
+      "additionalInfo": "[0-25] = Pedal Mode 1: Accel, [26-51] = Pedal Mode 2: Brake, [52-76] = Pedal Mode 3: Clutch, [77-102] = Pedal Mode 4: Drift, [103-127] = Pedal Mode 5: Volume",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -152,7 +152,7 @@
     {
       "controlChangeNumber": 14,
       "name": "Effect On (FSW)",
-      "additionalInfo": "[0–63] = Off, [64–127] = On",
+      "additionalInfo": "[0-63] = Off, [64-127] = On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -171,7 +171,7 @@
     {
       "controlChangeNumber": 15,
       "name": "Pedal Value",
-      "additionalInfo": "[0–127] = [off … fully pressed (normal range)]",
+      "additionalInfo": "[0-127] = [off … fully pressed (normal range)]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -180,7 +180,7 @@
     {
       "controlChangeNumber": 16,
       "name": "Floor-It Value",
-      "additionalInfo": "[0–127] = [pressed … max pressure (floor-it)]",
+      "additionalInfo": "[0-127] = [pressed … max pressure (floor-it)]",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -189,7 +189,7 @@
     {
       "controlChangeNumber": 17,
       "name": "MIDI Note Only Mode",
-      "additionalInfo": "Disable instrument input pitch tracker (e.g. for vocoding); [0–63] = Off, [64–127] = On",
+      "additionalInfo": "Disable instrument input pitch tracker (e.g. for vocoding); [0-63] = Off, [64-127] = On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -208,7 +208,7 @@
     {
       "controlChangeNumber": 18,
       "name": "Pedal + Pressure Value",
-      "additionalInfo": "[0–90] = [off … fully pressed (normal range)], [91–102] = [deadzone], [103–127] = [pressed … max pressure (floor-it)]",
+      "additionalInfo": "[0-90] = [off … fully pressed (normal range)], [91-102] = [deadzone], [103-127] = [pressed … max pressure (floor-it)]",
       "valueRange": {
         "min": 0,
         "max": 127,

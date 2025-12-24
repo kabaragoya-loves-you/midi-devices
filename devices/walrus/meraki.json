@@ -23,7 +23,7 @@
     {
       "controlChangeNumber": 26,
       "name": "Sync",
-      "additionalInfo": "0–42: L, 43–85: R, 86–127: S",
+      "additionalInfo": "0-42: L, 43-85: R, 86-127: S",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -37,7 +37,7 @@
     {
       "controlChangeNumber": 27,
       "name": "Division L",
-      "additionalInfo": "0–42: .1/8, 43–85: 1/8, 86–127: 1/4",
+      "additionalInfo": "0-42: .1/8, 43-85: 1/8, 86-127: 1/4",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -51,7 +51,7 @@
     {
       "controlChangeNumber": 28,
       "name": "Division R",
-      "additionalInfo": "0–42: .1/8, 43–85: 1/8, 86–127: 1/4",
+      "additionalInfo": "0-42: .1/8, 43-85: 1/8, 86-127: 1/4",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -89,7 +89,7 @@
     {
       "controlChangeNumber": 31,
       "name": "Feedback Path",
-      "additionalInfo": "0–42: P-P, 43–85: S, 86–127: P",
+      "additionalInfo": "0-42: P-P, 43-85: S, 86-127: P",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -117,7 +117,7 @@
     {
       "controlChangeNumber": 86,
       "name": "Expression Destination",
-      "additionalInfo": "0–21: Time L, 22–42: Mod Depth L, 43–63: Time R, 64–85: Mod Depth R, 86–106: Mod Rate L, 107–127: Mod Rate R",
+      "additionalInfo": "0-21: Time L, 22-42: Mod Depth L, 43-63: Time R, 64-85: Mod Depth R, 86-106: Mod Rate L, 107-127: Mod Rate R",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -161,7 +161,7 @@
     {
       "controlChangeNumber": 102,
       "name": "Mod Shape L",
-      "additionalInfo": "0–42: Square, 43–85: Random, 86–127: Sine",
+      "additionalInfo": "0-42: Square, 43-85: Random, 86-127: Sine",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -175,7 +175,7 @@
     {
       "controlChangeNumber": 103,
       "name": "Mod Shape R",
-      "additionalInfo": "0–42: Square, 43–85: Random, 86–127: Sine",
+      "additionalInfo": "0-42: Square, 43-85: Random, 86-127: Sine",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -189,7 +189,7 @@
     {
       "controlChangeNumber": 104,
       "name": "Mod Phase",
-      "additionalInfo": "0–42: 180, 43–85: 90, 86–127: 0",
+      "additionalInfo": "0-42: 180, 43-85: 90, 86-127: 0",
       "valueRange": {
         "min": 0,
         "max": 127,

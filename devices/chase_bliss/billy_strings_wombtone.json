@@ -72,7 +72,7 @@
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
-      "additionalInfo": "Pedal off = 0–63, pedal on = 64–127",
+      "additionalInfo": "Pedal off = 0-63, pedal on = 64-127",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -85,7 +85,7 @@
     {
       "controlChangeNumber": 93,
       "name": "Tap",
-      "additionalInfo": "0–127 (tap footswitch emulation)",
+      "additionalInfo": "0-127 (tap footswitch emulation)",
       "valueRange": { "min": 0, "max": 127 }
     },
 

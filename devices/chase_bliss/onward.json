@@ -132,7 +132,7 @@
     {
       "controlChangeNumber": 21,
       "name": "Error Type",
-      "additionalInfo": "TIMING = 0–1, CONDITION = 2, PLAYBACK = 3 or higher",
+      "additionalInfo": "TIMING = 0-1, CONDITION = 2, PLAYBACK = 3 or higher",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -146,7 +146,7 @@
     {
       "controlChangeNumber": 22,
       "name": "Fade",
-      "additionalInfo": "LONG = 0–1, USER = 2, SHORT = 3 or higher",
+      "additionalInfo": "LONG = 0-1, USER = 2, SHORT = 3 or higher",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -160,7 +160,7 @@
     {
       "controlChangeNumber": 23,
       "name": "Animate",
-      "additionalInfo": "VIBRATO = 0–1, OFF = 2, CHORUS = 3 or higher",
+      "additionalInfo": "VIBRATO = 0-1, OFF = 2, CHORUS = 3 or higher",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -416,7 +416,7 @@
     {
       "controlChangeNumber": 31,
       "name": "Error Routing",
-      "additionalInfo": "GLITCH = 0–1, BOTH = 2, FREEZE = 3 or higher",
+      "additionalInfo": "GLITCH = 0-1, BOTH = 2, FREEZE = 3 or higher",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -430,7 +430,7 @@
     {
       "controlChangeNumber": 32,
       "name": "Sustain Routing",
-      "additionalInfo": "GLITCH = 0–1, BOTH = 2, FREEZE = 3 or higher",
+      "additionalInfo": "GLITCH = 0-1, BOTH = 2, FREEZE = 3 or higher",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -444,7 +444,7 @@
     {
       "controlChangeNumber": 33,
       "name": "Effects Routing",
-      "additionalInfo": "GLITCH = 0–1, BOTH = 2, FREEZE = 3 or higher",
+      "additionalInfo": "GLITCH = 0-1, BOTH = 2, FREEZE = 3 or higher",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -465,7 +465,7 @@
     {
       "controlChangeNumber": 111,
       "name": "Preset Save",
-      "additionalInfo": "send preset number (1–122) while holding both footswitches",
+      "additionalInfo": "send preset number (1-122) while holding both footswitches",
       "valueRange": { "min": 0, "max": 122 }
     },
     {
@@ -497,7 +497,7 @@
     {
       "controlChangeNumber": 53,
       "name": "MIDI Sync Subdivision",
-      "additionalInfo": "0–8 map to specific note values",
+      "additionalInfo": "0-8 map to specific note values",
       "valueRange": {
         "min": 0,
         "max": 8,

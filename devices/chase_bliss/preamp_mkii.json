@@ -138,7 +138,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged (≥ 1)" }
+          { "value": 1, "name": "Engaged" }
         ]
       }
     }

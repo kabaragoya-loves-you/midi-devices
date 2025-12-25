@@ -600,7 +600,7 @@
         "discreteValues": [
           { "value": 0, "name": "Input" },
           { "value": 1, "name": "Regeneration" },
-          { "value": 2, "name": "Input + Regeneration" }
+          { "value": 2, "name": "Input+Regen" }
         ]
       }
     },
@@ -613,7 +613,7 @@
         "discreteValues": [
           { "value": 0, "name": "Input" },
           { "value": 1, "name": "Regeneration" },
-          { "value": 2, "name": "Input + Regeneration" }
+          { "value": 2, "name": "Input+Regen" }
         ]
       }
     },
@@ -675,8 +675,8 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Scroll Counter-Clockwise" },
-          { "value": 1, "name": "Scroll Clockwise" }
+          { "value": 0, "name": "Scroll CCW" },
+          { "value": 1, "name": "Scroll CW" }
         ]
       }
     },

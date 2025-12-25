@@ -101,7 +101,7 @@
         "discreteValues": [
           { "value": 0, "name": "Off" },
           { "value": 1, "name": "Grain Freeze" },
-          { "value": 2, "name": "Reverb Pad + Grain Freeze" }
+          { "value": 2, "name": "Pad+Freeze" }
         ]
       }
     },

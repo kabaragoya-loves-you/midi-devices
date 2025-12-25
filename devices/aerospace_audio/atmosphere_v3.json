@@ -21,8 +21,8 @@
         "discreteValues": [
           { "value": 0, "name": "Abort" },
           { "value": 1, "name": "Engage" },
-          { "value": 2, "name": "Abort (Instant)" },
-          { "value": 3, "name": "Engage (Instant)" }
+          { "value": 2, "name": "Abort" },
+          { "value": 3, "name": "Engage" }
         ]
       }
     },
@@ -107,7 +107,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Decrement" },
-          { "value": 1, "name": "Song # (1-126)" },
+          { "value": 1, "name": "Song #" },
           { "value": 127, "name": "Increment" }
         ]
       }

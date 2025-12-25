@@ -29,8 +29,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Triggered Env (0-63)" },
-          { "value": 64, "name": "Env Follower (64-127)" }
+          { "value": 0, "name": "Triggered Env" },
+          { "value": 64, "name": "Env Follower" }
         ]
       }
     },
@@ -43,8 +43,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0-63)" },
-          { "value": 64, "name": "FX Enable (64-127)" }
+          { "value": 0, "name": "FX Bypass" },
+          { "value": 64, "name": "FX Enable" }
         ]
       }
     },
@@ -138,10 +138,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Dry (0-31)" },
-          { "value": 32, "name": "Mono Synth (32-63)" },
-          { "value": 64, "name": "Arp Synth (64-95)" },
-          { "value": 96, "name": "Poly Synth (96-127)" }
+          { "value": 0, "name": "Dry" },
+          { "value": 32, "name": "Mono Synth" },
+          { "value": 64, "name": "Arp Synth" },
+          { "value": 96, "name": "Poly Synth" }
         ]
       }
     },
@@ -154,8 +154,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Sawtooth (0-63)" },
-          { "value": 64, "name": "Square (64-127)" }
+          { "value": 0, "name": "Sawtooth" },
+          { "value": 64, "name": "Square" }
         ]
       }
     }

@@ -86,7 +86,7 @@
         "discreteValues": [
           { "value": 0, "name": "Whole" },
           { "value": 1, "name": "Half" },
-          { "value": 2, "name": "Quarter Triplet" },
+          { "value": 2, "name": "1/4 Triplet" },
           { "value": 3, "name": "Quarter" },
           { "value": 4, "name": "Eighth" },
           { "value": 5, "name": "Sixteenth" }
@@ -102,7 +102,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -116,7 +116,7 @@
         "discreteValues": [
           { "value": 0, "name": "Run" },
           { "value": 2, "name": "Off" },
-          { "value": 3, "name": "Envelope (≥ 3)" }
+          { "value": 3, "name": "Envelope" }
         ]
       }
     },
@@ -147,7 +147,7 @@
         "discreteValues": [
           { "value": 0, "name": "Down" },
           { "value": 2, "name": "Both" },
-          { "value": 3, "name": "Up (≥ 3)" }
+          { "value": 3, "name": "Up" }
         ]
       }
     },
@@ -160,7 +160,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Hold" },
-          { "value": 2, "name": "Skip (≥ 2)" }
+          { "value": 2, "name": "Skip" }
         ]
       }
     },
@@ -174,7 +174,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Ignore" },
-          { "value": 1, "name": "Listen (≥ 1)" }
+          { "value": 1, "name": "Listen" }
         ]
       }
     },

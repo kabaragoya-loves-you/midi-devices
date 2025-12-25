@@ -94,11 +94,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Negative range (-1…0)"
+            "name": "Negative"
           },
           {
             "value": 64,
-            "name": "Positive range (0…1)"
+            "name": "Positive"
           }
         ]
       }
@@ -113,11 +113,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Negative range (-1…0)"
+            "name": "Negative"
           },
           {
             "value": 64,
-            "name": "Positive range (0…1)"
+            "name": "Positive"
           }
         ]
       }
@@ -132,11 +132,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Negative range (-1…0)"
+            "name": "Negative"
           },
           {
             "value": 64,
-            "name": "Positive range (0…1)"
+            "name": "Positive"
           }
         ]
       }
@@ -151,11 +151,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Negative range (-1…0)"
+            "name": "Negative"
           },
           {
             "value": 64,
-            "name": "Positive range (0…1)"
+            "name": "Positive"
           }
         ]
       }
@@ -369,11 +369,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Tails Off with Clear"
+            "name": "Tails Off+Clr"
           },
           {
             "value": 43,
-            "name": "Tails Off without Clear"
+            "name": "Tails Off"
           },
           {
             "value": 85,

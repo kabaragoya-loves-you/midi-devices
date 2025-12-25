@@ -85,14 +85,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Clean Off, B Off, A Off" },
-          { "value": 1, "name": "Clean Off, B Off, A On" },
-          { "value": 2, "name": "Clean Off, B On, A Off" },
-          { "value": 3, "name": "Clean Off, B On, A On" },
-          { "value": 4, "name": "Clean On, B Off, A Off" },
-          { "value": 5, "name": "Clean On, B Off, A On" },
-          { "value": 6, "name": "Clean On, B On, A Off" },
-          { "value": 7, "name": "Clean On, B On, A On" }
+          { "value": 0, "name": "C0 B0 A0" },
+          { "value": 1, "name": "C0 B0 A1" },
+          { "value": 2, "name": "C0 B1 A0" },
+          { "value": 3, "name": "C0 B1 A1" },
+          { "value": 4, "name": "C1 B0 A0" },
+          { "value": 5, "name": "C1 B0 A1" },
+          { "value": 6, "name": "C1 B1 A0" },
+          { "value": 7, "name": "C1 B1 A1" }
         ]
       }
     },

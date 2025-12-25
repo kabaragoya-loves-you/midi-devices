@@ -213,11 +213,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Extra Tap Release"
+            "name": "Tap Release"
           },
           {
             "value": 127,
-            "name": "Extra Tap Press"
+            "name": "Tap Press"
           }
         ]
       }
@@ -259,11 +259,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Ramp Trigger Release"
+            "name": "Ramp Release"
           },
           {
             "value": 127,
-            "name": "Ramp Trigger Press"
+            "name": "Ramp Press"
           }
         ]
       }

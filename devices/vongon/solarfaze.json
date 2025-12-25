@@ -251,11 +251,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Detune → Saturate"
+            "name": "Det→Sat"
           },
           {
             "value": 64,
-            "name": "Saturate → Detune"
+            "name": "Sat→Det"
           }
         ]
       }

@@ -63,7 +63,7 @@
           { "value": 1, "name": "Dotted Eighth" },
           { "value": 2, "name": "Eighth Triplet" },
           { "value": 3, "name": "Eighth" },
-          { "value": 4, "name": "Eighth Sextolet" },
+          { "value": 4, "name": "1/8 Sextolet" },
           { "value": 5, "name": "Sixteenth" }
         ]
       }
@@ -78,7 +78,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Ignore Clock" },
-          { "value": 127, "name": "Listen for Clock" }
+          { "value": 127, "name": "Listen Clock" }
         ]
       }
     },

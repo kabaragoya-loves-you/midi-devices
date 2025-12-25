@@ -29,8 +29,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0-63)" },
-          { "value": 64, "name": "FX Enable (64-127)" }
+          { "value": 0, "name": "FX Bypass" },
+          { "value": 64, "name": "FX Enable" }
         ]
       }
     },
@@ -129,9 +129,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pitch (0-62)" },
-          { "value": 63, "name": "Sample Rate (63)" },
-          { "value": 64, "name": "Filter (64-127)" }
+          { "value": 0, "name": "Pitch" },
+          { "value": 63, "name": "Sample Rate" },
+          { "value": 64, "name": "Filter" }
         ]
       }
     },
@@ -144,8 +144,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Hold Off (0-63)" },
-          { "value": 64, "name": "Hold On (64-127)" }
+          { "value": 0, "name": "Hold Off" },
+          { "value": 64, "name": "Hold On" }
         ]
       }
     }

@@ -61,7 +61,7 @@
         "discreteValues": [
           { "value": 0, "name": "Sine" },
           { "value": 2, "name": "Triangle" },
-          { "value": 3, "name": "Ramp (≥ 3)" }
+          { "value": 3, "name": "Ramp" }
         ]
       }
     },
@@ -76,7 +76,7 @@
         "discreteValues": [
           { "value": 0, "name": "Left" },
           { "value": 2, "name": "Center" },
-          { "value": 3, "name": "Right (≥ 3)" }
+          { "value": 3, "name": "Right" }
         ]
       }
     },
@@ -91,7 +91,7 @@
         "discreteValues": [
           { "value": 0, "name": "Chorus" },
           { "value": 2, "name": "Vibrato" },
-          { "value": 3, "name": "Left/Right (≥ 3)" }
+          { "value": 3, "name": "Left/Right" }
         ]
       }
     },
@@ -108,7 +108,7 @@
           { "value": 1, "name": "Dotted Eighth" },
           { "value": 2, "name": "Eighth Triplet" },
           { "value": 3, "name": "Eighth" },
-          { "value": 4, "name": "Sixteenth Triplet" },
+          { "value": 4, "name": "1/16 Triplet" },
           { "value": 5, "name": "Sixteenth" }
         ]
       }
@@ -123,7 +123,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Ignore Clock" },
-          { "value": 1, "name": "Follow Clock (≥ 1)" }
+          { "value": 1, "name": "Follow Clock" }
         ]
       }
     },

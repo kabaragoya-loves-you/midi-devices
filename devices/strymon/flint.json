@@ -127,8 +127,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Reverb > Tremolo" },
-          { "value": 127, "name": "Tremolo > Reverb" }
+          { "value": 0, "name": "Verb>Trem" },
+          { "value": 127, "name": "Trem>Verb" }
         ]
       }
     },

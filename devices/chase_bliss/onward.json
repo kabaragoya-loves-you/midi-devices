@@ -24,7 +24,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged (≥ 1)" }
+          { "value": 1, "name": "Engaged" }
         ]
       }
     },
@@ -37,7 +37,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged (≥ 1)" }
+          { "value": 1, "name": "Engaged" }
         ]
       }
     },
@@ -50,7 +50,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "ALT Exit" },
-          { "value": 1, "name": "ALT Enter (≥ 1)" }
+          { "value": 1, "name": "ALT Enter" }
         ]
       }
     },
@@ -63,7 +63,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -76,7 +76,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -139,7 +139,7 @@
         "discreteValues": [
           { "value": 0, "name": "Timing" },
           { "value": 2, "name": "Condition" },
-          { "value": 3, "name": "Playback (≥ 3)" }
+          { "value": 3, "name": "Playback" }
         ]
       }
     },
@@ -153,7 +153,7 @@
         "discreteValues": [
           { "value": 0, "name": "Long" },
           { "value": 2, "name": "User" },
-          { "value": 3, "name": "Short (≥ 3)" }
+          { "value": 3, "name": "Short" }
         ]
       }
     },
@@ -167,7 +167,7 @@
         "discreteValues": [
           { "value": 0, "name": "Vibrato" },
           { "value": 2, "name": "Off" },
-          { "value": 3, "name": "Chorus (≥ 3)" }
+          { "value": 3, "name": "Chorus" }
         ]
       }
     },
@@ -181,7 +181,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -194,7 +194,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -207,7 +207,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -220,7 +220,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -233,7 +233,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -246,7 +246,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -259,7 +259,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bottom (B)" },
-          { "value": 1, "name": "Top (T, ≥ 1)" }
+          { "value": 1, "name": "Top (T)" }
         ]
       }
     },
@@ -272,7 +272,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Forward (F)" },
-          { "value": 1, "name": "Reverse (R, ≥ 1)" }
+          { "value": 1, "name": "Reverse (R)" }
         ]
       }
     },
@@ -286,7 +286,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -299,7 +299,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -312,7 +312,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -325,7 +325,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -338,7 +338,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -351,7 +351,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -364,7 +364,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -377,7 +377,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -423,7 +423,7 @@
         "discreteValues": [
           { "value": 0, "name": "Glitch" },
           { "value": 2, "name": "Both" },
-          { "value": 3, "name": "Freeze (≥ 3)" }
+          { "value": 3, "name": "Freeze" }
         ]
       }
     },
@@ -437,7 +437,7 @@
         "discreteValues": [
           { "value": 0, "name": "Glitch" },
           { "value": 2, "name": "Both" },
-          { "value": 3, "name": "Freeze (≥ 3)" }
+          { "value": 3, "name": "Freeze" }
         ]
       }
     },
@@ -451,7 +451,7 @@
         "discreteValues": [
           { "value": 0, "name": "Glitch" },
           { "value": 2, "name": "Both" },
-          { "value": 3, "name": "Freeze (≥ 3)" }
+          { "value": 3, "name": "Freeze" }
         ]
       }
     },
@@ -477,7 +477,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Ignore Clock" },
-          { "value": 1, "name": "Follow Clock (≥ 1)" }
+          { "value": 1, "name": "Follow Clock" }
         ]
       }
     },
@@ -490,7 +490,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -529,7 +529,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Dry On" },
-          { "value": 1, "name": "Dry Kill (≥ 1)" }
+          { "value": 1, "name": "Dry Kill" }
         ]
       }
     },
@@ -542,7 +542,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Trails Off" },
-          { "value": 1, "name": "Trails On (≥ 1)" }
+          { "value": 1, "name": "Trails On" }
         ]
       }
     },

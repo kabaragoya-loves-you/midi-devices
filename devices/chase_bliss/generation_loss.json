@@ -112,7 +112,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "No Action" },
-          { "value": 127, "name": "Engage AUX + bypass behaviors" }
+          { "value": 127, "name": "Engage AUX" }
         ]
       }
     }

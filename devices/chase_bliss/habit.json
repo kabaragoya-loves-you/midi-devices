@@ -100,7 +100,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged (≥ 1)" }
+          { "value": 1, "name": "Engaged" }
         ]
       }
     },
@@ -119,7 +119,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Loop Off" },
-          { "value": 1, "name": "Loop On (≥ 1)" }
+          { "value": 1, "name": "Loop On" }
         ]
       }
     },
@@ -132,7 +132,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Scan Off" },
-          { "value": 1, "name": "Scan On (≥ 1)" }
+          { "value": 1, "name": "Scan On" }
         ]
       }
     },
@@ -158,7 +158,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Ignore Clock" },
-          { "value": 1, "name": "Listen (≥ 1)" }
+          { "value": 1, "name": "Listen" }
         ]
       }
     }

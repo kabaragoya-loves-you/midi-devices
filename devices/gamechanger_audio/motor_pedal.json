@@ -97,23 +97,23 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Engine 1: Motor"
+            "name": "Motor"
           },
           {
             "value": 26,
-            "name": "Engine 2: MxD"
+            "name": "MxD"
           },
           {
             "value": 52,
-            "name": "Engine 3: MWave"
+            "name": "MWave"
           },
           {
             "value": 77,
-            "name": "Engine 4: Coil"
+            "name": "Coil"
           },
           {
             "value": 103,
-            "name": "Engine 5: Vocoder"
+            "name": "Vocoder"
           }
         ]
       }
@@ -128,23 +128,23 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Pedal Mode 1: Accel"
+            "name": "Accel"
           },
           {
             "value": 26,
-            "name": "Pedal Mode 2: Brake"
+            "name": "Brake"
           },
           {
             "value": 52,
-            "name": "Pedal Mode 3: Clutch"
+            "name": "Clutch"
           },
           {
             "value": 77,
-            "name": "Pedal Mode 4: Drift"
+            "name": "Drift"
           },
           {
             "value": 103,
-            "name": "Pedal Mode 5: Volume"
+            "name": "Volume"
           }
         ]
       }
@@ -196,7 +196,7 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Instrument + Pitch Tracker"
+            "name": "Inst+Pitch"
           },
           {
             "value": 64,

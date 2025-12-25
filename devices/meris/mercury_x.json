@@ -27,11 +27,11 @@
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-25)" },
-          { "value": 26, "name": "Volume Pedal (26-51)" },
-          { "value": 52, "name": "Tube (52-76)" },
-          { "value": 77, "name": "Transistor (77-102)" },
-          { "value": 103, "name": "Op-Amp (103-127)" }
+          { "value": 0, "name": "Off" },
+          { "value": 26, "name": "Volume Pedal" },
+          { "value": 52, "name": "Tube" },
+          { "value": 77, "name": "Transistor" },
+          { "value": 103, "name": "Op-Amp" }
         ]
       }
     },
@@ -43,11 +43,11 @@
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre + Dry (0-25)" },
-          { "value": 26, "name": "Pre (26-51)" },
-          { "value": 52, "name": "Feedback (52-76)" },
-          { "value": 77, "name": "Pre Tank (77-102)" },
-          { "value": 103, "name": "Post (103-127)" }
+          { "value": 0, "name": "Pre + Dry" },
+          { "value": 26, "name": "Pre" },
+          { "value": 52, "name": "Feedback" },
+          { "value": 77, "name": "Pre Tank" },
+          { "value": 103, "name": "Post" }
         ]
       }
     },
@@ -64,8 +64,8 @@
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Standard (0-63)" },
-          { "value": 64, "name": "Reverse (64-127)" }
+          { "value": 0, "name": "Standard" },
+          { "value": 64, "name": "Reverse" }
         ]
       }
     },
@@ -77,8 +77,8 @@
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0-63)" },
-          { "value": 64, "name": "FX Enable (64-127)" }
+          { "value": 0, "name": "FX Bypass" },
+          { "value": 64, "name": "FX Enable" }
         ]
       }
     },
@@ -92,9 +92,9 @@
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Digital (0-42)" },
-          { "value": 43, "name": "BBD (43-85)" },
-          { "value": 86, "name": "Magnetic (86-127)" }
+          { "value": 0, "name": "Digital" },
+          { "value": 43, "name": "BBD" },
+          { "value": 86, "name": "Magnetic" }
         ]
       }
     },
@@ -115,9 +115,9 @@
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Use Global (0-42)" },
-          { "value": 43, "name": "Force Listen (43-85)" },
-          { "value": 86, "name": "Force Ignore (86-127)" }
+          { "value": 0, "name": "Use Global" },
+          { "value": 43, "name": "Force Listen" },
+          { "value": 86, "name": "Force Ignore" }
         ]
       }
     },
@@ -129,14 +129,14 @@
       "valueRange": {
         "min": 0, "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ultraplate (0-15)" },
-          { "value": 16, "name": "Cathedra (16-31)" },
-          { "value": 32, "name": "Spring (32-47)" },
-          { "value": 48, "name": "’78 Room (48-63)" },
-          { "value": 64, "name": "’78 Plate (64-79)" },
-          { "value": 80, "name": "’78 Hall (80-95)" },
-          { "value": 96, "name": "Prism (96-111)" },
-          { "value": 112, "name": "Gravity (112-127)" }
+          { "value": 0, "name": "Ultraplate" },
+          { "value": 16, "name": "Cathedra" },
+          { "value": 32, "name": "Spring" },
+          { "value": 48, "name": "’78 Room" },
+          { "value": 64, "name": "’78 Plate" },
+          { "value": 80, "name": "’78 Hall" },
+          { "value": 96, "name": "Prism" },
+          { "value": 112, "name": "Gravity" }
         ]
       }
     },
@@ -165,7 +165,7 @@
         "discreteValues": [
           { "value": 0, "name": "Off" },
           { "value": 16, "name": "Compressor" },
-          { "value": 32, "name": "Compressor Link" },
+          { "value": 32, "name": "Comp Link" },
           { "value": 48, "name": "Swell" },
           { "value": 64, "name": "Diffusion" },
           { "value": 80, "name": "Limiter" },

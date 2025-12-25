@@ -62,9 +62,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mode 1 (Micro Loop)" },
-          { "value": 2, "name": "Mode 2 (Envelope)" },
-          { "value": 3, "name": "Mode 3 (Glide ≥ 3)" }
+          { "value": 0, "name": "Micro Loop" },
+          { "value": 2, "name": "Envelope" },
+          { "value": 3, "name": "Glide" }
         ]
       }
     },
@@ -77,9 +77,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Left → Right" },
-          { "value": 2, "name": "Ping-Pong (L ↔ R)" },
-          { "value": 3, "name": "Right → Left" }
+          { "value": 0, "name": "L→R" },
+          { "value": 2, "name": "Ping-Pong" },
+          { "value": 3, "name": "R→L" }
         ]
       }
     },
@@ -93,8 +93,8 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Mode 4 (Slip)" },
-          { "value": 2, "name": "Mode 5 (Stretch)" },
-          { "value": 3, "name": "Mode 6 (Envelope ≥ 3)" }
+          { "value": 2, "name": "Stretch" },
+          { "value": 3, "name": "Envelope" }
         ]
       }
     },
@@ -109,16 +109,16 @@
         "discreteValues": [
           { "value": 0, "name": "Thirty-second" },
           { "value": 1, "name": "Sixteenth" },
-          { "value": 2, "name": "Triplet Sixteenth" },
+          { "value": 2, "name": "1/16 Triplet" },
           { "value": 3, "name": "Eighth" },
           { "value": 4, "name": "Triplet Eighth" },
           { "value": 5, "name": "Dotted Eighth" },
           { "value": 6, "name": "Quarter" },
-          { "value": 7, "name": "Triplet Quarter" },
+          { "value": 7, "name": "1/4 Triplet" },
           { "value": 8, "name": "Dotted Quarter" },
           { "value": 9, "name": "Half" },
           { "value": 10, "name": "Dotted Half" },
-          { "value": 11, "name": "Whole/Double Whole" }
+          { "value": 11, "name": "Whole/Dbl" }
         ]
       }
     },
@@ -132,7 +132,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Ignore" },
-          { "value": 1, "name": "Listen (≥ 1)" }
+          { "value": 1, "name": "Listen" }
         ]
       }
     },

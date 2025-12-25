@@ -30,7 +30,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Sixteenth" },
-          { "value": 22, "name": "Dotted Sixteenth" },
+          { "value": 22, "name": "Dotted 16th" },
           { "value": 43, "name": "Eighth" },
           { "value": 64, "name": "Triplet" },
           { "value": 85, "name": "Dotted Eighth" },
@@ -48,7 +48,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Sixteenth" },
-          { "value": 22, "name": "Dotted Sixteenth" },
+          { "value": 22, "name": "Dotted 16th" },
           { "value": 43, "name": "Eighth" },
           { "value": 64, "name": "Triplet" },
           { "value": 85, "name": "Dotted Eighth" },
@@ -98,10 +98,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Accept In & Send Thru" },
+          { "value": 0, "name": "In & Thru" },
           { "value": 32, "name": "Accept In Only" },
           { "value": 64, "name": "Send Out Only" },
-          { "value": 96, "name": "Deactivate Clock" }
+          { "value": 96, "name": "Clock Off" }
         ]
       }
     },
@@ -127,7 +127,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Mono" },
-          { "value": 43, "name": "Mono In Stereo Out" },
+          { "value": 43, "name": "Mono>Stereo" },
           { "value": 86, "name": "Stereo" }
         ]
       }

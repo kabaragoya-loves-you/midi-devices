@@ -29,8 +29,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0-63)" },
-          { "value": 64, "name": "FX Enable (64-127)" }
+          { "value": 0, "name": "FX Bypass" },
+          { "value": 64, "name": "FX Enable" }
         ]
       }
     },
@@ -104,8 +104,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Swell Off (0-63)" },
-          { "value": 64, "name": "Swell On (64-127)" }
+          { "value": 0, "name": "Swell Off" },
+          { "value": 64, "name": "Swell On" }
         ]
       }
     },
@@ -118,8 +118,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ultraplate (0-63)" },
-          { "value": 64, "name": "Cathedra (64-127)" }
+          { "value": 0, "name": "Ultraplate" },
+          { "value": 64, "name": "Cathedra" }
         ]
       }
     }

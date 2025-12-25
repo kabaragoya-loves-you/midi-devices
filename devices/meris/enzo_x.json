@@ -44,12 +44,12 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-21)" },
-          { "value": 22, "name": "Volume Pedal (22-42)" },
-          { "value": 43, "name": "Tube (43-63)" },
-          { "value": 64, "name": "Transistor (64-85)" },
-          { "value": 86, "name": "Op-Amp (86-106)" },
-          { "value": 107, "name": "Bitcrusher (107-127)" }
+          { "value": 0, "name": "Off" },
+          { "value": 22, "name": "Volume Pedal" },
+          { "value": 43, "name": "Tube" },
+          { "value": 64, "name": "Transistor" },
+          { "value": 86, "name": "Op-Amp" },
+          { "value": 107, "name": "Bitcrusher" }
         ]
       }
     },
@@ -62,10 +62,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre + Dry (0-31)" },
-          { "value": 32, "name": "Dry (32-63)" },
-          { "value": 64, "name": "Pre Ambience (64-95)" },
-          { "value": 96, "name": "Post Ambience (96-127)" }
+          { "value": 0, "name": "Pre + Dry" },
+          { "value": 32, "name": "Dry" },
+          { "value": 64, "name": "Pre Ambience" },
+          { "value": 96, "name": "Post Ambience" }
         ]
       }
     },
@@ -94,11 +94,11 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-25)" },
-          { "value": 26, "name": "Echo (26-51)" },
-          { "value": 52, "name": "Small (52-76)" },
-          { "value": 77, "name": "Medium (77-102)" },
-          { "value": 103, "name": "Large (103-127)" }
+          { "value": 0, "name": "Off" },
+          { "value": 26, "name": "Echo" },
+          { "value": 52, "name": "Small" },
+          { "value": 77, "name": "Medium" },
+          { "value": 103, "name": "Large" }
         ]
       }
     },
@@ -117,8 +117,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Half Speed Off (0-63)" },
-          { "value": 64, "name": "Half Speed On (64-127)" }
+          { "value": 0, "name": "1/2 Speed Off" },
+          { "value": 64, "name": "1/2 Speed On" }
         ]
       }
     },
@@ -137,8 +137,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0-63)" },
-          { "value": 64, "name": "FX Enable (64-127)" }
+          { "value": 0, "name": "FX Bypass" },
+          { "value": 64, "name": "FX Enable" }
         ]
       }
     },
@@ -183,9 +183,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Use Global (0-42)" },
-          { "value": 43, "name": "Force Listen (43-85)" },
-          { "value": 86, "name": "Force Ignore (86-127)" }
+          { "value": 0, "name": "Use Global" },
+          { "value": 43, "name": "Force Listen" },
+          { "value": 86, "name": "Force Ignore" }
         ]
       }
     },
@@ -198,11 +198,11 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mono Synth (0-25)" },
-          { "value": 26, "name": "Poly Synth (26-51)" },
-          { "value": 52, "name": "Arp Synth (52-76)" },
-          { "value": 77, "name": "Dry Mono (77-102)" },
-          { "value": 103, "name": "Dry Poly (103-127)" }
+          { "value": 0, "name": "Mono Synth" },
+          { "value": 26, "name": "Poly Synth" },
+          { "value": 52, "name": "Arp Synth" },
+          { "value": 77, "name": "Dry Mono" },
+          { "value": 103, "name": "Dry Poly" }
         ]
       }
     },
@@ -287,8 +287,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-63)" },
-          { "value": 64, "name": "On (64-127)" }
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
         ]
       }
     },
@@ -301,9 +301,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ladder (0-42)" },
-          { "value": 43, "name": "State Variable (43-85)" },
-          { "value": 86, "name": "Twin (86-127)" }
+          { "value": 0, "name": "Ladder" },
+          { "value": 43, "name": "State Var" },
+          { "value": 86, "name": "Twin" }
         ]
       }
     },
@@ -322,9 +322,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Lowpass (0-42)" },
-          { "value": 43, "name": "Bandpass (43-85)" },
-          { "value": 86, "name": "Highpass (86-127)" }
+          { "value": 0, "name": "Lowpass" },
+          { "value": 43, "name": "Bandpass" },
+          { "value": 86, "name": "Highpass" }
         ]
       }
     },
@@ -358,8 +358,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "ADSR (0-63)" },
-          { "value": 64, "name": "Envelope (64-127)" }
+          { "value": 0, "name": "ADSR" },
+          { "value": 64, "name": "Envelope" }
         ]
       }
     },
@@ -398,8 +398,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Up (0-63)" },
-          { "value": 64, "name": "Down (64-127)" }
+          { "value": 0, "name": "Up" },
+          { "value": 64, "name": "Down" }
         ]
       }
     },
@@ -481,12 +481,12 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-21)" },
-          { "value": 22, "name": "Chorus (22-42)" },
-          { "value": 43, "name": "Flanger (43-63)" },
-          { "value": 64, "name": "Vibrato (64-85)" },
-          { "value": 86, "name": "Phaser (86-106)" },
-          { "value": 107, "name": "Ring Mod (107-127)" }
+          { "value": 0, "name": "Off" },
+          { "value": 22, "name": "Chorus" },
+          { "value": 43, "name": "Flanger" },
+          { "value": 64, "name": "Vibrato" },
+          { "value": 86, "name": "Phaser" },
+          { "value": 107, "name": "Ring Mod" }
         ]
       }
     },
@@ -499,10 +499,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre + Dry (0-31)" },
-          { "value": 32, "name": "Dry (32-63)" },
-          { "value": 64, "name": "Pre Ambience (64-95)" },
-          { "value": 96, "name": "Post Ambience (96-127)" }
+          { "value": 0, "name": "Pre + Dry" },
+          { "value": 32, "name": "Dry" },
+          { "value": 64, "name": "Pre Ambience" },
+          { "value": 96, "name": "Post Ambience" }
         ]
       }
     },

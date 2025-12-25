@@ -61,7 +61,7 @@
         "discreteValues": [
           { "value": 0, "name": "Whole" },
           { "value": 1, "name": "Half" },
-          { "value": 2, "name": "Quarter Triplet" },
+          { "value": 2, "name": "1/4 Triplet" },
           { "value": 3, "name": "Quarter" },
           { "value": 4, "name": "Eighth" },
           { "value": 5, "name": "Sixteenth" }
@@ -103,7 +103,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Ignore Clock" },
-          { "value": 127, "name": "Listen for Clock" }
+          { "value": 127, "name": "Listen Clock" }
         ]
       }
     }

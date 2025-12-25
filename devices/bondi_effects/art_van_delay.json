@@ -44,10 +44,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "1/8 Note (0-31)" },
-          { "value": 32, "name": "1/4 Note (32-63)" },
-          { "value": 64, "name": "Dotted 1/8 (64-95)" },
-          { "value": 96, "name": "Triplet (96-127)" }
+          { "value": 0, "name": "1/8 Note" },
+          { "value": 32, "name": "1/4 Note" },
+          { "value": 64, "name": "Dotted 1/8" },
+          { "value": 96, "name": "Triplet" }
         ]
       }
     },
@@ -58,8 +58,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed (0-63)" },
-          { "value": 64, "name": "Engaged (64-127)" }
+          { "value": 0, "name": "Bypassed" },
+          { "value": 64, "name": "Engaged" }
         ]
       }
     },

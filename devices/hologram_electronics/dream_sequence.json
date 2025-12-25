@@ -51,11 +51,11 @@
         "discreteValues": [
           {
             "value": 0,
-            "name": "Effect Off (0-63)"
+            "name": "Effect Off"
           },
           {
             "value": 64,
-            "name": "Effect On (64-127)"
+            "name": "Effect On"
           }
         ]
       }

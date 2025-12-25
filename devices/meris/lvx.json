@@ -59,31 +59,31 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Off (0-18)"
+          "name": "Off"
         },
         {
           "value": 19,
-          "name": "Volume Pedal (19-36)"
+          "name": "Volume Pedal"
         },
         {
           "value": 37,
-          "name": "Tube (37-54)"
+          "name": "Tube"
         },
         {
           "value": 55,
-          "name": "Transistor (55-73)"
+          "name": "Transistor"
         },
         {
           "value": 74,
-          "name": "Op-Amp (74-91)"
+          "name": "Op-Amp"
         },
         {
           "value": 92,
-          "name": "Drive (92-109)"
+          "name": "Drive"
         },
         {
           "value": 110,
-          "name": "Bitcrusher (110-127)"
+          "name": "Bitcrusher"
         }
       ]
     },
@@ -97,19 +97,19 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Pre + Dry (0-31)"
+          "name": "Pre + Dry"
         },
         {
           "value": 32,
-          "name": "Pre (32-63)"
+          "name": "Pre"
         },
         {
           "value": 64,
-          "name": "Feedback (64-95)"
+          "name": "Feedback"
         },
         {
           "value": 96,
-          "name": "Post (96-127)"
+          "name": "Post"
         }
       ]
     },
@@ -171,27 +171,27 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Standard (0-21)"
+          "name": "Standard"
         },
         {
           "value": 22,
-          "name": "Multitap (22-42)"
+          "name": "Multitap"
         },
         {
           "value": 43,
-          "name": "Multifilter (43-63)"
+          "name": "Multifilter"
         },
         {
           "value": 64,
-          "name": "Poly (64-85)"
+          "name": "Poly"
         },
         {
           "value": 86,
-          "name": "Reverse (86-106)"
+          "name": "Reverse"
         },
         {
           "value": 107,
-          "name": "Series (107-127)"
+          "name": "Series"
         }
       ]
     },
@@ -222,15 +222,15 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Digital (0-42)"
+          "name": "Digital"
         },
         {
           "value": 43,
-          "name": "BBD (43-85)"
+          "name": "BBD"
         },
         {
           "value": 86,
-          "name": "Tape (86-127)"
+          "name": "Tape"
         }
       ]
     },
@@ -604,23 +604,23 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Off (0-25)"
+          "name": "Off"
         },
         {
           "value": 26,
-          "name": "Compressor (26-51)"
+          "name": "Compressor"
         },
         {
           "value": 52,
-          "name": "Swell (52-76)"
+          "name": "Swell"
         },
         {
           "value": 77,
-          "name": "Diffusion (77-102)"
+          "name": "Diffusion"
         },
         {
           "value": 103,
-          "name": "Limiter (103-127)"
+          "name": "Limiter"
         }
       ]
     },
@@ -634,19 +634,19 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Pre + Dry (0-31)"
+          "name": "Pre + Dry"
         },
         {
           "value": 32,
-          "name": "Pre (32-63)"
+          "name": "Pre"
         },
         {
           "value": 64,
-          "name": "Feedback (64-95)"
+          "name": "Feedback"
         },
         {
           "value": 96,
-          "name": "Post (96-127)"
+          "name": "Post"
         }
       ]
     },
@@ -708,27 +708,27 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Off (0-21)"
+          "name": "Off"
         },
         {
           "value": 22,
-          "name": "Poly Chroma (22-42)"
+          "name": "Poly Chroma"
         },
         {
           "value": 43,
-          "name": "Harmony (43-63)"
+          "name": "Harmony"
         },
         {
           "value": 64,
-          "name": "Micro Tune (64-85)"
+          "name": "Micro Tune"
         },
         {
           "value": 86,
-          "name": "Mono Chroma (86-106)"
+          "name": "Mono Chroma"
         },
         {
           "value": 107,
-          "name": "Lo-Fi (107-127)"
+          "name": "Lo-Fi"
         }
       ]
     },
@@ -742,19 +742,19 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Pre + Dry (0-31)"
+          "name": "Pre + Dry"
         },
         {
           "value": 32,
-          "name": "Pre (32-63)"
+          "name": "Pre"
         },
         {
           "value": 64,
-          "name": "Feedback (64-95)"
+          "name": "Feedback"
         },
         {
           "value": 96,
-          "name": "Post (96-127)"
+          "name": "Post"
         }
       ]
     },
@@ -816,23 +816,23 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Off (0-25)"
+          "name": "Off"
         },
         {
           "value": 26,
-          "name": "Ladder (26-51)"
+          "name": "Ladder"
         },
         {
           "value": 52,
-          "name": "State Variable (52-76)"
+          "name": "State Variable"
         },
         {
           "value": 77,
-          "name": "Comb (77-102)"
+          "name": "Comb"
         },
         {
           "value": 103,
-          "name": "Parametric (103-127)"
+          "name": "Parametric"
         }
       ]
     },
@@ -846,19 +846,19 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Pre + Dry (0-31)"
+          "name": "Pre + Dry"
         },
         {
           "value": 32,
-          "name": "Pre (32-63)"
+          "name": "Pre"
         },
         {
           "value": 64,
-          "name": "Feedback (64-95)"
+          "name": "Feedback"
         },
         {
           "value": 96,
-          "name": "Post (96-127)"
+          "name": "Post"
         }
       ]
     },
@@ -920,35 +920,35 @@
       "discreteValues": [
         {
           "value": 0,
-          "name": "Off (0-15)"
+          "name": "Off"
         },
         {
           "value": 16,
-          "name": "Chorus (16-31)"
+          "name": "Chorus"
         },
         {
           "value": 32,
-          "name": "Flanger (32-47)"
+          "name": "Flanger"
         },
         {
           "value": 48,
-          "name": "Dynamic Flanger (48-63)"
+          "name": "Dyn Flanger"
         },
         {
           "value": 64,
-          "name": "Cassette (64-79)"
+          "name": "Cassette"
         },
         {
           "value": 80,
-          "name": "Barberpole (80-95)"
+          "name": "Barberpole"
         },
         {
           "value": 96,
-          "name": "Granulize (96-111)"
+          "name": "Granulize"
         },
         {
           "value": 112,
-          "name": "Ring Mod (112-127)"
+          "name": "Ring Mod"
         }
       ]
     },

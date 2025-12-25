@@ -149,7 +149,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged (≥ 1)" }
+          { "value": 1, "name": "Engaged" }
         ]
       }
     },
@@ -162,7 +162,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -175,7 +175,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "ALT Exit" },
-          { "value": 1, "name": "ALT Enter (≥ 1)" }
+          { "value": 1, "name": "ALT Enter" }
         ]
       }
     },
@@ -188,7 +188,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -201,7 +201,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -214,7 +214,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -226,7 +226,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -238,7 +238,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -250,7 +250,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -262,7 +262,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -274,7 +274,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -287,7 +287,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bottom (B)" },
-          { "value": 1, "name": "Top (T, ≥ 1)" }
+          { "value": 1, "name": "Top (T)" }
         ]
       }
     },
@@ -300,7 +300,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Forward (F)" },
-          { "value": 1, "name": "Reverse (R, ≥ 1)" }
+          { "value": 1, "name": "Reverse (R)" }
         ]
       }
     },
@@ -313,7 +313,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -325,7 +325,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -337,7 +337,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -349,7 +349,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -361,7 +361,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -373,7 +373,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -385,7 +385,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -397,7 +397,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -423,7 +423,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -442,7 +442,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Dry On" },
-          { "value": 1, "name": "Dry Kill (≥ 1)" }
+          { "value": 1, "name": "Dry Kill" }
         ]
       }
     }

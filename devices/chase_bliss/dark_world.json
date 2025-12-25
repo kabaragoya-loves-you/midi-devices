@@ -100,7 +100,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "Engage (last saved state)" }
+          { "value": 127, "name": "Engage Last" }
         ]
       }
     },

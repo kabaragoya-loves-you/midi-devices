@@ -150,12 +150,12 @@
         "min": 0,
         "max": 7,
         "discreteValues": [
-          { "name": "Minor Pentatonic", "value": 0 },
-          { "name": "Major Pentatonic", "value": 1 },
+          { "name": "Minor Pent", "value": 0 },
+          { "name": "Major Pent", "value": 1 },
           { "name": "Major", "value": 2 },
           { "name": "Dorian", "value": 3 },
           { "name": "Minor Blues", "value": 4 },
-          { "name": "Harmonic Minor", "value": 5 },
+          { "name": "Harm Minor", "value": 5 },
           { "name": "Whole Tone", "value": 6 },
           { "name": "Diminished", "value": 7 }
         ]

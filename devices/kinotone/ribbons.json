@@ -37,8 +37,8 @@
           { "value": 19, "name": "Tape Stop" },
           { "value": 37, "name": "Broken Machine" },
           { "value": 55, "name": "Repeater" },
-          { "value": 74, "name": "Crushed Cassette" },
-          { "value": 92, "name": "Disintegration Loop" },
+          { "value": 74, "name": "Crushed Tape" },
+          { "value": 92, "name": "Disint Loop" },
           { "value": 110, "name": "UnrealPlayer" }
         ]
       }

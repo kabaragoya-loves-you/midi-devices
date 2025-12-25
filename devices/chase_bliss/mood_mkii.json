@@ -80,8 +80,8 @@
         "max": 127,
         "discreteValues": [
           { "name": "Stereo", "value": 0 },
-          { "name": "Wet Left / Dry Right", "value": 64 },
-          { "name": "Dry Left / Wet Right", "value": 127 }
+          { "name": "Wet L/Dry R", "value": 64 },
+          { "name": "Dry L/Wet R", "value": 127 }
         ]
       }
     },

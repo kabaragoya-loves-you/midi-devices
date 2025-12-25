@@ -98,7 +98,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Mono" },
-          { "value": 43, "name": "Mono In Stereo Out" },
+          { "value": 43, "name": "Mono>Stereo" },
           { "value": 86, "name": "Stereo" }
         ]
       }

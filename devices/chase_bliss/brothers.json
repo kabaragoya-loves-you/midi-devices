@@ -104,8 +104,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass (both channels off)" },
-          { "value": 127, "name": "Engage last saved channels" }
+          { "value": 0, "name": "Bypass Both" },
+          { "value": 127, "name": "Engage Last" }
         ]
       }
     },
@@ -117,10 +117,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass (both channels off)" },
-          { "value": 45, "name": "Channel B on, Channel A bypassed" },
-          { "value": 85, "name": "Channel A on, Channel B bypassed" },
-          { "value": 127, "name": "Both channels on" }
+          { "value": 0, "name": "Bypass Both" },
+          { "value": 45, "name": "B On, A Off" },
+          { "value": 85, "name": "A On, B Off" },
+          { "value": 127, "name": "Both On" }
         ]
       }
     }

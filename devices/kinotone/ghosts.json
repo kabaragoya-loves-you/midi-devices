@@ -97,8 +97,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre Resonator Mix" },
-          { "value": 64, "name": "Post Resonator Mix" }
+          { "value": 0, "name": "Pre Res Mix" },
+          { "value": 64, "name": "Post Res Mix" }
         ]
       }
     },
@@ -185,8 +185,8 @@
         "discreteValues": [
           { "value": 0, "name": "Terrazzo" },
           { "value": 32, "name": "Endless Loop" },
-          { "value": 64, "name": "Rhythm Generator" },
-          { "value": 96, "name": "Shepard Shifter" }
+          { "value": 64, "name": "Rhythm Gen" },
+          { "value": 96, "name": "Shepard" }
         ]
       }
     },

@@ -213,7 +213,7 @@
           { "value": 4, "name": "Eighth Note" },
           { "value": 5, "name": "Triplet Note" },
           { "value": 6, "name": "Sixteenth Note" },
-          { "value": 7, "name": "Thirty-second Note" }
+          { "value": 7, "name": "1/32 Note" }
         ]
       }
     },

@@ -56,7 +56,7 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Reserved/Unknown" },
+          { "value": 0, "name": "Reserved" },
           { "value": 1, "name": "Off" },
           { "value": 2, "name": "Modded EP" },
           { "value": 3, "name": "Original EP" }

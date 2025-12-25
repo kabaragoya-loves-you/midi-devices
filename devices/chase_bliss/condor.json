@@ -101,7 +101,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "Engage (last saved state)" }
+          { "value": 127, "name": "Engage Last" }
         ]
       }
     },
@@ -113,10 +113,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass Pedal & Drive" },
-          { "value": 45, "name": "Pedal On, OD Bypassed" },
-          { "value": 85, "name": "Drive On, Pedal Bypassed" },
-          { "value": 127, "name": "Pedal & Drive Engaged" }
+          { "value": 0, "name": "Bypass Both" },
+          { "value": 45, "name": "Pedal Only" },
+          { "value": 85, "name": "Drive Only" },
+          { "value": 127, "name": "Both On" }
         ]
       }
     }

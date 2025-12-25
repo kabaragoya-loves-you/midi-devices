@@ -1,4 +1,4 @@
-{
+﻿{
   "schemaVersion": "0.1.1",
   "title": "Chase Bliss Lost + Found",
   "displayName": "Lost + Found",
@@ -24,7 +24,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -37,7 +37,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -50,7 +50,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "ALT Exit" },
-          { "value": 1, "name": "ALT Enter (≥ 1)" }
+          { "value": 1, "name": "ALT Enter" }
         ]
       }
     },
@@ -63,7 +63,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -76,7 +76,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -161,9 +161,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mode 1 (values 0-1)" },
-          { "value": 2, "name": "Mode 2 (value 2)" },
-          { "value": 3, "name": "Mode 3 (≥ 3)" }
+          { "value": 0, "name": "Mode 1" },
+          { "value": 2, "name": "Mode 2" },
+          { "value": 3, "name": "Mode 3" }
         ]
       }
     },
@@ -175,9 +175,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Routing 1 (values 0-1)" },
-          { "value": 2, "name": "Routing 2 (value 2)" },
-          { "value": 3, "name": "Routing 3 (≥ 3)" }
+          { "value": 0, "name": "Routing 1" },
+          { "value": 2, "name": "Routing 2" },
+          { "value": 3, "name": "Routing 3" }
         ]
       }
     },
@@ -189,9 +189,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mode 4 (values 0-1)" },
-          { "value": 2, "name": "Mode 5 (value 2)" },
-          { "value": 3, "name": "Mode 6 (≥ 3)" }
+          { "value": 0, "name": "Mode 4" },
+          { "value": 2, "name": "Mode 5" },
+          { "value": 3, "name": "Mode 6" }
         ]
       }
     },
@@ -203,9 +203,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "L Only (values 0-1)" },
+          { "value": 0, "name": "L Only" },
           { "value": 2, "name": "Both" },
-          { "value": 3, "name": "R Only (≥ 3)" }
+          { "value": 3, "name": "R Only" }
         ]
       }
     },
@@ -219,7 +219,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -232,7 +232,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -245,7 +245,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -258,7 +258,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -271,7 +271,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -284,7 +284,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -297,7 +297,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Bottom (B)" },
-          { "value": 1, "name": "Top (T, ≥ 1)" }
+          { "value": 1, "name": "Top (T)" }
         ]
       }
     },
@@ -310,7 +310,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Forward (F)" },
-          { "value": 1, "name": "Reverse (R, ≥ 1)" }
+          { "value": 1, "name": "Reverse (R)" }
         ]
       }
     },
@@ -324,7 +324,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -337,7 +337,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -350,7 +350,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -363,7 +363,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -376,7 +376,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -389,7 +389,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -402,7 +402,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -415,7 +415,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On (≥ 1)" }
+          { "value": 1, "name": "On" }
         ]
       }
     },
@@ -429,7 +429,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Ignore Clock" },
-          { "value": 1, "name": "Follow Clock (≥ 1)" }
+          { "value": 1, "name": "Follow Clock" }
         ]
       }
     },
@@ -442,7 +442,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Stop Ramping" },
-          { "value": 1, "name": "Resume/Off (≥ 1)" }
+          { "value": 1, "name": "Resume/Off" }
         ]
       }
     },
@@ -457,17 +457,17 @@
         "discreteValues": [
           { "value": 0, "name": "Thirty-second" },
           { "value": 1, "name": "Sixteenth" },
-          { "value": 2, "name": "Triplet Sixteenth" },
+          { "value": 2, "name": "1/16 Triplet" },
           { "value": 3, "name": "Eighth" },
           { "value": 4, "name": "Triplet Eighth" },
           { "value": 5, "name": "Dotted Eighth" },
           { "value": 6, "name": "Quarter" },
-          { "value": 7, "name": "Triplet Quarter" },
+          { "value": 7, "name": "1/4 Triplet" },
           { "value": 8, "name": "Dotted Quarter" },
           { "value": 9, "name": "Half" },
           { "value": 10, "name": "Dotted Half" },
           { "value": 11, "name": "Whole" },
-          { "value": 12, "name": "Double Whole (≥ 12)" }
+          { "value": 12, "name": "Double Whole" }
         ]
       }
     },
@@ -481,17 +481,17 @@
         "discreteValues": [
           { "value": 0, "name": "Thirty-second" },
           { "value": 1, "name": "Sixteenth" },
-          { "value": 2, "name": "Triplet Sixteenth" },
+          { "value": 2, "name": "1/16 Triplet" },
           { "value": 3, "name": "Eighth" },
           { "value": 4, "name": "Triplet Eighth" },
           { "value": 5, "name": "Dotted Eighth" },
           { "value": 6, "name": "Quarter" },
-          { "value": 7, "name": "Triplet Quarter" },
+          { "value": 7, "name": "1/4 Triplet" },
           { "value": 8, "name": "Dotted Quarter" },
           { "value": 9, "name": "Half" },
           { "value": 10, "name": "Dotted Half" },
           { "value": 11, "name": "Whole" },
-          { "value": 12, "name": "Double Whole (≥ 12)" }
+          { "value": 12, "name": "Double Whole" }
         ]
       }
     },
@@ -511,7 +511,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "Dry On" },
-          { "value": 1, "name": "Dry Kill (≥ 1)" }
+          { "value": 1, "name": "Dry Kill" }
         ]
       }
     },

@@ -29,8 +29,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Quarter (0-63)" },
-          { "value": 64, "name": "Dotted 8th (64-127)" }
+          { "value": 0, "name": "Quarter" },
+          { "value": 64, "name": "Dotted 8th" }
         ]
       }
     },
@@ -43,8 +43,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0-63)" },
-          { "value": 64, "name": "FX Enable (64-127)" }
+          { "value": 0, "name": "FX Bypass" },
+          { "value": 64, "name": "FX Enable" }
         ]
       }
     },
@@ -82,12 +82,12 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "1× (0-7)" },
-          { "value": 8, "name": "2× (8-32)" },
-          { "value": 33, "name": "3× (33-62)" },
-          { "value": 63, "name": "4× (63-87)" },
-          { "value": 88, "name": "5× (88-115)" },
-          { "value": 116, "name": "6× (116-127)" }
+          { "value": 0, "name": "1×" },
+          { "value": 8, "name": "2×" },
+          { "value": 33, "name": "3×" },
+          { "value": 63, "name": "4×" },
+          { "value": 88, "name": "5×" },
+          { "value": 116, "name": "6×" }
         ]
       }
     },
@@ -112,22 +112,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-7)" },
-          { "value": 8, "name": "Slow Speed + Shallow Depth (8-15)" },
-          { "value": 16, "name": "Moderate Speed + Shallow Depth (16-23)" },
-          { "value": 24, "name": "Moderate Speed + Wide Depth (24-31)" },
-          { "value": 32, "name": "Fast Speed + Wide Depth (32-39)" },
-          { "value": 40, "name": "Fast Speed + Exaggerated Depth (40-47)" },
-          { "value": 48, "name": "FM Modulation - 24 Hz (48-55)" },
-          { "value": 56, "name": "FM Modulation - 48 Hz (56-63)" },
-          { "value": 64, "name": "FM Modulation - 96 Hz (64-71)" },
-          { "value": 72, "name": "Major 2nd Down + Major 2nd Up (72-79)" },
-          { "value": 80, "name": "Octave Down + Minor 3rd Up (80-87)" },
-          { "value": 88, "name": "Perfect 5th Down + Perfect 4th Up (88-95)" },
-          { "value": 96, "name": "Tremolo Mute + Perfect 4th Up (96-103)" },
-          { "value": 104, "name": "Octave Down + Perfect 5th Up (104-111)" },
-          { "value": 112, "name": "Perfect 5th Down + Octave Up (112-119)" },
-          { "value": 120, "name": "Octave Down + Octave Up (120-127)" }
+          { "value": 0, "name": "Off" },
+          { "value": 8, "name": "Slow/Shallow" },
+          { "value": 16, "name": "Mod/Shallow" },
+          { "value": 24, "name": "Mod/Wide" },
+          { "value": 32, "name": "Fast/Wide" },
+          { "value": 40, "name": "Fast/Extreme" },
+          { "value": 48, "name": "FM 24Hz" },
+          { "value": 56, "name": "FM 48Hz" },
+          { "value": 64, "name": "FM 96Hz" },
+          { "value": 72, "name": "Maj2↓+Maj2↑" },
+          { "value": 80, "name": "Oct↓+m3↑" },
+          { "value": 88, "name": "5th↓+4th↑" },
+          { "value": 96, "name": "Trem+4th↑" },
+          { "value": 104, "name": "Oct↓+5th↑" },
+          { "value": 112, "name": "5th↓+Oct↑" },
+          { "value": 120, "name": "Oct↓+Oct↑" }
         ]
       }
     },
@@ -152,22 +152,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-7)" },
-          { "value": 8, "name": "Slow Speed + Shallow Depth (8-15)" },
-          { "value": 16, "name": "Moderate Speed + Shallow Depth (16-23)" },
-          { "value": 24, "name": "Moderate Speed + Wide Depth (24-31)" },
-          { "value": 32, "name": "Fast Speed + Wide Depth (32-39)" },
-          { "value": 40, "name": "Fast Speed + Exaggerated Depth (40-47)" },
-          { "value": 48, "name": "FM Modulation - 24 Hz (48-55)" },
-          { "value": 56, "name": "FM Modulation - 48 Hz (56-63)" },
-          { "value": 64, "name": "FM Modulation - 96 Hz (64-71)" },
-          { "value": 72, "name": "Major 2nd Down + Major 2nd Up (72-79)" },
-          { "value": 80, "name": "Octave Down + Minor 3rd Up (80-87)" },
-          { "value": 88, "name": "Perfect 5th Down + Perfect 4th Up (88-95)" },
-          { "value": 96, "name": "Tremolo Mute + Perfect 4th Up (96-103)" },
-          { "value": 104, "name": "Octave Down + Perfect 5th Up (104-111)" },
-          { "value": 112, "name": "Perfect 5th Down + Octave Up (112-119)" },
-          { "value": 120, "name": "Octave Down + Octave Up (120-127)" }
+          { "value": 0, "name": "Off" },
+          { "value": 8, "name": "Slow/Shallow" },
+          { "value": 16, "name": "Mod/Shallow" },
+          { "value": 24, "name": "Mod/Wide" },
+          { "value": 32, "name": "Fast/Wide" },
+          { "value": 40, "name": "Fast/Extreme" },
+          { "value": 48, "name": "FM 24Hz" },
+          { "value": 56, "name": "FM 48Hz" },
+          { "value": 64, "name": "FM 96Hz" },
+          { "value": 72, "name": "Maj2↓+Maj2↑" },
+          { "value": 80, "name": "Oct↓+m3↑" },
+          { "value": 88, "name": "5th↓+4th↑" },
+          { "value": 96, "name": "Trem+4th↑" },
+          { "value": 104, "name": "Oct↓+5th↑" },
+          { "value": 112, "name": "5th↓+Oct↑" },
+          { "value": 120, "name": "Oct↓+Oct↑" }
         ]
       }
     },
@@ -180,9 +180,9 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Envelope Down (0-32)" },
-          { "value": 33, "name": "Envelope Up (33-88)" },
-          { "value": 89, "name": "LFO (89-127)" }
+          { "value": 0, "name": "Envelope Down" },
+          { "value": 33, "name": "Envelope Up" },
+          { "value": 89, "name": "LFO" }
         ]
       }
     },
@@ -214,10 +214,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-31)" },
-          { "value": 32, "name": "Slow (32-63)" },
-          { "value": 64, "name": "Sync Slow (64-95)" },
-          { "value": 96, "name": "Sync (96-127)" }
+          { "value": 0, "name": "Off" },
+          { "value": 32, "name": "Slow" },
+          { "value": 64, "name": "Sync Slow" },
+          { "value": 96, "name": "Sync" }
         ]
       }
     },
@@ -230,8 +230,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Feedback Off (0-63)" },
-          { "value": 64, "name": "Feedback On (64-127)" }
+          { "value": 0, "name": "Feedback Off" },
+          { "value": 64, "name": "Feedback On" }
         ]
       }
     },
@@ -244,8 +244,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Full Speed (0-63)" },
-          { "value": 64, "name": "Half Speed (64-127)" }
+          { "value": 0, "name": "Full Speed" },
+          { "value": 64, "name": "Half Speed" }
         ]
       }
     }

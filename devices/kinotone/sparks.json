@@ -47,7 +47,7 @@
         "max": 127,
         "discreteValues": [
           { "value": 0, "name": "LFO Pitch" },
-          { "value": 1, "name": "LFO Pulse Width" },
+          { "value": 1, "name": "LFO Pulse W" },
           { "value": 2, "name": "Glide" }
         ]
       }

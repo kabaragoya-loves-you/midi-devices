@@ -43,7 +43,7 @@
           { "value": 9, "name": "Select Bank 9" },
           { "value": 10, "name": "Select Bank 10" },
           { "value": 11, "name": "Increment" },
-          { "value": 12, "name": "Toggle Available Banks" }
+          { "value": 12, "name": "Toggle Banks" }
         ]
       }
     },
@@ -87,7 +87,7 @@
           { "value": 13, "name": "Key Increment" },
           { "value": 14, "name": "Tonality Major" },
           { "value": 15, "name": "Tonality Minor" },
-          { "value": 16, "name": "Tonality Neutral" }
+          { "value": 16, "name": "Neutral" }
         ]
       }
     },

@@ -63,7 +63,7 @@
           { "value": 1, "name": "Dotted Eighth" },
           { "value": 2, "name": "Eighth Triplet" },
           { "value": 3, "name": "Eighth" },
-          { "value": 4, "name": "Sixteenth Triplet" },
+          { "value": 4, "name": "1/16 Triplet" },
           { "value": 5, "name": "Sixteenth" }
         ]
       }

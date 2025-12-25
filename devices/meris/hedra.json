@@ -29,8 +29,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Normal Speed (0-63)" },
-          { "value": 64, "name": "Half Speed (64-127)" }
+          { "value": 0, "name": "Normal Speed" },
+          { "value": 64, "name": "Half Speed" }
         ]
       }
     },
@@ -43,8 +43,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass (0-63)" },
-          { "value": 64, "name": "FX Enable (64-127)" }
+          { "value": 0, "name": "FX Bypass" },
+          { "value": 64, "name": "FX Enable" }
         ]
       }
     },
@@ -64,19 +64,19 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "C (0-2)" },
-          { "value": 3, "name": "D♭ (3-11)" },
-          { "value": 12, "name": "D (12-25)" },
-          { "value": 26, "name": "E♭ (26-37)" },
-          { "value": 38, "name": "E (38-47)" },
-          { "value": 48, "name": "F (48-58)" },
-          { "value": 59, "name": "G♭ (59-66)" },
-          { "value": 67, "name": "G (67-77)" },
-          { "value": 78, "name": "A♭ (78-87)" },
-          { "value": 88, "name": "A (88-97)" },
-          { "value": 98, "name": "B♭ (98-108)" },
-          { "value": 109, "name": "B (109-119)" },
-          { "value": 120, "name": "Chromatic (120-127)" }
+          { "value": 0, "name": "C" },
+          { "value": 3, "name": "D♭" },
+          { "value": 12, "name": "D" },
+          { "value": 26, "name": "E♭" },
+          { "value": 38, "name": "E" },
+          { "value": 48, "name": "F" },
+          { "value": 59, "name": "G♭" },
+          { "value": 67, "name": "G" },
+          { "value": 78, "name": "A♭" },
+          { "value": 88, "name": "A" },
+          { "value": 98, "name": "B♭" },
+          { "value": 109, "name": "B" },
+          { "value": 120, "name": "Chromatic" }
         ]
       }
     },
@@ -122,13 +122,13 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Major (0-11)" },
-          { "value": 12, "name": "Minor (12-37)" },
-          { "value": 38, "name": "Melodic Minor (38-58)" },
-          { "value": 59, "name": "Harmonic Minor (59-78)" },
-          { "value": 79, "name": "Double Harmonic Minor (79-97)" },
-          { "value": 98, "name": "Lydian Pentatonic (98-119)" },
-          { "value": 120, "name": "Minor Pentatonic (120-127)" }
+          { "value": 0, "name": "Major" },
+          { "value": 12, "name": "Minor" },
+          { "value": 38, "name": "Melodic Minor" },
+          { "value": 59, "name": "Harmonic Minor" },
+          { "value": 79, "name": "Dbl Harm Minor" },
+          { "value": 98, "name": "Lydian Pent" },
+          { "value": 120, "name": "Minor Pent" }
         ]
       }
     },
@@ -153,19 +153,19 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0)" },
-          { "value": 1, "name": "Micro Range (1-14)" },
-          { "value": 15, "name": "1/6 - 16th-note triplets (15-25)" },
-          { "value": 26, "name": "1/4 - 16th note (26-36)" },
-          { "value": 37, "name": "1/3 - 8th-note triplet (37-47)" },
-          { "value": 48, "name": "3/8 - dotted 16th (48-58)" },
-          { "value": 59, "name": "1/2 - 8th note (59-69)" },
-          { "value": 70, "name": "5/8 - dotted 16th tied to 16th (70-80)" },
-          { "value": 81, "name": "2/3 - 8th-note triplet tied to 8th-note triplet (81-91)" },
-          { "value": 92, "name": "3/4 - dotted 8th (92-102)" },
-          { "value": 103, "name": "5/6 - 8th tied to two 16th-note triplets (103-113)" },
-          { "value": 114, "name": "7/8 - double dotted 8th note (114-124)" },
-          { "value": 125, "name": "1 - quarter note (125-127)" }
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "Micro Range" },
+          { "value": 15, "name": "1/6 16T" },
+          { "value": 26, "name": "1/4 16th" },
+          { "value": 37, "name": "1/3 8T" },
+          { "value": 48, "name": "3/8 dotted 16" },
+          { "value": 59, "name": "1/2 8th" },
+          { "value": 70, "name": "5/8" },
+          { "value": 81, "name": "2/3" },
+          { "value": 92, "name": "3/4 dotted 8" },
+          { "value": 103, "name": "5/6" },
+          { "value": 114, "name": "7/8" },
+          { "value": 125, "name": "1 quarter" }
         ]
       }
     },
@@ -205,10 +205,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Series + Pitch Feedback (0-31)" },
-          { "value": 32, "name": "Series (32-63)" },
-          { "value": 64, "name": "Dual + Cross Feedback (64-95)" },
-          { "value": 96, "name": "Dual (96-127)" }
+          { "value": 0, "name": "Series+Pitch" },
+          { "value": 32, "name": "Series" },
+          { "value": 64, "name": "Dual+Cross" },
+          { "value": 96, "name": "Dual" }
         ]
       }
     },
@@ -221,8 +221,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Smoothing Off (0-63)" },
-          { "value": 64, "name": "Smoothing On (64-127)" }
+          { "value": 0, "name": "Smoothing Off" },
+          { "value": 64, "name": "Smoothing On" }
         ]
       }
     },
@@ -235,8 +235,8 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Swell Off (0-63)" },
-          { "value": 64, "name": "Swell On (64-127)" }
+          { "value": 0, "name": "Swell Off" },
+          { "value": 64, "name": "Swell On" }
         ]
       }
     }

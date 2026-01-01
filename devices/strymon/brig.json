@@ -1,26 +1,30 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Strymon Brig",
   "displayName": "Brig",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Strymon",
     "model": "Brig",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["CLOCK"],
-
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
       "name": "Bank Select (Patch Bank)",
-      "valueRange": { "min": 0, "max": 2 }
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
     },
-
     {
       "controlChangeNumber": 11,
       "name": "Voice",
@@ -28,19 +32,61 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "3205" },
-          { "value": 2, "name": "3005" },
-          { "value": 3, "name": "Multi" }
+          {
+            "value": 1,
+            "name": "3205"
+          },
+          {
+            "value": 2,
+            "name": "3005"
+          },
+          {
+            "value": 3,
+            "name": "Multi"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 12, "name": "Time", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 13, "name": "Filter", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Repeats", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 15, "name": "Mod", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 16, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 12,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Mod",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 17,
       "name": "Tap Division",
@@ -48,14 +94,25 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Triplet" },
-          { "value": 1, "name": "Eighth" },
-          { "value": 2, "name": "Dotted Eighth" },
-          { "value": 3, "name": "Quarter" }
+          {
+            "value": 0,
+            "name": "Triplet"
+          },
+          {
+            "value": 1,
+            "name": "Eighth"
+          },
+          {
+            "value": 2,
+            "name": "Dotted Eighth"
+          },
+          {
+            "value": 3,
+            "name": "Quarter"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 27,
       "name": "Footswitch",
@@ -63,18 +120,25 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Press"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 93,
       "name": "Tap",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 97,
       "name": "Infinite",
@@ -82,18 +146,25 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Hold" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Hold"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass/Engage",
@@ -101,19 +172,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 127,
+            "name": "Engaged"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 0,
     "count": 300,
     "bankSelectMode": "CC0"
   },
-
   "x_midiChannel": 1,
   "x_midiTrsType": "TYPE_A"
 }

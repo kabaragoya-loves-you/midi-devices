@@ -1,16 +1,21 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Strymon Flint",
   "displayName": "Flint",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Strymon",
     "model": "Flint",
     "version": ""
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
@@ -19,9 +24,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Bank 1" },
-          { "value": 1, "name": "Bank 2" },
-          { "value": 2, "name": "Bank 3" }
+          {
+            "value": 0,
+            "name": "Bank 1"
+          },
+          {
+            "value": 1,
+            "name": "Bank 2"
+          },
+          {
+            "value": 2,
+            "name": "Bank 3"
+          }
         ]
       }
     },
@@ -32,8 +46,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
@@ -44,31 +64,52 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "61" },
-          { "value": 2, "name": "63 Tube" },
-          { "value": 3, "name": "65 Photo" }
+          {
+            "value": 1,
+            "name": "61"
+          },
+          {
+            "value": 2,
+            "name": "63 Tube"
+          },
+          {
+            "value": 3,
+            "name": "65 Photo"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 12,
       "name": "Intensity",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 13,
       "name": "Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 14,
       "name": "Tap Subdivision",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Tremolo Boost/Cut",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
@@ -77,8 +118,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
@@ -89,36 +136,60 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "60s" },
-          { "value": 2, "name": "70s" },
-          { "value": 3, "name": "80s" }
+          {
+            "value": 1,
+            "name": "60s"
+          },
+          {
+            "value": 2,
+            "name": "70s"
+          },
+          {
+            "value": 3,
+            "name": "80s"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 18,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Color",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Decay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 21,
       "name": "Reverb Pre-Delay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 22,
       "name": "Reverb Boost/Cut",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 23,
@@ -127,8 +198,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Verb>Trem" },
-          { "value": 127, "name": "Trem>Verb" }
+          {
+            "value": 0,
+            "name": "Verb>Trem"
+          },
+          {
+            "value": 127,
+            "name": "Trem>Verb"
+          }
         ]
       }
     },
@@ -139,13 +216,34 @@
         "min": 0,
         "max": 6,
         "discreteValues": [
-          { "value": 0, "name": "x1/4" },
-          { "value": 1, "name": "x1/3" },
-          { "value": 2, "name": "x1/2" },
-          { "value": 3, "name": "x1" },
-          { "value": 4, "name": "x2" },
-          { "value": 5, "name": "x3" },
-          { "value": 6, "name": "x4" }
+          {
+            "value": 0,
+            "name": "x1/4"
+          },
+          {
+            "value": 1,
+            "name": "x1/3"
+          },
+          {
+            "value": 2,
+            "name": "x1/2"
+          },
+          {
+            "value": 3,
+            "name": "x1"
+          },
+          {
+            "value": 4,
+            "name": "x2"
+          },
+          {
+            "value": 5,
+            "name": "x3"
+          },
+          {
+            "value": 6,
+            "name": "x4"
+          }
         ]
       }
     },
@@ -156,8 +254,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Press"
+          }
         ]
       }
     },
@@ -168,8 +272,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Press"
+          }
         ]
       }
     },
@@ -180,8 +290,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
@@ -192,8 +308,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
@@ -204,20 +326,32 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 93,
       "name": "Remote Tap",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
       "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
   "x_pc": {

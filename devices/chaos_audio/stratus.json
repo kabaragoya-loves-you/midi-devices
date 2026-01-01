@@ -1,36 +1,50 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chaos Audio Stratus",
   "displayName": "Stratus",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Chaos Audio",
     "model": "Stratus",
     "version": ""
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 7,
       "name": "Master Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 14,
       "name": "Bypass Effect",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Enable Effect",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Toggle Effect",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
@@ -39,11 +53,26 @@
         "min": 0,
         "max": 4,
         "discreteValues": [
-          { "value": 0, "name": "Clear" },
-          { "value": 1, "name": "Record" },
-          { "value": 2, "name": "Play" },
-          { "value": 3, "name": "Overdub" },
-          { "value": 4, "name": "Pause" }
+          {
+            "value": 0,
+            "name": "Clear"
+          },
+          {
+            "value": 1,
+            "name": "Record"
+          },
+          {
+            "value": 2,
+            "name": "Play"
+          },
+          {
+            "value": 3,
+            "name": "Overdub"
+          },
+          {
+            "value": 4,
+            "name": "Pause"
+          }
         ]
       }
     },
@@ -54,9 +83,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Looper" },
-          { "value": 1, "name": "Stompbox" },
-          { "value": 2, "name": "Preset" }
+          {
+            "value": 0,
+            "name": "Looper"
+          },
+          {
+            "value": 1,
+            "name": "Stompbox"
+          },
+          {
+            "value": 2,
+            "name": "Preset"
+          }
         ]
       }
     }

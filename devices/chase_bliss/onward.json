@@ -1,19 +1,19 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Onward",
   "displayName": "Onward",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Onward",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 102,
@@ -23,8 +23,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 1,
+            "name": "Engaged"
+          }
         ]
       }
     },
@@ -36,8 +42,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 1,
+            "name": "Engaged"
+          }
         ]
       }
     },
@@ -49,8 +61,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "ALT Exit" },
-          { "value": 1, "name": "ALT Enter" }
+          {
+            "value": 0,
+            "name": "ALT Exit"
+          },
+          {
+            "value": 1,
+            "name": "ALT Enter"
+          }
         ]
       }
     },
@@ -62,8 +80,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -75,8 +99,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -84,51 +114,76 @@
       "controlChangeNumber": 108,
       "name": "Retrigger Glitch",
       "additionalInfo": "send any value to retrigger glitch",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 109,
       "name": "Retrigger Freeze",
       "additionalInfo": "send any value to retrigger freeze",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 14,
       "name": "Size",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Octave",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Error",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Sustain",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Texture",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Ramp Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Error Type",
@@ -137,9 +192,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Timing" },
-          { "value": 2, "name": "Condition" },
-          { "value": 3, "name": "Playback" }
+          {
+            "value": 0,
+            "name": "Timing"
+          },
+          {
+            "value": 2,
+            "name": "Condition"
+          },
+          {
+            "value": 3,
+            "name": "Playback"
+          }
         ]
       }
     },
@@ -151,9 +215,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Long" },
-          { "value": 2, "name": "User" },
-          { "value": 3, "name": "Short" }
+          {
+            "value": 0,
+            "name": "Long"
+          },
+          {
+            "value": 2,
+            "name": "User"
+          },
+          {
+            "value": 3,
+            "name": "Short"
+          }
         ]
       }
     },
@@ -165,13 +238,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Vibrato" },
-          { "value": 2, "name": "Off" },
-          { "value": 3, "name": "Chorus" }
+          {
+            "value": 0,
+            "name": "Vibrato"
+          },
+          {
+            "value": 2,
+            "name": "Off"
+          },
+          {
+            "value": 3,
+            "name": "Chorus"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 61,
       "name": "Size DIP",
@@ -180,8 +261,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -193,8 +280,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -206,8 +299,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -219,8 +318,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -232,8 +337,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -245,8 +356,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -258,8 +375,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bottom (B)" },
-          { "value": 1, "name": "Top (T)" }
+          {
+            "value": 0,
+            "name": "Bottom (B)"
+          },
+          {
+            "value": 1,
+            "name": "Top (T)"
+          }
         ]
       }
     },
@@ -271,12 +394,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Forward (F)" },
-          { "value": 1, "name": "Reverse (R)" }
+          {
+            "value": 0,
+            "name": "Forward (F)"
+          },
+          {
+            "value": 1,
+            "name": "Reverse (R)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 71,
       "name": "Miso DIP",
@@ -285,8 +413,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -298,8 +432,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -311,8 +451,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -324,8 +470,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -337,8 +489,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -350,8 +508,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -363,8 +527,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -376,43 +546,65 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 24,
       "name": "Sensitivity",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 25,
       "name": "Balance",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 26,
       "name": "Duck Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Error Blend",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
       "name": "User Fade",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 29,
       "name": "Filter",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 31,
       "name": "Error Routing",
@@ -421,9 +613,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Glitch" },
-          { "value": 2, "name": "Both" },
-          { "value": 3, "name": "Freeze" }
+          {
+            "value": 0,
+            "name": "Glitch"
+          },
+          {
+            "value": 2,
+            "name": "Both"
+          },
+          {
+            "value": 3,
+            "name": "Freeze"
+          }
         ]
       }
     },
@@ -435,9 +636,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Glitch" },
-          { "value": 2, "name": "Both" },
-          { "value": 3, "name": "Freeze" }
+          {
+            "value": 0,
+            "name": "Glitch"
+          },
+          {
+            "value": 2,
+            "name": "Both"
+          },
+          {
+            "value": 3,
+            "name": "Freeze"
+          }
         ]
       }
     },
@@ -449,24 +659,38 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Glitch" },
-          { "value": 2, "name": "Both" },
-          { "value": 3, "name": "Freeze" }
+          {
+            "value": 0,
+            "name": "Glitch"
+          },
+          {
+            "value": 2,
+            "name": "Both"
+          },
+          {
+            "value": 3,
+            "name": "Freeze"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression Over MIDI)",
       "additionalInfo": "0 = heel, 127 = toe",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 111,
       "name": "Preset Save",
       "additionalInfo": "send preset number (1-122) while holding both footswitches",
-      "valueRange": { "min": 0, "max": 122 }
+      "valueRange": {
+        "min": 0,
+        "max": 122
+      }
     },
     {
       "controlChangeNumber": 51,
@@ -476,8 +700,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore Clock" },
-          { "value": 1, "name": "Follow Clock" }
+          {
+            "value": 0,
+            "name": "Ignore Clock"
+          },
+          {
+            "value": 1,
+            "name": "Follow Clock"
+          }
         ]
       }
     },
@@ -489,8 +719,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -502,15 +738,42 @@
         "min": 0,
         "max": 8,
         "discreteValues": [
-          { "value": 0, "name": "Whole" },
-          { "value": 1, "name": "Dotted Half" },
-          { "value": 2, "name": "Half" },
-          { "value": 3, "name": "Dotted Quarter" },
-          { "value": 4, "name": "Quarter" },
-          { "value": 5, "name": "Dotted Eighth" },
-          { "value": 6, "name": "Eighth" },
-          { "value": 7, "name": "Eighth Triplet" },
-          { "value": 8, "name": "Sixteenth" }
+          {
+            "value": 0,
+            "name": "Whole"
+          },
+          {
+            "value": 1,
+            "name": "Dotted Half"
+          },
+          {
+            "value": 2,
+            "name": "Half"
+          },
+          {
+            "value": 3,
+            "name": "Dotted Quarter"
+          },
+          {
+            "value": 4,
+            "name": "Quarter"
+          },
+          {
+            "value": 5,
+            "name": "Dotted Eighth"
+          },
+          {
+            "value": 6,
+            "name": "Eighth"
+          },
+          {
+            "value": 7,
+            "name": "Eighth Triplet"
+          },
+          {
+            "value": 8,
+            "name": "Sixteenth"
+          }
         ]
       }
     },
@@ -518,7 +781,10 @@
       "controlChangeNumber": 56,
       "name": "Factory Reset",
       "additionalInfo": "send any value (see manual for full procedure)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
@@ -528,8 +794,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Dry On" },
-          { "value": 1, "name": "Dry Kill" }
+          {
+            "value": 0,
+            "name": "Dry On"
+          },
+          {
+            "value": 1,
+            "name": "Dry Kill"
+          }
         ]
       }
     },
@@ -541,8 +813,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Trails Off" },
-          { "value": 1, "name": "Trails On" }
+          {
+            "value": 0,
+            "name": "Trails Off"
+          },
+          {
+            "value": 1,
+            "name": "Trails On"
+          }
         ]
       }
     },
@@ -550,22 +828,26 @@
       "controlChangeNumber": 93,
       "name": "Tap Tempo",
       "additionalInfo": "send any value to tap (alt CC, shared with 107)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 107,
       "name": "Tap Tempo (Alt)",
       "additionalInfo": "send any value to tap (alternate CC number)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

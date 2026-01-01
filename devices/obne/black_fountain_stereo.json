@@ -1,26 +1,95 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "OBNE Black Fountain Stereo",
   "displayName": "Black Fountain Stereo",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Old Blood Noise Endeavors",
     "model": "Black Fountain Stereo",
     "version": ""
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "controlChangeCommands": [
-    { "controlChangeNumber": 11, "name": "Expression", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Dry Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 15, "name": "Wet Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 16, "name": "Space", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 17, "name": "Rate", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 18, "name": "Depth", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 19, "name": "Tone", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 20, "name": "Grit", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 21, "name": "Time L", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Dry Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Wet Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Space",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Grit",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Time L",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 22,
       "name": "Subdivisions L",
@@ -29,16 +98,41 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Sixteenth" },
-          { "value": 22, "name": "Dotted 16th" },
-          { "value": 43, "name": "Eighth" },
-          { "value": 64, "name": "Triplet" },
-          { "value": 85, "name": "Dotted Eighth" },
-          { "value": 106, "name": "Quarter" }
+          {
+            "value": 0,
+            "name": "Sixteenth"
+          },
+          {
+            "value": 22,
+            "name": "Dotted 16th"
+          },
+          {
+            "value": 43,
+            "name": "Eighth"
+          },
+          {
+            "value": 64,
+            "name": "Triplet"
+          },
+          {
+            "value": 85,
+            "name": "Dotted Eighth"
+          },
+          {
+            "value": 106,
+            "name": "Quarter"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 23, "name": "Time R", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 23,
+      "name": "Time R",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 24,
       "name": "Subdivisions R",
@@ -47,16 +141,41 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Sixteenth" },
-          { "value": 22, "name": "Dotted 16th" },
-          { "value": 43, "name": "Eighth" },
-          { "value": 64, "name": "Triplet" },
-          { "value": 85, "name": "Dotted Eighth" },
-          { "value": 106, "name": "Quarter" }
+          {
+            "value": 0,
+            "name": "Sixteenth"
+          },
+          {
+            "value": 22,
+            "name": "Dotted 16th"
+          },
+          {
+            "value": 43,
+            "name": "Eighth"
+          },
+          {
+            "value": 64,
+            "name": "Triplet"
+          },
+          {
+            "value": 85,
+            "name": "Dotted Eighth"
+          },
+          {
+            "value": 106,
+            "name": "Quarter"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 25, "name": "Feedback", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 25,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 26,
       "name": "Bypass Switch",
@@ -65,8 +184,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -74,7 +199,10 @@
       "controlChangeNumber": 27,
       "name": "Tap Tempo Switch",
       "additionalInfo": "Tap pulse at value 0",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
@@ -84,9 +212,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Cancel Save" },
-          { "value": 43, "name": "Start Save" },
-          { "value": 86, "name": "Confirm Save" }
+          {
+            "value": 0,
+            "name": "Cancel Save"
+          },
+          {
+            "value": 43,
+            "name": "Start Save"
+          },
+          {
+            "value": 86,
+            "name": "Confirm Save"
+          }
         ]
       }
     },
@@ -98,10 +235,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "In & Thru" },
-          { "value": 32, "name": "Accept In Only" },
-          { "value": 64, "name": "Send Out Only" },
-          { "value": 96, "name": "Clock Off" }
+          {
+            "value": 0,
+            "name": "In & Thru"
+          },
+          {
+            "value": 32,
+            "name": "Accept In Only"
+          },
+          {
+            "value": 64,
+            "name": "Send Out Only"
+          },
+          {
+            "value": 96,
+            "name": "Clock Off"
+          }
         ]
       }
     },
@@ -113,8 +262,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -126,9 +281,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mono" },
-          { "value": 43, "name": "Mono>Stereo" },
-          { "value": 86, "name": "Stereo" }
+          {
+            "value": 0,
+            "name": "Mono"
+          },
+          {
+            "value": 43,
+            "name": "Mono>Stereo"
+          },
+          {
+            "value": 86,
+            "name": "Stereo"
+          }
         ]
       }
     },
@@ -136,7 +300,10 @@
       "controlChangeNumber": 102,
       "name": "MIDI Channel",
       "additionalInfo": "1-16",
-      "valueRange": { "min": 1, "max": 16 }
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
     }
   ],
   "x_pc": {

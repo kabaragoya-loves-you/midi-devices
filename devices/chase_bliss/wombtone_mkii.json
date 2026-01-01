@@ -1,56 +1,76 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Wombtone MKII",
   "displayName": "Wombtone MKII",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Wombtone MKII",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Warp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Mode",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Ramp Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "MIDI Note Divisions",
@@ -59,16 +79,33 @@
         "min": 0,
         "max": 5,
         "discreteValues": [
-          { "value": 0, "name": "Quarter" },
-          { "value": 1, "name": "Dotted Eighth" },
-          { "value": 2, "name": "Eighth Triplet" },
-          { "value": 3, "name": "Eighth" },
-          { "value": 4, "name": "1/16 Triplet" },
-          { "value": 5, "name": "Sixteenth" }
+          {
+            "value": 0,
+            "name": "Quarter"
+          },
+          {
+            "value": 1,
+            "name": "Dotted Eighth"
+          },
+          {
+            "value": 2,
+            "name": "Eighth Triplet"
+          },
+          {
+            "value": 3,
+            "name": "Eighth"
+          },
+          {
+            "value": 4,
+            "name": "1/16 Triplet"
+          },
+          {
+            "value": 5,
+            "name": "Sixteenth"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 51,
       "name": "MIDI Clock Ignore",
@@ -77,26 +114,35 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore Clock" },
-          { "value": 127, "name": "Follow Clock" }
+          {
+            "value": 0,
+            "name": "Ignore Clock"
+          },
+          {
+            "value": 127,
+            "name": "Follow Clock"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 93,
       "name": "Tap",
       "additionalInfo": "Any value simulates tapping the footswitch (tap tempo)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "Expression",
       "additionalInfo": "0 = heel, 127 = toe (mapped by DIP switches)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
@@ -105,19 +151,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 127, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 127,
+            "name": "Engaged"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 3
 }

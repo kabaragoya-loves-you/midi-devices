@@ -1,46 +1,59 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Generation Loss",
   "displayName": "Generation Loss",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Generation Loss",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Wow",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Wet",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "LP",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Flutter",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Gen",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "AUX Func Select",
@@ -48,33 +61,47 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left Toggle" },
-          { "value": 2, "name": "Middle Toggle" },
-          { "value": 3, "name": "Right Toggle" }
+          {
+            "value": 1,
+            "name": "Left Toggle"
+          },
+          {
+            "value": 2,
+            "name": "Middle Toggle"
+          },
+          {
+            "value": 3,
+            "name": "Right Toggle"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 22,
       "name": "Dry Select",
       "additionalInfo": "Multi-function routing selector",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 23,
       "name": "Hiss Select",
       "additionalInfo": "Multi-function routing selector",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression Over MIDI)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
@@ -83,12 +110,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 127, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 127,
+            "name": "Engaged"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 101,
       "name": "AUX Func Engage",
@@ -97,12 +129,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 127, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 127,
+            "name": "Engaged"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 103,
       "name": "Both Stomps",
@@ -111,19 +148,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "No Action" },
-          { "value": 127, "name": "Engage AUX" }
+          {
+            "value": 0,
+            "name": "No Action"
+          },
+          {
+            "value": 127,
+            "name": "Engage AUX"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

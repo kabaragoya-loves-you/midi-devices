@@ -1,51 +1,67 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss CXM 1978",
   "displayName": "CXM 1978",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "CXM 1978",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Bass",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Mids",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Cross",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Treble",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Pre-Delay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 22,
       "name": "Jump",
@@ -53,9 +69,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Off" },
-          { "value": 2, "name": "0 dB" },
-          { "value": 3, "name": "5 dB" }
+          {
+            "value": 1,
+            "name": "Off"
+          },
+          {
+            "value": 2,
+            "name": "0 dB"
+          },
+          {
+            "value": 3,
+            "name": "5 dB"
+          }
         ]
       }
     },
@@ -66,9 +91,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Room" },
-          { "value": 2, "name": "Plate" },
-          { "value": 3, "name": "Hall" }
+          {
+            "value": 1,
+            "name": "Room"
+          },
+          {
+            "value": 2,
+            "name": "Plate"
+          },
+          {
+            "value": 3,
+            "name": "Hall"
+          }
         ]
       }
     },
@@ -79,9 +113,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Low" },
-          { "value": 2, "name": "Med" },
-          { "value": 3, "name": "High" }
+          {
+            "value": 1,
+            "name": "Low"
+          },
+          {
+            "value": 2,
+            "name": "Med"
+          },
+          {
+            "value": 3,
+            "name": "High"
+          }
         ]
       }
     },
@@ -92,9 +135,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Low" },
-          { "value": 2, "name": "Med" },
-          { "value": 3, "name": "High" }
+          {
+            "value": 1,
+            "name": "Low"
+          },
+          {
+            "value": 2,
+            "name": "Med"
+          },
+          {
+            "value": 3,
+            "name": "High"
+          }
         ]
       }
     },
@@ -105,13 +157,21 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "HiFi" },
-          { "value": 2, "name": "Standard" },
-          { "value": 3, "name": "LoFi" }
+          {
+            "value": 1,
+            "name": "HiFi"
+          },
+          {
+            "value": 2,
+            "name": "Standard"
+          },
+          {
+            "value": 3,
+            "name": "LoFi"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 27,
       "name": "Preset Save (slot)",
@@ -120,7 +180,6 @@
         "max": 29
       }
     },
-
     {
       "controlChangeNumber": 28,
       "name": "Aux Performance Switch 1",
@@ -153,16 +212,21 @@
         "max": 127
       }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "Expression (EOM)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 101,
       "name": "EOM Unlock",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -171,19 +235,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 1, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 1,
+            "name": "Engage"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 0,
     "count": 30,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

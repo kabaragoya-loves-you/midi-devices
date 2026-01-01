@@ -7,7 +7,6 @@
     "model": "Auto Chorus"
   },
   "receives": [
-    "CONTROL_CHANGE",
     "CLOCK"
   ],
   "transmits": [],

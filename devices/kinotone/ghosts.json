@@ -6,7 +6,11 @@
     "manufacturer": "Kinotone",
     "model": "Ghosts"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK", "SYSEX", "NOTE_ON", "NOTE_OFF"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
   "transmits": [],
   "controlChangeCommands": [
     {
@@ -97,8 +101,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre Res Mix" },
-          { "value": 64, "name": "Post Res Mix" }
+          {
+            "value": 0,
+            "name": "Pre Res Mix"
+          },
+          {
+            "value": 64,
+            "name": "Post Res Mix"
+          }
         ]
       }
     },
@@ -118,8 +128,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre" },
-          { "value": 64, "name": "Post" }
+          {
+            "value": 0,
+            "name": "Pre"
+          },
+          {
+            "value": 64,
+            "name": "Post"
+          }
         ]
       }
     },
@@ -155,8 +171,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "High Pass" },
-          { "value": 64, "name": "Low Pass" }
+          {
+            "value": 0,
+            "name": "High Pass"
+          },
+          {
+            "value": 64,
+            "name": "Low Pass"
+          }
         ]
       }
     },
@@ -168,10 +190,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pluck / Strike" },
-          { "value": 32, "name": "Air" },
-          { "value": 64, "name": "Vocoder" },
-          { "value": 96, "name": "Vocoder Hold" }
+          {
+            "value": 0,
+            "name": "Pluck / Strike"
+          },
+          {
+            "value": 32,
+            "name": "Air"
+          },
+          {
+            "value": 64,
+            "name": "Vocoder"
+          },
+          {
+            "value": 96,
+            "name": "Vocoder Hold"
+          }
         ]
       }
     },
@@ -183,10 +217,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Terrazzo" },
-          { "value": 32, "name": "Endless Loop" },
-          { "value": 64, "name": "Rhythm Gen" },
-          { "value": 96, "name": "Shepard" }
+          {
+            "value": 0,
+            "name": "Terrazzo"
+          },
+          {
+            "value": 32,
+            "name": "Endless Loop"
+          },
+          {
+            "value": 64,
+            "name": "Rhythm Gen"
+          },
+          {
+            "value": 96,
+            "name": "Shepard"
+          }
         ]
       }
     },
@@ -198,9 +244,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Strings" },
-          { "value": 43, "name": "Tubes" },
-          { "value": 86, "name": "Bars" }
+          {
+            "value": 0,
+            "name": "Strings"
+          },
+          {
+            "value": 43,
+            "name": "Tubes"
+          },
+          {
+            "value": 86,
+            "name": "Bars"
+          }
         ]
       }
     },
@@ -212,8 +267,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 65, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 65,
+            "name": "On"
+          }
         ]
       }
     },
@@ -225,8 +286,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore" },
-          { "value": 1, "name": "Listen" }
+          {
+            "value": 0,
+            "name": "Ignore"
+          },
+          {
+            "value": 1,
+            "name": "Listen"
+          }
         ]
       }
     },
@@ -238,8 +305,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore" },
-          { "value": 1, "name": "Listen" }
+          {
+            "value": 0,
+            "name": "Ignore"
+          },
+          {
+            "value": 1,
+            "name": "Listen"
+          }
         ]
       }
     },
@@ -251,8 +324,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "False" },
-          { "value": 65, "name": "True" }
+          {
+            "value": 0,
+            "name": "False"
+          },
+          {
+            "value": 65,
+            "name": "True"
+          }
         ]
       }
     },
@@ -264,8 +343,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 65, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 65,
+            "name": "On"
+          }
         ]
       }
     },
@@ -277,8 +362,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 65, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 65,
+            "name": "On"
+          }
         ]
       }
     }

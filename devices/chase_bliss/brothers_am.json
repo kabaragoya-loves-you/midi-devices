@@ -1,61 +1,83 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Brothers AM",
   "displayName": "Brothers AM",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Brothers AM",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Gain 2",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Volume 2",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Gain 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Tone 2",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Volume 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Tone 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Presence 2",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 29,
       "name": "Presence 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Gain 2 Type",
@@ -64,9 +86,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Boost" },
-          { "value": 2, "name": "OD" },
-          { "value": 3, "name": "Dist" }
+          {
+            "value": 0,
+            "name": "Boost"
+          },
+          {
+            "value": 2,
+            "name": "OD"
+          },
+          {
+            "value": 3,
+            "name": "Dist"
+          }
         ]
       }
     },
@@ -78,9 +109,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Full Sun" },
-          { "value": 2, "name": "Off" },
-          { "value": 3, "name": "Half Sun" }
+          {
+            "value": 0,
+            "name": "Full Sun"
+          },
+          {
+            "value": 2,
+            "name": "Off"
+          },
+          {
+            "value": 3,
+            "name": "Half Sun"
+          }
         ]
       }
     },
@@ -92,13 +132,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Dist" },
-          { "value": 2, "name": "OD" },
-          { "value": 3, "name": "Boost" }
+          {
+            "value": 0,
+            "name": "Dist"
+          },
+          {
+            "value": 2,
+            "name": "OD"
+          },
+          {
+            "value": 3,
+            "name": "Boost"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Channel 1 Bypass",
@@ -107,8 +155,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -120,24 +174,34 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression Over MIDI)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 111,
       "name": "Preset Save",
       "additionalInfo": "1-122: save current settings to that slot",
-      "valueRange": { "min": 1, "max": 122 }
+      "valueRange": {
+        "min": 1,
+        "max": 122
+      }
     },
-
     {
       "controlChangeNumber": 61,
       "name": "Left Bank - Volume 1 DIP",
@@ -146,8 +210,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -159,8 +229,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -172,8 +248,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -185,8 +267,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -198,8 +286,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -211,8 +305,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -224,8 +324,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bottom" },
-          { "value": 1, "name": "Top" }
+          {
+            "value": 0,
+            "name": "Bottom"
+          },
+          {
+            "value": 1,
+            "name": "Top"
+          }
         ]
       }
     },
@@ -237,12 +343,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Forward" },
-          { "value": 1, "name": "Reverse" }
+          {
+            "value": 0,
+            "name": "Forward"
+          },
+          {
+            "value": 1,
+            "name": "Reverse"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 71,
       "name": "Right Bank - Hi Gain 1 DIP",
@@ -251,8 +362,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -264,8 +381,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -277,8 +400,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -290,8 +419,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -303,8 +438,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -316,8 +457,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -329,19 +476,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

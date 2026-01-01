@@ -1,81 +1,112 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Thermae",
   "displayName": "Thermae",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Thermae",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Repeats",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Glide",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Modifier",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Tone",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Ramp Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Ratio 1",
       "additionalInfo": "0-11 correspond to musical intervals",
-      "valueRange": { "min": 0, "max": 11 }
+      "valueRange": {
+        "min": 0,
+        "max": 11
+      }
     },
     {
       "controlChangeNumber": 22,
       "name": "Ratio 2",
       "additionalInfo": "0-11 correspond to musical intervals",
-      "valueRange": { "min": 0, "max": 11 }
+      "valueRange": {
+        "min": 0,
+        "max": 11
+      }
     },
     {
       "controlChangeNumber": 23,
       "name": "Ratio 3",
       "additionalInfo": "0-11 correspond to musical intervals",
-      "valueRange": { "min": 0, "max": 11 }
+      "valueRange": {
+        "min": 0,
+        "max": 11
+      }
     },
     {
       "controlChangeNumber": 24,
       "name": "Ratio 4",
       "additionalInfo": "0-11 correspond to musical intervals",
-      "valueRange": { "min": 0, "max": 11 }
+      "valueRange": {
+        "min": 0,
+        "max": 11
+      }
     },
-
     {
       "controlChangeNumber": 25,
       "name": "Subdivision",
@@ -84,12 +115,30 @@
         "min": 0,
         "max": 5,
         "discreteValues": [
-          { "value": 0, "name": "Whole" },
-          { "value": 1, "name": "Half" },
-          { "value": 2, "name": "1/4 Triplet" },
-          { "value": 3, "name": "Quarter" },
-          { "value": 4, "name": "Eighth" },
-          { "value": 5, "name": "Sixteenth" }
+          {
+            "value": 0,
+            "name": "Whole"
+          },
+          {
+            "value": 1,
+            "name": "Half"
+          },
+          {
+            "value": 2,
+            "name": "1/4 Triplet"
+          },
+          {
+            "value": 3,
+            "name": "Quarter"
+          },
+          {
+            "value": 4,
+            "name": "Eighth"
+          },
+          {
+            "value": 5,
+            "name": "Sixteenth"
+          }
         ]
       }
     },
@@ -101,8 +150,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -114,29 +169,45 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Run" },
-          { "value": 2, "name": "Off" },
-          { "value": 3, "name": "Envelope" }
+          {
+            "value": 0,
+            "name": "Run"
+          },
+          {
+            "value": 2,
+            "name": "Off"
+          },
+          {
+            "value": 3,
+            "name": "Envelope"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 28,
       "name": "Filter",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 29,
       "name": "Mod Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 30,
       "name": "Mod Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 31,
       "name": "Pitch Mode",
@@ -145,9 +216,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Down" },
-          { "value": 2, "name": "Both" },
-          { "value": 3, "name": "Up" }
+          {
+            "value": 0,
+            "name": "Down"
+          },
+          {
+            "value": 2,
+            "name": "Both"
+          },
+          {
+            "value": 3,
+            "name": "Up"
+          }
         ]
       }
     },
@@ -159,12 +239,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Hold" },
-          { "value": 2, "name": "Skip" }
+          {
+            "value": 0,
+            "name": "Hold"
+          },
+          {
+            "value": 2,
+            "name": "Skip"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 51,
       "name": "MIDI Clock Ignore",
@@ -173,8 +258,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore" },
-          { "value": 1, "name": "Listen" }
+          {
+            "value": 0,
+            "name": "Ignore"
+          },
+          {
+            "value": 1,
+            "name": "Listen"
+          }
         ]
       }
     },
@@ -182,13 +273,19 @@
       "controlChangeNumber": 93,
       "name": "Tap",
       "additionalInfo": "Any value simulates a tap",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression Over MIDI)",
       "additionalInfo": "0 = heel, 127 = toe",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -198,19 +295,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 127, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 127,
+            "name": "Engaged"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

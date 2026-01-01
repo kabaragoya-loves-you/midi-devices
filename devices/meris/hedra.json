@@ -1,26 +1,28 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Meris Hedra",
   "displayName": "Hedra",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Meris",
     "model": "Hedra",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["CONTROL_CHANGE"],
-
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 4,
       "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 9,
       "name": "Half Speed Enable",
@@ -29,12 +31,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Normal Speed" },
-          { "value": 64, "name": "Half Speed" }
+          {
+            "value": 0,
+            "name": "Normal Speed"
+          },
+          {
+            "value": 64,
+            "name": "Half Speed"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 14,
       "name": "Bypass",
@@ -43,19 +50,26 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass" },
-          { "value": 64, "name": "FX Enable" }
+          {
+            "value": 0,
+            "name": "FX Bypass"
+          },
+          {
+            "value": 64,
+            "name": "FX Enable"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 15,
       "name": "Tempo",
       "additionalInfo": "10 msec intervals; 0-120",
-      "valueRange": { "min": 0, "max": 120 }
+      "valueRange": {
+        "min": 0,
+        "max": 120
+      }
     },
-
     {
       "controlChangeNumber": 16,
       "name": "Key",
@@ -64,56 +78,104 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "C" },
-          { "value": 3, "name": "D♭" },
-          { "value": 12, "name": "D" },
-          { "value": 26, "name": "E♭" },
-          { "value": 38, "name": "E" },
-          { "value": 48, "name": "F" },
-          { "value": 59, "name": "G♭" },
-          { "value": 67, "name": "G" },
-          { "value": 78, "name": "A♭" },
-          { "value": 88, "name": "A" },
-          { "value": 98, "name": "B♭" },
-          { "value": 109, "name": "B" },
-          { "value": 120, "name": "Chromatic" }
+          {
+            "value": 0,
+            "name": "C"
+          },
+          {
+            "value": 3,
+            "name": "D♭"
+          },
+          {
+            "value": 12,
+            "name": "D"
+          },
+          {
+            "value": 26,
+            "name": "E♭"
+          },
+          {
+            "value": 38,
+            "name": "E"
+          },
+          {
+            "value": 48,
+            "name": "F"
+          },
+          {
+            "value": 59,
+            "name": "G♭"
+          },
+          {
+            "value": 67,
+            "name": "G"
+          },
+          {
+            "value": 78,
+            "name": "A♭"
+          },
+          {
+            "value": 88,
+            "name": "A"
+          },
+          {
+            "value": 98,
+            "name": "B♭"
+          },
+          {
+            "value": 109,
+            "name": "B"
+          },
+          {
+            "value": 120,
+            "name": "Chromatic"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 17,
       "name": "Micro Tune",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 18,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 19,
       "name": "Pitch 1",
       "additionalInfo": "Pitch 1 interval; mapping depends on chromatic/diatonic/pentatonic mode",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 20,
       "name": "Pitch 2",
       "additionalInfo": "Pitch 2 interval; mapping depends on chromatic/diatonic/pentatonic mode",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Pitch 3",
       "additionalInfo": "Pitch 3 interval; mapping depends on chromatic/diatonic/pentatonic mode",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 22,
       "name": "Scale Type",
@@ -122,29 +184,53 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Major" },
-          { "value": 12, "name": "Minor" },
-          { "value": 38, "name": "Melodic Minor" },
-          { "value": 59, "name": "Harmonic Minor" },
-          { "value": 79, "name": "Dbl Harm Minor" },
-          { "value": 98, "name": "Lydian Pent" },
-          { "value": 120, "name": "Minor Pent" }
+          {
+            "value": 0,
+            "name": "Major"
+          },
+          {
+            "value": 12,
+            "name": "Minor"
+          },
+          {
+            "value": 38,
+            "name": "Melodic Minor"
+          },
+          {
+            "value": 59,
+            "name": "Harmonic Minor"
+          },
+          {
+            "value": 79,
+            "name": "Dbl Harm Minor"
+          },
+          {
+            "value": 98,
+            "name": "Lydian Pent"
+          },
+          {
+            "value": 120,
+            "name": "Minor Pent"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 23,
       "name": "Pitch Correction + Glide",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 24,
       "name": "Feedback",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 25,
       "name": "Time Division 1",
@@ -153,37 +239,79 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "Micro Range" },
-          { "value": 15, "name": "1/6 16T" },
-          { "value": 26, "name": "1/4 16th" },
-          { "value": 37, "name": "1/3 8T" },
-          { "value": 48, "name": "3/8 dotted 16" },
-          { "value": 59, "name": "1/2 8th" },
-          { "value": 70, "name": "5/8" },
-          { "value": 81, "name": "2/3" },
-          { "value": 92, "name": "3/4 dotted 8" },
-          { "value": 103, "name": "5/6" },
-          { "value": 114, "name": "7/8" },
-          { "value": 125, "name": "1 quarter" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "Micro Range"
+          },
+          {
+            "value": 15,
+            "name": "1/6 16T"
+          },
+          {
+            "value": 26,
+            "name": "1/4 16th"
+          },
+          {
+            "value": 37,
+            "name": "1/3 8T"
+          },
+          {
+            "value": 48,
+            "name": "3/8 dotted 16"
+          },
+          {
+            "value": 59,
+            "name": "1/2 8th"
+          },
+          {
+            "value": 70,
+            "name": "5/8"
+          },
+          {
+            "value": 81,
+            "name": "2/3"
+          },
+          {
+            "value": 92,
+            "name": "3/4 dotted 8"
+          },
+          {
+            "value": 103,
+            "name": "5/6"
+          },
+          {
+            "value": 114,
+            "name": "7/8"
+          },
+          {
+            "value": 125,
+            "name": "1 quarter"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 26,
       "name": "Time Division 2",
       "additionalInfo": "Same mapping as Time Division 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 27,
       "name": "Time Division 3",
       "additionalInfo": "Same mapping as Time Division 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 28,
       "name": "Tap",
@@ -192,11 +320,13 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 127, "name": "Tap Press" }
+          {
+            "value": 127,
+            "name": "Tap Press"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 29,
       "name": "Delay Mode",
@@ -205,14 +335,25 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Series+Pitch" },
-          { "value": 32, "name": "Series" },
-          { "value": 64, "name": "Dual+Cross" },
-          { "value": 96, "name": "Dual" }
+          {
+            "value": 0,
+            "name": "Series+Pitch"
+          },
+          {
+            "value": 32,
+            "name": "Series"
+          },
+          {
+            "value": 64,
+            "name": "Dual+Cross"
+          },
+          {
+            "value": 96,
+            "name": "Dual"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 30,
       "name": "Pitch Control Smoothing",
@@ -221,12 +362,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Smoothing Off" },
-          { "value": 64, "name": "Smoothing On" }
+          {
+            "value": 0,
+            "name": "Smoothing Off"
+          },
+          {
+            "value": 64,
+            "name": "Smoothing On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 31,
       "name": "Volume Swell Enable",
@@ -235,19 +381,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Swell Off" },
-          { "value": 64, "name": "Swell On" }
+          {
+            "value": 0,
+            "name": "Swell Off"
+          },
+          {
+            "value": 64,
+            "name": "Swell On"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 16,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_B",
   "x_midiChannel": 1
 }

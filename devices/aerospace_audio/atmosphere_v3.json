@@ -1,15 +1,15 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Aerospace Audio Atmosphere v3",
   "displayName": "Atmosphere v3",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Aerospace Audio",
     "model": "Atmosphere v3",
     "version": ""
   },
-  "receives": ["CONTROL_CHANGE"],
+  "receives": [],
   "transmits": [],
   "controlChangeCommands": [
     {
@@ -19,10 +19,22 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Abort" },
-          { "value": 1, "name": "Engage" },
-          { "value": 2, "name": "Abort" },
-          { "value": 3, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Abort"
+          },
+          {
+            "value": 1,
+            "name": "Engage"
+          },
+          {
+            "value": 2,
+            "name": "Abort"
+          },
+          {
+            "value": 3,
+            "name": "Engage"
+          }
         ]
       }
     },
@@ -33,13 +45,34 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Decrement" },
-          { "value": 1, "name": "Set Page 1" },
-          { "value": 2, "name": "Set Page 2" },
-          { "value": 3, "name": "Set Page 3" },
-          { "value": 4, "name": "Set Page 4" },
-          { "value": 5, "name": "Set Page 5" },
-          { "value": 127, "name": "Increment" }
+          {
+            "value": 0,
+            "name": "Decrement"
+          },
+          {
+            "value": 1,
+            "name": "Set Page 1"
+          },
+          {
+            "value": 2,
+            "name": "Set Page 2"
+          },
+          {
+            "value": 3,
+            "name": "Set Page 3"
+          },
+          {
+            "value": 4,
+            "name": "Set Page 4"
+          },
+          {
+            "value": 5,
+            "name": "Set Page 5"
+          },
+          {
+            "value": 127,
+            "name": "Increment"
+          }
         ]
       }
     },
@@ -50,13 +83,34 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Decrement" },
-          { "value": 1, "name": "Set Slot 1" },
-          { "value": 2, "name": "Set Slot 2" },
-          { "value": 3, "name": "Set Slot 3" },
-          { "value": 4, "name": "Set Slot 4" },
-          { "value": 5, "name": "Set Slot 5" },
-          { "value": 127, "name": "Increment" }
+          {
+            "value": 0,
+            "name": "Decrement"
+          },
+          {
+            "value": 1,
+            "name": "Set Slot 1"
+          },
+          {
+            "value": 2,
+            "name": "Set Slot 2"
+          },
+          {
+            "value": 3,
+            "name": "Set Slot 3"
+          },
+          {
+            "value": 4,
+            "name": "Set Slot 4"
+          },
+          {
+            "value": 5,
+            "name": "Set Slot 5"
+          },
+          {
+            "value": 127,
+            "name": "Increment"
+          }
         ]
       }
     },
@@ -67,11 +121,26 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Decrement" },
-          { "value": 1, "name": "Major" },
-          { "value": 2, "name": "Minor" },
-          { "value": 3, "name": "Neutral" },
-          { "value": 127, "name": "Increment" }
+          {
+            "value": 0,
+            "name": "Decrement"
+          },
+          {
+            "value": 1,
+            "name": "Major"
+          },
+          {
+            "value": 2,
+            "name": "Minor"
+          },
+          {
+            "value": 3,
+            "name": "Neutral"
+          },
+          {
+            "value": 127,
+            "name": "Increment"
+          }
         ]
       }
     },
@@ -82,20 +151,62 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Decrement" },
-          { "value": 1, "name": "A" },
-          { "value": 2, "name": "A#" },
-          { "value": 3, "name": "B" },
-          { "value": 4, "name": "C" },
-          { "value": 5, "name": "C#" },
-          { "value": 6, "name": "D" },
-          { "value": 7, "name": "D#" },
-          { "value": 8, "name": "E" },
-          { "value": 9, "name": "F" },
-          { "value": 10, "name": "F#" },
-          { "value": 11, "name": "G" },
-          { "value": 12, "name": "G#" },
-          { "value": 127, "name": "Increment" }
+          {
+            "value": 0,
+            "name": "Decrement"
+          },
+          {
+            "value": 1,
+            "name": "A"
+          },
+          {
+            "value": 2,
+            "name": "A#"
+          },
+          {
+            "value": 3,
+            "name": "B"
+          },
+          {
+            "value": 4,
+            "name": "C"
+          },
+          {
+            "value": 5,
+            "name": "C#"
+          },
+          {
+            "value": 6,
+            "name": "D"
+          },
+          {
+            "value": 7,
+            "name": "D#"
+          },
+          {
+            "value": 8,
+            "name": "E"
+          },
+          {
+            "value": 9,
+            "name": "F"
+          },
+          {
+            "value": 10,
+            "name": "F#"
+          },
+          {
+            "value": 11,
+            "name": "G"
+          },
+          {
+            "value": 12,
+            "name": "G#"
+          },
+          {
+            "value": 127,
+            "name": "Increment"
+          }
         ]
       }
     },
@@ -106,9 +217,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Decrement" },
-          { "value": 1, "name": "Song #" },
-          { "value": 127, "name": "Increment" }
+          {
+            "value": 0,
+            "name": "Decrement"
+          },
+          {
+            "value": 1,
+            "name": "Song #"
+          },
+          {
+            "value": 127,
+            "name": "Increment"
+          }
         ]
       }
     },
@@ -119,9 +239,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Toggle View" },
-          { "value": 1, "name": "Live View" },
-          { "value": 2, "name": "Setlist View" }
+          {
+            "value": 0,
+            "name": "Toggle View"
+          },
+          {
+            "value": 1,
+            "name": "Live View"
+          },
+          {
+            "value": 2,
+            "name": "Setlist View"
+          }
         ]
       }
     },
@@ -132,24 +261,36 @@
         "min": 0,
         "max": 0,
         "discreteValues": [
-          { "value": 0, "name": "Clear Setlist" }
+          {
+            "value": 0,
+            "name": "Clear Setlist"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 10,
       "name": "Volume (Instant)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 11,
       "name": "Volume (Smooth)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 13,
       "name": "Crossfade",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
   "x_pc": {

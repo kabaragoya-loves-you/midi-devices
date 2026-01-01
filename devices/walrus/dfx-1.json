@@ -1,48 +1,215 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Walrus DFX-1",
   "displayName": "DFX-1",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Walrus Audio",
     "model": "DFX-1",
     "version": ""
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "controlChangeCommands": [
-    { "controlChangeNumber": 3, "name": "Compressor Threshold", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 9, "name": "Compressor Attack", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Compressor Release", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 15, "name": "Delay Mix", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 20, "name": "Delay Feedback", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 21, "name": "Delay Time", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 30, "name": "Delay Tone", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 22, "name": "Reverb Mix", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 23, "name": "Reverb Decay", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 24, "name": "Reverb Tone", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 87, "name": "Reverb Size", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 89, "name": "Reverb Diffusion", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 90, "name": "Reverb Dispersion", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 25, "name": "Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 26, "name": "EQ", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 27, "name": "Saturation", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 28, "name": "Compressor Ratio", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 29, "name": "Compressor Mix", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 31, "name": "Gate Threshold", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 85, "name": "Gate Release", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 86, "name": "Gate Hold", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 102, "name": "LPF", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 103, "name": "HPF", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 104, "name": "MID Cut", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 3,
+      "name": "Compressor Threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Compressor Attack",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Compressor Release",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Delay Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Delay Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Delay Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Delay Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Reverb Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Reverb Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Reverb Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Reverb Size",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Reverb Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Reverb Dispersion",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "EQ",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Saturation",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Compressor Ratio",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Compressor Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Gate Threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Gate Release",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Gate Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "LPF",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "HPF",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "MID Cut",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 105,
       "name": "Delay Mode",
@@ -50,8 +217,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Mode 0" },
-          { "value": 1, "name": "Mode 1" }
+          {
+            "value": 0,
+            "name": "Mode 0"
+          },
+          {
+            "value": 1,
+            "name": "Mode 1"
+          }
         ]
       }
     },
@@ -62,8 +235,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Mode 0" },
-          { "value": 1, "name": "Mode 1" }
+          {
+            "value": 0,
+            "name": "Mode 0"
+          },
+          {
+            "value": 1,
+            "name": "Mode 1"
+          }
         ]
       }
     },
@@ -74,8 +253,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Mode 0" },
-          { "value": 1, "name": "Mode 1" }
+          {
+            "value": 0,
+            "name": "Mode 0"
+          },
+          {
+            "value": 1,
+            "name": "Mode 1"
+          }
         ]
       }
     },
@@ -86,13 +271,25 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Order 0" },
-          { "value": 1, "name": "Order 1" }
+          {
+            "value": 0,
+            "name": "Order 0"
+          },
+          {
+            "value": 1,
+            "name": "Order 1"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 109, "name": "Tap Tempo", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 109,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 110,
       "name": "Tap Division",
@@ -100,11 +297,26 @@
         "min": 0,
         "max": 4,
         "discreteValues": [
-          { "value": 0, "name": "Division 0" },
-          { "value": 1, "name": "Division 1" },
-          { "value": 2, "name": "Division 2" },
-          { "value": 3, "name": "Division 3" },
-          { "value": 4, "name": "Division 4" }
+          {
+            "value": 0,
+            "name": "Division 0"
+          },
+          {
+            "value": 1,
+            "name": "Division 1"
+          },
+          {
+            "value": 2,
+            "name": "Division 2"
+          },
+          {
+            "value": 3,
+            "name": "Division 3"
+          },
+          {
+            "value": 4,
+            "name": "Division 4"
+          }
         ]
       }
     }

@@ -7,7 +7,6 @@
     "model": "Auto Reverb"
   },
   "receives": [
-    "CONTROL_CHANGE",
     "CLOCK"
   ],
   "transmits": [],

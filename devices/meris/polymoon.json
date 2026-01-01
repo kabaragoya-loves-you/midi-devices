@@ -1,26 +1,28 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Meris Polymoon",
   "displayName": "Polymoon",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Meris",
     "model": "Polymoon",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["CONTROL_CHANGE"],
-
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 4,
       "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 9,
       "name": "Dotted 8th",
@@ -29,12 +31,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Quarter" },
-          { "value": 64, "name": "Dotted 8th" }
+          {
+            "value": 0,
+            "name": "Quarter"
+          },
+          {
+            "value": 64,
+            "name": "Dotted 8th"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 14,
       "name": "Bypass",
@@ -43,37 +50,50 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass" },
-          { "value": 64, "name": "FX Enable" }
+          {
+            "value": 0,
+            "name": "FX Bypass"
+          },
+          {
+            "value": 64,
+            "name": "FX Enable"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 15,
       "name": "Tempo",
       "additionalInfo": "10 ms intervals; 0-120",
-      "valueRange": { "min": 0, "max": 120 }
+      "valueRange": {
+        "min": 0,
+        "max": 120
+      }
     },
-
     {
       "controlChangeNumber": 16,
       "name": "Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 17,
       "name": "Feedback",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 18,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 19,
       "name": "Multiply",
@@ -82,28 +102,49 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "1×" },
-          { "value": 8, "name": "2×" },
-          { "value": 33, "name": "3×" },
-          { "value": 63, "name": "4×" },
-          { "value": 88, "name": "5×" },
-          { "value": 116, "name": "6×" }
+          {
+            "value": 0,
+            "name": "1×"
+          },
+          {
+            "value": 8,
+            "name": "2×"
+          },
+          {
+            "value": 33,
+            "name": "3×"
+          },
+          {
+            "value": 63,
+            "name": "4×"
+          },
+          {
+            "value": 88,
+            "name": "5×"
+          },
+          {
+            "value": 116,
+            "name": "6×"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 20,
       "name": "Dimension",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Dynamics",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 22,
       "name": "Early Modulations",
@@ -112,38 +153,89 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 8, "name": "Slow/Shallow" },
-          { "value": 16, "name": "Mod/Shallow" },
-          { "value": 24, "name": "Mod/Wide" },
-          { "value": 32, "name": "Fast/Wide" },
-          { "value": 40, "name": "Fast/Extreme" },
-          { "value": 48, "name": "FM 24Hz" },
-          { "value": 56, "name": "FM 48Hz" },
-          { "value": 64, "name": "FM 96Hz" },
-          { "value": 72, "name": "Maj2↓+Maj2↑" },
-          { "value": 80, "name": "Oct↓+m3↑" },
-          { "value": 88, "name": "5th↓+4th↑" },
-          { "value": 96, "name": "Trem+4th↑" },
-          { "value": 104, "name": "Oct↓+5th↑" },
-          { "value": 112, "name": "5th↓+Oct↑" },
-          { "value": 120, "name": "Oct↓+Oct↑" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 8,
+            "name": "Slow/Shallow"
+          },
+          {
+            "value": 16,
+            "name": "Mod/Shallow"
+          },
+          {
+            "value": 24,
+            "name": "Mod/Wide"
+          },
+          {
+            "value": 32,
+            "name": "Fast/Wide"
+          },
+          {
+            "value": 40,
+            "name": "Fast/Extreme"
+          },
+          {
+            "value": 48,
+            "name": "FM 24Hz"
+          },
+          {
+            "value": 56,
+            "name": "FM 48Hz"
+          },
+          {
+            "value": 64,
+            "name": "FM 96Hz"
+          },
+          {
+            "value": 72,
+            "name": "Maj2↓+Maj2↑"
+          },
+          {
+            "value": 80,
+            "name": "Oct↓+m3↑"
+          },
+          {
+            "value": 88,
+            "name": "5th↓+4th↑"
+          },
+          {
+            "value": 96,
+            "name": "Trem+4th↑"
+          },
+          {
+            "value": 104,
+            "name": "Oct↓+5th↑"
+          },
+          {
+            "value": 112,
+            "name": "5th↓+Oct↑"
+          },
+          {
+            "value": 120,
+            "name": "Oct↓+Oct↑"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 23,
       "name": "Feedback Filter",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 24,
       "name": "Delay Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 25,
       "name": "Late Modulation",
@@ -152,26 +244,73 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 8, "name": "Slow/Shallow" },
-          { "value": 16, "name": "Mod/Shallow" },
-          { "value": 24, "name": "Mod/Wide" },
-          { "value": 32, "name": "Fast/Wide" },
-          { "value": 40, "name": "Fast/Extreme" },
-          { "value": 48, "name": "FM 24Hz" },
-          { "value": 56, "name": "FM 48Hz" },
-          { "value": 64, "name": "FM 96Hz" },
-          { "value": 72, "name": "Maj2↓+Maj2↑" },
-          { "value": 80, "name": "Oct↓+m3↑" },
-          { "value": 88, "name": "5th↓+4th↑" },
-          { "value": 96, "name": "Trem+4th↑" },
-          { "value": 104, "name": "Oct↓+5th↑" },
-          { "value": 112, "name": "5th↓+Oct↑" },
-          { "value": 120, "name": "Oct↓+Oct↑" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 8,
+            "name": "Slow/Shallow"
+          },
+          {
+            "value": 16,
+            "name": "Mod/Shallow"
+          },
+          {
+            "value": 24,
+            "name": "Mod/Wide"
+          },
+          {
+            "value": 32,
+            "name": "Fast/Wide"
+          },
+          {
+            "value": 40,
+            "name": "Fast/Extreme"
+          },
+          {
+            "value": 48,
+            "name": "FM 24Hz"
+          },
+          {
+            "value": 56,
+            "name": "FM 48Hz"
+          },
+          {
+            "value": 64,
+            "name": "FM 96Hz"
+          },
+          {
+            "value": 72,
+            "name": "Maj2↓+Maj2↑"
+          },
+          {
+            "value": 80,
+            "name": "Oct↓+m3↑"
+          },
+          {
+            "value": 88,
+            "name": "5th↓+4th↑"
+          },
+          {
+            "value": 96,
+            "name": "Trem+4th↑"
+          },
+          {
+            "value": 104,
+            "name": "Oct↓+5th↑"
+          },
+          {
+            "value": 112,
+            "name": "5th↓+Oct↑"
+          },
+          {
+            "value": 120,
+            "name": "Oct↓+Oct↑"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 26,
       "name": "Dynamic Flanger Mode",
@@ -180,19 +319,29 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Envelope Down" },
-          { "value": 33, "name": "Envelope Up" },
-          { "value": 89, "name": "LFO" }
+          {
+            "value": 0,
+            "name": "Envelope Down"
+          },
+          {
+            "value": 33,
+            "name": "Envelope Up"
+          },
+          {
+            "value": 89,
+            "name": "LFO"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 27,
       "name": "Dynamic Flanger Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 28,
       "name": "Tap",
@@ -201,11 +350,13 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 127, "name": "Tap Press" }
+          {
+            "value": 127,
+            "name": "Tap Press"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 29,
       "name": "Phaser Mode",
@@ -214,14 +365,25 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 32, "name": "Slow" },
-          { "value": 64, "name": "Sync Slow" },
-          { "value": 96, "name": "Sync" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 32,
+            "name": "Slow"
+          },
+          {
+            "value": 64,
+            "name": "Sync Slow"
+          },
+          {
+            "value": 96,
+            "name": "Sync"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 30,
       "name": "Flanger Feedback",
@@ -230,12 +392,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Feedback Off" },
-          { "value": 64, "name": "Feedback On" }
+          {
+            "value": 0,
+            "name": "Feedback Off"
+          },
+          {
+            "value": 64,
+            "name": "Feedback On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 31,
       "name": "Half Speed",
@@ -244,19 +411,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Full Speed" },
-          { "value": 64, "name": "Half Speed" }
+          {
+            "value": 0,
+            "name": "Full Speed"
+          },
+          {
+            "value": 64,
+            "name": "Half Speed"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 16,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_B",
   "x_midiChannel": 1
 }

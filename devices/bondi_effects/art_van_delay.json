@@ -1,41 +1,59 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Bondi Effects Art Van Delay",
   "displayName": "Art Van Delay",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Bondi Effects",
     "model": "Art Van Delay",
     "version": ""
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 50,
       "name": "Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
       "name": "Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 52,
       "name": "Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 53,
       "name": "Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 54,
       "name": "Feedback",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 55,
@@ -44,10 +62,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "1/8 Note" },
-          { "value": 32, "name": "1/4 Note" },
-          { "value": 64, "name": "Dotted 1/8" },
-          { "value": 96, "name": "Triplet" }
+          {
+            "value": 0,
+            "name": "1/8 Note"
+          },
+          {
+            "value": 32,
+            "name": "1/4 Note"
+          },
+          {
+            "value": 64,
+            "name": "Dotted 1/8"
+          },
+          {
+            "value": 96,
+            "name": "Triplet"
+          }
         ]
       }
     },
@@ -58,20 +88,32 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 64, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 64,
+            "name": "Engaged"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 100,
       "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 93,
       "name": "Tap Tempo",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
   "x_pc": {

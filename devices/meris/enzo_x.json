@@ -1,41 +1,52 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Meris Enzo X",
   "displayName": "Enzo X",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Meris",
     "model": "Enzo X",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["CONTROL_CHANGE"],
-
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 1,
       "name": "Oscillator Mod Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 2,
       "name": "Oscillator Mod Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 3,
       "name": "Oscillator Mod Ramp Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 4,
       "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 5,
       "name": "Drive Type",
@@ -44,16 +55,33 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 22, "name": "Volume Pedal" },
-          { "value": 43, "name": "Tube" },
-          { "value": 64, "name": "Transistor" },
-          { "value": 86, "name": "Op-Amp" },
-          { "value": 107, "name": "Bitcrusher" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 22,
+            "name": "Volume Pedal"
+          },
+          {
+            "value": 43,
+            "name": "Tube"
+          },
+          {
+            "value": 64,
+            "name": "Transistor"
+          },
+          {
+            "value": 86,
+            "name": "Op-Amp"
+          },
+          {
+            "value": 107,
+            "name": "Bitcrusher"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 6,
       "name": "Drive Location",
@@ -62,30 +90,49 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre + Dry" },
-          { "value": 32, "name": "Dry" },
-          { "value": 64, "name": "Pre Ambience" },
-          { "value": 96, "name": "Post Ambience" }
+          {
+            "value": 0,
+            "name": "Pre + Dry"
+          },
+          {
+            "value": 32,
+            "name": "Dry"
+          },
+          {
+            "value": 64,
+            "name": "Pre Ambience"
+          },
+          {
+            "value": 96,
+            "name": "Post Ambience"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 7,
       "name": "Gain / Volume / Sample Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 8,
       "name": "Balance / Bits",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 9,
       "name": "Drive Level / Comp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 10,
       "name": "Ambience Type",
@@ -94,21 +141,37 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 26, "name": "Echo" },
-          { "value": 52, "name": "Small" },
-          { "value": 77, "name": "Medium" },
-          { "value": 103, "name": "Large" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 26,
+            "name": "Echo"
+          },
+          {
+            "value": 52,
+            "name": "Small"
+          },
+          {
+            "value": 77,
+            "name": "Medium"
+          },
+          {
+            "value": 103,
+            "name": "Large"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 11,
       "name": "Feedback / Decay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 12,
       "name": "Half Speed",
@@ -117,18 +180,25 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "1/2 Speed Off" },
-          { "value": 64, "name": "1/2 Speed On" }
+          {
+            "value": 0,
+            "name": "1/2 Speed Off"
+          },
+          {
+            "value": 64,
+            "name": "1/2 Speed On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 13,
       "name": "Ambience Mod",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 14,
       "name": "Bypass",
@@ -137,44 +207,65 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass" },
-          { "value": 64, "name": "FX Enable" }
+          {
+            "value": 0,
+            "name": "FX Bypass"
+          },
+          {
+            "value": 64,
+            "name": "FX Enable"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 15,
       "name": "Time (Clock, 7-bit Tempo)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 16,
       "name": "Ambience Highs",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Echo Left Division",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Echo Right Division",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Ambience + Echo Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Ambience Lows",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "MIDI Clock",
@@ -183,13 +274,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Use Global" },
-          { "value": 43, "name": "Force Listen" },
-          { "value": 86, "name": "Force Ignore" }
+          {
+            "value": 0,
+            "name": "Use Global"
+          },
+          {
+            "value": 43,
+            "name": "Force Listen"
+          },
+          {
+            "value": 86,
+            "name": "Force Ignore"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 22,
       "name": "Synth Mode",
@@ -198,87 +297,141 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mono Synth" },
-          { "value": 26, "name": "Poly Synth" },
-          { "value": 52, "name": "Arp Synth" },
-          { "value": 77, "name": "Dry Mono" },
-          { "value": 103, "name": "Dry Poly" }
+          {
+            "value": 0,
+            "name": "Mono Synth"
+          },
+          {
+            "value": 26,
+            "name": "Poly Synth"
+          },
+          {
+            "value": 52,
+            "name": "Arp Synth"
+          },
+          {
+            "value": 77,
+            "name": "Dry Mono"
+          },
+          {
+            "value": 103,
+            "name": "Dry Poly"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 23,
       "name": "Synth Pitch",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 24,
       "name": "Osc 1 Waveshape",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 25,
       "name": "Osc 2 Waveshape",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 26,
       "name": "Osc 2 Pitch Offset",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Osc 2 Detune",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
       "name": "Synth Glide (Portamento)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 29,
       "name": "Osc 1 Gain",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 30,
       "name": "Osc 2 Gain",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 31,
       "name": "XMod",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 32,
       "name": "Arp Mode",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 33,
       "name": "Arp Steps",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 34,
       "name": "Arp Octaves",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 35,
       "name": "Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 36,
       "name": "Dry Blend",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 37,
       "name": "Arp Cycle Latch",
@@ -287,12 +440,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 38,
       "name": "Filter Type",
@@ -301,19 +459,29 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ladder" },
-          { "value": 43, "name": "State Var" },
-          { "value": 86, "name": "Twin" }
+          {
+            "value": 0,
+            "name": "Ladder"
+          },
+          {
+            "value": 43,
+            "name": "State Var"
+          },
+          {
+            "value": 86,
+            "name": "Twin"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 39,
       "name": "Filter Frequency",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 40,
       "name": "Filter Typology",
@@ -322,34 +490,53 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Lowpass" },
-          { "value": 43, "name": "Bandpass" },
-          { "value": 86, "name": "Highpass" }
+          {
+            "value": 0,
+            "name": "Lowpass"
+          },
+          {
+            "value": 43,
+            "name": "Bandpass"
+          },
+          {
+            "value": 86,
+            "name": "Highpass"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 41,
       "name": "Filter Resonance",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 42,
       "name": "Filter Noise",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 43,
       "name": "Twin Filter Spread",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 44,
       "name": "Filter Envelope Amount",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 46,
       "name": "Filter Envelope Type",
@@ -358,38 +545,57 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "ADSR" },
-          { "value": 64, "name": "Envelope" }
+          {
+            "value": 0,
+            "name": "ADSR"
+          },
+          {
+            "value": 64,
+            "name": "Envelope"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 47,
       "name": "Filter Attack Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 48,
       "name": "Filter Decay Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 49,
       "name": "Filter Sustain Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 50,
       "name": "Filter Sustain Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
       "name": "Filter Release Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 52,
       "name": "Direction",
@@ -398,81 +604,121 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Up" },
-          { "value": 64, "name": "Down" }
+          {
+            "value": 0,
+            "name": "Up"
+          },
+          {
+            "value": 64,
+            "name": "Down"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 53,
       "name": "Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 54,
       "name": "Note Persist",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 55,
       "name": "Amplitude Attack Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 56,
       "name": "Amplitude Decay Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
       "name": "Amplitude Sustain Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 58,
       "name": "Amplitude Sustain Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 59,
       "name": "Amplitude Release Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 60,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 61,
       "name": "Dry Trim",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 62,
       "name": "Wet Trim",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 83,
       "name": "Osc 1 Width",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 84,
       "name": "Osc 2 Width",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 85,
       "name": "Arp Note Division",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 86,
       "name": "Mod Type",
@@ -481,16 +727,33 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 22, "name": "Chorus" },
-          { "value": 43, "name": "Flanger" },
-          { "value": 64, "name": "Vibrato" },
-          { "value": 86, "name": "Phaser" },
-          { "value": 107, "name": "Ring Mod" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 22,
+            "name": "Chorus"
+          },
+          {
+            "value": 43,
+            "name": "Flanger"
+          },
+          {
+            "value": 64,
+            "name": "Vibrato"
+          },
+          {
+            "value": 86,
+            "name": "Phaser"
+          },
+          {
+            "value": 107,
+            "name": "Ring Mod"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 87,
       "name": "Mod Location",
@@ -499,45 +762,73 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre + Dry" },
-          { "value": 32, "name": "Dry" },
-          { "value": 64, "name": "Pre Ambience" },
-          { "value": 96, "name": "Post Ambience" }
+          {
+            "value": 0,
+            "name": "Pre + Dry"
+          },
+          {
+            "value": 32,
+            "name": "Dry"
+          },
+          {
+            "value": 64,
+            "name": "Pre Ambience"
+          },
+          {
+            "value": 96,
+            "name": "Post Ambience"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 88,
       "name": "Mod Speed / Frequency",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 89,
       "name": "Mod Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 90,
       "name": "Mod Mode / Waveshape / Stages",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 91,
       "name": "Mod Feedback",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 92,
       "name": "Mod Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 93,
       "name": "Mod Note Division",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 99,
       "name": "Tap Tempo",
@@ -546,11 +837,13 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 127, "name": "Tap Press" }
+          {
+            "value": 127,
+            "name": "Tap Press"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 117,
       "name": "Toggle Tuner Mode",
@@ -559,11 +852,13 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 127, "name": "Toggle Tuner" }
+          {
+            "value": 127,
+            "name": "Toggle Tuner"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 118,
       "name": "Trigger Hold Modifier",
@@ -572,26 +867,36 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Press"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 99,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 1,
-
   "x_midiNoteIn": {
     "supportsNoteOnOff": true,
-    "modesWithNoteControl": ["MONO_SYNTH", "POLY_SYNTH", "ARP_SYNTH"],
-    "modesWithoutNoteControl": ["DRY_MONO", "DRY_POLY"],
+    "modesWithNoteControl": [
+      "MONO_SYNTH",
+      "POLY_SYNTH",
+      "ARP_SYNTH"
+    ],
+    "modesWithoutNoteControl": [
+      "DRY_MONO",
+      "DRY_POLY"
+    ],
     "supportsPitchBend": true,
     "supportsModWheel": true
   }

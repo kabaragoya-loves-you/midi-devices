@@ -1,28 +1,109 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "OBNE Dark Star Stereo",
   "displayName": "Dark Star Stereo",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Old Blood Noise Endeavors",
     "model": "Dark Star Stereo",
     "version": ""
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
-  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
   "controlChangeCommands": [
-    { "controlChangeNumber": 7, "name": "Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 11, "name": "Expression", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 15, "name": "Decay", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 16, "name": "Pitch 1", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 17, "name": "Pitch 2", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 18, "name": "Lag", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 19, "name": "Crush", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 20, "name": "Filter", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 21, "name": "Feedback", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 22, "name": "Spread", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Pitch 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Pitch 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Lag",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Crush",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 23,
       "name": "Bypass Switch",
@@ -31,8 +112,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -44,8 +131,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -57,8 +150,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Start Save" },
-          { "value": 64, "name": "Confirm Save" }
+          {
+            "value": 0,
+            "name": "Start Save"
+          },
+          {
+            "value": 64,
+            "name": "Confirm Save"
+          }
         ]
       }
     },
@@ -70,9 +169,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Filter" },
-          { "value": 43, "name": "Hold" },
-          { "value": 86, "name": "Pitch" }
+          {
+            "value": 0,
+            "name": "Filter"
+          },
+          {
+            "value": 43,
+            "name": "Hold"
+          },
+          {
+            "value": 86,
+            "name": "Pitch"
+          }
         ]
       }
     },
@@ -84,8 +192,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -97,9 +211,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mono" },
-          { "value": 43, "name": "Mono>Stereo" },
-          { "value": 86, "name": "Stereo" }
+          {
+            "value": 0,
+            "name": "Mono"
+          },
+          {
+            "value": 43,
+            "name": "Mono>Stereo"
+          },
+          {
+            "value": 86,
+            "name": "Stereo"
+          }
         ]
       }
     },
@@ -107,7 +230,16 @@
       "controlChangeNumber": 102,
       "name": "MIDI Channel",
       "additionalInfo": "1-16",
-      "valueRange": { "min": 1, "max": 16 }
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
+    }
+  ],
+  "x_programChangeMessages": [
+    {
+      "program": 127,
+      "name": "Live mode (no preset; settings match knob positions)"
     }
   ],
   "x_pc": {
@@ -116,8 +248,5 @@
     "bankSelectMode": "none"
   },
   "x_midiTrs": "TYPE_A",
-  "x_midiChannel": 1,
-  "x_programChangeMessages": [
-    { "program": 127, "name": "Live mode (no preset; settings match knob positions)" }
-  ]
+  "x_midiChannel": 1
 }

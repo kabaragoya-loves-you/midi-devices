@@ -1,51 +1,67 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Condor",
   "displayName": "Condor",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Condor Analog EQ/Pre/Filter",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Gain",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Freq",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Bass",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Mids",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "LPF",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Bass Toggle Select",
@@ -53,9 +69,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right" }
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right"
+          }
         ]
       }
     },
@@ -66,9 +91,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right" }
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right"
+          }
         ]
       }
     },
@@ -79,19 +113,29 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right" }
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "Expression",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass Switch",
@@ -100,8 +144,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "Engage Last" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 127,
+            "name": "Engage Last"
+          }
         ]
       }
     },
@@ -113,21 +163,31 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass Both" },
-          { "value": 45, "name": "Pedal Only" },
-          { "value": 85, "name": "Drive Only" },
-          { "value": 127, "name": "Both On" }
+          {
+            "value": 0,
+            "name": "Bypass Both"
+          },
+          {
+            "value": 45,
+            "name": "Pedal Only"
+          },
+          {
+            "value": 85,
+            "name": "Drive Only"
+          },
+          {
+            "value": 127,
+            "name": "Both On"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

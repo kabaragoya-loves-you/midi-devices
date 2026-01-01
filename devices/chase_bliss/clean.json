@@ -1,56 +1,75 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Clean",
   "displayName": "Clean",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Clean",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Dynamics",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Sensitivity",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Wet",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Attack",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "EQ",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Dry",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Ramp Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
@@ -59,8 +78,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -72,8 +97,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -85,8 +116,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -98,8 +135,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Alt Exit", "value": 0 },
-          { "name": "Alt Enter", "value": 1 }
+          {
+            "name": "Alt Exit",
+            "value": 0
+          },
+          {
+            "name": "Alt Enter",
+            "value": 1
+          }
         ]
       }
     },
@@ -111,22 +154,33 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression Over MIDI)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 111,
       "name": "Preset Save",
       "additionalInfo": "1-122: save current settings to that slot",
-      "valueRange": { "min": 1, "max": 122 }
+      "valueRange": {
+        "min": 1,
+        "max": 122
+      }
     },
     {
       "controlChangeNumber": 52,
@@ -136,8 +190,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -145,9 +205,11 @@
       "controlChangeNumber": 56,
       "name": "Factory Reset",
       "additionalInfo": "0-127 (hold-while-sending behavior per manual)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Release",
@@ -156,9 +218,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Fast", "value": 0 },
-          { "name": "User", "value": 2 },
-          { "name": "Slow", "value": 3 }
+          {
+            "name": "Fast",
+            "value": 0
+          },
+          {
+            "name": "User",
+            "value": 2
+          },
+          {
+            "name": "Slow",
+            "value": 3
+          }
         ]
       }
     },
@@ -170,9 +241,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Shifty", "value": 0 },
-          { "name": "Manual", "value": 2 },
-          { "name": "Modulated", "value": 3 }
+          {
+            "name": "Shifty",
+            "value": 0
+          },
+          {
+            "name": "Manual",
+            "value": 2
+          },
+          {
+            "name": "Modulated",
+            "value": 3
+          }
         ]
       }
     },
@@ -184,13 +264,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Wobbly", "value": 0 },
-          { "name": "Off", "value": 2 },
-          { "name": "Twitchy", "value": 3 }
+          {
+            "name": "Wobbly",
+            "value": 0
+          },
+          {
+            "name": "Off",
+            "value": 2
+          },
+          {
+            "name": "Twitchy",
+            "value": 3
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 61,
       "name": "Left Bank - Dynamics DIP",
@@ -199,8 +287,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -212,8 +306,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -225,8 +325,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -238,8 +344,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -251,8 +363,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -264,8 +382,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -277,8 +401,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Bottom", "value": 0 },
-          { "name": "Top", "value": 1 }
+          {
+            "name": "Bottom",
+            "value": 0
+          },
+          {
+            "name": "Top",
+            "value": 1
+          }
         ]
       }
     },
@@ -290,12 +420,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Forward", "value": 0 },
-          { "name": "Reverse", "value": 1 }
+          {
+            "name": "Forward",
+            "value": 0
+          },
+          {
+            "name": "Reverse",
+            "value": 1
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 71,
       "name": "Right Bank - MISO DIP",
@@ -304,8 +439,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -317,8 +458,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -330,8 +477,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -343,8 +496,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -356,8 +515,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -369,8 +534,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -382,8 +553,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -395,19 +572,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

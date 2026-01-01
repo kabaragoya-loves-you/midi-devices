@@ -1,59 +1,76 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss MOOD",
   "displayName": "MOOD",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "MOOD",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Regen (left)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Tone / Modifier (right)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 17,
       "name": "Time (left)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Envelope / Time Stretch (right)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 19,
       "name": "Balance",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 20,
       "name": "Ramp Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Left Channel Mode",
@@ -62,13 +79,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Micro Loop" },
-          { "value": 2, "name": "Envelope" },
-          { "value": 3, "name": "Glide" }
+          {
+            "value": 0,
+            "name": "Micro Loop"
+          },
+          {
+            "value": 2,
+            "name": "Envelope"
+          },
+          {
+            "value": 3,
+            "name": "Glide"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 22,
       "name": "Routing",
@@ -77,13 +102,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "L→R" },
-          { "value": 2, "name": "Ping-Pong" },
-          { "value": 3, "name": "R→L" }
+          {
+            "value": 0,
+            "name": "L→R"
+          },
+          {
+            "value": 2,
+            "name": "Ping-Pong"
+          },
+          {
+            "value": 3,
+            "name": "R→L"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 23,
       "name": "Right Channel Mode",
@@ -92,13 +125,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mode 4 (Slip)" },
-          { "value": 2, "name": "Stretch" },
-          { "value": 3, "name": "Envelope" }
+          {
+            "value": 0,
+            "name": "Mode 4 (Slip)"
+          },
+          {
+            "value": 2,
+            "name": "Stretch"
+          },
+          {
+            "value": 3,
+            "name": "Envelope"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 24,
       "name": "Clock Division",
@@ -107,22 +148,57 @@
         "min": 0,
         "max": 11,
         "discreteValues": [
-          { "value": 0, "name": "Thirty-second" },
-          { "value": 1, "name": "Sixteenth" },
-          { "value": 2, "name": "1/16 Triplet" },
-          { "value": 3, "name": "Eighth" },
-          { "value": 4, "name": "Triplet Eighth" },
-          { "value": 5, "name": "Dotted Eighth" },
-          { "value": 6, "name": "Quarter" },
-          { "value": 7, "name": "1/4 Triplet" },
-          { "value": 8, "name": "Dotted Quarter" },
-          { "value": 9, "name": "Half" },
-          { "value": 10, "name": "Dotted Half" },
-          { "value": 11, "name": "Whole/Dbl" }
+          {
+            "value": 0,
+            "name": "Thirty-second"
+          },
+          {
+            "value": 1,
+            "name": "Sixteenth"
+          },
+          {
+            "value": 2,
+            "name": "1/16 Triplet"
+          },
+          {
+            "value": 3,
+            "name": "Eighth"
+          },
+          {
+            "value": 4,
+            "name": "Triplet Eighth"
+          },
+          {
+            "value": 5,
+            "name": "Dotted Eighth"
+          },
+          {
+            "value": 6,
+            "name": "Quarter"
+          },
+          {
+            "value": 7,
+            "name": "1/4 Triplet"
+          },
+          {
+            "value": 8,
+            "name": "Dotted Quarter"
+          },
+          {
+            "value": 9,
+            "name": "Half"
+          },
+          {
+            "value": 10,
+            "name": "Dotted Half"
+          },
+          {
+            "value": 11,
+            "name": "Whole/Dbl"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 51,
       "name": "MIDI Clock Ignore",
@@ -131,26 +207,35 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore" },
-          { "value": 1, "name": "Listen" }
+          {
+            "value": 0,
+            "name": "Ignore"
+          },
+          {
+            "value": 1,
+            "name": "Listen"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 93,
       "name": "Tap",
       "additionalInfo": "Simulates pressing TAP",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression Over MIDI)",
       "additionalInfo": "0 = heel, 127 = toe",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
@@ -159,19 +244,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 127, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 127,
+            "name": "Engaged"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

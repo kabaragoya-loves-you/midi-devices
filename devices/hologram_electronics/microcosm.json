@@ -11,12 +11,10 @@
   },
   "receives": [
     "PROGRAM_CHANGE",
-    "CONTROL_CHANGE",
     "CLOCK"
   ],
   "transmits": [
     "PROGRAM_CHANGE",
-    "CONTROL_CHANGE",
     "CLOCK"
   ],
   "controlChangeCommands": [

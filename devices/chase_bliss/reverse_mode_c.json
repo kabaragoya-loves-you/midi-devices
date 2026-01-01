@@ -1,56 +1,76 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Reverse Mode C",
   "displayName": "Reverse Mode C",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Reverse Mode C",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Feedback",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Offset",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Balance",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Filter",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Ramp Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Mod Sync",
@@ -59,9 +79,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Sync" },
-          { "value": 2, "name": "Off" },
-          { "value": 3, "name": "Free" }
+          {
+            "value": 0,
+            "name": "Sync"
+          },
+          {
+            "value": 2,
+            "name": "Off"
+          },
+          {
+            "value": 3,
+            "name": "Free"
+          }
         ]
       }
     },
@@ -73,9 +102,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Vibrato" },
-          { "value": 2, "name": "Tremolo" },
-          { "value": 3, "name": "Frequency" }
+          {
+            "value": 0,
+            "name": "Vibrato"
+          },
+          {
+            "value": 2,
+            "name": "Tremolo"
+          },
+          {
+            "value": 3,
+            "name": "Frequency"
+          }
         ]
       }
     },
@@ -87,13 +125,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Run" },
-          { "value": 2, "name": "Off" },
-          { "value": 3, "name": "Envelope" }
+          {
+            "value": 0,
+            "name": "Run"
+          },
+          {
+            "value": 2,
+            "name": "Off"
+          },
+          {
+            "value": 3,
+            "name": "Envelope"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 24,
       "name": "Sequencer Subdivision",
@@ -102,35 +148,66 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "×16" },
-          { "value": 16, "name": "×8" },
-          { "value": 32, "name": "×4" },
-          { "value": 48, "name": "×2" },
-          { "value": 64, "name": "×1" },
-          { "value": 80, "name": "×1/2" },
-          { "value": 96, "name": "×1/4" },
-          { "value": 112, "name": "×1/8" }
+          {
+            "value": 0,
+            "name": "×16"
+          },
+          {
+            "value": 16,
+            "name": "×8"
+          },
+          {
+            "value": 32,
+            "name": "×4"
+          },
+          {
+            "value": 48,
+            "name": "×2"
+          },
+          {
+            "value": 64,
+            "name": "×1"
+          },
+          {
+            "value": 80,
+            "name": "×1/2"
+          },
+          {
+            "value": 96,
+            "name": "×1/4"
+          },
+          {
+            "value": 112,
+            "name": "×1/8"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 25,
       "name": "Ramping Waveform",
       "additionalInfo": "Waveform selection using internal value bands (see manual)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Mod Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
       "name": "Mod Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 31,
       "name": "Octave Type",
@@ -139,9 +216,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Oct Down" },
-          { "value": 2, "name": "Both Octaves" },
-          { "value": 3, "name": "Oct Up" }
+          {
+            "value": 0,
+            "name": "Oct Down"
+          },
+          {
+            "value": 2,
+            "name": "Both Octaves"
+          },
+          {
+            "value": 3,
+            "name": "Oct Up"
+          }
         ]
       }
     },
@@ -153,12 +239,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Rest" },
-          { "value": 2, "name": "Skip" }
+          {
+            "value": 0,
+            "name": "Rest"
+          },
+          {
+            "value": 2,
+            "name": "Skip"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 51,
       "name": "MIDI Clock Ignore",
@@ -167,8 +258,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore Clock" },
-          { "value": 1, "name": "Listen" }
+          {
+            "value": 0,
+            "name": "Ignore Clock"
+          },
+          {
+            "value": 1,
+            "name": "Listen"
+          }
         ]
       }
     },
@@ -180,8 +277,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -189,7 +292,10 @@
       "controlChangeNumber": 56,
       "name": "Factory Reset",
       "additionalInfo": "Send any value (see manual for full procedure)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
@@ -199,12 +305,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Dry On" },
-          { "value": 1, "name": "Dry Kill" }
+          {
+            "value": 0,
+            "name": "Dry On"
+          },
+          {
+            "value": 1,
+            "name": "Dry Kill"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 61,
       "name": "DIP Time",
@@ -213,8 +324,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -226,8 +343,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -239,8 +362,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -252,8 +381,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -265,8 +400,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -278,8 +419,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -291,8 +438,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bottom (B)" },
-          { "value": 1, "name": "Top (T)" }
+          {
+            "value": 0,
+            "name": "Bottom (B)"
+          },
+          {
+            "value": 1,
+            "name": "Top (T)"
+          }
         ]
       }
     },
@@ -304,12 +457,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Forward (F)" },
-          { "value": 1, "name": "Reverse (R)" }
+          {
+            "value": 0,
+            "name": "Forward (F)"
+          },
+          {
+            "value": 1,
+            "name": "Reverse (R)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 71,
       "name": "DIP Swap",
@@ -318,8 +476,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -331,8 +495,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -344,8 +514,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -357,8 +533,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -370,8 +552,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -383,8 +571,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -396,8 +590,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -409,12 +609,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
@@ -423,8 +628,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 1,
+            "name": "Engaged"
+          }
         ]
       }
     },
@@ -432,13 +643,19 @@
       "controlChangeNumber": 93,
       "name": "Tap",
       "additionalInfo": "Any value simulates tapping the switch",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 103,
       "name": "Tap (Alt)",
       "additionalInfo": "Alternate CC for tap tempo; any value acts as tap",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 104,
@@ -448,8 +665,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "ALT Exit" },
-          { "value": 1, "name": "ALT Enter" }
+          {
+            "value": 0,
+            "name": "ALT Exit"
+          },
+          {
+            "value": 1,
+            "name": "ALT Enter"
+          }
         ]
       }
     },
@@ -461,8 +684,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -474,8 +703,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Normal" },
-          { "value": 1, "name": "Half Speed" }
+          {
+            "value": 0,
+            "name": "Normal"
+          },
+          {
+            "value": 1,
+            "name": "Half Speed"
+          }
         ]
       }
     },
@@ -483,35 +718,44 @@
       "controlChangeNumber": 108,
       "name": "Retrigger Glitch",
       "additionalInfo": "Send any value to retrigger glitch",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 109,
       "name": "Retrigger Freeze",
       "additionalInfo": "Send any value to retrigger freeze",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression Over MIDI)",
       "additionalInfo": "0 = heel, 127 = toe; mapped by pedal DIP switches",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 111,
       "name": "Preset Save",
       "additionalInfo": "Send preset number (1-122) while holding both footswitches",
-      "valueRange": { "min": 0, "max": 122 }
+      "valueRange": {
+        "min": 0,
+        "max": 122
+      }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

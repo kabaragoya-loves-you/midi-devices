@@ -6,25 +6,141 @@
     "manufacturer": "Kinotone",
     "model": "Ribbons"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK", "NOTE_ON", "NOTE_OFF"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
   "transmits": [],
   "controlChangeCommands": [
-    { "controlChangeNumber": 14, "name": "High-Pass Filter", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 15, "name": "Low-Pass Filter", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 16, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 17, "name": "Compression / Saturation", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 18, "name": "Wow Frequency", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 19, "name": "Wow Depth", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 20, "name": "Flutter Depth", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 21, "name": "Flutter Frequency", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 22, "name": "Dropouts Frequency", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 23, "name": "Dropouts Depth", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 24, "name": "Crinkle", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 25, "name": "Noise", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 26, "name": "Reverb Decay", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 27, "name": "Reverb Mix & Placement", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 28, "name": "Touch Param 1", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 29, "name": "Touch Param 2", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 14,
+      "name": "High-Pass Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Low-Pass Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Compression / Saturation",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Wow Frequency",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Wow Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Flutter Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Flutter Frequency",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Dropouts Frequency",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Dropouts Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Crinkle",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Noise",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Reverb Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Reverb Mix & Placement",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Touch Param 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Touch Param 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 30,
       "name": "Touch Mode Select",
@@ -33,13 +149,34 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Magnetic Dance" },
-          { "value": 19, "name": "Tape Stop" },
-          { "value": 37, "name": "Broken Machine" },
-          { "value": 55, "name": "Repeater" },
-          { "value": 74, "name": "Crushed Tape" },
-          { "value": 92, "name": "Disint Loop" },
-          { "value": 110, "name": "UnrealPlayer" }
+          {
+            "value": 0,
+            "name": "Magnetic Dance"
+          },
+          {
+            "value": 19,
+            "name": "Tape Stop"
+          },
+          {
+            "value": 37,
+            "name": "Broken Machine"
+          },
+          {
+            "value": 55,
+            "name": "Repeater"
+          },
+          {
+            "value": 74,
+            "name": "Crushed Tape"
+          },
+          {
+            "value": 92,
+            "name": "Disint Loop"
+          },
+          {
+            "value": 110,
+            "name": "UnrealPlayer"
+          }
         ]
       }
     },
@@ -51,8 +188,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Tape Effects" },
-          { "value": 65, "name": "Looper" }
+          {
+            "value": 0,
+            "name": "Tape Effects"
+          },
+          {
+            "value": 65,
+            "name": "Looper"
+          }
         ]
       }
     },
@@ -64,10 +207,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Track 1" },
-          { "value": 32, "name": "Track 2" },
-          { "value": 64, "name": "Track 3" },
-          { "value": 96, "name": "Track 4" }
+          {
+            "value": 0,
+            "name": "Track 1"
+          },
+          {
+            "value": 32,
+            "name": "Track 2"
+          },
+          {
+            "value": 64,
+            "name": "Track 3"
+          },
+          {
+            "value": 96,
+            "name": "Track 4"
+          }
         ]
       }
     },
@@ -79,8 +234,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "False" },
-          { "value": 65, "name": "True" }
+          {
+            "value": 0,
+            "name": "False"
+          },
+          {
+            "value": 65,
+            "name": "True"
+          }
         ]
       }
     },
@@ -92,27 +253,145 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "False" },
-          { "value": 65, "name": "True" }
+          {
+            "value": 0,
+            "name": "False"
+          },
+          {
+            "value": 65,
+            "name": "True"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 35, "name": "Track 1 Direction", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 36, "name": "Track 1 Speed", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 37, "name": "Track 1 Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 38, "name": "Track 1 Scale", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 39, "name": "Track 2 Direction", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 40, "name": "Track 2 Speed", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 41, "name": "Track 2 Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 42, "name": "Track 2 Scale", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 43, "name": "Track 3 Direction", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 44, "name": "Track 3 Speed", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 45, "name": "Track 3 Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 46, "name": "Track 3 Scale", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 47, "name": "Track 4 Direction", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 48, "name": "Track 4 Speed", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 49, "name": "Track 4 Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 50, "name": "Track 4 Scale", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 35,
+      "name": "Track 1 Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Track 1 Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Track 1 Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Track 1 Scale",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Track 2 Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Track 2 Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Track 2 Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Track 2 Scale",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Track 3 Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Track 3 Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Track 3 Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Track 3 Scale",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Track 4 Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Track 4 Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Track 4 Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Track 4 Scale",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 51,
       "name": "Ignore MIDI Clock",
@@ -121,14 +400,41 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore" },
-          { "value": 1, "name": "Listen" }
+          {
+            "value": 0,
+            "name": "Ignore"
+          },
+          {
+            "value": 1,
+            "name": "Listen"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 52, "name": "Synth Attack", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 53, "name": "Synth Release", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 54, "name": "Synth Volume", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 52,
+      "name": "Synth Attack",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Synth Release",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Synth Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 55,
       "name": "UnrealPlayer Fidelity",
@@ -137,14 +443,41 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Lo-fi" },
-          { "value": 65, "name": "Hi-fi" }
+          {
+            "value": 0,
+            "name": "Lo-fi"
+          },
+          {
+            "value": 65,
+            "name": "Hi-fi"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 56, "name": "Reserved", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 57, "name": "Filter Resonance", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 58, "name": "Makeup Gain", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 56,
+      "name": "Reserved",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Filter Resonance",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Makeup Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 59,
       "name": "Switch between Compression or Saturation",
@@ -153,8 +486,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Compression" },
-          { "value": 65, "name": "Saturation" }
+          {
+            "value": 0,
+            "name": "Compression"
+          },
+          {
+            "value": 65,
+            "name": "Saturation"
+          }
         ]
       }
     },
@@ -166,8 +505,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "False" },
-          { "value": 65, "name": "True" }
+          {
+            "value": 0,
+            "name": "False"
+          },
+          {
+            "value": 65,
+            "name": "True"
+          }
         ]
       }
     },
@@ -179,8 +524,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 65, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 65,
+            "name": "On"
+          }
         ]
       }
     },
@@ -192,8 +543,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 65, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 65,
+            "name": "On"
+          }
         ]
       }
     }

@@ -1,51 +1,67 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Preamp MKII",
   "displayName": "Preamp MKII",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Preamp MKII",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Treble",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Mids",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Freq",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Bass",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Gain",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 22,
       "name": "Jump",
@@ -54,9 +70,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Off" },
-          { "value": 2, "name": "0 dB" },
-          { "value": 3, "name": "+5 dB" }
+          {
+            "value": 1,
+            "name": "Off"
+          },
+          {
+            "value": 2,
+            "name": "0 dB"
+          },
+          {
+            "value": 3,
+            "name": "+5 dB"
+          }
         ]
       }
     },
@@ -68,9 +93,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Off" },
-          { "value": 2, "name": "Pre" },
-          { "value": 3, "name": "Post" }
+          {
+            "value": 1,
+            "name": "Off"
+          },
+          {
+            "value": 2,
+            "name": "Pre"
+          },
+          {
+            "value": 3,
+            "name": "Post"
+          }
         ]
       }
     },
@@ -82,9 +116,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Low" },
-          { "value": 2, "name": "Mid" },
-          { "value": 3, "name": "High" }
+          {
+            "value": 1,
+            "name": "Low"
+          },
+          {
+            "value": 2,
+            "name": "Mid"
+          },
+          {
+            "value": 3,
+            "name": "High"
+          }
         ]
       }
     },
@@ -96,9 +139,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Off" },
-          { "value": 2, "name": "Silicon" },
-          { "value": 3, "name": "Germanium" }
+          {
+            "value": 1,
+            "name": "Off"
+          },
+          {
+            "value": 2,
+            "name": "Silicon"
+          },
+          {
+            "value": 3,
+            "name": "Germanium"
+          }
         ]
       }
     },
@@ -110,24 +162,38 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Off" },
-          { "value": 2, "name": "Open" },
-          { "value": 3, "name": "Gated" }
+          {
+            "value": 1,
+            "name": "Off"
+          },
+          {
+            "value": 2,
+            "name": "Open"
+          },
+          {
+            "value": 3,
+            "name": "Gated"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 27,
       "name": "Preset Save",
       "additionalInfo": "Value (0-29) selects preset slot to save current settings into",
-      "valueRange": { "min": 0, "max": 29 }
+      "valueRange": {
+        "min": 0,
+        "max": 29
+      }
     },
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression Over MIDI)",
       "additionalInfo": "0 = heel, 127 = toe",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -137,19 +203,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 1,
+            "name": "Engaged"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 0,
     "count": 30,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

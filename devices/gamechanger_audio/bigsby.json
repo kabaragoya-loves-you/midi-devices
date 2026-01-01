@@ -8,7 +8,6 @@
   },
   "receives": [
     "PROGRAM_CHANGE",
-    "CONTROL_CHANGE",
     "PITCH_BEND",
     "CLOCK"
   ],

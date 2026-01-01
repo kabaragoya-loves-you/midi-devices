@@ -1,51 +1,67 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Brothers",
   "displayName": "Brothers",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Brothers Analog Gainstage",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Gain A",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Master",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Gain B",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Tone A",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Mix / Stack",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Tone B",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Channel A Effect Select",
@@ -54,9 +70,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Boost" },
-          { "value": 2, "name": "Drive" },
-          { "value": 3, "name": "Fuzz" }
+          {
+            "value": 1,
+            "name": "Boost"
+          },
+          {
+            "value": 2,
+            "name": "Drive"
+          },
+          {
+            "value": 3,
+            "name": "Fuzz"
+          }
         ]
       }
     },
@@ -68,9 +93,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "PARA" },
-          { "value": 2, "name": "A >> B" },
-          { "value": 3, "name": "B >> A" }
+          {
+            "value": 1,
+            "name": "PARA"
+          },
+          {
+            "value": 2,
+            "name": "A >> B"
+          },
+          {
+            "value": 3,
+            "name": "B >> A"
+          }
         ]
       }
     },
@@ -82,20 +116,30 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Fuzz" },
-          { "value": 2, "name": "Drive" },
-          { "value": 3, "name": "Boost" }
+          {
+            "value": 1,
+            "name": "Fuzz"
+          },
+          {
+            "value": 2,
+            "name": "Drive"
+          },
+          {
+            "value": 3,
+            "name": "Boost"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "Expression",
       "additionalInfo": "0 = heel, 127 = toe (expression target set by dips)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass Switch (Last Saved Channels)",
@@ -104,8 +148,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass Both" },
-          { "value": 127, "name": "Engage Last" }
+          {
+            "value": 0,
+            "name": "Bypass Both"
+          },
+          {
+            "value": 127,
+            "name": "Engage Last"
+          }
         ]
       }
     },
@@ -117,21 +167,31 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass Both" },
-          { "value": 45, "name": "B On, A Off" },
-          { "value": 85, "name": "A On, B Off" },
-          { "value": 127, "name": "Both On" }
+          {
+            "value": 0,
+            "name": "Bypass Both"
+          },
+          {
+            "value": 45,
+            "name": "B On, A Off"
+          },
+          {
+            "value": 85,
+            "name": "A On, B Off"
+          },
+          {
+            "value": 127,
+            "name": "Both On"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

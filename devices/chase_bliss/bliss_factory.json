@@ -1,51 +1,67 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Bliss Factory",
   "displayName": "Bliss Factory",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Bliss Factory",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Gate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Comp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Drive",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Stab",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "LPF",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "AUX FUNC Select",
@@ -54,9 +70,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right" }
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right"
+          }
         ]
       }
     },
@@ -68,9 +93,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right" }
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right"
+          }
         ]
       }
     },
@@ -82,20 +116,30 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right" }
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "Expression",
       "additionalInfo": "0 = heel, 127 = toe (expression target set by dips)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 101,
       "name": "AUX FUNC",
@@ -104,8 +148,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -117,19 +167,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 1, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 1,
+            "name": "Engage"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

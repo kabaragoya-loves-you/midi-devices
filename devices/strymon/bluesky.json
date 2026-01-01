@@ -1,19 +1,19 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Strymon blueSky",
   "displayName": "blueSky",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Strymon",
     "model": "blueSky",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
@@ -23,9 +23,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Bank 1" },
-          { "value": 1, "name": "Bank 2" },
-          { "value": 2, "name": "Bank 3" }
+          {
+            "value": 0,
+            "name": "Bank 1"
+          },
+          {
+            "value": 1,
+            "name": "Bank 2"
+          },
+          {
+            "value": 2,
+            "name": "Bank 3"
+          }
         ]
       }
     },
@@ -36,15 +45,45 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Plate" },
-          { "value": 2, "name": "Room" },
-          { "value": 3, "name": "Spring" }
+          {
+            "value": 1,
+            "name": "Plate"
+          },
+          {
+            "value": 2,
+            "name": "Room"
+          },
+          {
+            "value": 3,
+            "name": "Spring"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 12, "name": "Decay", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 13, "name": "Low", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Pre-Delay", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 12,
+      "name": "Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Low",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Pre-Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 15,
       "name": "Mod Type",
@@ -52,15 +91,45 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Off" },
-          { "value": 2, "name": "Light" },
-          { "value": 3, "name": "Deep" }
+          {
+            "value": 1,
+            "name": "Off"
+          },
+          {
+            "value": 2,
+            "name": "Light"
+          },
+          {
+            "value": 3,
+            "name": "Deep"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 16, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 17, "name": "High", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 18, "name": "Shimmer", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "High",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Shimmer",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 60,
       "name": "MIDI Expression Off/On",
@@ -68,8 +137,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
@@ -80,8 +155,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
@@ -89,7 +170,10 @@
       "controlChangeNumber": 100,
       "name": "Expression Pedal",
       "additionalInfo": "0 = heel, 127 = toe",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -98,19 +182,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 0,
     "count": 300,
     "bankSelectMode": "CC0"
   },
-
   "x_midiTrs": "BOTH",
   "x_midiChannel": 1
 }

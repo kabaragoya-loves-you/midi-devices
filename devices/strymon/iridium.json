@@ -1,28 +1,35 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Strymon Iridium",
   "displayName": "Iridium",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Strymon",
     "model": "Iridium",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
       "name": "Bank Select (Patch Bank)",
-      "valueRange": { "min": 0, "max": 2 }
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
     },
-
-    { "controlChangeNumber": 7, "name": "Volume Pedal", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 9,
       "name": "Volume Pedal Pre/Post",
@@ -30,19 +37,65 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pre" },
-          { "value": 127, "name": "Post" }
+          {
+            "value": 0,
+            "name": "Pre"
+          },
+          {
+            "value": 127,
+            "name": "Post"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 12, "name": "Level", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 13, "name": "Drive", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Bass", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 15, "name": "Mid", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 16, "name": "Treble", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 17, "name": "Room Level", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 12,
+      "name": "Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Bass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Treble",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Room Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 18,
       "name": "Room Size",
@@ -50,13 +103,21 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Small" },
-          { "value": 2, "name": "Medium" },
-          { "value": 3, "name": "Large" }
+          {
+            "value": 1,
+            "name": "Small"
+          },
+          {
+            "value": 2,
+            "name": "Medium"
+          },
+          {
+            "value": 3,
+            "name": "Large"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 19,
       "name": "Amp",
@@ -64,19 +125,29 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Round" },
-          { "value": 2, "name": "Chime" },
-          { "value": 3, "name": "Punch" }
+          {
+            "value": 1,
+            "name": "Round"
+          },
+          {
+            "value": 2,
+            "name": "Chime"
+          },
+          {
+            "value": 3,
+            "name": "Punch"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 20,
       "name": "Cab",
-      "valueRange": { "min": 0, "max": 8 }
+      "valueRange": {
+        "min": 0,
+        "max": 8
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Amp Disable",
@@ -84,12 +155,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Enabled" },
-          { "value": 127, "name": "Disabled" }
+          {
+            "value": 0,
+            "name": "Enabled"
+          },
+          {
+            "value": 127,
+            "name": "Disabled"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 27,
       "name": "Footswitch Fav",
@@ -97,8 +173,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Press"
+          }
         ]
       }
     },
@@ -109,12 +191,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Press"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 60,
       "name": "MIDI Expression Off/On",
@@ -122,14 +209,25 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 100, "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 102,
       "name": "Bypass/On",
@@ -137,13 +235,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 0,
     "count": 300,

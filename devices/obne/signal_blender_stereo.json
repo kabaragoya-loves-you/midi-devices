@@ -1,16 +1,16 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "OBNE Signal Blender Stereo",
   "displayName": "Signal Blender Stereo",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Old Blood Noise Endeavors",
     "model": "Signal Blender Stereo",
     "version": ""
   },
-  "receives": ["CONTROL_CHANGE"],
-  "transmits": ["CONTROL_CHANGE"],
+  "receives": [],
+  "transmits": [],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 15,
@@ -20,8 +20,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -33,8 +39,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -46,8 +58,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -59,8 +77,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -72,8 +96,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -85,14 +115,38 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "C0 B0 A0" },
-          { "value": 1, "name": "C0 B0 A1" },
-          { "value": 2, "name": "C0 B1 A0" },
-          { "value": 3, "name": "C0 B1 A1" },
-          { "value": 4, "name": "C1 B0 A0" },
-          { "value": 5, "name": "C1 B0 A1" },
-          { "value": 6, "name": "C1 B1 A0" },
-          { "value": 7, "name": "C1 B1 A1" }
+          {
+            "value": 0,
+            "name": "C0 B0 A0"
+          },
+          {
+            "value": 1,
+            "name": "C0 B0 A1"
+          },
+          {
+            "value": 2,
+            "name": "C0 B1 A0"
+          },
+          {
+            "value": 3,
+            "name": "C0 B1 A1"
+          },
+          {
+            "value": 4,
+            "name": "C1 B0 A0"
+          },
+          {
+            "value": 5,
+            "name": "C1 B0 A1"
+          },
+          {
+            "value": 6,
+            "name": "C1 B1 A0"
+          },
+          {
+            "value": 7,
+            "name": "C1 B1 A1"
+          }
         ]
       }
     },
@@ -104,8 +158,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -113,7 +173,10 @@
       "controlChangeNumber": 102,
       "name": "MIDI Channel",
       "additionalInfo": "1-16",
-      "valueRange": { "min": 1, "max": 16 }
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
     }
   ],
   "x_pc": {

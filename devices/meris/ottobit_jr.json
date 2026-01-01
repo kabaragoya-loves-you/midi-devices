@@ -1,26 +1,28 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Meris Ottobit Jr.",
   "displayName": "Ottobit Jr.",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Meris",
     "model": "Ottobit Jr.",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["CONTROL_CHANGE"],
-
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 4,
       "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 14,
       "name": "Bypass",
@@ -29,85 +31,121 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "FX Bypass" },
-          { "value": 64, "name": "FX Enable" }
+          {
+            "value": 0,
+            "name": "FX Bypass"
+          },
+          {
+            "value": 64,
+            "name": "FX Enable"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 15,
       "name": "Tempo",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 16,
       "name": "Sample Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 17,
       "name": "Filter",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 18,
       "name": "Bits",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 19,
       "name": "Stutter",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 20,
       "name": "Sequencer",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Sequencer Mult",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 22,
       "name": "Step 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 23,
       "name": "Step 2",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 24,
       "name": "Step 3",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 25,
       "name": "Step 4",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 26,
       "name": "Step 5",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Step 6",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 28,
       "name": "Tap",
@@ -116,11 +154,13 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 127, "name": "Tap Press" }
+          {
+            "value": 127,
+            "name": "Tap Press"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 29,
       "name": "Sequencer Type",
@@ -129,13 +169,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Pitch" },
-          { "value": 63, "name": "Sample Rate" },
-          { "value": 64, "name": "Filter" }
+          {
+            "value": 0,
+            "name": "Pitch"
+          },
+          {
+            "value": 63,
+            "name": "Sample Rate"
+          },
+          {
+            "value": 64,
+            "name": "Filter"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 31,
       "name": "Stutter Hold",
@@ -144,19 +192,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Hold Off" },
-          { "value": 64, "name": "Hold On" }
+          {
+            "value": 0,
+            "name": "Hold Off"
+          },
+          {
+            "value": 64,
+            "name": "Hold On"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 16,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_B",
   "x_midiChannel": 1
 }

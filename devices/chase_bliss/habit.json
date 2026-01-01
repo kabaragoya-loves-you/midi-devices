@@ -1,56 +1,76 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Habit",
   "displayName": "Habit",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Habit",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Repeats",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Size",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Mod",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Spread",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Scan",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Ramp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Mod Number",
@@ -58,9 +78,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right" }
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right"
+          }
         ]
       }
     },
@@ -71,9 +100,18 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right" }
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right"
+          }
         ]
       }
     },
@@ -84,13 +122,21 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right" }
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass / Engage",
@@ -99,8 +145,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 1, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 1,
+            "name": "Engaged"
+          }
         ]
       }
     },
@@ -108,7 +160,10 @@
       "controlChangeNumber": 93,
       "name": "Tap Tempo",
       "additionalInfo": "Send any value to simulate pressing TAP",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 24,
@@ -118,8 +173,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Loop Off" },
-          { "value": 1, "name": "Loop On" }
+          {
+            "value": 0,
+            "name": "Loop Off"
+          },
+          {
+            "value": 1,
+            "name": "Loop On"
+          }
         ]
       }
     },
@@ -131,8 +192,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Scan Off" },
-          { "value": 1, "name": "Scan On" }
+          {
+            "value": 0,
+            "name": "Scan Off"
+          },
+          {
+            "value": 1,
+            "name": "Scan On"
+          }
         ]
       }
     },
@@ -140,14 +207,19 @@
       "controlChangeNumber": 26,
       "name": "Clear (Both Hold)",
       "additionalInfo": "Send any value to clear",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression Over MIDI)",
       "additionalInfo": "0 = heel, 127 = toe (expression target set by dips)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
@@ -157,19 +229,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore Clock" },
-          { "value": 1, "name": "Listen" }
+          {
+            "value": 0,
+            "name": "Ignore Clock"
+          },
+          {
+            "value": 1,
+            "name": "Listen"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

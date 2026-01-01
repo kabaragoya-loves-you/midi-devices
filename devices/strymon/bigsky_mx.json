@@ -1,16 +1,22 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Strymon BigSky MX",
   "displayName": "BigSky MX",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Strymon",
     "model": "BigSky MX",
     "version": ""
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
@@ -19,25 +25,85 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Bank 0" },
-          { "value": 1, "name": "Bank 1" },
-          { "value": 2, "name": "Bank 2" }
+          {
+            "value": 0,
+            "name": "Bank 0"
+          },
+          {
+            "value": 1,
+            "name": "Bank 1"
+          },
+          {
+            "value": 2,
+            "name": "Bank 2"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 1, "name": "Reverb 1: Reverb Type Encoder", "valueRange": { "min": 0, "max": 11 } },
-    { "controlChangeNumber": 2, "name": "Reverb 2: Reverb Type Encoder", "valueRange": { "min": 0, "max": 11 } },
-
-    { "controlChangeNumber": 3, "name": "Reverb 1: Decay Knob", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 4, "name": "Reverb 2: Decay Knob", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 5, "name": "Reverb 1: Pre-Delay Knob", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 6, "name": "Reverb 2: Pre-Delay Knob", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 7, "name": "Reverb 1: Output Level", "valueRange": { "min": 0, "max": 16 } },
-    { "controlChangeNumber": 8, "name": "Reverb 2: Output Level", "valueRange": { "min": 0, "max": 16 } },
-
+    {
+      "controlChangeNumber": 1,
+      "name": "Reverb 1: Reverb Type Encoder",
+      "valueRange": {
+        "min": 0,
+        "max": 11
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Reverb 2: Reverb Type Encoder",
+      "valueRange": {
+        "min": 0,
+        "max": 11
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Reverb 1: Decay Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Reverb 2: Decay Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Reverb 1: Pre-Delay Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Reverb 2: Pre-Delay Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Reverb 1: Output Level",
+      "valueRange": {
+        "min": 0,
+        "max": 16
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Reverb 2: Output Level",
+      "valueRange": {
+        "min": 0,
+        "max": 16
+      }
+    },
     {
       "controlChangeNumber": 9,
       "name": "Reverb 1: Pan",
@@ -45,9 +111,18 @@
         "min": 0,
         "max": 16,
         "discreteValues": [
-          { "value": 0, "name": "Full Left" },
-          { "value": 8, "name": "Center" },
-          { "value": 16, "name": "Full Right" }
+          {
+            "value": 0,
+            "name": "Full Left"
+          },
+          {
+            "value": 8,
+            "name": "Center"
+          },
+          {
+            "value": 16,
+            "name": "Full Right"
+          }
         ]
       }
     },
@@ -58,22 +133,69 @@
         "min": 0,
         "max": 16,
         "discreteValues": [
-          { "value": 0, "name": "Full Left" },
-          { "value": 8, "name": "Center" },
-          { "value": 16, "name": "Full Right" }
+          {
+            "value": 0,
+            "name": "Full Left"
+          },
+          {
+            "value": 8,
+            "name": "Center"
+          },
+          {
+            "value": 16,
+            "name": "Full Right"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 11, "name": "Reverb 1: Tone Knob", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 12, "name": "Reverb 2: Tone Knob", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 13, "name": "Reverb 1: Mod Knob", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Reverb 2: Mod Knob", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 15, "name": "Reverb 1: Mix Knob", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 16, "name": "Reverb 2: Mix Knob", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 11,
+      "name": "Reverb 1: Tone Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Reverb 2: Tone Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Reverb 1: Mod Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Reverb 2: Mod Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Reverb 1: Mix Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Reverb 2: Mix Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 17,
       "name": "Reverb 1: Infinite Mode",
@@ -81,9 +203,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Freeze" },
-          { "value": 1, "name": "Infinite" },
-          { "value": 2, "name": "Off" }
+          {
+            "value": 0,
+            "name": "Freeze"
+          },
+          {
+            "value": 1,
+            "name": "Infinite"
+          },
+          {
+            "value": 2,
+            "name": "Off"
+          }
         ]
       }
     },
@@ -94,22 +225,69 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Freeze" },
-          { "value": 1, "name": "Infinite" },
-          { "value": 2, "name": "Off" }
+          {
+            "value": 0,
+            "name": "Freeze"
+          },
+          {
+            "value": 1,
+            "name": "Infinite"
+          },
+          {
+            "value": 2,
+            "name": "Off"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 19, "name": "Reverb 1: Param 1 Knob", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 20, "name": "Reverb 2: Param 1 Knob", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 21, "name": "Reverb 1: Param 2 Knob", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 22, "name": "Reverb 2: Param 2 Knob", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 23, "name": "Reverb 1: Low End", "valueRange": { "min": 0, "max": 20 } },
-    { "controlChangeNumber": 24, "name": "Reverb 2: Low End", "valueRange": { "min": 0, "max": 20 } },
-
+    {
+      "controlChangeNumber": 19,
+      "name": "Reverb 1: Param 1 Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Reverb 2: Param 1 Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Reverb 1: Param 2 Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Reverb 2: Param 2 Knob",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Reverb 1: Low End",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Reverb 2: Low End",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
     {
       "controlChangeNumber": 25,
       "name": "Reverb 1: Room - Size",
@@ -117,8 +295,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Studio" },
-          { "value": 1, "name": "Club" }
+          {
+            "value": 0,
+            "name": "Studio"
+          },
+          {
+            "value": 1,
+            "name": "Club"
+          }
         ]
       }
     },
@@ -129,15 +313,33 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Studio" },
-          { "value": 1, "name": "Club" }
+          {
+            "value": 0,
+            "name": "Studio"
+          },
+          {
+            "value": 1,
+            "name": "Club"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 27, "name": "Reverb 1: Room - Diffusion", "valueRange": { "min": 0, "max": 20 } },
-    { "controlChangeNumber": 28, "name": "Reverb 2: Room - Diffusion", "valueRange": { "min": 0, "max": 20 } },
-
+    {
+      "controlChangeNumber": 27,
+      "name": "Reverb 1: Room - Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Reverb 2: Room - Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
     {
       "controlChangeNumber": 29,
       "name": "Reverb 1: Room - Voice",
@@ -145,8 +347,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
@@ -157,15 +365,33 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 35, "name": "Reverb 1: Hall - Mid", "valueRange": { "min": 0, "max": 20 } },
-    { "controlChangeNumber": 36, "name": "Reverb 2: Hall - Mid", "valueRange": { "min": 0, "max": 20 } },
-
+    {
+      "controlChangeNumber": 35,
+      "name": "Reverb 1: Hall - Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Reverb 2: Hall - Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
     {
       "controlChangeNumber": 37,
       "name": "Reverb 1: Hall - Size",
@@ -173,8 +399,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Concert" },
-          { "value": 1, "name": "Arena" }
+          {
+            "value": 0,
+            "name": "Concert"
+          },
+          {
+            "value": 1,
+            "name": "Arena"
+          }
         ]
       }
     },
@@ -185,15 +417,33 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Concert" },
-          { "value": 1, "name": "Arena" }
+          {
+            "value": 0,
+            "name": "Concert"
+          },
+          {
+            "value": 1,
+            "name": "Arena"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 39, "name": "Reverb 1: Hall - Swell Rise", "valueRange": { "min": 0, "max": 22 } },
-    { "controlChangeNumber": 40, "name": "Reverb 2: Hall - Swell Rise", "valueRange": { "min": 0, "max": 22 } },
-
+    {
+      "controlChangeNumber": 39,
+      "name": "Reverb 1: Hall - Swell Rise",
+      "valueRange": {
+        "min": 0,
+        "max": 22
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Reverb 2: Hall - Swell Rise",
+      "valueRange": {
+        "min": 0,
+        "max": 22
+      }
+    },
     {
       "controlChangeNumber": 41,
       "name": "Reverb 1: Hall - Swell Type",
@@ -201,8 +451,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Wet" },
-          { "value": 1, "name": "Dry" }
+          {
+            "value": 0,
+            "name": "Wet"
+          },
+          {
+            "value": 1,
+            "name": "Dry"
+          }
         ]
       }
     },
@@ -213,12 +469,17 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Wet" },
-          { "value": 1, "name": "Dry" }
+          {
+            "value": 0,
+            "name": "Wet"
+          },
+          {
+            "value": 1,
+            "name": "Dry"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 43,
       "name": "Reverb 1: Hall - Voice",
@@ -226,8 +487,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
@@ -238,12 +505,17 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 45,
       "name": "Reverb 1: Chamber - Color",
@@ -251,11 +523,26 @@
         "min": 0,
         "max": 4,
         "discreteValues": [
-          { "value": 0, "name": "Neutral" },
-          { "value": 1, "name": "Clear" },
-          { "value": 2, "name": "Smooth" },
-          { "value": 3, "name": "Crisp" },
-          { "value": 4, "name": "Deep" }
+          {
+            "value": 0,
+            "name": "Neutral"
+          },
+          {
+            "value": 1,
+            "name": "Clear"
+          },
+          {
+            "value": 2,
+            "name": "Smooth"
+          },
+          {
+            "value": 3,
+            "name": "Crisp"
+          },
+          {
+            "value": 4,
+            "name": "Deep"
+          }
         ]
       }
     },
@@ -266,15 +553,29 @@
         "min": 0,
         "max": 4,
         "discreteValues": [
-          { "value": 0, "name": "Neutral" },
-          { "value": 1, "name": "Clear" },
-          { "value": 2, "name": "Smooth" },
-          { "value": 3, "name": "Crisp" },
-          { "value": 4, "name": "Deep" }
+          {
+            "value": 0,
+            "name": "Neutral"
+          },
+          {
+            "value": 1,
+            "name": "Clear"
+          },
+          {
+            "value": 2,
+            "name": "Smooth"
+          },
+          {
+            "value": 3,
+            "name": "Crisp"
+          },
+          {
+            "value": 4,
+            "name": "Deep"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 47,
       "name": "Reverb 1: Plate - Size",
@@ -282,8 +583,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Small" },
-          { "value": 1, "name": "Large" }
+          {
+            "value": 0,
+            "name": "Small"
+          },
+          {
+            "value": 1,
+            "name": "Large"
+          }
         ]
       }
     },
@@ -294,12 +601,17 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Small" },
-          { "value": 1, "name": "Large" }
+          {
+            "value": 0,
+            "name": "Small"
+          },
+          {
+            "value": 1,
+            "name": "Large"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 49,
       "name": "Reverb 1: Plate - Voice",
@@ -307,8 +619,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
@@ -319,12 +637,17 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 51,
       "name": "Reverb 1: Spring - Dwell",
@@ -332,10 +655,22 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Clean" },
-          { "value": 1, "name": "Combo" },
-          { "value": 2, "name": "Tube" },
-          { "value": 3, "name": "Overdrive" }
+          {
+            "value": 0,
+            "name": "Clean"
+          },
+          {
+            "value": 1,
+            "name": "Combo"
+          },
+          {
+            "value": 2,
+            "name": "Tube"
+          },
+          {
+            "value": 3,
+            "name": "Overdrive"
+          }
         ]
       }
     },
@@ -346,14 +681,25 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Clean" },
-          { "value": 1, "name": "Combo" },
-          { "value": 2, "name": "Tube" },
-          { "value": 3, "name": "Overdrive" }
+          {
+            "value": 0,
+            "name": "Clean"
+          },
+          {
+            "value": 1,
+            "name": "Combo"
+          },
+          {
+            "value": 2,
+            "name": "Tube"
+          },
+          {
+            "value": 3,
+            "name": "Overdrive"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 53,
       "name": "Reverb 1: Spring - Number",
@@ -361,9 +707,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "One Spring" },
-          { "value": 1, "name": "Two Springs" },
-          { "value": 2, "name": "Three Springs" }
+          {
+            "value": 0,
+            "name": "One Spring"
+          },
+          {
+            "value": 1,
+            "name": "Two Springs"
+          },
+          {
+            "value": 2,
+            "name": "Three Springs"
+          }
         ]
       }
     },
@@ -374,13 +729,21 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "One Spring" },
-          { "value": 1, "name": "Two Springs" },
-          { "value": 2, "name": "Three Springs" }
+          {
+            "value": 0,
+            "name": "One Spring"
+          },
+          {
+            "value": 1,
+            "name": "Two Springs"
+          },
+          {
+            "value": 2,
+            "name": "Three Springs"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 55,
       "name": "Reverb 1: Spring - Voice",
@@ -388,8 +751,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
@@ -400,18 +769,49 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 57, "name": "Reverb 1: Impulse - Attack", "valueRange": { "min": 0, "max": 16 } },
-    { "controlChangeNumber": 58, "name": "Reverb 2: Impulse - Attack", "valueRange": { "min": 0, "max": 16 } },
-
-    { "controlChangeNumber": 59, "name": "Reverb 1: Impulse - Stretch", "valueRange": { "min": 0, "max": 16 } },
-    { "controlChangeNumber": 60, "name": "Reverb 2: Impulse - Stretch", "valueRange": { "min": 0, "max": 16 } },
-
+    {
+      "controlChangeNumber": 57,
+      "name": "Reverb 1: Impulse - Attack",
+      "valueRange": {
+        "min": 0,
+        "max": 16
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Reverb 2: Impulse - Attack",
+      "valueRange": {
+        "min": 0,
+        "max": 16
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Reverb 1: Impulse - Stretch",
+      "valueRange": {
+        "min": 0,
+        "max": 16
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Reverb 2: Impulse - Stretch",
+      "valueRange": {
+        "min": 0,
+        "max": 16
+      }
+    },
     {
       "controlChangeNumber": 61,
       "name": "Reverb 1: Impulse - Tail",
@@ -419,8 +819,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Envelope" },
-          { "value": 1, "name": "Gate" }
+          {
+            "value": 0,
+            "name": "Envelope"
+          },
+          {
+            "value": 1,
+            "name": "Gate"
+          }
         ]
       }
     },
@@ -431,12 +837,17 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Envelope" },
-          { "value": 1, "name": "Gate" }
+          {
+            "value": 0,
+            "name": "Envelope"
+          },
+          {
+            "value": 1,
+            "name": "Gate"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 63,
       "name": "Reverb 1: Impulse - Direction",
@@ -444,8 +855,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Forward" },
-          { "value": 1, "name": "Reverse" }
+          {
+            "value": 0,
+            "name": "Forward"
+          },
+          {
+            "value": 1,
+            "name": "Reverse"
+          }
         ]
       }
     },
@@ -456,21 +873,65 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Forward" },
-          { "value": 1, "name": "Reverse" }
+          {
+            "value": 0,
+            "name": "Forward"
+          },
+          {
+            "value": 1,
+            "name": "Reverse"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 65, "name": "Reverb 1: Impulse - Feedback", "valueRange": { "min": 0, "max": 15 } },
-    { "controlChangeNumber": 66, "name": "Reverb 2: Impulse - Feedback", "valueRange": { "min": 0, "max": 15 } },
-
-    { "controlChangeNumber": 67, "name": "Reverb 1: Cloud - Diffusion", "valueRange": { "min": 0, "max": 20 } },
-    { "controlChangeNumber": 68, "name": "Reverb 2: Cloud - Diffusion", "valueRange": { "min": 0, "max": 20 } },
-
-    { "controlChangeNumber": 69, "name": "Reverb 1: Cloud - Ensemble", "valueRange": { "min": 0, "max": 15 } },
-    { "controlChangeNumber": 70, "name": "Reverb 2: Cloud - Ensemble", "valueRange": { "min": 0, "max": 15 } },
-
+    {
+      "controlChangeNumber": 65,
+      "name": "Reverb 1: Impulse - Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Reverb 2: Impulse - Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Reverb 1: Cloud - Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Reverb 2: Cloud - Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Reverb 1: Cloud - Ensemble",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Reverb 2: Cloud - Ensemble",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
     {
       "controlChangeNumber": 71,
       "name": "Reverb 1: Shimmer - Shift 1",
@@ -478,34 +939,118 @@
         "min": 0,
         "max": 27,
         "discreteValues": [
-          { "value": 0, "name": "-Octave" },
-          { "value": 1, "name": "-Major 7" },
-          { "value": 2, "name": "-Minor 7" },
-          { "value": 3, "name": "-Major 6" },
-          { "value": 4, "name": "-Minor 6" },
-          { "value": 5, "name": "-Perfect 5" },
-          { "value": 6, "name": "-Tritone" },
-          { "value": 7, "name": "-Perfect 4" },
-          { "value": 8, "name": "-Major 3" },
-          { "value": 9, "name": "-Minor 3" },
-          { "value": 10, "name": "-Major 2" },
-          { "value": 11, "name": "-Minor 2" },
-          { "value": 12, "name": "-10 Cents" },
-          { "value": 13, "name": "+10 Cents" },
-          { "value": 14, "name": "+Minor 2" },
-          { "value": 15, "name": "+Major 2" },
-          { "value": 16, "name": "+Minor 3" },
-          { "value": 17, "name": "+Major 3" },
-          { "value": 18, "name": "+Perfect 4" },
-          { "value": 19, "name": "+Tritone" },
-          { "value": 20, "name": "+Perfect 5" },
-          { "value": 21, "name": "+Minor 6" },
-          { "value": 22, "name": "+Major 6" },
-          { "value": 23, "name": "+Minor 7" },
-          { "value": 24, "name": "+Major 7" },
-          { "value": 25, "name": "+Octave" },
-          { "value": 26, "name": "+Octave + 5th" },
-          { "value": 27, "name": "+2 Octaves" }
+          {
+            "value": 0,
+            "name": "-Octave"
+          },
+          {
+            "value": 1,
+            "name": "-Major 7"
+          },
+          {
+            "value": 2,
+            "name": "-Minor 7"
+          },
+          {
+            "value": 3,
+            "name": "-Major 6"
+          },
+          {
+            "value": 4,
+            "name": "-Minor 6"
+          },
+          {
+            "value": 5,
+            "name": "-Perfect 5"
+          },
+          {
+            "value": 6,
+            "name": "-Tritone"
+          },
+          {
+            "value": 7,
+            "name": "-Perfect 4"
+          },
+          {
+            "value": 8,
+            "name": "-Major 3"
+          },
+          {
+            "value": 9,
+            "name": "-Minor 3"
+          },
+          {
+            "value": 10,
+            "name": "-Major 2"
+          },
+          {
+            "value": 11,
+            "name": "-Minor 2"
+          },
+          {
+            "value": 12,
+            "name": "-10 Cents"
+          },
+          {
+            "value": 13,
+            "name": "+10 Cents"
+          },
+          {
+            "value": 14,
+            "name": "+Minor 2"
+          },
+          {
+            "value": 15,
+            "name": "+Major 2"
+          },
+          {
+            "value": 16,
+            "name": "+Minor 3"
+          },
+          {
+            "value": 17,
+            "name": "+Major 3"
+          },
+          {
+            "value": 18,
+            "name": "+Perfect 4"
+          },
+          {
+            "value": 19,
+            "name": "+Tritone"
+          },
+          {
+            "value": 20,
+            "name": "+Perfect 5"
+          },
+          {
+            "value": 21,
+            "name": "+Minor 6"
+          },
+          {
+            "value": 22,
+            "name": "+Major 6"
+          },
+          {
+            "value": 23,
+            "name": "+Minor 7"
+          },
+          {
+            "value": 24,
+            "name": "+Major 7"
+          },
+          {
+            "value": 25,
+            "name": "+Octave"
+          },
+          {
+            "value": 26,
+            "name": "+Octave + 5th"
+          },
+          {
+            "value": 27,
+            "name": "+2 Octaves"
+          }
         ]
       }
     },
@@ -516,38 +1061,121 @@
         "min": 0,
         "max": 27,
         "discreteValues": [
-          { "value": 0, "name": "-Octave" },
-          { "value": 1, "name": "-Major 7" },
-          { "value": 2, "name": "-Minor 7" },
-          { "value": 3, "name": "-Major 6" },
-          { "value": 4, "name": "-Minor 6" },
-          { "value": 5, "name": "-Perfect 5" },
-          { "value": 6, "name": "-Tritone" },
-          { "value": 7, "name": "-Perfect 4" },
-          { "value": 8, "name": "-Major 3" },
-          { "value": 9, "name": "-Minor 3" },
-          { "value": 10, "name": "-Major 2" },
-          { "value": 11, "name": "-Minor 2" },
-          { "value": 12, "name": "-10 Cents" },
-          { "value": 13, "name": "+10 Cents" },
-          { "value": 14, "name": "+Minor 2" },
-          { "value": 15, "name": "+Major 2" },
-          { "value": 16, "name": "+Minor 3" },
-          { "value": 17, "name": "+Major 3" },
-          { "value": 18, "name": "+Perfect 4" },
-          { "value": 19, "name": "+Tritone" },
-          { "value": 20, "name": "+Perfect 5" },
-          { "value": 21, "name": "+Minor 6" },
-          { "value": 22, "name": "+Major 6" },
-          { "value": 23, "name": "+Minor 7" },
-          { "value": 24, "name": "+Major 7" },
-          { "value": 25, "name": "+Octave" },
-          { "value": 26, "name": "+Octave + 5th" },
-          { "value": 27, "name": "+2 Octaves" }
+          {
+            "value": 0,
+            "name": "-Octave"
+          },
+          {
+            "value": 1,
+            "name": "-Major 7"
+          },
+          {
+            "value": 2,
+            "name": "-Minor 7"
+          },
+          {
+            "value": 3,
+            "name": "-Major 6"
+          },
+          {
+            "value": 4,
+            "name": "-Minor 6"
+          },
+          {
+            "value": 5,
+            "name": "-Perfect 5"
+          },
+          {
+            "value": 6,
+            "name": "-Tritone"
+          },
+          {
+            "value": 7,
+            "name": "-Perfect 4"
+          },
+          {
+            "value": 8,
+            "name": "-Major 3"
+          },
+          {
+            "value": 9,
+            "name": "-Minor 3"
+          },
+          {
+            "value": 10,
+            "name": "-Major 2"
+          },
+          {
+            "value": 11,
+            "name": "-Minor 2"
+          },
+          {
+            "value": 12,
+            "name": "-10 Cents"
+          },
+          {
+            "value": 13,
+            "name": "+10 Cents"
+          },
+          {
+            "value": 14,
+            "name": "+Minor 2"
+          },
+          {
+            "value": 15,
+            "name": "+Major 2"
+          },
+          {
+            "value": 16,
+            "name": "+Minor 3"
+          },
+          {
+            "value": 17,
+            "name": "+Major 3"
+          },
+          {
+            "value": 18,
+            "name": "+Perfect 4"
+          },
+          {
+            "value": 19,
+            "name": "+Tritone"
+          },
+          {
+            "value": 20,
+            "name": "+Perfect 5"
+          },
+          {
+            "value": 21,
+            "name": "+Minor 6"
+          },
+          {
+            "value": 22,
+            "name": "+Major 6"
+          },
+          {
+            "value": 23,
+            "name": "+Minor 7"
+          },
+          {
+            "value": 24,
+            "name": "+Major 7"
+          },
+          {
+            "value": 25,
+            "name": "+Octave"
+          },
+          {
+            "value": 26,
+            "name": "+Octave + 5th"
+          },
+          {
+            "value": 27,
+            "name": "+2 Octaves"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 73,
       "name": "Reverb 2: Shimmer - Shift 2",
@@ -555,42 +1183,141 @@
         "min": 0,
         "max": 28,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "-Octave" },
-          { "value": 2, "name": "-Major 7" },
-          { "value": 3, "name": "-Minor 7" },
-          { "value": 4, "name": "-Major 6" },
-          { "value": 5, "name": "-Minor 6" },
-          { "value": 6, "name": "-Perfect 5" },
-          { "value": 7, "name": "-Tritone" },
-          { "value": 8, "name": "-Perfect 4" },
-          { "value": 9, "name": "-Major 3" },
-          { "value": 10, "name": "-Minor 3" },
-          { "value": 11, "name": "-Major 2" },
-          { "value": 12, "name": "-Minor 2" },
-          { "value": 13, "name": "-10 Cents" },
-          { "value": 14, "name": "+10 Cents" },
-          { "value": 15, "name": "+Minor 2" },
-          { "value": 16, "name": "+Major 2" },
-          { "value": 17, "name": "+Minor 3" },
-          { "value": 18, "name": "+Major 3" },
-          { "value": 19, "name": "+Perfect 4" },
-          { "value": 20, "name": "+Tritone" },
-          { "value": 21, "name": "+Perfect 5" },
-          { "value": 22, "name": "+Minor 6" },
-          { "value": 23, "name": "+Major 6" },
-          { "value": 24, "name": "+Minor 7" },
-          { "value": 25, "name": "+Major 7" },
-          { "value": 26, "name": "+Octave" },
-          { "value": 27, "name": "+Octave + 5th" },
-          { "value": 28, "name": "+2 Octaves" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "-Octave"
+          },
+          {
+            "value": 2,
+            "name": "-Major 7"
+          },
+          {
+            "value": 3,
+            "name": "-Minor 7"
+          },
+          {
+            "value": 4,
+            "name": "-Major 6"
+          },
+          {
+            "value": 5,
+            "name": "-Minor 6"
+          },
+          {
+            "value": 6,
+            "name": "-Perfect 5"
+          },
+          {
+            "value": 7,
+            "name": "-Tritone"
+          },
+          {
+            "value": 8,
+            "name": "-Perfect 4"
+          },
+          {
+            "value": 9,
+            "name": "-Major 3"
+          },
+          {
+            "value": 10,
+            "name": "-Minor 3"
+          },
+          {
+            "value": 11,
+            "name": "-Major 2"
+          },
+          {
+            "value": 12,
+            "name": "-Minor 2"
+          },
+          {
+            "value": 13,
+            "name": "-10 Cents"
+          },
+          {
+            "value": 14,
+            "name": "+10 Cents"
+          },
+          {
+            "value": 15,
+            "name": "+Minor 2"
+          },
+          {
+            "value": 16,
+            "name": "+Major 2"
+          },
+          {
+            "value": 17,
+            "name": "+Minor 3"
+          },
+          {
+            "value": 18,
+            "name": "+Major 3"
+          },
+          {
+            "value": 19,
+            "name": "+Perfect 4"
+          },
+          {
+            "value": 20,
+            "name": "+Tritone"
+          },
+          {
+            "value": 21,
+            "name": "+Perfect 5"
+          },
+          {
+            "value": 22,
+            "name": "+Minor 6"
+          },
+          {
+            "value": 23,
+            "name": "+Major 6"
+          },
+          {
+            "value": 24,
+            "name": "+Minor 7"
+          },
+          {
+            "value": 25,
+            "name": "+Major 7"
+          },
+          {
+            "value": 26,
+            "name": "+Octave"
+          },
+          {
+            "value": 27,
+            "name": "+Octave + 5th"
+          },
+          {
+            "value": 28,
+            "name": "+2 Octaves"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 75, "name": "Reverb 1: Shimmer - Amount", "valueRange": { "min": 0, "max": 18 } },
-    { "controlChangeNumber": 76, "name": "Reverb 2: Shimmer - Amount", "valueRange": { "min": 0, "max": 18 } },
-
+    {
+      "controlChangeNumber": 75,
+      "name": "Reverb 1: Shimmer - Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Reverb 2: Shimmer - Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
     {
       "controlChangeNumber": 77,
       "name": "Reverb 1: Shimmer - Feedback",
@@ -598,9 +1325,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Input" },
-          { "value": 1, "name": "Regeneration" },
-          { "value": 2, "name": "Input+Regen" }
+          {
+            "value": 0,
+            "name": "Input"
+          },
+          {
+            "value": 1,
+            "name": "Regeneration"
+          },
+          {
+            "value": 2,
+            "name": "Input+Regen"
+          }
         ]
       }
     },
@@ -611,13 +1347,21 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Input" },
-          { "value": 1, "name": "Regeneration" },
-          { "value": 2, "name": "Input+Regen" }
+          {
+            "value": 0,
+            "name": "Input"
+          },
+          {
+            "value": 1,
+            "name": "Regeneration"
+          },
+          {
+            "value": 2,
+            "name": "Input+Regen"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 79,
       "name": "Boost",
@@ -625,13 +1369,21 @@
         "min": 0,
         "max": 60,
         "discreteValues": [
-          { "value": 0, "name": "-3 dB" },
-          { "value": 30, "name": "0 dB" },
-          { "value": 60, "name": "+3 dB" }
+          {
+            "value": 0,
+            "name": "-3 dB"
+          },
+          {
+            "value": 30,
+            "name": "0 dB"
+          },
+          {
+            "value": 60,
+            "name": "+3 dB"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 80,
       "name": "A Footswitch",
@@ -639,8 +1391,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Press" },
-          { "value": 127, "name": "Release" }
+          {
+            "value": 0,
+            "name": "Press"
+          },
+          {
+            "value": 127,
+            "name": "Release"
+          }
         ]
       }
     },
@@ -651,8 +1409,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Press" },
-          { "value": 127, "name": "Release" }
+          {
+            "value": 0,
+            "name": "Press"
+          },
+          {
+            "value": 127,
+            "name": "Release"
+          }
         ]
       }
     },
@@ -663,8 +1427,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Press" },
-          { "value": 127, "name": "Release" }
+          {
+            "value": 0,
+            "name": "Press"
+          },
+          {
+            "value": 127,
+            "name": "Release"
+          }
         ]
       }
     },
@@ -675,12 +1445,17 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Scroll CCW" },
-          { "value": 1, "name": "Scroll CW" }
+          {
+            "value": 0,
+            "name": "Scroll CCW"
+          },
+          {
+            "value": 1,
+            "name": "Scroll CW"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 84,
       "name": "Persist",
@@ -688,12 +1463,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 85,
       "name": "Reverb 1: Shimmer - Voice",
@@ -701,8 +1481,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
@@ -713,21 +1499,65 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "MX" },
-          { "value": 1, "name": "Classic" }
+          {
+            "value": 0,
+            "name": "MX"
+          },
+          {
+            "value": 1,
+            "name": "Classic"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 87, "name": "Reverb 1: Bloom - Length", "valueRange": { "min": 0, "max": 17 } },
-    { "controlChangeNumber": 88, "name": "Reverb 2: Bloom - Length", "valueRange": { "min": 0, "max": 17 } },
-
-    { "controlChangeNumber": 89, "name": "Reverb 1: Bloom - Feedback", "valueRange": { "min": 0, "max": 17 } },
-    { "controlChangeNumber": 90, "name": "Reverb 2: Bloom - Feedback", "valueRange": { "min": 0, "max": 17 } },
-
-    { "controlChangeNumber": 91, "name": "Reverb 1: Bloom - Harmonics", "valueRange": { "min": 0, "max": 15 } },
-    { "controlChangeNumber": 92, "name": "Reverb 2: Bloom - Harmonics", "valueRange": { "min": 0, "max": 15 } },
-
+    {
+      "controlChangeNumber": 87,
+      "name": "Reverb 1: Bloom - Length",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Reverb 2: Bloom - Length",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Reverb 1: Bloom - Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Reverb 2: Bloom - Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Reverb 1: Bloom - Harmonics",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Reverb 2: Bloom - Harmonics",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
     {
       "controlChangeNumber": 93,
       "name": "Reverb 1: Chorale - Vowel",
@@ -735,13 +1565,34 @@
         "min": 0,
         "max": 6,
         "discreteValues": [
-          { "value": 0, "name": "AAHHOO" },
-          { "value": 1, "name": "AAHH" },
-          { "value": 2, "name": "AAHHOH" },
-          { "value": 3, "name": "OH" },
-          { "value": 4, "name": "OOOHOH" },
-          { "value": 5, "name": "OOO" },
-          { "value": 6, "name": "Random" }
+          {
+            "value": 0,
+            "name": "AAHHOO"
+          },
+          {
+            "value": 1,
+            "name": "AAHH"
+          },
+          {
+            "value": 2,
+            "name": "AAHHOH"
+          },
+          {
+            "value": 3,
+            "name": "OH"
+          },
+          {
+            "value": 4,
+            "name": "OOOHOH"
+          },
+          {
+            "value": 5,
+            "name": "OOO"
+          },
+          {
+            "value": 6,
+            "name": "Random"
+          }
         ]
       }
     },
@@ -752,17 +1603,37 @@
         "min": 0,
         "max": 6,
         "discreteValues": [
-          { "value": 0, "name": "AAHHOO" },
-          { "value": 1, "name": "AAHH" },
-          { "value": 2, "name": "AAHHOH" },
-          { "value": 3, "name": "OH" },
-          { "value": 4, "name": "OOOHOH" },
-          { "value": 5, "name": "OOO" },
-          { "value": 6, "name": "Random" }
+          {
+            "value": 0,
+            "name": "AAHHOO"
+          },
+          {
+            "value": 1,
+            "name": "AAHH"
+          },
+          {
+            "value": 2,
+            "name": "AAHHOH"
+          },
+          {
+            "value": 3,
+            "name": "OH"
+          },
+          {
+            "value": 4,
+            "name": "OOOHOH"
+          },
+          {
+            "value": 5,
+            "name": "OOO"
+          },
+          {
+            "value": 6,
+            "name": "Random"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 95,
       "name": "Reverb 1: Chorale - Resonance",
@@ -770,9 +1641,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Mild" },
-          { "value": 1, "name": "Medium" },
-          { "value": 2, "name": "High" }
+          {
+            "value": 0,
+            "name": "Mild"
+          },
+          {
+            "value": 1,
+            "name": "Medium"
+          },
+          {
+            "value": 2,
+            "name": "High"
+          }
         ]
       }
     },
@@ -783,13 +1663,21 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Mild" },
-          { "value": 1, "name": "Medium" },
-          { "value": 2, "name": "High" }
+          {
+            "value": 0,
+            "name": "Mild"
+          },
+          {
+            "value": 1,
+            "name": "Medium"
+          },
+          {
+            "value": 2,
+            "name": "High"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 97,
       "name": "Infinite Off/On",
@@ -797,12 +1685,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 98,
       "name": "Infinite Latch",
@@ -810,12 +1703,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Momentary" },
-          { "value": 127, "name": "Latching" }
+          {
+            "value": 0,
+            "name": "Momentary"
+          },
+          {
+            "value": 127,
+            "name": "Latching"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 99,
       "name": "Dual Mode",
@@ -823,21 +1721,57 @@
         "min": 0,
         "max": 5,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "Parallel" },
-          { "value": 2, "name": "Series 1 >> 2" },
-          { "value": 3, "name": "Series 1 << 2" },
-          { "value": 4, "name": "Split L | R" },
-          { "value": 5, "name": "Split R | L" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "Parallel"
+          },
+          {
+            "value": 2,
+            "name": "Series 1 >> 2"
+          },
+          {
+            "value": 3,
+            "name": "Series 1 << 2"
+          },
+          {
+            "value": 4,
+            "name": "Split L | R"
+          },
+          {
+            "value": 5,
+            "name": "Split R | L"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 100, "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 103, "name": "Reverb 1: Chorale - Choir", "valueRange": { "min": 0, "max": 15 } },
-    { "controlChangeNumber": 104, "name": "Reverb 2: Chorale - Choir", "valueRange": { "min": 0, "max": 15 } },
-
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Reverb 1: Chorale - Choir",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Reverb 2: Chorale - Choir",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
     {
       "controlChangeNumber": 105,
       "name": "Reverb 1: Chorale - Choir Voice",
@@ -845,8 +1779,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Tenor" },
-          { "value": 1, "name": "Baritone" }
+          {
+            "value": 0,
+            "name": "Tenor"
+          },
+          {
+            "value": 1,
+            "name": "Baritone"
+          }
         ]
       }
     },
@@ -857,15 +1797,33 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Tenor" },
-          { "value": 1, "name": "Baritone" }
+          {
+            "value": 0,
+            "name": "Tenor"
+          },
+          {
+            "value": 1,
+            "name": "Baritone"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 107, "name": "Reverb 1: Magneto - Diffusion", "valueRange": { "min": 0, "max": 20 } },
-    { "controlChangeNumber": 108, "name": "Reverb 2: Magneto - Diffusion", "valueRange": { "min": 0, "max": 20 } },
-
+    {
+      "controlChangeNumber": 107,
+      "name": "Reverb 1: Magneto - Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Reverb 2: Magneto - Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
     {
       "controlChangeNumber": 109,
       "name": "Reverb 1: Magneto - Heads",
@@ -873,11 +1831,26 @@
         "min": 0,
         "max": 4,
         "discreteValues": [
-          { "value": 0, "name": "One" },
-          { "value": 1, "name": "Two" },
-          { "value": 2, "name": "Three" },
-          { "value": 3, "name": "Four" },
-          { "value": 4, "name": "Six" }
+          {
+            "value": 0,
+            "name": "One"
+          },
+          {
+            "value": 1,
+            "name": "Two"
+          },
+          {
+            "value": 2,
+            "name": "Three"
+          },
+          {
+            "value": 3,
+            "name": "Four"
+          },
+          {
+            "value": 4,
+            "name": "Six"
+          }
         ]
       }
     },
@@ -888,15 +1861,29 @@
         "min": 0,
         "max": 4,
         "discreteValues": [
-          { "value": 0, "name": "One" },
-          { "value": 1, "name": "Two" },
-          { "value": 2, "name": "Three" },
-          { "value": 3, "name": "Four" },
-          { "value": 4, "name": "Six" }
+          {
+            "value": 0,
+            "name": "One"
+          },
+          {
+            "value": 1,
+            "name": "Two"
+          },
+          {
+            "value": 2,
+            "name": "Three"
+          },
+          {
+            "value": 3,
+            "name": "Four"
+          },
+          {
+            "value": 4,
+            "name": "Six"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 111,
       "name": "Reverb 1: Magneto - Spacing",
@@ -904,8 +1891,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Even" },
-          { "value": 1, "name": "Uneven" }
+          {
+            "value": 0,
+            "name": "Even"
+          },
+          {
+            "value": 1,
+            "name": "Uneven"
+          }
         ]
       }
     },
@@ -916,12 +1909,17 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Even" },
-          { "value": 1, "name": "Uneven" }
+          {
+            "value": 0,
+            "name": "Even"
+          },
+          {
+            "value": 1,
+            "name": "Uneven"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 113,
       "name": "Reverb 1: Magneto - Ping Pong",
@@ -929,8 +1927,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -941,12 +1945,17 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 115,
       "name": "Reverb 1: Nonlinear - Shape",
@@ -954,12 +1963,30 @@
         "min": 0,
         "max": 5,
         "discreteValues": [
-          { "value": 0, "name": "Swoosh" },
-          { "value": 1, "name": "Reverse" },
-          { "value": 2, "name": "Ramp" },
-          { "value": 3, "name": "Gate" },
-          { "value": 4, "name": "Gauss" },
-          { "value": 5, "name": "Bounce" }
+          {
+            "value": 0,
+            "name": "Swoosh"
+          },
+          {
+            "value": 1,
+            "name": "Reverse"
+          },
+          {
+            "value": 2,
+            "name": "Ramp"
+          },
+          {
+            "value": 3,
+            "name": "Gate"
+          },
+          {
+            "value": 4,
+            "name": "Gauss"
+          },
+          {
+            "value": 5,
+            "name": "Bounce"
+          }
         ]
       }
     },
@@ -970,31 +1997,113 @@
         "min": 0,
         "max": 5,
         "discreteValues": [
-          { "value": 0, "name": "Swoosh" },
-          { "value": 1, "name": "Reverse" },
-          { "value": 2, "name": "Ramp" },
-          { "value": 3, "name": "Gate" },
-          { "value": 4, "name": "Gauss" },
-          { "value": 5, "name": "Bounce" }
+          {
+            "value": 0,
+            "name": "Swoosh"
+          },
+          {
+            "value": 1,
+            "name": "Reverse"
+          },
+          {
+            "value": 2,
+            "name": "Ramp"
+          },
+          {
+            "value": 3,
+            "name": "Gate"
+          },
+          {
+            "value": 4,
+            "name": "Gauss"
+          },
+          {
+            "value": 5,
+            "name": "Bounce"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 117, "name": "Reverb 1: Nonlinear - Chop", "valueRange": { "min": 0, "max": 17 } },
-    { "controlChangeNumber": 118, "name": "Reverb 2: Nonlinear - Chop", "valueRange": { "min": 0, "max": 17 } },
-
-    { "controlChangeNumber": 119, "name": "Reverb 1: Nonlinear - Diffusion", "valueRange": { "min": 0, "max": 20 } },
-    { "controlChangeNumber": 120, "name": "Reverb 2: Nonlinear - Diffusion", "valueRange": { "min": 0, "max": 20 } },
-
-    { "controlChangeNumber": 121, "name": "Reverb 1: Nonlinear - Decay", "valueRange": { "min": 0, "max": 17 } },
-    { "controlChangeNumber": 122, "name": "Reverb 2: Nonlinear - Decay", "valueRange": { "min": 0, "max": 17 } },
-
-    { "controlChangeNumber": 123, "name": "Reverb 1: Nonlinear - Level", "valueRange": { "min": 0, "max": 18 } },
-    { "controlChangeNumber": 124, "name": "Reverb 2: Nonlinear - Level", "valueRange": { "min": 0, "max": 18 } },
-
-    { "controlChangeNumber": 125, "name": "Reverb 1: Nonlinear - Mod Speed", "valueRange": { "min": 0, "max": 17 } },
-    { "controlChangeNumber": 126, "name": "Reverb 2: Nonlinear - Mod Speed", "valueRange": { "min": 0, "max": 17 } },
-
+    {
+      "controlChangeNumber": 117,
+      "name": "Reverb 1: Nonlinear - Chop",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Reverb 2: Nonlinear - Chop",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Reverb 1: Nonlinear - Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 120,
+      "name": "Reverb 2: Nonlinear - Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 121,
+      "name": "Reverb 1: Nonlinear - Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 122,
+      "name": "Reverb 2: Nonlinear - Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 123,
+      "name": "Reverb 1: Nonlinear - Level",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "Reverb 2: Nonlinear - Level",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Reverb 1: Nonlinear - Mod Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 126,
+      "name": "Reverb 2: Nonlinear - Mod Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
@@ -1002,8 +2111,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypassed" },
-          { "value": 127, "name": "Engaged" }
+          {
+            "value": 0,
+            "name": "Bypassed"
+          },
+          {
+            "value": 127,
+            "name": "Engaged"
+          }
         ]
       }
     }

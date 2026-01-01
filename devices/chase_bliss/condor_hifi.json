@@ -1,51 +1,67 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Condor HiFi",
   "displayName": "Condor HiFi",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Condor HiFi",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Gain",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Freq",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Bass",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Mids",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "LPF",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 21,
       "name": "Bass Toggle",
@@ -53,10 +69,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Left" },
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right+" }
+          {
+            "value": 0,
+            "name": "Left"
+          },
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right+"
+          }
         ]
       }
     },
@@ -67,10 +95,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Left" },
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right+" }
+          {
+            "value": 0,
+            "name": "Left"
+          },
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right+"
+          }
         ]
       }
     },
@@ -81,14 +121,25 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Left" },
-          { "value": 1, "name": "Left" },
-          { "value": 2, "name": "Middle" },
-          { "value": 3, "name": "Right+" }
+          {
+            "value": 0,
+            "name": "Left"
+          },
+          {
+            "value": 1,
+            "name": "Left"
+          },
+          {
+            "value": 2,
+            "name": "Middle"
+          },
+          {
+            "value": 3,
+            "name": "Right+"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
@@ -96,8 +147,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 63, "name": "Pedal Off" },
-          { "value": 64, "name": "Pedal On" }
+          {
+            "value": 63,
+            "name": "Pedal Off"
+          },
+          {
+            "value": 64,
+            "name": "Pedal On"
+          }
         ]
       }
     },
@@ -105,22 +162,25 @@
       "controlChangeNumber": 103,
       "name": "Drive / Hold",
       "additionalInfo": "0-29: pedal off, clean engaged; 30-59: pedal on, clean engaged; 60-89: pedal off, dirt engaged; 90-127: pedal on, dirt engaged.",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "EOM (Expression over MIDI)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
-
   "x_pc": {
     "indexBase": 1,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
   "x_midiChannel": 2
 }

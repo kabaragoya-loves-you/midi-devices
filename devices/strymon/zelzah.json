@@ -1,15 +1,18 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Strymon Zelzah",
   "displayName": "Zelzah",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Strymon",
     "model": "Zelzah",
     "version": "1.0"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
   "controlChangeCommands": [
     {
@@ -19,13 +22,21 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "name": "Bank 0", "value": 0 },
-          { "name": "Bank 1", "value": 1 },
-          { "name": "Bank 2", "value": 2 }
+          {
+            "name": "Bank 0",
+            "value": 0
+          },
+          {
+            "name": "Bank 1",
+            "value": 1
+          },
+          {
+            "name": "Bank 2",
+            "value": 2
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 10,
       "name": "Bypass/On 4-Stage",
@@ -34,8 +45,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Bypass", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -46,15 +63,45 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "name": "Classic", "value": 1 },
-          { "name": "Barber", "value": 2 },
-          { "name": "Envelope", "value": 3 }
+          {
+            "name": "Classic",
+            "value": 1
+          },
+          {
+            "name": "Barber",
+            "value": 2
+          },
+          {
+            "name": "Envelope",
+            "value": 3
+          }
         ]
       }
     },
-    { "controlChangeNumber": 12, "name": "Speed 4-Stage", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 13, "name": "Depth 4-Stage", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Mix 4-Stage", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 12,
+      "name": "Speed 4-Stage",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Depth 4-Stage",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix 4-Stage",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 15,
       "name": "Polarity 4-Stage",
@@ -62,13 +109,25 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Negative", "value": 0 },
-          { "name": "Positive", "value": 1 }
+          {
+            "name": "Negative",
+            "value": 0
+          },
+          {
+            "name": "Positive",
+            "value": 1
+          }
         ]
       }
     },
-    { "controlChangeNumber": 16, "name": "Stereo Spread 4-Stage", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 16,
+      "name": "Stereo Spread 4-Stage",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 17,
       "name": "Bypass/On 6-Stage",
@@ -77,8 +136,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Bypass", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -89,17 +154,53 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "name": "Off", "value": 1 },
-          { "name": "Mid", "value": 2 },
-          { "name": "Strong", "value": 3 }
+          {
+            "name": "Off",
+            "value": 1
+          },
+          {
+            "name": "Mid",
+            "value": 2
+          },
+          {
+            "name": "Strong",
+            "value": 3
+          }
         ]
       }
     },
-    { "controlChangeNumber": 19, "name": "Speed 6-Stage", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 20, "name": "Depth 6-Stage", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 21, "name": "Voice 6-Stage", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 22, "name": "Stereo Spread 6-Stage", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 19,
+      "name": "Speed 6-Stage",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Depth 6-Stage",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Voice 6-Stage",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Stereo Spread 6-Stage",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 23,
       "name": "Series / Parallel / Split",
@@ -107,13 +208,21 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "name": "Series", "value": 0 },
-          { "name": "Parallel", "value": 1 },
-          { "name": "Split", "value": 2 }
+          {
+            "name": "Series",
+            "value": 0
+          },
+          {
+            "name": "Parallel",
+            "value": 1
+          },
+          {
+            "name": "Split",
+            "value": 2
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 27,
       "name": "Footswitch A",
@@ -122,8 +231,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -135,12 +250,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 33,
       "name": "Bypass/On A and B",
@@ -149,12 +269,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Bypass", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 60,
       "name": "MIDI Expression Off/On",
@@ -163,14 +288,34 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 93, "name": "Remote Tap", "additionalInfo": "Any value", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 100, "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } }
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "additionalInfo": "Any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
   ],
   "x_pc": {
     "indexBase": 0,

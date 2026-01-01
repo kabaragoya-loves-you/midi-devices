@@ -1,21 +1,53 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Walrus Xero Polylooper",
   "displayName": "Xero Polylooper",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Walrus Audio",
     "model": "Xero Polylooper",
     "version": ""
   },
-  "receives": ["CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
   "controlChangeCommands": [
-    { "controlChangeNumber": 0, "name": "Track 1 Pan", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 1, "name": "Track 2 Pan", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 2, "name": "Track 1 Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 3, "name": "Track 2 Volume", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 0,
+      "name": "Track 1 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Track 2 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Track 1 Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Track 2 Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 4,
       "name": "Track 1 Speed",
@@ -23,9 +55,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "x0.5" },
-          { "value": 1, "name": "x1" },
-          { "value": 2, "name": "x2" }
+          {
+            "value": 0,
+            "name": "x0.5"
+          },
+          {
+            "value": 1,
+            "name": "x1"
+          },
+          {
+            "value": 2,
+            "name": "x2"
+          }
         ]
       }
     },
@@ -36,9 +77,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "x0.5" },
-          { "value": 1, "name": "x1" },
-          { "value": 2, "name": "x2" }
+          {
+            "value": 0,
+            "name": "x0.5"
+          },
+          {
+            "value": 1,
+            "name": "x1"
+          },
+          {
+            "value": 2,
+            "name": "x2"
+          }
         ]
       }
     },
@@ -49,8 +99,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Forward" },
-          { "value": 1, "name": "Reverse" }
+          {
+            "value": 0,
+            "name": "Forward"
+          },
+          {
+            "value": 1,
+            "name": "Reverse"
+          }
         ]
       }
     },
@@ -61,8 +117,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Forward" },
-          { "value": 1, "name": "Reverse" }
+          {
+            "value": 0,
+            "name": "Forward"
+          },
+          {
+            "value": 1,
+            "name": "Reverse"
+          }
         ]
       }
     },
@@ -73,8 +135,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -85,8 +153,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -97,9 +171,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Sync Mode" },
-          { "value": 1, "name": "Unsynced Mode" },
-          { "value": 2, "name": "Poly Mode" }
+          {
+            "value": 0,
+            "name": "Sync Mode"
+          },
+          {
+            "value": 1,
+            "name": "Unsynced Mode"
+          },
+          {
+            "value": 2,
+            "name": "Poly Mode"
+          }
         ]
       }
     },
@@ -110,9 +193,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Channel 1" },
-          { "value": 1, "name": "Channel 2" },
-          { "value": 2, "name": "Both Channels" }
+          {
+            "value": 0,
+            "name": "Channel 1"
+          },
+          {
+            "value": 1,
+            "name": "Channel 2"
+          },
+          {
+            "value": 2,
+            "name": "Both Channels"
+          }
         ]
       }
     },
@@ -123,9 +215,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Channel 1" },
-          { "value": 1, "name": "Channel 2" },
-          { "value": 2, "name": "Channel 1 & 2" }
+          {
+            "value": 0,
+            "name": "Channel 1"
+          },
+          {
+            "value": 1,
+            "name": "Channel 2"
+          },
+          {
+            "value": 2,
+            "name": "Channel 1 & 2"
+          }
         ]
       }
     },
@@ -136,9 +237,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Channel 1" },
-          { "value": 1, "name": "Channel 2" },
-          { "value": 2, "name": "Channel 1 & 2" }
+          {
+            "value": 0,
+            "name": "Channel 1"
+          },
+          {
+            "value": 1,
+            "name": "Channel 2"
+          },
+          {
+            "value": 2,
+            "name": "Channel 1 & 2"
+          }
         ]
       }
     },
@@ -149,9 +259,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Channel 1" },
-          { "value": 1, "name": "Channel 2" },
-          { "value": 2, "name": "Channel 1 & 2" }
+          {
+            "value": 0,
+            "name": "Channel 1"
+          },
+          {
+            "value": 1,
+            "name": "Channel 2"
+          },
+          {
+            "value": 2,
+            "name": "Channel 1 & 2"
+          }
         ]
       }
     },
@@ -162,9 +281,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Channel 1" },
-          { "value": 1, "name": "Channel 2" },
-          { "value": 2, "name": "Channel 1 & 2" }
+          {
+            "value": 0,
+            "name": "Channel 1"
+          },
+          {
+            "value": 1,
+            "name": "Channel 2"
+          },
+          {
+            "value": 2,
+            "name": "Channel 1 & 2"
+          }
         ]
       }
     },
@@ -175,9 +303,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Channel 1" },
-          { "value": 1, "name": "Channel 2" },
-          { "value": 2, "name": "Channel 1 & 2" }
+          {
+            "value": 0,
+            "name": "Channel 1"
+          },
+          {
+            "value": 1,
+            "name": "Channel 2"
+          },
+          {
+            "value": 2,
+            "name": "Channel 1 & 2"
+          }
         ]
       }
     }

@@ -1,42 +1,60 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Chase Bliss Mood MkII",
   "displayName": "Mood MkII",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Mood MkII",
     "version": "1.0"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK", "NOTE_ON", "NOTE_OFF"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 16,
       "name": "Clock Division",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Length",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Modify",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 21,
@@ -46,12 +64,30 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Delay", "value": 0 },
-          { "name": "Slip", "value": 25 },
-          { "name": "Envelope", "value": 51 },
-          { "name": "Sample & Hold", "value": 76 },
-          { "name": "Chord", "value": 102 },
-          { "name": "Tremolo", "value": 127 }
+          {
+            "name": "Delay",
+            "value": 0
+          },
+          {
+            "name": "Slip",
+            "value": 25
+          },
+          {
+            "name": "Envelope",
+            "value": 51
+          },
+          {
+            "name": "Sample & Hold",
+            "value": 76
+          },
+          {
+            "name": "Chord",
+            "value": 102
+          },
+          {
+            "name": "Tremolo",
+            "value": 127
+          }
         ]
       }
     },
@@ -63,12 +99,30 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Stretch", "value": 0 },
-          { "name": "Blur", "value": 25 },
-          { "name": "Filter", "value": 51 },
-          { "name": "Freq Shift", "value": 76 },
-          { "name": "Pitch Shift", "value": 102 },
-          { "name": "Reverb", "value": 127 }
+          {
+            "name": "Stretch",
+            "value": 0
+          },
+          {
+            "name": "Blur",
+            "value": 25
+          },
+          {
+            "name": "Filter",
+            "value": 51
+          },
+          {
+            "name": "Freq Shift",
+            "value": 76
+          },
+          {
+            "name": "Pitch Shift",
+            "value": 102
+          },
+          {
+            "name": "Reverb",
+            "value": 127
+          }
         ]
       }
     },
@@ -79,9 +133,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Stereo", "value": 0 },
-          { "name": "Wet L/Dry R", "value": 64 },
-          { "name": "Dry L/Wet R", "value": 127 }
+          {
+            "name": "Stereo",
+            "value": 0
+          },
+          {
+            "name": "Wet L/Dry R",
+            "value": 64
+          },
+          {
+            "name": "Dry L/Wet R",
+            "value": 127
+          }
         ]
       }
     },
@@ -92,8 +155,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Bypass", "value": 0 },
-          { "name": "Engage", "value": 127 }
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
         ]
       }
     },
@@ -101,58 +170,112 @@
       "controlChangeNumber": 81,
       "name": "Tap Tempo",
       "additionalInfo": "Send 127 to tap tempo",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
-
   "x_pc": {
     "indexBase": 0,
     "count": 122,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_B",
-
   "x_midiChannel": 2,
-
   "x_midiNoteIn": {
     "supportsNoteOnOff": true,
     "supportsVelocity": true,
     "supportsPitchBend": true,
     "supportsModWheel": true,
-
     "entryMode": "auto",
     "exitMode": "knobMove(CLOCK)",
-
     "outputTypes": [
-      { "id": "open", "cc": 58, "value": 0, "description": "Drone (always sounding)" },
-      { "id": "on_off", "cc": 58, "value": 1, "description": "Sound only when a note is held" },
-      { "id": "adsr", "cc": 58, "range": "2-127", "description": "Envelope-controlled attack/decay" }
+      {
+        "id": "open",
+        "cc": 58,
+        "value": 0,
+        "description": "Drone (always sounding)"
+      },
+      {
+        "id": "on_off",
+        "cc": 58,
+        "value": 1,
+        "description": "Sound only when a note is held"
+      },
+      {
+        "id": "adsr",
+        "cc": 58,
+        "range": "2-127",
+        "description": "Envelope-controlled attack/decay"
+      }
     ],
-
     "controls": {
-      "attack":      { "cc": 80, "range": "0-127" },
-      "decay":       { "cc": 81, "range": "0-127" },
-      "sustain":     { "cc": 82, "range": "0-127" },
-      "release":     { "cc": 83, "range": "0-127" },
+      "attack": {
+        "cc": 80,
+        "range": "0-127"
+      },
+      "decay": {
+        "cc": 81,
+        "range": "0-127"
+      },
+      "sustain": {
+        "cc": 82,
+        "range": "0-127"
+      },
+      "release": {
+        "cc": 83,
+        "range": "0-127"
+      },
       "octaveTranspose": {
         "cc": 57,
         "steps": [
-          { "semitones": 0,   "value": 1   },
-          { "semitones": 12,  "value": 2   },
-          { "semitones": 24,  "value": 3   },
-          { "semitones": 36,  "value": 4   },
-          { "semitones": 48,  "value": 5   },
-          { "semitones": 60,  "value": 6   },
-          { "semitones": 72,  "value": 7   },
-          { "semitones": 84,  "value": 8   },
-          { "semitones": 96,  "value": 9   },
-          { "semitones": 108, "value": 10  }
+          {
+            "semitones": 0,
+            "value": 1
+          },
+          {
+            "semitones": 12,
+            "value": 2
+          },
+          {
+            "semitones": 24,
+            "value": 3
+          },
+          {
+            "semitones": 36,
+            "value": 4
+          },
+          {
+            "semitones": 48,
+            "value": 5
+          },
+          {
+            "semitones": 60,
+            "value": 6
+          },
+          {
+            "semitones": 72,
+            "value": 7
+          },
+          {
+            "semitones": 84,
+            "value": 8
+          },
+          {
+            "semitones": 96,
+            "value": 9
+          },
+          {
+            "semitones": 108,
+            "value": 10
+          }
         ]
       },
-      "portamento":  { "cc": 84, "range": "0-127" }
+      "portamento": {
+        "cc": 84,
+        "range": "0-127"
+      }
     }
   }
-
 }
-

@@ -1,15 +1,15 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Aerospace Audio Atmosphere v2",
   "displayName": "Atmosphere v2",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Aerospace Audio",
     "model": "Atmosphere v2",
     "version": ""
   },
-  "receives": ["CONTROL_CHANGE"],
+  "receives": [],
   "transmits": [],
   "controlChangeCommands": [
     {
@@ -19,8 +19,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Abort" },
-          { "value": 1, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Abort"
+          },
+          {
+            "value": 1,
+            "name": "Engage"
+          }
         ]
       }
     },
@@ -31,19 +37,58 @@
         "min": 0,
         "max": 12,
         "discreteValues": [
-          { "value": 0, "name": "Decrement" },
-          { "value": 1, "name": "Select Bank 1" },
-          { "value": 2, "name": "Select Bank 2" },
-          { "value": 3, "name": "Select Bank 3" },
-          { "value": 4, "name": "Select Bank 4" },
-          { "value": 5, "name": "Select Bank 5" },
-          { "value": 6, "name": "Select Bank 6" },
-          { "value": 7, "name": "Select Bank 7" },
-          { "value": 8, "name": "Select Bank 8" },
-          { "value": 9, "name": "Select Bank 9" },
-          { "value": 10, "name": "Select Bank 10" },
-          { "value": 11, "name": "Increment" },
-          { "value": 12, "name": "Toggle Banks" }
+          {
+            "value": 0,
+            "name": "Decrement"
+          },
+          {
+            "value": 1,
+            "name": "Select Bank 1"
+          },
+          {
+            "value": 2,
+            "name": "Select Bank 2"
+          },
+          {
+            "value": 3,
+            "name": "Select Bank 3"
+          },
+          {
+            "value": 4,
+            "name": "Select Bank 4"
+          },
+          {
+            "value": 5,
+            "name": "Select Bank 5"
+          },
+          {
+            "value": 6,
+            "name": "Select Bank 6"
+          },
+          {
+            "value": 7,
+            "name": "Select Bank 7"
+          },
+          {
+            "value": 8,
+            "name": "Select Bank 8"
+          },
+          {
+            "value": 9,
+            "name": "Select Bank 9"
+          },
+          {
+            "value": 10,
+            "name": "Select Bank 10"
+          },
+          {
+            "value": 11,
+            "name": "Increment"
+          },
+          {
+            "value": 12,
+            "name": "Toggle Banks"
+          }
         ]
       }
     },
@@ -54,13 +99,34 @@
         "min": 0,
         "max": 6,
         "discreteValues": [
-          { "value": 0, "name": "Decrement" },
-          { "value": 1, "name": "Select Patch 1" },
-          { "value": 2, "name": "Select Patch 2" },
-          { "value": 3, "name": "Select Patch 3" },
-          { "value": 4, "name": "Select Patch 4" },
-          { "value": 5, "name": "Select Patch 5" },
-          { "value": 6, "name": "Increment" }
+          {
+            "value": 0,
+            "name": "Decrement"
+          },
+          {
+            "value": 1,
+            "name": "Select Patch 1"
+          },
+          {
+            "value": 2,
+            "name": "Select Patch 2"
+          },
+          {
+            "value": 3,
+            "name": "Select Patch 3"
+          },
+          {
+            "value": 4,
+            "name": "Select Patch 4"
+          },
+          {
+            "value": 5,
+            "name": "Select Patch 5"
+          },
+          {
+            "value": 6,
+            "name": "Increment"
+          }
         ]
       }
     },
@@ -71,23 +137,74 @@
         "min": 0,
         "max": 16,
         "discreteValues": [
-          { "value": 0, "name": "Key Decrement" },
-          { "value": 1, "name": "Key A" },
-          { "value": 2, "name": "Key A#" },
-          { "value": 3, "name": "Key B" },
-          { "value": 4, "name": "Key C" },
-          { "value": 5, "name": "Key C#" },
-          { "value": 6, "name": "Key D" },
-          { "value": 7, "name": "Key D#" },
-          { "value": 8, "name": "Key E" },
-          { "value": 9, "name": "Key F" },
-          { "value": 10, "name": "Key F#" },
-          { "value": 11, "name": "Key G" },
-          { "value": 12, "name": "Key G#" },
-          { "value": 13, "name": "Key Increment" },
-          { "value": 14, "name": "Tonality Major" },
-          { "value": 15, "name": "Tonality Minor" },
-          { "value": 16, "name": "Neutral" }
+          {
+            "value": 0,
+            "name": "Key Decrement"
+          },
+          {
+            "value": 1,
+            "name": "Key A"
+          },
+          {
+            "value": 2,
+            "name": "Key A#"
+          },
+          {
+            "value": 3,
+            "name": "Key B"
+          },
+          {
+            "value": 4,
+            "name": "Key C"
+          },
+          {
+            "value": 5,
+            "name": "Key C#"
+          },
+          {
+            "value": 6,
+            "name": "Key D"
+          },
+          {
+            "value": 7,
+            "name": "Key D#"
+          },
+          {
+            "value": 8,
+            "name": "Key E"
+          },
+          {
+            "value": 9,
+            "name": "Key F"
+          },
+          {
+            "value": 10,
+            "name": "Key F#"
+          },
+          {
+            "value": 11,
+            "name": "Key G"
+          },
+          {
+            "value": 12,
+            "name": "Key G#"
+          },
+          {
+            "value": 13,
+            "name": "Key Increment"
+          },
+          {
+            "value": 14,
+            "name": "Tonality Major"
+          },
+          {
+            "value": 15,
+            "name": "Tonality Minor"
+          },
+          {
+            "value": 16,
+            "name": "Neutral"
+          }
         ]
       }
     },
@@ -98,39 +215,96 @@
         "min": 0,
         "max": 15,
         "discreteValues": [
-          { "value": 0, "name": "Song Decrement" },
-          { "value": 1, "name": "Select Song 1" },
-          { "value": 2, "name": "Select Song 2" },
-          { "value": 3, "name": "Select Song 3" },
-          { "value": 4, "name": "Select Song 4" },
-          { "value": 5, "name": "Select Song 5" },
-          { "value": 6, "name": "Select Song 6" },
-          { "value": 7, "name": "Select Song 7" },
-          { "value": 8, "name": "Select Song 8" },
-          { "value": 9, "name": "Select Song 9" },
-          { "value": 10, "name": "Select Song 10" },
-          { "value": 11, "name": "Song Increment" },
-          { "value": 12, "name": "Toggle View" },
-          { "value": 13, "name": "Live View" },
-          { "value": 14, "name": "Setlist View" },
-          { "value": 15, "name": "Clear Setlist" }
+          {
+            "value": 0,
+            "name": "Song Decrement"
+          },
+          {
+            "value": 1,
+            "name": "Select Song 1"
+          },
+          {
+            "value": 2,
+            "name": "Select Song 2"
+          },
+          {
+            "value": 3,
+            "name": "Select Song 3"
+          },
+          {
+            "value": 4,
+            "name": "Select Song 4"
+          },
+          {
+            "value": 5,
+            "name": "Select Song 5"
+          },
+          {
+            "value": 6,
+            "name": "Select Song 6"
+          },
+          {
+            "value": 7,
+            "name": "Select Song 7"
+          },
+          {
+            "value": 8,
+            "name": "Select Song 8"
+          },
+          {
+            "value": 9,
+            "name": "Select Song 9"
+          },
+          {
+            "value": 10,
+            "name": "Select Song 10"
+          },
+          {
+            "value": 11,
+            "name": "Song Increment"
+          },
+          {
+            "value": 12,
+            "name": "Toggle View"
+          },
+          {
+            "value": 13,
+            "name": "Live View"
+          },
+          {
+            "value": 14,
+            "name": "Setlist View"
+          },
+          {
+            "value": 15,
+            "name": "Clear Setlist"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 10,
       "name": "Volume (Instant)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 11,
       "name": "Volume (Smooth)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 12,
       "name": "Crossfade",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 13,
@@ -139,8 +313,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     }

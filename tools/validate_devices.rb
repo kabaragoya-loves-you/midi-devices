@@ -10,6 +10,12 @@
 #   - Correct key names (controlChangeCommands, not "controls" or "controlChangeMessages")
 #   - Valid CC entry structure
 #   - x_pc custom extension format
+#   - receives/transmits values match MIDI RTC JSON schema
+#
+# With --fix:
+#   - Removes CONTROL_CHANGE and SYSEX from receives/transmits
+#   - Replaces NOTE_ON/NOTE_OFF with NOTE_NUMBER
+#   - Replaces AFTERTOUCH with CHANNEL_PRESSURE
 
 require "json"
 require "optparse"
@@ -37,18 +43,33 @@ CORRECT_CC_KEY = "controlChangeCommands"
 # Required top-level fields
 REQUIRED_FIELDS = %w[receives transmits].freeze
 
-# Valid values for receives/transmits
+# Valid values for receives/transmits (from MIDI RTC JSON schema)
 VALID_MESSAGE_TYPES = %w[
+  NOTE_NUMBER
   PROGRAM_CHANGE
-  CONTROL_CHANGE
-  CLOCK
-  NOTE_ON
-  NOTE_OFF
-  PITCH_BEND
-  AFTERTOUCH
+  VELOCITY_NOTE_ON
+  VELOCITY_NOTE_OFF
   CHANNEL_PRESSURE
+  POLY_PRESSURE
+  PITCH_BEND
+  CLOCK
+  TRANSPORT_START
+  TRANSPORT_STOP
+  TRANSPORT_CONTINUE
+].freeze
+
+# Message types to remove entirely
+REMOVE_MESSAGE_TYPES = %w[
+  CONTROL_CHANGE
   SYSEX
 ].freeze
+
+# Message type replacements (old => new)
+MESSAGE_TYPE_REPLACEMENTS = {
+  "NOTE_ON" => "NOTE_NUMBER",
+  "NOTE_OFF" => "NOTE_NUMBER",
+  "AFTERTOUCH" => "CHANNEL_PRESSURE"
+}.freeze
 
 class DeviceValidator
   attr_reader :path, :json, :errors, :warnings, :fixed
@@ -63,7 +84,8 @@ class DeviceValidator
 
   def validate
     begin
-      @json = JSON.parse(File.read(@path))
+      content = File.read(@path, encoding: "bom|utf-8")
+      @json = JSON.parse(content)
     rescue JSON::ParserError => e
       @errors << "Invalid JSON: #{e.message}"
       return false
@@ -103,12 +125,37 @@ class DeviceValidator
       changed = true
     end
 
+    # Fix message types in receives and transmits
+    %w[receives transmits].each do |field|
+      values = @json[field]
+      next unless values.is_a?(Array)
+
+      new_values = []
+      values.each do |v|
+        if REMOVE_MESSAGE_TYPES.include?(v)
+          # Skip - remove this value
+          changed = true
+        elsif MESSAGE_TYPE_REPLACEMENTS.key?(v)
+          # Replace with correct value
+          new_values << MESSAGE_TYPE_REPLACEMENTS[v]
+          changed = true
+        else
+          new_values << v
+        end
+      end
+
+      # Deduplicate (e.g., NOTE_ON and NOTE_OFF both become NOTE_NUMBER)
+      new_values.uniq!
+      @json[field] = new_values
+    end
+
     if changed
       # Reorder keys for consistency
       ordered = reorder_keys(@json)
       json_str = JSON.pretty_generate(ordered, indent: "  ")
       json_str = json_str.gsub(/\r\n/, "\n")
-      File.write(@path, json_str + "\n")
+      # Write without BOM, UTF-8
+      File.write(@path, json_str + "\n", encoding: "utf-8")
       @fixed = true
     end
 
@@ -212,8 +259,12 @@ class DeviceValidator
       next unless values.is_a?(Array)
 
       values.each do |v|
-        unless VALID_MESSAGE_TYPES.include?(v)
-          @warnings << "#{field}: unknown message type '#{v}'"
+        if REMOVE_MESSAGE_TYPES.include?(v)
+          @errors << "#{field}: '#{v}' should be removed"
+        elsif MESSAGE_TYPE_REPLACEMENTS.key?(v)
+          @errors << "#{field}: '#{v}' should be '#{MESSAGE_TYPE_REPLACEMENTS[v]}'"
+        elsif !VALID_MESSAGE_TYPES.include?(v)
+          @errors << "#{field}: invalid message type '#{v}'"
         end
       end
     end

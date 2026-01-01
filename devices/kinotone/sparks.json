@@ -6,38 +6,59 @@
     "manufacturer": "Kinotone",
     "model": "Sparks"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
       "name": "Synth Attack",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Synth Decay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Synth Sustain",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Synth Release",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Synth Waveform",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Synth Bits",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
@@ -46,16 +67,28 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "LFO Pitch" },
-          { "value": 1, "name": "LFO Pulse W" },
-          { "value": 2, "name": "Glide" }
+          {
+            "value": 0,
+            "name": "LFO Pitch"
+          },
+          {
+            "value": 1,
+            "name": "LFO Pulse W"
+          },
+          {
+            "value": 2,
+            "name": "Glide"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 21,
       "name": "Synth Mod Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 22,
@@ -64,9 +97,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "None" },
-          { "value": 1, "name": "Hard Sync" },
-          { "value": 2, "name": "Ring Mod" }
+          {
+            "value": 0,
+            "name": "None"
+          },
+          {
+            "value": 1,
+            "name": "Hard Sync"
+          },
+          {
+            "value": 2,
+            "name": "Ring Mod"
+          }
         ]
       }
     },
@@ -77,82 +119,129 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Poly" },
-          { "value": 1, "name": "Mono" }
+          {
+            "value": 0,
+            "name": "Poly"
+          },
+          {
+            "value": 1,
+            "name": "Mono"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 24,
       "name": "Filter Cutoff",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 25,
       "name": "Filter Mode",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 26,
       "name": "Filter Resonance",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Gain",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
       "name": "Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 29,
       "name": "Drive / Fold",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 30,
       "name": "Blend",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 31,
       "name": "Low Cut",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 32,
       "name": "Gate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 33,
       "name": "ENV Attack",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 34,
       "name": "ENV Sens",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 35,
       "name": "LFO Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 36,
       "name": "LFO Shape",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 37,
       "name": "Spin",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 38,
       "name": "Map LFO Filter Cutoff",
@@ -161,8 +250,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -174,8 +269,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -187,8 +288,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -200,8 +307,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -213,8 +326,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -226,8 +345,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -239,8 +364,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -252,8 +383,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -265,8 +402,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -278,8 +421,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -291,8 +440,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -304,16 +459,24 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 50,
       "name": "ENV Style",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
@@ -323,12 +486,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Ignore" },
-          { "value": 1, "name": "Listen" }
+          {
+            "value": 0,
+            "name": "Ignore"
+          },
+          {
+            "value": 1,
+            "name": "Listen"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 52,
       "name": "Map ENV Filter Cutoff",
@@ -337,8 +505,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -350,8 +524,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -363,8 +543,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -376,8 +562,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -389,8 +581,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -402,8 +600,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -415,8 +619,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -428,8 +638,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -441,8 +657,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -454,8 +676,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -467,8 +695,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
@@ -480,12 +714,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Negative" },
-          { "value": 65, "name": "Positive" }
+          {
+            "value": 0,
+            "name": "Negative"
+          },
+          {
+            "value": 65,
+            "name": "Positive"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 80,
       "name": "Preset Footswitch",
@@ -494,8 +733,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -507,8 +752,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -516,31 +767,46 @@
       "controlChangeNumber": 82,
       "name": "LFO Range",
       "additionalInfo": "0-2",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 83,
       "name": "Currently Selected Preset",
       "additionalInfo": "0-31",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 85,
       "name": "Reset Black + White Controls",
       "additionalInfo": "Send 0 to trigger",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 86,
       "name": "Clear LFO Mappings",
       "additionalInfo": "Send 0 to trigger",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 87,
       "name": "Clear ENV Mappings",
       "additionalInfo": "Send 0 to trigger",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 89,
@@ -550,8 +816,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "No" },
-          { "value": 1, "name": "Yes" }
+          {
+            "value": 0,
+            "name": "No"
+          },
+          {
+            "value": 1,
+            "name": "Yes"
+          }
         ]
       }
     },
@@ -563,8 +835,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Smooth" },
-          { "value": 1, "name": "Choppy" }
+          {
+            "value": 0,
+            "name": "Smooth"
+          },
+          {
+            "value": 1,
+            "name": "Choppy"
+          }
         ]
       }
     }

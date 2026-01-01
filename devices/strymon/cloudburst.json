@@ -1,19 +1,19 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Strymon Cloudburst",
   "displayName": "Cloudburst",
-  "implementationVersion": "0",
-
   "device": {
     "displayName": "",
     "manufacturer": "Strymon",
     "model": "Cloudburst",
     "version": ""
   },
-
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "transmits": [],
-
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
@@ -22,13 +22,21 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Bank 0" },
-          { "value": 1, "name": "Bank 1" },
-          { "value": 2, "name": "Bank 2" }
+          {
+            "value": 0,
+            "name": "Bank 0"
+          },
+          {
+            "value": 1,
+            "name": "Bank 1"
+          },
+          {
+            "value": 2,
+            "name": "Bank 2"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 11,
       "name": "Ensemble",
@@ -36,20 +44,69 @@
         "min": 1,
         "max": 3,
         "discreteValues": [
-          { "value": 1, "name": "Off" },
-          { "value": 2, "name": "mp" },
-          { "value": 3, "name": "Forte" }
+          {
+            "value": 1,
+            "name": "Off"
+          },
+          {
+            "value": 2,
+            "name": "mp"
+          },
+          {
+            "value": 3,
+            "name": "Forte"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 12, "name": "Decay", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 13, "name": "Pre-Delay", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Tone", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 15, "name": "Mod", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 16, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 17, "name": "Ensemble mp Level Adjust", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 12,
+      "name": "Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Pre-Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Mod",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Ensemble mp Level Adjust",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 27,
       "name": "Footswitch",
@@ -57,12 +114,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Press" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Press"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 60,
       "name": "MIDI Expression Off/On",
@@ -70,12 +132,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 97,
       "name": "Freeze",
@@ -83,8 +150,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Hold" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Hold"
+          }
         ]
       }
     },
@@ -95,12 +168,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Release" },
-          { "value": 127, "name": "Hold" }
+          {
+            "value": 0,
+            "name": "Release"
+          },
+          {
+            "value": 127,
+            "name": "Hold"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 100,
       "name": "Expression Pedal",
@@ -108,12 +186,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Heel" },
-          { "value": 127, "name": "Toe" }
+          {
+            "value": 0,
+            "name": "Heel"
+          },
+          {
+            "value": 127,
+            "name": "Toe"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 102,
       "name": "Bypass/Engage",
@@ -121,13 +204,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 127,
+            "name": "Engage"
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 0,
     "count": 300,

@@ -10,7 +10,6 @@
   },
   "receives": [
     "PROGRAM_CHANGE",
-    "CONTROL_CHANGE",
     "CLOCK"
   ],
   "transmits": [],

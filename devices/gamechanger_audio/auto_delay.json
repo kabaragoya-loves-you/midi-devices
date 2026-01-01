@@ -7,7 +7,6 @@
     "model": "Auto Delay"
   },
   "receives": [
-    "CONTROL_CHANGE",
     "CLOCK"
   ],
   "transmits": [],

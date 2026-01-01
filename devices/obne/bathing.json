@@ -1,22 +1,63 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "OBNE Bathing Liminal Delay",
   "displayName": "Bathing Liminal Delay",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Old Blood Noise Endeavors",
     "model": "Bathing Liminal Delay",
     "version": ""
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
   "controlChangeCommands": [
-    { "controlChangeNumber": 11, "name": "Expression", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 14, "name": "Dry Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 15, "name": "Wet Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 16, "name": "Dimension", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 17, "name": "Time", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Dry Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Wet Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Dimension",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 18,
       "name": "Subdivisions",
@@ -25,12 +66,30 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Sixteenth" },
-          { "value": 22, "name": "Dotted 16th" },
-          { "value": 43, "name": "Eighth" },
-          { "value": 64, "name": "Triplet" },
-          { "value": 85, "name": "Dotted Eighth" },
-          { "value": 106, "name": "Quarter" }
+          {
+            "value": 0,
+            "name": "Sixteenth"
+          },
+          {
+            "value": 22,
+            "name": "Dotted 16th"
+          },
+          {
+            "value": 43,
+            "name": "Eighth"
+          },
+          {
+            "value": 64,
+            "name": "Triplet"
+          },
+          {
+            "value": 85,
+            "name": "Dotted Eighth"
+          },
+          {
+            "value": 106,
+            "name": "Quarter"
+          }
         ]
       }
     },
@@ -42,24 +101,85 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Two" },
-          { "value": 11, "name": "Three" },
-          { "value": 23, "name": "Four" },
-          { "value": 34, "name": "Five" },
-          { "value": 46, "name": "Six" },
-          { "value": 57, "name": "Seven" },
-          { "value": 69, "name": "Eight" },
-          { "value": 80, "name": "Nine" },
-          { "value": 92, "name": "Ten" },
-          { "value": 103, "name": "Eleven" },
-          { "value": 115, "name": "Twelve" }
+          {
+            "value": 0,
+            "name": "Two"
+          },
+          {
+            "value": 11,
+            "name": "Three"
+          },
+          {
+            "value": 23,
+            "name": "Four"
+          },
+          {
+            "value": 34,
+            "name": "Five"
+          },
+          {
+            "value": 46,
+            "name": "Six"
+          },
+          {
+            "value": 57,
+            "name": "Seven"
+          },
+          {
+            "value": 69,
+            "name": "Eight"
+          },
+          {
+            "value": 80,
+            "name": "Nine"
+          },
+          {
+            "value": 92,
+            "name": "Ten"
+          },
+          {
+            "value": 103,
+            "name": "Eleven"
+          },
+          {
+            "value": 115,
+            "name": "Twelve"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 20, "name": "Feedback", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 21, "name": "Filter", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 22, "name": "Rate", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 23, "name": "Depth", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 20,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 24,
       "name": "Shape",
@@ -68,14 +188,38 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Sine" },
-          { "value": 16, "name": "Triangle" },
-          { "value": 32, "name": "Square" },
-          { "value": 48, "name": "Ramp Up" },
-          { "value": 64, "name": "Ramp Down" },
-          { "value": 80, "name": "Random" },
-          { "value": 96, "name": "Envelope Up" },
-          { "value": 112, "name": "Envelope Down" }
+          {
+            "value": 0,
+            "name": "Sine"
+          },
+          {
+            "value": 16,
+            "name": "Triangle"
+          },
+          {
+            "value": 32,
+            "name": "Square"
+          },
+          {
+            "value": 48,
+            "name": "Ramp Up"
+          },
+          {
+            "value": 64,
+            "name": "Ramp Down"
+          },
+          {
+            "value": 80,
+            "name": "Random"
+          },
+          {
+            "value": 96,
+            "name": "Envelope Up"
+          },
+          {
+            "value": 112,
+            "name": "Envelope Down"
+          }
         ]
       }
     },
@@ -87,8 +231,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -96,7 +246,10 @@
       "controlChangeNumber": 27,
       "name": "Tap Tempo Switch",
       "additionalInfo": "Tap pulse at value 0",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
@@ -106,9 +259,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Cancel Save" },
-          { "value": 43, "name": "Start Save" },
-          { "value": 86, "name": "Confirm Save" }
+          {
+            "value": 0,
+            "name": "Cancel Save"
+          },
+          {
+            "value": 43,
+            "name": "Start Save"
+          },
+          {
+            "value": 86,
+            "name": "Confirm Save"
+          }
         ]
       }
     },
@@ -120,10 +282,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "In & Thru" },
-          { "value": 32, "name": "Accept In Only" },
-          { "value": 64, "name": "Send Out Only" },
-          { "value": 96, "name": "Clock Off" }
+          {
+            "value": 0,
+            "name": "In & Thru"
+          },
+          {
+            "value": 32,
+            "name": "Accept In Only"
+          },
+          {
+            "value": 64,
+            "name": "Send Out Only"
+          },
+          {
+            "value": 96,
+            "name": "Clock Off"
+          }
         ]
       }
     },
@@ -135,8 +309,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 64, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 64,
+            "name": "On"
+          }
         ]
       }
     },
@@ -148,13 +328,30 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mono" },
-          { "value": 43, "name": "Mono>Stereo" },
-          { "value": 86, "name": "Stereo" }
+          {
+            "value": 0,
+            "name": "Mono"
+          },
+          {
+            "value": 43,
+            "name": "Mono>Stereo"
+          },
+          {
+            "value": 86,
+            "name": "Stereo"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 102, "name": "MIDI Channel", "additionalInfo": "1-16", "valueRange": { "min": 1, "max": 16 } }
+    {
+      "controlChangeNumber": 102,
+      "name": "MIDI Channel",
+      "additionalInfo": "1-16",
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
+    }
   ],
   "x_pc": {
     "indexBase": 0,

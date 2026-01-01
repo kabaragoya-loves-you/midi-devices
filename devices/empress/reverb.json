@@ -1,70 +1,101 @@
 {
   "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Empress Reverb",
   "displayName": "Empress Reverb",
-  "implementationVersion": "0",
   "device": {
     "displayName": "",
     "manufacturer": "Empress Effects",
     "model": "Reverb",
     "version": "6.02"
   },
-  "receives": ["PROGRAM_CHANGE", "CONTROL_CHANGE", "CLOCK"],
-  "transmits": ["CONTROL_CHANGE"],
-
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
   "controlChangeCommands": [
     {
       "controlChangeNumber": 10,
       "name": "Expr Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 11,
       "name": "Recall Preset",
-      "valueRange": { "min": 0, "max": 35 }
+      "valueRange": {
+        "min": 0,
+        "max": 35
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Mode Select",
       "additionalInfo": "value = (mode * 8) + submode; e.g., Plate#2 = 9",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 21,
       "name": "Decay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 22,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 23,
       "name": "Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 24,
       "name": "Low Damp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 25,
       "name": "Hi Damp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 26,
       "name": "Thing 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Thing 2",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 35,
       "name": "Foot L (Select)",
@@ -73,32 +104,53 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Tap", "value": 64 },
-          { "name": "Hold", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Tap",
+            "value": 64
+          },
+          {
+            "name": "Hold",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 36,
       "name": "Foot M (Scroll)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 37,
       "name": "Foot R (Bypass)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 38,
       "name": "Save Button",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 39,
       "name": "Save Preset To",
       "additionalInfo": "0-35 selects destination slot",
-      "valueRange": { "min": 0, "max": 35 }
+      "valueRange": {
+        "min": 0,
+        "max": 35
+      }
     },
     {
       "controlChangeNumber": 51,
@@ -107,8 +159,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Ignore", "value": 0 },
-          { "name": "Listen", "value": 127 }
+          {
+            "name": "Ignore",
+            "value": 0
+          },
+          {
+            "name": "Listen",
+            "value": 127
+          }
         ]
       }
     },
@@ -119,21 +177,23 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Bypass", "value": 0 },
-          { "name": "Engage", "value": 127 }
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
         ]
       }
     }
   ],
-
   "x_pc": {
     "indexBase": 0,
     "count": 35,
     "bankSelectMode": "none"
   },
-
   "x_midiTrs": "TYPE_A",
-
   "x_midiChannel": 1
 }
-

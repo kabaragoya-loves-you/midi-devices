@@ -1,0 +1,339 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "OTO Machines Biscuit",
+  "displayName": "Biscuit",
+  "device": {
+    "displayName": "",
+    "manufacturer": "OTO Machines",
+    "model": "Biscuit",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 14, "name": "Drive", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 15, "name": "Naked (Dry Level)", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 16, "name": "Dressed (8-bit Level)", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 17, "name": "Filter Resonance (Q)", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 18, "name": "Clock", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 19, "name": "Filter Cutoff (Freq)", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 20,
+      "name": "Bit 1",
+      "additionalInfo": "0-42=Off, 43-84=On, 85-127=Inverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-42)" },
+          { "value": 43, "name": "On (43-84)" },
+          { "value": 85, "name": "Inverse (85-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Bit 2",
+      "additionalInfo": "0-42=Off, 43-84=On, 85-127=Inverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-42)" },
+          { "value": 43, "name": "On (43-84)" },
+          { "value": 85, "name": "Inverse (85-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Bit 3",
+      "additionalInfo": "0-42=Off, 43-84=On, 85-127=Inverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-42)" },
+          { "value": 43, "name": "On (43-84)" },
+          { "value": 85, "name": "Inverse (85-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Bit 4",
+      "additionalInfo": "0-42=Off, 43-84=On, 85-127=Inverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-42)" },
+          { "value": 43, "name": "On (43-84)" },
+          { "value": 85, "name": "Inverse (85-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Bit 5",
+      "additionalInfo": "0-42=Off, 43-84=On, 85-127=Inverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-42)" },
+          { "value": 43, "name": "On (43-84)" },
+          { "value": 85, "name": "Inverse (85-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Bit 6",
+      "additionalInfo": "0-42=Off, 43-84=On, 85-127=Inverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-42)" },
+          { "value": 43, "name": "On (43-84)" },
+          { "value": 85, "name": "Inverse (85-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Bit 7",
+      "additionalInfo": "0-42=Off, 43-84=On, 85-127=Inverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-42)" },
+          { "value": 43, "name": "On (43-84)" },
+          { "value": 85, "name": "Inverse (85-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Bit 8",
+      "additionalInfo": "0-42=Off, 43-84=On, 85-127=Inverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-42)" },
+          { "value": 43, "name": "On (43-84)" },
+          { "value": 85, "name": "Inverse (85-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 28,
+      "name": "Bypass",
+      "additionalInfo": "0-63=On (Biscuit deactivated), 64-127=Off (Biscuit activated)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "On / Deactivated (0-63)" },
+          { "value": 64, "name": "Off / Activated (64-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 29,
+      "name": "Filter Mode",
+      "additionalInfo": "0-42=Low-pass, 43-84=Band-pass, 85-127=Hi-pass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Low-pass (0-42)" },
+          { "value": 43, "name": "Band-pass (43-84)" },
+          { "value": 85, "name": "Hi-pass (85-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 30,
+      "name": "FX",
+      "additionalInfo": "0-25=Off, 26-50=Wave Shaping, 51-75=Delay, 76-100=Pitch Shifter, 101-127=Step Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-25)" },
+          { "value": 26, "name": "Wave Shaping (26-50)" },
+          { "value": 51, "name": "Delay (51-75)" },
+          { "value": 76, "name": "Pitch Shifter (76-100)" },
+          { "value": 101, "name": "Step Filter (101-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 31,
+      "name": "Wave Type",
+      "additionalInfo": "0-15=1/Hi Rect., 16-31=2/Alt Rect., 32-47=3/Bat Fuzz, 48-63=4/Biscuit, 64-79=5/Swap, 80-95=6/Saw Osc., 96-111=7/Lo Saw Osc., 112-127=8/Lo Square Osc.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "1/Hi Rect. (0-15)" },
+          { "value": 16, "name": "2/Alt Rect. (16-31)" },
+          { "value": 32, "name": "3/Bat Fuzz (32-47)" },
+          { "value": 48, "name": "4/Biscuit (48-63)" },
+          { "value": 64, "name": "5/Swap (64-79)" },
+          { "value": 80, "name": "6/Saw Osc. (80-95)" },
+          { "value": 96, "name": "7/Lo Saw Osc. (96-111)" },
+          { "value": 112, "name": "8/Lo Square Osc. (112-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 32,
+      "name": "Delay Division",
+      "additionalInfo": "0-21=Quarter, 22-42=Dotted Quarter, 43-63=Eighth, 65-84=Dotted Eighth, 85-105=Sixteenth, 106-127=Dotted Sixteenth",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Quarter (0-21)" },
+          { "value": 22, "name": "Dotted Quarter (22-42)" },
+          { "value": 43, "name": "Eighth (43-63)" },
+          { "value": 65, "name": "Dotted Eighth (65-84)" },
+          { "value": 85, "name": "Sixteenth (85-105)" },
+          { "value": 106, "name": "Dotted Sixteenth (106-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 33,
+      "name": "Delay Feedback",
+      "additionalInfo": "0-15=0%, 16-31=10%, 32-47=20%, 48-63=30%, 64-79=35%, 80-95=45%, 96-111=50%, 112-127=100%",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "0% (0-15)" },
+          { "value": 16, "name": "10% (16-31)" },
+          { "value": 32, "name": "20% (32-47)" },
+          { "value": 48, "name": "30% (48-63)" },
+          { "value": 64, "name": "35% (64-79)" },
+          { "value": 80, "name": "45% (80-95)" },
+          { "value": 96, "name": "50% (96-111)" },
+          { "value": 112, "name": "100% (112-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 34,
+      "name": "Delay Free Clock",
+      "additionalInfo": "0-63=Off, 64-127=On. In Free Clock mode, delay time is controlled by Clock (CC 18).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-63)" },
+          { "value": 64, "name": "On (64-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 35,
+      "name": "Pitch Shift",
+      "additionalInfo": "0-15=-2 Oct, 16-31=-1 Oct, 32-47=-5th, 48-63=Detune, 64-79=+m3, 80-95=+M3, 96-111=+5th, 112-127=+1 Oct",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "-2 Oct (0-15)" },
+          { "value": 16, "name": "-1 Oct (16-31)" },
+          { "value": 32, "name": "-5th (32-47)" },
+          { "value": 48, "name": "Detune (48-63)" },
+          { "value": 64, "name": "+Minor 3rd (64-79)" },
+          { "value": 80, "name": "+Major 3rd (80-95)" },
+          { "value": 96, "name": "+5th (96-111)" },
+          { "value": 112, "name": "+1 Oct (112-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 36,
+      "name": "Step Filter Play Mode",
+      "additionalInfo": "0-42=Forward, 43-84=Alternate, 85-127=Random",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Forward (0-42)" },
+          { "value": 43, "name": "Alternate (43-84)" },
+          { "value": 85, "name": "Random (85-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 37,
+      "name": "Step Filter Speed",
+      "additionalInfo": "0-25=x1, 26-50=x2, 51-75=x4, 76-100=x8, 101-127=x24",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "x1 (0-25)" },
+          { "value": 26, "name": "x2 (26-50)" },
+          { "value": 51, "name": "x4 (51-75)" },
+          { "value": 76, "name": "x8 (76-100)" },
+          { "value": 101, "name": "x24 (101-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 38,
+      "name": "Step Filter Number",
+      "additionalInfo": "0-25=2, 26-50=3, 51-75=4, 76-100=6, 101-127=8",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "2 (0-25)" },
+          { "value": 26, "name": "3 (26-50)" },
+          { "value": 51, "name": "4 (51-75)" },
+          { "value": 76, "name": "6 (76-100)" },
+          { "value": 101, "name": "8 (101-127)" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1,
+  "x_midiNoteIn": {
+    "supportsNoteOnOff": true,
+    "additionalInfo": "Note On is used only for Waveshapers 6, 7, 8 and Pitch Shifter modes.",
+    "supportsPitchBend": false,
+    "supportsModWheel": false
+  }
+}

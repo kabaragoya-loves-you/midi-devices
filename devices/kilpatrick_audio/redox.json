@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Kilpatrick Audio REDOX",
+  "displayName": "REDOX",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Kilpatrick Audio",
+    "model": "REDOX",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Reverb Filter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Reverb Algorithm",
+      "additionalInfo": "0-18 = reverb type 1-19",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Reverb Predelay",
+      "additionalInfo": "0-100 = 0-200ms",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Mod Type",
+      "additionalInfo": "0-17 = mod type 1-18",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Mod Enable (ON)",
+      "additionalInfo": "0-63 = off, 64-127 = on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 64, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Reverb Size",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Reverb Param1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Mod Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Mod Param1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Mod Param2",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 99,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

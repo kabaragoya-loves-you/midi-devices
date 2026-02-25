@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Universal Audio UAFX Lion '68 Super Lead Amp",
+  "displayName": "Lion '68",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Universal Audio",
+    "model": "UAFX Lion '68 Super Lead Amp",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 12,
+      "name": "FS Left",
+      "additionalInfo": "0=Off, 1=Toggle Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "FS Right",
+      "additionalInfo": "0=Off, 1=Toggle Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Effect Up",
+      "additionalInfo": "1 toggles mode/selection",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Effect Down",
+      "additionalInfo": "1 toggles mode/selection",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Store",
+      "additionalInfo": "0=Off, 1=Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "Hold" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Section Select",
+      "additionalInfo": "0=Clean, 1=Rhythm, 2=Lead",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Clean" },
+          { "value": 1, "name": "Rhythm" },
+          { "value": 2, "name": "Lead" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Effect Select",
+      "additionalInfo": "0=Reverb, 1=Plate 140, 2=Hall 224, 3=Spring ’65",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "value": 0, "name": "Reverb" },
+          { "value": 1, "name": "Plate 140" },
+          { "value": 2, "name": "Hall 224" },
+          { "value": 3, "name": "Spring ’65" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Bypass",
+      "additionalInfo": "0=Bypass, 1=Unbypass Left FS, 2=Unbypass Right FS",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 1, "name": "Unbypass Left FS" },
+          { "value": 2, "name": "Unbypass Right FS" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Middle",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Presence",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Master",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Reverb",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

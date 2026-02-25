@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Universal Audio UAFX Starlight Echo Station",
+  "displayName": "Starlight",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Universal Audio",
+    "model": "UAFX Starlight Echo Station",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 12,
+      "name": "FS Left",
+      "additionalInfo": "1 toggles footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "FS Right",
+      "additionalInfo": "0=Up, 1=Down. In Tap+Preset mode: 0 on release for tap",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Up" },
+          { "value": 1, "name": "Down" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Effect Up",
+      "additionalInfo": "1 toggles switch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Effect Down",
+      "additionalInfo": "1 toggles switch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Store",
+      "additionalInfo": "0=Off, 1=Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "Hold" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "A B C Select",
+      "additionalInfo": "0=A, 1=B, 2=C",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "A" },
+          { "value": 1, "name": "B" },
+          { "value": 2, "name": "C" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Effect Select",
+      "additionalInfo": "0=Tape EP-III, 1=Analog DMM, 2=Precision, 3=Cooper Time Cube",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "value": 0, "name": "Tape EP-III" },
+          { "value": 1, "name": "Analog DMM" },
+          { "value": 2, "name": "Precision" },
+          { "value": 3, "name": "Cooper Time Cube" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Bypass",
+      "additionalInfo": "0=Bypass, 1=Unbypass Left FS, 2=Unbypass Right FS",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 1, "name": "Unbypass Left FS" },
+          { "value": 2, "name": "Unbypass Right FS" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Delay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Division",
+      "additionalInfo": "0=1/4, 1=Dotted 1/8, 2=1/8, 3=1/8T, 4=Dual 1/4 + dotted 1/8, 5=Dual 1/4 + 1/8",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "1/4" },
+          { "value": 1, "name": "Dotted 1/8" },
+          { "value": 2, "name": "1/8" },
+          { "value": 3, "name": "1/8 Triplet" },
+          { "value": 4, "name": "Dual 1/4 + dotted 1/8" },
+          { "value": 5, "name": "Dual 1/4 + 1/8" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Color",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

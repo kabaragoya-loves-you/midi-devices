@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Universal Audio UAFX Del-Verb Ambience Companion",
+  "displayName": "Del-Verb",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Universal Audio",
+    "model": "UAFX Del-Verb Ambience Companion",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 12,
+      "name": "FS Left",
+      "additionalInfo": "0=Off, 1=Toggle footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "FS Right",
+      "additionalInfo": "0=Off, 1=Toggle footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Delay Select",
+      "additionalInfo": "0=Tape EP-III, 1=Analog DMM, 2=Precision",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Tape EP-III" },
+          { "value": 1, "name": "Analog DMM" },
+          { "value": 2, "name": "Precision" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Delay Bypass",
+      "additionalInfo": "0=Bypass, 1=Unbypass (only bypasses Delay regardless of footswitch mode)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 1, "name": "Unbypass" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Reverb Bypass",
+      "additionalInfo": "0=Bypass, 1=Unbypass (only bypasses Reverb regardless of footswitch mode)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 1, "name": "Unbypass" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Reverb Select",
+      "additionalInfo": "0=Spring 65, 1=Plate 140, 2=Hall 224",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Spring 65" },
+          { "value": 1, "name": "Plate 140" },
+          { "value": 2, "name": "Hall 224" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Delay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Division",
+      "additionalInfo": "0=1/4, 1=Dotted 1/8, 2=1/8, 3=1/8 triplet, 4=Dual 1/4 + dotted 1/8, 5=Dual 1/4 + 1/8",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "value": 0, "name": "1/4" },
+          { "value": 1, "name": "Dotted 1/8" },
+          { "value": 2, "name": "1/8" },
+          { "value": 3, "name": "1/8 triplet" },
+          { "value": 4, "name": "Dual 1/4 + dotted 1/8" },
+          { "value": 5, "name": "Dual 1/4 + 1/8" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Color",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Reverb",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

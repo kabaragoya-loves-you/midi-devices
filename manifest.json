@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-02-25T09:22:44Z",
-  "count": 96,
+  "generatedAt": "2026-02-25T10:45:15Z",
+  "count": 110,
   "devices": [
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
@@ -1720,6 +1720,297 @@
         "indexBase": 0,
         "count": 300,
         "bankSelectMode": "CC0"
+      }
+    },
+    {
+      "slug": "universal_audio.ANTI-1992@0",
+      "vendor": "universal_audio",
+      "product": "ANTI-1992",
+      "version": "0",
+      "path": "devices/universal_audio/ANTI-1992.json",
+      "sha256": "fb06c432883cc78b5bf1993e7046eabaee103899cd9d46c060736849333df6e5",
+      "size": 4059,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.astra@0",
+      "vendor": "universal_audio",
+      "product": "astra",
+      "version": "0",
+      "path": "devices/universal_audio/astra.json",
+      "sha256": "88f3b77bcf8571792de304d3cd817f03535b09f258bef8745504b9f458728c23",
+      "size": 3755,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.del-verb@0",
+      "vendor": "universal_audio",
+      "product": "del-verb",
+      "version": "0",
+      "path": "devices/universal_audio/del-verb.json",
+      "sha256": "26f5e886ece1a6f53c5953a0e3c8a0c9166d1756241ce73a7f73cf8e52f606e1",
+      "size": 3859,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.dream_65@0",
+      "vendor": "universal_audio",
+      "product": "dream_65",
+      "version": "0",
+      "path": "devices/universal_audio/dream_65.json",
+      "sha256": "5be9e1b2b00a0210361f85361a31ed450af0db6da81c4da5f82476a61e3deb40",
+      "size": 4605,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 18,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.enigmatic_82@0",
+      "vendor": "universal_audio",
+      "product": "enigmatic_82",
+      "version": "0",
+      "path": "devices/universal_audio/enigmatic_82.json",
+      "sha256": "8af2e61d5fd1b6c04083470b33162764d77dd3d08a0b3e086eb967414851bcb0",
+      "size": 5917,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 30,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.galaxy_74@0",
+      "vendor": "universal_audio",
+      "product": "galaxy_74",
+      "version": "0",
+      "path": "devices/universal_audio/galaxy_74.json",
+      "sha256": "a8d2b9224bac376fec61842d559984f40040e75ba9a21541812efad155f96d24",
+      "size": 4376,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 15,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.golden_reverberator@0",
+      "vendor": "universal_audio",
+      "product": "golden_reverberator",
+      "version": "0",
+      "path": "devices/universal_audio/golden_reverberator.json",
+      "sha256": "2a5a97ef189e118ec6afac669fe836a6d79de6267195452cd9676290db8da54c",
+      "size": 3768,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.knuckles_92@0",
+      "vendor": "universal_audio",
+      "product": "knuckles_92",
+      "version": "0",
+      "path": "devices/universal_audio/knuckles_92.json",
+      "sha256": "719475009ae87bdd0d977f9201b437459a71d378ccc68139f1ff632c2a8f4f08",
+      "size": 3953,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 15,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.lion_68@0",
+      "vendor": "universal_audio",
+      "product": "lion_68",
+      "version": "0",
+      "path": "devices/universal_audio/lion_68.json",
+      "sha256": "b57fdb3a5acac7b210b760d053a09d6c2fc81c3ef970a6d0a28c36b24d62769d",
+      "size": 3930,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 15,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.max@0",
+      "vendor": "universal_audio",
+      "product": "max",
+      "version": "0",
+      "path": "devices/universal_audio/max.json",
+      "sha256": "b9485f0f499ca5e290d4680ad3eb9cc44b8a168eb1439790e5cb6210e960ba40",
+      "size": 6211,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 24,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.ox_stomp@0",
+      "vendor": "universal_audio",
+      "product": "ox_stomp",
+      "version": "0",
+      "path": "devices/universal_audio/ox_stomp.json",
+      "sha256": "4a20acc261320451c20c7a2f6dc8a3b62dc8142fa8efeff152d1218cb38d93f1",
+      "size": 3845,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.ruby_63@0",
+      "vendor": "universal_audio",
+      "product": "ruby_63",
+      "version": "0",
+      "path": "devices/universal_audio/ruby_63.json",
+      "sha256": "7a26beedc9d06afe4d17f6aaed95a8ffba6fd8fde4eab035ae43c8651b16aed4",
+      "size": 4324,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 18,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.starlight@0",
+      "vendor": "universal_audio",
+      "product": "starlight",
+      "version": "0",
+      "path": "devices/universal_audio/starlight.json",
+      "sha256": "cdad330823ebc8e2a327a850f2b8463da910eae9fd306f212639a5180603b938",
+      "size": 4305,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "universal_audio.woodrow_55@0",
+      "vendor": "universal_audio",
+      "product": "woodrow_55",
+      "version": "0",
+      "path": "devices/universal_audio/woodrow_55.json",
+      "sha256": "b9c157758dcb5a1c8b92c346ad1f744e8f14eb017d7bea36fe7a5145ee5051e6",
+      "size": 3587,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 15,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
       }
     },
     {

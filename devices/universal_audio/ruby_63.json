@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Universal Audio UAFX Ruby '63 Top Boost Amplifier",
+  "displayName": "Ruby '63",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Universal Audio",
+    "model": "UAFX Ruby '63 Top Boost Amplifier",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 12,
+      "name": "FS Left",
+      "additionalInfo": "0=Off, 1=Toggle footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "FS Right",
+      "additionalInfo": "0=Off, 1=Toggle footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Cab Up",
+      "additionalInfo": "0-1 (1 toggles switch)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Cab Down",
+      "additionalInfo": "0-1 (1 toggles switch)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Toggle" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Store",
+      "additionalInfo": "0=Off, 1=Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "Hold" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Channel Select",
+      "additionalInfo": "0=Brilliant, 1=Normal, 2=Vibrato",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Brilliant" },
+          { "value": 1, "name": "Normal" },
+          { "value": 2, "name": "Vibrato" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Cab Select",
+      "additionalInfo": "0-6 (0-5 = cabs, 6 = no cab, >6 = Cab 1)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Bypass",
+      "additionalInfo": "0=Bypass, 1=Unbypass Left FS, 2=Unbypass Right FS",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 1, "name": "Unbypass Left FS" },
+          { "value": 2, "name": "Unbypass Right FS" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Room",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Cut",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Boost Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Boost",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Vib Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Vib Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Vib Intensity",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

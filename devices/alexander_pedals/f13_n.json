@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals F.13N",
+  "displayName": "F.13N",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "F.13 Neo",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Ramp",
+      "additionalInfo": "Value 1–8 = set ramp speed, other = trigger ramp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0–63 = Bypass, 64–127 = Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 64, "name": "Engage" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Lower right main",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Upper left main",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Upper right main",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Lower left main",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Lower right alt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Upper left alt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Upper right alt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Lower left alt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Mode Select",
+      "additionalInfo": "Accepts 0–7 to select modes 1–8 (not all modes supported on every pedal)",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

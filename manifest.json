@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-02-25T10:45:15Z",
-  "count": 110,
+  "generatedAt": "2026-02-26T00:36:33Z",
+  "count": 134,
   "devices": [
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
@@ -36,6 +36,480 @@
       "x_pc": {
         "indexBase": 1,
         "count": 0,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.colour_theory@0",
+      "vendor": "alexander_pedals",
+      "product": "colour_theory",
+      "version": "0",
+      "path": "devices/alexander_pedals/colour_theory.json",
+      "sha256": "b46e2363946ef929a5e7812705feaa394c44655b1007a65ee05c7a67619eefe3",
+      "size": 6176,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 47,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.defender_neo@0",
+      "vendor": "alexander_pedals",
+      "product": "defender_neo",
+      "version": "0",
+      "path": "devices/alexander_pedals/defender_neo.json",
+      "sha256": "6c6b61ba422d03c66e05ec72a234cccf7a6bd4e06eba3f381c152eece92c9219",
+      "size": 2481,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 11,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.dynaflanger_213@0",
+      "vendor": "alexander_pedals",
+      "product": "dynaflanger_213",
+      "version": "0",
+      "path": "devices/alexander_pedals/dynaflanger_213.json",
+      "sha256": "bab39828175145cd014a6c45408c65ac0c233e7ea9ade221a0764a7335572d12",
+      "size": 4941,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 24,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.f13_n@0",
+      "vendor": "alexander_pedals",
+      "product": "f13_n",
+      "version": "0",
+      "path": "devices/alexander_pedals/f13_n.json",
+      "sha256": "a91626e87c7292e97c3603c252ce1fa4f57e989d980fe648cc03dba5198ac142",
+      "size": 2469,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.fever_pitch@0",
+      "vendor": "alexander_pedals",
+      "product": "fever_pitch",
+      "version": "0",
+      "path": "devices/alexander_pedals/fever_pitch.json",
+      "sha256": "45d13efdbe2a5d878aa4e29823f26b79cc7cc8981df6d2f2bb7acf7f6dab72a1",
+      "size": 4950,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 35,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.forget_me_not@0",
+      "vendor": "alexander_pedals",
+      "product": "forget_me_not",
+      "version": "0",
+      "path": "devices/alexander_pedals/forget_me_not.json",
+      "sha256": "247b98486ec05dc56b51ee42f5283ee2af73b9f1fd5a0bde75cdb3db17608927",
+      "size": 4743,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 19,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.history_lesson_v3@0",
+      "vendor": "alexander_pedals",
+      "product": "history_lesson_v3",
+      "version": "0",
+      "path": "devices/alexander_pedals/history_lesson_v3.json",
+      "sha256": "3f69419ab5a4489b04529c6491fb3e8b3e3363422114df372e93fe148d4ec8d3",
+      "size": 3052,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.luminous@0",
+      "vendor": "alexander_pedals",
+      "product": "luminous",
+      "version": "0",
+      "path": "devices/alexander_pedals/luminous.json",
+      "sha256": "2bfef961849af799549267def08a8d397f62677daf64ab2d482fcbbbd1eca5a8",
+      "size": 4921,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 24,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.marshmallow@0",
+      "vendor": "alexander_pedals",
+      "product": "marshmallow",
+      "version": "0",
+      "path": "devices/alexander_pedals/marshmallow.json",
+      "sha256": "ec78a1158188bfe7c0a9fbad6cc2c63670b45a393c9bc33104fd5c664f2d9a88",
+      "size": 3487,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.neo-matic@0",
+      "vendor": "alexander_pedals",
+      "product": "neo-matic",
+      "version": "0",
+      "path": "devices/alexander_pedals/neo-matic.json",
+      "sha256": "c06a9c9fa70eda738666a0dccf1422e511668e29e65143f2aa5653ac5295eed3",
+      "size": 2684,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.now_we_are_ghosts@0",
+      "vendor": "alexander_pedals",
+      "product": "now_we_are_ghosts",
+      "version": "0",
+      "path": "devices/alexander_pedals/now_we_are_ghosts.json",
+      "sha256": "5d16786b8af7a3e3ed2db439dae64c1024ea5527cc3d93c13b62523256136913",
+      "size": 4993,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 19,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.oblivion@0",
+      "vendor": "alexander_pedals",
+      "product": "oblivion",
+      "version": "0",
+      "path": "devices/alexander_pedals/oblivion.json",
+      "sha256": "ab59a509b4546063cc3313a43fe909709f111df92e146807351acde0fb8d9d72",
+      "size": 3439,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.quadrant_neo@0",
+      "vendor": "alexander_pedals",
+      "product": "quadrant_neo",
+      "version": "0",
+      "path": "devices/alexander_pedals/quadrant_neo.json",
+      "sha256": "a82e8e23b6f5bebcf83e42a264915bddf7d5516af881cbfb0bc0432e3a19a9c8",
+      "size": 2929,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.radical_delay_dx@0",
+      "vendor": "alexander_pedals",
+      "product": "radical_delay_dx",
+      "version": "0",
+      "path": "devices/alexander_pedals/radical_delay_dx.json",
+      "sha256": "c8f4446892308d2f3b67f9d08cbaa9cfe2a4a499df9b97b281f22f2f428192a8",
+      "size": 3195,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.rewind@0",
+      "vendor": "alexander_pedals",
+      "product": "rewind",
+      "version": "0",
+      "path": "devices/alexander_pedals/rewind.json",
+      "sha256": "08d4999ab60e874dd5fcb3302772c0a5ad41cfce3a4c06d4d0a196c6d109bbad",
+      "size": 4080,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.sky_5000@0",
+      "vendor": "alexander_pedals",
+      "product": "sky_5000",
+      "version": "0",
+      "path": "devices/alexander_pedals/sky_5000.json",
+      "sha256": "bb6285165874a84e07d379f4be6d48b0ba562fd8eaf79250910f1593c82468c7",
+      "size": 2905,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.space_force@0",
+      "vendor": "alexander_pedals",
+      "product": "space_force",
+      "version": "0",
+      "path": "devices/alexander_pedals/space_force.json",
+      "sha256": "cfc97a6fca1ad714819c4303638da6e814ba6d5f816de2650bd6dc922725372b",
+      "size": 3831,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.space_race_neo@0",
+      "vendor": "alexander_pedals",
+      "product": "space_race_neo",
+      "version": "0",
+      "path": "devices/alexander_pedals/space_race_neo.json",
+      "sha256": "0fe5e375f70df8ee1cefa68bbf8d5fcca37665a547517dc42d1b547c1aa104e1",
+      "size": 3093,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.sugarcube@0",
+      "vendor": "alexander_pedals",
+      "product": "sugarcube",
+      "version": "0",
+      "path": "devices/alexander_pedals/sugarcube.json",
+      "sha256": "67d67025ad7fccab023b9de8fe74d59f0c175f403941de433e9ba1fa80dbddb6",
+      "size": 3101,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.super_radical_delay@0",
+      "vendor": "alexander_pedals",
+      "product": "super_radical_delay",
+      "version": "0",
+      "path": "devices/alexander_pedals/super_radical_delay.json",
+      "sha256": "da70d6f8bddce963f22d89e49737f0f35ef84f9a1022639f7ff92b2583542eb1",
+      "size": 3384,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.superball@0",
+      "vendor": "alexander_pedals",
+      "product": "superball",
+      "version": "0",
+      "path": "devices/alexander_pedals/superball.json",
+      "sha256": "bef4e728273dbe4d75d47461295dd333db3e85b7ac4f4fe695c73e8da8a73674",
+      "size": 1603,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 12,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.syntax_error@0",
+      "vendor": "alexander_pedals",
+      "product": "syntax_error",
+      "version": "0",
+      "path": "devices/alexander_pedals/syntax_error.json",
+      "sha256": "d0bcdf93a10f825037174e33c533f2c47ca60a84ba0cf77b0bea2e89e7e2d9d1",
+      "size": 2903,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.syntax_error_2@0",
+      "vendor": "alexander_pedals",
+      "product": "syntax_error_2",
+      "version": "0",
+      "path": "devices/alexander_pedals/syntax_error_2.json",
+      "sha256": "fd6f27f69bf6ce12a7f8f1c2cdab19030a02803834b9f0c9883758198936b649",
+      "size": 3784,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 22,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "alexander_pedals.wavelength@0",
+      "vendor": "alexander_pedals",
+      "product": "wavelength",
+      "version": "0",
+      "path": "devices/alexander_pedals/wavelength.json",
+      "sha256": "378375d1d06467976d2371941035d85a481e37e5592eaffadf18b2e1d3bb8ad6",
+      "size": 3222,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16,
         "bankSelectMode": "none"
       }
     },

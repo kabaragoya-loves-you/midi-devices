@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Forget-Me-Not",
+  "displayName": "Forget-Me-Not",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Forget-Me-Not",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 50,
+      "name": "Time",
+      "additionalInfo": "Delay time knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Swell",
+      "additionalInfo": "Feedback/Swell knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Blend",
+      "additionalInfo": "Mix between dry and effect",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Tone",
+      "additionalInfo": "Tone control",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Tap A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Tap B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Tap C",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Tap D",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Division",
+      "additionalInfo": "3-position switch: 0=Down, 63=Mid, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Spacing",
+      "additionalInfo": "3-position switch: 0=Down, 63=Mid, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Spread",
+      "additionalInfo": "3-position switch: 0=Down, 63=Mid, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Degrade",
+      "additionalInfo": "3-position switch: 0=Down, 63=Mid, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Wave",
+      "additionalInfo": "3-position switch: 0=Down, 63=Mid, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Trails",
+      "additionalInfo": "3-position switch: 0=Down, 63=Mid, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "additionalInfo": "Any value > 0 triggers tap",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "additionalInfo": "0=heel, 127=toe (expression pedal)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0=bypass, 127=engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "Engage" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Syntax Error 2",
+  "displayName": "Syntax Error 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Syntax Error 2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 50, "name": "Sample", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 51, "name": "Param1", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 52, "name": "Param2", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 53, "name": "Param3", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 54, "name": "Pitch", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 55, "name": "Pitch Mix", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 56, "name": "Volume", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 57, "name": "Tone", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 58, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 59, "name": "Mode Select", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 80, "name": "Sequencer Step A", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 81, "name": "Sequencer Step B", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 82, "name": "Sequencer Step C", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 83, "name": "Sequencer Step D", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 84,
+      "name": "Sequencer Assign",
+      "additionalInfo": "0-9",
+      "valueRange": { "min": 0, "max": 9 }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Sequencer Running",
+      "additionalInfo": "0-64=Seq Off, 65-127=Seq On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off (0-64)" },
+          { "value": 65, "name": "On (65-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Sequencer Rate",
+      "additionalInfo": "0-127 maps to 0-1023 rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Sequencer Trigger Mode",
+      "additionalInfo": "0=step, 1=one, 2=mom, 3=togg",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "value": 0, "name": "step" },
+          { "value": 1, "name": "one" },
+          { "value": 2, "name": "mom" },
+          { "value": 3, "name": "togg" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Sequencer Glide",
+      "additionalInfo": "0-127 maps to 0-7 glide",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Sequencer Spacing",
+      "additionalInfo": "0-127 maps to 0-24 spacing",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "additionalInfo": "0=heel, 127=toe",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0-64=Bypass, 65-127=Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (0-64)" },
+          { "value": 65, "name": "Engage (65-127)" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Colour Theory",
+  "displayName": "Colour Theory",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Colour Theory",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 93, "name": "Tap Tempo", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 100, "name": "Expression Pedal", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0–63 = Bypass, 64–127 = Engage",
+      "valueRange": { "min": 0, "max": 127, "discreteValues": [
+        { "value": 0, "name": "Bypass" },
+        { "value": 64, "name": "Engage" }
+      ] }
+    },
+    { "controlChangeNumber": 50, "name": "Step Lag", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 51, "name": "Sequence Rate", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 53, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 54, "name": "Lower right alt", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 55, "name": "Upper left alt", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 56, "name": "Upper right alt", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 57, "name": "Lower left alt", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 59,
+      "name": "Mode Select",
+      "valueRange": { "min": 0, "max": 127, "discreteValues": [
+        { "value": 0, "name": "Mode 1" },
+        { "value": 1, "name": "Mode 2" },
+        { "value": 2, "name": "Mode 3" },
+        { "value": 3, "name": "Mode 4" },
+        { "value": 4, "name": "Mode 5" },
+        { "value": 5, "name": "Mode 6" },
+        { "value": 6, "name": "Mode 7" },
+        { "value": 7, "name": "Mode 8" }
+      ] }
+    },
+
+    // **Sequencer Step CCs – Value**
+    { "controlChangeNumber": 18, "name": "Step 1 Value", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 19, "name": "Step 2 Value", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 20, "name": "Step 3 Value", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 21, "name": "Step 4 Value", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 22, "name": "Step 5 Value", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 23, "name": "Step 6 Value", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 24, "name": "Step 7 Value", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 25, "name": "Step 8 Value", "valueRange": { "min": 0, "max": 127 } },
+
+    // **Sequencer Step CCs – Tweak**
+    { "controlChangeNumber": 26, "name": "Step 1 Tweak", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 27, "name": "Step 2 Tweak", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 28, "name": "Step 3 Tweak", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 29, "name": "Step 4 Tweak", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 30, "name": "Step 5 Tweak", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 31, "name": "Step 6 Tweak", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 32, "name": "Step 7 Tweak", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 33, "name": "Step 8 Tweak", "valueRange": { "min": 0, "max": 127 } },
+
+    // **Sequencer Step CCs – Amount**
+    { "controlChangeNumber": 34, "name": "Step 1 Amount", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 35, "name": "Step 2 Amount", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 36, "name": "Step 3 Amount", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 37, "name": "Step 4 Amount", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 38, "name": "Step 5 Amount", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 39, "name": "Step 6 Amount", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 40, "name": "Step 7 Amount", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 41, "name": "Step 8 Amount", "valueRange": { "min": 0, "max": 127 } },
+
+    // **Sequencer Step CCs – External Control**
+    { "controlChangeNumber": 42, "name": "Step 1 Ext Ctl", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 43, "name": "Step 2 Ext Ctl", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 44, "name": "Step 3 Ext Ctl", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 45, "name": "Step 4 Ext Ctl", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 46, "name": "Step 5 Ext Ctl", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 47, "name": "Step 6 Ext Ctl", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 48, "name": "Step 7 Ext Ctl", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 49, "name": "Step 8 Ext Ctl", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 56, "name": "Set Number of Steps", "additionalInfo": "Values 2–8", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 60, "name": "Set Current Step", "additionalInfo": "Values 1–8", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 61,
+      "name": "Start/Park Sequence",
+      "additionalInfo": "0–63 = Start, 64–127 = Park",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Sequence Order",
+      "additionalInfo": "0=step up, 1=up and down, 2=random",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": { "indexBase": 0, "count": 16, "bankSelectMode": "none" },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

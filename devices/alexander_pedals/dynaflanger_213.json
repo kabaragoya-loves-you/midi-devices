@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Dynaflanger 213",
+  "displayName": "Dynaflanger 213",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Dynaflanger 213",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 50,
+      "name": "Knob 0 (PG1 upper L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Knob 1 (PG1 upper R)",
+      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Knob 2 (PG1 lower L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Sound Mode",
+      "additionalInfo": "0-12=AUTO; 13-25=DYNA; 26-37=DUAL AUTO; 38-50=DUAL DYNA; 51-63=SPIRAL; 64-75=STEP; 76-88=ECHO; 89-101=FLERB; 102-113=FILTER; 114-127=TURBO.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Knob 4 (PG2 upper L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Knob 5 (PG2 upper R)",
+      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Knob 6 (PG2 lower L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Knob 7 (PG2 lower R)",
+      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Knob 8 (PG3 upper L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Flange Phasing",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Level",
+      "additionalInfo": "Overall volume (wet + dry).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Ramp",
+      "additionalInfo": "0-50=TOGG; 51-110=MOM; 111-127=CLR (clear).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "additionalInfo": "ANY value triggers tap.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Ramp Trigger",
+      "additionalInfo": "ANY value triggers ramp.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "additionalInfo": "0=Heel, 127=Toe.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0=Bypass, 127=On.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Pattern 8 Step 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Pattern 8 Step 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Pattern 8 Step 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Pattern 8 Step 4",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Pattern 8 Step 5",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Pattern 8 Step 6",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Pattern 8 Step 7",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Pattern 8 Step 8",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

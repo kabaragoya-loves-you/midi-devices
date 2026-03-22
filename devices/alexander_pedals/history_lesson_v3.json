@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals History Lesson v3",
+  "displayName": "History Lesson v3",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "History Lesson v3",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 97,
+      "name": "Ramp",
+      "additionalInfo": "Send any value to trigger the ramp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "additionalInfo": "0 = heel down, 127 = toe down",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0-63 = Bypass, 64-127 = Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 64, "name": "Engage" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 50,
+      "name": "Mod",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Time",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Repeat",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Mix",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Mod Rate",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Tone",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Unspecified",
+      "additionalInfo": "Manual states CC 50-57 are 'Pedal Knobs' but does not define CC 56 by name",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Level",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 59,
+      "name": "Mode Select",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "MAG" },
+          { "value": 1, "name": "BBD" },
+          { "value": 2, "name": "DIG" },
+          { "value": 3, "name": "LOFI" },
+          { "value": 4, "name": "4HD" },
+          { "value": 5, "name": "FLT" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

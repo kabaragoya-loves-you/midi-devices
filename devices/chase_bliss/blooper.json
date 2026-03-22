@@ -273,20 +273,26 @@
     {
       "controlChangeNumber": 30,
       "name": "Mod A Enable",
-      "additionalInfo": "0 = Off, >0 = On",
+      "additionalInfo": "Toggles Mod A on/off",
       "valueRange": {
-        "min": 0,
+        "min": 127,
         "max": 127
-      }
+      },
+      "discreteValues": [
+        { "value": 127, "name": "Toggle" }
+      ]
     },
     {
       "controlChangeNumber": 31,
       "name": "Mod B Enable",
-      "additionalInfo": "0 = Off, >0 = On",
+      "additionalInfo": "Toggles Mod B on/off",
       "valueRange": {
-        "min": 0,
+        "min": 127,
         "max": 127
-      }
+      },
+      "discreteValues": [
+        { "value": 127, "name": "Toggle" }
+      ]
     },
     {
       "controlChangeNumber": 51,

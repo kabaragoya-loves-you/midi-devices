@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Now We Are Ghosts",
+  "displayName": "Now We Are Ghosts",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Now We Are Ghosts",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 50,
+      "name": "Decay",
+      "additionalInfo": "Decay knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Space",
+      "additionalInfo": "Space knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Blend",
+      "additionalInfo": "Blend knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Level",
+      "additionalInfo": "Level knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Sense",
+      "additionalInfo": "Sense knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Rate",
+      "additionalInfo": "Rate knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Noise",
+      "additionalInfo": "Noise knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Dirt",
+      "additionalInfo": "Dirt knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Freq",
+      "additionalInfo": "Freq knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Reso",
+      "additionalInfo": "Reso knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 60,
+      "name": "Swell",
+      "additionalInfo": "3-position switch: 0=Down, 63=Middle, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Dir",
+      "additionalInfo": "3-position switch: 0=Down, 63=Middle, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Type",
+      "additionalInfo": "3-position switch: 0=Down, 63=Middle, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Warble",
+      "additionalInfo": "3-position switch: 0=Down, 63=Middle, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Filter",
+      "additionalInfo": "3-position switch: 0=Down, 63=Middle, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Trails",
+      "additionalInfo": "3-position switch: 0=Down, 63=Middle, 127=Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Down" },
+          { "value": 63, "name": "Middle" },
+          { "value": 127, "name": "Up" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "additionalInfo": "Any value > 0 triggers tap tempo (works when Dir = LFO only)",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "additionalInfo": "Expression pedal position (0=heel, 127=toe)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0=bypass, 127=engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "Engage" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

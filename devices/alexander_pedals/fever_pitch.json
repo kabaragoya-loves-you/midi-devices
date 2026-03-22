@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Fever Pitch",
+  "displayName": "Fever Pitch",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Fever Pitch",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    { "controlChangeNumber": 49, "name": "Mode Select", "additionalInfo": "0=REV, 127=DLY", "valueRange": { "min": 0, "max": 127, "discreteValues": [ { "value": 0, "name": "REV" }, { "value": 127, "name": "DLY" } ] } },
+
+    { "controlChangeNumber": 50, "name": "LVLA", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 51, "name": "LVLB", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 52, "name": "LVLC", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 53, "name": "LVLD", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 54, "name": "TUNA", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 55, "name": "TUNB", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 56, "name": "TUNC", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 57, "name": "TUND", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 58, "name": "PANA", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 59, "name": "PANB", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 60, "name": "PANC", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 61, "name": "PAND", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 62, "name": "Reverb (DLY RPT)", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 63, "name": "Predelay (DLY TIME)", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 64, "name": "RVB Tone (DLY PAN)", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 65, "name": "RVB Mix (DLY MIX)", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 66, "name": "Trem Rate", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 67, "name": "Trem Depth", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 68, "name": "Chorus Rate", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 69, "name": "Chorus Depth", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 70, "name": "Volume", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 71, "name": "Tone", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 72, "name": "Ramp Rate", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 73,
+      "name": "Ramp Trigger Mode",
+      "additionalInfo": "0=MOM, 44=TOGG, 88=REPT",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "MOM" },
+          { "value": 44, "name": "TOGG" },
+          { "value": 88, "name": "REPT" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 74, "name": "DRY", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 75, "name": "SCAL", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 76, "name": "Dry Pan", "valueRange": { "min": 0, "max": 127 } },
+
+    { "controlChangeNumber": 77, "name": "Delay Subdivision", "additionalInfo": "Manual lists CC only (no value table provided).", "valueRange": { "min": 0, "max": 127 } },
+
+    {
+      "controlChangeNumber": 78,
+      "name": "Trem Mode",
+      "additionalInfo": "0=TREM, 32=PAN, 64=TR+D, 96=PN+D",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "TREM" },
+          { "value": 32, "name": "PAN" },
+          { "value": 64, "name": "TR+D" },
+          { "value": 96, "name": "PN+D" }
+        ]
+      }
+    },
+
+    { "controlChangeNumber": 79, "name": "Detune", "additionalInfo": "0=OFF, 127=ON", "valueRange": { "min": 0, "max": 127, "discreteValues": [ { "value": 0, "name": "OFF" }, { "value": 127, "name": "ON" } ] } },
+
+    { "controlChangeNumber": 93, "name": "Tap Tempo", "additionalInfo": "ANY", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 97, "name": "Ramp Trigger", "additionalInfo": "ANY", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 100, "name": "Expression Pedal", "additionalInfo": "0=HEEL, 127=TOE", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 102, "name": "Bypass", "additionalInfo": "0=BYP, 127=ON", "valueRange": { "min": 0, "max": 127, "discreteValues": [ { "value": 0, "name": "Bypass" }, { "value": 127, "name": "On" } ] } }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

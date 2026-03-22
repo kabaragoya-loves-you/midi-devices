@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Defender Neo",
+  "displayName": "Defender Neo",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Defender Neo",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 97,
+      "name": "Warp",
+      "additionalInfo": "Send any value to trigger Warp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "additionalInfo": "0 = Heel down, 127 = Toe down",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0–63 = Bypass, 64–127 = Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 64, "name": "Engage" }
+        ]
+      }
+    },
+    { "controlChangeNumber": 50, "name": "Mass", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 51, "name": "Level", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 52, "name": "Drive", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 53, "name": "Light", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 54, "name": "Tweak", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 56, "name": "Warp Speed", "valueRange": { "min": 0, "max": 127 } },
+    { "controlChangeNumber": 57, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 59,
+      "name": "Mode Select",
+      "additionalInfo": "Values 0–8 = Effect mode combinations",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "OD + PIT" },
+          { "value": 1, "name": "DST + PIT" },
+          { "value": 2, "name": "FZ + PIT" },
+          { "value": 3, "name": "OD + SPC" },
+          { "value": 4, "name": "DST + SPC" },
+          { "value": 5, "name": "FZ + SPC" },
+          { "value": 6, "name": "OD + FLT" },
+          { "value": 7, "name": "DST + SPC" },
+          { "value": 8, "name": "FX + FLT" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

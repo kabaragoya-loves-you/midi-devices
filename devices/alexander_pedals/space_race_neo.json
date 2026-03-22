@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Space Race Neo",
+  "displayName": "Space Race Neo",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Space Race Neo",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 97,
+      "name": "Ramp",
+      "additionalInfo": "Send any value to trigger the ramp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "additionalInfo": "Value 0 = Heel down, Value 127 = Toe down",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "Value 0-63 = Bypass, Value 64-127 = Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 64, "name": "Engage" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 50,
+      "name": "Tweak",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Reverb",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Space",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Mix",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "n/a",
+      "additionalInfo": "Listed as n/a in manual",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "n/a",
+      "additionalInfo": "Listed as n/a in manual",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Clock",
+      "additionalInfo": "Requires firmware v1.04a or higher; mapped as a pedal knob CC",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Level",
+      "additionalInfo": "Pedal knob (0 = CCW, 127 = CW)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 59,
+      "name": "Mode Select",
+      "additionalInfo": "Accepts values 0-5 to select modes 1-6",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "MOD" },
+          { "value": 1, "name": "SHIM" },
+          { "value": 2, "name": "LOFI" },
+          { "value": 3, "name": "PLATE" },
+          { "value": 4, "name": "SPRING" },
+          { "value": 5, "name": "ANALOG" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

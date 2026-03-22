@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Sugarcube",
+  "displayName": "Sugarcube",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Sugarcube",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 50,
+      "name": "Tweak",
+      "additionalInfo": "Value 0=CCW, 127=CW",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Rate",
+      "additionalInfo": "Value 0=CCW, 127=CW",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Depth",
+      "additionalInfo": "Value 0=CCW, 127=CW",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Mix",
+      "additionalInfo": "Value 0=CCW, 127=CW",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Clock",
+      "additionalInfo": "Value 0=CCW, 127=CW",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Stereo Mode",
+      "additionalInfo": "0-63=Mono, 64-127=Stereo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Mono (0-63)" },
+          { "value": 64, "name": "Stereo (64-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Ramp Rate",
+      "additionalInfo": "Value 0=CCW, 127=CW",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Level",
+      "additionalInfo": "Value 0=CCW, 127=CW",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Mode Select",
+      "additionalInfo": "0=CHO (Chorus), 1=DIM (Dimension), 2=ROT (Rotary), 3=ICE (Ice)",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "value": 0, "name": "CHO (Chorus)" },
+          { "value": 1, "name": "DIM (Dimension)" },
+          { "value": 2, "name": "ROT (Rotary)" },
+          { "value": 3, "name": "ICE (Ice)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Ramp",
+      "additionalInfo": "Send any value to trigger the ramp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "additionalInfo": "0=Heel down, 127=Toe down",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0-63=Bypass, 64-127=Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (0-63)" },
+          { "value": 64, "name": "Engage (64-127)" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Oblivion",
+  "displayName": "Oblivion",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Oblivion",
+    "version": "1.02"
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "additionalInfo": "Any value",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0-63 = Bypass, 65-127 = Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass (0-63)" },
+          { "value": 65, "name": "Engage (65-127)" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Delay Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Repeat",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 120,
+      "name": "Modulation Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 121,
+      "name": "Modulation Depth / Multi Pattern",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 122,
+      "name": "Direct Save Preset",
+      "additionalInfo": "0-127 = preset slot",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 123,
+      "name": "Boost Level",
+      "additionalInfo": "0-13",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "LFO Wave",
+      "additionalInfo": "0=Sine, 1=Square, 2=Ramp A, 3=Ramp B, 4=Random",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Sine" },
+          { "value": 1, "name": "Square" },
+          { "value": 2, "name": "Ramp A" },
+          { "value": 3, "name": "Ramp B" },
+          { "value": 4, "name": "Random" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 126,
+      "name": "Subdivision",
+      "additionalInfo": "0=Quarter, 1=Dotted Eighth, 2=Triplet",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Quarter" },
+          { "value": 1, "name": "Dotted Eighth" },
+          { "value": 2, "name": "Triplet" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 127,
+      "name": "Delay Machine",
+      "additionalInfo": "0=Analog, 1=Tape, 2=Oil Can, 3=Multi",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Analog" },
+          { "value": 1, "name": "Tape" },
+          { "value": 2, "name": "Oil Can" },
+          { "value": 3, "name": "Multi" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

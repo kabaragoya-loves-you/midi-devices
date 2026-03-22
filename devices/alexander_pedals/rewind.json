@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Alexander Pedals Rewind",
+  "displayName": "Rewind",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Alexander Pedals",
+    "model": "Rewind",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 50,
+      "name": "Knob 0 (PG1 upper L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Knob 1 (PG1 upper R)",
+      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Knob 2 (PG1 lower L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 54,
+      "name": "Knob 4 (PG2 upper L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Knob 5 (PG2 upper R)",
+      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Knob 6 (PG2 lower L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Knob 7 (PG2 lower R)",
+      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 58,
+      "name": "Knob 8 (PG3 upper L)",
+      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 59,
+      "name": "Ramp Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Level",
+      "additionalInfo": "Overall volume for the pedal (wet + dry).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Ramp Trigger Mode",
+      "additionalInfo": "0-50=TOGG, 51-110=MOM, 111-127=CLR",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "TOGG (0-50)" },
+          { "value": 51, "name": "MOM (51-110)" },
+          { "value": 111, "name": "CLR (111-127)" }
+        ]
+      }
+    },
+
+    {
+      "controlChangeNumber": 53,
+      "name": "Sound Mode",
+      "additionalInfo": "0-12=TAPE, 13-25=ANALOG, 26-37=DIGITAL, 38-50=PITCH, 51-63=DUAL, 64-75=DIFFUSE, 76-88=REVERSE, 89-101=DYNAMIC, 102-113=FILTER, 114-127=LO-FI",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "additionalInfo": "Any value triggers tap",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Ramp Trigger",
+      "additionalInfo": "Any value triggers ramp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "additionalInfo": "0=Heel, 127=Toe",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "0=Bypass, 127=On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

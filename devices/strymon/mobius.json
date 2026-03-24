@@ -1,0 +1,758 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Strymon Mobius",
+  "displayName": "Mobius",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "Mobius",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 9,
+      "name": "Param 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Param 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Machine Type",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          {
+            "name": "Chorus",
+            "value": 0
+          },
+          {
+            "name": "Flanger",
+            "value": 1
+          },
+          {
+            "name": "Rotary",
+            "value": 2
+          },
+          {
+            "name": "Vibe",
+            "value": 3
+          },
+          {
+            "name": "Phaser",
+            "value": 4
+          },
+          {
+            "name": "Filter",
+            "value": 5
+          },
+          {
+            "name": "Formant",
+            "value": 6
+          },
+          {
+            "name": "Vintage Trem",
+            "value": 7
+          },
+          {
+            "name": "Pattern Trem",
+            "value": 8
+          },
+          {
+            "name": "Autoswell",
+            "value": 9
+          },
+          {
+            "name": "Destroyer",
+            "value": 10
+          },
+          {
+            "name": "Quadrature",
+            "value": 11
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Tap Division",
+      "valueRange": {
+        "min": 0,
+        "max": 6
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Pre/Post",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Pre",
+            "value": 0
+          },
+          {
+            "name": "Post",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "FLANGER - Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "FLANGER - Regen",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "FLANGER - Manual",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "CHORUS - Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "CHORUS - Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "CHORUS - Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "VINTAGE TREM - Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "VINTAGE TREM - Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Mono",
+            "value": 0
+          },
+          {
+            "name": "Stereo",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "ROTARY - Horn Level",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "ROTARY - Preamp Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "ROTARY - Slow Rotor Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "ROTARY - Acceleration",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Tap Switch Tap/Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 0
+          },
+          {
+            "name": "Speed",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "VIBE - Waveshape",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "VIBE - Low End",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "VIBE - Headroom",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "VIBE - Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Vibe",
+            "value": 0
+          },
+          {
+            "name": "Chorus",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "PHASER - Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 6
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "PHASER - Regen",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "PHASER - Waveshape",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "PHASER - Stereo Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "FILTER - Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "FILTER - Waveshape",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "FILTER - Resonance",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "FILTER - Dry Level",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "FILTER - Frequency Middle",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "QUADRATURE - Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "QUADRATURE - Shift 1",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "QUADRATURE - Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "QUADRATURE - LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 6
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "AUTOSWELL - Rise Time",
+      "valueRange": {
+        "min": 0,
+        "max": 22
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "AUTOSWELL - Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "DESTROYER - Bit Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Expression Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "DESTROYER - Sample Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "DESTROYER - Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "DESTROYER - Vinyl",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "DESTROYER - Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "FORMANT - Vowel 1",
+      "valueRange": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "FORMANT - Vowel 2",
+      "valueRange": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "FORMANT - LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 6
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "PHASER - Headroom",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "FILTER - Stereo Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "MIDI Clock Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "A Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Down",
+            "value": 0
+          },
+          {
+            "name": "Up",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "TAP Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "B Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Down",
+            "value": 0
+          },
+          {
+            "name": "Up",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote TAP",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "PATTERN TREM - Beat 1",
+      "valueRange": {
+        "min": 0,
+        "max": 17
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "PATTERN TREM - Beat 2",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "PATTERN TREM - Beat 3",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "PATTERN TREM - Beat 4",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "PATTERN TREM - Beat 5",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "PATTERN TREM - Beat 6",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "PATTERN TREM - Beat 7",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "PATTERN TREM - Beat 8",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "PATTERN TREM - Waveshape",
+      "valueRange": {
+        "min": 0,
+        "max": 6
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "PATTERN TREM - Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Mono",
+            "value": 0
+          },
+          {
+            "name": "Stereo",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "FORMANT - Stereo Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Phase Reset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Reset",
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 200,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiChannel": 1,
+  "x_midiTrsType": "TYPE_B"
+}

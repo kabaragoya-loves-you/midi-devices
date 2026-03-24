@@ -1,12 +1,12 @@
 {
-  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Hologram Microcosm",
   "displayName": "Microcosm",
   "device": {
+    "displayName": "",
     "manufacturer": "Hologram Electronics",
     "model": "Microcosm",
-    "displayName": "Hologram Microcosm",
     "version": "1.0.0"
   },
   "receives": [
@@ -678,6 +678,6 @@
     "count": 60,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_A",
+  "x_midiTrs": "TYPE_B",
   "x_midiChannel": 1
 }

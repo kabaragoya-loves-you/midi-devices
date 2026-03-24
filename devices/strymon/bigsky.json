@@ -666,5 +666,5 @@
     "bankSelectMode": "CC0"
   },
   "x_midiChannel": 1,
-  "x_midiTrsType": "BOTH"
+  "x_midiTrsType": "TYPE_B"
 }

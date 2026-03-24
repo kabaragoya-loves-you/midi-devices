@@ -328,12 +328,6 @@
     "count": 16,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "BOTH",
-  "x_midiChannel": 1,
-  "x_midiNoteIn": {
-    "supportsNoteOnOff": true,
-    "additionalInfo": "Note On is used only for Waveshapers 6, 7, 8 and Pitch Shifter modes.",
-    "supportsPitchBend": false,
-    "supportsModWheel": false
-  }
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
 }

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "BOSS DD-500",
+  "displayName": "DD-500",
+  "device": {
+    "displayName": "",
+    "manufacturer": "BOSS",
+    "model": "DD-500",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 16,
+      "name": "EXP Pedal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "E. Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Delay On/Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Delay On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Phrase Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Record/Overdub",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Loop Playback",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Stop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Clear",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "CTL 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "CTL 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "A Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "B Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "TAP/CTL Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 297,
+    "bankSelectMode": "CC0_CC32"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

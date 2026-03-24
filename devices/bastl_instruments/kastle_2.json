@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Bastl Kastle 2",
+  "displayName": "Kastle 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Bastl Instruments",
+    "model": "Kastle 2",
+    "version": ""
+  },
+  "receives": [
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "FX Mode",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Output Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Input Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Time Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Feedback Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Amount",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Amount Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Filter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Stereo",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "LFO",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "LFO Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Tempo",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Rhythm",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "FX Mode Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 121,
+      "name": "Reset All Controllers",
+      "additionalInfo": "Returns all parameters to knob control",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Reset",
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

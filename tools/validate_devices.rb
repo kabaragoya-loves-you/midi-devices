@@ -6,10 +6,13 @@
 #   ruby tools/validate_devices.rb [--root PATH] [--fix]
 #
 # Validates:
-#   - Required fields: receives, transmits
+#   - Required fields: schemaVersion, implementationVersion, title, displayName, receives, transmits
+#   - schemaVersion must be "0.1.1"
+#   - device object must contain displayName, manufacturer, model, version
 #   - Correct key names (controlChangeCommands, not "controls" or "controlChangeMessages")
 #   - Valid CC entry structure
 #   - x_pc custom extension format
+#   - x_midiTrs values (TYPE_A, TYPE_B, TYPE_TS, BOTH)
 #   - receives/transmits values match MIDI RTC JSON schema
 #
 # With --fix:
@@ -41,7 +44,12 @@ CC_KEY_ALIASES = %w[controls controlChangeMessages].freeze
 CORRECT_CC_KEY = "controlChangeCommands"
 
 # Required top-level fields
-REQUIRED_FIELDS = %w[receives transmits].freeze
+REQUIRED_FIELDS = %w[schemaVersion implementationVersion title displayName receives transmits].freeze
+
+EXPECTED_SCHEMA_VERSION = "0.1.1"
+
+# Required fields within the device sub-object
+REQUIRED_DEVICE_FIELDS = %w[displayName manufacturer model version].freeze
 
 # Valid values for receives/transmits (from MIDI RTC JSON schema)
 VALID_MESSAGE_TYPES = %w[
@@ -71,6 +79,9 @@ MESSAGE_TYPE_REPLACEMENTS = {
   "AFTERTOUCH" => "CHANNEL_PRESSURE"
 }.freeze
 
+# Valid values for x_midiTrs extension
+VALID_TRS_TYPES = %w[TYPE_A TYPE_B TYPE_TS BOTH].freeze
+
 class DeviceValidator
   attr_reader :path, :json, :errors, :warnings, :fixed
 
@@ -92,9 +103,12 @@ class DeviceValidator
     end
 
     validate_required_fields
+    validate_metadata
+    validate_device_object
     validate_cc_key_name
     validate_cc_entries
     validate_x_pc
+    validate_x_midi_trs
     validate_receives_transmits_values
 
     @errors.empty?
@@ -168,6 +182,32 @@ class DeviceValidator
     REQUIRED_FIELDS.each do |field|
       unless @json.key?(field)
         @errors << "Missing required field: #{field}"
+      end
+    end
+  end
+
+  def validate_metadata
+    version = @json["schemaVersion"]
+    if version && version != EXPECTED_SCHEMA_VERSION
+      @errors << "schemaVersion is '#{version}', expected '#{EXPECTED_SCHEMA_VERSION}'"
+    end
+  end
+
+  def validate_device_object
+    device = @json["device"]
+    unless device
+      @errors << "Missing required field: device"
+      return
+    end
+
+    unless device.is_a?(Hash)
+      @errors << "device must be an object"
+      return
+    end
+
+    REQUIRED_DEVICE_FIELDS.each do |field|
+      unless device.key?(field)
+        @errors << "device: missing required field '#{field}'"
       end
     end
   end
@@ -250,6 +290,15 @@ class DeviceValidator
       unless valid_bank
         @errors << "x_pc: invalid bankSelect value '#{x_pc["bankSelect"]}'"
       end
+    end
+  end
+
+  def validate_x_midi_trs
+    trs = @json["x_midiTrs"]
+    return unless trs
+
+    unless VALID_TRS_TYPES.include?(trs)
+      @errors << "x_midiTrs: invalid value '#{trs}' (must be one of: #{VALID_TRS_TYPES.join(', ')})"
     end
   end
 

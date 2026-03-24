@@ -1,10 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Kinotone Sparks",
   "displayName": "Sparks",
   "device": {
+    "displayName": "",
     "manufacturer": "Kinotone",
-    "model": "Sparks"
+    "model": "Sparks",
+    "version": ""
   },
   "receives": [
     "PROGRAM_CHANGE",

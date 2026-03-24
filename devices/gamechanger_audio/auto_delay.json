@@ -1,10 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Gamechanger Audio Auto Delay",
   "displayName": "Auto Delay",
   "device": {
+    "displayName": "",
     "manufacturer": "Gamechanger Audio",
-    "model": "Auto Delay"
+    "model": "Auto Delay",
+    "version": ""
   },
   "receives": [
     "CLOCK"
@@ -387,6 +390,6 @@
     "count": 0,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_B",
+  "x_midiTrs": "TYPE_A",
   "x_midiChannel": 1
 }

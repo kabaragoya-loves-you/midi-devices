@@ -1,13 +1,17 @@
 {
-  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Gamechanger Audio Motor Pedal",
   "displayName": "Motor Pedal",
   "device": {
+    "displayName": "",
     "manufacturer": "Gamechanger Audio",
-    "model": "Motor Pedal"
+    "model": "Motor Pedal",
+    "version": ""
   },
   "receives": [
-    "PROGRAM_CHANGE"
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER"
   ],
   "transmits": [],
   "controlChangeCommands": [
@@ -233,13 +237,6 @@
     "count": 15,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_A",
-  "x_midiChannel": 1,
-  "x_midiNoteIn": {
-    "supportsNoteOnOff": true,
-    "modesWithNoteControl": [],
-    "modesWithoutNoteControl": [],
-    "supportsPitchBend": false,
-    "supportsModWheel": true
-  }
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
 }

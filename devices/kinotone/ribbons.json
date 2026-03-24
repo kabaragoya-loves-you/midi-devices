@@ -1,10 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json",
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Kinotone Ribbons",
   "displayName": "Ribbons",
   "device": {
+    "displayName": "",
     "manufacturer": "Kinotone",
-    "model": "Ribbons"
+    "model": "Ribbons",
+    "version": ""
   },
   "receives": [
     "PROGRAM_CHANGE",
@@ -561,12 +564,5 @@
     "bankSelectMode": "none"
   },
   "x_midiTrs": "TYPE_A",
-  "x_midiChannel": 1,
-  "x_midiNoteIn": {
-    "supportsNoteOnOff": true,
-    "modesWithNoteControl": [],
-    "modesWithoutNoteControl": [],
-    "supportsPitchBend": true,
-    "supportsModWheel": false
-  }
+  "x_midiChannel": 1
 }

@@ -181,6 +181,6 @@
     "count": 16,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_B",
+  "x_midiTrs": "TYPE_TS",
   "x_midiChannel": 1
 }

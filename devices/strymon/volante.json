@@ -1,0 +1,739 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Strymon Volante",
+  "displayName": "Volante",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "Volante",
+    "version": "1.0"
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 11,
+      "name": "Type",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "Studio",
+            "value": 1
+          },
+          {
+            "name": "Drum",
+            "value": 2
+          },
+          {
+            "name": "Tape",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Echo Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Rec Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mechanics",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Wear",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Low Cut",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Spacing",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Speed",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "Double",
+            "value": 1
+          },
+          {
+            "name": "Half",
+            "value": 2
+          },
+          {
+            "name": "Normal",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Head 1 Playback Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Head 2 Playback Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Head 3 Playback Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Head 4 Playback Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Head 1 Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Head 2 Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Head 3 Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Head 4 Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Head 1 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Head 2 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Head 3 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Head 4 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Head 1 Feedback Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Head 2 Feedback Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Head 3 Feedback Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Head 4 Feedback Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Pause Ramp Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Spring Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Spring Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "SOS Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "SOS",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Pause (No Ramp)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Unpause",
+            "value": 0
+          },
+          {
+            "name": "Pause",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Pause (Ramp)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Unpause",
+            "value": 0
+          },
+          {
+            "name": "Pause",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Reverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "Reverse",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Infinite Hold (w/ Oscillation)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Hold",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Infinite Hold (w/o Oscillation)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Hold",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "SOS Repeats Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "SOS Loop Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "SOS Record/Splice/Clear",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Exit SOS Looper",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Exit",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "MIDI Expression Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "MIDI Clock Off/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Echo On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Reverb On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Footswitch On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Footswitch Favorite",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Footswitch Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Persist",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Kill Dry",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Dry On",
+            "value": 0
+          },
+          {
+            "name": "Dry Off",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Output Sum",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Stereo",
+            "value": 0
+          },
+          {
+            "name": "Sum",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass/On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

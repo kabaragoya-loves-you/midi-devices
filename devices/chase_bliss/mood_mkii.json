@@ -7,7 +7,7 @@
     "displayName": "",
     "manufacturer": "Chase Bliss",
     "model": "Mood MkII",
-    "version": "1.0"
+    "version": ""
   },
   "receives": [
     "PROGRAM_CHANGE",
@@ -17,31 +17,32 @@
   "transmits": [],
   "controlChangeCommands": [
     {
-      "controlChangeNumber": 16,
-      "name": "Clock Division",
+      "controlChangeNumber": 1,
+      "name": "Mod Wheel",
+      "additionalInfo": "Synth mode modulation",
       "valueRange": {
         "min": 0,
         "max": 127
       }
     },
     {
-      "controlChangeNumber": 17,
-      "name": "Length",
+      "controlChangeNumber": 14,
+      "name": "Time",
       "valueRange": {
         "min": 0,
-        "max": 127
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "1/32 Note" },
+          { "value": 13, "name": "1/16 Note" },
+          { "value": 37, "name": "1/8 Triplet" },
+          { "value": 62, "name": "1/8 Note" },
+          { "value": 85, "name": "Dotted 1/8" },
+          { "value": 111, "name": "1/4 Note" }
+        ]
       }
     },
     {
-      "controlChangeNumber": 18,
-      "name": "Modify",
-      "valueRange": {
-        "min": 0,
-        "max": 127
-      }
-    },
-    {
-      "controlChangeNumber": 19,
+      "controlChangeNumber": 15,
       "name": "Mix",
       "valueRange": {
         "min": 0,
@@ -49,8 +50,80 @@
       }
     },
     {
+      "controlChangeNumber": 16,
+      "name": "Length",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "x 1/32" },
+          { "value": 13, "name": "x 1/16" },
+          { "value": 37, "name": "x 1/8" },
+          { "value": 62, "name": "x 1/4" },
+          { "value": 85, "name": "x 1/2" },
+          { "value": 111, "name": "x 1" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Modify (Wet)",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "2k" },
+          { "value": 5, "name": "3k" },
+          { "value": 16, "name": "4k" },
+          { "value": 29, "name": "6k" },
+          { "value": 41, "name": "8k" },
+          { "value": 54, "name": "12k" },
+          { "value": 70, "name": "16k" },
+          { "value": 84, "name": "24k" },
+          { "value": 96, "name": "32k" },
+          { "value": 110, "name": "48k" },
+          { "value": 122, "name": "64k" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Tape/Stretch Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Tape 4x Rev" },
+          { "value": 5, "name": "Tape 2x Rev" },
+          { "value": 24, "name": "Tape 1x Rev" },
+          { "value": 43, "name": "Tape .5x Rev" },
+          { "value": 62, "name": "Tape .5x Fwd" },
+          { "value": 85, "name": "Tape 1x Fwd" },
+          { "value": 98, "name": "Tape 2x Fwd" },
+          { "value": 120, "name": "Tape 4x Fwd" },
+          { "value": 1, "name": "Str No Rev" },
+          { "value": 16, "name": "Str 1.5x Rev" },
+          { "value": 31, "name": "Str 2x Rev" },
+          { "value": 47, "name": "Str 4x Rev" },
+          { "value": 61, "name": "Str Stalled" },
+          { "value": 81, "name": "Str 4x Fwd" },
+          { "value": 97, "name": "Str 2x Fwd" },
+          { "value": 112, "name": "Str 1.5x Fwd" },
+          { "value": 127, "name": "Str No Fwd" }
+        ]
+      }
+    },
+    {
       "controlChangeNumber": 20,
-      "name": "Time",
+      "name": "Ramp Speed",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -58,121 +131,594 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Wet FX Select",
-      "additionalInfo": "Selects wet side effect type",
+      "name": "Wet Channel",
       "valueRange": {
         "min": 0,
-        "max": 127,
+        "max": 3,
         "discreteValues": [
-          {
-            "name": "Delay",
-            "value": 0
-          },
-          {
-            "name": "Slip",
-            "value": 25
-          },
-          {
-            "name": "Envelope",
-            "value": 51
-          },
-          {
-            "name": "Sample & Hold",
-            "value": 76
-          },
-          {
-            "name": "Chord",
-            "value": 102
-          },
-          {
-            "name": "Tremolo",
-            "value": 127
-          }
+          { "value": 0, "name": "Reverb" },
+          { "value": 2, "name": "Delay" },
+          { "value": 3, "name": "Slip" }
         ]
       }
     },
     {
       "controlChangeNumber": 22,
-      "name": "Dry FX Select",
-      "additionalInfo": "Selects dry side effect type",
+      "name": "Routing",
       "valueRange": {
         "min": 0,
-        "max": 127,
+        "max": 3,
         "discreteValues": [
-          {
-            "name": "Stretch",
-            "value": 0
-          },
-          {
-            "name": "Blur",
-            "value": 25
-          },
-          {
-            "name": "Filter",
-            "value": 51
-          },
-          {
-            "name": "Freq Shift",
-            "value": 76
-          },
-          {
-            "name": "Pitch Shift",
-            "value": 102
-          },
-          {
-            "name": "Reverb",
-            "value": 127
-          }
+          { "value": 0, "name": "IN" },
+          { "value": 2, "name": "Loop + IN" },
+          { "value": 3, "name": "Loop" }
         ]
       }
     },
     {
       "controlChangeNumber": 23,
-      "name": "Channel Routing",
+      "name": "Micro-Looper",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "value": 0, "name": "Env" },
+          { "value": 2, "name": "Tape" },
+          { "value": 3, "name": "Stretch" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Stereo Width (Wet)",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Ramping Waveform",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          {
-            "name": "Stereo",
-            "value": 0
-          },
-          {
-            "name": "Wet L/Dry R",
-            "value": 64
-          },
-          {
-            "name": "Dry L/Wet R",
-            "value": 127
-          }
+          { "value": 0, "name": "Sine" },
+          { "value": 15, "name": "Triangle" },
+          { "value": 55, "name": "Wave" },
+          { "value": 81, "name": "Square" },
+          { "value": 127, "name": "Constant" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Fade (Loop)",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Tone (Wet)",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Level Balance",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Direct Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "value": 0, "name": "Loop > Wet" },
+          { "value": 2, "name": "No Sync" },
+          { "value": 3, "name": "Wet > Loop" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "value": 0, "name": "Wet Only" },
+          { "value": 2, "name": "Both" },
+          { "value": 3, "name": "Loop Only" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Buffer Length",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Half" },
+          { "value": 2, "name": "Full" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "MIDI Clock Ignore",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Ignore" },
+          { "value": 1, "name": "Follow" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Stop Ramping",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Stop" },
+          { "value": 1, "name": "Resume" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Clock Div (Wet)",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "value": 0, "name": "1/32 Note" },
+          { "value": 1, "name": "1/16 Note" },
+          { "value": 2, "name": "1/8 Triplet" },
+          { "value": 3, "name": "1/8 Note" },
+          { "value": 4, "name": "Dotted 1/8" },
+          { "value": 5, "name": "1/4 Note" },
+          { "value": 6, "name": "Half Note" },
+          { "value": 7, "name": "Whole Note" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Clock Div (Loop)",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "value": 0, "name": "1/32 Note" },
+          { "value": 1, "name": "1/16 Note" },
+          { "value": 2, "name": "1/8 Triplet" },
+          { "value": 3, "name": "1/8 Note" },
+          { "value": 4, "name": "Dotted 1/8" },
+          { "value": 5, "name": "1/4 Note" },
+          { "value": 6, "name": "Half Note" },
+          { "value": 7, "name": "Whole Note" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "True Bypass Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Buffered" },
+          { "value": 1, "name": "True Bypass" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Factory Reset",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Octave Transpose",
+      "additionalInfo": "Synth mode octave shift",
+      "valueRange": {
+        "min": 1,
+        "max": 9,
+        "discreteValues": [
+          { "value": 1, "name": "+12 Semi" },
+          { "value": 2, "name": "+24 Semi" },
+          { "value": 3, "name": "+36 Semi" },
+          { "value": 4, "name": "+48 Semi" },
+          { "value": 5, "name": "+60 Semi" },
+          { "value": 6, "name": "+72 Semi" },
+          { "value": 7, "name": "+84 Semi" },
+          { "value": 8, "name": "+96 Semi" },
+          { "value": 9, "name": "+108 Semi" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Output Type",
+      "additionalInfo": "Synth mode output behavior",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Open" },
+          { "value": 1, "name": "On/Off" },
+          { "value": 2, "name": "ADSR" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Exit Synth Mode",
+      "valueRange": {
+        "min": 1,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Exit Synth" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Dip: Time",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Dip: Modify (Wet)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Dip: Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Dip: Modify (Loop)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Dip: Length",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Dip: Bounce",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Dip: Sweep",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "B" },
+          { "value": 1, "name": "T" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Dip: Polarity",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "F" },
+          { "value": 1, "name": "R" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Dip: Classic",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Dip: Miso",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Dip: Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Dip: Dry Kill",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Dip: Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Dip: Latch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Dip: No Dub",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Dip: Smooth",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
         ]
       }
     },
     {
       "controlChangeNumber": 80,
-      "name": "Bypass",
+      "name": "Attack",
+      "additionalInfo": "Synth mode ADSR",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": [
-          {
-            "name": "Bypass",
-            "value": 0
-          },
-          {
-            "name": "Engage",
-            "value": 127
-          }
-        ]
+        "max": 127
       }
     },
     {
       "controlChangeNumber": 81,
-      "name": "Tap Tempo",
-      "additionalInfo": "Send 127 to tap tempo",
+      "name": "Decay",
+      "additionalInfo": "Synth mode ADSR",
       "valueRange": {
         "min": 0,
         "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Sustain",
+      "additionalInfo": "Synth mode ADSR",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Release",
+      "additionalInfo": "Synth mode ADSR",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Portamento",
+      "additionalInfo": "Synth mode glide",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass (Loop)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Bypass (Wet)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Hidden Menu",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Freeze (Wet)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Overdub (Loop)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 1,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Tap" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "MIDI Reset",
+      "valueRange": {
+        "min": 1,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Reset" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Preset Save",
+      "valueRange": {
+        "min": 0,
+        "max": 122
       }
     }
   ],
@@ -182,100 +728,5 @@
     "bankSelectMode": "none"
   },
   "x_midiTrs": "TYPE_B",
-  "x_midiChannel": 2,
-  "x_midiNoteIn": {
-    "supportsNoteOnOff": true,
-    "supportsVelocity": true,
-    "supportsPitchBend": true,
-    "supportsModWheel": true,
-    "entryMode": "auto",
-    "exitMode": "knobMove(CLOCK)",
-    "outputTypes": [
-      {
-        "id": "open",
-        "cc": 58,
-        "value": 0,
-        "description": "Drone (always sounding)"
-      },
-      {
-        "id": "on_off",
-        "cc": 58,
-        "value": 1,
-        "description": "Sound only when a note is held"
-      },
-      {
-        "id": "adsr",
-        "cc": 58,
-        "range": "2-127",
-        "description": "Envelope-controlled attack/decay"
-      }
-    ],
-    "controls": {
-      "attack": {
-        "cc": 80,
-        "range": "0-127"
-      },
-      "decay": {
-        "cc": 81,
-        "range": "0-127"
-      },
-      "sustain": {
-        "cc": 82,
-        "range": "0-127"
-      },
-      "release": {
-        "cc": 83,
-        "range": "0-127"
-      },
-      "octaveTranspose": {
-        "cc": 57,
-        "steps": [
-          {
-            "semitones": 0,
-            "value": 1
-          },
-          {
-            "semitones": 12,
-            "value": 2
-          },
-          {
-            "semitones": 24,
-            "value": 3
-          },
-          {
-            "semitones": 36,
-            "value": 4
-          },
-          {
-            "semitones": 48,
-            "value": 5
-          },
-          {
-            "semitones": 60,
-            "value": 6
-          },
-          {
-            "semitones": 72,
-            "value": 7
-          },
-          {
-            "semitones": 84,
-            "value": 8
-          },
-          {
-            "semitones": 96,
-            "value": 9
-          },
-          {
-            "semitones": 108,
-            "value": 10
-          }
-        ]
-      },
-      "portamento": {
-        "cc": 84,
-        "range": "0-127"
-      }
-    }
-  }
+  "x_midiChannel": 2
 }

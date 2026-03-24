@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Free The Tone Ambi Space AS-1R",
+  "displayName": "Ambi Space AS-1R",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Free The Tone",
+    "model": "Ambi Space AS-1R",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 65,
+      "name": "Effect On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Pre Delay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "Mode",
+      "valueRange": { "min": 1, "max": 6 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

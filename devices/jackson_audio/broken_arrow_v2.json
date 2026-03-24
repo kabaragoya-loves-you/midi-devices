@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Jackson Audio Broken Arrow v2",
+  "displayName": "Broken Arrow v2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Jackson Audio",
+    "model": "Broken Arrow v2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Overdrive On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Boost On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Cycle OD Clipping Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Cycle EQ Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Boost Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Mid",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Mid Frequency Select",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Preset Increment",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Preset Decrement",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

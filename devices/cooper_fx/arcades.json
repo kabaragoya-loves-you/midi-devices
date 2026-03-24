@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Cooper FX Arcades",
+  "displayName": "Arcades",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Cooper FX",
+    "model": "Arcades",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Preset Increment",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Preset Decrement",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Footswitch A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Footswitch B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Footswitch C",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Knob 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Knob 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Knob 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Alt Knob 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Alt Knob 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Alt Knob 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Shift",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

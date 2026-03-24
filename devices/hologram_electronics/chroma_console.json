@@ -1,10 +1,11 @@
 {
-  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/master/schema/schema.json",
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Hologram Electronics Chroma Console",
   "displayName": "Chroma Console",
   "device": {
     "manufacturer": "Hologram Electronics",
-    "family": "Chroma Console",
+    "displayName": "Chroma Console",
     "model": "Chroma Console",
     "version": "1.042"
   },
@@ -570,6 +571,6 @@
     "count": 80,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_A",
+  "x_midiTrs": "TYPE_B",
   "x_midiChannel": 1
 }

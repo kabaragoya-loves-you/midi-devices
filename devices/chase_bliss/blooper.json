@@ -18,73 +18,97 @@
     {
       "controlChangeNumber": 1,
       "name": "Record",
-      "additionalInfo": "0 = off, >0 = on",
       "valueRange": {
         "min": 0,
-        "max": 127
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Disengage" },
+          { "value": 1, "name": "Engage" }
+        ]
       }
     },
     {
       "controlChangeNumber": 2,
       "name": "Play",
-      "additionalInfo": "0 = off, >0 = on",
       "valueRange": {
         "min": 0,
-        "max": 127
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Disengage" },
+          { "value": 1, "name": "Engage" }
+        ]
       }
     },
     {
       "controlChangeNumber": 3,
       "name": "Overdub",
-      "additionalInfo": "0 = off, >0 = on",
       "valueRange": {
         "min": 0,
-        "max": 127
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Disengage" },
+          { "value": 1, "name": "Engage" }
+        ]
       }
     },
     {
       "controlChangeNumber": 4,
       "name": "Stop",
-      "additionalInfo": "0 = off, >0 = on",
       "valueRange": {
         "min": 0,
-        "max": 127
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Disengage" },
+          { "value": 1, "name": "Engage" }
+        ]
       }
     },
     {
       "controlChangeNumber": 5,
       "name": "Undo",
-      "additionalInfo": "0 = off, >0 = on",
       "valueRange": {
         "min": 0,
-        "max": 127
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "Trigger" }
+        ]
       }
     },
     {
       "controlChangeNumber": 6,
       "name": "Redo",
-      "additionalInfo": "0 = off, >0 = on",
       "valueRange": {
         "min": 0,
-        "max": 127
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 1, "name": "Trigger" }
+        ]
       }
     },
     {
       "controlChangeNumber": 7,
       "name": "Erase",
-      "additionalInfo": "0 = off, >0 = on",
       "valueRange": {
         "min": 0,
-        "max": 127
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Disengage" },
+          { "value": 1, "name": "Engage" }
+        ]
       }
     },
     {
       "controlChangeNumber": 8,
       "name": "Hold (Switch B)",
-      "additionalInfo": "0 = off, >0 = on",
       "valueRange": {
         "min": 0,
-        "max": 127
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Released" },
+          { "value": 1, "name": "Held" }
+        ]
       }
     },
     {
@@ -276,11 +300,11 @@
       "additionalInfo": "Toggles Mod A on/off",
       "valueRange": {
         "min": 127,
-        "max": 127
-      },
-      "discreteValues": [
-        { "value": 127, "name": "Toggle" }
-      ]
+        "max": 127,
+        "discreteValues": [
+          { "value": 127, "name": "Toggle" }
+        ]
+      }
     },
     {
       "controlChangeNumber": 31,
@@ -288,11 +312,11 @@
       "additionalInfo": "Toggles Mod B on/off",
       "valueRange": {
         "min": 127,
-        "max": 127
-      },
-      "discreteValues": [
-        { "value": 127, "name": "Toggle" }
-      ]
+        "max": 127,
+        "discreteValues": [
+          { "value": 127, "name": "Toggle" }
+        ]
+      }
     },
     {
       "controlChangeNumber": 51,
@@ -370,6 +394,6 @@
     "count": 16,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_A",
+  "x_midiTrs": "TYPE_B",
   "x_midiChannel": 2
 }

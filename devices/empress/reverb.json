@@ -2,7 +2,7 @@
   "schemaVersion": "0.1.1",
   "implementationVersion": "0",
   "title": "Empress Reverb",
-  "displayName": "Empress Reverb",
+  "displayName": "Reverb",
   "device": {
     "displayName": "",
     "manufacturer": "Empress Effects",
@@ -194,6 +194,6 @@
     "count": 35,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_A",
+  "x_midiTrs": "TYPE_TS",
   "x_midiChannel": 1
 }

@@ -1,9 +1,12 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Empress Echosystem",
+  "displayName": "Echosystem",
   "device": {
     "manufacturer": "Empress Effects",
-    "displayName": "Echosystem",
-    "model": "Echosystem Dual Engine Delay",
+    "displayName": "",
+    "model": "Echosystem",
     "version": "2.42"
   },
   "receives": [
@@ -218,6 +221,6 @@
     "count": 35,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_A",
+  "x_midiTrs": "TYPE_TS",
   "x_midiChannel": 1
 }

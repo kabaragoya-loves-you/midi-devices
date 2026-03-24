@@ -121,6 +121,6 @@
     "count": 32,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "BOTH",
+  "x_midiTrs": "TYPE_TS",
   "x_midiChannel": 1
 }

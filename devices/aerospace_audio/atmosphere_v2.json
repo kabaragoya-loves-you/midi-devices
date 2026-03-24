@@ -330,6 +330,6 @@
     "count": 0,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "BOTH",
+  "x_midiTrs": "TYPE_A",
   "x_midiChannel": 1
 }

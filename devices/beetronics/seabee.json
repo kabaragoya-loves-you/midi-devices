@@ -1,10 +1,13 @@
 {
-  "$schema": "[https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json](https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/main/schema.json)",
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Beetronics SeaBee",
   "displayName": "SeaBee",
   "device": {
     "manufacturer": "Beetronics",
-    "model": "SeaBee"
+    "model": "SeaBee",
+    "displayName": "",
+    "version": ""
   },
   "receives": [
     "PROGRAM_CHANGE",

@@ -10,7 +10,8 @@
     "version": ""
   },
   "receives": [
-    "PROGRAM_CHANGE"
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER"
   ],
   "transmits": [],
   "controlChangeCommands": [

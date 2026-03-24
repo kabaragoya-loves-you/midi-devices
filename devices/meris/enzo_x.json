@@ -884,20 +884,6 @@
     "count": 99,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_A",
-  "x_midiChannel": 1,
-  "x_midiNoteIn": {
-    "supportsNoteOnOff": true,
-    "modesWithNoteControl": [
-      "MONO_SYNTH",
-      "POLY_SYNTH",
-      "ARP_SYNTH"
-    ],
-    "modesWithoutNoteControl": [
-      "DRY_MONO",
-      "DRY_POLY"
-    ],
-    "supportsPitchBend": true,
-    "supportsModWheel": true
-  }
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
 }

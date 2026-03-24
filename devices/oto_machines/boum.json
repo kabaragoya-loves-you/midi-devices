@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "OTO Machines BOUM",
+  "displayName": "BOUM",
+  "device": {
+    "displayName": "",
+    "manufacturer": "OTO Machines",
+    "model": "BOUM",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 12,
+      "name": "Compressor",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Hi Cut",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Active",
+      "additionalInfo": "Bypass control",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "In Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Attack",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Release",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Lo Cut",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Disto",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Gate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Sidechain Control",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 36,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

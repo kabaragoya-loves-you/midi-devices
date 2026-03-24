@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Darkglass Anagram",
+  "displayName": "Anagram",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Darkglass",
+    "model": "Anagram",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 17,
+      "name": "Binding A",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Binding B",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Binding C",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Primary Drive On/Off",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Secondary Drive/Boost On/Off",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Clean Blend Toggle",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Compressor On/Off",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "EQ On/Off",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Cab Sim On/Off",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Noise Gate On/Off",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Scene 1",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Scene 2",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Scene 3",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Scene 4",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Scene 5",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Drive Amount",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Bass EQ",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Mid EQ",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Treble EQ",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Presence/High Shelf",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Compression Amount",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Gate Threshold",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Cab/IR Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Drive Character",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Mid Frequency Shift",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "EQ Tilt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Saturation Type Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Harmonics/Bite",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Low Cut",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "High Cut",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Parallel Chain Balance",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "FX Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "FX Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Global Mute",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Tuner On/Off",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Bypass All Processing",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Output Boost",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Input Sensitivity",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Preset Morph A→B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Preset Morph B→C",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Expression Macro 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Expression Macro 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Mode Select",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Macro 1 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Macro 2 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Macro 3 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Macro 4 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Macro 5 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Macro 6 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "Macro 7 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Macro 8 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 98,
+      "name": "Macro 9 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 99,
+      "name": "Macro 10 Trigger",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Scene Select",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 120,
+      "name": "Snapshot Morph",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 121,
+      "name": "Global FX Toggle",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 122,
+      "name": "Parallel Path Enable",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 123,
+      "name": "Kill Dry",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "Spillover Toggle",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Preset Freeze/Hold",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 126,
+      "name": "Panic/Reset",
+      "valueRange": {
+        "min": 0, "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 127,
+      "name": "Master Macro",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 126,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

@@ -17,28 +17,6 @@
   "transmits": [],
   "controlChangeCommands": [
     {
-      "controlChangeNumber": 0,
-      "name": "Bank Select",
-      "valueRange": {
-        "min": 0,
-        "max": 2,
-        "discreteValues": [
-          {
-            "name": "Bank 0",
-            "value": 0
-          },
-          {
-            "name": "Bank 1",
-            "value": 1
-          },
-          {
-            "name": "Bank 2",
-            "value": 2
-          }
-        ]
-      }
-    },
-    {
       "controlChangeNumber": 11,
       "name": "Mix - Reverb Level",
       "valueRange": {
@@ -844,13 +822,6 @@
     "count": 300,
     "bankSelectMode": "CC0"
   },
-  "x_midiTrs": "TYPE_A",
-  "x_midiChannel": 1,
-  "x_midiNoteIn": {
-    "supportsNoteOnOff": true,
-    "supportsVelocity": false,
-    "supportsPitchBend": false,
-    "supportsModWheel": false,
-    "noteRange": "C-2-C0"
-  }
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
 }

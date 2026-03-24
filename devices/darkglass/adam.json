@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Darkglass ADAM",
+  "displayName": "ADAM",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Darkglass",
+    "model": "ADAM",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 10,
+      "name": "Drive Amount",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Mid",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Footswitch A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Footswitch B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Footswitch C",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Compression Amount",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "IR Slot",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "IR 1", "value": 1 },
+          { "name": "IR 2", "value": 2 },
+          { "name": "IR 3", "value": 3 },
+          { "name": "IR 4", "value": 4 },
+          { "name": "IR 5", "value": 5 },
+          { "name": "IR 6", "value": 6 },
+          { "name": "IR 7", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Cab Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Master Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Engine Mode/Neural Setting",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 9,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

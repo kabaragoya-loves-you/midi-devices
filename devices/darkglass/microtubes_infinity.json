@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Darkglass Microtubes Infinity",
+  "displayName": "Microtubes Infinity",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Darkglass",
+    "model": "Microtubes Infinity",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "FX Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Noise Gate Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Active", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Octaver Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Active", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Compressor Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Active", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Compressor Position",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Pre", "value": 0 },
+          { "name": "Post", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Drive Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Active", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Drive Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Clean", "value": 0 },
+          { "name": "Vintage Microtubes", "value": 1 },
+          { "name": "B3K", "value": 2 },
+          { "name": "Alpha·Omega", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "IR Slot",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "IR 1", "value": 1 },
+          { "name": "IR 2", "value": 2 },
+          { "name": "IR 3", "value": 3 },
+          { "name": "IR 4", "value": 4 },
+          { "name": "IR 5", "value": 5 },
+          { "name": "IR 6", "value": 6 },
+          { "name": "IR 7", "value": 7 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 6,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

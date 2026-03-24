@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Jackson Audio New Wave",
+  "displayName": "New Wave",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Jackson Audio",
+    "model": "New Wave",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Waveform",
+      "valueRange": {
+        "min": 1,
+        "max": 5,
+        "discreteValues": [
+          { "name": "Sine", "value": 1 },
+          { "name": "Triangle", "value": 2 },
+          { "name": "Square", "value": 3 },
+          { "name": "Solina", "value": 4 },
+          { "name": "Triplet Solina", "value": 5 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Phase",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Ratio",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Delay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Speed (Hz)",
+      "additionalInfo": "0=0.2 Hz, 100=10 Hz",
+      "valueRange": { "min": 0, "max": 100 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Ramp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Ramp", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 7,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

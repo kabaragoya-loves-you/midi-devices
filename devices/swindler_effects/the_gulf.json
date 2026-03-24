@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Swindler Effects The Gulf",
+  "displayName": "The Gulf",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Swindler Effects",
+    "model": "The Gulf",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 50,
+      "name": "Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Delay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Division",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "name": "Quarter", "value": 0 },
+          { "name": "Dotted Eighth", "value": 1 },
+          { "name": "Eighth", "value": 2 },
+          { "name": "Triplet", "value": 3 },
+          { "name": "Sixteenth", "value": 4 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Waveform",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Sine", "value": 0 },
+          { "name": "Triangle", "value": 1 },
+          { "name": "Square", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 51,
+    "bankSelectMode": "none"
+  },
+  "x_midiChannel": 1,
+  "x_midiTrsType": "TYPE_A"
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Empress Phaser",
+  "displayName": "Phaser",
+  "device": {
+    "manufacturer": "Empress Effects",
+    "displayName": "",
+    "model": "Phaser",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Speed/Ratio/Sensitivity",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Width/Release",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Waveform/Auto Mode",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Mode",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 },
+          { "name": "Knob", "value": 2 },
+          { "name": "Auto", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Speed Range/Attack",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Slow", "value": 1 },
+          { "name": "Medium", "value": 2 },
+          { "name": "Fast", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Tap Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Bypass Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Direct Control",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Exit Direct Control",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "MIDI Clock Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Ignore Clock", "value": 0 },
+          { "name": "Follow Clock", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_TS",
+  "x_midiChannel": 1
+}

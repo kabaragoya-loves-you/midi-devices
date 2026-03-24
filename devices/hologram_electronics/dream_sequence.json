@@ -1,11 +1,13 @@
 {
-  "$schema": "https://raw.githubusercontent.com/eokuwwy/open-midi-rtc-schema/master/schema/schema.json",
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
   "title": "Hologram Electronics Dream Sequence",
   "displayName": "Dream Sequence",
   "device": {
     "manufacturer": "Hologram Electronics",
-    "family": "Dream Sequence",
-    "model": "Dream Sequence"
+    "displayName": "Dream Sequence",
+    "model": "Dream Sequence",
+    "version": ""
   },
   "receives": [
     "PROGRAM_CHANGE",
@@ -65,6 +67,6 @@
     "count": 35,
     "bankSelectMode": "none"
   },
-  "x_midiTrs": "TYPE_A",
+  "x_midiTrs": "TYPE_B",
   "x_midiChannel": 1
 }

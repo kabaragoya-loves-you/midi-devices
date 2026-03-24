@@ -1,0 +1,177 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Darkglass Alpha Omega Photon",
+  "displayName": "Alpha Omega Photon",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Darkglass",
+    "model": "Alpha Omega Photon",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "FX Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Noise Gate Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Active", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Compressor Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Active", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Distortion Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Active", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Cab Sim Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Active", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Drive Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Alpha", "value": 0 },
+          { "name": "Omega", "value": 1 },
+          { "name": "Blend", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Drive Amount",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Mid",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Compression Amount",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Compression Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Gate Threshold",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "IR Slot",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "IR 1", "value": 1 },
+          { "name": "IR 2", "value": 2 },
+          { "name": "IR 3", "value": 3 },
+          { "name": "IR 4", "value": 4 },
+          { "name": "IR 5", "value": 5 },
+          { "name": "IR 6", "value": 6 },
+          { "name": "IR 7", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Cab Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Master Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Headphone Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 6,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

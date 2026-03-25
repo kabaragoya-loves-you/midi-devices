@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-03-24T22:33:52Z",
+  "generatedAt": "2026-03-25T18:13:14Z",
   "count": 160,
   "devices": [
     {
@@ -1597,7 +1597,7 @@
       "product": "bigsby",
       "version": "0",
       "path": "devices/gamechanger_audio/bigsby.json",
-      "sha256": "23788ee99b8a8d3729430cb8945f4afed330064e7137c9624d428f58971b6f55",
+      "sha256": "80c99927f50ea571d7a02ce19cf89da20c1ee988d2a5c1c7331c64889b8792a2",
       "size": 15922,
       "receives": [
         "PROGRAM_CHANGE",

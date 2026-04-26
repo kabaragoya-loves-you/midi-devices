@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-03-25T18:13:14Z",
-  "count": 160,
+  "generatedAt": "2026-04-26T15:59:47Z",
+  "count": 171,
   "devices": [
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
@@ -1489,9 +1489,12 @@
       "product": "nightverb",
       "version": "0",
       "path": "devices/erica_synths/nightverb.json",
-      "sha256": "b4102e599ed4ac1ca770217f81e7ffb3bb05d3da57fbc7cb5329392501e2d95a",
-      "size": 2788,
-      "receives": ["PROGRAM_CHANGE"],
+      "sha256": "abc491427c0faa5a364df94e8227367be9321b47b31a955dff0a915ad619fca7",
+      "size": 2808,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "NOTE_NUMBER"
+      ],
       "transmits": [],
       "ccCount": 13,
       "nrpnCount": 0,
@@ -2039,12 +2042,34 @@
       }
     },
     {
+      "slug": "mr_black.stereo_vintage_ensemble_professional@0",
+      "vendor": "mr_black",
+      "product": "stereo_vintage_ensemble_professional",
+      "version": "0",
+      "path": "devices/mr_black/stereo_vintage_ensemble_professional.json",
+      "sha256": "73bd1f5f224c2ad4189cdb5447436d45ede3ac26b3051b4dab8235b827365c6d",
+      "size": 3427,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 8,
+        "bankSelectMode": "none"
+      }
+    },
+    {
       "slug": "obne.bathing@0",
       "vendor": "obne",
       "product": "bathing",
       "version": "0",
       "path": "devices/obne/bathing.json",
-      "sha256": "503552ee6734ed9079a6254982cec00d07d3d8d91b087568fa0d152f12160d7d",
+      "sha256": "4ad9330c3b774f3c935dcf9833bcb0186d923829e5337a920fdbb4a0c7b91018",
       "size": 8010,
       "receives": [
         "PROGRAM_CHANGE",
@@ -2058,7 +2083,7 @@
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
-        "count": 127,
+        "count": 128,
         "bankSelectMode": "none"
       }
     },
@@ -2068,7 +2093,7 @@
       "product": "black_fountain_stereo",
       "version": "0",
       "path": "devices/obne/black_fountain_stereo.json",
-      "sha256": "f332abbb62e00a78d35910bed5f857344f91c9a0ebfded0b8ac44d2a5398cf7b",
+      "sha256": "6e060d2de999982b2e81202ad2dae69b4b6ab89382c665ff75ca8544cc32f676",
       "size": 6857,
       "receives": [
         "PROGRAM_CHANGE",
@@ -2082,7 +2107,7 @@
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
-        "count": 127,
+        "count": 128,
         "bankSelectMode": "none"
       }
     },
@@ -2092,15 +2117,36 @@
       "product": "dark_star_stereo",
       "version": "0",
       "path": "devices/obne/dark_star_stereo.json",
-      "sha256": "b9f7a70e5df2731dc24dbc05a778c9217564f3c2e64c8cd0b2a9c0ce8a2698bb",
-      "size": 5146,
+      "sha256": "f5862d58a675fd489fb33b429388532cd4b6a847165901eb184259fa4f6cd931",
+      "size": 5001,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": ["PROGRAM_CHANGE"],
       "ccCount": 18,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
-        "count": 127,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "obne.setback@0",
+      "vendor": "obne",
+      "product": "setback",
+      "version": "0",
+      "path": "devices/obne/setback.json",
+      "sha256": "9768001a9ef5027f9f18b437cc6e613711a6957f80bf3aaf10fc57acb49293f1",
+      "size": 4576,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
         "bankSelectMode": "none"
       }
     },
@@ -2128,7 +2174,7 @@
       "product": "sunlight_stereo",
       "version": "0",
       "path": "devices/obne/sunlight_stereo.json",
-      "sha256": "3ec5c30cbeb8a76fae3ae2365a820164be92fe03149cd33ee96ddb76edbc2fb8",
+      "sha256": "39375ddfa5a80f57f95f0880731ecb8a39fd8bda355311ab4e18700d3264069e",
       "size": 9385,
       "receives": [
         "PROGRAM_CHANGE",
@@ -2142,7 +2188,7 @@
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
-        "count": 127,
+        "count": 128,
         "bankSelectMode": "none"
       }
     },
@@ -2222,6 +2268,143 @@
       "x_pc": {
         "indexBase": 1,
         "count": 36,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "poly_effects.ample@0",
+      "vendor": "poly_effects",
+      "product": "ample",
+      "version": "0",
+      "path": "devices/poly_effects/ample.json",
+      "sha256": "7a29be64561368f0488257b8e93b4da437329ea1c442ee9f4df41a4cf5b1b3ed",
+      "size": 3198,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 17,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 56,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "poly_effects.beebo@0",
+      "vendor": "poly_effects",
+      "product": "beebo",
+      "version": "0",
+      "path": "devices/poly_effects/beebo.json",
+      "sha256": "30fa416e4da0ecf7485df40a8f52fac20941e5d30b9ed7510f85e770068191c6",
+      "size": 521,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "poly_effects.flat_v@0",
+      "vendor": "poly_effects",
+      "product": "flat_v",
+      "version": "0",
+      "path": "devices/poly_effects/flat_v.json",
+      "sha256": "cedda83f45f0c87da2e74488f9c5113fb26574bbe7cfb5173f5b4d21ba0bc4a0",
+      "size": 6263,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 34,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 36,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "poly_effects.kanso@0",
+      "vendor": "poly_effects",
+      "product": "kanso",
+      "version": "0",
+      "path": "devices/poly_effects/kanso.json",
+      "sha256": "5071b2c0394e4c167632ac16e23aa6febe9f94ce861b5897b119c47e0c8af862",
+      "size": 973,
+      "receives": [],
+      "transmits": [],
+      "ccCount": 3,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 0,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "poly_effects.trails@0",
+      "vendor": "poly_effects",
+      "product": "trails",
+      "version": "0",
+      "path": "devices/poly_effects/trails.json",
+      "sha256": "89decbba0bd8ac3e82f33e138ee53d55b9262b3877ff731e2e2477438144299a",
+      "size": 1527,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [],
+      "ccCount": 6,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 56,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "poly_effects.verbs@0",
+      "vendor": "poly_effects",
+      "product": "verbs",
+      "version": "0",
+      "path": "devices/poly_effects/verbs.json",
+      "sha256": "066d647ef1d0bcf6426d65ebd497740a0162ab573f41165a5b7b9c7524e0d6eb",
+      "size": 1509,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 6,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 56,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "source_audio.pathways@0",
+      "vendor": "source_audio",
+      "product": "pathways",
+      "version": "0",
+      "path": "devices/source_audio/pathways.json",
+      "sha256": "2e11e75dc08a4545f2eded1c52484d710c1341901260a88db50cbf5ca217bf87",
+      "size": 6874,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 30,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
         "bankSelectMode": "none"
       }
     },
@@ -3039,6 +3222,24 @@
       }
     },
     {
+      "slug": "vongon.paragraphs_ii@0",
+      "vendor": "vongon",
+      "product": "paragraphs_ii",
+      "version": "0",
+      "path": "devices/vongon/paragraphs_ii.json",
+      "sha256": "d3202c96d0717bced37b26d721d187cd0fb0f9e2226dd55336da0da55e554f6e",
+      "size": 2440,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 9,
+        "bankSelectMode": "none"
+      }
+    },
+    {
       "slug": "vongon.polyphrase@0",
       "vendor": "vongon",
       "product": "polyphrase",
@@ -3060,14 +3261,35 @@
       }
     },
     {
+      "slug": "vongon.rosetones@0",
+      "vendor": "vongon",
+      "product": "rosetones",
+      "version": "0",
+      "path": "devices/vongon/rosetones.json",
+      "sha256": "45838d44875337f600e65cc1c91059f5e6678765f15c4e527cd75f2c4cf38699",
+      "size": 2116,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [],
+      "ccCount": 11,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 9,
+        "bankSelectMode": "none"
+      }
+    },
+    {
       "slug": "vongon.solarfaze@0",
       "vendor": "vongon",
       "product": "solarfaze",
       "version": "0",
       "path": "devices/vongon/solarfaze.json",
-      "sha256": "15f46e19acbab8f743e2eda8dfa493214a34a9f2a1c328dec3d96ab00800f116",
-      "size": 5452,
-      "receives": [],
+      "sha256": "73d6ada9fc2c4bcd57b5d5722a03ac56a02f3a3ba6935c707b742370db8fe08d",
+      "size": 5468,
+      "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 21,
       "nrpnCount": 0,

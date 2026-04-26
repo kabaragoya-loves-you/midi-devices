@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Mr Black Stereo Vintage Ensemble Professional",
+  "displayName": "Vintage Ensemble",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Mr Black",
+    "model": "Stereo Vintage Ensemble Professional",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Bypass/Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Save MIDI Preset",
+      "valueRange": { "min": 0, "max": 7 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Normal Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Stereo Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Normal/Stereo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Toggle", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Toggle Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Toggle", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "MIDI Clock Ignore",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "MIDI Clock Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Subdivision",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "1/4 Note", "value": 0 },
+          { "name": "1/8 Note", "value": 1 },
+          { "name": "Dotted 1/8 Note", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 99,
+      "name": "Live Controls",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 8,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 13
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Poly Effects Kanso",
+  "displayName": "Kanso",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Poly Effects",
+    "model": "Kanso",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Bias",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Character",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

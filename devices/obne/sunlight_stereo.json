@@ -430,7 +430,7 @@
   ],
   "x_pc": {
     "indexBase": 0,
-    "count": 127,
+    "count": 128,
     "bankSelectMode": "none"
   },
   "x_midiTrs": "TYPE_A",

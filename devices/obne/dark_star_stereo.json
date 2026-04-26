@@ -236,15 +236,9 @@
       }
     }
   ],
-  "x_programChangeMessages": [
-    {
-      "program": 127,
-      "name": "Live mode (no preset; settings match knob positions)"
-    }
-  ],
   "x_pc": {
     "indexBase": 0,
-    "count": 127,
+    "count": 128,
     "bankSelectMode": "none"
   },
   "x_midiTrs": "TYPE_A",

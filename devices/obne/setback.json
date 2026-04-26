@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "OBNE Setback",
+  "displayName": "Setback",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Old Blood Noise Endeavors",
+    "model": "Setback",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Division",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Sixteenth", "value": 9 },
+          { "name": "Eighth Triplet", "value": 27 },
+          { "name": "Eighth", "value": 45 },
+          { "name": "Quarter Triplet", "value": 63 },
+          { "name": "Dotted Eighth", "value": 81 },
+          { "name": "Quarter", "value": 99 },
+          { "name": "Half", "value": 118 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Octave Down", "value": 9 },
+          { "name": "Fifth Down", "value": 27 },
+          { "name": "Fourth Down", "value": 45 },
+          { "name": "Unison", "value": 63 },
+          { "name": "Fourth Up", "value": 81 },
+          { "name": "Fifth Up", "value": 99 },
+          { "name": "Octave Up", "value": 118 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Clock",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "On/Off Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Tap Tempo",
+      "additionalInfo": "Value 0 triggers tap; values 1-127 have no effect",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Runaway Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Runaway Off", "value": 0 },
+          { "name": "Runaway On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Preset Saving Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Cancel Save", "value": 21 },
+          { "name": "Start Save", "value": 64 },
+          { "name": "Confirm Save", "value": 106 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "MIDI Channel",
+      "valueRange": { "min": 1, "max": 16 }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Trails Setting",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Stereo Setting",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Mono", "value": 21 },
+          { "name": "Mono In Stereo Out", "value": 64 },
+          { "name": "Stereo", "value": 106 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "MIDI Clock Input Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Accept MIDI Clock", "value": 0 },
+          { "name": "Ignore MIDI Clock", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Aux Switch Setting",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap Tempo", "value": 0 },
+          { "name": "Preset", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

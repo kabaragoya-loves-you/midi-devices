@@ -9,7 +9,7 @@
     "model": "Solarfaze",
     "version": ""
   },
-  "receives": [],
+  "receives": ["PROGRAM_CHANGE"],
   "transmits": [],
   "controlChangeCommands": [
     {

@@ -1,0 +1,280 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Pathways",
+  "displayName": "Pathways",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Pathways",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Engine",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          { "name": "Slap", "value": 0 },
+          { "name": "Echo", "value": 1 },
+          { "name": "Spring", "value": 2 },
+          { "name": "Tank", "value": 3 },
+          { "name": "Room", "value": 4 },
+          { "name": "Plate", "value": 5 },
+          { "name": "Hall", "value": 6 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Diffusion",
+      "additionalInfo": "Spring and Tank engines only",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "PD Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Delay Time/Size",
+      "additionalInfo": "Delay time for Slap and Echo; size for Room, Plate, Hall",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "PD",
+      "additionalInfo": "Spring and Tank engines only",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Spring Size",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "name": "XS", "value": 0 },
+          { "name": "S", "value": 1 },
+          { "name": "M", "value": 2 },
+          { "name": "L", "value": 3 },
+          { "name": "XL", "value": 4 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Output",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Trem Type",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Harmonic", "value": 0 },
+          { "name": "Opto", "value": 1 },
+          { "name": "Bias", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Trem Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Trem Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Trem Boost",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Trem Offset",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Beat Division",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          { "name": "Half Note", "value": 0 },
+          { "name": "Quarter Note", "value": 1 },
+          { "name": "Dotted Eighth", "value": 2 },
+          { "name": "Eighth Note", "value": 3 },
+          { "name": "Triplet", "value": 4 },
+          { "name": "Sixteenth Note", "value": 5 },
+          { "name": "16th Note Triplet", "value": 6 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Trem Engage/Disengage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Reverb Send",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "MIDI Decrement",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "MIDI Increment",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Remote Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Remote Expression",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "MIDI Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Recall Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Recall Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Toggle Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

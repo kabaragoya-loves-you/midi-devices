@@ -1,0 +1,399 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Chase Bliss Big Time",
+  "displayName": "Big Time",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Big Time",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_ON"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Color",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Cluster",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Tilt EQ",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Wet",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Scale",
+      "additionalInfo": "Alt control: Spread (off=0, on=1+)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Chromatic", "value": 1 },
+          { "name": "Oct+4+5", "value": 2 },
+          { "name": "Octave", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Motion",
+      "additionalInfo": "Alt control: 0.5X (normal=0, on=1+)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Sine", "value": 1 },
+          { "name": "Square", "value": 2 },
+          { "name": "Env", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Mode",
+      "additionalInfo": "Alt control: Diffuse Type (normal=0, double=1+)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Mod", "value": 0 },
+          { "name": "Short", "value": 1 },
+          { "name": "Long", "value": 2 },
+          { "name": "Loop", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Voicing",
+      "additionalInfo": "Alt control: +12dB (normal=0, on=1+)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "HiFi", "value": 0 },
+          { "name": "Focus", "value": 1 },
+          { "name": "Warm", "value": 2 },
+          { "name": "Analog", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "State",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Digital", "value": 0 },
+          { "name": "Compressed", "value": 1 },
+          { "name": "Saturated", "value": 2 },
+          { "name": "#!&%", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Save to Slot",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Save to Current Slot",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Texture",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Crossover",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Diffusion",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Dry",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Play/Dub",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Play", "value": 0 },
+          { "name": "Dub", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Scale Ignore",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Step",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Dry Kill",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Dry Clean",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Balanced/Unbalanced",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Balanced", "value": 0 },
+          { "name": "Unbalanced", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Tap Subdivision",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Sixteenth", "value": 0 },
+          { "name": "Eighth Triplet", "value": 1 },
+          { "name": "Dotted Sixteenth", "value": 2 },
+          { "name": "Eighth", "value": 3 },
+          { "name": "Quarter Triplet", "value": 4 },
+          { "name": "Dotted Eighth", "value": 5 },
+          { "name": "Quarter", "value": 6 },
+          { "name": "Half Triplet", "value": 7 },
+          { "name": "Dotted Quarter", "value": 8 },
+          { "name": "Half", "value": 9 },
+          { "name": "Whole Triplet", "value": 10 },
+          { "name": "Dotted Half", "value": 11 },
+          { "name": "Whole", "value": 12 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "In Loop mode: Play/Stop (any value)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Tap/Mod Engage",
+      "additionalInfo": "In Loop mode: Rec/Play/Dub (any value)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Record",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Hold",
+      "additionalInfo": "In Loop mode: Delete (any value)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Stop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Thru vs Out",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Thru", "value": 0 },
+          { "name": "Out", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "MIDI Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Follow", "value": 0 },
+          { "name": "Ignore", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "MIDI Global Notes",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Channel", "value": 1 },
+          { "name": "Global", "value": 2 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 127,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 2
+}

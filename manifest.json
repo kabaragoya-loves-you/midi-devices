@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-04-26T15:59:47Z",
-  "count": 171,
+  "generatedAt": "2026-05-02T00:57:54Z",
+  "count": 172,
   "devices": [
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
@@ -696,6 +696,28 @@
       "x_pc": {
         "indexBase": 0,
         "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "chase_bliss.big_time@0",
+      "vendor": "chase_bliss",
+      "product": "big_time",
+      "version": "0",
+      "path": "devices/chase_bliss/big_time.json",
+      "sha256": "b8e104ab9713e2c97c7154760b13562ed68b761fefa46366c28a7c0988b1543f",
+      "size": 9863,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "NOTE_NUMBER"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 37,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 127,
         "bankSelectMode": "none"
       }
     },

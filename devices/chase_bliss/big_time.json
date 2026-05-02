@@ -12,7 +12,7 @@
   "receives": [
     "PROGRAM_CHANGE",
     "CLOCK",
-    "NOTE_ON"
+    "NOTE_NUMBER"
   ],
   "transmits": [
     "CLOCK"

@@ -71,13 +71,35 @@ Dir.glob(devices_dir.join("**/*.json").to_s).sort.each do |fp|
     next
   end
 
-  vendor  = parts[1].to_s
-  file    = parts[2].to_s
-  product = file.sub(/\.json\z/, "")
+  vendor_dir = parts[1].to_s
+  file       = parts[2].to_s
+  product_id = file.sub(/\.json\z/, "")
 
-  # Read JSON to get version from implementationVersion
-  json = JSON.parse(File.read(path))
+  # Read JSON to get version and properly-cased display names
+  begin
+    json = JSON.parse(File.read(path))
+  rescue JSON::ParserError => e
+    warn "WARN: skipping #{rel}: #{e.message}"
+    next
+  end
   version = json["implementationVersion"].to_s
+
+  # Display names (mirrors add_device_to_manifest in assets_file_ops.c):
+  #   vendor  <- device.manufacturer || vendor_dir
+  #   product <- displayName || title || product_id
+  device_obj = json["device"].is_a?(Hash) ? json["device"] : {}
+  manufacturer = device_obj["manufacturer"]
+  vendor_display = (manufacturer.is_a?(String) && !manufacturer.empty?) ? manufacturer : vendor_dir
+
+  display_name = json["displayName"]
+  title        = json["title"]
+  product_display = if display_name.is_a?(String) && !display_name.empty?
+                      display_name
+                    elsif title.is_a?(String) && !title.empty?
+                      title
+                    else
+                      product_id
+                    end
 
   # Read & hash
   size_bytes = path.size
@@ -89,12 +111,14 @@ Dir.glob(devices_dir.join("**/*.json").to_s).sort.each do |fp|
   nrpn_count = Array(json["nrpnCommands"]).size
   x_pc = json["x_pc"].is_a?(Hash) ? json["x_pc"] : nil
 
-  slug = "#{vendor}.#{product}@#{version}"
+  # Slug stays folder-based: it's the stable key used for NVS lookups,
+  # cache filenames, and cross-references. Only display fields change.
+  slug = "#{vendor_dir}.#{product_id}@#{version}"
 
   entries << {
     "slug" => slug,
-    "vendor" => vendor,
-    "product" => product,
+    "vendor" => vendor_display,
+    "product" => product_display,
     "version" => version,
     "path" => rel,
     "sha256" => sha,

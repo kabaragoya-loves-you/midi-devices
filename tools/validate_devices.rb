@@ -96,6 +96,12 @@ class DeviceValidator
   def validate
     begin
       content = File.read(@path, encoding: "bom|utf-8")
+      comment_lines = detect_json_comments(content)
+      if comment_lines.any?
+        @errors << "JSON contains // or /* */ comments at line(s) #{comment_lines.join(', ')}; " \
+                   "standard JSON disallows comments and the on-device cJSON parser will reject the file"
+        return false
+      end
       @json = JSON.parse(content)
     rescue JSON::ParserError => e
       @errors << "Invalid JSON: #{e.message}"
@@ -177,6 +183,69 @@ class DeviceValidator
   end
 
   private
+
+  # Scan for // line comments and /* */ block comments while tracking string
+  # context, so // inside a JSON string value is not flagged. Returns the list
+  # of 1-based line numbers where comments begin.
+  def detect_json_comments(content)
+    lines = []
+    in_string = false
+    in_block = false
+    block_start_line = nil
+    line = 1
+    i = 0
+    len = content.length
+    while i < len
+      c = content[i]
+      nxt = content[i + 1]
+      if c == "\n"
+        line += 1
+        i += 1
+        next
+      end
+      if in_block
+        if c == "*" && nxt == "/"
+          in_block = false
+          i += 2
+          next
+        end
+        i += 1
+        next
+      end
+      if in_string
+        if c == "\\" && nxt
+          i += 2
+          next
+        end
+        in_string = false if c == '"'
+        i += 1
+        next
+      end
+      if c == '"'
+        in_string = true
+        i += 1
+        next
+      end
+      if c == "/" && nxt == "/"
+        lines << line
+        # Skip to end of line to avoid double-counting
+        nl = content.index("\n", i)
+        break unless nl
+        i = nl
+        next
+      end
+      if c == "/" && nxt == "*"
+        lines << line
+        in_block = true
+        block_start_line = line
+        i += 2
+        next
+      end
+      i += 1
+    end
+    lines << block_start_line if in_block && block_start_line && !lines.include?(block_start_line)
+    lines.uniq
+  end
 
   def validate_required_fields
     REQUIRED_FIELDS.each do |field|

@@ -38,8 +38,6 @@
         ]
       }
     },
-
-    // — Comp 1 Controls —
     {
       "controlChangeNumber": 14,
       "name": "Comp 1 Select",
@@ -139,8 +137,6 @@
         ]
       }
     },
-
-    // — Comp 2 Controls —
     {
       "controlChangeNumber": 15,
       "name": "Comp 2 Select",

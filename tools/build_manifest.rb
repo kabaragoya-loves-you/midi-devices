@@ -60,6 +60,12 @@ end
 
 entries = []
 
+# `devices/user/` lives on the RW userdata partition (per the partition split
+# rolled out in firmware v(N+2)). Skip it here so the shared manifest baked
+# into the RO assets image does not advertise files that aren't on /assets.
+# The user-devices manifest is regenerated on-device against /userdata.
+USER_VENDOR_DIR = "user"
+
 Dir.glob(devices_dir.join("**/*.json").to_s).sort.each do |fp|
   path = Pathname.new(fp)
   rel  = path.relative_path_from(root).to_s # "devices/vendor/product.json"
@@ -70,6 +76,8 @@ Dir.glob(devices_dir.join("**/*.json").to_s).sort.each do |fp|
     warn "WARN: unexpected path shape (skipping): #{rel}"
     next
   end
+
+  next if parts[1].to_s == USER_VENDOR_DIR
 
   vendor_dir = parts[1].to_s
   file       = parts[2].to_s

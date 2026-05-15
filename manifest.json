@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "generatedAt": "2026-05-02T01:24:24Z",
-  "count": 172,
+  "count": 171,
   "devices": [
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
@@ -3214,28 +3214,6 @@
       ],
       "transmits": [],
       "ccCount": 15,
-      "nrpnCount": 0,
-      "x_pc": {
-        "indexBase": 0,
-        "count": 128,
-        "bankSelectMode": "none"
-      }
-    },
-    {
-      "slug": "user.default@0",
-      "vendor": "User",
-      "product": "Generic Device",
-      "version": "0",
-      "path": "devices/user/default.json",
-      "sha256": "87078c8c648fe246dad9de2ea5abcd0e76c2d1a9eef02ea455d4184aa9c15bbc",
-      "size": 7358,
-      "receives": [
-        "PROGRAM_CHANGE",
-        "NOTE_NUMBER",
-        "CLOCK"
-      ],
-      "transmits": [],
-      "ccCount": 128,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,

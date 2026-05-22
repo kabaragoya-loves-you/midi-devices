@@ -60,10 +60,10 @@ end
 
 entries = []
 
-# `devices/user/` lives on the RW userdata partition (per the partition split
-# rolled out in firmware v(N+2)). Skip it here so the shared manifest baked
-# into the RO assets image does not advertise files that aren't on /assets.
-# The user-devices manifest is regenerated on-device against /userdata.
+# `devices/user/` lives on the RW userdata partition. Skip it here so the
+# shared manifest baked into the RO assets image does not advertise files
+# that aren't on /assets. The user-devices manifest is regenerated on-device
+# against /userdata.
 USER_VENDOR_DIR = "user"
 
 Dir.glob(devices_dir.join("**/*.json").to_s).sort.each do |fp|

@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-05-02T01:24:24Z",
-  "count": 171,
+  "generatedAt": "2026-06-08T17:33:00Z",
+  "count": 172,
   "devices": [
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
@@ -1925,8 +1925,8 @@
       "product": "Enzo X",
       "version": "0",
       "path": "devices/meris/enzo_x.json",
-      "sha256": "8d4ce0a23116985ba0de871cc3df9eff0768536e1fd1fd8a0271eb6a7390271b",
-      "size": 18589,
+      "sha256": "2bf018c83c5d0642815e323a0e2b4da32fb238a8b32308c2c49cf8663b9bc738",
+      "size": 18590,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1936,7 +1936,7 @@
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 1,
-        "count": 99,
+        "count": 102,
         "bankSelectMode": "none"
       }
     },
@@ -1967,8 +1967,8 @@
       "product": "LVX",
       "version": "0",
       "path": "devices/meris/lvx.json",
-      "sha256": "018b34b16adfe11238d8e5ba08d00c855773a3f4b301ff783d46d3187e0e024a",
-      "size": 22537,
+      "sha256": "9a1679c0b1d82dee53a9cd1323a4969835ceaf63d9cfac7d7b507cd7d2e6d972",
+      "size": 22538,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1978,7 +1978,7 @@
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 1,
-        "count": 99,
+        "count": 102,
         "bankSelectMode": "none"
       }
     },
@@ -2006,8 +2006,8 @@
       "product": "Mercury X",
       "version": "0",
       "path": "devices/meris/mercury_x.json",
-      "sha256": "888d2b413ca28d4091759f5ee02218aa23122d9060d55ae46a81c79da208ab63",
-      "size": 17361,
+      "sha256": "177154221999eebf6795405b9013bf2b97c95ec64751df124088cbc2800c2b4c",
+      "size": 17362,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2017,7 +2017,7 @@
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 1,
-        "count": 99,
+        "count": 102,
         "bankSelectMode": "none"
       }
     },
@@ -2039,6 +2039,27 @@
       "x_pc": {
         "indexBase": 1,
         "count": 16,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "meris.ottobit_x@0",
+      "vendor": "Meris",
+      "product": "Ottobit X",
+      "version": "0",
+      "path": "devices/meris/ottobit_x.json",
+      "sha256": "695b6bfe4082959339d424f71e347b88b1995979951fcd6b435f7d7816e072f1",
+      "size": 18038,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 78,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 102,
         "bankSelectMode": "none"
       }
     },

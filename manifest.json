@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-06-08T17:33:00Z",
-  "count": 172,
+  "generatedAt": "2026-06-15T07:19:32Z",
+  "count": 174,
   "devices": [
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
@@ -1660,6 +1660,24 @@
       }
     },
     {
+      "slug": "gintronic.transparentsea@0",
+      "vendor": "ginTronic",
+      "product": "transparentSea",
+      "version": "0",
+      "path": "devices/gintronic/transparentsea.json",
+      "sha256": "8d712292b5e912d90f748f280fd03e609b346df50a992af99b2f96566934f512",
+      "size": 7069,
+      "receives": ["CLOCK"],
+      "transmits": ["CLOCK"],
+      "ccCount": 35,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 0,
+        "bankSelectMode": "none"
+      }
+    },
+    {
       "slug": "hologram_electronics.chroma_console@0",
       "vendor": "Hologram Electronics",
       "product": "Chroma Console",
@@ -2427,6 +2445,27 @@
       "x_pc": {
         "indexBase": 0,
         "count": 56,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "sherman.filterbank_2@0",
+      "vendor": "Sherman",
+      "product": "Filterbank 2",
+      "version": "0",
+      "path": "devices/sherman/filterbank_2.json",
+      "sha256": "486898571524640d8cad4593cd7e434c6e1b1d4f1e21ff8a954f79a9a49b7ce3",
+      "size": 2090,
+      "receives": [
+        "PITCH_BEND",
+        "CHANNEL_PRESSURE"
+      ],
+      "transmits": [],
+      "ccCount": 10,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 0,
         "bankSelectMode": "none"
       }
     },

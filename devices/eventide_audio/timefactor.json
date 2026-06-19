@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Eventide TimeFactor",
+  "displayName": "TimeFactor",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Eventide Audio",
+    "model": "TimeFactor",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "PITCH_BEND",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "PITCH_BEND",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 40,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC0-CC99 assignable on the device; no factory default CC map. Transport start/stop for looper."
+}

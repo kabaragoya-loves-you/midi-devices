@@ -1,0 +1,560 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Elektron Octatrack",
+  "displayName": "Octatrack",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Elektron",
+    "model": "Octatrack",
+    "version": ""
+  },
+  "receives": [
+    "NOTE_NUMBER",
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "NOTE_NUMBER",
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 7,
+      "name": "Track Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Track Bal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Playback 1",
+      "additionalInfo": "Audio: playback param #1; MIDI mode: Note",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Playback 2",
+      "additionalInfo": "Audio: playback param #2; MIDI mode: Velocity",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Playback 3",
+      "additionalInfo": "Audio: playback param #3; MIDI mode: Length",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Playback 4",
+      "additionalInfo": "Audio: playback param #4; MIDI mode: Note 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Playback 5",
+      "additionalInfo": "Audio: playback param #5; MIDI mode: Note 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Playback 6",
+      "additionalInfo": "Audio: playback param #6; MIDI mode: Note 4",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Amp 1",
+      "additionalInfo": "Audio: Attack; MIDI mode: Transpose",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Amp 2",
+      "additionalInfo": "Audio: Hold; MIDI mode: Legato",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Amp 3",
+      "additionalInfo": "Audio: Release; MIDI mode: Mode",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Amp 4",
+      "additionalInfo": "Audio: Volume; MIDI mode: Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Amp 5",
+      "additionalInfo": "Audio: Balance; MIDI mode: Octave Range",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Amp 6",
+      "additionalInfo": "Audio: N/A; MIDI mode: Arp Note Length",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "LFO 1",
+      "additionalInfo": "Speed 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "LFO 2",
+      "additionalInfo": "Speed 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "LFO 3",
+      "additionalInfo": "Speed 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "LFO 4",
+      "additionalInfo": "Depth 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "LFO 5",
+      "additionalInfo": "Depth 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "LFO 6",
+      "additionalInfo": "Depth 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "FX1 Param 1",
+      "additionalInfo": "MIDI mode: pitch bend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "FX1 Param 2",
+      "additionalInfo": "MIDI mode: aftertouch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "FX1 Param 3",
+      "additionalInfo": "MIDI mode: CC #1 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "FX1 Param 4",
+      "additionalInfo": "MIDI mode: CC #2 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "FX1 Param 5",
+      "additionalInfo": "MIDI mode: CC #3 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "FX1 Param 6",
+      "additionalInfo": "MIDI mode: CC #4 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "FX2 Param 1",
+      "additionalInfo": "MIDI mode: CC #5 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "FX2 Param 2",
+      "additionalInfo": "MIDI mode: CC #6 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "FX2 Param 3",
+      "additionalInfo": "MIDI mode: CC #7 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "FX2 Param 4",
+      "additionalInfo": "MIDI mode: CC #8 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "FX2 Param 5",
+      "additionalInfo": "MIDI mode: CC #9 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "FX2 Param 6",
+      "additionalInfo": "MIDI mode: CC #10 param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Track Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Cue Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Crossfader",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Track Mute",
+      "additionalInfo": "0 = unmuted, 1-127 = muted",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmuted", "value": 0 },
+          { "name": "Muted", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Track Solo",
+      "additionalInfo": "0 = no solo, 1-127 = soloed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "No Solo", "value": 0 },
+          { "name": "Soloed", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Track Cue",
+      "additionalInfo": "0 = not cued, 1-127 = cued",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Not Cued", "value": 0 },
+          { "name": "Cued", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Track Arm",
+      "additionalInfo": "0 = disarm, 1-127 = arm",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Disarm", "value": 0 },
+          { "name": "Arm", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Record Arm",
+      "additionalInfo": "0 = disarm, 1-127 = arm",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Disarm", "value": 0 },
+          { "name": "Arm", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "All Arm",
+      "additionalInfo": "0 = all disarm, 1-127 = arm",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Disarm", "value": 0 },
+          { "name": "Arm", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Scene A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Scene B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Pickup AB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Pickup CD",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Note On",
+      "additionalInfo": "0 = C-1, 127 = G9",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Note Off",
+      "additionalInfo": "0 = C-1, 127 = G9",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Req Audio CC",
+      "additionalInfo": "Send request, 0 = all audio CC",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "MIDI Trk1 M",
+      "additionalInfo": "0 = unmute, 1-127 = mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmute", "value": 0 },
+          { "name": "Mute", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "MIDI Trk2 M",
+      "additionalInfo": "0 = unmute, 1-127 = mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmute", "value": 0 },
+          { "name": "Mute", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "MIDI Trk3 M",
+      "additionalInfo": "0 = unmute, 1-127 = mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmute", "value": 0 },
+          { "name": "Mute", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "MIDI Trk4 M",
+      "additionalInfo": "0 = unmute, 1-127 = mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmute", "value": 0 },
+          { "name": "Mute", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "MIDI Trk5 M",
+      "additionalInfo": "0 = unmute, 1-127 = mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmute", "value": 0 },
+          { "name": "Mute", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "MIDI Trk6 M",
+      "additionalInfo": "0 = unmute, 1-127 = mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmute", "value": 0 },
+          { "name": "Mute", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "MIDI Trk7 M",
+      "additionalInfo": "0 = unmute, 1-127 = mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmute", "value": 0 },
+          { "name": "Mute", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "MIDI Trk8 M",
+      "additionalInfo": "0 = unmute, 1-127 = mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmute", "value": 0 },
+          { "name": "Mute", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 120,
+      "name": "MIDI Trk1 S",
+      "additionalInfo": "0 = unsolo, 1-127 = solo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 121,
+      "name": "MIDI Trk2 S",
+      "additionalInfo": "0 = unsolo, 1-127 = solo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 122,
+      "name": "MIDI Trk3 S",
+      "additionalInfo": "0 = unsolo, 1-127 = solo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 123,
+      "name": "MIDI Trk4 S",
+      "additionalInfo": "0 = unsolo, 1-127 = solo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "MIDI Trk5 S",
+      "additionalInfo": "0 = unsolo, 1-127 = solo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "MIDI Trk6 S",
+      "additionalInfo": "0 = unsolo, 1-127 = solo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 126,
+      "name": "MIDI Trk7 S",
+      "additionalInfo": "0 = unsolo, 1-127 = solo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 127,
+      "name": "MIDI Trk8 S",
+      "additionalInfo": "0 = unsolo, 1-127 = solo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 256,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

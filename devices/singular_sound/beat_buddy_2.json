@@ -1,0 +1,294 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Singular Sound BeatBuddy 2",
+  "displayName": "BeatBuddy 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Singular Sound",
+    "model": "BeatBuddy 2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [
+    "NOTE_NUMBER",
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank MSB",
+      "additionalInfo": "Song folder select MSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Bank LSB",
+      "additionalInfo": "Song folder select LSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Dyn Ctrl Inc",
+      "additionalInfo": "Dynamic Control increase; increases tempo by the received value",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Dyn Ctrl Dec",
+      "additionalInfo": "Dynamic Control decrease; decreases tempo by the received value",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Tempo Inc",
+      "additionalInfo": "Increases tempo by the received value",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Tempo Dec",
+      "additionalInfo": "Decreases tempo by the received value",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Half Time",
+      "additionalInfo": "Returns to normal time at 0; values 1-127 enter half-time mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "Half Time", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Double Time",
+      "additionalInfo": "Returns to normal time at 0; values 1-127 enter double-time mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "Double Time", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "Data Inc",
+      "additionalInfo": "Data Entry +1; increments BeatBuddy 2 tempo by default",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Data Dec",
+      "additionalInfo": "Data Entry -1; decrements BeatBuddy 2 tempo by default",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 98,
+      "name": "NRPN LSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 99,
+      "name": "NRPN MSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "RPN LSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "RPN MSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Open Settings",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Tempo MSB",
+      "additionalInfo": "Used with Tempo LSB to set a specific tempo; MSB 1 implies a BPM of 129 or greater",
+      "valueRange": { "min": 0, "max": 2 }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Tempo LSB",
+      "additionalInfo": "Used with Tempo MSB to set a specific tempo; BeatBuddy 2 updates tempo when LSB is received",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Main Volume",
+      "valueRange": { "min": 0, "max": 100 }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Headphone Vol",
+      "valueRange": { "min": 0, "max": 100 }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Accent Hit",
+      "additionalInfo": "Triggers an accent hit; values 0-100 map mute to original volume, 101-127 amplify above original volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Pause/Unpause",
+      "additionalInfo": "0 unpauses, 1 pauses, values > 1 toggle pause/unpause",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unpause", "value": 0 },
+          { "name": "Pause", "value": 1 },
+          { "name": "Toggle", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Drum Fill",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Transition",
+      "additionalInfo": "Values 1-32 start transition to part number; 0 completes transition at next measure; 125 cancels; 126 previous part; 127 next part",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Complete", "value": 0 },
+          { "name": "Part 1", "value": 1 },
+          { "name": "Cancel", "value": 125 },
+          { "name": "Prev Part", "value": 126 },
+          { "name": "Next Part", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Start",
+      "additionalInfo": "Starts playback of the current song",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Stop",
+      "additionalInfo": "Triggers the outro of the song",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Drum Set",
+      "additionalInfo": "Selects a specific drum set",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Tap Tempo",
+      "additionalInfo": "Enters Tap Tempo mode and generates a tap event",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Enter/Exit",
+      "additionalInfo": "Enters or exits a folder",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Scroll",
+      "additionalInfo": "Scrolls the song/folder list",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Down", "value": 0 },
+          { "name": "Up", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 120,
+      "name": "Master Ctrl",
+      "additionalInfo": "0 emulates Master Control release; values 1-127 emulate Master Control press",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 121,
+      "name": "Excl Trans",
+      "additionalInfo": "Exclusive transition; values 1-32 start transition to part number; 0 completes transition at next measure; 126 previous part; 127 next part",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Complete", "value": 0 },
+          { "name": "Part 1", "value": 1 },
+          { "name": "Prev Part", "value": 126 },
+          { "name": "Next Part", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 122,
+      "name": "No Fill Trans",
+      "additionalInfo": "No-fill transition; values 1-32 start transition to part number; 0 completes transition at next measure; 126 previous part; 127 next part",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Complete", "value": 0 },
+          { "name": "Part 1", "value": 1 },
+          { "name": "Prev Part", "value": 126 },
+          { "name": "Next Part", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 123,
+      "name": "Mute/Unmute",
+      "additionalInfo": "0 unmutes playback; values 1-127 mute playback without stopping it",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Unmute", "value": 0 },
+          { "name": "Mute", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "CC0_CC32",
+    "additionalInfo": "Default song select uses Bank Select MSB CC0, LSB CC32, and PC. MSB selects the bank, LSB selects the folder within the bank, and PC selects the song within the current folder. Aeros Mode uses MSB and PC only; LSB is ignored."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "BeatBuddy 2 can send MIDI clock, start, stop, optional MIDI notes, and song select messages. Outbound CC102 can force Aeros transition/next part, and outbound CC103 can send time signature values. Time signature may also be sent as SysEx when a song is loaded."
+}

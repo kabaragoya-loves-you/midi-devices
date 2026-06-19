@@ -1,0 +1,402 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Dr. Scientist The Atmosphere",
+  "displayName": "Atmosphere",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Dr. Scientist",
+    "model": "The Atmosphere",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "Bypass Type",
+      "additionalInfo": "0-63 Trails, 64-127 True",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trails", "value": 0 },
+          { "name": "True", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Remote Tap",
+      "additionalInfo": "Any value triggers tap",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "LFO Depth",
+      "additionalInfo": "0→1, >10→10",
+      "valueRange": { "min": 1, "max": 10 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "LFO Shape",
+      "additionalInfo": "0→1, >8→8",
+      "valueRange": { "min": 1, "max": 8 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Inf Reverb",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Save Preset",
+      "additionalInfo": "Any value saves current settings",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "LFO Rate x1",
+      "additionalInfo": "BPM",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "LFO Rate x2",
+      "additionalInfo": "BPM (×2)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "LFO Rate x3",
+      "additionalInfo": "BPM (×3)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "L Press Act",
+      "additionalInfo": "0→1, >6→6",
+      "valueRange": { "min": 1, "max": 6 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "L Hold Act",
+      "additionalInfo": "0→1, >5→5",
+      "valueRange": { "min": 1, "max": 5 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Bypass Scrn",
+      "additionalInfo": "0→1, >11→11",
+      "valueRange": { "min": 1, "max": 11 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Bypass Sw",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "L Stomp Prs",
+      "additionalInfo": "Any value triggers press",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "L Stomp Hld",
+      "additionalInfo": "Any; Inf Hold 0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "LFO State",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Resolution",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "CTRL1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "CTRL2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Patch Up",
+      "additionalInfo": "Any value increments patch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Patch Down",
+      "additionalInfo": "Any value decrements patch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Decay→Exp",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "CTRL1→Exp",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "CTRL2→Exp",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Resol→Exp",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Mix→Exp",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Vol→Exp",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Decay→LFO",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "CTRL1→LFO",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "CTRL2→LFO",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Resol→LFO",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Mix→LFO",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Vol→LFO",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Def/Preset",
+      "additionalInfo": "0-63 Default, 64-127 Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Default", "value": 0 },
+          { "name": "Preset", "value": 64 }
+        ]
+      }
+    }
+  ],
+  "x_programChangeMessages": [
+    { "program": 1, "name": "Default 1" },
+    { "program": 2, "name": "Default 2" },
+    { "program": 3, "name": "Default 3" },
+    { "program": 4, "name": "Default 4" },
+    { "program": 5, "name": "Default 5" },
+    { "program": 6, "name": "Default 6" },
+    { "program": 7, "name": "Default 7" },
+    { "program": 8, "name": "Default 8" },
+    { "program": 9, "name": "Default 9" },
+    { "program": 10, "name": "Default 10" },
+    { "program": 11, "name": "Default 11" },
+    { "program": 12, "name": "Default 12" },
+    { "program": 13, "name": "Default 13" },
+    { "program": 14, "name": "Default 14" },
+    { "program": 15, "name": "Default 15" },
+    { "program": 16, "name": "Default 16" },
+    { "program": 17, "name": "Preset 1" },
+    { "program": 18, "name": "Preset 2" },
+    { "program": 19, "name": "Preset 3" },
+    { "program": 20, "name": "Preset 4" },
+    { "program": 21, "name": "Preset 5" },
+    { "program": 22, "name": "Preset 6" },
+    { "program": 23, "name": "Preset 7" },
+    { "program": 24, "name": "Preset 8" },
+    { "program": 25, "name": "Preset 9" },
+    { "program": 26, "name": "Preset 10" },
+    { "program": 27, "name": "Preset 11" },
+    { "program": 28, "name": "Preset 12" },
+    { "program": 29, "name": "Preset 13" },
+    { "program": 30, "name": "Preset 14" },
+    { "program": 31, "name": "Preset 15" },
+    { "program": 32, "name": "Preset 16" }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

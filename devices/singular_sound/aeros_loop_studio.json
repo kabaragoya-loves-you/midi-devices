@@ -1,0 +1,406 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Singular Sound Aeros Loop Studio",
+  "displayName": "Aeros",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Singular Sound",
+    "model": "Aeros Loop Studio",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank MSB",
+      "additionalInfo": "Song select MSB; Aeros uses CC0 plus PC, not CC32 LSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Main L In",
+      "additionalInfo": "0 = -inf dB, 113 = 0 dB, 127 = +6 dB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Main R In",
+      "additionalInfo": "0 = -inf dB, 113 = 0 dB, 127 = +6 dB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Aux L In",
+      "additionalInfo": "0 = -inf dB, 113 = 0 dB, 127 = +6 dB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Aux R In",
+      "additionalInfo": "0 = -inf dB, 113 = 0 dB, 127 = +6 dB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Master Fader",
+      "additionalInfo": "0 = -inf dBFS, 113 = 0 dBFS, 127 = +6 dBFS",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Track 1 Fader",
+      "additionalInfo": "0 = -inf dBFS, 113 = 0 dBFS, 127 = +6 dBFS",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Track 2 Fader",
+      "additionalInfo": "0 = -inf dBFS, 113 = 0 dBFS, 127 = +6 dBFS",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Track 3 Fader",
+      "additionalInfo": "0 = -inf dBFS, 113 = 0 dBFS, 127 = +6 dBFS",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Track 4 Fader",
+      "additionalInfo": "0 = -inf dBFS, 113 = 0 dBFS, 127 = +6 dBFS",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Track 5 Fader",
+      "additionalInfo": "0 = -inf dBFS, 113 = 0 dBFS, 127 = +6 dBFS",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Track 6 Fader",
+      "additionalInfo": "0 = -inf dBFS, 113 = 0 dBFS, 127 = +6 dBFS",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Selected Fader",
+      "additionalInfo": "Currently selected track fader; 0 = -inf dBFS, 113 = 0 dBFS, 127 = +6 dBFS",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Click Volume",
+      "valueRange": { "min": 0, "max": 100 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Loop Decay",
+      "additionalInfo": "Controls loop decay rate; Loop Decay must be enabled in the song settings",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Save",
+      "additionalInfo": "Value 0 saves the currently open song when stopped if changes were made",
+      "valueRange": {
+        "min": 0,
+        "max": 0,
+        "discreteValues": [
+          { "name": "Save", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "New Song",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "New 2x2", "value": 0 },
+          { "name": "New 6x6", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Navigate",
+      "additionalInfo": "Navigates to Aeros screens",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Songs List", "value": 0 },
+          { "name": "Loop Studio", "value": 1 },
+          { "name": "Home", "value": 2 },
+          { "name": "Settings", "value": 3 },
+          { "name": "Updates", "value": 4 },
+          { "name": "Mixer", "value": 5 },
+          { "name": "Slideout", "value": 6 },
+          { "name": "Mixer 2", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "List Control",
+      "additionalInfo": "Controls Songs List navigation; delete confirmation still requires physical Aeros buttons",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Scroll Down", "value": 0 },
+          { "name": "Scroll Up", "value": 1 },
+          { "name": "Select", "value": 2 },
+          { "name": "Delete", "value": 3 },
+          { "name": "Top", "value": 6 },
+          { "name": "Bottom", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Undo/Redo",
+      "additionalInfo": "0 affects selected track top layer; values 1-6 affect track number top layer",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          { "name": "Selected", "value": 0 },
+          { "name": "Track 1", "value": 1 },
+          { "name": "Track 6", "value": 6 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Mute",
+      "additionalInfo": "0 mutes all; 1-6 toggle tracks; 11-16 mute tracks; 21-26 unmute tracks; 31-36 mute at EOL; 41-46 unmute at EOL; 51-56 mute at EOM; 61-66 unmute at EOM; 71-76 mute immediately; 81-86 unmute immediately; 100 mutes selected track; 110 mute pause; 127 unmute all",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Mute All", "value": 0 },
+          { "name": "Toggle Trk 1", "value": 1 },
+          { "name": "Mute Trk 1", "value": 11 },
+          { "name": "Unmute Trk 1", "value": 21 },
+          { "name": "Mute EOL 1", "value": 31 },
+          { "name": "Unmute EOL 1", "value": 41 },
+          { "name": "Mute EOM 1", "value": 51 },
+          { "name": "Unmute EOM 1", "value": 61 },
+          { "name": "Mute Now 1", "value": 71 },
+          { "name": "Unmute Now 1", "value": 81 },
+          { "name": "Mute Selected", "value": 100 },
+          { "name": "Mute Pause", "value": 110 },
+          { "name": "Unmute All", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Solo/Stop",
+      "additionalInfo": "1-6 solo track number; 127 unsolos and unmutes all other tracks; 0 stops all playback immediately",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stop Now", "value": 0 },
+          { "name": "Solo Trk 1", "value": 1 },
+          { "name": "Solo Trk 6", "value": 6 },
+          { "name": "Unsolo", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Record Part",
+      "additionalInfo": "Value 0 begins or sets up a recording in the next empty part",
+      "valueRange": {
+        "min": 0,
+        "max": 0,
+        "discreteValues": [
+          { "name": "Record Part", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "R/P/O",
+      "additionalInfo": "Record/play/overdub and selected track controls",
+      "valueRange": {
+        "min": 0,
+        "max": 104,
+        "discreteValues": [
+          { "name": "Record Track", "value": 0 },
+          { "name": "Commit", "value": 20 },
+          { "name": "RPO Selected", "value": 100 },
+          { "name": "RPO Track 1", "value": 101 },
+          { "name": "RPO Track 2", "value": 102 },
+          { "name": "Next Track", "value": 103 },
+          { "name": "Prev Track", "value": 104 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Clear Song",
+      "additionalInfo": "Value 0 clears the song with no confirmation when stopped in Loop Studio; cannot be undone",
+      "valueRange": {
+        "min": 0,
+        "max": 0,
+        "discreteValues": [
+          { "name": "Clear", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Start/Stop",
+      "additionalInfo": "Transport and song navigation controls",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stop", "value": 0 },
+          { "name": "Start", "value": 1 },
+          { "name": "Cancel Stop", "value": 2 },
+          { "name": "Stop EOM", "value": 3 },
+          { "name": "Stop EOL", "value": 4 },
+          { "name": "Prev Song", "value": 10 },
+          { "name": "Next Song", "value": 20 },
+          { "name": "Stop Now", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Song Settings",
+      "additionalInfo": "Sets RPO/ROP behavior and toggles song settings",
+      "valueRange": {
+        "min": 0,
+        "max": 26,
+        "discreteValues": [
+          { "name": "Set RPO", "value": 0 },
+          { "name": "Set ROP", "value": 1 },
+          { "name": "Rec Src Main", "value": 2 },
+          { "name": "Rec Src Aux", "value": 3 },
+          { "name": "Main To Main", "value": 4 },
+          { "name": "Main To Aux", "value": 5 },
+          { "name": "Aux To Main", "value": 6 },
+          { "name": "Aux To Aux", "value": 7 },
+          { "name": "Click Main", "value": 8 },
+          { "name": "Click Aux", "value": 9 },
+          { "name": "VU Meter", "value": 10 },
+          { "name": "RPO/ROP", "value": 11 },
+          { "name": "Click", "value": 12 },
+          { "name": "Count In", "value": 13 },
+          { "name": "Stop Song", "value": 16 },
+          { "name": "Change Part", "value": 17 },
+          { "name": "Mute Setting", "value": 18 },
+          { "name": "MIDI Mode", "value": 19 },
+          { "name": "MIDI In Start", "value": 20 },
+          { "name": "Expression", "value": 23 },
+          { "name": "Stop Fade", "value": 24 },
+          { "name": "Start Fade", "value": 25 },
+          { "name": "Mute Fade", "value": 26 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Reverse",
+      "additionalInfo": "0 reverses selected track; values 1-6 reverse track number",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          { "name": "Selected", "value": 0 },
+          { "name": "Track 1", "value": 1 },
+          { "name": "Track 6", "value": 6 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Lock/Unlock",
+      "additionalInfo": "Locks or unlocks the selected track, toggling current state",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Tempo Up",
+      "additionalInfo": "Increases tempo by value received",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Tempo Down",
+      "additionalInfo": "Decreases tempo by value received",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "BB Transition",
+      "additionalInfo": "BeatBuddy transition immediately; values 0-32 change song parts, respecting sync/quantize rules when recording",
+      "valueRange": { "min": 0, "max": 32 }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Transition",
+      "additionalInfo": "0 starts transition to selected part; 1-6 change part with BeatBuddy flow; 71-76 switch immediately; 81-86 switch at EOM; 91-96 switch at EOL; 101-106 Aeros-only part change; 125 cancel; 126 previous; 127 next",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Selected Part", "value": 0 },
+          { "name": "Part 1", "value": 1 },
+          { "name": "Now Part 1", "value": 71 },
+          { "name": "EOM Part 1", "value": 81 },
+          { "name": "EOL Part 1", "value": 91 },
+          { "name": "Aeros Part 1", "value": 101 },
+          { "name": "Cancel", "value": 125 },
+          { "name": "Prev Part", "value": 126 },
+          { "name": "Next Part", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Tap Tempo",
+      "additionalInfo": "Enters Tap Tempo mode and generates a tap event",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 127,
+      "name": "Screenshot",
+      "additionalInfo": "Value 127 saves a screenshot of the current Aeros screen to SD card",
+      "valueRange": {
+        "min": 127,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Screenshot", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16384,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "Aeros opens songs using CC0 MSB plus PC, in that order. LSB CC32 is not relevant for Aeros song select. The song must first be opened manually and saved with MIDI Song Select enabled to assign the MSB/PC combination."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "Aeros receives MIDI clock, start, stop, BeatBuddy time signature SysEx, and BeatBuddy CC103 time signature values. Aeros can transmit MIDI start/stop, CC41 RPO/ROP state, CC43 cancel stop, CC115 BeatBuddy outro, CC113 transition values, and CC103 time signature values when configured."
+}

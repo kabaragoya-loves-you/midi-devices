@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Eventide H90 Harmonizer",
+  "displayName": "H90",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Eventide Audio",
+    "model": "H90 Harmonizer",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "CLOCK"],
+  "transmits": ["PROGRAM_CHANGE"],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "PC 1-100 by default; enable PC Offset in MIDI menu for 0-99. Global CC mapping and transmit CC assignments are user-configurable on the device."
+}

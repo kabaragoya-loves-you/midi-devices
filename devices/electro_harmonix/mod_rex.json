@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Electro-Harmonix Mod Rex",
+  "displayName": "Mod Rex",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Electro-Harmonix",
+    "model": "Mod Rex",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_CONTINUE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression",
+      "additionalInfo": "Only works when nothing is plugged into physical EXP jack",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "MOD Type",
+      "additionalInfo": "Option select; values above maximum select highest option",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Filter Type",
+      "additionalInfo": "Option select; values above maximum select highest option",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "MOD Shape",
+      "additionalInfo": "0-3 select shape; >3 selects highest shape",
+      "valueRange": { "min": 0, "max": 3 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "TREM Shape",
+      "additionalInfo": "0-3 select shape; >3 selects highest shape",
+      "valueRange": { "min": 0, "max": 3 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "PAN Shape",
+      "additionalInfo": "0-3 select shape; >3 selects highest shape",
+      "valueRange": { "min": 0, "max": 3 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Filter Shape",
+      "additionalInfo": "0-3 select shape; >3 selects highest shape",
+      "valueRange": { "min": 0, "max": 3 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "MOD R-Inv",
+      "additionalInfo": "0 = Off; any higher value = On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Filt R-Inv",
+      "additionalInfo": "0 = Off; any higher value = On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "MOD Div",
+      "additionalInfo": "0-9 select division; >9 selects highest division",
+      "valueRange": { "min": 0, "max": 9 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "TREM Div",
+      "additionalInfo": "0-9 select division; >9 selects highest division",
+      "valueRange": { "min": 0, "max": 9 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "PAN Div",
+      "additionalInfo": "0-9 select division; >9 selects highest division",
+      "valueRange": { "min": 0, "max": 9 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Filter Div",
+      "additionalInfo": "0-9 select division; >9 selects highest division",
+      "valueRange": { "min": 0, "max": 9 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "MOD Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Filter Res",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "TREM Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "MOD Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "PAN Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Filter Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

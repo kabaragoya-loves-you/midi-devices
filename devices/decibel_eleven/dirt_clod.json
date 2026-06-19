@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Decibel Eleven Dirt Clod",
+  "displayName": "Dirt Clod",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Decibel Eleven",
+    "model": "Dirt Clod",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 34,
+      "name": "Dirt",
+      "additionalInfo": "Pickup: CC ignored until value matches knob position",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Core",
+      "additionalInfo": "Pickup: CC ignored until value matches knob position",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Crystal",
+      "additionalInfo": "Pickup: CC ignored until value matches knob position",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Mass",
+      "additionalInfo": "Pickup: CC ignored until value matches knob position",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Form",
+      "additionalInfo": "0-63: Off, 64-127: On; pickup applies",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Electro-Harmonix HOG2",
+  "displayName": "HOG2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Electro-Harmonix",
+    "model": "HOG2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "PITCH_BEND"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Exp Coarse",
+      "additionalInfo": "Expression pedal coarse",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Master Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Exp Fine",
+      "additionalInfo": "Expression pedal fine",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Freeze Gliss",
+      "additionalInfo": "0 = no freeze, 127 = hold; mid values gliss",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Bypass Sw",
+      "additionalInfo": "0-63 Bypass, 64-127 Effect",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Effect", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "EXP FSW",
+      "additionalInfo": "0-63 Release, 64-127 Press",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Envelope",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Spectral Gt",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Exp Mode",
+      "additionalInfo": "Jumps directly to mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Oct Bend", "value": 0 },
+          { "name": "Step Bend", "value": 10 },
+          { "name": "Volume", "value": 20 },
+          { "name": "Frz+Gliss", "value": 30 },
+          { "name": "Frz+Vol", "value": 40 },
+          { "name": "Wah Wah", "value": 50 },
+          { "name": "Filter", "value": 60 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Exp Rev",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Dry Output",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "-2 Octaves",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "-1 Octave",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Original",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "+5th",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "+1 Octave",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "+1 Oct 5th",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "+2 Octaves",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "+2 Oct 3rd",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "+3 Octaves",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "+4 Octaves",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Env Lower",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Env Upper",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Filter Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Filter Res",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Save Preset",
+      "additionalInfo": "0-119 save slot; 120-127 ignored",
+      "valueRange": { "min": 0, "max": 119 }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Load Preset",
+      "additionalInfo": "0-119 load; 120-127 WYSIWYG",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "Omni Off",
+      "additionalInfo": "Send 0→1 on current channel",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Enable", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Omni On",
+      "additionalInfo": "Send 0→1 on current channel",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Enable", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_programChangeMessages": [
+    { "program": 120, "name": "Bypass Toggle" },
+    { "program": 121, "name": "EXP FSW Toggle" },
+    { "program": 122, "name": "Envelope Tgl" },
+    { "program": 123, "name": "Spectral Tgl" },
+    { "program": 124, "name": "Exp Mode Cyc" },
+    { "program": 125, "name": "Exp Rev Tgl" },
+    { "program": 126, "name": "Preset Ld/Ul" },
+    { "program": 127, "name": "Bypass Reset" }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

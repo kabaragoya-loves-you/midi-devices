@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Fractal Audio AM4",
+  "displayName": "AM4",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Fractal Audio",
+    "model": "AM4",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 104,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-103 selects AM4 presets A1-Z4. AM4 does not transmit or respond to bank select."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "Incoming MIDI CCs are globally assignable in SETUP > MIDI/Remote to functions including input volume, amp volume, output volume, tap tempo, tuner, four external controllers, additional preset and scene controls, and block bypass/channel switches. AM4 can transmit CC and PC messages via custom Scene MIDI or Send MIDI PC, receives MIDI clock, and does not transmit MIDI clock."
+}

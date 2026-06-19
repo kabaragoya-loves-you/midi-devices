@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Fractal Audio FM9",
+  "displayName": "FM9",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Fractal Audio",
+    "model": "FM9",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 512,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "Use MIDI Bank Select CC0 values 0-3 plus PC 0-127 to select FM9 presets 0-511."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "Incoming MIDI CCs are globally assignable in SETUP > MIDI/Remote to functions including input and output volumes, tap tempo, tuner, 16 external controllers, scene functions, all looper functions, and all block bypass/channel switches. Scene values select scenes 1-8, repeating every 8 values; channel values select A-D, repeating every 4 values. FM9 can transmit PC messages on preset change or via Scene MIDI Block / Control Switch MIDI, can transmit CC via Scene MIDI Block or Control Switch MIDI, receives MIDI clock, and does not transmit MIDI clock."
+}

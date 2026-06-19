@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-06-15T07:19:32Z",
-  "count": 174,
+  "generatedAt": "2026-06-19T21:48:22Z",
+  "count": 215,
   "devices": [
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
@@ -1380,6 +1380,358 @@
       }
     },
     {
+      "slug": "decibel_eleven.dirt_clod@0",
+      "vendor": "Decibel Eleven",
+      "product": "Dirt Clod",
+      "version": "0",
+      "path": "devices/decibel_eleven/dirt_clod.json",
+      "sha256": "9416e6f8b342f945450e1e02f2689e2c86f33a41b2381b598068e123351cf765",
+      "size": 1638,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 5,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "digitech.bass_whammy@0",
+      "vendor": "DigiTech",
+      "product": "Bass Whammy",
+      "version": "0",
+      "path": "devices/digitech/bass_whammy.json",
+      "sha256": "d94caa28743ab12e3fed85edc92f8ab37030a3b93c509873aff8f0045d42aeda",
+      "size": 5036,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 1,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 84,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "digitech.mononeon_whammy@0",
+      "vendor": "DigiTech",
+      "product": "MonoNeon",
+      "version": "0",
+      "path": "devices/digitech/mononeon_whammy.json",
+      "sha256": "abdebf3aa3fc78dc08509a1477085afd604d6d46ced47631e6d57ad1f2a0e58a",
+      "size": 5091,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 1,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 84,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "digitech.whammy@0",
+      "vendor": "DigiTech",
+      "product": "Whammy DT",
+      "version": "0",
+      "path": "devices/digitech/whammy.json",
+      "sha256": "3fa41321d7968cc81c55be249655893140bc90d12d940822bb37dd90572aa5f5",
+      "size": 4484,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 1,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 78,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "digitech.whammy_dt@0",
+      "vendor": "DigiTech",
+      "product": "Whammy DT",
+      "version": "0",
+      "path": "devices/digitech/whammy_dt.json",
+      "sha256": "3fa41321d7968cc81c55be249655893140bc90d12d940822bb37dd90572aa5f5",
+      "size": 4484,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 1,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 78,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "dr_scientist.dusk@0",
+      "vendor": "Dr. Scientist",
+      "product": "Dusk",
+      "version": "0",
+      "path": "devices/dr_scientist/dusk.json",
+      "sha256": "42619af3b5c581d3513601d38da8441811eccfdef51f1ae565572a4ea04cc0cf",
+      "size": 4934,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 18,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "dr_scientist.phreak@0",
+      "vendor": "Dr. Scientist",
+      "product": "Phreak",
+      "version": "0",
+      "path": "devices/dr_scientist/phreak.json",
+      "sha256": "84bd90339ef8364da94e6705e1e88a7d7b5e42afa31912ea21887edf3776fe71",
+      "size": 5792,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 22,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "dr_scientist.the_atmosphere@0",
+      "vendor": "Dr. Scientist",
+      "product": "Atmosphere",
+      "version": "0",
+      "path": "devices/dr_scientist/the_atmosphere.json",
+      "sha256": "1d9a3536f8509f8244fb2e6d66c4c02de5da7f0ca416bc23e97927de4195a089",
+      "size": 10752,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 37,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 32,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "electro_harmonix.45000@0",
+      "vendor": "Electro-Harmonix",
+      "product": "45000",
+      "version": "0",
+      "path": "devices/electro_harmonix/45000.json",
+      "sha256": "e2f2a2dc51717e6b58b2f92ff9b975c5e9378d0977a81b79afaf3887e64230f2",
+      "size": 8759,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "transmits": [
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "ccCount": 30,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 127,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "electro_harmonix.95000@0",
+      "vendor": "Electro-Harmonix",
+      "product": "95000",
+      "version": "0",
+      "path": "devices/electro_harmonix/95000.json",
+      "sha256": "2fe403b66bdb776c5a0718a3ef3002e624dfd706b1dd7a81e7618f0f44ead582",
+      "size": 8535,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "transmits": [
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "ccCount": 37,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "electro_harmonix.hog2@0",
+      "vendor": "Electro-Harmonix",
+      "product": "HOG2",
+      "version": "0",
+      "path": "devices/electro_harmonix/hog2.json",
+      "sha256": "662228ec4e4f6ba5ee2fe101d92154609c568f85100f57387191371a2af33490",
+      "size": 6621,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND"
+      ],
+      "transmits": [],
+      "ccCount": 29,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "electro_harmonix.mod_rex@0",
+      "vendor": "Electro-Harmonix",
+      "product": "Mod Rex",
+      "version": "0",
+      "path": "devices/electro_harmonix/mod_rex.json",
+      "sha256": "428774c5541fa371a00bf764e3ea7deee69faae5f7161de6d011f07d19a49a8e",
+      "size": 4283,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_CONTINUE"
+      ],
+      "transmits": [],
+      "ccCount": 20,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "elektron.analog_drive@0",
+      "vendor": "Elektron",
+      "product": "Analog Drive",
+      "version": "0",
+      "path": "devices/elektron/analog_drive.json",
+      "sha256": "46a62a3759ccb51d329bb457cc3bed89b79f2076e5243ccd1b88ae1d801159db",
+      "size": 1761,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 8,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "elektron.analog_heat_mkii@0",
+      "vendor": "Elektron",
+      "product": "Analog Heat",
+      "version": "0",
+      "path": "devices/elektron/analog_heat_mkii.json",
+      "sha256": "ff01c939318444402926b15cf723371466721dada8239f3d6a339a61c8127e4e",
+      "size": 8797,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 42,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "elektron.model_cycles@0",
+      "vendor": "Elektron",
+      "product": "Model:Cycles",
+      "version": "0",
+      "path": "devices/elektron/model_cycles.json",
+      "sha256": "81df8f010e57163caa2d306b83f97b5b49d3c81df75a65217d202631cbb8196e",
+      "size": 4198,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 30,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 96,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "elektron.model_samples@0",
+      "vendor": "Elektron",
+      "product": "Model:Samples",
+      "version": "0",
+      "path": "devices/elektron/model_samples.json",
+      "sha256": "67c5ccf0f0151b14cf42e9acc9914ea1df5084483a94bbe3c80bac52f245ed8c",
+      "size": 4093,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 29,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 96,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "elektron.octatrack@0",
+      "vendor": "Elektron",
+      "product": "Octatrack",
+      "version": "0",
+      "path": "devices/elektron/octatrack.json",
+      "sha256": "6f4ecc4789bc667b8badb91893e2263a8e6c8724b8b0806c4bd3b2911cd11935",
+      "size": 14821,
+      "receives": [
+        "NOTE_NUMBER",
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [
+        "NOTE_NUMBER",
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "ccCount": 64,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 256,
+        "bankSelectMode": "CC0"
+      }
+    },
+    {
       "slug": "empress.echosystem@0",
       "vendor": "Empress Effects",
       "product": "Echosystem",
@@ -1560,6 +1912,450 @@
         "indexBase": 1,
         "count": 0,
         "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.blackhole@0",
+      "vendor": "Eventide Audio",
+      "product": "Blackhole",
+      "version": "0",
+      "path": "devices/eventide_audio/blackhole.json",
+      "sha256": "1ef6180edade5f1f493f61add3e72d9f324bf227b3183adab09814df956919a1",
+      "size": 2778,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 15,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 127,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.h9@0",
+      "vendor": "Eventide Audio",
+      "product": "H9",
+      "version": "0",
+      "path": "devices/eventide_audio/h9.json",
+      "sha256": "30e183de8fce86c59dcb61257ae16e602fb6ae7de6212025918a2ba3cf09d9b1",
+      "size": 635,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND",
+        "CLOCK"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND",
+        "CLOCK"
+      ],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 99,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.h90@0",
+      "vendor": "Eventide Audio",
+      "product": "H90",
+      "version": "0",
+      "path": "devices/eventide_audio/h90.json",
+      "sha256": "6884c7c7eb236d9faf8b6164ebda2052f605d478b0ce6afa79a3745ce51407fd",
+      "size": 684,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["PROGRAM_CHANGE"],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.knife_drop@0",
+      "vendor": "Eventide Audio",
+      "product": "Knife Drop",
+      "version": "0",
+      "path": "devices/eventide_audio/knife_drop.json",
+      "sha256": "ba4fb599e2c0e49d08522d72c046632cf382ad40491b19ddde05aded86437fa4",
+      "size": 2006,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 11,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 127,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.micro_pitch_delay@0",
+      "vendor": "Eventide Audio",
+      "product": "MicroPitch",
+      "version": "0",
+      "path": "devices/eventide_audio/micro_pitch_delay.json",
+      "sha256": "caf409b54dc993e7c77a70268b4f640747823c3f92b8932b273533f9066fa59a",
+      "size": 3343,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 127,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC loads preset 1-127; in Save Mode (hold TAP), PC saves to slot 1-127"
+      }
+    },
+    {
+      "slug": "eventide_audio.modfactor@0",
+      "vendor": "Eventide Audio",
+      "product": "ModFactor",
+      "version": "0",
+      "path": "devices/eventide_audio/modfactor.json",
+      "sha256": "3d6bab11b934fdeaf71e0d6a86587b0140d9412479c1dacf75dc822a1d021d1d",
+      "size": 625,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND",
+        "CLOCK"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND"
+      ],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 40,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.pitchfactor@0",
+      "vendor": "Eventide Audio",
+      "product": "PitchFactor",
+      "version": "0",
+      "path": "devices/eventide_audio/pitchfactor.json",
+      "sha256": "0a4078e0ecb3ea7e4edf980f8b683da2573389b8eb77ec939d1bbb58b845a1d5",
+      "size": 640,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND",
+        "CLOCK"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND",
+        "CLOCK"
+      ],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 40,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.riptide@0",
+      "vendor": "Eventide Audio",
+      "product": "Riptide",
+      "version": "0",
+      "path": "devices/eventide_audio/riptide.json",
+      "sha256": "95cd5c791c89d5321ab3640d8a1882c87cf655418748757709f813ff5734987c",
+      "size": 2956,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 14,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 127,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC loads preset 1-127; in Save Mode (hold Vibe LED), PC saves to slot 1-127"
+      }
+    },
+    {
+      "slug": "eventide_audio.rose@0",
+      "vendor": "Eventide Audio",
+      "product": "Rose",
+      "version": "0",
+      "path": "devices/eventide_audio/rose.json",
+      "sha256": "4ae49d9d3eec209aba6cd7618ef0f899ed7a460df3ef3a83892153f7c90b4f08",
+      "size": 5985,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 22,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 25,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.space@0",
+      "vendor": "Eventide Audio",
+      "product": "Space",
+      "version": "0",
+      "path": "devices/eventide_audio/space.json",
+      "sha256": "94079b89a37fc7e0167c92df2b4886edd126b47919eba96235270ea4de209eec",
+      "size": 622,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND",
+        "CLOCK"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND",
+        "CLOCK"
+      ],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 40,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.timefactor@0",
+      "vendor": "Eventide Audio",
+      "product": "TimeFactor",
+      "version": "0",
+      "path": "devices/eventide_audio/timefactor.json",
+      "sha256": "1fa6ace07d3627fb0655c1cd18916d4838be5150b8aac079c8798d1984df2c31",
+      "size": 804,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND",
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "transmits": [
+        "PROGRAM_CHANGE",
+        "PITCH_BEND",
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 40,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "eventide_audio.tricerachorus@0",
+      "vendor": "Eventide Audio",
+      "product": "TriceraChorus",
+      "version": "0",
+      "path": "devices/eventide_audio/tricerachorus.json",
+      "sha256": "4644dec5e89bfb9f34f1ed644e4191d57eb1c803d1744ea3277d0f717ddb212f",
+      "size": 3315,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 127,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC loads preset 1-127; in Save Mode (hold SWIRL), PC saves to slot 1-127"
+      }
+    },
+    {
+      "slug": "eventide_audio.ultratap@0",
+      "vendor": "Eventide Audio",
+      "product": "UltraTap",
+      "version": "0",
+      "path": "devices/eventide_audio/ultratap.json",
+      "sha256": "d57ded5843ace84f90380e85f6a64ea0fe29e05e92ded570687559749746eda6",
+      "size": 2983,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 15,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 127,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC loads preset 1-127; in Save Mode (hold TAP), PC saves to slot 1-127"
+      }
+    },
+    {
+      "slug": "fractal_audio.am4@0",
+      "vendor": "Fractal Audio",
+      "product": "AM4",
+      "version": "0",
+      "path": "devices/fractal_audio/am4.json",
+      "sha256": "bd5ae66228e1248a98a2a46841a7317b4d230324fcb2faa0e49588fa9c6966a3",
+      "size": 1035,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["PROGRAM_CHANGE"],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 104,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC 0-103 selects AM4 presets A1-Z4. AM4 does not transmit or respond to bank select."
+      }
+    },
+    {
+      "slug": "fractal_audio.ax8@0",
+      "vendor": "Fractal Audio",
+      "product": "AX8",
+      "version": "0",
+      "path": "devices/fractal_audio/ax8.json",
+      "sha256": "f57bc7370d05eb40c5f968ac93e7f9d2594daf776ca1aa7ca5a621d163319a61",
+      "size": 9581,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["PROGRAM_CHANGE"],
+      "ccCount": 65,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 512,
+        "bankSelectMode": "CC0",
+        "additionalInfo": "Use MIDI Bank Select CC0 values 0-3 plus PC 0-127 to select AX8 presets 1:1 through 64:8"
+      }
+    },
+    {
+      "slug": "fractal_audio.axe_fx_3@0",
+      "vendor": "Fractal Audio",
+      "product": "Axe-Fx III",
+      "version": "0",
+      "path": "devices/fractal_audio/axe_fx_3.json",
+      "sha256": "0ed4a22f5a4e5870e7e3eeb767f570415efd85abd127fb31094a3dd6a570b23e",
+      "size": 1198,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["PROGRAM_CHANGE"],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 512,
+        "bankSelectMode": "CC0",
+        "additionalInfo": "Use MIDI Bank Select CC0 values 0-3 plus PC 0-127 to select Axe-Fx III presets 0-511. Axe-Fx III Mark II extends this map to 1024 presets using CC0 values 0-7."
+      }
+    },
+    {
+      "slug": "fractal_audio.fm3@0",
+      "vendor": "Fractal Audio",
+      "product": "FM3",
+      "version": "0",
+      "path": "devices/fractal_audio/fm3.json",
+      "sha256": "ee2639c37ec056bc57d089f802b965cf6cdb7dbe124f32cff785c836891ec72b",
+      "size": 1206,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["PROGRAM_CHANGE"],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 512,
+        "bankSelectMode": "CC0",
+        "additionalInfo": "Use MIDI Bank Select CC0 values 0-3 plus PC 0-127 to select FM3 presets 0-511."
+      }
+    },
+    {
+      "slug": "fractal_audio.fm9@0",
+      "vendor": "Fractal Audio",
+      "product": "FM9",
+      "version": "0",
+      "path": "devices/fractal_audio/fm9.json",
+      "sha256": "2c1228e1c7959622f963864de1d2ed0ab7feb1f6940004dd55fb17526032a570",
+      "size": 1206,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["PROGRAM_CHANGE"],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 512,
+        "bankSelectMode": "CC0",
+        "additionalInfo": "Use MIDI Bank Select CC0 values 0-3 plus PC 0-127 to select FM9 presets 0-511."
+      }
+    },
+    {
+      "slug": "fractal_audio.fx8@0",
+      "vendor": "Fractal Audio",
+      "product": "FX8",
+      "version": "0",
+      "path": "devices/fractal_audio/fx8.json",
+      "sha256": "cbf7f449f8a6c0d034f7535d0893835bda4142db1624828ee5972bd41cd9ab8d",
+      "size": 12463,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["PROGRAM_CHANGE"],
+      "ccCount": 87,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC 0-127 selects FX8 presets A1-P8; FX8 does not transmit or respond to bank select"
+      }
+    },
+    {
+      "slug": "fractal_audio.vp4@0",
+      "vendor": "Fractal Audio",
+      "product": "VP4",
+      "version": "0",
+      "path": "devices/fractal_audio/vp4.json",
+      "sha256": "b7771b680c5c35bade7e170db328e87e9aaa6d6bf8c29eceaa97100c9c532a1d",
+      "size": 980,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["PROGRAM_CHANGE"],
+      "ccCount": 0,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 104,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC 0-103 selects VP4 presets A1-Z4. VP4 does not transmit or respond to bank select."
       }
     },
     {
@@ -2103,6 +2899,24 @@
       }
     },
     {
+      "slug": "montreal_assembly.856_for_zellersasn@0",
+      "vendor": "Montréal Assembly",
+      "product": "856",
+      "version": "0",
+      "path": "devices/montreal_assembly/856_for_zellersasn.json",
+      "sha256": "a94d529521f911a2123fe68e686774e7df6ae67f6b111935a8a4863a8fcc0ab2",
+      "size": 10925,
+      "receives": ["NOTE_NUMBER"],
+      "transmits": [],
+      "ccCount": 61,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 0,
+        "bankSelectMode": "none"
+      }
+    },
+    {
       "slug": "mr_black.stereo_vintage_ensemble_professional@0",
       "vendor": "Mr Black",
       "product": "Vintage Ensemble",
@@ -2467,6 +3281,83 @@
         "indexBase": 0,
         "count": 0,
         "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "singular_sound.aeros_loop_studio@0",
+      "vendor": "Singular Sound",
+      "product": "Aeros",
+      "version": "0",
+      "path": "devices/singular_sound/aeros_loop_studio.json",
+      "sha256": "07b4bd9fe95ed2885831c602ce51b99749412f3ab2952c759257ef952183d93a",
+      "size": 13964,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "transmits": [
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "ccCount": 35,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 16384,
+        "bankSelectMode": "CC0",
+        "additionalInfo": "Aeros opens songs using CC0 MSB plus PC, in that order. LSB CC32 is not relevant for Aeros song select. The song must first be opened manually and saved with MIDI Song Select enabled to assign the MSB/PC combination."
+      }
+    },
+    {
+      "slug": "singular_sound.beat_buddy@0",
+      "vendor": "Singular Sound",
+      "product": "BeatBuddy",
+      "version": "0",
+      "path": "devices/singular_sound/beat_buddy.json",
+      "sha256": "0bd159c67fee9ab14fc276d3aa88375327473535b92a2b16651fffa8b5b41887",
+      "size": 8531,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [
+        "NOTE_NUMBER",
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "ccCount": 30,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "CC0_CC32",
+        "additionalInfo": "Default song select uses Bank Select MSB CC0, LSB CC32, and PC. MSB selects the bank, LSB selects the folder within the bank, and PC selects the song within the current folder. If only PC is sent, it opens the corresponding song in the current folder."
+      }
+    },
+    {
+      "slug": "singular_sound.beat_buddy_2@0",
+      "vendor": "Singular Sound",
+      "product": "BeatBuddy 2",
+      "version": "0",
+      "path": "devices/singular_sound/beat_buddy_2.json",
+      "sha256": "0fa290beb2ead8e8ec9410ae788ce08e44a0d880058c17bf5f55e075f7b84749",
+      "size": 9310,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [
+        "NOTE_NUMBER",
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "ccCount": 33,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "CC0_CC32",
+        "additionalInfo": "Default song select uses Bank Select MSB CC0, LSB CC32, and PC. MSB selects the bank, LSB selects the folder within the bank, and PC selects the song within the current folder. Aeros Mode uses MSB and PC only; LSB is ignored."
       }
     },
     {

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Dr. Scientist Phreak",
+  "displayName": "Phreak",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Dr. Scientist",
+    "model": "Phreak",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 9,
+      "name": "Remote Tap",
+      "additionalInfo": "Any value triggers tap",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Waveform Sel",
+      "additionalInfo": "0→1, >8→8",
+      "valueRange": { "min": 1, "max": 8 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "LFO Rate x1",
+      "additionalInfo": "BPM",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "LFO Rate x2",
+      "additionalInfo": "BPM (×2)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "LFO Rate x3",
+      "additionalInfo": "BPM (×3)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Waveform ++",
+      "additionalInfo": "Any value increments",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Waveform --",
+      "additionalInfo": "Any value decrements",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Mode",
+      "additionalInfo": "0→1, >3→3",
+      "valueRange": { "min": 1, "max": 3 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "LFO Subdiv",
+      "valueRange": {
+        "min": 1,
+        "max": 12,
+        "discreteValues": [
+          { "name": "Whole", "value": 1 },
+          { "name": "Dot Half", "value": 2 },
+          { "name": "Half", "value": 3 },
+          { "name": "Dot Qtr", "value": 4 },
+          { "name": "Qtr Trip", "value": 5 },
+          { "name": "Quarter", "value": 6 },
+          { "name": "Dot 8th", "value": 7 },
+          { "name": "8th Trip", "value": 8 },
+          { "name": "Eighth", "value": 9 },
+          { "name": "Dot 16th", "value": 10 },
+          { "name": "16th Trip", "value": 11 },
+          { "name": "Sixteenth", "value": 12 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Save Preset",
+      "additionalInfo": "Saves to preset slot 1-99",
+      "valueRange": { "min": 1, "max": 99 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Bypass Sw",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Left Stomp",
+      "additionalInfo": "0-63 Off, 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Freeze LFO",
+      "additionalInfo": "0-63 Pause, 64-127 Resume",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Pause", "value": 0 },
+          { "name": "Resume", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Phreak Knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Ramp Speed",
+      "additionalInfo": "0→1, >20→20",
+      "valueRange": { "min": 1, "max": 20 }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Mode ++",
+      "additionalInfo": "Any value increments",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Mode --",
+      "additionalInfo": "Any value decrements",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Env Direct",
+      "additionalInfo": "0-63 Down, 64-127 Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Down", "value": 0 },
+          { "name": "Up", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "DSP FX ++",
+      "additionalInfo": "Any value increments",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "DSP FX --",
+      "additionalInfo": "Any value decrements",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "DSP FX Sel",
+      "additionalInfo": "0→1, >8 ignored",
+      "valueRange": { "min": 1, "max": 8 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Clock Sync",
+      "additionalInfo": "0-63 Sync, 64-127 Ignore",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Sync", "value": 0 },
+          { "name": "Ignore", "value": 64 }
+        ]
+      }
+    }
+  ],
+  "x_programChangeMessages": [
+    { "program": 0, "name": "Bypass" },
+    { "program": 1, "name": "Preset 1" },
+    { "program": 2, "name": "Preset 2" },
+    { "program": 3, "name": "Preset 3" },
+    { "program": 4, "name": "Preset 4" }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

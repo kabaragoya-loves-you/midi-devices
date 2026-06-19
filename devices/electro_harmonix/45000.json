@@ -1,0 +1,334 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Electro-Harmonix 45000",
+  "displayName": "45000",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Electro-Harmonix",
+    "model": "45000",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "Button Press",
+      "additionalInfo": "Wait at least 300 ms between button push messages",
+      "valueRange": {
+        "min": 1,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Value Press", "value": 1 },
+          { "name": "Value Down", "value": 2 },
+          { "name": "Value Up", "value": 3 },
+          { "name": "Track FSW", "value": 100 },
+          { "name": "Undo FSW", "value": 101 },
+          { "name": "Record FSW", "value": 102 },
+          { "name": "Play/Stop", "value": 103 },
+          { "name": "Loop Down", "value": 104 },
+          { "name": "Loop Up", "value": 105 },
+          { "name": "New Loop", "value": 106 },
+          { "name": "Reverse", "value": 107 },
+          { "name": "Octave", "value": 108 },
+          { "name": "Tap", "value": 109 },
+          { "name": "Track 1", "value": 110 },
+          { "name": "Track 2", "value": 111 },
+          { "name": "Track 3", "value": 112 },
+          { "name": "Track 4", "value": 113 },
+          { "name": "Mixdown", "value": 116 },
+          { "name": "Punch-In", "value": 117 },
+          { "name": "Quantize", "value": 118 },
+          { "name": "Page", "value": 119 },
+          { "name": "Mute Trk 1", "value": 120 },
+          { "name": "Mute Trk 2", "value": 121 },
+          { "name": "Mute Trk 3", "value": 122 },
+          { "name": "Mute Trk 4", "value": 123 },
+          { "name": "Mute Mix", "value": 126 },
+          { "name": "Ext Clock", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Clix Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Dry Out",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Track 1 Lvl",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Track 2 Lvl",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Track 3 Lvl",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Track 4 Lvl",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Mixdown Lvl",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Tempo",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Dry Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Track 1 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Track 2 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Track 3 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Track 4 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Rec Button",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "New Button",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Play Button",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Track Select",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Ext Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Mixdown Btn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Stereo Btn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Reverse Btn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Octave Btn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Punch-In",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Quantize",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Loop Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Loop Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Loop Select",
+      "valueRange": { "min": 0, "max": 99 }
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "Omni Off",
+      "valueRange": {
+        "min": 0,
+        "max": 0,
+        "discreteValues": [
+          { "name": "Enable", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Omni On",
+      "valueRange": {
+        "min": 0,
+        "max": 0,
+        "discreteValues": [
+          { "name": "Enable", "value": 0 }
+        ]
+      }
+    }
+  ],
+  "x_programChangeMessages": [
+    { "program": 100, "name": "Play Button" },
+    { "program": 101, "name": "Mute Trk 1" },
+    { "program": 102, "name": "Mute Trk 2" },
+    { "program": 103, "name": "Mute Trk 3" },
+    { "program": 104, "name": "Mute Trk 4" },
+    { "program": 105, "name": "Rec Button" },
+    { "program": 106, "name": "Track 1 Rec" },
+    { "program": 107, "name": "Track 2 Rec" },
+    { "program": 108, "name": "Track 3 Rec" },
+    { "program": 109, "name": "Track 4 Rec" },
+    { "program": 110, "name": "New Button" },
+    { "program": 111, "name": "Quantize" },
+    { "program": 112, "name": "Rec Button" },
+    { "program": 113, "name": "Play Button" },
+    { "program": 114, "name": "Reverse" },
+    { "program": 115, "name": "Track Select" },
+    { "program": 116, "name": "Stereo" },
+    { "program": 117, "name": "Punch-In" },
+    { "program": 118, "name": "Ext Sync" },
+    { "program": 119, "name": "Octave" },
+    { "program": 120, "name": "Mixdown" },
+    { "program": 121, "name": "Loop Down" },
+    { "program": 122, "name": "Loop Up" },
+    { "program": 123, "name": "Mute Mix" },
+    { "program": 124, "name": "Mute Dry Out" },
+    { "program": 125, "name": "Mute Clix" },
+    { "program": 126, "name": "Mute All Play" }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 127,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

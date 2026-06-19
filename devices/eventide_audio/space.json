@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.1",
+  "title": "Eventide Space",
+  "displayName": "Space",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Eventide Audio",
+    "model": "Space",
+    "version": ""
+  },
+  "receives": ["PROGRAM_CHANGE", "PITCH_BEND", "CLOCK"],
+  "transmits": ["PROGRAM_CHANGE", "PITCH_BEND", "CLOCK"],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 40,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC0-CC99 assignable on the device; no factory default CC map."
+}

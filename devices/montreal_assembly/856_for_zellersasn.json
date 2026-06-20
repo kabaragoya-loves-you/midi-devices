@@ -1,11 +1,11 @@
 {
   "schemaVersion": "0.1.1",
   "implementationVersion": "0",
-  "title": "Montréal Assembly 856 for ZELLERSASN",
+  "title": "Montreal Assembly 856 for ZELLERSASN",
   "displayName": "856",
   "device": {
     "displayName": "",
-    "manufacturer": "Montréal Assembly",
+    "manufacturer": "Montreal Assembly",
     "model": "856 for ZELLERSASN",
     "version": "1.0"
   },

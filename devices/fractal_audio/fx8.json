@@ -454,17 +454,12 @@
     {
       "controlChangeNumber": 125,
       "name": "Relay 1",
+      "additionalInfo": "Factory default shares CC125 with Rotary X/Y. All FX8 CCs are globally reassignable, so remap one to resolve the collision.",
       "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 126,
       "name": "Relay 2",
-      "valueRange": { "min": 0, "max": 127 }
-    },
-    {
-      "controlChangeNumber": 125,
-      "name": "Rotary X/Y",
-      "additionalInfo": "Factory table assigns the same CC as Relay 1",
       "valueRange": { "min": 0, "max": 127 }
     }
   ],

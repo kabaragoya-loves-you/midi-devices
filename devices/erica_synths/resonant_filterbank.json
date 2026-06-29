@@ -1,0 +1,643 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Erica Synths Resonant Filterbank",
+  "displayName": "Resonant Filterbank",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Erica Synths",
+    "model": "Resonant Filterbank",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 69,
+      "name": "Op Mode",
+      "x_mandatory": true,
+      "additionalInfo": "Panel-selected on unit; label gate for CC70-83. Device has no mode CC.",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "Filterbank",
+            "value": 0
+          },
+          {
+            "name": "Filter",
+            "value": 1
+          },
+          {
+            "name": "Clock Mod",
+            "value": 2
+          },
+          {
+            "name": "Dyn EQ",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Band 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Cutoff"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Mod Gain"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Threshold"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Band 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Filter Slope"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Mod Shape"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Ctrl Decay"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Band 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Filter Width"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Mod Freq"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Ctrl Attack"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Band 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Filter Type"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Step Dir"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Env Delay"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Band 5",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Filter Gain"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Step BPM"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "name": "In Filt Ctr"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Band 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Band Offset"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Band Offset"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Audio Src"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Band 7",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "name": "R Ch Invert"
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Band Offset"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Band 8",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Band 9",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Band 10",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Band Low",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Band Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Band High",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Band All",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 2
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 69,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Reso Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "FB Ch 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "FB Ch 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "FB Ch 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "FB Ch 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "FB Ch 5",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "FB Ch 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "FB Ch 7",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "FB Ch 8",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "FB Ch 9",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "FB Ch 10",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "FB All",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC70-83 function depends on operating mode (set on unit). MIDI clock is system-wide, not channel-specific."
+}

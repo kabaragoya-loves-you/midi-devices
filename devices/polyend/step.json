@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Polyend Step",
+  "displayName": "Step",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Polyend",
+    "model": "Step",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 81,
+      "name": "Pattern 1",
+      "additionalInfo": "Any value change queues pattern 1 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Pattern 2",
+      "additionalInfo": "Any value change queues pattern 2 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Pattern 3",
+      "additionalInfo": "Any value change queues pattern 3 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Pattern 4",
+      "additionalInfo": "Any value change queues pattern 4 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Pattern 5",
+      "additionalInfo": "Any value change queues pattern 5 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Pattern 6",
+      "additionalInfo": "Any value change queues pattern 6 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Pattern 7",
+      "additionalInfo": "Any value change queues pattern 7 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Pattern 8",
+      "additionalInfo": "Any value change queues pattern 8 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Pattern 9",
+      "additionalInfo": "Any value change queues pattern 9 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Pattern 10",
+      "additionalInfo": "Any value change queues pattern 10 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Pattern 11",
+      "additionalInfo": "Any value change queues pattern 11 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Pattern 12",
+      "additionalInfo": "Any value change queues pattern 12 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Pattern 13",
+      "additionalInfo": "Any value change queues pattern 13 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Pattern 14",
+      "additionalInfo": "Any value change queues pattern 14 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Pattern 15",
+      "additionalInfo": "Any value change queues pattern 15 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "Pattern 16",
+      "additionalInfo": "Any value change queues pattern 16 at end of the active sequence",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Select", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "PC changes songs; CC 81-96 are per-pattern triggers (not mix levels). Each pattern CC fires on any value change and switches at the end of the active sequence. Volume and other performance controls are handled on-device or via the analog expression pedal, not this fixed CC map. Step can send or receive clock and transport depending on Settings > MIDI. MIDI In accepts Type A or B TRS; configure PC In, CC In, and clock/transport separately in Settings > MIDI."
+}

@@ -1,0 +1,420 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Red Panda Raster 2",
+  "displayName": "Raster 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Red Panda",
+    "model": "Raster 2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression",
+      "additionalInfo": "CTRL expression input",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Blend Tilt",
+      "additionalInfo": "Blend left/right tilt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Shift",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Shift Tilt",
+      "additionalInfo": "Shift left/right tilt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Delay Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Dly Tilt",
+      "additionalInfo": "Delay time left/right tilt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Fdbk Tilt",
+      "additionalInfo": "Feedback left/right tilt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Mod Ph Tilt",
+      "additionalInfo": "Modulation phase left/right tilt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Depth Tilt",
+      "additionalInfo": "Modulation depth left/right tilt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Shift SW",
+      "additionalInfo": "SHIFT/TAP footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "ON SW",
+      "additionalInfo": "ON footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Bypass",
+      "additionalInfo": "Receive only",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Effect On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Tap",
+      "additionalInfo": "Remote tap; values 64-127",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Shift On",
+      "additionalInfo": "Receive only",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Mod Wave",
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          { "name": "Sine", "value": 0 },
+          { "name": "Triangle", "value": 1 },
+          { "name": "Ramp Up", "value": 2 },
+          { "name": "Ramp Down", "value": 3 },
+          { "name": "Square", "value": 4 },
+          { "name": "Rand Step", "value": 5 },
+          { "name": "Rand Smooth", "value": 6 },
+          { "name": "Envelope", "value": 7 },
+          { "name": "Inv Envelope", "value": 8 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Mod Dest",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Tremolo", "value": 0 },
+          { "name": "Shift", "value": 1 },
+          { "name": "Delay", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Shift Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Transpose", "value": 0 },
+          { "name": "Detune", "value": 1 },
+          { "name": "Phase/Freq", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Dly Struct",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Parallel", "value": 0 },
+          { "name": "Ping Pong", "value": 1 },
+          { "name": "Series", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "FB Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Forward", "value": 0 },
+          { "name": "Fwd/Shift 1", "value": 1 },
+          { "name": "Reverse", "value": 2 },
+          { "name": "Rev/Shift 1", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Dly Range",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "400 ms", "value": 0 },
+          { "name": "800 ms", "value": 1 },
+          { "name": "1600 ms", "value": 2 },
+          { "name": "3200 ms", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Dly Note Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 31,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 },
+          { "name": "Dot 64th", "value": 27 },
+          { "name": "64th", "value": 28 },
+          { "name": "64th Trip", "value": 29 },
+          { "name": "Dot 128th", "value": 30 },
+          { "name": "128th", "value": 31 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Mod Note Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 31,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 },
+          { "name": "Dot 64th", "value": 27 },
+          { "name": "64th", "value": 28 },
+          { "name": "64th Trip", "value": 29 },
+          { "name": "Dot 128th", "value": 30 },
+          { "name": "128th", "value": 31 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "MIDI Clock",
+      "additionalInfo": "Global; remembered at power off; default on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 },
+          { "name": "Global", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "L FS Mode",
+      "additionalInfo": "Left footswitch; remembered at power off, not saved in presets",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Shift Mom", "value": 0 },
+          { "name": "Shift Latch", "value": 1 },
+          { "name": "Tap", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "R FS Mode",
+      "additionalInfo": "Right footswitch; remembered at power off, not saved in presets",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Momentary", "value": 0 },
+          { "name": "Latch", "value": 1 },
+          { "name": "Mute Bypass", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Shift Link",
+      "additionalInfo": "Shift link left/right channels",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Linked", "value": 0 },
+          { "name": "Independent", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "FB Invert",
+      "additionalInfo": "Saved in presets, not remembered at power off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 127,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Syncs to incoming MIDI clock at 24 PPQ when CC110 is enabled. Clock alone can start sync without transport start/stop."
+}

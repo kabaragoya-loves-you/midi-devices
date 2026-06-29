@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-06-19T21:48:22Z",
-  "count": 215,
+  "generatedAt": "2026-06-29T14:32:42Z",
+  "count": 226,
   "devices": [
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
@@ -45,14 +45,14 @@
       "product": "Colour Theory",
       "version": "0",
       "path": "devices/alexander_pedals/colour_theory.json",
-      "sha256": "375b637077b7e78c20810b4de5c72837b89aa837fe70780d7fe1949936d788be",
-      "size": 6001,
+      "sha256": "7a9b86996f6be08c16cef6b3240ba860130247b66710073c1ee873b2003097ec",
+      "size": 5899,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
       ],
       "transmits": [],
-      "ccCount": 47,
+      "ccCount": 46,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
@@ -705,20 +705,21 @@
       "product": "Big Time",
       "version": "0",
       "path": "devices/chase_bliss/big_time.json",
-      "sha256": "b8e104ab9713e2c97c7154760b13562ed68b761fefa46366c28a7c0988b1543f",
-      "size": 9863,
+      "sha256": "7d53dc1a2326f8bb50bf699560303f626fb4646e105b9d7e281edd9c4afcdd04",
+      "size": 13429,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
         "NOTE_NUMBER"
       ],
       "transmits": ["CLOCK"],
-      "ccCount": 37,
+      "ccCount": 41,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
         "count": 127,
-        "bankSelectMode": "none"
+        "bankSelectMode": "none",
+        "additionalInfo": "PC recalls presets 0-126; PC also saves when in save mode. CC27 value selects the save slot."
       }
     },
     {
@@ -931,11 +932,11 @@
       "product": "Generation Loss MKII",
       "version": "0",
       "path": "devices/chase_bliss/generation_loss_mkii.json",
-      "sha256": "b2d474b565a2abf7712d6ca700e7ad37ec96eb2aa69d79d886fe355f6a32affa",
-      "size": 14522,
+      "sha256": "592602be1f6d0c9c289e5c68d0354b57af302d88ef864a97edb5dac5afd0eb43",
+      "size": 14568,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
-      "ccCount": 42,
+      "ccCount": 41,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 1,
@@ -1403,8 +1404,8 @@
       "product": "Bass Whammy",
       "version": "0",
       "path": "devices/digitech/bass_whammy.json",
-      "sha256": "d94caa28743ab12e3fed85edc92f8ab37030a3b93c509873aff8f0045d42aeda",
-      "size": 5036,
+      "sha256": "2fd6232428919a1ed4ce615a419bae4e1c6fc2d95b008a1fd145d14f30df1a3b",
+      "size": 678,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 1,
@@ -1421,8 +1422,8 @@
       "product": "MonoNeon",
       "version": "0",
       "path": "devices/digitech/mononeon_whammy.json",
-      "sha256": "abdebf3aa3fc78dc08509a1477085afd604d6d46ced47631e6d57ad1f2a0e58a",
-      "size": 5091,
+      "sha256": "037d4872f463e968e0d58647d4b2328b0bafcb5f3afe817df90a3ec7f4598b7d",
+      "size": 683,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 1,
@@ -1439,8 +1440,8 @@
       "product": "Whammy DT",
       "version": "0",
       "path": "devices/digitech/whammy.json",
-      "sha256": "3fa41321d7968cc81c55be249655893140bc90d12d940822bb37dd90572aa5f5",
-      "size": 4484,
+      "sha256": "5319fb10ff0c002e00b4044527426ef51838032b1b3048fe352ddccc61ff55c8",
+      "size": 672,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 1,
@@ -1457,8 +1458,8 @@
       "product": "Whammy DT",
       "version": "0",
       "path": "devices/digitech/whammy_dt.json",
-      "sha256": "3fa41321d7968cc81c55be249655893140bc90d12d940822bb37dd90572aa5f5",
-      "size": 4484,
+      "sha256": "5319fb10ff0c002e00b4044527426ef51838032b1b3048fe352ddccc61ff55c8",
+      "size": 672,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 1,
@@ -1475,8 +1476,8 @@
       "product": "Dusk",
       "version": "0",
       "path": "devices/dr_scientist/dusk.json",
-      "sha256": "42619af3b5c581d3513601d38da8441811eccfdef51f1ae565572a4ea04cc0cf",
-      "size": 4934,
+      "sha256": "3e198096861b9f7da325bf521ea9344be7b9a4ece41f36dc293011b0d7c623ae",
+      "size": 4684,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1496,8 +1497,8 @@
       "product": "Phreak",
       "version": "0",
       "path": "devices/dr_scientist/phreak.json",
-      "sha256": "84bd90339ef8364da94e6705e1e88a7d7b5e42afa31912ea21887edf3776fe71",
-      "size": 5792,
+      "sha256": "7a06c1d3d5e15f1493e1903326686e15bcf4393136a9b2bb0f9dc5c89625279c",
+      "size": 5542,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1517,8 +1518,8 @@
       "product": "Atmosphere",
       "version": "0",
       "path": "devices/dr_scientist/the_atmosphere.json",
-      "sha256": "1d9a3536f8509f8244fb2e6d66c4c02de5da7f0ca416bc23e97927de4195a089",
-      "size": 10752,
+      "sha256": "1d155f9d42a1731a6fcb3165295545a42c3705dc2bc90cbf04393b21aac69fda",
+      "size": 9286,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1538,8 +1539,8 @@
       "product": "45000",
       "version": "0",
       "path": "devices/electro_harmonix/45000.json",
-      "sha256": "e2f2a2dc51717e6b58b2f92ff9b975c5e9378d0977a81b79afaf3887e64230f2",
-      "size": 8759,
+      "sha256": "4802391fb76617b9fdddb6f5ba80f6585c07e76f02471f152b709052e8731341",
+      "size": 7467,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -1565,8 +1566,8 @@
       "product": "95000",
       "version": "0",
       "path": "devices/electro_harmonix/95000.json",
-      "sha256": "2fe403b66bdb776c5a0718a3ef3002e624dfd706b1dd7a81e7618f0f44ead582",
-      "size": 8535,
+      "sha256": "780441646affee3184e1590fb21f54900bbc9a694221d1761327d2b5e08eb034",
+      "size": 7240,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -1592,8 +1593,8 @@
       "product": "HOG2",
       "version": "0",
       "path": "devices/electro_harmonix/hog2.json",
-      "sha256": "662228ec4e4f6ba5ee2fe101d92154609c568f85100f57387191371a2af33490",
-      "size": 6621,
+      "sha256": "e99ec111205c3e0d1e67f6f0e2a00cab0d5976a2532fe681d156da14324bfbd9",
+      "size": 6190,
       "receives": [
         "PROGRAM_CHANGE",
         "PITCH_BEND"
@@ -1875,6 +1876,48 @@
       "x_pc": {
         "indexBase": 1,
         "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "erica_synths.razornator@0",
+      "vendor": "Erica Synths",
+      "product": "Razornator",
+      "version": "0",
+      "path": "devices/erica_synths/razornator.json",
+      "sha256": "0574caf0b7c806ce9231b185220e3743dbe850e26bf6106c0ce5ed1f9b8e72ed",
+      "size": 2613,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [],
+      "ccCount": 13,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "erica_synths.resonant_filterbank@0",
+      "vendor": "Erica Synths",
+      "product": "Resonant Filterbank",
+      "version": "0",
+      "path": "devices/erica_synths/resonant_filterbank.json",
+      "sha256": "f467fe85210c71d72d1b44a47a54968f13e98b8504ebe7f0d0338a2d58eb171d",
+      "size": 12130,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 29,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 128,
         "bankSelectMode": "none"
       }
     },
@@ -2320,14 +2363,14 @@
       "product": "FX8",
       "version": "0",
       "path": "devices/fractal_audio/fx8.json",
-      "sha256": "cbf7f449f8a6c0d034f7535d0893835bda4142db1624828ee5972bd41cd9ab8d",
-      "size": 12463,
+      "sha256": "60f87634a0e1763af93b1621c129ccd358a85c80b97b5eb0fc75de3a5711ffd8",
+      "size": 12417,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
       ],
       "transmits": ["PROGRAM_CHANGE"],
-      "ccCount": 87,
+      "ccCount": 86,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
@@ -2418,8 +2461,8 @@
       "product": "Bigsby",
       "version": "0",
       "path": "devices/gamechanger_audio/bigsby.json",
-      "sha256": "80c99927f50ea571d7a02ce19cf89da20c1ee988d2a5c1c7331c64889b8792a2",
-      "size": 15922,
+      "sha256": "3c2cdbc9e57a9123363772dbe8c1906798c12fa800b57951d4151145abce8e7d",
+      "size": 6714,
       "receives": [
         "PROGRAM_CHANGE",
         "PITCH_BEND",
@@ -2521,8 +2564,8 @@
       "product": "Microcosm",
       "version": "0",
       "path": "devices/hologram_electronics/microcosm.json",
-      "sha256": "0c06944edce47572d227025693538c1632c971fd25f95a7009114978196d700c",
-      "size": 12256,
+      "sha256": "6ba5936baa80aa26f5a5893b1ecd46d821259af9a2aec6242594c01f9730e8f8",
+      "size": 8496,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2900,12 +2943,12 @@
     },
     {
       "slug": "montreal_assembly.856_for_zellersasn@0",
-      "vendor": "Montréal Assembly",
+      "vendor": "Montreal Assembly",
       "product": "856",
       "version": "0",
       "path": "devices/montreal_assembly/856_for_zellersasn.json",
-      "sha256": "a94d529521f911a2123fe68e686774e7df6ae67f6b111935a8a4863a8fcc0ab2",
-      "size": 10925,
+      "sha256": "81d2988aa2707a3ddbda965bd1a852a0626bc56f92baedd6f3085145d4b87197",
+      "size": 10923,
       "receives": ["NOTE_NUMBER"],
       "transmits": [],
       "ccCount": 61,
@@ -3263,6 +3306,179 @@
       }
     },
     {
+      "slug": "polyend.mess@0",
+      "vendor": "Polyend",
+      "product": "Mess",
+      "version": "0",
+      "path": "devices/polyend/mess.json",
+      "sha256": "f4cba46316a2f52e4d446a9f44c8cf795652db8f545583602bb24a7851814554",
+      "size": 3677,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 22,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "polyend.step@0",
+      "vendor": "Polyend",
+      "product": "Step",
+      "version": "0",
+      "path": "devices/polyend/step.json",
+      "sha256": "ea3756b7578d0a2a823eda470bd052fc1aa1f41323ff35e2727c34e823511601",
+      "size": 6302,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "transmits": [
+        "CLOCK",
+        "TRANSPORT_START",
+        "TRANSPORT_STOP"
+      ],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "red_panda.bitmap_2@0",
+      "vendor": "Red Panda",
+      "product": "Bitmap 2",
+      "version": "0",
+      "path": "devices/red_panda/bitmap_2.json",
+      "sha256": "694dd35acb206ad5dd12aae76652707c07f9e5a3f4443ca03bb6e1c15822d727",
+      "size": 7811,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 24,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 127,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "red_panda.context_2@0",
+      "vendor": "Red Panda",
+      "product": "Context 2",
+      "version": "0",
+      "path": "devices/red_panda/context_2.json",
+      "sha256": "7b593f0d4a82fdc3f1c0fffecddc88022f451b4cb9da4835bddd3a692c986fd4",
+      "size": 10998,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 25,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 127,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "red_panda.particle@0",
+      "vendor": "Red Panda",
+      "product": "Particle 2",
+      "version": "0",
+      "path": "devices/red_panda/particle.json",
+      "sha256": "40861b86d4b367d5bac64f9ae1f8d275fcc7b5123414872dfad42b9825c716a6",
+      "size": 16964,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 34,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 127,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "red_panda.radius@0",
+      "vendor": "Red Panda",
+      "product": "Radius",
+      "version": "0",
+      "path": "devices/red_panda/radius.json",
+      "sha256": "ae5fdb501192b91287e0be5fba005dfdcadf4e2544f4941a42ab526b3663b8f3",
+      "size": 9299,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [],
+      "ccCount": 28,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "red_panda.raster_2@0",
+      "vendor": "Red Panda",
+      "product": "Raster 2",
+      "version": "0",
+      "path": "devices/red_panda/raster_2.json",
+      "sha256": "89485e2f93b710353f054be6a37f3397cd79c6c7efcec2920b2153c17bb31fc3",
+      "size": 12436,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 33,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 127,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "red_panda.tensor@0",
+      "vendor": "Red Panda",
+      "product": "Tensor",
+      "version": "0",
+      "path": "devices/red_panda/tensor.json",
+      "sha256": "882ec22f7e053e39631b2238834b488e87220d7fcdda663a96cbfa34684a8a18",
+      "size": 9028,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 31,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 31,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC 0-30 recalls presets. Save via SysEx, TouchOSC, or hold HOLD+ON footswitches then send PC."
+      }
+    },
+    {
       "slug": "sherman.filterbank_2@0",
       "vendor": "Sherman",
       "product": "Filterbank 2",
@@ -3387,8 +3603,8 @@
       "product": "BigSky",
       "version": "0",
       "path": "devices/strymon/bigsky.json",
-      "sha256": "a225d36d88a46db18a06776f68b1a3cc2a3352fccbbd43dd3accd0ce27acf45d",
-      "size": 12949,
+      "sha256": "da82697ff0542c366044d84c78490e7a2f2ce6a82fb781e1e0680746b49e6f0f",
+      "size": 12945,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3453,8 +3669,8 @@
       "product": "Brig",
       "version": "0",
       "path": "devices/strymon/brig.json",
-      "sha256": "ce2f4f08f7c91b0df54678d7d065fa347b9a790bfd32e897d8a1b0fc8f06d1f3",
-      "size": 3703,
+      "sha256": "424482e7d20b8405629901ded48c21f60bee49303a98b5f9f161c9214ce71ee0",
+      "size": 3699,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3495,8 +3711,8 @@
       "product": "Compadre",
       "version": "0",
       "path": "devices/strymon/compadre.json",
-      "sha256": "8f89ab0f8b26b69c6c1eed019a37649733625ef28a33b41a280b767057909327",
-      "size": 1991,
+      "sha256": "99b650b09f68f683d2443aa441341bc76ede88b4d10896b99c9fcd2da080bef1",
+      "size": 1987,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 10,
@@ -3660,8 +3876,8 @@
       "product": "Mobius",
       "version": "0",
       "path": "devices/strymon/mobius.json",
-      "sha256": "b6d69c9e8cac948b79a090dac41627464428cf8feb45c2a6bc03fdebe5566b38",
-      "size": 14031,
+      "sha256": "416f7c830cd29bef86d40da6b63760c3925af96c665f857a7e2b076fe6fc3e57",
+      "size": 14027,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3787,8 +4003,8 @@
       "product": "UltraViolet",
       "version": "0",
       "path": "devices/strymon/ultraviolet.json",
-      "sha256": "8469aae962b053adee6a124d8c6fd8c1c36d99902f0e9a108433a39014ce8780",
-      "size": 3072,
+      "sha256": "811b26880c878dc29b34526e21a46a1c0a5acaadcdc19a839c9d44bfa928c807",
+      "size": 3068,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3851,8 +4067,8 @@
       "product": "Red Mountain",
       "version": "0",
       "path": "devices/swindler_effects/red_mountain.json",
-      "sha256": "ddb93539a9c1f1f274629cd9aeedd9fecd9aadc6d91323f04423a0ff7df7b9ca",
-      "size": 2515,
+      "sha256": "ec1e5ce02a496d071427160bbbd7a8a5e6e7066451807acdc0c199911ff7d544",
+      "size": 2511,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 8,
@@ -3869,8 +4085,8 @@
       "product": "The Gulf",
       "version": "0",
       "path": "devices/swindler_effects/the_gulf.json",
-      "sha256": "a2009cfadaebeccf9b5b36522305eca1403548af69d7b8e5d012d7192e4e917d",
-      "size": 2149,
+      "sha256": "781deaf56cdbf94fdee5f67c3575fbf9809f848f1328328ea40c6ef653012686",
+      "size": 2145,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 8,
@@ -3878,6 +4094,28 @@
       "x_pc": {
         "indexBase": 0,
         "count": 51,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "torso_electronics.s4@0",
+      "vendor": "Torso Electronics",
+      "product": "S4",
+      "version": "0",
+      "path": "devices/torso_electronics/s4.json",
+      "sha256": "75aa5f7e5f96713fa0e2244b05cb2645ca67a467ba9a529ff6e48048a4252803",
+      "size": 47469,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [],
+      "ccCount": 93,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
         "bankSelectMode": "none"
       }
     },

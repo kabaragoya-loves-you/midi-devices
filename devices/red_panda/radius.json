@@ -1,0 +1,327 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Red Panda Radius",
+  "displayName": "Radius",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Red Panda",
+    "model": "Radius",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression",
+      "additionalInfo": "Same as expression pedal on CTRL input",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Ring/FS Mix",
+      "additionalInfo": "Ring mod/freq shift mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Carrier Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Carr Track",
+      "additionalInfo": "Carrier pitch tracking; 0 -100%, 64 off, 127 +100%",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "-100%", "value": 0 },
+          { "name": "Off", "value": 64 },
+          { "name": "+100%", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Step 1",
+      "additionalInfo": "Step modulator step 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Step 2",
+      "additionalInfo": "Step modulator step 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Step 3",
+      "additionalInfo": "Step modulator step 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Step 4",
+      "additionalInfo": "Step modulator step 4",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Step 5",
+      "additionalInfo": "Step modulator step 5",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Step 6",
+      "additionalInfo": "Step modulator step 6",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Step 7",
+      "additionalInfo": "Step modulator step 7",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Step 8",
+      "additionalInfo": "Step modulator step 8",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Last Step",
+      "additionalInfo": "Step modulator last step; values 1-8",
+      "valueRange": {
+        "min": 1,
+        "max": 8,
+        "discreteValues": [
+          { "name": "1 Step", "value": 1 },
+          { "name": "2 Steps", "value": 2 },
+          { "name": "3 Steps", "value": 3 },
+          { "name": "4 Steps", "value": 4 },
+          { "name": "5 Steps", "value": 5 },
+          { "name": "6 Steps", "value": 6 },
+          { "name": "7 Steps", "value": 7 },
+          { "name": "8 Steps", "value": 8 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Step Ramp",
+      "additionalInfo": "0-63 step, 64-127 ramp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Step", "value": 0 },
+          { "name": "Ramp", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "AUX SW",
+      "additionalInfo": "Gated footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "ON SW",
+      "additionalInfo": "Gated footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Mod Env Trig",
+      "additionalInfo": "Modulation envelope trigger",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Mod Wave",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Triangle", "value": 0 },
+          { "name": "Square", "value": 1 },
+          { "name": "Rand Step", "value": 2 },
+          { "name": "Random 2", "value": 3 },
+          { "name": "Step Mod", "value": 4 },
+          { "name": "X-", "value": 5 },
+          { "name": "X+", "value": 6 },
+          { "name": "Env Follow", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Shift 2X",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Down", "value": 0 },
+          { "name": "Off", "value": 1 },
+          { "name": "Up", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Shift Range",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Low", "value": 0 },
+          { "name": "High", "value": 1 },
+          { "name": "Stepped", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Bypass",
+      "additionalInfo": "Receive only",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Effect On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Tap",
+      "additionalInfo": "Remote tap; values 64-127",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Mod Note Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 26,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "MIDI Clock",
+      "additionalInfo": "Global; remembered at power off; default on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "MIDI Carrier",
+      "additionalInfo": "Play carrier by MIDI note",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 },
+          { "name": "Global", "value": 2 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Syncs to incoming MIDI clock at 24 PPQ when CC110 is enabled. Clock alone can start sync without transport start/stop."
+}

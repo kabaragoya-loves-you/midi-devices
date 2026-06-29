@@ -1,0 +1,523 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Red Panda Particle 2",
+  "displayName": "Particle 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Red Panda",
+    "model": "Particle 2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression",
+      "additionalInfo": "CTRL expression input",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Chop",
+      "additionalInfo": "Grain size",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Frz Thresh",
+      "additionalInfo": "Freeze threshold; 0 off, 1-126 threshold, 127 on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Threshold", "value": 64 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Delay",
+      "additionalInfo": "Delay time in seconds; same scaling as DELAY/PITCH knob",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Dly Random",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Pitch",
+      "additionalInfo": "Semitone transposition; values between anchors interpolate",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "-1 Oct", "value": 2 },
+          { "name": "-M7", "value": 9 },
+          { "name": "-m7", "value": 14 },
+          { "name": "-M6", "value": 19 },
+          { "name": "-m6", "value": 24 },
+          { "name": "-P5", "value": 29 },
+          { "name": "-d5", "value": 34 },
+          { "name": "-P4", "value": 39 },
+          { "name": "-M3", "value": 44 },
+          { "name": "-m3", "value": 49 },
+          { "name": "-M2", "value": 54 },
+          { "name": "-m2", "value": 59 },
+          { "name": "Unison", "value": 64 },
+          { "name": "+m2", "value": 69 },
+          { "name": "+M2", "value": 74 },
+          { "name": "+m3", "value": 79 },
+          { "name": "+M3", "value": 84 },
+          { "name": "+P4", "value": 89 },
+          { "name": "+d5", "value": 94 },
+          { "name": "+P5", "value": 99 },
+          { "name": "+m6", "value": 104 },
+          { "name": "+M6", "value": 109 },
+          { "name": "+m7", "value": 114 },
+          { "name": "+M7", "value": 119 },
+          { "name": "+1 Oct", "value": 125 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Pitch Detune",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Pitch Random",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Density",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Direction",
+      "additionalInfo": "0 reverse, 1-126 probability, 127 forward",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Reverse", "value": 0 },
+          { "name": "Probability", "value": 64 },
+          { "name": "Forward", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "LFO Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "FB Lowpass",
+      "additionalInfo": "Feedback lowpass filter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "FB Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 10,
+        "discreteValues": [
+          { "name": "Recycle", "value": 0 },
+          { "name": "Recycle PP", "value": 1 },
+          { "name": "Post Dly", "value": 2 },
+          { "name": "Post PP", "value": 3 },
+          { "name": "Grn Rpt #", "value": 4 },
+          { "name": "Grn Rpt 50", "value": 5 },
+          { "name": "Grn Rpt 37", "value": 6 },
+          { "name": "Grn Rpt 25", "value": 7 },
+          { "name": "Grn Rpt 12", "value": 8 },
+          { "name": "Grn Rpt %", "value": 9 },
+          { "name": "Auto", "value": 10 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Grain Pan",
+      "additionalInfo": "0-63 left, 64 center, 65-127 right",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Left", "value": 21 },
+          { "name": "Center", "value": 64 },
+          { "name": "Right", "value": 106 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Grain Spread",
+      "additionalInfo": "Random pan range",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Freeze",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Effect On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Effect", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Bypass",
+      "additionalInfo": "Receive only",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Effect", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Tap",
+      "additionalInfo": "Remote tap; values 64-127",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Mode",
+      "x_mandatory": true,
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Pitch/Dens", "value": 0 },
+          { "name": "Pitch/LFO", "value": 1 },
+          { "name": "Pitch/Det", "value": 2 },
+          { "name": "Dly/Random", "value": 3 },
+          { "name": "Dly/Pitch", "value": 4 },
+          { "name": "Dly/Rev", "value": 5 },
+          { "name": "Dly/LFO", "value": 6 },
+          { "name": "Dly/Dens", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Chop/Frz",
+      "additionalInfo": "0-63 chop, 64-127 freeze threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Chop", "value": 0 },
+          { "name": "Frz Thresh", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Dly/Pitch",
+      "additionalInfo": "Delay time or pitch range depending on mode (CC 102)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Param",
+      "additionalInfo": "Mode-specific secondary parameter (CC 102)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Dly Note Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 31,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 },
+          { "name": "Dot 64th", "value": 27 },
+          { "name": "64th", "value": 28 },
+          { "name": "64th Trip", "value": 29 },
+          { "name": "Dot 128th", "value": 30 },
+          { "name": "128th", "value": 31 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Dens Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 31,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 },
+          { "name": "Dot 64th", "value": 27 },
+          { "name": "64th", "value": 28 },
+          { "name": "64th Trip", "value": 29 },
+          { "name": "Dot 128th", "value": 30 },
+          { "name": "128th", "value": 31 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Chop Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 31,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 },
+          { "name": "Dot 64th", "value": 27 },
+          { "name": "64th", "value": 28 },
+          { "name": "64th Trip", "value": 29 },
+          { "name": "Dot 128th", "value": 30 },
+          { "name": "128th", "value": 31 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "LFO Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 31,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 },
+          { "name": "Dot 64th", "value": 27 },
+          { "name": "64th", "value": 28 },
+          { "name": "64th Trip", "value": 29 },
+          { "name": "Dot 128th", "value": 30 },
+          { "name": "128th", "value": 31 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "MIDI Clock",
+      "additionalInfo": "Global; remembered at power off; default on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Pitch Quant",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          { "name": "Free", "value": 0 },
+          { "name": "Semitones", "value": 1 },
+          { "name": "Oct Up", "value": 2 },
+          { "name": "Oct Down", "value": 3 },
+          { "name": "5ths/Oct", "value": 4 },
+          { "name": "Intv +/-", "value": 5 },
+          { "name": "Intv/Inv", "value": 6 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Freeze Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Grain Frz", "value": 0 },
+          { "name": "Dly Frz V1", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Expert Mode",
+      "additionalInfo": "Combine modes",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 127,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Syncs to incoming MIDI clock at 24 PPQ when CC110 is enabled. Clock alone can start sync without transport start/stop."
+}

@@ -198,13 +198,6 @@
       }
     }
   ],
-  "x_programChangeMessages": [
-    { "program": 0, "name": "Bypass" },
-    { "program": 1, "name": "Preset 1" },
-    { "program": 2, "name": "Preset 2" },
-    { "program": 3, "name": "Preset 3" },
-    { "program": 4, "name": "Preset 4" }
-  ],
   "x_pc": {
     "indexBase": 0,
     "count": 100,

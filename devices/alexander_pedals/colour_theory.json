@@ -31,7 +31,6 @@
     { "controlChangeNumber": 53, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
     { "controlChangeNumber": 54, "name": "Lower right alt", "valueRange": { "min": 0, "max": 127 } },
     { "controlChangeNumber": 55, "name": "Upper left alt", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 56, "name": "Upper right alt", "valueRange": { "min": 0, "max": 127 } },
     { "controlChangeNumber": 57, "name": "Lower left alt", "valueRange": { "min": 0, "max": 127 } },
     {
       "controlChangeNumber": 59,

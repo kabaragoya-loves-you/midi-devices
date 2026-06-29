@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Red Panda Bitmap 2",
+  "displayName": "Bitmap 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Red Panda",
+    "model": "Bitmap 2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression",
+      "additionalInfo": "CTRL expression input",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Crush",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Env Mod Amt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Cutoff",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Resonance",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Out Level",
+      "additionalInfo": "v2.1+ wet output gain -30 to +6 dB; 0 AGC, 18 -30 dB, 36 -24 dB, 54 -18 dB, 72 -12 dB, 90 -6 dB, 108 0 dB, 126 +6 dB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "AUX SW",
+      "additionalInfo": "Gated footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "ON SW",
+      "additionalInfo": "Gated footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Effect On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Tap",
+      "additionalInfo": "Remote tap; values 64-127",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Mod Wave",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "name": "Triangle", "value": 0 },
+          { "name": "Square", "value": 1 },
+          { "name": "Random", "value": 2 },
+          { "name": "Wave Folder", "value": 3 },
+          { "name": "Wave Window", "value": 4 },
+          { "name": "Waveshaper", "value": 5 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Mod Dest",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Freq", "value": 0 },
+          { "name": "Cutoff", "value": 1 },
+          { "name": "Mix", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Env Dest",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Cutoff", "value": 1 },
+          { "name": "Mix", "value": 2 },
+          { "name": "Mix Inv", "value": 3 },
+          { "name": "Freq Up", "value": 4 },
+          { "name": "Freq Down", "value": 5 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "LFO Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Note Div",
+      "valueRange": {
+        "min": 0,
+        "max": 26,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "MIDI Clock",
+      "additionalInfo": "Global; remembered at power off; default on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Drive Type",
+      "additionalInfo": "v2.1+",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Hard Clip", "value": 0 },
+          { "name": "Dist 1", "value": 1 },
+          { "name": "Dist 2", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Anti-Alias",
+      "additionalInfo": "v2.1+",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 },
+          { "name": "Track Fltr", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Filter Rng",
+      "additionalInfo": "v2.1+",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "Full", "value": 1 },
+          { "name": "Relative", "value": 2 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 127,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Syncs to incoming MIDI clock at 24 PPQ when CC110 is enabled. Clock alone can start sync without transport start/stop."
+}

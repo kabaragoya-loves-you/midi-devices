@@ -233,16 +233,6 @@
       }
     }
   ],
-  "x_programChangeMessages": [
-    { "program": 120, "name": "Bypass Toggle" },
-    { "program": 121, "name": "EXP FSW Toggle" },
-    { "program": 122, "name": "Envelope Tgl" },
-    { "program": 123, "name": "Spectral Tgl" },
-    { "program": 124, "name": "Exp Mode Cyc" },
-    { "program": 125, "name": "Exp Rev Tgl" },
-    { "program": 126, "name": "Preset Ld/Ul" },
-    { "program": 127, "name": "Bypass Reset" }
-  ],
   "x_pc": {
     "indexBase": 0,
     "count": 128,

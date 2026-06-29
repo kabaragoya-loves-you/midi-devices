@@ -51,7 +51,6 @@
     {
       "controlChangeNumber": 22,
       "name": "Scale",
-      "additionalInfo": "Alt control: Spread (off=0, on=1+)",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -66,7 +65,6 @@
     {
       "controlChangeNumber": 23,
       "name": "Motion",
-      "additionalInfo": "Alt control: 0.5X (normal=0, on=1+)",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -81,7 +79,8 @@
     {
       "controlChangeNumber": 24,
       "name": "Mode",
-      "additionalInfo": "Alt control: Diffuse Type (normal=0, double=1+)",
+      "x_mandatory": true,
+      "additionalInfo": "Gate CC: values 0-2 (Mod/Short/Long) are Delay modes; value 3 (Loop) is Loop mode. Gates CC102/103/106 via x_variants.",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -96,7 +95,6 @@
     {
       "controlChangeNumber": 25,
       "name": "Voicing",
-      "additionalInfo": "Alt control: +12dB (normal=0, on=1+)",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -134,7 +132,7 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          { "name": "Save", "value": 1 }
         ]
       }
     },
@@ -167,6 +165,55 @@
       "controlChangeNumber": 37,
       "name": "Dry",
       "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Blue", "value": 1 },
+          { "name": "Red", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "0.5X",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "0.5X", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Diff Type",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "Double", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "+12 dB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "+12 dB", "value": 1 }
+        ]
+      }
     },
     {
       "controlChangeNumber": 42,
@@ -255,6 +302,7 @@
     {
       "controlChangeNumber": 54,
       "name": "Tap Subdivision",
+      "additionalInfo": "Value 11 or greater selects Dotted Half",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -270,114 +318,165 @@
           { "name": "Dotted Quarter", "value": 8 },
           { "name": "Half", "value": 9 },
           { "name": "Whole Triplet", "value": 10 },
-          { "name": "Dotted Half", "value": 11 },
-          { "name": "Whole", "value": 12 }
+          { "name": "Dotted Half", "value": 11 }
         ]
       }
     },
     {
       "controlChangeNumber": 100,
       "name": "Expression",
+      "additionalInfo": "Expression Over MIDI",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "Disable EXP",
+      "additionalInfo": "Disengages Expression Over MIDI (CC100). Chart lists range 0-127.",
       "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 102,
       "name": "Bypass",
-      "additionalInfo": "In Loop mode: Play/Stop (any value)",
+      "additionalInfo": "Delay mode: tap-right footswitch. OFF=0, ON=1 or greater.",
       "valueRange": {
         "min": 0,
-        "max": 127,
+        "max": 1,
         "discreteValues": [
           { "name": "Off", "value": 0 },
           { "name": "On", "value": 1 }
         ]
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": { "cc": 24, "op": ">=", "value": 3 },
+          "name": "Play/Stop",
+          "additionalInfo": "Loop mode: momentary tap-right footswitch; triggers on any value.",
+          "valueRange": {
+            "min": 0,
+            "max": 1,
+            "discreteValues": [
+              { "name": "Play/Stop", "value": 1 }
+            ]
+          }
+        }
+      ]
     },
     {
       "controlChangeNumber": 103,
       "name": "Tap/Mod Engage",
-      "additionalInfo": "In Loop mode: Rec/Play/Dub (any value)",
+      "additionalInfo": "Delay mode: momentary tap-left footswitch; triggers on any value.",
       "valueRange": {
         "min": 0,
-        "max": 127,
+        "max": 1,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          { "name": "Tap", "value": 1 }
         ]
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": { "cc": 24, "op": ">=", "value": 3 },
+          "name": "Rec/Play/Dub",
+          "additionalInfo": "Loop mode: momentary tap-left footswitch; cycles Rec/Play/Dub on any value.",
+          "valueRange": {
+            "min": 0,
+            "max": 1,
+            "discreteValues": [
+              { "name": "Rec/Play/Dub", "value": 1 }
+            ]
+          }
+        }
+      ]
     },
     {
       "controlChangeNumber": 104,
       "name": "Record",
+      "additionalInfo": "Loop mode only; momentary, triggers on any value. Hidden in Delay modes.",
       "valueRange": {
         "min": 0,
-        "max": 127,
+        "max": 1,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          { "name": "Record", "value": 1 }
         ]
-      }
+      },
+      "x_variants": [
+        { "constraint": { "cc": 24, "op": "<", "value": 3 }, "x_noop": true }
+      ]
     },
     {
       "controlChangeNumber": 105,
       "name": "Play",
+      "additionalInfo": "Loop mode only; momentary, triggers on any value. Hidden in Delay modes.",
       "valueRange": {
         "min": 0,
-        "max": 127,
+        "max": 1,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          { "name": "Play", "value": 1 }
         ]
-      }
+      },
+      "x_variants": [
+        { "constraint": { "cc": 24, "op": "<", "value": 3 }, "x_noop": true }
+      ]
     },
     {
       "controlChangeNumber": 106,
       "name": "Hold",
-      "additionalInfo": "In Loop mode: Delete (any value)",
+      "additionalInfo": "Delay mode: hold-left footswitch. OFF=0, ON=1 or greater.",
       "valueRange": {
         "min": 0,
-        "max": 127,
+        "max": 1,
         "discreteValues": [
           { "name": "Off", "value": 0 },
           { "name": "On", "value": 1 }
         ]
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": { "cc": 24, "op": ">=", "value": 3 },
+          "name": "Delete",
+          "additionalInfo": "Loop mode: momentary hold-left footswitch; triggers on any value.",
+          "valueRange": {
+            "min": 0,
+            "max": 1,
+            "discreteValues": [
+              { "name": "Delete", "value": 1 }
+            ]
+          }
+        }
+      ]
     },
     {
       "controlChangeNumber": 107,
       "name": "Stop",
+      "additionalInfo": "Loop mode only; momentary, triggers on any value. Hidden in Delay modes.",
       "valueRange": {
         "min": 0,
-        "max": 127,
+        "max": 1,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          { "name": "Stop", "value": 1 }
         ]
-      }
+      },
+      "x_variants": [
+        { "constraint": { "cc": 24, "op": "<", "value": 3 }, "x_noop": true }
+      ]
     },
     {
       "controlChangeNumber": 110,
-      "name": "Thru vs Out",
-      "valueRange": {
-        "min": 0,
-        "max": 127,
-        "discreteValues": [
-          { "name": "Thru", "value": 0 },
-          { "name": "Out", "value": 1 }
-        ]
-      }
-    },
-    {
-      "controlChangeNumber": 111,
       "name": "MIDI Clock",
+      "additionalInfo": "Not available in MOD mode. MIDI OUT defaults to thru until Clock Out is enabled.",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Follow", "value": 0 },
-          { "name": "Ignore", "value": 1 }
+          { "name": "No Clock", "value": 0 },
+          { "name": "Clock In", "value": 1 },
+          { "name": "Clock Out", "value": 2 }
         ]
       }
     },
     {
       "controlChangeNumber": 112,
-      "name": "MIDI Global Notes",
+      "name": "MIDI Notes",
+      "additionalInfo": "Incoming note handling; Big Time does not transmit notes",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -392,8 +491,10 @@
   "x_pc": {
     "indexBase": 0,
     "count": 127,
-    "bankSelectMode": "none"
+    "bankSelectMode": "none",
+    "additionalInfo": "PC recalls presets 0-126; PC also saves when in save mode. CC27 value selects the save slot."
   },
   "x_midiTrs": "TYPE_B",
-  "x_midiChannel": 2
+  "x_midiChannel": 2,
+  "additionalInfo": "5-pin DIN MIDI. Default channel 2; hold both footswitches at power-up to learn channel from the first incoming PC or CC message."
 }

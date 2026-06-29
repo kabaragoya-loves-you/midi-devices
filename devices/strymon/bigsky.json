@@ -665,6 +665,6 @@
     "count": 300,
     "bankSelectMode": "CC0"
   },
-  "x_midiChannel": 1,
-  "x_midiTrsType": "TYPE_B"
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
 }

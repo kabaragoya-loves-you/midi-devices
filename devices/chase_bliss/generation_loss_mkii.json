@@ -31,14 +31,6 @@
       }
     },
     {
-      "controlChangeNumber": 16,
-      "name": "Model / LP",
-      "valueRange": {
-        "min": 0,
-        "max": 127
-      }
-    },
-    {
       "controlChangeNumber": 17,
       "name": "Flutter",
       "valueRange": {
@@ -248,7 +240,8 @@
     },
     {
       "controlChangeNumber": 16,
-      "name": "Model Select",
+      "name": "Model / LP",
+      "additionalInfo": "Knob CC16: selects the model (named values below) normally; controls the low-pass (LP) filter continuously in ALT mode (CC104). Merged single entry - no mode branching.",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -278,11 +271,11 @@
             "name": "Portamax-HT"
           },
           {
-            "value": 72,
+            "value": 62,
             "name": "CAM-8"
           },
           {
-            "value": 62,
+            "value": 72,
             "name": "Dictatron-EX"
           },
           {

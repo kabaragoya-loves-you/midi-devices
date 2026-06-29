@@ -10,9 +10,11 @@
 #   - schemaVersion must be "0.1.1"
 #   - device object must contain displayName, manufacturer, model, version
 #   - Correct key names (controlChangeCommands, not "controls" or "controlChangeMessages")
-#   - Valid CC entry structure
-#   - x_pc custom extension format
+#   - Valid CC entry structure (including duplicate controlChangeNumber rejection)
+#   - x_pc custom extension format (incl. bankSelectMode: none, CC0, CC0_CC32)
 #   - x_midiTrs values (TYPE_A, TYPE_B, TYPE_TS, BOTH)
+#   - x_variants / x_mandatory CC extensions (constraint shape, ops, gating cc, name length, discrete bounds)
+#   - Strict "x_" whitelist: any unknown x_-prefixed key is an error
 #   - receives/transmits values match MIDI RTC JSON schema
 #
 # With --fix:
@@ -82,6 +84,21 @@ MESSAGE_TYPE_REPLACEMENTS = {
 # Valid values for x_midiTrs extension
 VALID_TRS_TYPES = %w[TYPE_A TYPE_B TYPE_TS BOTH].freeze
 
+# Valid values for the x_pc.bankSelectMode extension (matches firmware assets_parser.c)
+VALID_BANK_SELECT_MODES = %w[none CC0 CC0_CC32].freeze
+
+# Whitelist of allowed "x_" extension keys. Any "x_"-prefixed key not on the
+# appropriate list is an error (catches typos like x_midiTrsType and hallucinated
+# keys like x_programChangeMessages). See web/schemas/storm-summoner-extensions.schema.json.
+ALLOWED_TOP_LEVEL_X_KEYS = %w[x_pc x_midiTrs x_midiChannel].freeze
+ALLOWED_CC_X_KEYS = %w[x_variants x_mandatory x_noop].freeze
+
+# Valid comparison operators for x_variants constraints
+VALID_VARIANT_OPS = %w[< <= > >= == !=].freeze
+
+# Maximum display length for CC / variant names (small device screen)
+MAX_NAME_LENGTH = 14
+
 class DeviceValidator
   attr_reader :path, :json, :errors, :warnings, :fixed
 
@@ -115,6 +132,7 @@ class DeviceValidator
     validate_cc_entries
     validate_x_pc
     validate_x_midi_trs
+    validate_top_level_x_keys
     validate_receives_transmits_values
 
     @errors.empty?
@@ -293,6 +311,10 @@ class DeviceValidator
     cc_entries = @json[CORRECT_CC_KEY] || @json["controls"] || @json["controlChangeMessages"] || []
     return if cc_entries.empty?
 
+    # All defined CC numbers, used to validate x_variants gating references.
+    defined_cc_numbers = cc_entries.filter_map { |e| e["controlChangeNumber"] if e.is_a?(Hash) }
+    seen_cc_numbers = {}
+
     cc_entries.each_with_index do |entry, idx|
       unless entry.is_a?(Hash)
         @errors << "CC entry #{idx}: not an object"
@@ -308,6 +330,15 @@ class DeviceValidator
         @errors << "CC entry #{idx}: controlChangeNumber #{cc_num} out of range (0-127)"
       end
 
+      if cc_num
+        if seen_cc_numbers.key?(cc_num)
+          @errors << "CC entry #{idx}: duplicate controlChangeNumber #{cc_num} " \
+                     "(first defined at entry #{seen_cc_numbers[cc_num]}); use x_variants for mode-dependent behavior"
+        else
+          seen_cc_numbers[cc_num] = idx
+        end
+      end
+
       unless entry.key?("name")
         @warnings << "CC entry #{idx} (CC#{cc_num}): missing name"
       end
@@ -315,6 +346,139 @@ class DeviceValidator
       if entry.key?("valueRange")
         validate_value_range(entry["valueRange"], idx, cc_num)
       end
+
+      validate_cc_x_keys(entry, idx, cc_num)
+      validate_x_variants(entry["x_variants"], idx, cc_num, defined_cc_numbers) if entry.key?("x_variants")
+      validate_x_mandatory(entry["x_mandatory"], idx, cc_num) if entry.key?("x_mandatory")
+      validate_x_noop(entry["x_noop"], idx, cc_num) if entry.key?("x_noop")
+    end
+  end
+
+  # Reject any "x_"-prefixed key on a CC entry that is not whitelisted.
+  def validate_cc_x_keys(entry, idx, cc_num)
+    entry.each_key do |key|
+      next unless key.is_a?(String) && key.start_with?("x_")
+      next if ALLOWED_CC_X_KEYS.include?(key)
+
+      @errors << "CC entry #{idx} (CC#{cc_num}): unknown extension key '#{key}' " \
+                 "(allowed on CC entries: #{ALLOWED_CC_X_KEYS.join(', ')})"
+    end
+  end
+
+  def validate_x_variants(variants, idx, cc_num, defined_cc_numbers)
+    unless variants.is_a?(Array)
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_variants must be an array"
+      return
+    end
+
+    if variants.empty?
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_variants must not be empty"
+      return
+    end
+
+    variants.each_with_index do |variant, vidx|
+      unless variant.is_a?(Hash)
+        @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] must be an object"
+        next
+      end
+
+      constraint = variant["constraint"]
+      if constraint.nil?
+        @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] missing constraint"
+      else
+        validate_variant_constraint(constraint, idx, cc_num, vidx, defined_cc_numbers)
+      end
+
+      name = variant["name"]
+      if name && name.length > MAX_NAME_LENGTH
+        @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] name '#{name}' " \
+                   "exceeds #{MAX_NAME_LENGTH} characters"
+      end
+
+      if variant.key?("valueRange")
+        validate_value_range(variant["valueRange"], idx, cc_num)
+        validate_discrete_bounds(variant["valueRange"], idx, cc_num, vidx)
+      end
+
+      noop = variant["x_noop"]
+      if !noop.nil? && noop != true && noop != false
+        @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] x_noop must be a boolean"
+      end
+
+      variant.each_key do |key|
+        next if %w[constraint name additionalInfo valueRange x_noop].include?(key)
+        @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] has unknown key '#{key}'"
+      end
+    end
+  end
+
+  def validate_variant_constraint(constraint, idx, cc_num, vidx, defined_cc_numbers)
+    unless constraint.is_a?(Hash)
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] constraint must be an object"
+      return
+    end
+
+    gating_cc = constraint["cc"]
+    op = constraint["op"]
+    value = constraint["value"]
+
+    if gating_cc.nil? || !gating_cc.is_a?(Integer) || gating_cc < 0 || gating_cc > 127
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] constraint.cc must be an integer 0-127"
+    elsif !defined_cc_numbers.include?(gating_cc)
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] constraint.cc #{gating_cc} " \
+                 "is not a defined controlChangeNumber"
+    end
+
+    unless VALID_VARIANT_OPS.include?(op)
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] constraint.op '#{op}' " \
+                 "must be one of: #{VALID_VARIANT_OPS.join(', ')}"
+    end
+
+    if value.nil? || !value.is_a?(Integer) || value < 0 || value > 127
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] constraint.value must be an integer 0-127"
+    end
+  end
+
+  # Ensure every discreteValues entry falls within the variant's min/max.
+  def validate_discrete_bounds(range, idx, cc_num, vidx)
+    return unless range.is_a?(Hash)
+    dvs = range["discreteValues"]
+    return unless dvs.is_a?(Array)
+
+    min = range["min"]
+    max = range["max"]
+    return unless min.is_a?(Integer) && max.is_a?(Integer)
+
+    dvs.each do |dv|
+      next unless dv.is_a?(Hash) && dv["value"].is_a?(Integer)
+      v = dv["value"]
+      if v < min || v > max
+        @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] discreteValue #{v} " \
+                   "outside range #{min}-#{max}"
+      end
+    end
+  end
+
+  def validate_x_mandatory(value, idx, cc_num)
+    unless value == true || value == false
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_mandatory must be a boolean"
+    end
+  end
+
+  def validate_x_noop(value, idx, cc_num)
+    unless value == true || value == false
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_noop must be a boolean"
+    end
+  end
+
+  # Reject any top-level "x_"-prefixed key that is not whitelisted.
+  def validate_top_level_x_keys
+    @json.each_key do |key|
+      next unless key.is_a?(String) && key.start_with?("x_")
+      next if ALLOWED_TOP_LEVEL_X_KEYS.include?(key)
+
+      @errors << "Unknown top-level extension key '#{key}' " \
+                 "(allowed: #{ALLOWED_TOP_LEVEL_X_KEYS.join(', ')})"
     end
   end
 
@@ -354,10 +518,10 @@ class DeviceValidator
       @warnings << "x_pc: missing count"
     end
 
-    if x_pc.key?("bankSelect")
-      valid_bank = %w[none cc0 cc32 cc0+cc32].include?(x_pc["bankSelect"])
-      unless valid_bank
-        @errors << "x_pc: invalid bankSelect value '#{x_pc["bankSelect"]}'"
+    if x_pc.key?("bankSelectMode")
+      unless VALID_BANK_SELECT_MODES.include?(x_pc["bankSelectMode"])
+        @errors << "x_pc: invalid bankSelectMode value '#{x_pc["bankSelectMode"]}' " \
+                   "(must be one of: #{VALID_BANK_SELECT_MODES.join(', ')})"
       end
     end
   end
@@ -396,7 +560,7 @@ class DeviceValidator
       device
       receives transmits
       controlChangeCommands nrpnCommands
-      x_programChangeMessages x_pc x_midiTrs x_midiChannel
+      x_pc x_midiTrs x_midiChannel
     ]
 
     ordered = {}

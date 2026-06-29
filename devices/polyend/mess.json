@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Polyend Mess",
+  "displayName": "Mess",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Polyend",
+    "model": "Mess",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 70,
+      "name": "Trk 1 Mix",
+      "additionalInfo": "Track 1 effect mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Trk 2 Mix",
+      "additionalInfo": "Track 2 effect mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Trk 3 Mix",
+      "additionalInfo": "Track 3 effect mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Trk 4 Mix",
+      "additionalInfo": "Track 4 effect mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Trk 1 Gain",
+      "additionalInfo": "Track 1 effect gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Trk 2 Gain",
+      "additionalInfo": "Track 2 effect gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Trk 3 Gain",
+      "additionalInfo": "Track 3 effect gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Trk 4 Gain",
+      "additionalInfo": "Track 4 effect gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Global Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Global In",
+      "additionalInfo": "Global input level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Trk 1 Param 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Trk 2 Param 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Trk 3 Param 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Trk 4 Param 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Trk 1 Param 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Trk 2 Param 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Trk 3 Param 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Trk 4 Param 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Trk 1 Param 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Trk 2 Param 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Trk 3 Param 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Trk 4 Param 3",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

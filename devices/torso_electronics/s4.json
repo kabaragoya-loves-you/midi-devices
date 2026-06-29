@@ -1,0 +1,2407 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Torso Electronics S4",
+  "displayName": "S4",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Torso Electronics",
+    "model": "S4",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Control Map",
+      "x_mandatory": true,
+      "additionalInfo": "Track device CC46-125 use track MIDI ch 1-4. PERFORM CC46-53 uses ch 15. MIX CC46-61 uses ch 16. Modulator CC14-45 use track ch.",
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          {
+            "name": "DISC",
+            "value": 0
+          },
+          {
+            "name": "TAPE",
+            "value": 1
+          },
+          {
+            "name": "POLY",
+            "value": 2
+          },
+          {
+            "name": "MOSAIC",
+            "value": 3
+          },
+          {
+            "name": "RING",
+            "value": 4
+          },
+          {
+            "name": "DEFORM",
+            "value": 5
+          },
+          {
+            "name": "VAST",
+            "value": 6
+          },
+          {
+            "name": "PERFORM",
+            "value": 7
+          },
+          {
+            "name": "MIX",
+            "value": 8
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Mod Type",
+      "x_mandatory": true,
+      "additionalInfo": "Label gate only (not a Torso CC). Set to match your modulator types for CC14-45 names. Assumes all four mod slots use the same type. Torso ignores CC2; safe to transmit.",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "WAVE",
+            "value": 0
+          },
+          {
+            "name": "RANDOM",
+            "value": 1
+          },
+          {
+            "name": "ADSR",
+            "value": 2
+          },
+          {
+            "name": "FOLLOW",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "M1 Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M1 Attack"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "M1 Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M1 Decay"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "M1 Phase",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M1 Sustain"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "M1 Offset",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M1 Release"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "M1 Skew",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M1 Length"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M1 Att Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "M1 Fold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M1 Variation"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M1 Dec Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "M1 Curve",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M1 Smooth"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M1 Rel Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "M1 Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "M2 Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M2 Attack"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "M2 Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M2 Decay"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "M2 Phase",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M2 Sustain"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "M2 Offset",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M2 Release"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "M2 Skew",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M2 Length"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M2 Att Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "M2 Fold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M2 Variation"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M2 Dec Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "M2 Curve",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M2 Smooth"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M2 Rel Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "M2 Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "M3 Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M3 Attack"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "M3 Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M3 Decay"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "M3 Phase",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M3 Sustain"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "M3 Offset",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M3 Release"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "M3 Skew",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M3 Length"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M3 Att Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "M3 Fold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M3 Variation"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M3 Dec Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "M3 Curve",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M3 Smooth"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M3 Rel Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "M3 Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "M4 Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M4 Attack"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "M4 Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M4 Decay"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "M4 Phase",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M4 Sustain"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "M4 Offset",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M4 Release"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "M4 Skew",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M4 Length"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M4 Att Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "M4 Fold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M4 Variation"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M4 Dec Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "M4 Curve",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 1
+          },
+          "name": "M4 Smooth"
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 2
+          },
+          "name": "M4 Rel Crv"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "M4 Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Speed",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Pitch"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Macro 1"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 1 Lvl"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 47,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Tempo",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Macro 2"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 2 Lvl"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 48,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Start",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Rotate"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Macro 3"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 3 Lvl"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 49,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Length",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Macro 4"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 4 Lvl"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 50,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Level",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Level"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Macro 5"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 1 Fltr"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 51,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "SOS",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "name": "SOS"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Macro 6"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 2 Fltr"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 52,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Offset",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Level"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Loop"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Macro 7"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 3 Fltr"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 53,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Xfade",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Macro 8"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 4 Fltr"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 54,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Glide",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Attack"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 1 Pan"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 55,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Decay",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Decay"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 2 Pan"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 56,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Level",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Sustain"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 3 Pan"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 57,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "SOS",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Curve"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Trk 4 Pan"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 58,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Density",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Velocity"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Compress"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 60,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Fltr Amount",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Fltr Amount"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 61,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Fltr Shape",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Fltr Shape"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 8
+          },
+          "name": "Main Lvl"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 62,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Pitch",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Pitch"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 63,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Rate",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Rate"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 64,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Size",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Size"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 65,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Contour",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Contour"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 66,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Scan",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Scan"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 67,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Spray",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Spray"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 68,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Pattern",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Pattern"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 69,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Wet",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Wet"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 70,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Rand Pitch",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Rand Pitch"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 71,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Rand Rate",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Rand Rate"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 72,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Rand Size",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Rand Size"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 73,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Rand Amp",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Rand Amp"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 74,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Rand Rev",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Rand Rev"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 77,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Feedback",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "name": "Feedback"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 78,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Cutoff",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Cutoff"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 79,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Resonance",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Resonance"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 80,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Decay",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Decay"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 81,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Pitch",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Pitch"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 82,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Slope",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Slope"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 83,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Tone",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Tone"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 84,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Scale",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Scale"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 85,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Wet",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Wet"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 86,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Waves",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Waves"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 87,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Noise",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Noise"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 88,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Tilt",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Tilt"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 89,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Detune",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Detune"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 90,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Waves R",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Waves R"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 91,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Noise R",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Noise R"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 94,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Drive",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Drive"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 95,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Compress",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Compress"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 96,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Crush",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Crush"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 97,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Tilt",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Tilt"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 98,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Noise",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Noise"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 99,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Noise Decay",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Noise Decay"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 100,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Noise Tone",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Noise Tone"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 101,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Wet",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Wet"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 110,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Delay",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Delay"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 111,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Time",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Time"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 112,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Reverb",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Reverb"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 113,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Size",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Size"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 114,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Feedback",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Feedback"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 115,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Spread",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Spread"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 116,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Tone",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Tone"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 117,
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "name": "Decay",
+      "x_noop": true,
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Decay"
+        }
+      ]
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Track device CCs use the track MIDI channel (1-4). PERFORM macros use MIDI channel 15. MIX and global transport/mute/record notes use MIDI channel 16. CC2 is a Storm Summoner label gate for modulator names (not documented by Torso). Source: Torso S4 CC Mapping appendix."
+}

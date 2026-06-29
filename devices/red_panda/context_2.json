@@ -1,0 +1,351 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Red Panda Context 2",
+  "displayName": "Context 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Red Panda",
+    "model": "Context 2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression",
+      "additionalInfo": "CTRL expression input",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Pre-Delay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Low Resp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "High Resp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Mod Amt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Delay Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Dly Fdbk",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Rev/Dly Bal",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Dyn Thresh",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Dyn Recov",
+      "additionalInfo": "0-63 ducking, 64 off, 65-127 expansion",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Ducking", "value": 21 },
+          { "name": "Off", "value": 64 },
+          { "name": "Expansion", "value": 106 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Preset SW",
+      "additionalInfo": "PRESET/inf footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "ON SW",
+      "additionalInfo": "ON/inf footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Hold L",
+      "additionalInfo": "Reverb Hold left",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Hold R",
+      "additionalInfo": "Reverb Hold right",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Effect On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Tap",
+      "additionalInfo": "Remote tap; values 64-127",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Algorithm",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Room", "value": 0 },
+          { "name": "Hall", "value": 1 },
+          { "name": "Cathedral", "value": 2 },
+          { "name": "Gated", "value": 3 },
+          { "name": "Reverse", "value": 4 },
+          { "name": "Plate", "value": 5 },
+          { "name": "Spring", "value": 6 },
+          { "name": "Grain", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Dly Note Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 31,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 },
+          { "name": "Dot 64th", "value": 27 },
+          { "name": "64th", "value": 28 },
+          { "name": "64th Trip", "value": 29 },
+          { "name": "Dot 128th", "value": 30 },
+          { "name": "128th", "value": 31 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "PreDly Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 31,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 },
+          { "name": "Dot 64th", "value": 27 },
+          { "name": "64th", "value": 28 },
+          { "name": "64th Trip", "value": 29 },
+          { "name": "Dot 128th", "value": 30 },
+          { "name": "128th", "value": 31 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Trem Div",
+      "additionalInfo": "Values grouped by dotted/basic/triplet; not strictly decreasing order",
+      "valueRange": {
+        "min": 0,
+        "max": 31,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "8 Bar", "value": 1 },
+          { "name": "7 Bar", "value": 2 },
+          { "name": "6 Bar", "value": 3 },
+          { "name": "5 Bar", "value": 4 },
+          { "name": "4 Bar", "value": 5 },
+          { "name": "3 Bar", "value": 6 },
+          { "name": "2 Bar", "value": 7 },
+          { "name": "2 Bar Trip", "value": 8 },
+          { "name": "Dot Whole", "value": 9 },
+          { "name": "Whole", "value": 10 },
+          { "name": "Whole Trip", "value": 11 },
+          { "name": "Dot Half", "value": 12 },
+          { "name": "Half", "value": 13 },
+          { "name": "Half Trip", "value": 14 },
+          { "name": "Dot Qtr", "value": 15 },
+          { "name": "Quarter", "value": 16 },
+          { "name": "Qtr Trip", "value": 17 },
+          { "name": "Dot 8th", "value": 18 },
+          { "name": "Eighth", "value": 19 },
+          { "name": "8th Trip", "value": 20 },
+          { "name": "Dot 16th", "value": 21 },
+          { "name": "Sixteenth", "value": 22 },
+          { "name": "16th Trip", "value": 23 },
+          { "name": "Dot 32nd", "value": 24 },
+          { "name": "32nd", "value": 25 },
+          { "name": "32nd Trip", "value": 26 },
+          { "name": "Dot 64th", "value": 27 },
+          { "name": "64th", "value": 28 },
+          { "name": "64th Trip", "value": 29 },
+          { "name": "Dot 128th", "value": 30 },
+          { "name": "128th", "value": 31 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "MIDI Clock",
+      "additionalInfo": "Global; remembered at power off; default on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 },
+          { "name": "Global", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 127,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Syncs to incoming MIDI clock at 24 PPQ when CC110 is enabled. Clock alone can start sync without transport start/stop."
+}

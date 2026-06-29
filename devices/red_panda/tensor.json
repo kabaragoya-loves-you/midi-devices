@@ -1,0 +1,353 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Red Panda Tensor",
+  "displayName": "Tensor",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Red Panda",
+    "model": "Tensor",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression",
+      "additionalInfo": "CTRL expression input",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Speed",
+      "additionalInfo": "0 reverse 100%, 64 stop, 127 forward 100%",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Time",
+      "additionalInfo": "0 1:4 stretch, 64 1:1, 127 4:1 compress",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Pitch",
+      "additionalInfo": "0 -2 octaves, 64 unison, 127 +2 octaves",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Blend",
+      "additionalInfo": "0 100% dry, 127 100% wet",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Random",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Loop Decay",
+      "additionalInfo": "0 0 dB, 1-126 in 0.25 dB steps, 127 off",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Hold Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 21 },
+          { "name": "Replace", "value": 64 },
+          { "name": "Overdub", "value": 106 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Loop Dir",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Reverse", "value": 21 },
+          { "name": "Alternate", "value": 64 },
+          { "name": "Forward", "value": 106 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Transpose",
+      "additionalInfo": "Overrides CC22; semitone table 40-88; not saved to presets",
+      "valueRange": { "min": 40, "max": 88 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Glide Rate",
+      "additionalInfo": "Glide time per octave; 0 minimum, 127 maximum",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Play Once",
+      "additionalInfo": "Remote mode 3 button C; values 64-127",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Play Once", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Fwd/Speed",
+      "additionalInfo": "Remote mode 3 button D",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Forward", "value": 0 },
+          { "name": "Knob", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Full/Knobs",
+      "additionalInfo": "Remote mode 3 button D; toggles time and pitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Full Spd", "value": 0 },
+          { "name": "Knob", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Tgl Speed",
+      "additionalInfo": "Remote mode 4 button A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Neutral", "value": 0 },
+          { "name": "Knob", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Tgl Time",
+      "additionalInfo": "Remote mode 4 button B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Neutral", "value": 0 },
+          { "name": "Knob", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Tgl Pitch",
+      "additionalInfo": "Remote mode 4 button C",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Neutral", "value": 0 },
+          { "name": "Knob", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Tgl Random",
+      "additionalInfo": "Remote mode 4 button D",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Knob", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Hold SW",
+      "additionalInfo": "Gated footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Effect SW",
+      "additionalInfo": "Gated footswitch; 127 on press, 0 on release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Hold Latch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Momentary", "value": 0 },
+          { "name": "Latch", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Effect Latch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Momentary", "value": 0 },
+          { "name": "Latch", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Hold/Sample",
+      "additionalInfo": "Deprecated; use CC112-117 instead",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Live", "value": 0 },
+          { "name": "Stop", "value": 24 },
+          { "name": "One Shot", "value": 48 },
+          { "name": "Loop Play", "value": 64 },
+          { "name": "Overdub", "value": 96 },
+          { "name": "Record", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Effect On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Drift",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Loop Record",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Record", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Loop Overdub",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Overdub", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Loop Play",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Play", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "One Shot",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Play", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Stop Loop",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stop", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Clear Loop",
+      "additionalInfo": "Clear loop and return to live",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Clear", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 31,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-30 recalls presets. Save via SysEx, TouchOSC, or hold HOLD+ON footswitches then send PC."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

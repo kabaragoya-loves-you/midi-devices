@@ -80,7 +80,8 @@
             "name": "Bitcrusher"
           }
         ]
-      }
+      },
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 6,
@@ -111,27 +112,108 @@
     },
     {
       "controlChangeNumber": 7,
-      "name": "Gain/Vol/Smpl",
+      "name": "Gain",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 110
+          },
+          "name": "Smpl Rate"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 37
+          },
+          "name": "Gain"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 19
+          },
+          "name": "Level"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 8,
-      "name": "Balance / Bits",
+      "name": "Vol/Smpl",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 110
+          },
+          "name": "Bit Depth"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 92
+          },
+          "name": "Bass"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 37
+          },
+          "name": "Level"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 19
+          },
+          "name": "Balance"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 9,
-      "name": "Drv Lvl/Comp",
+      "name": "Balance/Bits",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 110
+          },
+          "name": "Level"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 92
+          },
+          "name": "Treble"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 10,
@@ -162,15 +244,35 @@
             "name": "Large"
           }
         ]
-      }
+      },
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 11,
-      "name": "Fdbk / Dec",
+      "name": "Fdbk/Decay",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 10,
+            "op": ">=",
+            "value": 52
+          },
+          "name": "Decay"
+        },
+        {
+          "constraint": {
+            "cc": 10,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Feedback"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 12,
@@ -752,7 +854,8 @@
             "name": "Ring Mod"
           }
         ]
-      }
+      },
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 87,
@@ -783,35 +886,111 @@
     },
     {
       "controlChangeNumber": 88,
-      "name": "Mod Spd / Freq",
+      "name": "Mod",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 107
+          },
+          "name": "Frequency"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Speed"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 89,
-      "name": "Mod Depth",
+      "name": "Speed",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 107
+          },
+          "name": "Mix"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Depth"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 90,
-      "name": "Mod/Wave/Stage",
+      "name": "Mod",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 86
+          },
+          "name": "Stages"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 43
+          },
+          "name": "Feedback"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Mix"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 91,
-      "name": "Mod Feedback",
+      "name": "Depth",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 43
+          },
+          "name": "Mix"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 92,

@@ -83,7 +83,8 @@
           "value": 110,
           "name": "Bitcrusher"
         }
-      ]
+      ],
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 6,
@@ -113,51 +114,145 @@
     },
     {
       "controlChangeNumber": 7,
-      "name": "Preamp Param 1",
+      "name": "Preamp 1",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 110
+          },
+          "name": "Smpl Rate"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 37
+          },
+          "name": "Gain"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 19
+          },
+          "name": "Level"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 8,
-      "name": "Preamp Param 2",
+      "name": "Preamp 2",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 110
+          },
+          "name": "Bit Depth"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 92
+          },
+          "name": "Bass"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 37
+          },
+          "name": "Level"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 19
+          },
+          "name": "Balance"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 9,
-      "name": "Preamp Param 3",
+      "name": "Preamp 3",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 110
+          },
+          "name": "Level"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 92
+          },
+          "name": "Treble"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 10,
-      "name": "Preamp Param 4",
+      "name": "Preamp 4",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 92
+          },
+          "name": "Level"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 11,
-      "name": "Preamp Param 5",
+      "name": "Preamp 5",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_noop": true
     },
     {
       "controlChangeNumber": 12,
-      "name": "Preamp Param 6",
+      "name": "Preamp 6",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_noop": true
     },
     {
       "controlChangeNumber": 13,
@@ -620,7 +715,8 @@
           "value": 103,
           "name": "Limiter"
         }
-      ]
+      ],
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 63,
@@ -650,51 +746,181 @@
     },
     {
       "controlChangeNumber": 64,
-      "name": "Dyn Param 1",
+      "name": "Dyn 1",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 77
+          },
+          "name": "Density"
+        },
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 52
+          },
+          "name": "Attack"
+        },
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Threshold"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 65,
-      "name": "Dyn Param 2",
+      "name": "Dyn 2",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 77
+          },
+          "name": "LPF"
+        },
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 52
+          },
+          "name": "Gain"
+        },
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Ratio"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 66,
-      "name": "Dyn Param 3",
+      "name": "Dyn 3",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 103
+          },
+          "name": "Release"
+        },
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Gain"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 67,
-      "name": "Dyn Param 4",
+      "name": "Dyn 4",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 103
+          },
+          "name": "nil"
+        },
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Attack"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 68,
-      "name": "Dyn Param 5",
+      "name": "Dyn 5",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 103
+          },
+          "name": "nil"
+        },
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Release"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 69,
-      "name": "Dyn Param 6",
+      "name": "Dyn 6",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 103
+          },
+          "name": "nil"
+        },
+        {
+          "constraint": {
+            "cc": 62,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Mix"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 70,
@@ -728,7 +954,8 @@
           "value": 107,
           "name": "Lo-Fi"
         }
-      ]
+      ],
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 71,
@@ -758,51 +985,165 @@
     },
     {
       "controlChangeNumber": 72,
-      "name": "Pitch Param 1",
+      "name": "Pitch 1",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Pitch L"
+        },
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Pitch"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 73,
-      "name": "Pitch Param 2",
+      "name": "Pitch 2",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Pitch R"
+        },
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 43
+          },
+          "name": "L"
+        },
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Mix"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 74,
-      "name": "Pitch Param 3",
+      "name": "Pitch 3",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 86
+          },
+          "name": "Glide"
+        },
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Mix"
+        },
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 43
+          },
+          "name": "Pitch"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 75,
-      "name": "Pitch Param 4",
+      "name": "Pitch 4",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 86
+          },
+          "name": "Mix"
+        },
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 43
+          },
+          "name": "R"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 76,
-      "name": "Pitch Param 5",
+      "name": "Pitch 5",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 43
+          },
+          "name": "Key"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 77,
-      "name": "Pitch Param 6",
+      "name": "Pitch 6",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 70,
+            "op": ">=",
+            "value": 43
+          },
+          "name": "Scale"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 78,
@@ -832,7 +1173,8 @@
           "value": 103,
           "name": "Parametric"
         }
-      ]
+      ],
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 79,
@@ -862,51 +1204,141 @@
     },
     {
       "controlChangeNumber": 80,
-      "name": "Filter Param 1",
+      "name": "Filter 1",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 78,
+            "op": ">=",
+            "value": 77
+          },
+          "name": "Depth"
+        },
+        {
+          "constraint": {
+            "cc": 78,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Frequency"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 81,
-      "name": "Filter Param 2",
+      "name": "Filter 2",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 78,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Resonance"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 82,
-      "name": "Filter Param 3",
+      "name": "Filter 3",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 78,
+            "op": ">=",
+            "value": 77
+          },
+          "name": "Level"
+        },
+        {
+          "constraint": {
+            "cc": 78,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Topology"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 83,
-      "name": "Filter Param 4",
+      "name": "Filter 4",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 78,
+            "op": ">=",
+            "value": 103
+          },
+          "name": "Gain"
+        },
+        {
+          "constraint": {
+            "cc": 78,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Spread"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 84,
-      "name": "Filter Param 5",
+      "name": "Filter 5",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 78,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "nil"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 85,
-      "name": "Filter Param 6",
+      "name": "Filter 6",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 78,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "nil"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 86,
@@ -948,7 +1380,8 @@
           "value": 112,
           "name": "Ring Mod"
         }
-      ]
+      ],
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 87,
@@ -961,51 +1394,261 @@
     },
     {
       "controlChangeNumber": 88,
-      "name": "Mod Param 1",
+      "name": "Mod 1",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 112
+          },
+          "name": "Frequency"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 96
+          },
+          "name": "Size"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Slip"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 48
+          },
+          "name": "Attack"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 16
+          },
+          "name": "Speed"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 89,
-      "name": "Mod Param 2",
+      "name": "Mod 2",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 112
+          },
+          "name": "Waveshape"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 96
+          },
+          "name": "Repeats"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 80
+          },
+          "name": "Feedback"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Crinkle"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 16
+          },
+          "name": "Depth"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 90,
-      "name": "Mod Param 3",
+      "name": "Mod 3",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 96
+          },
+          "name": "Spread"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 80
+          },
+          "name": "Direction"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Static"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 32
+          },
+          "name": "Feedback"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 16
+          },
+          "name": "Mix"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 91,
-      "name": "Mod Param 4",
+      "name": "Mod 4",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Highs"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 48
+          },
+          "name": "Direction"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 32
+          },
+          "name": "Mix"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 16
+          },
+          "name": "nil"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 92,
-      "name": "Mod Param 5",
+      "name": "Mod 5",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Lows"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 48
+          },
+          "name": "Mix"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 16
+          },
+          "name": "nil"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 93,
-      "name": "Mod Param 6",
+      "name": "Mod 6",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Mix"
+        },
+        {
+          "constraint": {
+            "cc": 86,
+            "op": ">=",
+            "value": 16
+          },
+          "name": "nil"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 94,

@@ -17,80 +17,400 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 50,
-      "name": "Knob 0",
-      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "name": "RATE",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 89
+          },
+          "name": "SIZE"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "TIME"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 38
+          },
+          "name": "UP"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "RAT1"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "SOFT"
+        }
+      ]
     },
     {
       "controlChangeNumber": 51,
-      "name": "Knob 1",
-      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "name": "DEPT",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 89
+          },
+          "name": "TONE"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "REPT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 38
+          },
+          "name": "DOWN"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "DEP1"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "LOUD"
+        }
+      ]
     },
     {
       "controlChangeNumber": 52,
-      "name": "Knob 2",
-      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "name": "RESO",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "MIX"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "RES1"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "SENS"
+        }
+      ]
     },
     {
       "controlChangeNumber": 53,
       "name": "Sound Mode",
-      "additionalInfo": "0-12=AUTO; 13-25=DYNA; 26-37=DUAL AUTO; 38-50=DUAL DYNA; 51-63=SPIRAL; 64-75=STEP; 76-88=ECHO; 89-101=FLERB; 102-113=FILTER; 114-127=TURBO.",
       "valueRange": {
         "min": 0,
-        "max": 127
-      }
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 6,
+            "name": "AUTO"
+          },
+          {
+            "value": 19,
+            "name": "DYNA"
+          },
+          {
+            "value": 31,
+            "name": "DUAL AUTO"
+          },
+          {
+            "value": 44,
+            "name": "DUAL DYNA"
+          },
+          {
+            "value": 57,
+            "name": "SPIRAL"
+          },
+          {
+            "value": 69,
+            "name": "STEP"
+          },
+          {
+            "value": 82,
+            "name": "ECHO"
+          },
+          {
+            "value": 95,
+            "name": "FLERB"
+          },
+          {
+            "value": 107,
+            "name": "FILTER"
+          },
+          {
+            "value": 120,
+            "name": "TURBO"
+          }
+        ]
+      },
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 54,
-      "name": "Knob 4",
-      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "name": "MANU",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 102
+          },
+          "name": "TREM"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 89
+          },
+          "name": "SPD"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "RATE"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "STEP"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 51
+          },
+          "name": "DLAY"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "RAT2"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "FALL"
+        }
+      ]
     },
     {
       "controlChangeNumber": 55,
-      "name": "Knob 5",
-      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "name": "MIX",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 102
+          },
+          "name": "FREQ"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "DEPT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "PATT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "DEP2"
+        }
+      ]
     },
     {
       "controlChangeNumber": 56,
-      "name": "Knob 6",
-      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "name": "WAVE",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 102
+          },
+          "name": "PEAK"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "PATT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 51
+          },
+          "name": "DIR"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "RES2"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "RESO"
+        }
+      ]
     },
     {
       "controlChangeNumber": 57,
-      "name": "Knob 7",
-      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "name": "ZERO",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 102
+          },
+          "name": "MIX"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 89
+          },
+          "name": "FMIX"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "DIR"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "ROUT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "FILT"
+        }
+      ]
     },
     {
       "controlChangeNumber": 58,
-      "name": "Knob 8",
-      "additionalInfo": "Function depends on selected Sound Mode (see manual Sound Modes section).",
+      "name": "DIV",
       "valueRange": {
         "min": 0,
         "max": 127

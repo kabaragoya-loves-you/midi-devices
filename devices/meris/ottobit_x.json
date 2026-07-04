@@ -76,7 +76,8 @@
             "value": 115
           }
         ]
-      }
+      },
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 6,
@@ -107,31 +108,96 @@
     },
     {
       "controlChangeNumber": 7,
-      "name": "Gain",
+      "name": "Preamp 1",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 52
+          },
+          "name": "Gain"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Level"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 8,
-      "name": "Bal/Dust/Wave",
+      "name": "Preamp 2",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 103
+          },
+          "name": "Wave"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 77
+          },
+          "name": "Dust"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 52
+          },
+          "name": "Level"
+        },
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "Balance"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 9,
-      "name": "Level",
+      "name": "Preamp 3",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 5,
+            "op": ">=",
+            "value": 77
+          },
+          "name": "Level"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 10,
-      "name": "Ambience Type",
+      "name": "Preamp 4",
       "additionalInfo": "0-42=Off, 43-85=VHS Delay, 86-127=VHS Verb",
       "valueRange": {
         "min": 0,
@@ -150,23 +216,26 @@
             "value": 106
           }
         ]
-      }
+      },
+      "x_noop": true
     },
     {
       "controlChangeNumber": 11,
-      "name": "Feedback/Decay",
+      "name": "Preamp 5",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_noop": true
     },
     {
       "controlChangeNumber": 12,
-      "name": "Age/Amb Mod",
+      "name": "Preamp 6",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_noop": true
     },
     {
       "controlChangeNumber": 13,
@@ -411,7 +480,8 @@
             "value": 117
           }
         ]
-      }
+      },
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 31,
@@ -442,43 +512,146 @@
     },
     {
       "controlChangeNumber": 32,
-      "name": "Mod Speed/Freq",
+      "name": "Mod",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 86
+          },
+          "name": "Freq"
+        },
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 43
+          },
+          "name": "Speed"
+        },
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Frequency"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 33,
-      "name": "Mod Dpth/Width",
+      "name": "Speed",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Width"
+        },
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Depth"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 34,
-      "name": "Mod Shape/Mode",
+      "name": "Mod",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "Mode"
+        },
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Shape"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 35,
-      "name": "Mod Blend/Bias",
+      "name": "Depth",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 43
+          },
+          "name": "Bias"
+        },
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Blend"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 36,
-      "name": "Mod Mix/Track",
+      "name": "Mod",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 86
+          },
+          "name": "Track"
+        },
+        {
+          "constraint": {
+            "cc": 30,
+            "op": ">=",
+            "value": 22
+          },
+          "name": "Mix"
+        }
+      ],
+      "x_noop": true
     },
     {
       "controlChangeNumber": 37,

@@ -17,75 +17,307 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 50,
-      "name": "Knob 0",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "RATE",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "TIME"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "RAT1"
+        }
+      ]
     },
     {
       "controlChangeNumber": 51,
-      "name": "Knob 1",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "DEPT",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 89
+          },
+          "name": "STEP"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 38
+          },
+          "name": "VIB"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "REPT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "DEP1"
+        }
+      ]
     },
     {
       "controlChangeNumber": 52,
-      "name": "Knob 2",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "MIX",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 38
+          },
+          "name": "TREM"
+        }
+      ]
     },
     {
       "controlChangeNumber": 54,
-      "name": "Knob 4",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "STAG",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 114
+          },
+          "name": "TIME"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "PRAT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 64
+          },
+          "name": "DIR"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 51
+          },
+          "name": "SENS"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "RATE"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "RAT2"
+        }
+      ]
     },
     {
       "controlChangeNumber": 55,
-      "name": "Knob 5",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "RESO",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "PDEP"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 51
+          },
+          "name": "RISE"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 38
+          },
+          "name": "IMAG"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 26
+          },
+          "name": "DEPT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "DEP2"
+        }
+      ]
     },
     {
       "controlChangeNumber": 56,
-      "name": "Knob 6",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "WAVE",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 102
+          },
+          "name": "BEAT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 89
+          },
+          "name": "PATT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "PWAV"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 51
+          },
+          "name": "SOFT"
+        }
+      ]
     },
     {
       "controlChangeNumber": 57,
-      "name": "Knob 7",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "CENT",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 89
+          },
+          "name": "DIR"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "PAN"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 51
+          },
+          "name": "LOUD"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 38
+          },
+          "name": "SYNC"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 13
+          },
+          "name": "ROUT"
+        }
+      ]
     },
     {
       "controlChangeNumber": 58,
-      "name": "Knob 8",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "DIV",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 51
+          },
+          "name": "MODE"
+        }
+      ]
     },
     {
       "controlChangeNumber": 59,
@@ -130,11 +362,53 @@
     {
       "controlChangeNumber": 53,
       "name": "Sound Mode",
-      "additionalInfo": "0-12=CLASSIC, 13-25=DUAL PHZ, 26-37=PHAZDLAY, 38-50=K-TREM, 51-63=DYNAMIC, 64-75=INFINITE, 76-88=FLYINGPAN, 89-101=PATTERN, 102-113=UNIQUE, 114-127=PHLANGER",
       "valueRange": {
         "min": 0,
-        "max": 127
-      }
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 6,
+            "name": "CLASSIC"
+          },
+          {
+            "value": 19,
+            "name": "DUAL PHZ"
+          },
+          {
+            "value": 31,
+            "name": "PHAZDLAY"
+          },
+          {
+            "value": 44,
+            "name": "K-TREM"
+          },
+          {
+            "value": 57,
+            "name": "DYNAMIC"
+          },
+          {
+            "value": 69,
+            "name": "INFINITE"
+          },
+          {
+            "value": 82,
+            "name": "FLYINGPAN"
+          },
+          {
+            "value": 95,
+            "name": "PATTERN"
+          },
+          {
+            "value": 107,
+            "name": "UNIQUE"
+          },
+          {
+            "value": 120,
+            "name": "PHLANGER"
+          }
+        ]
+      },
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 110,

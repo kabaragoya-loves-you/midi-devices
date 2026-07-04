@@ -17,26 +17,75 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 50,
-      "name": "Knob 0",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "SIZE",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 106
+          },
+          "name": "REVB"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "TIME"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 46
+          },
+          "name": "PING"
+        }
+      ]
     },
     {
       "controlChangeNumber": 51,
-      "name": "Knob 1",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "DAMP",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "REPT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 61
+          },
+          "name": "DIRT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 16
+          },
+          "name": "TONE"
+        }
+      ]
     },
     {
       "controlChangeNumber": 52,
-      "name": "Knob 2",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "MIX",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -45,56 +94,215 @@
     {
       "controlChangeNumber": 53,
       "name": "Sound Mode",
-      "additionalInfo": "0-15=PLATE, 16-30=MOD HALL, 31-45=PITCH, 46-60=SPRING, 61-75=LO-FI, 76-90=ANALOG, 91-105=DYNAMIC, 106-127=ECHOVERB",
       "valueRange": {
         "min": 0,
-        "max": 127
-      }
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 7,
+            "name": "PLATE"
+          },
+          {
+            "value": 23,
+            "name": "MOD HALL"
+          },
+          {
+            "value": 38,
+            "name": "PITCH"
+          },
+          {
+            "value": 53,
+            "name": "SPRING"
+          },
+          {
+            "value": 68,
+            "name": "LO-FI"
+          },
+          {
+            "value": 83,
+            "name": "ANALOG"
+          },
+          {
+            "value": 98,
+            "name": "DYNAMIC"
+          },
+          {
+            "value": 116,
+            "name": "ECHOVERB"
+          }
+        ]
+      },
+      "x_mandatory": true
     },
     {
       "controlChangeNumber": 54,
-      "name": "Knob 4",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "PRE",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 106
+          },
+          "name": "DTIM"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 76
+          },
+          "name": "TONE"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 46
+          },
+          "name": "TANK"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 31
+          },
+          "name": "UP"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 16
+          },
+          "name": "LOW"
+        }
+      ]
     },
     {
       "controlChangeNumber": 55,
-      "name": "Knob 5",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "RATE",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 106
+          },
+          "name": "REPT"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 91
+          },
+          "name": "TIME"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 31
+          },
+          "name": "DOWN"
+        }
+      ]
     },
     {
       "controlChangeNumber": 56,
-      "name": "Knob 6",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "WAVE",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 106
+          },
+          "name": "DMIX"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 91
+          },
+          "name": "ATTK"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 31
+          },
+          "name": "P.UP"
+        }
+      ]
     },
     {
       "controlChangeNumber": 57,
-      "name": "Knob 7",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "DEPTH",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 106
+          },
+          "name": "D.EQ"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 91
+          },
+          "name": "RELS"
+        },
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 16
+          },
+          "name": "P.DN"
+        }
+      ]
     },
     {
       "controlChangeNumber": 58,
-      "name": "Knob 8",
-      "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
+      "name": "DIV",
       "valueRange": {
         "min": 0,
         "max": 127
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 53,
+            "op": ">=",
+            "value": 91
+          },
+          "name": "TYPE"
+        }
+      ]
     },
     {
       "controlChangeNumber": 59,

@@ -262,15 +262,65 @@
     },
     {
       "controlChangeNumber": 104,
-      "name": "Dly/Pitch",
-      "additionalInfo": "Delay time or pitch range depending on mode (CC 102)",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Pitch",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 1 },
+          "name": "Pitch Rng"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 3 },
+          "name": "Max Delay"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 4 },
+          "name": "Delay Time"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 5 },
+          "name": "Delay Time"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 6 },
+          "name": "Dly Range"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 7 },
+          "name": "Delay Time"
+        }
+      ]
     },
     {
       "controlChangeNumber": 105,
-      "name": "Param",
-      "additionalInfo": "Mode-specific secondary parameter (CC 102)",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Density",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 1 },
+          "name": "LFO Speed"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 2 },
+          "name": "Detune"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 3 },
+          "name": "Rand Range"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 4 },
+          "name": "Pitch Amt"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 5 },
+          "name": "Direction"
+        },
+        {
+          "constraint": { "cc": 102, "op": "==", "value": 6 },
+          "name": "Stretch"
+        }
+      ]
     },
     {
       "controlChangeNumber": 106,

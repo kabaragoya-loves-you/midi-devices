@@ -98,7 +98,7 @@
     },
     {
       "controlChangeNumber": 35,
-      "name": "Foot L (Select)",
+      "name": "Foot L (Sel)",
       "additionalInfo": "64=tap; 127=hold until 0; 0=releases a hold",
       "valueRange": {
         "min": 0,
@@ -121,7 +121,7 @@
     },
     {
       "controlChangeNumber": 36,
-      "name": "Foot M (Scroll)",
+      "name": "Foot M",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -129,7 +129,7 @@
     },
     {
       "controlChangeNumber": 37,
-      "name": "Foot R (Bypass)",
+      "name": "Foot R (Byp)",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -154,7 +154,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Listen",
+      "name": "Clk Listen",
       "valueRange": {
         "min": 0,
         "max": 127,

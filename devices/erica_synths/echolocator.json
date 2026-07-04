@@ -41,7 +41,7 @@
     },
     {
       "controlChangeNumber": 73,
-      "name": "Modulation Speed",
+      "name": "Mod Speed",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -49,7 +49,7 @@
     },
     {
       "controlChangeNumber": 74,
-      "name": "Modulation Depth",
+      "name": "Mod Depth",
       "valueRange": {
         "min": 0,
         "max": 127

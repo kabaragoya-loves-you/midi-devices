@@ -56,7 +56,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "AUX Func Select",
+      "name": "AUX Func Sel",
       "valueRange": {
         "min": 1,
         "max": 3,
@@ -96,7 +96,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -123,7 +123,7 @@
     },
     {
       "controlChangeNumber": 101,
-      "name": "AUX Func Engage",
+      "name": "AUX Func Eng",
       "additionalInfo": "127 = engage AUX Func, 0 = bypass",
       "valueRange": {
         "min": 0,

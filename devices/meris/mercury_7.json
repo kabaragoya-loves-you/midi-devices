@@ -16,7 +16,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 4,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -107,7 +107,7 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "Pitch Vector Mix",
+      "name": "Pitch Vec Mix",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -158,7 +158,7 @@
     },
     {
       "controlChangeNumber": 29,
-      "name": "Algorithm Select",
+      "name": "Algo Sel",
       "additionalInfo": "0-63 = Ultraplate, 64-127 = Cathedra",
       "valueRange": {
         "min": 0,

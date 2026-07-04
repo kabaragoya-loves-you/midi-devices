@@ -216,7 +216,7 @@
     },
     {
       "controlChangeNumber": 30,
-      "name": "Master Wet Volume",
+      "name": "Master Wet Vol",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -620,7 +620,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "ignore = 0, follow = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -658,7 +658,7 @@
     },
     {
       "controlChangeNumber": 53,
-      "name": "L Tap Subdivision",
+      "name": "L Tap Subdiv",
       "additionalInfo": "Subdivision value table shared with CC54",
       "valueRange": {
         "min": 0,
@@ -721,7 +721,7 @@
     },
     {
       "controlChangeNumber": 54,
-      "name": "R Tap Subdivision",
+      "name": "R Tap Subdiv",
       "additionalInfo": "Subdivision value table shared with CC53",
       "valueRange": {
         "min": 0,
@@ -821,7 +821,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "additionalInfo": "0 = heel, 127 = toe",
       "valueRange": {
         "min": 0,
@@ -857,7 +857,7 @@
     },
     {
       "controlChangeNumber": 114,
-      "name": "Random Both Modes",
+      "name": "Rnd Both Modes",
       "additionalInfo": "Send any value to randomize both sides",
       "valueRange": {
         "min": 0,

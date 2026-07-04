@@ -22,68 +22,110 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 14,
-      "name": "Modulation Mode",
+      "name": "Mod Mode",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Chorus", "value": 21 },
-          { "name": "Vibrato", "value": 64 },
-          { "name": "Chorus + Vibrato", "value": 106 }
+          {
+            "name": "Chorus",
+            "value": 21
+          },
+          {
+            "name": "Vibrato",
+            "value": 64
+          },
+          {
+            "name": "Chorus + Vibrato",
+            "value": 106
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 80,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 81,
       "name": "Synth Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 82,
       "name": "Tone",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 83,
       "name": "Glide Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 84,
       "name": "Modulation",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 85,
       "name": "Sens",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 86,
       "name": "Feedback",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 87,
       "name": "Octave",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 90,
       "name": "Interval",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
   "x_pc": {

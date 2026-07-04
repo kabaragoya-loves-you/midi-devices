@@ -55,11 +55,26 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 12 },
-          { "name": "Volume Pedal", "value": 38 },
-          { "name": "Tube", "value": 64 },
-          { "name": "Vinyl", "value": 89 },
-          { "name": "Wavefold", "value": 115 }
+          {
+            "name": "Off",
+            "value": 12
+          },
+          {
+            "name": "Volume Pedal",
+            "value": 38
+          },
+          {
+            "name": "Tube",
+            "value": 64
+          },
+          {
+            "name": "Vinyl",
+            "value": 89
+          },
+          {
+            "name": "Wavefold",
+            "value": 115
+          }
         ]
       }
     },
@@ -71,10 +86,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Pre + Dry", "value": 15 },
-          { "name": "Dry", "value": 47 },
-          { "name": "Pre Ambience", "value": 79 },
-          { "name": "Post Ambience", "value": 111 }
+          {
+            "name": "Pre + Dry",
+            "value": 15
+          },
+          {
+            "name": "Dry",
+            "value": 47
+          },
+          {
+            "name": "Pre Ambience",
+            "value": 79
+          },
+          {
+            "name": "Post Ambience",
+            "value": 111
+          }
         ]
       }
     },
@@ -88,7 +115,7 @@
     },
     {
       "controlChangeNumber": 8,
-      "name": "Bal/Dust/Waveshape",
+      "name": "Bal/Dust/Wave",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -110,9 +137,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 21 },
-          { "name": "VHS Delay", "value": 64 },
-          { "name": "VHS Verb", "value": 106 }
+          {
+            "name": "Off",
+            "value": 21
+          },
+          {
+            "name": "VHS Delay",
+            "value": 64
+          },
+          {
+            "name": "VHS Verb",
+            "value": 106
+          }
         ]
       }
     },
@@ -148,8 +184,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Bypass", "value": 0 },
-          { "name": "Engaged", "value": 127 }
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
         ]
       }
     },
@@ -201,9 +243,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Light", "value": 21 },
-          { "name": "Medium", "value": 64 },
-          { "name": "Heavy", "value": 106 }
+          {
+            "name": "Light",
+            "value": 21
+          },
+          {
+            "name": "Medium",
+            "value": 64
+          },
+          {
+            "name": "Heavy",
+            "value": 106
+          }
         ]
       }
     },
@@ -215,9 +266,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Use Global", "value": 21 },
-          { "name": "Force Listen", "value": 64 },
-          { "name": "Force Ignore", "value": 106 }
+          {
+            "name": "Use Global",
+            "value": 21
+          },
+          {
+            "name": "Force Listen",
+            "value": 64
+          },
+          {
+            "name": "Force Ignore",
+            "value": 106
+          }
         ]
       }
     },
@@ -253,16 +313,28 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Pre + Dry", "value": 15 },
-          { "name": "Dry", "value": 47 },
-          { "name": "Pre", "value": 79 },
-          { "name": "Post", "value": 111 }
+          {
+            "name": "Pre + Dry",
+            "value": 15
+          },
+          {
+            "name": "Dry",
+            "value": 47
+          },
+          {
+            "name": "Pre",
+            "value": 79
+          },
+          {
+            "name": "Post",
+            "value": 111
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 26,
-      "name": "Dry Blend (Crush)",
+      "name": "Dry Blend",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -276,8 +348,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Level", "value": 31 },
-          { "name": "Glitch", "value": 95 }
+          {
+            "name": "Level",
+            "value": 31
+          },
+          {
+            "name": "Glitch",
+            "value": 95
+          }
         ]
       }
     },
@@ -289,8 +367,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -302,12 +386,30 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 10 },
-          { "name": "Ring Mod", "value": 32 },
-          { "name": "Div Trem", "value": 53 },
-          { "name": "Tape Mod", "value": 74 },
-          { "name": "Freq Shift", "value": 96 },
-          { "name": "Vibe", "value": 117 }
+          {
+            "name": "Off",
+            "value": 10
+          },
+          {
+            "name": "Ring Mod",
+            "value": 32
+          },
+          {
+            "name": "Div Trem",
+            "value": 53
+          },
+          {
+            "name": "Tape Mod",
+            "value": 74
+          },
+          {
+            "name": "Freq Shift",
+            "value": 96
+          },
+          {
+            "name": "Vibe",
+            "value": 117
+          }
         ]
       }
     },
@@ -319,10 +421,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Pre + Dry", "value": 15 },
-          { "name": "Dry", "value": 47 },
-          { "name": "Pre", "value": 79 },
-          { "name": "Post", "value": 111 }
+          {
+            "name": "Pre + Dry",
+            "value": 15
+          },
+          {
+            "name": "Dry",
+            "value": 47
+          },
+          {
+            "name": "Pre",
+            "value": 79
+          },
+          {
+            "name": "Post",
+            "value": 111
+          }
         ]
       }
     },
@@ -336,7 +450,7 @@
     },
     {
       "controlChangeNumber": 33,
-      "name": "Mod Depth/Width",
+      "name": "Mod Dpth/Width",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -446,12 +560,30 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 10 },
-          { "name": "Poly Chroma", "value": 32 },
-          { "name": "Otto Tune", "value": 53 },
-          { "name": "Micro Tune", "value": 74 },
-          { "name": "Mono Chroma", "value": 96 },
-          { "name": "Lo-Fi", "value": 117 }
+          {
+            "name": "Off",
+            "value": 10
+          },
+          {
+            "name": "Poly Chroma",
+            "value": 32
+          },
+          {
+            "name": "Otto Tune",
+            "value": 53
+          },
+          {
+            "name": "Micro Tune",
+            "value": 74
+          },
+          {
+            "name": "Mono Chroma",
+            "value": 96
+          },
+          {
+            "name": "Lo-Fi",
+            "value": 117
+          }
         ]
       }
     },
@@ -463,10 +595,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Pre + Dry", "value": 15 },
-          { "name": "Dry", "value": 47 },
-          { "name": "Pre", "value": 79 },
-          { "name": "Post", "value": 111 }
+          {
+            "name": "Pre + Dry",
+            "value": 15
+          },
+          {
+            "name": "Dry",
+            "value": 47
+          },
+          {
+            "name": "Pre",
+            "value": 79
+          },
+          {
+            "name": "Post",
+            "value": 111
+          }
         ]
       }
     },
@@ -526,9 +670,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Ladder", "value": 21 },
-          { "name": "State Variable", "value": 64 },
-          { "name": "Otto Tron", "value": 106 }
+          {
+            "name": "Ladder",
+            "value": 21
+          },
+          {
+            "name": "State Variable",
+            "value": 64
+          },
+          {
+            "name": "Otto Tron",
+            "value": 106
+          }
         ]
       }
     },
@@ -540,10 +693,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Pre + Dry", "value": 15 },
-          { "name": "Dry", "value": 47 },
-          { "name": "Pre", "value": 79 },
-          { "name": "Post", "value": 111 }
+          {
+            "name": "Pre + Dry",
+            "value": 15
+          },
+          {
+            "name": "Dry",
+            "value": 47
+          },
+          {
+            "name": "Pre",
+            "value": 79
+          },
+          {
+            "name": "Post",
+            "value": 111
+          }
         ]
       }
     },
@@ -565,15 +730,24 @@
     },
     {
       "controlChangeNumber": 58,
-      "name": "Filter Topology",
+      "name": "Filter Topo",
       "additionalInfo": "0-42=Lowpass, 43-85=Bandpass, 86-127=Highpass",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Lowpass", "value": 21 },
-          { "name": "Bandpass", "value": 64 },
-          { "name": "Highpass", "value": 106 }
+          {
+            "name": "Lowpass",
+            "value": 21
+          },
+          {
+            "name": "Bandpass",
+            "value": 64
+          },
+          {
+            "name": "Highpass",
+            "value": 106
+          }
         ]
       }
     },
@@ -601,13 +775,34 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 9 },
-          { "name": "Freeze", "value": 27 },
-          { "name": "Stutter", "value": 45 },
-          { "name": "Push Loop", "value": 64 },
-          { "name": "Wikki Wikki", "value": 83 },
-          { "name": "Tape Stop", "value": 101 },
-          { "name": "Stutter Step", "value": 118 }
+          {
+            "name": "Off",
+            "value": 9
+          },
+          {
+            "name": "Freeze",
+            "value": 27
+          },
+          {
+            "name": "Stutter",
+            "value": 45
+          },
+          {
+            "name": "Push Loop",
+            "value": 64
+          },
+          {
+            "name": "Wikki Wikki",
+            "value": 83
+          },
+          {
+            "name": "Tape Stop",
+            "value": 101
+          },
+          {
+            "name": "Stutter Step",
+            "value": 118
+          }
         ]
       }
     },
@@ -619,10 +814,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Pre + Dry", "value": 15 },
-          { "name": "Dry", "value": 47 },
-          { "name": "Pre", "value": 79 },
-          { "name": "Post", "value": 111 }
+          {
+            "name": "Pre + Dry",
+            "value": 15
+          },
+          {
+            "name": "Dry",
+            "value": 47
+          },
+          {
+            "name": "Pre",
+            "value": 79
+          },
+          {
+            "name": "Post",
+            "value": 111
+          }
         ]
       }
     },
@@ -660,7 +867,7 @@
     },
     {
       "controlChangeNumber": 68,
-      "name": "Glitch Note Div",
+      "name": "Glitch Note Dv",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -745,8 +952,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -757,8 +970,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -769,8 +988,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     }

@@ -13,6 +13,7 @@
 #   - Valid CC entry structure (including duplicate controlChangeNumber rejection)
 #   - x_pc custom extension format (incl. bankSelectMode: none, CC0, CC0_CC32)
 #   - x_midiTrs values (TYPE_A, TYPE_B, TYPE_TS, BOTH)
+#   - CC base name length (warn if >14 characters; x_variants names error at >14)
 #   - x_variants / x_mandatory CC extensions (constraint shape, ops, gating cc, name length, discrete bounds)
 #   - Strict "x_" whitelist: any unknown x_-prefixed key is an error
 #   - receives/transmits values match MIDI RTC JSON schema
@@ -341,6 +342,12 @@ class DeviceValidator
 
       unless entry.key?("name")
         @warnings << "CC entry #{idx} (CC#{cc_num}): missing name"
+      end
+
+      name = entry["name"]
+      if name && name.length > MAX_NAME_LENGTH
+        @warnings << "CC entry #{idx} (CC#{cc_num}): name '#{name}' " \
+                       "exceeds #{MAX_NAME_LENGTH} characters (#{name.length})"
       end
 
       if entry.key?("valueRange")

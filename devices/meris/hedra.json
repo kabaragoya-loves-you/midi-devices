@@ -17,7 +17,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 4,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -25,7 +25,7 @@
     },
     {
       "controlChangeNumber": 9,
-      "name": "Half Speed Enable",
+      "name": "Half Spd En",
       "additionalInfo": "0-63 = normal speed, 64-127 = half speed",
       "valueRange": {
         "min": 0,
@@ -217,7 +217,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Pitch Correction + Glide",
+      "name": "Pitch Corr/Gld",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -233,7 +233,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Time Division 1",
+      "name": "Time Div 1",
       "additionalInfo": "Time division for delay line 1",
       "valueRange": {
         "min": 0,
@@ -296,7 +296,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "Time Division 2",
+      "name": "Time Div 2",
       "additionalInfo": "Same mapping as Time Division 1",
       "valueRange": {
         "min": 0,
@@ -305,7 +305,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Time Division 3",
+      "name": "Time Div 3",
       "additionalInfo": "Same mapping as Time Division 1",
       "valueRange": {
         "min": 0,
@@ -356,7 +356,7 @@
     },
     {
       "controlChangeNumber": 30,
-      "name": "Pitch Control Smoothing",
+      "name": "Pitch Ctrl Sm",
       "additionalInfo": "0-63 = smoothing off, 64-127 = smoothing on",
       "valueRange": {
         "min": 0,
@@ -375,7 +375,7 @@
     },
     {
       "controlChangeNumber": 31,
-      "name": "Volume Swell Enable",
+      "name": "Vol Swell En",
       "additionalInfo": "0-63 = swell off, 64-127 = swell on",
       "valueRange": {
         "min": 0,

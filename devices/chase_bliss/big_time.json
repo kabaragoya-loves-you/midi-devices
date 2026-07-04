@@ -21,32 +21,50 @@
     {
       "controlChangeNumber": 14,
       "name": "Color",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
       "name": "Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "Cluster",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Tilt EQ",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Feedback",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Wet",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 22,
@@ -55,10 +73,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "Chromatic", "value": 1 },
-          { "name": "Oct+4+5", "value": 2 },
-          { "name": "Octave", "value": 3 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "Chromatic",
+            "value": 1
+          },
+          {
+            "name": "Oct+4+5",
+            "value": 2
+          },
+          {
+            "name": "Octave",
+            "value": 3
+          }
         ]
       }
     },
@@ -69,10 +99,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "Sine", "value": 1 },
-          { "name": "Square", "value": 2 },
-          { "name": "Env", "value": 3 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "Sine",
+            "value": 1
+          },
+          {
+            "name": "Square",
+            "value": 2
+          },
+          {
+            "name": "Env",
+            "value": 3
+          }
         ]
       }
     },
@@ -85,10 +127,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Mod", "value": 0 },
-          { "name": "Short", "value": 1 },
-          { "name": "Long", "value": 2 },
-          { "name": "Loop", "value": 3 }
+          {
+            "name": "Mod",
+            "value": 0
+          },
+          {
+            "name": "Short",
+            "value": 1
+          },
+          {
+            "name": "Long",
+            "value": 2
+          },
+          {
+            "name": "Loop",
+            "value": 3
+          }
         ]
       }
     },
@@ -99,10 +153,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "HiFi", "value": 0 },
-          { "name": "Focus", "value": 1 },
-          { "name": "Warm", "value": 2 },
-          { "name": "Analog", "value": 3 }
+          {
+            "name": "HiFi",
+            "value": 0
+          },
+          {
+            "name": "Focus",
+            "value": 1
+          },
+          {
+            "name": "Warm",
+            "value": 2
+          },
+          {
+            "name": "Analog",
+            "value": 3
+          }
         ]
       }
     },
@@ -113,58 +179,94 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Digital", "value": 0 },
-          { "name": "Compressed", "value": 1 },
-          { "name": "Saturated", "value": 2 },
-          { "name": "#!&%", "value": 3 }
+          {
+            "name": "Digital",
+            "value": 0
+          },
+          {
+            "name": "Compressed",
+            "value": 1
+          },
+          {
+            "name": "Saturated",
+            "value": 2
+          },
+          {
+            "name": "#!&%",
+            "value": 3
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 27,
       "name": "Save to Slot",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
-      "name": "Save to Current Slot",
+      "name": "Save Curr Slot",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Save", "value": 1 }
+          {
+            "name": "Save",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 32,
       "name": "Texture",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 33,
       "name": "Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 34,
       "name": "Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 35,
       "name": "Crossover",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 36,
       "name": "Diffusion",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 37,
       "name": "Dry",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 38,
@@ -173,9 +275,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "Blue", "value": 1 },
-          { "name": "Red", "value": 2 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "Blue",
+            "value": 1
+          },
+          {
+            "name": "Red",
+            "value": 2
+          }
         ]
       }
     },
@@ -186,8 +297,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Normal", "value": 0 },
-          { "name": "0.5X", "value": 1 }
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "0.5X",
+            "value": 1
+          }
         ]
       }
     },
@@ -198,8 +315,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Normal", "value": 0 },
-          { "name": "Double", "value": 1 }
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "Double",
+            "value": 1
+          }
         ]
       }
     },
@@ -210,8 +333,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Normal", "value": 0 },
-          { "name": "+12 dB", "value": 1 }
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "+12 dB",
+            "value": 1
+          }
         ]
       }
     },
@@ -222,8 +351,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Play", "value": 0 },
-          { "name": "Dub", "value": 1 }
+          {
+            "name": "Play",
+            "value": 0
+          },
+          {
+            "name": "Dub",
+            "value": 1
+          }
         ]
       }
     },
@@ -234,8 +369,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -246,8 +387,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -258,8 +405,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -270,8 +423,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
@@ -282,43 +441,91 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 48,
-      "name": "Balanced/Unbalanced",
+      "name": "Bald/Unbal",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Balanced", "value": 0 },
-          { "name": "Unbalanced", "value": 1 }
+          {
+            "name": "Balanced",
+            "value": 0
+          },
+          {
+            "name": "Unbalanced",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 54,
-      "name": "Tap Subdivision",
+      "name": "Tap Subdiv",
       "additionalInfo": "Value 11 or greater selects Dotted Half",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Sixteenth", "value": 0 },
-          { "name": "Eighth Triplet", "value": 1 },
-          { "name": "Dotted Sixteenth", "value": 2 },
-          { "name": "Eighth", "value": 3 },
-          { "name": "Quarter Triplet", "value": 4 },
-          { "name": "Dotted Eighth", "value": 5 },
-          { "name": "Quarter", "value": 6 },
-          { "name": "Half Triplet", "value": 7 },
-          { "name": "Dotted Quarter", "value": 8 },
-          { "name": "Half", "value": 9 },
-          { "name": "Whole Triplet", "value": 10 },
-          { "name": "Dotted Half", "value": 11 }
+          {
+            "name": "Sixteenth",
+            "value": 0
+          },
+          {
+            "name": "Eighth Triplet",
+            "value": 1
+          },
+          {
+            "name": "Dotted Sixteenth",
+            "value": 2
+          },
+          {
+            "name": "Eighth",
+            "value": 3
+          },
+          {
+            "name": "Quarter Triplet",
+            "value": 4
+          },
+          {
+            "name": "Dotted Eighth",
+            "value": 5
+          },
+          {
+            "name": "Quarter",
+            "value": 6
+          },
+          {
+            "name": "Half Triplet",
+            "value": 7
+          },
+          {
+            "name": "Dotted Quarter",
+            "value": 8
+          },
+          {
+            "name": "Half",
+            "value": 9
+          },
+          {
+            "name": "Whole Triplet",
+            "value": 10
+          },
+          {
+            "name": "Dotted Half",
+            "value": 11
+          }
         ]
       }
     },
@@ -326,13 +533,25 @@
       "controlChangeNumber": 100,
       "name": "Expression",
       "additionalInfo": "Expression Over MIDI",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 101,
       "name": "Disable EXP",
-      "additionalInfo": "Disengages Expression Over MIDI (CC100). Chart lists range 0-127.",
-      "valueRange": { "min": 0, "max": 127 }
+      "additionalInfo": "Disengages Expression Over MIDI (CC100)",
+      "valueRange": {
+        "min": 1,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 1
+          }
+        ]
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -342,20 +561,33 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       },
       "x_variants": [
         {
-          "constraint": { "cc": 24, "op": ">=", "value": 3 },
+          "constraint": {
+            "cc": 24,
+            "op": ">=",
+            "value": 3
+          },
           "name": "Play/Stop",
           "additionalInfo": "Loop mode: momentary tap-right footswitch; triggers on any value.",
           "valueRange": {
             "min": 0,
             "max": 1,
             "discreteValues": [
-              { "name": "Play/Stop", "value": 1 }
+              {
+                "name": "Play/Stop",
+                "value": 1
+              }
             ]
           }
         }
@@ -369,19 +601,29 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Tap", "value": 1 }
+          {
+            "name": "Tap",
+            "value": 1
+          }
         ]
       },
       "x_variants": [
         {
-          "constraint": { "cc": 24, "op": ">=", "value": 3 },
+          "constraint": {
+            "cc": 24,
+            "op": ">=",
+            "value": 3
+          },
           "name": "Rec/Play/Dub",
           "additionalInfo": "Loop mode: momentary tap-left footswitch; cycles Rec/Play/Dub on any value.",
           "valueRange": {
             "min": 0,
             "max": 1,
             "discreteValues": [
-              { "name": "Rec/Play/Dub", "value": 1 }
+              {
+                "name": "Rec/Play/Dub",
+                "value": 1
+              }
             ]
           }
         }
@@ -395,11 +637,21 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Record", "value": 1 }
+          {
+            "name": "Record",
+            "value": 1
+          }
         ]
       },
       "x_variants": [
-        { "constraint": { "cc": 24, "op": "<", "value": 3 }, "x_noop": true }
+        {
+          "constraint": {
+            "cc": 24,
+            "op": "<",
+            "value": 3
+          },
+          "x_noop": true
+        }
       ]
     },
     {
@@ -410,11 +662,21 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Play", "value": 1 }
+          {
+            "name": "Play",
+            "value": 1
+          }
         ]
       },
       "x_variants": [
-        { "constraint": { "cc": 24, "op": "<", "value": 3 }, "x_noop": true }
+        {
+          "constraint": {
+            "cc": 24,
+            "op": "<",
+            "value": 3
+          },
+          "x_noop": true
+        }
       ]
     },
     {
@@ -425,20 +687,33 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       },
       "x_variants": [
         {
-          "constraint": { "cc": 24, "op": ">=", "value": 3 },
+          "constraint": {
+            "cc": 24,
+            "op": ">=",
+            "value": 3
+          },
           "name": "Delete",
           "additionalInfo": "Loop mode: momentary hold-left footswitch; triggers on any value.",
           "valueRange": {
             "min": 0,
             "max": 1,
             "discreteValues": [
-              { "name": "Delete", "value": 1 }
+              {
+                "name": "Delete",
+                "value": 1
+              }
             ]
           }
         }
@@ -452,11 +727,21 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Stop", "value": 1 }
+          {
+            "name": "Stop",
+            "value": 1
+          }
         ]
       },
       "x_variants": [
-        { "constraint": { "cc": 24, "op": "<", "value": 3 }, "x_noop": true }
+        {
+          "constraint": {
+            "cc": 24,
+            "op": "<",
+            "value": 3
+          },
+          "x_noop": true
+        }
       ]
     },
     {
@@ -467,9 +752,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "No Clock", "value": 0 },
-          { "name": "Clock In", "value": 1 },
-          { "name": "Clock Out", "value": 2 }
+          {
+            "name": "No Clock",
+            "value": 0
+          },
+          {
+            "name": "Clock In",
+            "value": 1
+          },
+          {
+            "name": "Clock Out",
+            "value": 2
+          }
         ]
       }
     },
@@ -481,9 +775,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "Channel", "value": 1 },
-          { "name": "Global", "value": 2 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "Channel",
+            "value": 1
+          },
+          {
+            "name": "Global",
+            "value": 2
+          }
         ]
       }
     }

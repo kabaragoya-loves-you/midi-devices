@@ -9,7 +9,9 @@
     "model": "Solarfaze",
     "version": ""
   },
-  "receives": ["PROGRAM_CHANGE"],
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
   "transmits": [],
   "controlChangeCommands": [
     {
@@ -32,7 +34,7 @@
     },
     {
       "controlChangeNumber": 14,
-      "name": "Saturate Bypass",
+      "name": "Saturate Byp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -82,7 +84,7 @@
     },
     {
       "controlChangeNumber": 83,
-      "name": "Bass Band Output Level",
+      "name": "Bass Out Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -90,7 +92,7 @@
     },
     {
       "controlChangeNumber": 84,
-      "name": "Mid Band Output Level",
+      "name": "Mid Out Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -98,7 +100,7 @@
     },
     {
       "controlChangeNumber": 85,
-      "name": "Treb Band Output Level",
+      "name": "Treb Out Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -106,7 +108,7 @@
     },
     {
       "controlChangeNumber": 89,
-      "name": "Bass Band Drive",
+      "name": "Bass Band Drv",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -150,7 +152,7 @@
     },
     {
       "controlChangeNumber": 91,
-      "name": "Treb Band Drive",
+      "name": "Treb Band Drv",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -172,7 +174,7 @@
     },
     {
       "controlChangeNumber": 93,
-      "name": "Bass Band Frequency",
+      "name": "Bass Band Freq",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -180,7 +182,7 @@
     },
     {
       "controlChangeNumber": 94,
-      "name": "Mid Band Frequency",
+      "name": "Mid Band Freq",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -188,7 +190,7 @@
     },
     {
       "controlChangeNumber": 95,
-      "name": "Treb Band Frequency",
+      "name": "Treb Band Freq",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -220,7 +222,7 @@
     },
     {
       "controlChangeNumber": 92,
-      "name": "Noise Gate Bypass",
+      "name": "Noise Gate Byp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -238,7 +240,7 @@
     },
     {
       "controlChangeNumber": 98,
-      "name": "Noise Gate Threshold",
+      "name": "Noise Gate Th",
       "valueRange": {
         "min": 0,
         "max": 127

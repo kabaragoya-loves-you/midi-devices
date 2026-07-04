@@ -133,7 +133,7 @@
     },
     {
       "controlChangeNumber": 19,
-      "name": "Delay 1 Subdivision",
+      "name": "Dly 1 Subdiv",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -155,7 +155,7 @@
     },
     {
       "controlChangeNumber": 20,
-      "name": "Delay 2 Repeats",
+      "name": "Dly 2 Repeats",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -231,7 +231,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "MIDI Clock Tempo Mult/Div",
+      "name": "Clk Tempo M/D",
       "valueRange": {
         "min": 0,
         "max": 6,
@@ -269,7 +269,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression",
+      "name": "MIDI Expr",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -314,7 +314,7 @@
     },
     {
       "controlChangeNumber": 97,
-      "name": "Circular Repeats",
+      "name": "Circ Repeats",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -332,7 +332,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

@@ -23,7 +23,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -35,7 +38,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -47,7 +53,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -59,7 +68,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -71,22 +83,37 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "Hold" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "Hold"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 17,
-      "name": "Variation Select",
+      "name": "Variation Sel",
       "additionalInfo": "0=A, 1=B, 2=C",
       "valueRange": {
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "A" },
-          { "value": 1, "name": "B" },
-          { "value": 2, "name": "C" }
+          {
+            "value": 0,
+            "name": "A"
+          },
+          {
+            "value": 1,
+            "name": "B"
+          },
+          {
+            "value": 2,
+            "name": "C"
+          }
         ]
       }
     },
@@ -98,10 +125,22 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Spring 65" },
-          { "value": 1, "name": "Plate 140" },
-          { "value": 2, "name": "Hall 224" },
-          { "value": 3, "name": "Chamber 224" }
+          {
+            "value": 0,
+            "name": "Spring 65"
+          },
+          {
+            "value": 1,
+            "name": "Plate 140"
+          },
+          {
+            "value": 2,
+            "name": "Hall 224"
+          },
+          {
+            "value": 3,
+            "name": "Chamber 224"
+          }
         ]
       }
     },
@@ -113,41 +152,68 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 1, "name": "Unbypass Left FS" },
-          { "value": 2, "name": "Unbypass Right FS" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 1,
+            "name": "Unbypass Left FS"
+          },
+          {
+            "value": 2,
+            "name": "Unbypass Right FS"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 22,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 23,
       "name": "Decay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 24,
       "name": "Pre-Delay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 25,
       "name": "Bass",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 26,
       "name": "Treble",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Mod",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
   "x_pc": {

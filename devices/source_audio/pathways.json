@@ -22,58 +22,103 @@
         "min": 0,
         "max": 6,
         "discreteValues": [
-          { "name": "Slap", "value": 0 },
-          { "name": "Echo", "value": 1 },
-          { "name": "Spring", "value": 2 },
-          { "name": "Tank", "value": 3 },
-          { "name": "Room", "value": 4 },
-          { "name": "Plate", "value": 5 },
-          { "name": "Hall", "value": 6 }
+          {
+            "name": "Slap",
+            "value": 0
+          },
+          {
+            "name": "Echo",
+            "value": 1
+          },
+          {
+            "name": "Spring",
+            "value": 2
+          },
+          {
+            "name": "Tank",
+            "value": 3
+          },
+          {
+            "name": "Room",
+            "value": 4
+          },
+          {
+            "name": "Plate",
+            "value": 5
+          },
+          {
+            "name": "Hall",
+            "value": 6
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 1,
       "name": "Time",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 2,
       "name": "Diffusion",
       "additionalInfo": "Spring and Tank engines only",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 3,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 5,
       "name": "PD Mod Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 6,
       "name": "Mod Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 7,
-      "name": "Delay Time/Size",
+      "name": "Dly Time/Size",
       "additionalInfo": "Delay time for Slap and Echo; size for Room, Plate, Hall",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 8,
       "name": "Drive",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 9,
       "name": "PD",
       "additionalInfo": "Spring and Tank engines only",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 10,
@@ -82,28 +127,52 @@
         "min": 0,
         "max": 4,
         "discreteValues": [
-          { "name": "XS", "value": 0 },
-          { "name": "S", "value": 1 },
-          { "name": "M", "value": 2 },
-          { "name": "L", "value": 3 },
-          { "name": "XL", "value": 4 }
+          {
+            "name": "XS",
+            "value": 0
+          },
+          {
+            "name": "S",
+            "value": 1
+          },
+          {
+            "name": "M",
+            "value": 2
+          },
+          {
+            "name": "L",
+            "value": 3
+          },
+          {
+            "name": "XL",
+            "value": 4
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 12,
       "name": "Output",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 13,
       "name": "Treble",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 14,
       "name": "Bass",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 15,
@@ -112,31 +181,52 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "name": "Harmonic", "value": 0 },
-          { "name": "Opto", "value": 1 },
-          { "name": "Bias", "value": 2 }
+          {
+            "name": "Harmonic",
+            "value": 0
+          },
+          {
+            "name": "Opto",
+            "value": 1
+          },
+          {
+            "name": "Bias",
+            "value": 2
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 16,
       "name": "Trem Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Trem Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Trem Boost",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Trem Offset",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
@@ -145,32 +235,62 @@
         "min": 0,
         "max": 6,
         "discreteValues": [
-          { "name": "Half Note", "value": 0 },
-          { "name": "Quarter Note", "value": 1 },
-          { "name": "Dotted Eighth", "value": 2 },
-          { "name": "Eighth Note", "value": 3 },
-          { "name": "Triplet", "value": 4 },
-          { "name": "Sixteenth Note", "value": 5 },
-          { "name": "16th Note Triplet", "value": 6 }
+          {
+            "name": "Half Note",
+            "value": 0
+          },
+          {
+            "name": "Quarter Note",
+            "value": 1
+          },
+          {
+            "name": "Dotted Eighth",
+            "value": 2
+          },
+          {
+            "name": "Eighth Note",
+            "value": 3
+          },
+          {
+            "name": "Triplet",
+            "value": 4
+          },
+          {
+            "name": "Sixteenth Note",
+            "value": 5
+          },
+          {
+            "name": "16th Note Triplet",
+            "value": 6
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 21,
-      "name": "Trem Engage/Disengage",
+      "name": "Trem Eng/Dis",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 22,
       "name": "Reverb Send",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 80,
@@ -179,8 +299,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -191,8 +317,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -203,14 +335,20 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Tap", "value": 1 }
+          {
+            "name": "Tap",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 100,
-      "name": "Remote Expression",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Remote Expr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 101,
@@ -219,8 +357,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -231,8 +375,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -243,7 +393,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          {
+            "name": "Trigger",
+            "value": 1
+          }
         ]
       }
     },
@@ -254,7 +407,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          {
+            "name": "Trigger",
+            "value": 1
+          }
         ]
       }
     },
@@ -265,7 +421,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          {
+            "name": "Trigger",
+            "value": 1
+          }
         ]
       }
     }

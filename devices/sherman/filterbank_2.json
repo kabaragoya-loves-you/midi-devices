@@ -17,59 +17,89 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 1,
-      "name": "Filter 2 Cutoff",
+      "name": "Filt 2 Cutoff",
       "additionalInfo": "Modulation wheel. Value 127 in sync mode pitches machine one octave up.",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 2,
       "name": "Filter 2 Res",
       "additionalInfo": "Breath control",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 4,
       "name": "FM Depth",
       "additionalInfo": "Foot control",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 5,
       "name": "ADSR Attack",
       "additionalInfo": "Portamento time / Attack time ADSR",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 7,
       "name": "VCA Bias",
       "additionalInfo": "Main volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 11,
       "name": "AM/Ring Depth",
       "additionalInfo": "Expression",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 16,
       "name": "ADSR Decay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "ADSR Release",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "AR Attack",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "AR Release",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
   "x_pc": {

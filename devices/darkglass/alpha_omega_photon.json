@@ -22,44 +22,68 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 1 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 1,
-      "name": "Noise Gate Bypass",
+      "name": "Noise Gate Byp",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Bypassed", "value": 0 },
-          { "name": "Active", "value": 1 }
+          {
+            "name": "Bypassed",
+            "value": 0
+          },
+          {
+            "name": "Active",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 2,
-      "name": "Compressor Bypass",
+      "name": "Comp Byp",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Bypassed", "value": 0 },
-          { "name": "Active", "value": 1 }
+          {
+            "name": "Bypassed",
+            "value": 0
+          },
+          {
+            "name": "Active",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 3,
-      "name": "Distortion Bypass",
+      "name": "Dist Byp",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Bypassed", "value": 0 },
-          { "name": "Active", "value": 1 }
+          {
+            "name": "Bypassed",
+            "value": 0
+          },
+          {
+            "name": "Active",
+            "value": 1
+          }
         ]
       }
     },
@@ -70,8 +94,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "name": "Bypassed", "value": 0 },
-          { "name": "Active", "value": 1 }
+          {
+            "name": "Bypassed",
+            "value": 0
+          },
+          {
+            "name": "Active",
+            "value": 1
+          }
         ]
       }
     },
@@ -82,56 +112,92 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "name": "Alpha", "value": 0 },
-          { "name": "Omega", "value": 1 },
-          { "name": "Blend", "value": 2 }
+          {
+            "name": "Alpha",
+            "value": 0
+          },
+          {
+            "name": "Omega",
+            "value": 1
+          },
+          {
+            "name": "Blend",
+            "value": 2
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 11,
       "name": "Drive Amount",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 12,
       "name": "Blend",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 13,
       "name": "Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Bass",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 21,
       "name": "Mid",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 22,
       "name": "Treble",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 30,
-      "name": "Compression Amount",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Comp Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 31,
-      "name": "Compression Blend",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Comp Blend",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 40,
       "name": "Gate Threshold",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 50,
@@ -140,31 +206,64 @@
         "min": 0,
         "max": 7,
         "discreteValues": [
-          { "name": "Bypass", "value": 0 },
-          { "name": "IR 1", "value": 1 },
-          { "name": "IR 2", "value": 2 },
-          { "name": "IR 3", "value": 3 },
-          { "name": "IR 4", "value": 4 },
-          { "name": "IR 5", "value": 5 },
-          { "name": "IR 6", "value": 6 },
-          { "name": "IR 7", "value": 7 }
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "IR 1",
+            "value": 1
+          },
+          {
+            "name": "IR 2",
+            "value": 2
+          },
+          {
+            "name": "IR 3",
+            "value": 3
+          },
+          {
+            "name": "IR 4",
+            "value": 4
+          },
+          {
+            "name": "IR 5",
+            "value": 5
+          },
+          {
+            "name": "IR 6",
+            "value": 6
+          },
+          {
+            "name": "IR 7",
+            "value": 7
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 51,
       "name": "Cab Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 60,
       "name": "Master Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 61,
-      "name": "Headphone Volume",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Headphone Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
   "x_pc": {

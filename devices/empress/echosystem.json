@@ -25,11 +25,11 @@
     },
     {
       "controlChangeNumber": 101,
-      "name": "Delay Time / Ratio A"
+      "name": "Dly T/Ratio A"
     },
     {
       "controlChangeNumber": 110,
-      "name": "Delay Time / Ratio B"
+      "name": "Dly T/Ratio B"
     },
     {
       "controlChangeNumber": 102,
@@ -129,7 +129,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "Engage / Bypass",
+      "name": "Engage / Byp",
       "valueRange": {
         "discreteValues": [
           {
@@ -149,19 +149,19 @@
     },
     {
       "controlChangeNumber": 10,
-      "name": "Expression Pedal"
+      "name": "Expr Pedal"
     },
     {
       "controlChangeNumber": 35,
-      "name": "Left Stomp - Tap"
+      "name": "Left St: Tap"
     },
     {
       "controlChangeNumber": 36,
-      "name": "Middle Stomp - Scroll"
+      "name": "Mid St: Scroll"
     },
     {
       "controlChangeNumber": 37,
-      "name": "Right Stomp - Bypass"
+      "name": "Right St: Byp"
     },
     {
       "controlChangeNumber": 38,
@@ -173,7 +173,7 @@
     },
     {
       "controlChangeNumber": 40,
-      "name": "Engine Order Swap"
+      "name": "Eng Order Sw"
     },
     {
       "controlChangeNumber": 41,
@@ -185,7 +185,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Listener A",
+      "name": "Clk Listener A",
       "valueRange": {
         "discreteValues": [
           {
@@ -201,7 +201,7 @@
     },
     {
       "controlChangeNumber": 52,
-      "name": "MIDI Clock Listener B",
+      "name": "Clk Listener B",
       "valueRange": {
         "discreteValues": [
           {

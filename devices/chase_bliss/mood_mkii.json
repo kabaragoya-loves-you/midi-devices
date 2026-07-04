@@ -32,12 +32,30 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "1/32 Note" },
-          { "value": 13, "name": "1/16 Note" },
-          { "value": 37, "name": "1/8 Triplet" },
-          { "value": 62, "name": "1/8 Note" },
-          { "value": 85, "name": "Dotted 1/8" },
-          { "value": 111, "name": "1/4 Note" }
+          {
+            "value": 0,
+            "name": "1/32 Note"
+          },
+          {
+            "value": 13,
+            "name": "1/16 Note"
+          },
+          {
+            "value": 37,
+            "name": "1/8 Triplet"
+          },
+          {
+            "value": 62,
+            "name": "1/8 Note"
+          },
+          {
+            "value": 85,
+            "name": "Dotted 1/8"
+          },
+          {
+            "value": 111,
+            "name": "1/4 Note"
+          }
         ]
       }
     },
@@ -56,12 +74,30 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "x 1/32" },
-          { "value": 13, "name": "x 1/16" },
-          { "value": 37, "name": "x 1/8" },
-          { "value": 62, "name": "x 1/4" },
-          { "value": 85, "name": "x 1/2" },
-          { "value": 111, "name": "x 1" }
+          {
+            "value": 0,
+            "name": "x 1/32"
+          },
+          {
+            "value": 13,
+            "name": "x 1/16"
+          },
+          {
+            "value": 37,
+            "name": "x 1/8"
+          },
+          {
+            "value": 62,
+            "name": "x 1/4"
+          },
+          {
+            "value": 85,
+            "name": "x 1/2"
+          },
+          {
+            "value": 111,
+            "name": "x 1"
+          }
         ]
       }
     },
@@ -80,44 +116,128 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "2k" },
-          { "value": 5, "name": "3k" },
-          { "value": 16, "name": "4k" },
-          { "value": 29, "name": "6k" },
-          { "value": 41, "name": "8k" },
-          { "value": 54, "name": "12k" },
-          { "value": 70, "name": "16k" },
-          { "value": 84, "name": "24k" },
-          { "value": 96, "name": "32k" },
-          { "value": 110, "name": "48k" },
-          { "value": 122, "name": "64k" }
+          {
+            "value": 0,
+            "name": "2k"
+          },
+          {
+            "value": 5,
+            "name": "3k"
+          },
+          {
+            "value": 16,
+            "name": "4k"
+          },
+          {
+            "value": 29,
+            "name": "6k"
+          },
+          {
+            "value": 41,
+            "name": "8k"
+          },
+          {
+            "value": 54,
+            "name": "12k"
+          },
+          {
+            "value": 70,
+            "name": "16k"
+          },
+          {
+            "value": 84,
+            "name": "24k"
+          },
+          {
+            "value": 96,
+            "name": "32k"
+          },
+          {
+            "value": 110,
+            "name": "48k"
+          },
+          {
+            "value": 122,
+            "name": "64k"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 19,
-      "name": "Tape/Stretch Speed",
+      "name": "Tape/Str Speed",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Tape 4x Rev" },
-          { "value": 5, "name": "Tape 2x Rev" },
-          { "value": 24, "name": "Tape 1x Rev" },
-          { "value": 43, "name": "Tape .5x Rev" },
-          { "value": 62, "name": "Tape .5x Fwd" },
-          { "value": 85, "name": "Tape 1x Fwd" },
-          { "value": 98, "name": "Tape 2x Fwd" },
-          { "value": 120, "name": "Tape 4x Fwd" },
-          { "value": 1, "name": "Str No Rev" },
-          { "value": 16, "name": "Str 1.5x Rev" },
-          { "value": 31, "name": "Str 2x Rev" },
-          { "value": 47, "name": "Str 4x Rev" },
-          { "value": 61, "name": "Str Stalled" },
-          { "value": 81, "name": "Str 4x Fwd" },
-          { "value": 97, "name": "Str 2x Fwd" },
-          { "value": 112, "name": "Str 1.5x Fwd" },
-          { "value": 127, "name": "Str No Fwd" }
+          {
+            "value": 0,
+            "name": "Tape 4x Rev"
+          },
+          {
+            "value": 5,
+            "name": "Tape 2x Rev"
+          },
+          {
+            "value": 24,
+            "name": "Tape 1x Rev"
+          },
+          {
+            "value": 43,
+            "name": "Tape .5x Rev"
+          },
+          {
+            "value": 62,
+            "name": "Tape .5x Fwd"
+          },
+          {
+            "value": 85,
+            "name": "Tape 1x Fwd"
+          },
+          {
+            "value": 98,
+            "name": "Tape 2x Fwd"
+          },
+          {
+            "value": 120,
+            "name": "Tape 4x Fwd"
+          },
+          {
+            "value": 1,
+            "name": "Str No Rev"
+          },
+          {
+            "value": 16,
+            "name": "Str 1.5x Rev"
+          },
+          {
+            "value": 31,
+            "name": "Str 2x Rev"
+          },
+          {
+            "value": 47,
+            "name": "Str 4x Rev"
+          },
+          {
+            "value": 61,
+            "name": "Str Stalled"
+          },
+          {
+            "value": 81,
+            "name": "Str 4x Fwd"
+          },
+          {
+            "value": 97,
+            "name": "Str 2x Fwd"
+          },
+          {
+            "value": 112,
+            "name": "Str 1.5x Fwd"
+          },
+          {
+            "value": 127,
+            "name": "Str No Fwd"
+          }
         ]
       }
     },
@@ -136,9 +256,18 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Reverb" },
-          { "value": 2, "name": "Delay" },
-          { "value": 3, "name": "Slip" }
+          {
+            "value": 0,
+            "name": "Reverb"
+          },
+          {
+            "value": 2,
+            "name": "Delay"
+          },
+          {
+            "value": 3,
+            "name": "Slip"
+          }
         ]
       }
     },
@@ -149,9 +278,18 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "IN" },
-          { "value": 2, "name": "Loop + IN" },
-          { "value": 3, "name": "Loop" }
+          {
+            "value": 0,
+            "name": "IN"
+          },
+          {
+            "value": 2,
+            "name": "Loop + IN"
+          },
+          {
+            "value": 3,
+            "name": "Loop"
+          }
         ]
       }
     },
@@ -162,15 +300,24 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Env" },
-          { "value": 2, "name": "Tape" },
-          { "value": 3, "name": "Stretch" }
+          {
+            "value": 0,
+            "name": "Env"
+          },
+          {
+            "value": 2,
+            "name": "Tape"
+          },
+          {
+            "value": 3,
+            "name": "Stretch"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 24,
-      "name": "Stereo Width (Wet)",
+      "name": "St Width (Wet)",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -178,16 +325,31 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Ramping Waveform",
+      "name": "Ramping Wave",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Sine" },
-          { "value": 15, "name": "Triangle" },
-          { "value": 55, "name": "Wave" },
-          { "value": 81, "name": "Square" },
-          { "value": 127, "name": "Constant" }
+          {
+            "value": 0,
+            "name": "Sine"
+          },
+          {
+            "value": 15,
+            "name": "Triangle"
+          },
+          {
+            "value": 55,
+            "name": "Wave"
+          },
+          {
+            "value": 81,
+            "name": "Square"
+          },
+          {
+            "value": 127,
+            "name": "Constant"
+          }
         ]
       }
     },
@@ -230,9 +392,18 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Loop > Wet" },
-          { "value": 2, "name": "No Sync" },
-          { "value": 3, "name": "Wet > Loop" }
+          {
+            "value": 0,
+            "name": "Loop > Wet"
+          },
+          {
+            "value": 2,
+            "name": "No Sync"
+          },
+          {
+            "value": 3,
+            "name": "Wet > Loop"
+          }
         ]
       }
     },
@@ -243,9 +414,18 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Wet Only" },
-          { "value": 2, "name": "Both" },
-          { "value": 3, "name": "Loop Only" }
+          {
+            "value": 0,
+            "name": "Wet Only"
+          },
+          {
+            "value": 2,
+            "name": "Both"
+          },
+          {
+            "value": 3,
+            "name": "Loop Only"
+          }
         ]
       }
     },
@@ -256,20 +436,32 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Half" },
-          { "value": 2, "name": "Full" }
+          {
+            "value": 0,
+            "name": "Half"
+          },
+          {
+            "value": 2,
+            "name": "Full"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Ignore" },
-          { "value": 1, "name": "Follow" }
+          {
+            "value": 0,
+            "name": "Ignore"
+          },
+          {
+            "value": 1,
+            "name": "Follow"
+          }
         ]
       }
     },
@@ -280,56 +472,116 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Stop" },
-          { "value": 1, "name": "Resume" }
+          {
+            "value": 0,
+            "name": "Stop"
+          },
+          {
+            "value": 1,
+            "name": "Resume"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 53,
-      "name": "Clock Div (Wet)",
+      "name": "Clock Div",
       "valueRange": {
         "min": 0,
         "max": 7,
         "discreteValues": [
-          { "value": 0, "name": "1/32 Note" },
-          { "value": 1, "name": "1/16 Note" },
-          { "value": 2, "name": "1/8 Triplet" },
-          { "value": 3, "name": "1/8 Note" },
-          { "value": 4, "name": "Dotted 1/8" },
-          { "value": 5, "name": "1/4 Note" },
-          { "value": 6, "name": "Half Note" },
-          { "value": 7, "name": "Whole Note" }
+          {
+            "value": 0,
+            "name": "1/32 Note"
+          },
+          {
+            "value": 1,
+            "name": "1/16 Note"
+          },
+          {
+            "value": 2,
+            "name": "1/8 Triplet"
+          },
+          {
+            "value": 3,
+            "name": "1/8 Note"
+          },
+          {
+            "value": 4,
+            "name": "Dotted 1/8"
+          },
+          {
+            "value": 5,
+            "name": "1/4 Note"
+          },
+          {
+            "value": 6,
+            "name": "Half Note"
+          },
+          {
+            "value": 7,
+            "name": "Whole Note"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 54,
-      "name": "Clock Div (Loop)",
+      "name": "Clock Div",
       "valueRange": {
         "min": 0,
         "max": 7,
         "discreteValues": [
-          { "value": 0, "name": "1/32 Note" },
-          { "value": 1, "name": "1/16 Note" },
-          { "value": 2, "name": "1/8 Triplet" },
-          { "value": 3, "name": "1/8 Note" },
-          { "value": 4, "name": "Dotted 1/8" },
-          { "value": 5, "name": "1/4 Note" },
-          { "value": 6, "name": "Half Note" },
-          { "value": 7, "name": "Whole Note" }
+          {
+            "value": 0,
+            "name": "1/32 Note"
+          },
+          {
+            "value": 1,
+            "name": "1/16 Note"
+          },
+          {
+            "value": 2,
+            "name": "1/8 Triplet"
+          },
+          {
+            "value": 3,
+            "name": "1/8 Note"
+          },
+          {
+            "value": 4,
+            "name": "Dotted 1/8"
+          },
+          {
+            "value": 5,
+            "name": "1/4 Note"
+          },
+          {
+            "value": 6,
+            "name": "Half Note"
+          },
+          {
+            "value": 7,
+            "name": "Whole Note"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 55,
-      "name": "True Bypass Mode",
+      "name": "True Byp Mode",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Buffered" },
-          { "value": 1, "name": "True Bypass" }
+          {
+            "value": 0,
+            "name": "Buffered"
+          },
+          {
+            "value": 1,
+            "name": "True Bypass"
+          }
         ]
       }
     },
@@ -343,21 +595,48 @@
     },
     {
       "controlChangeNumber": 57,
-      "name": "Octave Transpose",
+      "name": "Octave Xpose",
       "additionalInfo": "Synth mode octave shift",
       "valueRange": {
         "min": 1,
         "max": 9,
         "discreteValues": [
-          { "value": 1, "name": "+12 Semi" },
-          { "value": 2, "name": "+24 Semi" },
-          { "value": 3, "name": "+36 Semi" },
-          { "value": 4, "name": "+48 Semi" },
-          { "value": 5, "name": "+60 Semi" },
-          { "value": 6, "name": "+72 Semi" },
-          { "value": 7, "name": "+84 Semi" },
-          { "value": 8, "name": "+96 Semi" },
-          { "value": 9, "name": "+108 Semi" }
+          {
+            "value": 1,
+            "name": "+12 Semi"
+          },
+          {
+            "value": 2,
+            "name": "+24 Semi"
+          },
+          {
+            "value": 3,
+            "name": "+36 Semi"
+          },
+          {
+            "value": 4,
+            "name": "+48 Semi"
+          },
+          {
+            "value": 5,
+            "name": "+60 Semi"
+          },
+          {
+            "value": 6,
+            "name": "+72 Semi"
+          },
+          {
+            "value": 7,
+            "name": "+84 Semi"
+          },
+          {
+            "value": 8,
+            "name": "+96 Semi"
+          },
+          {
+            "value": 9,
+            "name": "+108 Semi"
+          }
         ]
       }
     },
@@ -369,20 +648,32 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Open" },
-          { "value": 1, "name": "On/Off" },
-          { "value": 2, "name": "ADSR" }
+          {
+            "value": 0,
+            "name": "Open"
+          },
+          {
+            "value": 1,
+            "name": "On/Off"
+          },
+          {
+            "value": 2,
+            "name": "ADSR"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 59,
-      "name": "Exit Synth Mode",
+      "name": "Exit Synth",
       "valueRange": {
         "min": 1,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Exit Synth" }
+          {
+            "value": 1,
+            "name": "Exit Synth"
+          }
         ]
       }
     },
@@ -393,20 +684,32 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 62,
-      "name": "Dip: Modify (Wet)",
+      "name": "Dip: Modify",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -417,20 +720,32 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 64,
-      "name": "Dip: Modify (Loop)",
+      "name": "Dip: Modify",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -441,8 +756,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -453,8 +774,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -465,8 +792,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "B" },
-          { "value": 1, "name": "T" }
+          {
+            "value": 0,
+            "name": "B"
+          },
+          {
+            "value": 1,
+            "name": "T"
+          }
         ]
       }
     },
@@ -477,8 +810,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "F" },
-          { "value": 1, "name": "R" }
+          {
+            "value": 0,
+            "name": "F"
+          },
+          {
+            "value": 1,
+            "name": "R"
+          }
         ]
       }
     },
@@ -489,8 +828,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -501,8 +846,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -513,8 +864,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -525,8 +882,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -537,8 +900,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -549,8 +918,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -561,8 +936,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -573,8 +954,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -638,8 +1025,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -650,8 +1043,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -662,8 +1061,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -674,8 +1079,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -686,8 +1097,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -698,7 +1115,10 @@
         "min": 1,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Tap" }
+          {
+            "value": 1,
+            "name": "Tap"
+          }
         ]
       }
     },
@@ -709,7 +1129,10 @@
         "min": 1,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Reset" }
+          {
+            "value": 1,
+            "name": "Reset"
+          }
         ]
       }
     },

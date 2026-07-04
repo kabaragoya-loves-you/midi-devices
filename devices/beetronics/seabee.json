@@ -17,7 +17,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 4,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "additionalInfo": "Emulates the expression pedal control",
       "valueRange": {
         "min": 0,
@@ -70,7 +70,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Depth 1 / Harmony 1",
+      "name": "Depth1/Harm1",
       "additionalInfo": "ROTO: Depth 1; DUAL: Harmony 1 (0 = no harmony, 1-12 = steps); STING: Delay Time 2 (0-11 = steps); ARP/MAD: Harmonies (0-11 = chord select)",
       "valueRange": {
         "min": 0,
@@ -104,7 +104,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Depth 2 / Harmony 2",
+      "name": "Depth2/Harm2",
       "additionalInfo": "Depth 2 in ROTO mode; Harmony 2 in DUAL mode",
       "valueRange": {
         "min": 0,
@@ -207,7 +207,7 @@
     },
     {
       "controlChangeNumber": 104,
-      "name": "Extra Tap (Press and Release)",
+      "name": "Extra Tap P+R",
       "additionalInfo": "Values >63 emulate press, values <=63 emulate release",
       "valueRange": {
         "min": 0,
@@ -235,7 +235,7 @@
     },
     {
       "controlChangeNumber": 106,
-      "name": "Double Click Action",
+      "name": "Dbl Click Act",
       "additionalInfo": "Any value alternates between ramp up and ramp down positions",
       "valueRange": {
         "min": 0,
@@ -253,7 +253,7 @@
     },
     {
       "controlChangeNumber": 108,
-      "name": "Ramp Trigger (Press and Release)",
+      "name": "Ramp Trig P+R",
       "additionalInfo": "Values >63 emulate press, values <=63 emulate release",
       "valueRange": {
         "min": 0,
@@ -272,7 +272,7 @@
     },
     {
       "controlChangeNumber": 109,
-      "name": "MIDI Clock Enable",
+      "name": "Clk Enable",
       "additionalInfo": "Values >63: MIDI clock on; values <=63: MIDI clock off",
       "valueRange": {
         "min": 0,

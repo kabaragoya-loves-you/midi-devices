@@ -112,7 +112,7 @@
     },
     {
       "controlChangeNumber": 108,
-      "name": "Retrigger Glitch",
+      "name": "Retrig Glitch",
       "additionalInfo": "send any value to retrigger glitch",
       "valueRange": {
         "min": 0,
@@ -121,7 +121,7 @@
     },
     {
       "controlChangeNumber": 109,
-      "name": "Retrigger Freeze",
+      "name": "Retrig Freeze",
       "additionalInfo": "send any value to retrigger freeze",
       "valueRange": {
         "min": 0,
@@ -630,7 +630,7 @@
     },
     {
       "controlChangeNumber": 32,
-      "name": "Sustain Routing",
+      "name": "Sus Route",
       "additionalInfo": "GLITCH = 0-1, BOTH = 2, FREEZE = 3 or higher",
       "valueRange": {
         "min": 0,
@@ -653,7 +653,7 @@
     },
     {
       "controlChangeNumber": 33,
-      "name": "Effects Routing",
+      "name": "Effects Route",
       "additionalInfo": "GLITCH = 0-1, BOTH = 2, FREEZE = 3 or higher",
       "valueRange": {
         "min": 0,
@@ -676,7 +676,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "additionalInfo": "0 = heel, 127 = toe",
       "valueRange": {
         "min": 0,
@@ -694,7 +694,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "0 = ignore, >0 = follow clock",
       "valueRange": {
         "min": 0,
@@ -732,7 +732,7 @@
     },
     {
       "controlChangeNumber": 53,
-      "name": "MIDI Sync Subdivision",
+      "name": "MIDI Sync Sub",
       "additionalInfo": "0-8 map to specific note values",
       "valueRange": {
         "min": 0,
@@ -835,7 +835,7 @@
     },
     {
       "controlChangeNumber": 107,
-      "name": "Tap Tempo (Alt)",
+      "name": "Tap Tempo",
       "additionalInfo": "send any value to tap (alternate CC number)",
       "valueRange": {
         "min": 0,

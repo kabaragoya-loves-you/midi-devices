@@ -22,8 +22,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Disengage" },
-          { "value": 1, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Disengage"
+          },
+          {
+            "value": 1,
+            "name": "Engage"
+          }
         ]
       }
     },
@@ -34,8 +40,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Disengage" },
-          { "value": 1, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Disengage"
+          },
+          {
+            "value": 1,
+            "name": "Engage"
+          }
         ]
       }
     },
@@ -46,8 +58,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Disengage" },
-          { "value": 1, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Disengage"
+          },
+          {
+            "value": 1,
+            "name": "Engage"
+          }
         ]
       }
     },
@@ -58,8 +76,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Disengage" },
-          { "value": 1, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Disengage"
+          },
+          {
+            "value": 1,
+            "name": "Engage"
+          }
         ]
       }
     },
@@ -70,8 +94,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "Trigger" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "Trigger"
+          }
         ]
       }
     },
@@ -82,8 +112,14 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "Trigger" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "Trigger"
+          }
         ]
       }
     },
@@ -94,20 +130,32 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Disengage" },
-          { "value": 1, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Disengage"
+          },
+          {
+            "value": 1,
+            "name": "Engage"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 8,
-      "name": "Hold (Switch B)",
+      "name": "Hold (Sw B)",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Released" },
-          { "value": 1, "name": "Held" }
+          {
+            "value": 0,
+            "name": "Released"
+          },
+          {
+            "value": 1,
+            "name": "Held"
+          }
         ]
       }
     },
@@ -208,7 +256,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Mod A Toggle Select",
+      "name": "Mod A Tgl Sel",
       "valueRange": {
         "min": 1,
         "max": 3,
@@ -230,7 +278,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Looper Mode Toggle Select",
+      "name": "Loop Md Tgl",
       "valueRange": {
         "min": 1,
         "max": 3,
@@ -252,7 +300,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Mod B Toggle Select",
+      "name": "Mod B Tgl Sel",
       "valueRange": {
         "min": 1,
         "max": 3,
@@ -274,7 +322,7 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "Preview / Save-Load Toggle Select",
+      "name": "Prev/Save Sel",
       "valueRange": {
         "min": 1,
         "max": 3,
@@ -302,7 +350,10 @@
         "min": 127,
         "max": 127,
         "discreteValues": [
-          { "value": 127, "name": "Toggle" }
+          {
+            "value": 127,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -314,13 +365,16 @@
         "min": 127,
         "max": 127,
         "discreteValues": [
-          { "value": 127, "name": "Toggle" }
+          {
+            "value": 127,
+            "name": "Toggle"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "0 = ignore clock, >0 = listen for clock",
       "valueRange": {
         "min": 0,

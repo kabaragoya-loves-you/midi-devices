@@ -22,7 +22,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -34,7 +37,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -46,9 +52,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Dyna" },
-          { "value": 1, "name": "Opto LA-2A" },
-          { "value": 2, "name": "FET 1176" }
+          {
+            "value": 0,
+            "name": "Dyna"
+          },
+          {
+            "value": 1,
+            "name": "Opto LA-2A"
+          },
+          {
+            "value": 2,
+            "name": "FET 1176"
+          }
         ]
       }
     },
@@ -60,80 +75,131 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 1, "name": "Unbypass" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 1,
+            "name": "Unbypass"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 22,
       "name": "Comp 1 Preamp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 23,
-      "name": "Comp 1 Pre Low Shelf EQ",
+      "name": "C1 Pre Lo EQ",
       "additionalInfo": "0=–6 dB, 1=Flat, 2=+6 dB",
       "valueRange": {
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "–6 dB" },
-          { "value": 1, "name": "Flat" },
-          { "value": 2, "name": "+6 dB" }
+          {
+            "value": 0,
+            "name": "–6 dB"
+          },
+          {
+            "value": 1,
+            "name": "Flat"
+          },
+          {
+            "value": 2,
+            "name": "+6 dB"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 24,
-      "name": "Comp 1 Pre High Shelf EQ",
+      "name": "C1 Pre Hi EQ",
       "additionalInfo": "0=–6 dB, 1=Flat, 2=+3 dB, 3=+6 dB",
       "valueRange": {
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "–6 dB" },
-          { "value": 1, "name": "Flat" },
-          { "value": 2, "name": "+3 dB" },
-          { "value": 3, "name": "+6 dB" }
+          {
+            "value": 0,
+            "name": "–6 dB"
+          },
+          {
+            "value": 1,
+            "name": "Flat"
+          },
+          {
+            "value": 2,
+            "name": "+3 dB"
+          },
+          {
+            "value": 3,
+            "name": "+6 dB"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 25,
       "name": "Comp 1 Comp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 26,
       "name": "Comp 1 Output",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Comp 1 Attack",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
       "name": "Comp 1 Ratio",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 29,
       "name": "Comp 1 Release",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 30,
-      "name": "Comp 1 Sidechain Filter",
+      "name": "C1 Sidechain",
       "additionalInfo": "0=Off, 1=On (FET 1176 only)",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     },
@@ -145,9 +211,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Dyna" },
-          { "value": 1, "name": "Opto LA-2A" },
-          { "value": 2, "name": "FET 1176" }
+          {
+            "value": 0,
+            "name": "Dyna"
+          },
+          {
+            "value": 1,
+            "name": "Opto LA-2A"
+          },
+          {
+            "value": 2,
+            "name": "FET 1176"
+          }
         ]
       }
     },
@@ -159,80 +234,131 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 1, "name": "Unbypass" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 1,
+            "name": "Unbypass"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 32,
       "name": "Comp 2 Preamp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 33,
-      "name": "Comp 2 Pre Low Shelf EQ",
+      "name": "C2 Pre Lo EQ",
       "additionalInfo": "0=–6 dB, 1=Flat, 2=+6 dB",
       "valueRange": {
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "–6 dB" },
-          { "value": 1, "name": "Flat" },
-          { "value": 2, "name": "+6 dB" }
+          {
+            "value": 0,
+            "name": "–6 dB"
+          },
+          {
+            "value": 1,
+            "name": "Flat"
+          },
+          {
+            "value": 2,
+            "name": "+6 dB"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 34,
-      "name": "Comp 2 Pre High Shelf EQ",
+      "name": "C2 Pre Hi EQ",
       "additionalInfo": "0=–6 dB, 1=Flat, 2=+3 dB, 3=+6 dB",
       "valueRange": {
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "–6 dB" },
-          { "value": 1, "name": "Flat" },
-          { "value": 2, "name": "+3 dB" },
-          { "value": 3, "name": "+6 dB" }
+          {
+            "value": 0,
+            "name": "–6 dB"
+          },
+          {
+            "value": 1,
+            "name": "Flat"
+          },
+          {
+            "value": 2,
+            "name": "+3 dB"
+          },
+          {
+            "value": 3,
+            "name": "+6 dB"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 35,
       "name": "Comp 2 Comp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 36,
       "name": "Comp 2 Output",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 37,
       "name": "Comp 2 Attack",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 38,
       "name": "Comp 2 Ratio",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 39,
       "name": "Comp 2 Release",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 40,
-      "name": "Comp 2 Sidechain Filter",
+      "name": "C2 Sidechain",
       "additionalInfo": "0=Off, 1=On (FET 1176 only)",
       "valueRange": {
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "On" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
         ]
       }
     }

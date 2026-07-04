@@ -132,7 +132,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression Off/On",
+      "name": "MIDI Expr",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -150,7 +150,7 @@
     },
     {
       "controlChangeNumber": 63,
-      "name": "MIDI Clock Off/On",
+      "name": "MIDI Clk",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -168,7 +168,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "additionalInfo": "0 = heel, 127 = toe",
       "valueRange": {
         "min": 0,

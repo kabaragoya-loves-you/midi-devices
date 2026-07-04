@@ -322,7 +322,7 @@
     },
     {
       "controlChangeNumber": 89,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -348,7 +348,7 @@
     },
     {
       "controlChangeNumber": 105,
-      "name": "Flange Feedback",
+      "name": "Flange Fdbk",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -356,7 +356,7 @@
     },
     {
       "controlChangeNumber": 106,
-      "name": "Rotary Slow Rate",
+      "name": "Rotary Slow Rt",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -364,7 +364,7 @@
     },
     {
       "controlChangeNumber": 107,
-      "name": "Rotary Fast Rate",
+      "name": "Rotary Fast Rt",
       "valueRange": {
         "min": 0,
         "max": 127

@@ -174,7 +174,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Preset Save (slot)",
+      "name": "Pres Save",
       "valueRange": {
         "min": 0,
         "max": 29
@@ -182,7 +182,7 @@
     },
     {
       "controlChangeNumber": 28,
-      "name": "Aux Performance Switch 1",
+      "name": "Aux Perf Sw 1",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -190,7 +190,7 @@
     },
     {
       "controlChangeNumber": 29,
-      "name": "Aux Performance Switch 2",
+      "name": "Aux Perf Sw 2",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -198,7 +198,7 @@
     },
     {
       "controlChangeNumber": 30,
-      "name": "Aux Performance Switch 3",
+      "name": "Aux Perf Sw 3",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -206,7 +206,7 @@
     },
     {
       "controlChangeNumber": 31,
-      "name": "Aux Performance Switch 4",
+      "name": "Aux Perf Sw 4",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -214,7 +214,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression (EOM)",
+      "name": "Expr (EOM)",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -230,7 +230,7 @@
     },
     {
       "controlChangeNumber": 102,
-      "name": "Bypass / Engage",
+      "name": "Byp / Engage",
       "valueRange": {
         "min": 0,
         "max": 127,

@@ -18,13 +18,19 @@
       "controlChangeNumber": 97,
       "name": "Ramp",
       "additionalInfo": "Send any value to trigger the ramp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "additionalInfo": "Value 0 = Heel down, Value 127 = Toe down",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -34,61 +40,89 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 64, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 64,
+            "name": "Engage"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 50,
       "name": "Mod",
       "additionalInfo": "Value 0 = CCW, Value 127 = CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
       "name": "Voice",
       "additionalInfo": "Value 0 = CCW, Value 127 = CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 52,
       "name": "Two",
       "additionalInfo": "Value 0 = CCW, Value 127 = CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 53,
       "name": "Mix",
       "additionalInfo": "Value 0 = CCW, Value 127 = CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 54,
       "name": "Ramp Rate",
       "additionalInfo": "Value 0 = CCW, Value 127 = CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 55,
       "name": "ALT",
       "additionalInfo": "Value 0 = CCW, Value 127 = CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 56,
       "name": "Clock",
       "additionalInfo": "Value 0 = CCW, Value 127 = CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
       "name": "Level",
       "additionalInfo": "Value 0 = CCW, Value 127 = CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 58,
       "name": "Pitch Lock",
@@ -97,10 +131,22 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "UNLOCK" },
-          { "value": 1, "name": "CHROMATIC" },
-          { "value": 2, "name": "MAJOR" },
-          { "value": 3, "name": "MINOR" }
+          {
+            "value": 0,
+            "name": "UNLOCK"
+          },
+          {
+            "value": 1,
+            "name": "CHROMATIC"
+          },
+          {
+            "value": 2,
+            "name": "MAJOR"
+          },
+          {
+            "value": 3,
+            "name": "MINOR"
+          }
         ]
       }
     },
@@ -112,12 +158,30 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "MOD" },
-          { "value": 1, "name": "CLOUD" },
-          { "value": 2, "name": "RING" },
-          { "value": 3, "name": "RAND" },
-          { "value": 4, "name": "ARPY" },
-          { "value": 5, "name": "DYNA" }
+          {
+            "value": 0,
+            "name": "MOD"
+          },
+          {
+            "value": 1,
+            "name": "CLOUD"
+          },
+          {
+            "value": 2,
+            "name": "RING"
+          },
+          {
+            "value": 3,
+            "name": "RAND"
+          },
+          {
+            "value": 4,
+            "name": "ARPY"
+          },
+          {
+            "value": 5,
+            "name": "DYNA"
+          }
         ]
       }
     }

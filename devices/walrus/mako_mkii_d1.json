@@ -361,7 +361,7 @@
     },
     {
       "controlChangeNumber": 89,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "0: Off, 127: On",
       "valueRange": {
         "min": 0,

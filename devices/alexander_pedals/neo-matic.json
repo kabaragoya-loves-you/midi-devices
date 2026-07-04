@@ -18,12 +18,18 @@
       "controlChangeNumber": 97,
       "name": "Ramp",
       "additionalInfo": "Send any value to trigger/ramp.",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Expr Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -33,50 +39,80 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 64, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 64,
+            "name": "Engage"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 50,
-      "name": "Lower Right Main",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "LR Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
-      "name": "Upper Left Main",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "UL Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 52,
-      "name": "Upper Right Main",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "UR Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 53,
-      "name": "Lower Left Main",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "LL Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 54,
-      "name": "Lower Right Alt",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "LR Alt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 55,
       "name": "Upper Left Alt",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 56,
-      "name": "Upper Right Alt",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "UR Alt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
       "name": "Lower Left Alt",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 59,
@@ -86,14 +122,38 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mode 1" },
-          { "value": 1, "name": "Mode 2" },
-          { "value": 2, "name": "Mode 3" },
-          { "value": 3, "name": "Mode 4" },
-          { "value": 4, "name": "Mode 5" },
-          { "value": 5, "name": "Mode 6" },
-          { "value": 6, "name": "Mode 7" },
-          { "value": 7, "name": "Mode 8" }
+          {
+            "value": 0,
+            "name": "Mode 1"
+          },
+          {
+            "value": 1,
+            "name": "Mode 2"
+          },
+          {
+            "value": 2,
+            "name": "Mode 3"
+          },
+          {
+            "value": 3,
+            "name": "Mode 4"
+          },
+          {
+            "value": 4,
+            "name": "Mode 5"
+          },
+          {
+            "value": 5,
+            "name": "Mode 6"
+          },
+          {
+            "value": 6,
+            "name": "Mode 7"
+          },
+          {
+            "value": 7,
+            "name": "Mode 8"
+          }
         ]
       }
     }

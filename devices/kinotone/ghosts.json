@@ -98,7 +98,7 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "Reverb Mix & Placement",
+      "name": "Rv Mix/Place",
       "additionalInfo": "0-63: Pre Resonator Mix, 64-127: Post Resonator Mix",
       "valueRange": {
         "min": 0,
@@ -152,7 +152,7 @@
     },
     {
       "controlChangeNumber": 28,
-      "name": "Limiter Threshold",
+      "name": "Limiter Thresh",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -283,7 +283,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "Ignore MIDI Clock",
+      "name": "Ign MIDI Clk",
       "additionalInfo": "0: Ignore, 1-127: Listen",
       "valueRange": {
         "min": 0,
@@ -302,7 +302,7 @@
     },
     {
       "controlChangeNumber": 52,
-      "name": "Ignore MIDI Start",
+      "name": "Ign MIDI Strt",
       "additionalInfo": "0: Ignore, 1-127: Listen",
       "valueRange": {
         "min": 0,
@@ -321,7 +321,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "Clear Endless Loop",
+      "name": "Clr Endless",
       "additionalInfo": "0-64: False, 65-127: True",
       "valueRange": {
         "min": 0,
@@ -340,7 +340,7 @@
     },
     {
       "controlChangeNumber": 80,
-      "name": "Touch Footswitch",
+      "name": "Touch Stomp",
       "additionalInfo": "0-64: Off, 65-127: On",
       "valueRange": {
         "min": 0,
@@ -359,7 +359,7 @@
     },
     {
       "controlChangeNumber": 81,
-      "name": "Bypass Footswitch",
+      "name": "Byp Footswitch",
       "additionalInfo": "0-64: Off, 65-127: On",
       "valueRange": {
         "min": 0,

@@ -16,7 +16,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
-      "name": "Bank Select (Patch Bank)",
+      "name": "Bank Sel",
       "valueRange": {
         "min": 0,
         "max": 2
@@ -32,7 +32,7 @@
     },
     {
       "controlChangeNumber": 9,
-      "name": "Volume Pedal Pre/Post",
+      "name": "Vol Ped Pre/P",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -204,7 +204,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression Off/On",
+      "name": "MIDI Expr",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -222,7 +222,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

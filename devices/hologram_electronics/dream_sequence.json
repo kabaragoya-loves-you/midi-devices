@@ -18,7 +18,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 20,
-      "name": "Octave Up Level",
+      "name": "Octave Up Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -27,7 +27,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 21,
-      "name": "Middle Octave Level",
+      "name": "Mid Oct Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -36,7 +36,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 22,
-      "name": "Octave Down Level",
+      "name": "Oct Dn Lvl",
       "valueRange": {
         "min": 0,
         "max": 127

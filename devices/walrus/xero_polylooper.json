@@ -94,7 +94,7 @@
     },
     {
       "controlChangeNumber": 6,
-      "name": "Track 1 Direction",
+      "name": "Trk1 Direction",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -112,7 +112,7 @@
     },
     {
       "controlChangeNumber": 7,
-      "name": "Track 2 Direction",
+      "name": "Trk2 Direction",
       "valueRange": {
         "min": 0,
         "max": 1,

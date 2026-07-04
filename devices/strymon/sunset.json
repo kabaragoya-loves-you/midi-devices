@@ -16,7 +16,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
-      "name": "MIDI Patch Bank",
+      "name": "Patch Bank",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -65,7 +65,7 @@
     },
     {
       "controlChangeNumber": 11,
-      "name": "Circuit Select A",
+      "name": "Circuit Sel A",
       "valueRange": {
         "min": 1,
         "max": 3,
@@ -130,7 +130,7 @@
     },
     {
       "controlChangeNumber": 16,
-      "name": "Circuit Select B",
+      "name": "Circuit Sel B",
       "valueRange": {
         "min": 1,
         "max": 3,
@@ -229,7 +229,7 @@
     },
     {
       "controlChangeNumber": 33,
-      "name": "Bypass/On A and B",
+      "name": "Byp/On A and B",
       "additionalInfo": "0=Bypass, 127=On",
       "valueRange": {
         "min": 0,
@@ -248,7 +248,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression Off/On",
+      "name": "MIDI Expr",
       "additionalInfo": "0=Off, 127=On",
       "valueRange": {
         "min": 0,
@@ -267,7 +267,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

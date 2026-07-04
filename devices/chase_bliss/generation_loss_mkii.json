@@ -130,7 +130,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -155,7 +155,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "DSP Bypass Mode",
+      "name": "DSP Byp Mode",
       "additionalInfo": "True bypass < 64, DSP bypass > 64",
       "valueRange": {
         "min": 0,
@@ -182,7 +182,7 @@
     },
     {
       "controlChangeNumber": 28,
-      "name": "Mechanical Noise Level",
+      "name": "Mech Noise Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -190,7 +190,7 @@
     },
     {
       "controlChangeNumber": 29,
-      "name": "Crinkle / Pop Level",
+      "name": "Crnk/Pop Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -303,7 +303,7 @@
     },
     {
       "controlChangeNumber": 102,
-      "name": "Bypass / Engage",
+      "name": "Byp / Engage",
       "additionalInfo": "Pedal off = 0, on = 1 or >",
       "valueRange": {
         "min": 0,
@@ -341,7 +341,7 @@
     },
     {
       "controlChangeNumber": 104,
-      "name": "Alt Mode (Both Switches Hold)",
+      "name": "Alt Both Hold",
       "additionalInfo": "ALT enter = 0, ALT exit = 1 or >",
       "valueRange": {
         "min": 0,
@@ -360,7 +360,7 @@
     },
     {
       "controlChangeNumber": 105,
-      "name": "Left Footswitch",
+      "name": "Left Stomp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -378,7 +378,7 @@
     },
     {
       "controlChangeNumber": 106,
-      "name": "Center Footswitch",
+      "name": "Center Stomp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -396,7 +396,7 @@
     },
     {
       "controlChangeNumber": 107,
-      "name": "Right Footswitch",
+      "name": "Right Stomp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -468,7 +468,7 @@
     },
     {
       "controlChangeNumber": 64,
-      "name": "Failure / HP Dip",
+      "name": "Fail/HP Dip",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -650,7 +650,7 @@
     },
     {
       "controlChangeNumber": 76,
-      "name": "Drop Bypass Dip",
+      "name": "Drop Byp Dip",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -668,7 +668,7 @@
     },
     {
       "controlChangeNumber": 77,
-      "name": "Snag Bypass Dip",
+      "name": "Snag Byp Dip",
       "valueRange": {
         "min": 0,
         "max": 127,

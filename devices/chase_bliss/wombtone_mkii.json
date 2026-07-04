@@ -73,7 +73,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "MIDI Note Divisions",
+      "name": "MIDI Note Divs",
       "additionalInfo": "0 = quarter, 1 = dotted eighth, 2 = eighth triplet, 3 = eighth, 4 = sixteenth triplet, 5 = sixteenth",
       "valueRange": {
         "min": 0,
@@ -108,7 +108,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "0 = ignore MIDI clock, 127 = follow MIDI clock",
       "valueRange": {
         "min": 0,

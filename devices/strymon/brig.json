@@ -19,7 +19,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
-      "name": "Bank Select (Patch Bank)",
+      "name": "Bank Sel",
       "valueRange": {
         "min": 0,
         "max": 2
@@ -159,7 +159,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

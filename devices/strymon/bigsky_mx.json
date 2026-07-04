@@ -42,7 +42,7 @@
     },
     {
       "controlChangeNumber": 1,
-      "name": "Reverb 1: Reverb Type Encoder",
+      "name": "R1: Rv Type En",
       "valueRange": {
         "min": 0,
         "max": 11
@@ -50,7 +50,7 @@
     },
     {
       "controlChangeNumber": 2,
-      "name": "Reverb 2: Reverb Type Encoder",
+      "name": "R2: Rv Type En",
       "valueRange": {
         "min": 0,
         "max": 11
@@ -58,7 +58,7 @@
     },
     {
       "controlChangeNumber": 3,
-      "name": "Reverb 1: Decay Knob",
+      "name": "R1: Decay Knob",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -66,7 +66,7 @@
     },
     {
       "controlChangeNumber": 4,
-      "name": "Reverb 2: Decay Knob",
+      "name": "R2: Decay Knob",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -74,7 +74,7 @@
     },
     {
       "controlChangeNumber": 5,
-      "name": "Reverb 1: Pre-Delay Knob",
+      "name": "R1: PreDly Kno",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -82,7 +82,7 @@
     },
     {
       "controlChangeNumber": 6,
-      "name": "Reverb 2: Pre-Delay Knob",
+      "name": "R2: PreDly Kno",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -90,7 +90,7 @@
     },
     {
       "controlChangeNumber": 7,
-      "name": "Reverb 1: Output Level",
+      "name": "R1: Output Lvl",
       "valueRange": {
         "min": 0,
         "max": 16
@@ -98,7 +98,7 @@
     },
     {
       "controlChangeNumber": 8,
-      "name": "Reverb 2: Output Level",
+      "name": "R2: Output Lvl",
       "valueRange": {
         "min": 0,
         "max": 16
@@ -150,7 +150,7 @@
     },
     {
       "controlChangeNumber": 11,
-      "name": "Reverb 1: Tone Knob",
+      "name": "R1: Tone Knob",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -158,7 +158,7 @@
     },
     {
       "controlChangeNumber": 12,
-      "name": "Reverb 2: Tone Knob",
+      "name": "R2: Tone Knob",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -166,7 +166,7 @@
     },
     {
       "controlChangeNumber": 13,
-      "name": "Reverb 1: Mod Knob",
+      "name": "R1: Mod Knob",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -174,7 +174,7 @@
     },
     {
       "controlChangeNumber": 14,
-      "name": "Reverb 2: Mod Knob",
+      "name": "R2: Mod Knob",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -182,7 +182,7 @@
     },
     {
       "controlChangeNumber": 15,
-      "name": "Reverb 1: Mix Knob",
+      "name": "R1: Mix Knob",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -190,7 +190,7 @@
     },
     {
       "controlChangeNumber": 16,
-      "name": "Reverb 2: Mix Knob",
+      "name": "R2: Mix Knob",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -198,7 +198,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Reverb 1: Infinite Mode",
+      "name": "R1: Inf Mode",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -220,7 +220,7 @@
     },
     {
       "controlChangeNumber": 18,
-      "name": "Reverb 2: Infinite Mode",
+      "name": "R2: Inf Mode",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -242,7 +242,7 @@
     },
     {
       "controlChangeNumber": 19,
-      "name": "Reverb 1: Param 1 Knob",
+      "name": "R1: Param 1 Kn",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -250,7 +250,7 @@
     },
     {
       "controlChangeNumber": 20,
-      "name": "Reverb 2: Param 1 Knob",
+      "name": "R2: Param 1 Kn",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -258,7 +258,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Reverb 1: Param 2 Knob",
+      "name": "R1: Param 2 Kn",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -266,7 +266,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Reverb 2: Param 2 Knob",
+      "name": "R2: Param 2 Kn",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -274,7 +274,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Reverb 1: Low End",
+      "name": "R1: Low End",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -282,7 +282,7 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "Reverb 2: Low End",
+      "name": "R2: Low End",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -290,7 +290,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Reverb 1: Room - Size",
+      "name": "R1: Room: Size",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -308,7 +308,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "Reverb 2: Room - Size",
+      "name": "R2: Room: Size",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -326,7 +326,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Reverb 1: Room - Diffusion",
+      "name": "R1: Room: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -334,7 +334,7 @@
     },
     {
       "controlChangeNumber": 28,
-      "name": "Reverb 2: Room - Diffusion",
+      "name": "R2: Room: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -342,7 +342,7 @@
     },
     {
       "controlChangeNumber": 29,
-      "name": "Reverb 1: Room - Voice",
+      "name": "R1 Room: Voice",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -360,7 +360,7 @@
     },
     {
       "controlChangeNumber": 30,
-      "name": "Reverb 2: Room - Voice",
+      "name": "R2 Room: Voice",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -378,7 +378,7 @@
     },
     {
       "controlChangeNumber": 35,
-      "name": "Reverb 1: Hall - Mid",
+      "name": "R1: Hall - Mid",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -386,7 +386,7 @@
     },
     {
       "controlChangeNumber": 36,
-      "name": "Reverb 2: Hall - Mid",
+      "name": "R2: Hall - Mid",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -394,7 +394,7 @@
     },
     {
       "controlChangeNumber": 37,
-      "name": "Reverb 1: Hall - Size",
+      "name": "R1: Hall: Size",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -412,7 +412,7 @@
     },
     {
       "controlChangeNumber": 38,
-      "name": "Reverb 2: Hall - Size",
+      "name": "R2: Hall: Size",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -430,7 +430,7 @@
     },
     {
       "controlChangeNumber": 39,
-      "name": "Reverb 1: Hall - Swell Rise",
+      "name": "R1 Hall: Swell",
       "valueRange": {
         "min": 0,
         "max": 22
@@ -438,7 +438,7 @@
     },
     {
       "controlChangeNumber": 40,
-      "name": "Reverb 2: Hall - Swell Rise",
+      "name": "R2 Hall: Swell",
       "valueRange": {
         "min": 0,
         "max": 22
@@ -446,7 +446,7 @@
     },
     {
       "controlChangeNumber": 41,
-      "name": "Reverb 1: Hall - Swell Type",
+      "name": "R1 Hall: Swell",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -464,7 +464,7 @@
     },
     {
       "controlChangeNumber": 42,
-      "name": "Reverb 2: Hall - Swell Type",
+      "name": "R2 Hall: Swell",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -482,7 +482,7 @@
     },
     {
       "controlChangeNumber": 43,
-      "name": "Reverb 1: Hall - Voice",
+      "name": "R1 Hall: Voice",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -500,7 +500,7 @@
     },
     {
       "controlChangeNumber": 44,
-      "name": "Reverb 2: Hall - Voice",
+      "name": "R2 Hall: Voice",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -518,7 +518,7 @@
     },
     {
       "controlChangeNumber": 45,
-      "name": "Reverb 1: Chamber - Color",
+      "name": "R1 Cham Color",
       "valueRange": {
         "min": 0,
         "max": 4,
@@ -548,7 +548,7 @@
     },
     {
       "controlChangeNumber": 46,
-      "name": "Reverb 2: Chamber - Color",
+      "name": "R2 Cham Color",
       "valueRange": {
         "min": 0,
         "max": 4,
@@ -578,7 +578,7 @@
     },
     {
       "controlChangeNumber": 47,
-      "name": "Reverb 1: Plate - Size",
+      "name": "R1 Plate: Size",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -596,7 +596,7 @@
     },
     {
       "controlChangeNumber": 48,
-      "name": "Reverb 2: Plate - Size",
+      "name": "R2 Plate: Size",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -614,7 +614,7 @@
     },
     {
       "controlChangeNumber": 49,
-      "name": "Reverb 1: Plate - Voice",
+      "name": "R1 Plate Vox",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -632,7 +632,7 @@
     },
     {
       "controlChangeNumber": 50,
-      "name": "Reverb 2: Plate - Voice",
+      "name": "R2 Plate Vox",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -650,7 +650,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "Reverb 1: Spring - Dwell",
+      "name": "R1 Spr Dwell",
       "valueRange": {
         "min": 0,
         "max": 3,
@@ -676,7 +676,7 @@
     },
     {
       "controlChangeNumber": 52,
-      "name": "Reverb 2: Spring - Dwell",
+      "name": "R2 Spr Dwell",
       "valueRange": {
         "min": 0,
         "max": 3,
@@ -702,7 +702,7 @@
     },
     {
       "controlChangeNumber": 53,
-      "name": "Reverb 1: Spring - Number",
+      "name": "R1 Spr Number",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -724,7 +724,7 @@
     },
     {
       "controlChangeNumber": 54,
-      "name": "Reverb 2: Spring - Number",
+      "name": "R2 Spr Number",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -746,7 +746,7 @@
     },
     {
       "controlChangeNumber": 55,
-      "name": "Reverb 1: Spring - Voice",
+      "name": "R1 Spr Voice",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -764,7 +764,7 @@
     },
     {
       "controlChangeNumber": 56,
-      "name": "Reverb 2: Spring - Voice",
+      "name": "R2 Spr Voice",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -782,7 +782,7 @@
     },
     {
       "controlChangeNumber": 57,
-      "name": "Reverb 1: Impulse - Attack",
+      "name": "R1: Imp: Atk",
       "valueRange": {
         "min": 0,
         "max": 16
@@ -790,7 +790,7 @@
     },
     {
       "controlChangeNumber": 58,
-      "name": "Reverb 2: Impulse - Attack",
+      "name": "R2: Imp: Atk",
       "valueRange": {
         "min": 0,
         "max": 16
@@ -798,7 +798,7 @@
     },
     {
       "controlChangeNumber": 59,
-      "name": "Reverb 1: Impulse - Stretch",
+      "name": "R1: Imp: Str",
       "valueRange": {
         "min": 0,
         "max": 16
@@ -806,7 +806,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "Reverb 2: Impulse - Stretch",
+      "name": "R2: Imp: Str",
       "valueRange": {
         "min": 0,
         "max": 16
@@ -814,7 +814,7 @@
     },
     {
       "controlChangeNumber": 61,
-      "name": "Reverb 1: Impulse - Tail",
+      "name": "R1: Imp: Tail",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -832,7 +832,7 @@
     },
     {
       "controlChangeNumber": 62,
-      "name": "Reverb 2: Impulse - Tail",
+      "name": "R2: Imp: Tail",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -850,7 +850,7 @@
     },
     {
       "controlChangeNumber": 63,
-      "name": "Reverb 1: Impulse - Direction",
+      "name": "R1: Imp: Dir",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -868,7 +868,7 @@
     },
     {
       "controlChangeNumber": 64,
-      "name": "Reverb 2: Impulse - Direction",
+      "name": "R2: Imp: Dir",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -886,7 +886,7 @@
     },
     {
       "controlChangeNumber": 65,
-      "name": "Reverb 1: Impulse - Feedback",
+      "name": "R1: Imp: Fdbk",
       "valueRange": {
         "min": 0,
         "max": 15
@@ -894,7 +894,7 @@
     },
     {
       "controlChangeNumber": 66,
-      "name": "Reverb 2: Impulse - Feedback",
+      "name": "R2: Imp: Fdbk",
       "valueRange": {
         "min": 0,
         "max": 15
@@ -902,7 +902,7 @@
     },
     {
       "controlChangeNumber": 67,
-      "name": "Reverb 1: Cloud - Diffusion",
+      "name": "R1 Cloud: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -910,7 +910,7 @@
     },
     {
       "controlChangeNumber": 68,
-      "name": "Reverb 2: Cloud - Diffusion",
+      "name": "R2 Cloud: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -918,7 +918,7 @@
     },
     {
       "controlChangeNumber": 69,
-      "name": "Reverb 1: Cloud - Ensemble",
+      "name": "R1 Cloud: Ense",
       "valueRange": {
         "min": 0,
         "max": 15
@@ -926,7 +926,7 @@
     },
     {
       "controlChangeNumber": 70,
-      "name": "Reverb 2: Cloud - Ensemble",
+      "name": "R2 Cloud: Ense",
       "valueRange": {
         "min": 0,
         "max": 15
@@ -934,7 +934,7 @@
     },
     {
       "controlChangeNumber": 71,
-      "name": "Reverb 1: Shimmer - Shift 1",
+      "name": "R1 Shim: Shift",
       "valueRange": {
         "min": 0,
         "max": 27,
@@ -1056,7 +1056,7 @@
     },
     {
       "controlChangeNumber": 72,
-      "name": "Reverb 2: Shimmer - Shift 1",
+      "name": "R2 Shim: Shift",
       "valueRange": {
         "min": 0,
         "max": 27,
@@ -1178,7 +1178,7 @@
     },
     {
       "controlChangeNumber": 73,
-      "name": "Reverb 2: Shimmer - Shift 2",
+      "name": "R2 Shim: Shift",
       "valueRange": {
         "min": 0,
         "max": 28,
@@ -1304,7 +1304,7 @@
     },
     {
       "controlChangeNumber": 75,
-      "name": "Reverb 1: Shimmer - Amount",
+      "name": "R1 Shim Amt",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -1312,7 +1312,7 @@
     },
     {
       "controlChangeNumber": 76,
-      "name": "Reverb 2: Shimmer - Amount",
+      "name": "R2 Shim Amt",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -1320,7 +1320,7 @@
     },
     {
       "controlChangeNumber": 77,
-      "name": "Reverb 1: Shimmer - Feedback",
+      "name": "R1: Shim: Fdbk",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -1342,7 +1342,7 @@
     },
     {
       "controlChangeNumber": 78,
-      "name": "Reverb 2: Shimmer - Feedback",
+      "name": "R2: Shim: Fdbk",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -1422,7 +1422,7 @@
     },
     {
       "controlChangeNumber": 82,
-      "name": "Infinite Footswitch",
+      "name": "Inf Footswitch",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -1476,7 +1476,7 @@
     },
     {
       "controlChangeNumber": 85,
-      "name": "Reverb 1: Shimmer - Voice",
+      "name": "R1 Shim: Voice",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1494,7 +1494,7 @@
     },
     {
       "controlChangeNumber": 86,
-      "name": "Reverb 2: Shimmer - Voice",
+      "name": "R2 Shim: Voice",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1512,7 +1512,7 @@
     },
     {
       "controlChangeNumber": 87,
-      "name": "Reverb 1: Bloom - Length",
+      "name": "R1 Blm Length",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -1520,7 +1520,7 @@
     },
     {
       "controlChangeNumber": 88,
-      "name": "Reverb 2: Bloom - Length",
+      "name": "R2 Blm Length",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -1528,7 +1528,7 @@
     },
     {
       "controlChangeNumber": 89,
-      "name": "Reverb 1: Bloom - Feedback",
+      "name": "R1 Bloom: Fdbk",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -1536,7 +1536,7 @@
     },
     {
       "controlChangeNumber": 90,
-      "name": "Reverb 2: Bloom - Feedback",
+      "name": "R2 Bloom: Fdbk",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -1544,7 +1544,7 @@
     },
     {
       "controlChangeNumber": 91,
-      "name": "Reverb 1: Bloom - Harmonics",
+      "name": "R1 Bloom: Harm",
       "valueRange": {
         "min": 0,
         "max": 15
@@ -1552,7 +1552,7 @@
     },
     {
       "controlChangeNumber": 92,
-      "name": "Reverb 2: Bloom - Harmonics",
+      "name": "R2 Bloom: Harm",
       "valueRange": {
         "min": 0,
         "max": 15
@@ -1560,7 +1560,7 @@
     },
     {
       "controlChangeNumber": 93,
-      "name": "Reverb 1: Chorale - Vowel",
+      "name": "R1: Ch: Vowel",
       "valueRange": {
         "min": 0,
         "max": 6,
@@ -1598,7 +1598,7 @@
     },
     {
       "controlChangeNumber": 94,
-      "name": "Reverb 2: Chorale - Vowel",
+      "name": "R2: Ch: Vowel",
       "valueRange": {
         "min": 0,
         "max": 6,
@@ -1636,7 +1636,7 @@
     },
     {
       "controlChangeNumber": 95,
-      "name": "Reverb 1: Chorale - Resonance",
+      "name": "R1: Ch: Res",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -1658,7 +1658,7 @@
     },
     {
       "controlChangeNumber": 96,
-      "name": "Reverb 2: Chorale - Resonance",
+      "name": "R2: Ch: Res",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -1680,7 +1680,7 @@
     },
     {
       "controlChangeNumber": 97,
-      "name": "Infinite Off/On",
+      "name": "Inf Off/On",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -1750,7 +1750,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -1758,7 +1758,7 @@
     },
     {
       "controlChangeNumber": 103,
-      "name": "Reverb 1: Chorale - Choir",
+      "name": "R1: Ch: Choir",
       "valueRange": {
         "min": 0,
         "max": 15
@@ -1766,7 +1766,7 @@
     },
     {
       "controlChangeNumber": 104,
-      "name": "Reverb 2: Chorale - Choir",
+      "name": "R2: Ch: Choir",
       "valueRange": {
         "min": 0,
         "max": 15
@@ -1774,7 +1774,7 @@
     },
     {
       "controlChangeNumber": 105,
-      "name": "Reverb 1: Chorale - Choir Voice",
+      "name": "R1: Ch: Choir",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1792,7 +1792,7 @@
     },
     {
       "controlChangeNumber": 106,
-      "name": "Reverb 2: Chorale - Choir Voice",
+      "name": "R2: Ch: Choir",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1810,7 +1810,7 @@
     },
     {
       "controlChangeNumber": 107,
-      "name": "Reverb 1: Magneto - Diffusion",
+      "name": "R1: Mag: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -1818,7 +1818,7 @@
     },
     {
       "controlChangeNumber": 108,
-      "name": "Reverb 2: Magneto - Diffusion",
+      "name": "R2: Mag: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -1826,7 +1826,7 @@
     },
     {
       "controlChangeNumber": 109,
-      "name": "Reverb 1: Magneto - Heads",
+      "name": "R1: Mag: Heads",
       "valueRange": {
         "min": 0,
         "max": 4,
@@ -1856,7 +1856,7 @@
     },
     {
       "controlChangeNumber": 110,
-      "name": "Reverb 2: Magneto - Heads",
+      "name": "R2: Mag: Heads",
       "valueRange": {
         "min": 0,
         "max": 4,
@@ -1886,7 +1886,7 @@
     },
     {
       "controlChangeNumber": 111,
-      "name": "Reverb 1: Magneto - Spacing",
+      "name": "R1: Mag: Space",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1904,7 +1904,7 @@
     },
     {
       "controlChangeNumber": 112,
-      "name": "Reverb 2: Magneto - Spacing",
+      "name": "R2: Mag: Space",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1922,7 +1922,7 @@
     },
     {
       "controlChangeNumber": 113,
-      "name": "Reverb 1: Magneto - Ping Pong",
+      "name": "R1 Mag: PingPo",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1940,7 +1940,7 @@
     },
     {
       "controlChangeNumber": 114,
-      "name": "Reverb 2: Magneto - Ping Pong",
+      "name": "R2 Mag: PingPo",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1958,7 +1958,7 @@
     },
     {
       "controlChangeNumber": 115,
-      "name": "Reverb 1: Nonlinear - Shape",
+      "name": "R1: NL: Shape",
       "valueRange": {
         "min": 0,
         "max": 5,
@@ -1992,7 +1992,7 @@
     },
     {
       "controlChangeNumber": 116,
-      "name": "Reverb 2: Nonlinear - Shape",
+      "name": "R2: NL: Shape",
       "valueRange": {
         "min": 0,
         "max": 5,
@@ -2026,7 +2026,7 @@
     },
     {
       "controlChangeNumber": 117,
-      "name": "Reverb 1: Nonlinear - Chop",
+      "name": "R1: NL: Chop",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -2034,7 +2034,7 @@
     },
     {
       "controlChangeNumber": 118,
-      "name": "Reverb 2: Nonlinear - Chop",
+      "name": "R2: NL: Chop",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -2042,7 +2042,7 @@
     },
     {
       "controlChangeNumber": 119,
-      "name": "Reverb 1: Nonlinear - Diffusion",
+      "name": "R1: NL: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -2050,7 +2050,7 @@
     },
     {
       "controlChangeNumber": 120,
-      "name": "Reverb 2: Nonlinear - Diffusion",
+      "name": "R2: NL: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -2058,7 +2058,7 @@
     },
     {
       "controlChangeNumber": 121,
-      "name": "Reverb 1: Nonlinear - Decay",
+      "name": "R1: NL: Dec",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -2066,7 +2066,7 @@
     },
     {
       "controlChangeNumber": 122,
-      "name": "Reverb 2: Nonlinear - Decay",
+      "name": "R2: NL: Dec",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -2074,7 +2074,7 @@
     },
     {
       "controlChangeNumber": 123,
-      "name": "Reverb 1: Nonlinear - Level",
+      "name": "R1: NL: Lvl",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -2082,7 +2082,7 @@
     },
     {
       "controlChangeNumber": 124,
-      "name": "Reverb 2: Nonlinear - Level",
+      "name": "R2: NL: Lvl",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -2090,7 +2090,7 @@
     },
     {
       "controlChangeNumber": 125,
-      "name": "Reverb 1: Nonlinear - Mod Speed",
+      "name": "R1 NL: Mod Spd",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -2098,7 +2098,7 @@
     },
     {
       "controlChangeNumber": 126,
-      "name": "Reverb 2: Nonlinear - Mod Speed",
+      "name": "R2 NL: Mod Spd",
       "valueRange": {
         "min": 0,
         "max": 17

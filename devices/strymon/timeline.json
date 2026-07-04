@@ -20,7 +20,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
-      "name": "MIDI Patch Bank (Bank Select)",
+      "name": "Patch Bank Sel",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -174,7 +174,7 @@
     },
     {
       "controlChangeNumber": 34,
-      "name": "DUAL - Repeats 2",
+      "name": "DUAL: Repeats",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -190,7 +190,7 @@
     },
     {
       "controlChangeNumber": 37,
-      "name": "DUCK - Sensitivity",
+      "name": "DUCK: Sens",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -206,7 +206,7 @@
     },
     {
       "controlChangeNumber": 39,
-      "name": "PATTERN - Pattern",
+      "name": "PATTERN: Patte",
       "valueRange": {
         "min": 0,
         "max": 15
@@ -238,7 +238,7 @@
     },
     {
       "controlChangeNumber": 43,
-      "name": "FILTER - Location",
+      "name": "FIL: Location",
       "valueRange": {
         "min": 0,
         "max": 1
@@ -246,7 +246,7 @@
     },
     {
       "controlChangeNumber": 44,
-      "name": "SWELL - Rise Time",
+      "name": "SWELL: Rise Ti",
       "valueRange": {
         "min": 0,
         "max": 27
@@ -254,7 +254,7 @@
     },
     {
       "controlChangeNumber": 45,
-      "name": "dBUCKET - Range",
+      "name": "dBUCKET: Range",
       "valueRange": {
         "min": 0,
         "max": 1
@@ -278,7 +278,7 @@
     },
     {
       "controlChangeNumber": 49,
-      "name": "LO-FI - Sample Rate",
+      "name": "LO-FI: Smpl Ra",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -286,7 +286,7 @@
     },
     {
       "controlChangeNumber": 50,
-      "name": "LO-FI - Bit Depth",
+      "name": "LO-FI: Bit Dep",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -318,7 +318,7 @@
     },
     {
       "controlChangeNumber": 54,
-      "name": "DUCK - Feedback",
+      "name": "DUCK: Fdbk",
       "valueRange": {
         "min": 0,
         "max": 1
@@ -334,7 +334,7 @@
     },
     {
       "controlChangeNumber": 56,
-      "name": "DIGITAL - Repeat Dynamics",
+      "name": "DIG: Rpt Dyn",
       "valueRange": {
         "min": 0,
         "max": 1
@@ -350,7 +350,7 @@
     },
     {
       "controlChangeNumber": 58,
-      "name": "dTAPE - Tape Speed",
+      "name": "dTAPE: Tape Sp",
       "valueRange": {
         "min": 0,
         "max": 1
@@ -358,7 +358,7 @@
     },
     {
       "controlChangeNumber": 59,
-      "name": "dTAPE - Low End",
+      "name": "dTAPE: Low End",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -366,7 +366,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "Expression Off/On",
+      "name": "Expr Off/On",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -392,7 +392,7 @@
     },
     {
       "controlChangeNumber": 63,
-      "name": "MIDI Clock Off/On",
+      "name": "MIDI Clk",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -480,7 +480,7 @@
     },
     {
       "controlChangeNumber": 87,
-      "name": "Looper - Record",
+      "name": "Loop: Record",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -488,7 +488,7 @@
     },
     {
       "controlChangeNumber": 89,
-      "name": "Looper - Undo (to initial loop)",
+      "name": "Loop Undo Init",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -512,7 +512,7 @@
     },
     {
       "controlChangeNumber": 94,
-      "name": "Looper - Reverse (toggle)",
+      "name": "Loop: Rev",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -520,7 +520,7 @@
     },
     {
       "controlChangeNumber": 95,
-      "name": "Looper - Full/Half Speed (toggle)",
+      "name": "Loop 1/2 Speed",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -528,7 +528,7 @@
     },
     {
       "controlChangeNumber": 96,
-      "name": "Looper - Pre/Post (toggle)",
+      "name": "Loop: Pre/Post",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -536,7 +536,7 @@
     },
     {
       "controlChangeNumber": 97,
-      "name": "Infinite Repeats",
+      "name": "Inf Repeats",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -562,7 +562,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

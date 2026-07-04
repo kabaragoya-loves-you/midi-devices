@@ -33,7 +33,7 @@
     },
     {
       "controlChangeNumber": 16,
-      "name": "Tone / Modifier (right)",
+      "name": "Tone / Mod R",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -49,7 +49,7 @@
     },
     {
       "controlChangeNumber": 18,
-      "name": "Envelope / Time Stretch (right)",
+      "name": "Env/Stretch R",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -73,7 +73,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Left Channel Mode",
+      "name": "Left Ch Mode",
       "additionalInfo": "0-1 = Mode 1, 2 = Mode 2, 3-127 = Mode 3",
       "valueRange": {
         "min": 0,
@@ -119,7 +119,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Right Channel Mode",
+      "name": "Right Ch Mode",
       "additionalInfo": "0-1 = Mode 4, 2 = Mode 5, 3-127 = Mode 6",
       "valueRange": {
         "min": 0,
@@ -201,7 +201,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "0 = ignore MIDI clock, 1-127 = listen",
       "valueRange": {
         "min": 0,
@@ -229,7 +229,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "additionalInfo": "0 = heel, 127 = toe",
       "valueRange": {
         "min": 0,

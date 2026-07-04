@@ -17,7 +17,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
-      "name": "MIDI Patch Bank (Bank Select)",
+      "name": "Patch Bank Sel",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -147,7 +147,7 @@
     },
     {
       "controlChangeNumber": 70,
-      "name": "Freeze/Infinite",
+      "name": "Freeze/Inf",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -165,7 +165,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression Off/On",
+      "name": "MIDI Expr",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -183,7 +183,7 @@
     },
     {
       "controlChangeNumber": 71,
-      "name": "MIDI Clock Off/On",
+      "name": "MIDI Clk",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -227,7 +227,7 @@
     },
     {
       "controlChangeNumber": 58,
-      "name": "ROOM - Diffusion",
+      "name": "ROOM: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -269,7 +269,7 @@
     },
     {
       "controlChangeNumber": 69,
-      "name": "PLATE - Low End",
+      "name": "PLATE: Low End",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -295,7 +295,7 @@
     },
     {
       "controlChangeNumber": 64,
-      "name": "SPRING - Low End",
+      "name": "SPRING: Low En",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -311,7 +311,7 @@
     },
     {
       "controlChangeNumber": 62,
-      "name": "SPRING - # Springs",
+      "name": "SPRING: # Spri",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -333,7 +333,7 @@
     },
     {
       "controlChangeNumber": 65,
-      "name": "SWELL - Low End",
+      "name": "SWELL: Low End",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -367,7 +367,7 @@
     },
     {
       "controlChangeNumber": 31,
-      "name": "BLOOM - Low End",
+      "name": "BLOOM: Low End",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -383,7 +383,7 @@
     },
     {
       "controlChangeNumber": 30,
-      "name": "BLOOM - Feedback",
+      "name": "BLOOM: Fdbk",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -391,7 +391,7 @@
     },
     {
       "controlChangeNumber": 38,
-      "name": "CLOUD - Low End",
+      "name": "CLOUD: Low End",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -399,7 +399,7 @@
     },
     {
       "controlChangeNumber": 37,
-      "name": "CLOUD - Diffusion",
+      "name": "CLOUD: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -407,7 +407,7 @@
     },
     {
       "controlChangeNumber": 33,
-      "name": "CHORALE - Vowel",
+      "name": "CHORALE: Vowel",
       "valueRange": {
         "min": 0,
         "max": 6
@@ -415,7 +415,7 @@
     },
     {
       "controlChangeNumber": 34,
-      "name": "CHORALE - Resonance",
+      "name": "CHORALE: Res",
       "valueRange": {
         "min": 0,
         "max": 2
@@ -423,7 +423,7 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "SHIMMER - Low End",
+      "name": "SHIMMER: Low E",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -431,7 +431,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "SHIMMER - Shift 1",
+      "name": "SHIMMER: Shift",
       "valueRange": {
         "min": 0,
         "max": 27
@@ -439,7 +439,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "SHIMMER - Shift 2",
+      "name": "SHIMMER: Shift",
       "valueRange": {
         "min": 0,
         "max": 28
@@ -447,7 +447,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "SHIMMER - Amount",
+      "name": "SHIMMER Amt",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -463,7 +463,7 @@
     },
     {
       "controlChangeNumber": 55,
-      "name": "MAGNETO - Low End",
+      "name": "MAGNETO: Low E",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -471,7 +471,7 @@
     },
     {
       "controlChangeNumber": 56,
-      "name": "MAGNETO - Diffusion",
+      "name": "MAGNETO: Diff",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -479,7 +479,7 @@
     },
     {
       "controlChangeNumber": 57,
-      "name": "MAGNETO - Heads",
+      "name": "MAGNETO: Heads",
       "valueRange": {
         "min": 0,
         "max": 2
@@ -487,7 +487,7 @@
     },
     {
       "controlChangeNumber": 54,
-      "name": "MAGNETO - Spacing",
+      "name": "MAGNETO: Space",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -505,7 +505,7 @@
     },
     {
       "controlChangeNumber": 44,
-      "name": "NONLINEAR - Low End",
+      "name": "NL: Low End",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -513,7 +513,7 @@
     },
     {
       "controlChangeNumber": 46,
-      "name": "NONLINEAR - Shape",
+      "name": "NL: Shape",
       "valueRange": {
         "min": 0,
         "max": 5
@@ -521,7 +521,7 @@
     },
     {
       "controlChangeNumber": 45,
-      "name": "NONLINEAR - Diffusion",
+      "name": "NL: Diffusion",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -529,7 +529,7 @@
     },
     {
       "controlChangeNumber": 47,
-      "name": "NONLINEAR - Late Decay",
+      "name": "NL: Late Decay",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -537,7 +537,7 @@
     },
     {
       "controlChangeNumber": 48,
-      "name": "NONLINEAR - Late Level",
+      "name": "NL: Late Level",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -545,7 +545,7 @@
     },
     {
       "controlChangeNumber": 43,
-      "name": "NONLINEAR - Mod Speed",
+      "name": "NL: Mod Spd",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -553,7 +553,7 @@
     },
     {
       "controlChangeNumber": 52,
-      "name": "REFLECTIONS - Low End",
+      "name": "REFLECTIONS: L",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -561,7 +561,7 @@
     },
     {
       "controlChangeNumber": 50,
-      "name": "REFLECTIONS - Loc Y",
+      "name": "Refl Loc Y",
       "valueRange": {
         "min": 0,
         "max": 6
@@ -569,7 +569,7 @@
     },
     {
       "controlChangeNumber": 49,
-      "name": "REFLECTIONS - Loc X",
+      "name": "Refl Loc X",
       "valueRange": {
         "min": 0,
         "max": 6
@@ -577,7 +577,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "REFLECTIONS - Shape",
+      "name": "Refl Shape",
       "valueRange": {
         "min": 0,
         "max": 2
@@ -609,7 +609,7 @@
     },
     {
       "controlChangeNumber": 97,
-      "name": "Press/Hold Switch",
+      "name": "Press/Hold Sw",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -635,7 +635,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

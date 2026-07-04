@@ -18,37 +18,58 @@
     {
       "controlChangeNumber": 16,
       "name": "EXP Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Feedback",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "E. Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Tone",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Mod Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 21,
-      "name": "Delay On/Bypass",
+      "name": "Delay On/Byp",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Bypass", "value": 0 },
-          { "name": "Delay On", "value": 127 }
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Delay On",
+            "value": 127
+          }
         ]
       }
     },
@@ -59,8 +80,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -71,8 +98,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -83,8 +116,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -95,8 +134,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -107,8 +152,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -119,8 +170,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -131,8 +188,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -143,8 +206,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -155,8 +224,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -167,8 +242,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     }

@@ -18,18 +18,27 @@
     {
       "controlChangeNumber": 93,
       "name": "Tap Tempo",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 97,
       "name": "Ramp",
       "additionalInfo": "Send any value to trigger the ramp.",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Expr Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -39,51 +48,81 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 64, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 64,
+            "name": "Engage"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 50,
       "name": "Repeat",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
       "name": "Reverb",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 52,
       "name": "Delay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 53,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 54,
       "name": "Delay Division",
       "additionalInfo": "0-42 = Quarter, 43-85 = Dotted 8th, 86-127 = Eighth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 55,
       "name": "Ramp Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 56,
-      "name": "Unspecified Neo Knob",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Neo Knob Unsp",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
       "name": "Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 59,
@@ -93,15 +132,42 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "RVB + DIG" },
-          { "value": 1, "name": "+1 + DIG" },
-          { "value": 2, "name": "-1 + DIG" },
-          { "value": 3, "name": "RVB + BBD" },
-          { "value": 4, "name": "+1 + BBD" },
-          { "value": 5, "name": "-1 + BBD" },
-          { "value": 6, "name": "RVB + OIL" },
-          { "value": 7, "name": "+1 + OIL" },
-          { "value": 8, "name": "-1 + OIL" }
+          {
+            "value": 0,
+            "name": "RVB + DIG"
+          },
+          {
+            "value": 1,
+            "name": "+1 + DIG"
+          },
+          {
+            "value": 2,
+            "name": "-1 + DIG"
+          },
+          {
+            "value": 3,
+            "name": "RVB + BBD"
+          },
+          {
+            "value": 4,
+            "name": "+1 + BBD"
+          },
+          {
+            "value": 5,
+            "name": "-1 + BBD"
+          },
+          {
+            "value": 6,
+            "name": "RVB + OIL"
+          },
+          {
+            "value": 7,
+            "name": "+1 + OIL"
+          },
+          {
+            "value": 8,
+            "name": "-1 + OIL"
+          }
         ]
       }
     }

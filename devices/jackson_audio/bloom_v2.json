@@ -16,13 +16,19 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 20,
-      "name": "Compressor On/Off",
+      "name": "Comp On/Off",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -33,8 +39,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -45,20 +57,32 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 23,
-      "name": "Cycle Compressor Mode",
+      "name": "Cyc Comp Md",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -69,55 +93,88 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 25,
       "name": "Bloom",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 26,
-      "name": "Compression Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Comp Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Blend",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
       "name": "Output Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 29,
       "name": "Boost Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 30,
       "name": "Bass",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 31,
       "name": "Mid",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 32,
       "name": "Treble",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 33,
-      "name": "Mid Frequency Select",
-      "valueRange": { "min": 1, "max": 127 }
+      "name": "Mid Freq Sel",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 34,
@@ -126,32 +183,50 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 35,
-      "name": "Preset Increment",
+      "name": "Pres Increment",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 36,
-      "name": "Preset Decrement",
+      "name": "Pres Decrement",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     }

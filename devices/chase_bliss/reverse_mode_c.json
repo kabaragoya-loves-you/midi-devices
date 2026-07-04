@@ -142,7 +142,7 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "Sequencer Subdivision",
+      "name": "Seq Subdiv",
       "additionalInfo": "Groups of values select different multipliers: ×16 .. ×1/8",
       "valueRange": {
         "min": 0,
@@ -185,7 +185,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Ramping Waveform",
+      "name": "Ramping Wave",
       "additionalInfo": "Waveform selection using internal value bands (see manual)",
       "valueRange": {
         "min": 0,
@@ -233,7 +233,7 @@
     },
     {
       "controlChangeNumber": 33,
-      "name": "Sequence Spacing",
+      "name": "Sequence Space",
       "additionalInfo": "REST = 0-1, SKIP = 2-127",
       "valueRange": {
         "min": 0,
@@ -252,7 +252,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "0 = ignore clock, 1-127 = listen",
       "valueRange": {
         "min": 0,
@@ -716,7 +716,7 @@
     },
     {
       "controlChangeNumber": 108,
-      "name": "Retrigger Glitch",
+      "name": "Retrig Glitch",
       "additionalInfo": "Send any value to retrigger glitch",
       "valueRange": {
         "min": 0,
@@ -725,7 +725,7 @@
     },
     {
       "controlChangeNumber": 109,
-      "name": "Retrigger Freeze",
+      "name": "Retrig Freeze",
       "additionalInfo": "Send any value to retrigger freeze",
       "valueRange": {
         "min": 0,
@@ -734,7 +734,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "additionalInfo": "0 = heel, 127 = toe; mapped by pedal DIP switches",
       "valueRange": {
         "min": 0,

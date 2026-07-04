@@ -67,7 +67,7 @@
     },
     {
       "controlChangeNumber": 13,
-      "name": "Speed (Full Range)",
+      "name": "Speed",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -137,7 +137,7 @@
     },
     {
       "controlChangeNumber": 20,
-      "name": "Bi-Amp Output Mode",
+      "name": "Bi-Amp Out Md",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -173,7 +173,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Slow/Fast Toggle",
+      "name": "Slow/Fast Tgl",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -207,7 +207,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "MIDI Clock Tempo Mult/Div",
+      "name": "Clk Tempo M/D",
       "valueRange": {
         "min": 0,
         "max": 6,
@@ -245,7 +245,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression",
+      "name": "MIDI Expr",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -307,7 +307,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

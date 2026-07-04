@@ -14,7 +14,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 1,
-      "name": "Soundscape Control",
+      "name": "Scape Ctrl",
       "valueRange": {
         "min": 0,
         "max": 3,
@@ -270,7 +270,7 @@
     },
     {
       "controlChangeNumber": 10,
-      "name": "Volume (Instant)",
+      "name": "Vol (Instant)",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -278,7 +278,7 @@
     },
     {
       "controlChangeNumber": 11,
-      "name": "Volume (Smooth)",
+      "name": "Vol (Smooth)",
       "valueRange": {
         "min": 0,
         "max": 127

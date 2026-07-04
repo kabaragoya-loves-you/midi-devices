@@ -41,7 +41,7 @@
     },
     {
       "controlChangeNumber": 4,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -80,7 +80,7 @@
     },
     {
       "controlChangeNumber": 6,
-      "name": "Preamp Location",
+      "name": "Preamp Loc",
       "additionalInfo": "0-25 Pre+Dry, 26-51 Pre, 52-76 Feedback, 77-102 Pre Tank, 103-127 Post",
       "valueRange": {
         "min": 0,
@@ -111,7 +111,7 @@
     },
     {
       "controlChangeNumber": 7,
-      "name": "Gain / Volume Pedal Level",
+      "name": "Gain/Vol Ped",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -135,7 +135,7 @@
     },
     {
       "controlChangeNumber": 13,
-      "name": "Delay Structure",
+      "name": "Dly Struct",
       "additionalInfo": "0-63 Standard, 64-127 Reverse",
       "valueRange": {
         "min": 0,
@@ -204,7 +204,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Left Note Division",
+      "name": "Left Note Div",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -212,7 +212,7 @@
     },
     {
       "controlChangeNumber": 18,
-      "name": "Right Note Division",
+      "name": "Right Note Div",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -291,7 +291,7 @@
     },
     {
       "controlChangeNumber": 32,
-      "name": "Reverb Structure",
+      "name": "Rv Struct",
       "additionalInfo": "0-15 Ultraplate, 16-31 Cathedra, 32-47 Spring, 48-63 ’78 Room, 64-79 ’78 Plate, 80-95 ’78 Hall, 96-111 Prism, 112-127 Gravity",
       "valueRange": {
         "min": 0,
@@ -334,7 +334,7 @@
     },
     {
       "controlChangeNumber": 33,
-      "name": "Reverb Parameter 1",
+      "name": "Reverb Param 1",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -342,7 +342,7 @@
     },
     {
       "controlChangeNumber": 34,
-      "name": "Reverb Parameter 2",
+      "name": "Reverb Param 2",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -350,7 +350,7 @@
     },
     {
       "controlChangeNumber": 35,
-      "name": "Reverb Parameter 3",
+      "name": "Reverb Param 3",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -358,7 +358,7 @@
     },
     {
       "controlChangeNumber": 36,
-      "name": "Reverb Parameter 4",
+      "name": "Reverb Param 4",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -366,7 +366,7 @@
     },
     {
       "controlChangeNumber": 37,
-      "name": "Reverb Parameter 5",
+      "name": "Reverb Param 5",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -374,7 +374,7 @@
     },
     {
       "controlChangeNumber": 38,
-      "name": "Reverb Parameter 6",
+      "name": "Reverb Param 6",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -382,7 +382,7 @@
     },
     {
       "controlChangeNumber": 39,
-      "name": "Reverb Parameter 7",
+      "name": "Reverb Param 7",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -390,7 +390,7 @@
     },
     {
       "controlChangeNumber": 40,
-      "name": "Reverb Parameter 8",
+      "name": "Reverb Param 8",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -398,7 +398,7 @@
     },
     {
       "controlChangeNumber": 41,
-      "name": "Reverb Parameter 9",
+      "name": "Reverb Param 9",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -481,7 +481,7 @@
     },
     {
       "controlChangeNumber": 63,
-      "name": "Dynamics Location",
+      "name": "Dyn Loc",
       "additionalInfo": "0-25 Pre+Dry, 26-51 Pre, 52-76 Feedback, 77-102 Pre Tank, 103-127 Post",
       "valueRange": {
         "min": 0,
@@ -512,7 +512,7 @@
     },
     {
       "controlChangeNumber": 64,
-      "name": "Dynamics Parameter 1",
+      "name": "Dyn Param 1",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -520,7 +520,7 @@
     },
     {
       "controlChangeNumber": 65,
-      "name": "Dynamics Parameter 2",
+      "name": "Dyn Param 2",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -528,7 +528,7 @@
     },
     {
       "controlChangeNumber": 66,
-      "name": "Dynamics Parameter 3",
+      "name": "Dyn Param 3",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -536,7 +536,7 @@
     },
     {
       "controlChangeNumber": 67,
-      "name": "Dynamics Parameter 4",
+      "name": "Dyn Param 4",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -544,7 +544,7 @@
     },
     {
       "controlChangeNumber": 68,
-      "name": "Dynamics Parameter 5",
+      "name": "Dyn Param 5",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -552,7 +552,7 @@
     },
     {
       "controlChangeNumber": 69,
-      "name": "Dynamics Parameter 6",
+      "name": "Dyn Param 6",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -596,7 +596,7 @@
     },
     {
       "controlChangeNumber": 72,
-      "name": "Pitch Parameter 1",
+      "name": "Pitch Param 1",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -604,7 +604,7 @@
     },
     {
       "controlChangeNumber": 73,
-      "name": "Pitch Parameter 2",
+      "name": "Pitch Param 2",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -612,7 +612,7 @@
     },
     {
       "controlChangeNumber": 74,
-      "name": "Pitch Parameter 3",
+      "name": "Pitch Param 3",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -620,7 +620,7 @@
     },
     {
       "controlChangeNumber": 75,
-      "name": "Pitch Parameter 4",
+      "name": "Pitch Param 4",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -628,7 +628,7 @@
     },
     {
       "controlChangeNumber": 76,
-      "name": "Pitch Parameter 5",
+      "name": "Pitch Param 5",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -636,7 +636,7 @@
     },
     {
       "controlChangeNumber": 77,
-      "name": "Pitch Parameter 6",
+      "name": "Pitch Param 6",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -653,7 +653,7 @@
     },
     {
       "controlChangeNumber": 79,
-      "name": "Filter Location",
+      "name": "Filter Loc",
       "additionalInfo": "0-25 Pre+Dry, 26-51 Pre, 52-76 Feedback, 77-102 Pre Tank, 103-127 Post",
       "valueRange": {
         "min": 0,
@@ -662,7 +662,7 @@
     },
     {
       "controlChangeNumber": 80,
-      "name": "Filter Parameter 1",
+      "name": "Filter Param 1",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -670,7 +670,7 @@
     },
     {
       "controlChangeNumber": 81,
-      "name": "Filter Parameter 2",
+      "name": "Filter Param 2",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -678,7 +678,7 @@
     },
     {
       "controlChangeNumber": 82,
-      "name": "Filter Parameter 3",
+      "name": "Filter Param 3",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -686,7 +686,7 @@
     },
     {
       "controlChangeNumber": 83,
-      "name": "Filter Parameter 4",
+      "name": "Filter Param 4",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -694,7 +694,7 @@
     },
     {
       "controlChangeNumber": 84,
-      "name": "Filter Parameter 5",
+      "name": "Filter Param 5",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -702,7 +702,7 @@
     },
     {
       "controlChangeNumber": 85,
-      "name": "Filter Parameter 6",
+      "name": "Filter Param 6",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -728,7 +728,7 @@
     },
     {
       "controlChangeNumber": 88,
-      "name": "Mod Parameter 1",
+      "name": "Mod Param 1",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -736,7 +736,7 @@
     },
     {
       "controlChangeNumber": 89,
-      "name": "Mod Parameter 2",
+      "name": "Mod Param 2",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -744,7 +744,7 @@
     },
     {
       "controlChangeNumber": 90,
-      "name": "Mod Parameter 3",
+      "name": "Mod Param 3",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -752,7 +752,7 @@
     },
     {
       "controlChangeNumber": 91,
-      "name": "Mod Parameter 4",
+      "name": "Mod Param 4",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -760,7 +760,7 @@
     },
     {
       "controlChangeNumber": 92,
-      "name": "Mod Parameter 5",
+      "name": "Mod Param 5",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -768,7 +768,7 @@
     },
     {
       "controlChangeNumber": 93,
-      "name": "Mod Parameter 6",
+      "name": "Mod Param 6",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -776,7 +776,7 @@
     },
     {
       "controlChangeNumber": 117,
-      "name": "Toggle Tuner Mode",
+      "name": "Tgl Tuner Mode",
       "additionalInfo": "Press = 127",
       "valueRange": {
         "min": 0,
@@ -791,7 +791,7 @@
     },
     {
       "controlChangeNumber": 118,
-      "name": "Trigger Hold Modifier",
+      "name": "Trig Hold Mod",
       "additionalInfo": "Press = 127, Release = 0",
       "valueRange": {
         "min": 0,

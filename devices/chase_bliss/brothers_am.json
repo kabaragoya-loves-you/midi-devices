@@ -149,7 +149,7 @@
     },
     {
       "controlChangeNumber": 102,
-      "name": "Channel 1 Bypass",
+      "name": "Ch 1 Byp",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -168,7 +168,7 @@
     },
     {
       "controlChangeNumber": 103,
-      "name": "Channel 2 Bypass",
+      "name": "Ch 2 Byp",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -187,7 +187,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -204,7 +204,7 @@
     },
     {
       "controlChangeNumber": 61,
-      "name": "Left Bank - Volume 1 DIP",
+      "name": "L: Vol 1 DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -223,7 +223,7 @@
     },
     {
       "controlChangeNumber": 62,
-      "name": "Left Bank - Volume 2 DIP",
+      "name": "L: Vol 2 DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -242,7 +242,7 @@
     },
     {
       "controlChangeNumber": 63,
-      "name": "Left Bank - Gain 1 DIP",
+      "name": "L: Gain 1 DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -261,7 +261,7 @@
     },
     {
       "controlChangeNumber": 64,
-      "name": "Left Bank - Gain 2 DIP",
+      "name": "L: Gain 2 DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -280,7 +280,7 @@
     },
     {
       "controlChangeNumber": 65,
-      "name": "Left Bank - Tone 1 DIP",
+      "name": "L: Tone 1 DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -299,7 +299,7 @@
     },
     {
       "controlChangeNumber": 66,
-      "name": "Left Bank - Tone 2 DIP",
+      "name": "L: Tone 2 DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -318,7 +318,7 @@
     },
     {
       "controlChangeNumber": 67,
-      "name": "Left Bank - Sweep DIP",
+      "name": "L: Sweep DIP",
       "additionalInfo": "B = 0 (Bottom), T = 1 or higher (Top)",
       "valueRange": {
         "min": 0,
@@ -337,7 +337,7 @@
     },
     {
       "controlChangeNumber": 68,
-      "name": "Left Bank - Polarity DIP",
+      "name": "L: Pol DIP",
       "additionalInfo": "F = 0 (Forward), R = 1 or higher (Reverse)",
       "valueRange": {
         "min": 0,
@@ -356,7 +356,7 @@
     },
     {
       "controlChangeNumber": 71,
-      "name": "Right Bank - Hi Gain 1 DIP",
+      "name": "R: Hi Gain 1 D",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -375,7 +375,7 @@
     },
     {
       "controlChangeNumber": 72,
-      "name": "Right Bank - Hi Gain 2 DIP",
+      "name": "R: Hi Gain 2 D",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -394,7 +394,7 @@
     },
     {
       "controlChangeNumber": 73,
-      "name": "Right Bank - Motobyp 1 DIP",
+      "name": "R: Motobyp 1 D",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -413,7 +413,7 @@
     },
     {
       "controlChangeNumber": 74,
-      "name": "Right Bank - Motobyp 2 DIP",
+      "name": "R: Motobyp 2 D",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -432,7 +432,7 @@
     },
     {
       "controlChangeNumber": 75,
-      "name": "Right Bank - Pres Link 1 DIP",
+      "name": "R: Pres Link 1",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -451,7 +451,7 @@
     },
     {
       "controlChangeNumber": 76,
-      "name": "Right Bank - Pres Link 2 DIP",
+      "name": "R: Pres Link 2",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -470,7 +470,7 @@
     },
     {
       "controlChangeNumber": 77,
-      "name": "Right Bank - Master DIP",
+      "name": "R: Master DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,

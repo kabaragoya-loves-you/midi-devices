@@ -169,7 +169,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression over MIDI)",
+      "name": "EOM",
       "valueRange": {
         "min": 0,
         "max": 127

@@ -144,7 +144,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Preset Saving Switch",
+      "name": "Pres Saving Sw",
       "additionalInfo": "0-63: Start Save, 64-127: Confirm Save",
       "valueRange": {
         "min": 0,

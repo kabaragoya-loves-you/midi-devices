@@ -71,7 +71,7 @@
     },
     {
       "controlChangeNumber": 18,
-      "name": "Trails A Switch",
+      "name": "Trails A Sw",
       "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
@@ -90,7 +90,7 @@
     },
     {
       "controlChangeNumber": 19,
-      "name": "Trails B Switch",
+      "name": "Trails B Sw",
       "additionalInfo": "0-63: Off, 64-127: On",
       "valueRange": {
         "min": 0,
@@ -109,7 +109,7 @@
     },
     {
       "controlChangeNumber": 20,
-      "name": "Assign All Bypass Switches",
+      "name": "Asgn All Byp",
       "additionalInfo": "0: Clean Off, B Off, A Off; 1: Clean Off, B Off, A On; 2: Clean Off, B On, A Off; 3: Clean Off, B On, A On; 4: Clean On, B Off, A Off; 5: Clean On, B Off, A On; 6: Clean On, B On, A Off; 7: Clean On, B On, A On",
       "valueRange": {
         "min": 0,

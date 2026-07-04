@@ -209,7 +209,7 @@
     },
     {
       "controlChangeNumber": 86,
-      "name": "Expression Destination",
+      "name": "Expr Dest",
       "additionalInfo": "0-21: Time L, 22-42: Mod Depth L, 43-63: Time R, 64-85: Mod Depth R, 86-106: Mod Rate L, 107-127: Mod Rate R",
       "valueRange": {
         "min": 0,

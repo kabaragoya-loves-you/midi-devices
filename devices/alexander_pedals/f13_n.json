@@ -18,18 +18,27 @@
     {
       "controlChangeNumber": 93,
       "name": "Tap Tempo",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 97,
       "name": "Ramp",
       "additionalInfo": "Value 1–8 = set ramp speed, other = trigger ramp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Expr Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -39,56 +48,89 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 64, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 64,
+            "name": "Engage"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 50,
-      "name": "Lower right main",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "LR Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
-      "name": "Upper left main",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "UL Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 52,
-      "name": "Upper right main",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "UR Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 53,
-      "name": "Lower left main",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "LL Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 54,
-      "name": "Lower right alt",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "LR Alt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 55,
       "name": "Upper left alt",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 56,
-      "name": "Upper right alt",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "UR Alt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
       "name": "Lower left alt",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 59,
       "name": "Mode Select",
       "additionalInfo": "Accepts 0–7 to select modes 1–8 (not all modes supported on every pedal)",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
   "x_pc": {

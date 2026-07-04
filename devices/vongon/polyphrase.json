@@ -247,7 +247,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "MIDI Clock Enable",
+      "name": "Clk Enable",
       "additionalInfo": "0-63: Enabled, 64-127: Disabled",
       "valueRange": {
         "min": 0,

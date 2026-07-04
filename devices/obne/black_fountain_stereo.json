@@ -197,7 +197,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Tap Tempo Switch",
+      "name": "Tap Tempo Sw",
       "additionalInfo": "Tap pulse at value 0",
       "valueRange": {
         "min": 0,
@@ -206,7 +206,7 @@
     },
     {
       "controlChangeNumber": 28,
-      "name": "Preset Saving Switch",
+      "name": "Pres Saving Sw",
       "additionalInfo": "0-42: Cancel Save, 43-85: Start Save, 86-127: Confirm Save",
       "valueRange": {
         "min": 0,
@@ -229,7 +229,7 @@
     },
     {
       "controlChangeNumber": 29,
-      "name": "MIDI Clock Input Mode",
+      "name": "Clk Input Mode",
       "additionalInfo": "0-31: Accept Clock In & Send Thru, 32-63: Accept Clock In Only, 64-95: Send Clock Out Only, 96-127: Deactivate Clock",
       "valueRange": {
         "min": 0,

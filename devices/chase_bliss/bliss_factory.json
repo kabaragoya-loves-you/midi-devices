@@ -64,7 +64,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "AUX FUNC Select",
+      "name": "AUX FUNC Sel",
       "additionalInfo": "1 = left, 2 = middle, 3 = right",
       "valueRange": {
         "min": 1,

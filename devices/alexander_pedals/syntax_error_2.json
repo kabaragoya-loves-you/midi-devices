@@ -14,38 +14,143 @@
   ],
   "transmits": [],
   "controlChangeCommands": [
-    { "controlChangeNumber": 50, "name": "Sample", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 51, "name": "Param1", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 52, "name": "Param2", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 53, "name": "Param3", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 54, "name": "Pitch", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 55, "name": "Pitch Mix", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 56, "name": "Volume", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 57, "name": "Tone", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 58, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 59, "name": "Mode Select", "valueRange": { "min": 0, "max": 127 } },
-
-    { "controlChangeNumber": 80, "name": "Sequencer Step A", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 81, "name": "Sequencer Step B", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 82, "name": "Sequencer Step C", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 83, "name": "Sequencer Step D", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 50,
+      "name": "Sample",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Param1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Param2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Param3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Pitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Pitch Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Mode Select",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Seq St A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Seq St B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Seq St C",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Seq St D",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 84,
-      "name": "Sequencer Assign",
+      "name": "Seq Assign",
       "additionalInfo": "0-9",
-      "valueRange": { "min": 0, "max": 9 }
+      "valueRange": {
+        "min": 0,
+        "max": 9
+      }
     },
     {
       "controlChangeNumber": 85,
-      "name": "Sequencer Running",
+      "name": "Seq Running",
       "additionalInfo": "0-64=Seq Off, 65-127=Seq On",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-64)" },
-          { "value": 65, "name": "On (65-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-64)"
+          },
+          {
+            "value": 65,
+            "name": "On (65-127)"
+          }
         ]
       }
     },
@@ -53,41 +158,64 @@
       "controlChangeNumber": 86,
       "name": "Sequencer Rate",
       "additionalInfo": "0-127 maps to 0-1023 rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 87,
-      "name": "Sequencer Trigger Mode",
+      "name": "Seq Trig Mode",
       "additionalInfo": "0=step, 1=one, 2=mom, 3=togg",
       "valueRange": {
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "step" },
-          { "value": 1, "name": "one" },
-          { "value": 2, "name": "mom" },
-          { "value": 3, "name": "togg" }
+          {
+            "value": 0,
+            "name": "step"
+          },
+          {
+            "value": 1,
+            "name": "one"
+          },
+          {
+            "value": 2,
+            "name": "mom"
+          },
+          {
+            "value": 3,
+            "name": "togg"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 89,
-      "name": "Sequencer Glide",
+      "name": "Seq Glide",
       "additionalInfo": "0-127 maps to 0-7 glide",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 90,
-      "name": "Sequencer Spacing",
+      "name": "Seq Space",
       "additionalInfo": "0-127 maps to 0-24 spacing",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "additionalInfo": "0=heel, 127=toe",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -97,8 +225,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass (0-64)" },
-          { "value": 65, "name": "Engage (65-127)" }
+          {
+            "value": 0,
+            "name": "Bypass (0-64)"
+          },
+          {
+            "value": 65,
+            "name": "Engage (65-127)"
+          }
         ]
       }
     }

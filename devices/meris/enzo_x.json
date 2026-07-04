@@ -17,7 +17,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 1,
-      "name": "Oscillator Mod Depth",
+      "name": "Osc Mod Depth",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -25,7 +25,7 @@
     },
     {
       "controlChangeNumber": 2,
-      "name": "Oscillator Mod Speed",
+      "name": "Osc Mod Spd",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -33,7 +33,7 @@
     },
     {
       "controlChangeNumber": 3,
-      "name": "Oscillator Mod Ramp Time",
+      "name": "Osc Mod Ramp",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -41,7 +41,7 @@
     },
     {
       "controlChangeNumber": 4,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -111,7 +111,7 @@
     },
     {
       "controlChangeNumber": 7,
-      "name": "Gain / Volume / Sample Rate",
+      "name": "Gain/Vol/Smpl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -127,7 +127,7 @@
     },
     {
       "controlChangeNumber": 9,
-      "name": "Drive Level / Comp",
+      "name": "Drv Lvl/Comp",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -166,7 +166,7 @@
     },
     {
       "controlChangeNumber": 11,
-      "name": "Feedback / Decay",
+      "name": "Fdbk / Dec",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -220,7 +220,7 @@
     },
     {
       "controlChangeNumber": 15,
-      "name": "Time (Clock, 7-bit Tempo)",
+      "name": "Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -236,7 +236,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Echo Left Division",
+      "name": "Echo Left Div",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -244,7 +244,7 @@
     },
     {
       "controlChangeNumber": 18,
-      "name": "Echo Right Division",
+      "name": "Echo Right Div",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -252,7 +252,7 @@
     },
     {
       "controlChangeNumber": 19,
-      "name": "Ambience + Echo Mix",
+      "name": "Amb+Echo Mix",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -330,7 +330,7 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "Osc 1 Waveshape",
+      "name": "Osc 1 Wave",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -338,7 +338,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Osc 2 Waveshape",
+      "name": "Osc 2 Wave",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -346,7 +346,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "Osc 2 Pitch Offset",
+      "name": "Osc2 Pitch Ofs",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -362,7 +362,7 @@
     },
     {
       "controlChangeNumber": 28,
-      "name": "Synth Glide (Portamento)",
+      "name": "Synth Glide",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -434,7 +434,7 @@
     },
     {
       "controlChangeNumber": 37,
-      "name": "Arp Cycle Latch",
+      "name": "Arp Cyc Latch",
       "additionalInfo": "0-63 = Off, 64-127 = On",
       "valueRange": {
         "min": 0,
@@ -476,7 +476,7 @@
     },
     {
       "controlChangeNumber": 39,
-      "name": "Filter Frequency",
+      "name": "Filter Freq",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -484,7 +484,7 @@
     },
     {
       "controlChangeNumber": 40,
-      "name": "Filter Typology",
+      "name": "Filter Typo",
       "additionalInfo": "0-42 = Lowpass, 43-85 = Bandpass, 86-127 = Highpass",
       "valueRange": {
         "min": 0,
@@ -507,7 +507,7 @@
     },
     {
       "controlChangeNumber": 41,
-      "name": "Filter Resonance",
+      "name": "Filter Res",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -523,7 +523,7 @@
     },
     {
       "controlChangeNumber": 43,
-      "name": "Twin Filter Spread",
+      "name": "Twin Filt Spr",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -531,7 +531,7 @@
     },
     {
       "controlChangeNumber": 44,
-      "name": "Filter Envelope Amount",
+      "name": "Filt Env Amt",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -539,7 +539,7 @@
     },
     {
       "controlChangeNumber": 46,
-      "name": "Filter Envelope Type",
+      "name": "Filt Env Type",
       "additionalInfo": "0-63 = ADSR, 64-127 = Envelope",
       "valueRange": {
         "min": 0,
@@ -558,7 +558,7 @@
     },
     {
       "controlChangeNumber": 47,
-      "name": "Filter Attack Time",
+      "name": "Filt Atk Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -566,7 +566,7 @@
     },
     {
       "controlChangeNumber": 48,
-      "name": "Filter Decay Time",
+      "name": "Filt Dec Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -574,7 +574,7 @@
     },
     {
       "controlChangeNumber": 49,
-      "name": "Filter Sustain Time",
+      "name": "Filt Sus Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -582,7 +582,7 @@
     },
     {
       "controlChangeNumber": 50,
-      "name": "Filter Sustain Level",
+      "name": "Filter Sus Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -590,7 +590,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "Filter Release Time",
+      "name": "Filt Rel Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -633,7 +633,7 @@
     },
     {
       "controlChangeNumber": 55,
-      "name": "Amplitude Attack Time",
+      "name": "Amp Atk Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -641,7 +641,7 @@
     },
     {
       "controlChangeNumber": 56,
-      "name": "Amplitude Decay Time",
+      "name": "Amp Dec Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -649,7 +649,7 @@
     },
     {
       "controlChangeNumber": 57,
-      "name": "Amplitude Sustain Level",
+      "name": "Amp Sus Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -657,7 +657,7 @@
     },
     {
       "controlChangeNumber": 58,
-      "name": "Amplitude Sustain Time",
+      "name": "Amp Sus Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -665,7 +665,7 @@
     },
     {
       "controlChangeNumber": 59,
-      "name": "Amplitude Release Time",
+      "name": "Amp Rel Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -713,7 +713,7 @@
     },
     {
       "controlChangeNumber": 85,
-      "name": "Arp Note Division",
+      "name": "Arp Note Div",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -783,7 +783,7 @@
     },
     {
       "controlChangeNumber": 88,
-      "name": "Mod Speed / Frequency",
+      "name": "Mod Spd / Freq",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -799,7 +799,7 @@
     },
     {
       "controlChangeNumber": 90,
-      "name": "Mod Mode / Waveshape / Stages",
+      "name": "Mod/Wave/Stage",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -823,7 +823,7 @@
     },
     {
       "controlChangeNumber": 93,
-      "name": "Mod Note Division",
+      "name": "Mod Note Div",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -846,7 +846,7 @@
     },
     {
       "controlChangeNumber": 117,
-      "name": "Toggle Tuner Mode",
+      "name": "Tgl Tuner Mode",
       "additionalInfo": "127 = Toggle Tuner",
       "valueRange": {
         "min": 0,
@@ -861,7 +861,7 @@
     },
     {
       "controlChangeNumber": 118,
-      "name": "Trigger Hold Modifier",
+      "name": "Trig Hold Mod",
       "additionalInfo": "Press = 127, Release = 0 (send release after every press)",
       "valueRange": {
         "min": 0,

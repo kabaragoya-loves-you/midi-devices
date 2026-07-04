@@ -16,13 +16,54 @@
   ],
   "transmits": [],
   "controlChangeCommands": [
-    { "controlChangeNumber": 14, "name": "Drive", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 15, "name": "Naked (Dry Level)", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 16, "name": "Dressed (8-bit Level)", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 17, "name": "Filter Resonance (Q)", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 18, "name": "Clock", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 19, "name": "Filter Cutoff (Freq)", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 14,
+      "name": "Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Naked",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Dressed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Filter Res (Q)",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Filter Cutoff",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 20,
       "name": "Bit 1",
@@ -31,9 +72,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-42)" },
-          { "value": 43, "name": "On (43-84)" },
-          { "value": 85, "name": "Inverse (85-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "On (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Inverse (85-127)"
+          }
         ]
       }
     },
@@ -45,9 +95,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-42)" },
-          { "value": 43, "name": "On (43-84)" },
-          { "value": 85, "name": "Inverse (85-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "On (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Inverse (85-127)"
+          }
         ]
       }
     },
@@ -59,9 +118,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-42)" },
-          { "value": 43, "name": "On (43-84)" },
-          { "value": 85, "name": "Inverse (85-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "On (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Inverse (85-127)"
+          }
         ]
       }
     },
@@ -73,9 +141,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-42)" },
-          { "value": 43, "name": "On (43-84)" },
-          { "value": 85, "name": "Inverse (85-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "On (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Inverse (85-127)"
+          }
         ]
       }
     },
@@ -87,9 +164,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-42)" },
-          { "value": 43, "name": "On (43-84)" },
-          { "value": 85, "name": "Inverse (85-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "On (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Inverse (85-127)"
+          }
         ]
       }
     },
@@ -101,9 +187,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-42)" },
-          { "value": 43, "name": "On (43-84)" },
-          { "value": 85, "name": "Inverse (85-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "On (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Inverse (85-127)"
+          }
         ]
       }
     },
@@ -115,9 +210,18 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-42)" },
-          { "value": 43, "name": "On (43-84)" },
-          { "value": 85, "name": "Inverse (85-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "On (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Inverse (85-127)"
+          }
         ]
       }
     },
@@ -129,13 +233,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-42)" },
-          { "value": 43, "name": "On (43-84)" },
-          { "value": 85, "name": "Inverse (85-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "On (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Inverse (85-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 28,
       "name": "Bypass",
@@ -144,12 +256,17 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "On / Deactivated (0-63)" },
-          { "value": 64, "name": "Off / Activated (64-127)" }
+          {
+            "value": 0,
+            "name": "On / Deactivated (0-63)"
+          },
+          {
+            "value": 64,
+            "name": "Off / Activated (64-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 29,
       "name": "Filter Mode",
@@ -158,13 +275,21 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Low-pass (0-42)" },
-          { "value": 43, "name": "Band-pass (43-84)" },
-          { "value": 85, "name": "Hi-pass (85-127)" }
+          {
+            "value": 0,
+            "name": "Low-pass (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "Band-pass (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Hi-pass (85-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 30,
       "name": "FX",
@@ -173,15 +298,29 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-25)" },
-          { "value": 26, "name": "Wave Shaping (26-50)" },
-          { "value": 51, "name": "Delay (51-75)" },
-          { "value": 76, "name": "Pitch Shifter (76-100)" },
-          { "value": 101, "name": "Step Filter (101-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-25)"
+          },
+          {
+            "value": 26,
+            "name": "Wave Shaping (26-50)"
+          },
+          {
+            "value": 51,
+            "name": "Delay (51-75)"
+          },
+          {
+            "value": 76,
+            "name": "Pitch Shifter (76-100)"
+          },
+          {
+            "value": 101,
+            "name": "Step Filter (101-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 31,
       "name": "Wave Type",
@@ -190,18 +329,41 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "1/Hi Rect. (0-15)" },
-          { "value": 16, "name": "2/Alt Rect. (16-31)" },
-          { "value": 32, "name": "3/Bat Fuzz (32-47)" },
-          { "value": 48, "name": "4/Biscuit (48-63)" },
-          { "value": 64, "name": "5/Swap (64-79)" },
-          { "value": 80, "name": "6/Saw Osc. (80-95)" },
-          { "value": 96, "name": "7/Lo Saw Osc. (96-111)" },
-          { "value": 112, "name": "8/Lo Square Osc. (112-127)" }
+          {
+            "value": 0,
+            "name": "1/Hi Rect. (0-15)"
+          },
+          {
+            "value": 16,
+            "name": "2/Alt Rect. (16-31)"
+          },
+          {
+            "value": 32,
+            "name": "3/Bat Fuzz (32-47)"
+          },
+          {
+            "value": 48,
+            "name": "4/Biscuit (48-63)"
+          },
+          {
+            "value": 64,
+            "name": "5/Swap (64-79)"
+          },
+          {
+            "value": 80,
+            "name": "6/Saw Osc. (80-95)"
+          },
+          {
+            "value": 96,
+            "name": "7/Lo Saw Osc. (96-111)"
+          },
+          {
+            "value": 112,
+            "name": "8/Lo Square Osc. (112-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 32,
       "name": "Delay Division",
@@ -210,16 +372,33 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Quarter (0-21)" },
-          { "value": 22, "name": "Dotted Quarter (22-42)" },
-          { "value": 43, "name": "Eighth (43-63)" },
-          { "value": 65, "name": "Dotted Eighth (65-84)" },
-          { "value": 85, "name": "Sixteenth (85-105)" },
-          { "value": 106, "name": "Dotted Sixteenth (106-127)" }
+          {
+            "value": 0,
+            "name": "Quarter (0-21)"
+          },
+          {
+            "value": 22,
+            "name": "Dotted Quarter (22-42)"
+          },
+          {
+            "value": 43,
+            "name": "Eighth (43-63)"
+          },
+          {
+            "value": 65,
+            "name": "Dotted Eighth (65-84)"
+          },
+          {
+            "value": 85,
+            "name": "Sixteenth (85-105)"
+          },
+          {
+            "value": 106,
+            "name": "Dotted Sixteenth (106-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 33,
       "name": "Delay Feedback",
@@ -228,32 +407,60 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "0% (0-15)" },
-          { "value": 16, "name": "10% (16-31)" },
-          { "value": 32, "name": "20% (32-47)" },
-          { "value": 48, "name": "30% (48-63)" },
-          { "value": 64, "name": "35% (64-79)" },
-          { "value": 80, "name": "45% (80-95)" },
-          { "value": 96, "name": "50% (96-111)" },
-          { "value": 112, "name": "100% (112-127)" }
+          {
+            "value": 0,
+            "name": "0% (0-15)"
+          },
+          {
+            "value": 16,
+            "name": "10% (16-31)"
+          },
+          {
+            "value": 32,
+            "name": "20% (32-47)"
+          },
+          {
+            "value": 48,
+            "name": "30% (48-63)"
+          },
+          {
+            "value": 64,
+            "name": "35% (64-79)"
+          },
+          {
+            "value": 80,
+            "name": "45% (80-95)"
+          },
+          {
+            "value": 96,
+            "name": "50% (96-111)"
+          },
+          {
+            "value": 112,
+            "name": "100% (112-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 34,
-      "name": "Delay Free Clock",
+      "name": "Dly Free Clock",
       "additionalInfo": "0-63=Off, 64-127=On. In Free Clock mode, delay time is controlled by Clock (CC 18).",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Off (0-63)" },
-          { "value": 64, "name": "On (64-127)" }
+          {
+            "value": 0,
+            "name": "Off (0-63)"
+          },
+          {
+            "value": 64,
+            "name": "On (64-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 35,
       "name": "Pitch Shift",
@@ -262,63 +469,123 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "-2 Oct (0-15)" },
-          { "value": 16, "name": "-1 Oct (16-31)" },
-          { "value": 32, "name": "-5th (32-47)" },
-          { "value": 48, "name": "Detune (48-63)" },
-          { "value": 64, "name": "+Minor 3rd (64-79)" },
-          { "value": 80, "name": "+Major 3rd (80-95)" },
-          { "value": 96, "name": "+5th (96-111)" },
-          { "value": 112, "name": "+1 Oct (112-127)" }
+          {
+            "value": 0,
+            "name": "-2 Oct (0-15)"
+          },
+          {
+            "value": 16,
+            "name": "-1 Oct (16-31)"
+          },
+          {
+            "value": 32,
+            "name": "-5th (32-47)"
+          },
+          {
+            "value": 48,
+            "name": "Detune (48-63)"
+          },
+          {
+            "value": 64,
+            "name": "+Minor 3rd (64-79)"
+          },
+          {
+            "value": 80,
+            "name": "+Major 3rd (80-95)"
+          },
+          {
+            "value": 96,
+            "name": "+5th (96-111)"
+          },
+          {
+            "value": 112,
+            "name": "+1 Oct (112-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 36,
-      "name": "Step Filter Play Mode",
+      "name": "Step Filt Play",
       "additionalInfo": "0-42=Forward, 43-84=Alternate, 85-127=Random",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Forward (0-42)" },
-          { "value": 43, "name": "Alternate (43-84)" },
-          { "value": 85, "name": "Random (85-127)" }
+          {
+            "value": 0,
+            "name": "Forward (0-42)"
+          },
+          {
+            "value": 43,
+            "name": "Alternate (43-84)"
+          },
+          {
+            "value": 85,
+            "name": "Random (85-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 37,
-      "name": "Step Filter Speed",
+      "name": "Step Filt Spd",
       "additionalInfo": "0-25=x1, 26-50=x2, 51-75=x4, 76-100=x8, 101-127=x24",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "x1 (0-25)" },
-          { "value": 26, "name": "x2 (26-50)" },
-          { "value": 51, "name": "x4 (51-75)" },
-          { "value": 76, "name": "x8 (76-100)" },
-          { "value": 101, "name": "x24 (101-127)" }
+          {
+            "value": 0,
+            "name": "x1 (0-25)"
+          },
+          {
+            "value": 26,
+            "name": "x2 (26-50)"
+          },
+          {
+            "value": 51,
+            "name": "x4 (51-75)"
+          },
+          {
+            "value": 76,
+            "name": "x8 (76-100)"
+          },
+          {
+            "value": 101,
+            "name": "x24 (101-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 38,
-      "name": "Step Filter Number",
+      "name": "Step Filt Num",
       "additionalInfo": "0-25=2, 26-50=3, 51-75=4, 76-100=6, 101-127=8",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "2 (0-25)" },
-          { "value": 26, "name": "3 (26-50)" },
-          { "value": 51, "name": "4 (51-75)" },
-          { "value": 76, "name": "6 (76-100)" },
-          { "value": 101, "name": "8 (101-127)" }
+          {
+            "value": 0,
+            "name": "2 (0-25)"
+          },
+          {
+            "value": 26,
+            "name": "3 (26-50)"
+          },
+          {
+            "value": 51,
+            "name": "4 (51-75)"
+          },
+          {
+            "value": 76,
+            "name": "6 (76-100)"
+          },
+          {
+            "value": 101,
+            "name": "8 (101-127)"
+          }
         ]
       }
     }

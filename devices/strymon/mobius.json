@@ -149,7 +149,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "FLANGER - Regen",
+      "name": "FL: Regen",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -157,7 +157,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "FLANGER - Manual",
+      "name": "FL: Manual",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -189,7 +189,7 @@
     },
     {
       "controlChangeNumber": 31,
-      "name": "VINTAGE TREM - Mode",
+      "name": "V TREM: Mode",
       "valueRange": {
         "min": 0,
         "max": 2
@@ -197,7 +197,7 @@
     },
     {
       "controlChangeNumber": 32,
-      "name": "VINTAGE TREM - Pan",
+      "name": "V TREM: Pan",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -215,7 +215,7 @@
     },
     {
       "controlChangeNumber": 34,
-      "name": "ROTARY - Horn Level",
+      "name": "ROT: Horn Lvl",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -223,7 +223,7 @@
     },
     {
       "controlChangeNumber": 35,
-      "name": "ROTARY - Preamp Drive",
+      "name": "ROT: Pre Drive",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -231,7 +231,7 @@
     },
     {
       "controlChangeNumber": 36,
-      "name": "ROTARY - Slow Rotor Speed",
+      "name": "ROT: Slow Rot",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -239,7 +239,7 @@
     },
     {
       "controlChangeNumber": 37,
-      "name": "ROTARY - Acceleration",
+      "name": "ROT: Accel",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -247,7 +247,7 @@
     },
     {
       "controlChangeNumber": 39,
-      "name": "Tap Switch Tap/Speed",
+      "name": "Tap Tgl T/S",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -265,7 +265,7 @@
     },
     {
       "controlChangeNumber": 40,
-      "name": "VIBE - Waveshape",
+      "name": "VIBE: Wave",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -281,7 +281,7 @@
     },
     {
       "controlChangeNumber": 42,
-      "name": "VIBE - Headroom",
+      "name": "VIBE: Headroom",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -323,7 +323,7 @@
     },
     {
       "controlChangeNumber": 46,
-      "name": "PHASER - Waveshape",
+      "name": "PH: Waveshape",
       "valueRange": {
         "min": 0,
         "max": 3
@@ -331,7 +331,7 @@
     },
     {
       "controlChangeNumber": 47,
-      "name": "PHASER - Stereo Spread",
+      "name": "PH: St Sprd",
       "valueRange": {
         "min": 0,
         "max": 4
@@ -347,7 +347,7 @@
     },
     {
       "controlChangeNumber": 49,
-      "name": "FILTER - Waveshape",
+      "name": "FIL: Waveshape",
       "valueRange": {
         "min": 0,
         "max": 7
@@ -355,7 +355,7 @@
     },
     {
       "controlChangeNumber": 50,
-      "name": "FILTER - Resonance",
+      "name": "FIL: Resonance",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -363,7 +363,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "FILTER - Dry Level",
+      "name": "FIL: Dry Level",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -371,7 +371,7 @@
     },
     {
       "controlChangeNumber": 52,
-      "name": "FILTER - Frequency Middle",
+      "name": "FIL: Freq Mid",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -379,7 +379,7 @@
     },
     {
       "controlChangeNumber": 53,
-      "name": "QUADRATURE - Mode",
+      "name": "QUAD: Mode",
       "valueRange": {
         "min": 0,
         "max": 3
@@ -387,7 +387,7 @@
     },
     {
       "controlChangeNumber": 54,
-      "name": "QUADRATURE - Shift 1",
+      "name": "QUAD: Shift 1",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -395,7 +395,7 @@
     },
     {
       "controlChangeNumber": 55,
-      "name": "QUADRATURE - Mix",
+      "name": "QUAD: Mix",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -403,7 +403,7 @@
     },
     {
       "controlChangeNumber": 56,
-      "name": "QUADRATURE - LFO",
+      "name": "QUAD: LFO",
       "valueRange": {
         "min": 0,
         "max": 6
@@ -411,7 +411,7 @@
     },
     {
       "controlChangeNumber": 57,
-      "name": "AUTOSWELL - Rise Time",
+      "name": "ASW: Rise Time",
       "valueRange": {
         "min": 0,
         "max": 22
@@ -419,7 +419,7 @@
     },
     {
       "controlChangeNumber": 58,
-      "name": "AUTOSWELL - Shape",
+      "name": "ASW: Shape",
       "valueRange": {
         "min": 0,
         "max": 3
@@ -427,7 +427,7 @@
     },
     {
       "controlChangeNumber": 59,
-      "name": "DESTROYER - Bit Depth",
+      "name": "DEST: Bit Dep",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -435,7 +435,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "Expression Off/On",
+      "name": "Expr Off/On",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -453,7 +453,7 @@
     },
     {
       "controlChangeNumber": 61,
-      "name": "DESTROYER - Sample Rate",
+      "name": "DEST: Smpl Rat",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -461,7 +461,7 @@
     },
     {
       "controlChangeNumber": 62,
-      "name": "DESTROYER - Filter",
+      "name": "DEST: Filter",
       "valueRange": {
         "min": 0,
         "max": 8
@@ -469,7 +469,7 @@
     },
     {
       "controlChangeNumber": 63,
-      "name": "DESTROYER - Vinyl",
+      "name": "DEST: Vinyl",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -477,7 +477,7 @@
     },
     {
       "controlChangeNumber": 64,
-      "name": "DESTROYER - Mix",
+      "name": "DEST: Mix",
       "valueRange": {
         "min": 0,
         "max": 20
@@ -485,7 +485,7 @@
     },
     {
       "controlChangeNumber": 65,
-      "name": "FORMANT - Vowel 1",
+      "name": "FORM: Vowel 1",
       "valueRange": {
         "min": 0,
         "max": 5
@@ -493,7 +493,7 @@
     },
     {
       "controlChangeNumber": 66,
-      "name": "FORMANT - Vowel 2",
+      "name": "FORM: Vowel 2",
       "valueRange": {
         "min": 0,
         "max": 5
@@ -509,7 +509,7 @@
     },
     {
       "controlChangeNumber": 68,
-      "name": "PHASER - Headroom",
+      "name": "PH: Headroom",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -517,7 +517,7 @@
     },
     {
       "controlChangeNumber": 69,
-      "name": "FILTER - Stereo Spread",
+      "name": "FIL: St Sprd",
       "valueRange": {
         "min": 0,
         "max": 4
@@ -525,7 +525,7 @@
     },
     {
       "controlChangeNumber": 70,
-      "name": "MIDI Clock Off/On",
+      "name": "MIDI Clk",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -611,7 +611,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -637,7 +637,7 @@
     },
     {
       "controlChangeNumber": 105,
-      "name": "PATTERN TREM - Beat 1",
+      "name": "PAT: Beat 1",
       "valueRange": {
         "min": 0,
         "max": 17
@@ -645,7 +645,7 @@
     },
     {
       "controlChangeNumber": 106,
-      "name": "PATTERN TREM - Beat 2",
+      "name": "PAT: Beat 2",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -653,7 +653,7 @@
     },
     {
       "controlChangeNumber": 107,
-      "name": "PATTERN TREM - Beat 3",
+      "name": "PAT: Beat 3",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -661,7 +661,7 @@
     },
     {
       "controlChangeNumber": 108,
-      "name": "PATTERN TREM - Beat 4",
+      "name": "PAT: Beat 4",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -669,7 +669,7 @@
     },
     {
       "controlChangeNumber": 109,
-      "name": "PATTERN TREM - Beat 5",
+      "name": "PAT: Beat 5",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -677,7 +677,7 @@
     },
     {
       "controlChangeNumber": 110,
-      "name": "PATTERN TREM - Beat 6",
+      "name": "PAT: Beat 6",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -685,7 +685,7 @@
     },
     {
       "controlChangeNumber": 111,
-      "name": "PATTERN TREM - Beat 7",
+      "name": "PAT: Beat 7",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -693,7 +693,7 @@
     },
     {
       "controlChangeNumber": 112,
-      "name": "PATTERN TREM - Beat 8",
+      "name": "PAT: Beat 8",
       "valueRange": {
         "min": 0,
         "max": 18
@@ -701,7 +701,7 @@
     },
     {
       "controlChangeNumber": 113,
-      "name": "PATTERN TREM - Waveshape",
+      "name": "PAT: Waveshape",
       "valueRange": {
         "min": 0,
         "max": 6
@@ -709,7 +709,7 @@
     },
     {
       "controlChangeNumber": 114,
-      "name": "PATTERN TREM - Pan",
+      "name": "PAT: Pan",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -727,7 +727,7 @@
     },
     {
       "controlChangeNumber": 115,
-      "name": "FORMANT - Stereo Spread",
+      "name": "FORM: St Sprd",
       "valueRange": {
         "min": 0,
         "max": 4

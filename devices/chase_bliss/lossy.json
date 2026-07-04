@@ -96,7 +96,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Limiter Threshold",
+      "name": "Limiter Thresh",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -288,7 +288,7 @@
     },
     {
       "controlChangeNumber": 106,
-      "name": "Gate (Footswitch)",
+      "name": "Gate",
       "additionalInfo": "Hold right switch",
       "valueRange": {
         "min": 0,
@@ -597,7 +597,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "additionalInfo": "0 = heel, 127 = toe",
       "valueRange": {
         "min": 0,

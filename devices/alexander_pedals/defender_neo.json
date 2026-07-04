@@ -18,13 +18,19 @@
       "controlChangeNumber": 97,
       "name": "Warp",
       "additionalInfo": "Send any value to trigger Warp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "additionalInfo": "0 = Heel down, 127 = Toe down",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -34,18 +40,73 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 64, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 64,
+            "name": "Engage"
+          }
         ]
       }
     },
-    { "controlChangeNumber": 50, "name": "Mass", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 51, "name": "Level", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 52, "name": "Drive", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 53, "name": "Light", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 54, "name": "Tweak", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 56, "name": "Warp Speed", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 57, "name": "Mix", "valueRange": { "min": 0, "max": 127 } },
+    {
+      "controlChangeNumber": 50,
+      "name": "Mass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Light",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Tweak",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Warp Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 59,
       "name": "Mode Select",
@@ -54,15 +115,42 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "OD + PIT" },
-          { "value": 1, "name": "DST + PIT" },
-          { "value": 2, "name": "FZ + PIT" },
-          { "value": 3, "name": "OD + SPC" },
-          { "value": 4, "name": "DST + SPC" },
-          { "value": 5, "name": "FZ + SPC" },
-          { "value": 6, "name": "OD + FLT" },
-          { "value": 7, "name": "DST + SPC" },
-          { "value": 8, "name": "FX + FLT" }
+          {
+            "value": 0,
+            "name": "OD + PIT"
+          },
+          {
+            "value": 1,
+            "name": "DST + PIT"
+          },
+          {
+            "value": 2,
+            "name": "FZ + PIT"
+          },
+          {
+            "value": 3,
+            "name": "OD + SPC"
+          },
+          {
+            "value": 4,
+            "name": "DST + SPC"
+          },
+          {
+            "value": 5,
+            "name": "FZ + SPC"
+          },
+          {
+            "value": 6,
+            "name": "OD + FLT"
+          },
+          {
+            "value": 7,
+            "name": "DST + SPC"
+          },
+          {
+            "value": 8,
+            "name": "FX + FLT"
+          }
         ]
       }
     }

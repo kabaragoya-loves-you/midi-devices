@@ -39,7 +39,7 @@
     },
     {
       "controlChangeNumber": 10,
-      "name": "Tape Saturation",
+      "name": "Tape Sat",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -171,7 +171,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Doubletracker Boost/Cut",
+      "name": "DblTrk Bst/Cut",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -179,7 +179,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Auto-Flange Time",
+      "name": "Auto-Flng Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -187,7 +187,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Wide Stereo Mode",
+      "name": "Wide St Mode",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -205,7 +205,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "MIDI Clock Tempo Mult/Div",
+      "name": "Clk Tempo M/D",
       "valueRange": {
         "min": 0,
         "max": 6,
@@ -243,7 +243,7 @@
     },
     {
       "controlChangeNumber": 33,
-      "name": "Bypass/On A and B",
+      "name": "Byp/On A and B",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -261,7 +261,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression",
+      "name": "MIDI Expr",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -324,7 +324,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

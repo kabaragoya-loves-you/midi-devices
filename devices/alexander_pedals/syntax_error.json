@@ -18,19 +18,28 @@
       "controlChangeNumber": 93,
       "name": "Tap Tempo",
       "additionalInfo": "Listed as supported on 'supported pedals only'.",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 97,
       "name": "Ramp",
       "additionalInfo": "Send value 1-8 to set the ramp speed; send any other value to trigger the ramp.",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "additionalInfo": "Value 0 = Heel down, Value 127 = toe down",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -40,21 +49,81 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 64, "name": "Engage" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 64,
+            "name": "Engage"
+          }
         ]
       }
     },
-
-    { "controlChangeNumber": 50, "name": "Lower right main", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 51, "name": "Upper left main", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 52, "name": "Upper right main", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 53, "name": "Lower left main", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 54, "name": "Lower right alt", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 55, "name": "Upper left alt", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 56, "name": "Upper right alt", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 57, "name": "Lower left alt", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 50,
+      "name": "LR Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "UL Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "UR Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "LL Main",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "LR Alt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Upper left alt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "UR Alt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Lower left alt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 59,
       "name": "Mode Select",
@@ -63,14 +132,38 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mode 1" },
-          { "value": 1, "name": "Mode 2" },
-          { "value": 2, "name": "Mode 3" },
-          { "value": 3, "name": "Mode 4" },
-          { "value": 4, "name": "Mode 5" },
-          { "value": 5, "name": "Mode 6" },
-          { "value": 6, "name": "Mode 7" },
-          { "value": 7, "name": "Mode 8" }
+          {
+            "value": 0,
+            "name": "Mode 1"
+          },
+          {
+            "value": 1,
+            "name": "Mode 2"
+          },
+          {
+            "value": 2,
+            "name": "Mode 3"
+          },
+          {
+            "value": 3,
+            "name": "Mode 4"
+          },
+          {
+            "value": 4,
+            "name": "Mode 5"
+          },
+          {
+            "value": 5,
+            "name": "Mode 6"
+          },
+          {
+            "value": 6,
+            "name": "Mode 7"
+          },
+          {
+            "value": 7,
+            "name": "Mode 8"
+          }
         ]
       }
     }

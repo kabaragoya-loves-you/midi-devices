@@ -73,7 +73,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "MIDI Note Divisions",
+      "name": "MIDI Note Divs",
       "additionalInfo": "0=whole, 1=half, 2=quarter triplet, 3=quarter, 4=eighth, 5=sixteenth",
       "valueRange": {
         "min": 0,
@@ -108,7 +108,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "0 = ignore MIDI clock, 127 = listen for MIDI clock",
       "valueRange": {
         "min": 0,

@@ -17,66 +17,93 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 50,
-      "name": "Knob 0 (PG1 upper L)",
+      "name": "Knob 0",
       "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
-      "name": "Knob 1 (PG1 upper R)",
+      "name": "Knob 1",
       "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 52,
-      "name": "Knob 2 (PG1 lower L)",
+      "name": "Knob 2",
       "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 54,
-      "name": "Knob 4 (PG2 upper L)",
+      "name": "Knob 4",
       "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 55,
-      "name": "Knob 5 (PG2 upper R)",
+      "name": "Knob 5",
       "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 56,
-      "name": "Knob 6 (PG2 lower L)",
+      "name": "Knob 6",
       "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
-      "name": "Knob 7 (PG2 lower R)",
+      "name": "Knob 7",
       "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 58,
-      "name": "Knob 8 (PG3 upper L)",
+      "name": "Knob 8",
       "additionalInfo": "Function depends on selected Sound Mode (see Sound Modes section).",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 59,
       "name": "Filter",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 60,
       "name": "Level",
       "additionalInfo": "Overall volume (wet + dry).",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
     {
       "controlChangeNumber": 61,
       "name": "Ramp",
@@ -85,46 +112,120 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "TOGG (range 0-50)" },
-          { "value": 51, "name": "MOM (range 51-110)" },
-          { "value": 111, "name": "CLR (range 111-127)" }
+          {
+            "value": 0,
+            "name": "TOGG (range 0-50)"
+          },
+          {
+            "value": 51,
+            "name": "MOM (range 51-110)"
+          },
+          {
+            "value": 111,
+            "name": "CLR (range 111-127)"
+          }
         ]
       }
     },
-
     {
       "controlChangeNumber": 53,
       "name": "Sound Mode",
       "additionalInfo": "0-12=CLASSIC, 13-25=DUAL PHZ, 26-37=PHAZDLAY, 38-50=K-TREM, 51-63=DYNAMIC, 64-75=INFINITE, 76-88=FLYINGPAN, 89-101=PATTERN, 102-113=UNIQUE, 114-127=PHLANGER",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
-
-    { "controlChangeNumber": 110, "name": "Pattern 8 Step 1", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 111, "name": "Pattern 8 Step 2", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 112, "name": "Pattern 8 Step 3", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 113, "name": "Pattern 8 Step 4", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 114, "name": "Pattern 8 Step 5", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 115, "name": "Pattern 8 Step 6", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 116, "name": "Pattern 8 Step 7", "valueRange": { "min": 0, "max": 127 } },
-    { "controlChangeNumber": 117, "name": "Pattern 8 Step 8", "valueRange": { "min": 0, "max": 127 } },
-
+    {
+      "controlChangeNumber": 110,
+      "name": "Pat8 St 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Pat8 St 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Pat8 St 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Pat8 St 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Pat8 St 5",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Pat8 St 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Pat8 St 7",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Pat8 St 8",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 93,
       "name": "Tap Tempo",
       "additionalInfo": "Any value triggers tap",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 97,
       "name": "Ramp Trigger",
       "additionalInfo": "Any value triggers ramp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "additionalInfo": "0=Heel, 127=Toe",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -134,8 +235,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 127, "name": "On" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 127,
+            "name": "On"
+          }
         ]
       }
     }

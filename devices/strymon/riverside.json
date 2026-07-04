@@ -16,7 +16,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 0,
-      "name": "MIDI Patch Bank",
+      "name": "Patch Bank",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -113,7 +113,7 @@
     },
     {
       "controlChangeNumber": 19,
-      "name": "Gain (Low/High)",
+      "name": "Gain",
       "valueRange": {
         "min": 1,
         "max": 2,
@@ -180,7 +180,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression Off/On",
+      "name": "MIDI Expr",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -199,7 +199,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

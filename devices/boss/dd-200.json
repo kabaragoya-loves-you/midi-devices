@@ -18,42 +18,66 @@
     {
       "controlChangeNumber": 16,
       "name": "Expression",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 17,
       "name": "Drive",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 18,
       "name": "Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 19,
       "name": "Low",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
       "name": "Middle",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 21,
       "name": "High",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 22,
-      "name": "Booster Pre-Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Boost Pre-Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 23,
-      "name": "Booster Post-Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Boost Post-Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
@@ -62,8 +86,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -74,8 +104,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -86,8 +122,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -98,20 +140,32 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 82,
-      "name": "Memory/Boost Switch",
+      "name": "Mem/Boost Sw",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -122,8 +176,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     }

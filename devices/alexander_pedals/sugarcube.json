@@ -18,31 +18,46 @@
       "controlChangeNumber": 50,
       "name": "Tweak",
       "additionalInfo": "Value 0=CCW, 127=CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
       "name": "Rate",
       "additionalInfo": "Value 0=CCW, 127=CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 52,
       "name": "Depth",
       "additionalInfo": "Value 0=CCW, 127=CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 53,
       "name": "Mix",
       "additionalInfo": "Value 0=CCW, 127=CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 54,
       "name": "Clock",
       "additionalInfo": "Value 0=CCW, 127=CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 55,
@@ -52,8 +67,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Mono (0-63)" },
-          { "value": 64, "name": "Stereo (64-127)" }
+          {
+            "value": 0,
+            "name": "Mono (0-63)"
+          },
+          {
+            "value": 64,
+            "name": "Stereo (64-127)"
+          }
         ]
       }
     },
@@ -61,13 +82,19 @@
       "controlChangeNumber": 56,
       "name": "Ramp Rate",
       "additionalInfo": "Value 0=CCW, 127=CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
       "name": "Level",
       "additionalInfo": "Value 0=CCW, 127=CW",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 59,
@@ -77,10 +104,22 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "CHO (Chorus)" },
-          { "value": 1, "name": "DIM (Dimension)" },
-          { "value": 2, "name": "ROT (Rotary)" },
-          { "value": 3, "name": "ICE (Ice)" }
+          {
+            "value": 0,
+            "name": "CHO (Chorus)"
+          },
+          {
+            "value": 1,
+            "name": "DIM (Dimension)"
+          },
+          {
+            "value": 2,
+            "name": "ROT (Rotary)"
+          },
+          {
+            "value": 3,
+            "name": "ICE (Ice)"
+          }
         ]
       }
     },
@@ -88,13 +127,19 @@
       "controlChangeNumber": 97,
       "name": "Ramp",
       "additionalInfo": "Send any value to trigger the ramp",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "additionalInfo": "0=Heel down, 127=Toe down",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 102,
@@ -104,8 +149,14 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "value": 0, "name": "Bypass (0-63)" },
-          { "value": 64, "name": "Engage (64-127)" }
+          {
+            "value": 0,
+            "name": "Bypass (0-63)"
+          },
+          {
+            "value": 64,
+            "name": "Engage (64-127)"
+          }
         ]
       }
     }

@@ -136,7 +136,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -144,7 +144,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "off = 0, listening = 127",
       "valueRange": {
         "min": 0,

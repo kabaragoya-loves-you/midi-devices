@@ -27,7 +27,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 65,
-      "name": "Amount Character",
+      "name": "Amount Char",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -45,7 +45,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 67,
-      "name": "Amount Movement",
+      "name": "Amt Movement",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -63,7 +63,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 69,
-      "name": "Amount Diffusion",
+      "name": "Amount Diff",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -99,7 +99,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 73,
-      "name": "Effect Vol Character",
+      "name": "FX Vol Char",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -117,7 +117,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 75,
-      "name": "Effect Vol Movement",
+      "name": "FX Vol Move",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -126,7 +126,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 76,
-      "name": "Drift Diffusion",
+      "name": "Drift Diff",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -135,7 +135,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 77,
-      "name": "Effect Vol Diffusion",
+      "name": "FX Vol Diff",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -153,7 +153,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 79,
-      "name": "Effect Vol Texture",
+      "name": "FX Vol Tex",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -162,7 +162,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 16,
-      "name": "Character Module",
+      "name": "Char Module",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -197,7 +197,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 17,
-      "name": "Movement Module",
+      "name": "Move Module",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -232,7 +232,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 18,
-      "name": "Diffusion Module",
+      "name": "Diff Module",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -302,7 +302,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 91,
-      "name": "Standard Bypass",
+      "name": "Standard Byp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -344,7 +344,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 103,
-      "name": "Character Module Bypass",
+      "name": "Char Mod Byp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -363,7 +363,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 104,
-      "name": "Movement Module Bypass",
+      "name": "Move Mod Byp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -382,7 +382,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 105,
-      "name": "Diffusion Module Bypass",
+      "name": "Diff Mod Byp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -401,7 +401,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 106,
-      "name": "Texture Module Bypass",
+      "name": "Tex Mod Byp",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -420,7 +420,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 80,
-      "name": "Gesture Play/Record",
+      "name": "Gest Play/Rec",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -439,7 +439,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 81,
-      "name": "Gesture Stop/Erase",
+      "name": "Gest Stop/Ers",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -471,7 +471,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 83,
-      "name": "Capture Routing",
+      "name": "Capture Route",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -522,7 +522,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 94,
-      "name": "Calibration Level",
+      "name": "Cal Lvl",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -549,7 +549,7 @@
     {
       "type": "controlChange",
       "controlChangeNumber": 95,
-      "name": "Calibration Menu",
+      "name": "Cal Menu",
       "valueRange": {
         "min": 0,
         "max": 127,

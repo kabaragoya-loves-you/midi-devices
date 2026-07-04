@@ -154,7 +154,7 @@
     },
     {
       "controlChangeNumber": 14,
-      "name": "Effect On (FSW)",
+      "name": "Effect On",
       "additionalInfo": "[0-63] = Off, [64-127] = On",
       "valueRange": {
         "min": 0,
@@ -191,7 +191,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "MIDI Note Only Mode",
+      "name": "MIDI Note Only",
       "additionalInfo": "Disable instrument input pitch tracker (e.g. for vocoding); [0-63] = Off, [64-127] = On",
       "valueRange": {
         "min": 0,
@@ -210,7 +210,7 @@
     },
     {
       "controlChangeNumber": 18,
-      "name": "Pedal + Pressure Value",
+      "name": "Pedal+Press",
       "additionalInfo": "[0-90] = [off … fully pressed (normal range)], [91-102] = [deadzone], [103-127] = [pressed … max pressure (floor-it)]",
       "valueRange": {
         "min": 0,

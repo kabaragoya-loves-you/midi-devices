@@ -19,17 +19,26 @@
     {
       "controlChangeNumber": 0,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 1,
       "name": "Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 2,
       "name": "Rate",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 5,
@@ -38,15 +47,24 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Bypass", "value": 0 },
-          { "name": "Engaged", "value": 127 }
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 7,
-      "name": "Save MIDI Preset",
-      "valueRange": { "min": 0, "max": 7 }
+      "name": "Save MIDI Pres",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      }
     },
     {
       "controlChangeNumber": 9,
@@ -55,7 +73,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          {
+            "name": "Trigger",
+            "value": 1
+          }
         ]
       }
     },
@@ -66,7 +87,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          {
+            "name": "Trigger",
+            "value": 1
+          }
         ]
       }
     },
@@ -77,7 +101,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Toggle", "value": 1 }
+          {
+            "name": "Toggle",
+            "value": 1
+          }
         ]
       }
     },
@@ -88,7 +115,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Toggle", "value": 1 }
+          {
+            "name": "Toggle",
+            "value": 1
+          }
         ]
       }
     },
@@ -99,29 +129,38 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          {
+            "name": "Trigger",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          {
+            "name": "Trigger",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 52,
-      "name": "MIDI Clock Enable",
+      "name": "Clk Enable",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          {
+            "name": "Trigger",
+            "value": 1
+          }
         ]
       }
     },
@@ -132,9 +171,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "name": "1/4 Note", "value": 0 },
-          { "name": "1/8 Note", "value": 1 },
-          { "name": "Dotted 1/8 Note", "value": 2 }
+          {
+            "name": "1/4 Note",
+            "value": 0
+          },
+          {
+            "name": "1/8 Note",
+            "value": 1
+          },
+          {
+            "name": "Dotted 1/8 Note",
+            "value": 2
+          }
         ]
       }
     },
@@ -145,7 +193,10 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Trigger", "value": 1 }
+          {
+            "name": "Trigger",
+            "value": 1
+          }
         ]
       }
     }

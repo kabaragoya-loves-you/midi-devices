@@ -65,7 +65,7 @@
     },
     {
       "controlChangeNumber": 20,
-      "name": "Synth Mod Option",
+      "name": "Synth Mod Opt",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -87,7 +87,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Synth Mod Depth",
+      "name": "Synth Mod Dp",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -95,7 +95,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Synth Hard Sync / Ring Mod",
+      "name": "Sync/Ring Mod",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -117,7 +117,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Synth Voice Mode",
+      "name": "Synth Vox Md",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -151,7 +151,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "Filter Resonance",
+      "name": "Filter Res",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -247,7 +247,7 @@
     },
     {
       "controlChangeNumber": 38,
-      "name": "Map LFO Filter Cutoff",
+      "name": "Map LFO F Cut",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -266,7 +266,7 @@
     },
     {
       "controlChangeNumber": 39,
-      "name": "Map LFO Filter Mode",
+      "name": "Map LFO F Mode",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -285,7 +285,7 @@
     },
     {
       "controlChangeNumber": 40,
-      "name": "Map LFO Filter Resonance",
+      "name": "Map LFO F Res",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -342,7 +342,7 @@
     },
     {
       "controlChangeNumber": 43,
-      "name": "Map LFO Drive / Fold",
+      "name": "Map LFO Drv/Fl",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -380,7 +380,7 @@
     },
     {
       "controlChangeNumber": 45,
-      "name": "Map LFO Low Cut",
+      "name": "Map LFO Lo Cut",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -418,7 +418,7 @@
     },
     {
       "controlChangeNumber": 47,
-      "name": "Map LFO ENV Attack",
+      "name": "Map LFO Atk",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -437,7 +437,7 @@
     },
     {
       "controlChangeNumber": 48,
-      "name": "Map LFO ENV Sens",
+      "name": "Map LFO ENV Sn",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -483,7 +483,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "Ignore MIDI Clock",
+      "name": "Ign MIDI Clk",
       "additionalInfo": "0: Ignore, 1-127: Listen",
       "valueRange": {
         "min": 0,
@@ -502,7 +502,7 @@
     },
     {
       "controlChangeNumber": 52,
-      "name": "Map ENV Filter Cutoff",
+      "name": "Map ENV F Cut",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -521,7 +521,7 @@
     },
     {
       "controlChangeNumber": 53,
-      "name": "Map ENV Filter Mode",
+      "name": "Map ENV F Mode",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -540,7 +540,7 @@
     },
     {
       "controlChangeNumber": 54,
-      "name": "Map ENV Filter Resonance",
+      "name": "Map ENV F Res",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -597,7 +597,7 @@
     },
     {
       "controlChangeNumber": 57,
-      "name": "Map ENV Drive / Fold",
+      "name": "Map ENV Drv/Fl",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -635,7 +635,7 @@
     },
     {
       "controlChangeNumber": 59,
-      "name": "Map ENV Low Cut",
+      "name": "Map ENV Lo Cut",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -673,7 +673,7 @@
     },
     {
       "controlChangeNumber": 61,
-      "name": "Map ENV LFO Rate",
+      "name": "Map ENV LFO Rt",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -692,7 +692,7 @@
     },
     {
       "controlChangeNumber": 62,
-      "name": "Map ENV LFO Shape",
+      "name": "Map ENV LFO Sh",
       "additionalInfo": "0-64: [-], 65-127: [+]",
       "valueRange": {
         "min": 0,
@@ -730,7 +730,7 @@
     },
     {
       "controlChangeNumber": 80,
-      "name": "Preset Footswitch",
+      "name": "Pres Stomp",
       "additionalInfo": "0: Off, 1-127: On",
       "valueRange": {
         "min": 0,
@@ -749,7 +749,7 @@
     },
     {
       "controlChangeNumber": 81,
-      "name": "Bypass Footswitch",
+      "name": "Byp Footswitch",
       "additionalInfo": "0: Off, 1-127: On",
       "valueRange": {
         "min": 0,
@@ -777,7 +777,7 @@
     },
     {
       "controlChangeNumber": 83,
-      "name": "Currently Selected Preset",
+      "name": "Curr Sel Pres",
       "additionalInfo": "0-31",
       "valueRange": {
         "min": 0,
@@ -786,7 +786,7 @@
     },
     {
       "controlChangeNumber": 85,
-      "name": "Reset Black + White Controls",
+      "name": "Reset B+W Ctrl",
       "additionalInfo": "Send 0 to trigger",
       "valueRange": {
         "min": 0,
@@ -795,7 +795,7 @@
     },
     {
       "controlChangeNumber": 86,
-      "name": "Clear LFO Mappings",
+      "name": "Clr LFO Maps",
       "additionalInfo": "Send 0 to trigger",
       "valueRange": {
         "min": 0,
@@ -804,7 +804,7 @@
     },
     {
       "controlChangeNumber": 87,
-      "name": "Clear ENV Mappings",
+      "name": "Clr ENV Maps",
       "additionalInfo": "Send 0 to trigger",
       "valueRange": {
         "min": 0,
@@ -813,7 +813,7 @@
     },
     {
       "controlChangeNumber": 89,
-      "name": "Gate Dry Signal",
+      "name": "Gate Dry Sig",
       "additionalInfo": "0: No, 1-127: Yes",
       "valueRange": {
         "min": 0,
@@ -832,7 +832,7 @@
     },
     {
       "controlChangeNumber": 90,
-      "name": "Gate Response Style",
+      "name": "Gate Resp Sty",
       "additionalInfo": "0: Smooth, 1-127: Choppy",
       "valueRange": {
         "min": 0,

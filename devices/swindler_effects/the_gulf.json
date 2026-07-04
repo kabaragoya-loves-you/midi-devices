@@ -17,22 +17,34 @@
     {
       "controlChangeNumber": 50,
       "name": "Speed",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 51,
       "name": "Depth",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 52,
       "name": "Blend",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 53,
       "name": "Delay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 59,
@@ -41,11 +53,26 @@
         "min": 0,
         "max": 4,
         "discreteValues": [
-          { "name": "Quarter", "value": 0 },
-          { "name": "Dotted Eighth", "value": 1 },
-          { "name": "Eighth", "value": 2 },
-          { "name": "Triplet", "value": 3 },
-          { "name": "Sixteenth", "value": 4 }
+          {
+            "name": "Quarter",
+            "value": 0
+          },
+          {
+            "name": "Dotted Eighth",
+            "value": 1
+          },
+          {
+            "name": "Eighth",
+            "value": 2
+          },
+          {
+            "name": "Triplet",
+            "value": 3
+          },
+          {
+            "name": "Sixteenth",
+            "value": 4
+          }
         ]
       }
     },
@@ -56,9 +83,18 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "name": "Sine", "value": 0 },
-          { "name": "Triangle", "value": 1 },
-          { "name": "Square", "value": 2 }
+          {
+            "name": "Sine",
+            "value": 0
+          },
+          {
+            "name": "Triangle",
+            "value": 1
+          },
+          {
+            "name": "Square",
+            "value": 2
+          }
         ]
       }
     },
@@ -69,19 +105,28 @@
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Tap", "value": 1 }
+          {
+            "name": "Tap",
+            "value": 1
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 102,
-      "name": "Bypass Footswitch",
+      "name": "Byp Footswitch",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     }

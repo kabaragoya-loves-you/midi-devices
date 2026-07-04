@@ -23,7 +23,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -35,7 +38,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -47,7 +53,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -59,7 +68,10 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 1, "name": "Toggle" }
+          {
+            "value": 1,
+            "name": "Toggle"
+          }
         ]
       }
     },
@@ -71,22 +83,37 @@
         "min": 0,
         "max": 1,
         "discreteValues": [
-          { "value": 0, "name": "Off" },
-          { "value": 1, "name": "Hold" }
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "Hold"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 17,
-      "name": "Variation Select",
+      "name": "Variation Sel",
       "additionalInfo": "0=A, 1=B, 2=C",
       "valueRange": {
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "A" },
-          { "value": 1, "name": "B" },
-          { "value": 2, "name": "C" }
+          {
+            "value": 0,
+            "name": "A"
+          },
+          {
+            "value": 1,
+            "name": "B"
+          },
+          {
+            "value": 2,
+            "name": "C"
+          }
         ]
       }
     },
@@ -98,10 +125,22 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          { "value": 0, "name": "Tape Echo 201" },
-          { "value": 1, "name": "Tape Echo 301" },
-          { "value": 2, "name": "Spring 67" },
-          { "value": 3, "name": "Plate 140" }
+          {
+            "value": 0,
+            "name": "Tape Echo 201"
+          },
+          {
+            "value": 1,
+            "name": "Tape Echo 301"
+          },
+          {
+            "value": 2,
+            "name": "Spring 67"
+          },
+          {
+            "value": 3,
+            "name": "Plate 140"
+          }
         ]
       }
     },
@@ -113,26 +152,44 @@
         "min": 0,
         "max": 2,
         "discreteValues": [
-          { "value": 0, "name": "Bypass" },
-          { "value": 1, "name": "Unbypass Left FS" },
-          { "value": 2, "name": "Unbypass Right FS" }
+          {
+            "value": 0,
+            "name": "Bypass"
+          },
+          {
+            "value": 1,
+            "name": "Unbypass Left FS"
+          },
+          {
+            "value": 2,
+            "name": "Unbypass Right FS"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 22,
       "name": "Mix",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 23,
       "name": "Delay",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 24,
       "name": "Feedback",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 25,
@@ -142,29 +199,56 @@
         "min": 0,
         "max": 5,
         "discreteValues": [
-          { "value": 0, "name": "1/4" },
-          { "value": 1, "name": "Dotted 1/8" },
-          { "value": 2, "name": "1/8" },
-          { "value": 3, "name": "1/8 Triplet" },
-          { "value": 4, "name": "Dual 1/4 + Dotted 1/8" },
-          { "value": 5, "name": "Dual 1/4 + 1/8" }
+          {
+            "value": 0,
+            "name": "1/4"
+          },
+          {
+            "value": 1,
+            "name": "Dotted 1/8"
+          },
+          {
+            "value": 2,
+            "name": "1/8"
+          },
+          {
+            "value": 3,
+            "name": "1/8 Triplet"
+          },
+          {
+            "value": 4,
+            "name": "Dual 1/4 + Dotted 1/8"
+          },
+          {
+            "value": 5,
+            "name": "Dual 1/4 + 1/8"
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 26,
       "name": "Color",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 27,
       "name": "Mod",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 28,
       "name": "Reverb",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     }
   ],
   "x_pc": {

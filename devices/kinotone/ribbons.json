@@ -18,7 +18,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 14,
-      "name": "High-Pass Filter",
+      "name": "HPF Filter",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -26,7 +26,7 @@
     },
     {
       "controlChangeNumber": 15,
-      "name": "Low-Pass Filter",
+      "name": "LPF Filter",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -42,7 +42,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Compression / Saturation",
+      "name": "Comp / Sat",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -74,7 +74,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Flutter Frequency",
+      "name": "Flutter Freq",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -82,7 +82,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Dropouts Frequency",
+      "name": "Dropouts Freq",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -122,7 +122,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Reverb Mix & Placement",
+      "name": "Rv Mix/Place",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -146,7 +146,7 @@
     },
     {
       "controlChangeNumber": 30,
-      "name": "Touch Mode Select",
+      "name": "Touch Mode Sel",
       "additionalInfo": "0-18: Magnetic Dance, 19-36: Tape Stop, 37-54: Broken Machine, 55-73: Repeater, 74-91: Crushed Cassette, 92-109: Disintegration Loop, 110-127: UnrealPlayer",
       "valueRange": {
         "min": 0,
@@ -185,7 +185,7 @@
     },
     {
       "controlChangeNumber": 31,
-      "name": "Ribbons Mode Select",
+      "name": "Ribbons Md Sel",
       "additionalInfo": "0-64: Tape Effects, 65-127: Looper",
       "valueRange": {
         "min": 0,
@@ -204,7 +204,7 @@
     },
     {
       "controlChangeNumber": 32,
-      "name": "Change Looper Track",
+      "name": "Chg Loop Trk",
       "additionalInfo": "0-31: Track 1, 32-63: Track 2, 64-95: Track 3, 96-127: Track 4",
       "valueRange": {
         "min": 0,
@@ -231,7 +231,7 @@
     },
     {
       "controlChangeNumber": 33,
-      "name": "Clear Current Looper Track",
+      "name": "Clr Loop Track",
       "additionalInfo": "0-64: False, 65-127: True",
       "valueRange": {
         "min": 0,
@@ -250,7 +250,7 @@
     },
     {
       "controlChangeNumber": 34,
-      "name": "Clear All Looper Tracks",
+      "name": "Clr All Loops",
       "additionalInfo": "0-64: False, 65-127: True",
       "valueRange": {
         "min": 0,
@@ -269,7 +269,7 @@
     },
     {
       "controlChangeNumber": 35,
-      "name": "Track 1 Direction",
+      "name": "Trk1 Direction",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -301,7 +301,7 @@
     },
     {
       "controlChangeNumber": 39,
-      "name": "Track 2 Direction",
+      "name": "Trk2 Direction",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -333,7 +333,7 @@
     },
     {
       "controlChangeNumber": 43,
-      "name": "Track 3 Direction",
+      "name": "Trk3 Direction",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -365,7 +365,7 @@
     },
     {
       "controlChangeNumber": 47,
-      "name": "Track 4 Direction",
+      "name": "Trk4 Direction",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -397,7 +397,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "Ignore MIDI Clock",
+      "name": "Ign MIDI Clk",
       "additionalInfo": "0: Ignore, 1-127: Listen",
       "valueRange": {
         "min": 0,
@@ -440,7 +440,7 @@
     },
     {
       "controlChangeNumber": 55,
-      "name": "UnrealPlayer Fidelity",
+      "name": "Unreal Fidel",
       "additionalInfo": "0-64: Lo-fi, 65-127: Hi-fi",
       "valueRange": {
         "min": 0,
@@ -467,7 +467,7 @@
     },
     {
       "controlChangeNumber": 57,
-      "name": "Filter Resonance",
+      "name": "Filter Res",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -483,7 +483,7 @@
     },
     {
       "controlChangeNumber": 59,
-      "name": "Switch between Compression or Saturation",
+      "name": "Comp/Sat Sw",
       "additionalInfo": "0-64: Compression, 65-127: Saturation",
       "valueRange": {
         "min": 0,
@@ -502,7 +502,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "Clear Touch Mode Loops",
+      "name": "Clr Touch Loop",
       "additionalInfo": "0-64: False, 65-127: True",
       "valueRange": {
         "min": 0,
@@ -521,7 +521,7 @@
     },
     {
       "controlChangeNumber": 80,
-      "name": "Touch Footswitch",
+      "name": "Touch Stomp",
       "additionalInfo": "0-64: Off, 65-127: On",
       "valueRange": {
         "min": 0,
@@ -540,7 +540,7 @@
     },
     {
       "controlChangeNumber": 81,
-      "name": "Bypass Footswitch",
+      "name": "Byp Footswitch",
       "additionalInfo": "0-64: Off, 65-127: On",
       "valueRange": {
         "min": 0,

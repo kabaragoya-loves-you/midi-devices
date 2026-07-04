@@ -18,21 +18,34 @@
     {
       "controlChangeNumber": 7,
       "name": "Output Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 11,
       "name": "Expression",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 20,
-      "name": "Track 1 Rec/Play/Dub",
+      "name": "Trk1 Rec/Play",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -40,21 +53,35 @@
       "controlChangeNumber": 21,
       "name": "Track 1 Stop",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 22,
-      "name": "Track 2 Rec/Play/Dub",
+      "name": "Trk2 Rec/Play",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -62,21 +89,35 @@
       "controlChangeNumber": 23,
       "name": "Track 2 Stop",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 24,
-      "name": "Track 3 Rec/Play/Dub",
+      "name": "Trk3 Rec/Play",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -84,21 +125,35 @@
       "controlChangeNumber": 25,
       "name": "Track 3 Stop",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 26,
-      "name": "Track 4 Rec/Play/Dub",
+      "name": "Trk4 Rec/Play",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -106,21 +161,35 @@
       "controlChangeNumber": 27,
       "name": "Track 4 Stop",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 28,
-      "name": "Track 5 Rec/Play/Dub",
+      "name": "Trk5 Rec/Play",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -128,10 +197,17 @@
       "controlChangeNumber": 29,
       "name": "Track 5 Stop",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -139,10 +215,17 @@
       "controlChangeNumber": 30,
       "name": "All Start",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -150,10 +233,17 @@
       "controlChangeNumber": 31,
       "name": "All Stop",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -161,43 +251,71 @@
       "controlChangeNumber": 32,
       "name": "All Rec/Play",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 33,
-      "name": "Stop All + Clear",
+      "name": "Stop+Clear All",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 34,
-      "name": "Memory Increment",
+      "name": "Memory Inc",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 35,
-      "name": "Memory Decrement",
+      "name": "Memory Dec",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -205,37 +323,61 @@
       "controlChangeNumber": 36,
       "name": "Tap Tempo",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 37,
-      "name": "Tempo Half/Double",
+      "name": "Tempo 1/2x/2x",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Half", "value": 0 },
-          { "name": "Double", "value": 127 }
+          {
+            "name": "Half",
+            "value": 0
+          },
+          {
+            "name": "Double",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 38,
-      "name": "Measure Length Adjust",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Meas Len Adj",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 39,
-      "name": "Loop Sync On/Off",
+      "name": "Loop Sync",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -243,32 +385,53 @@
       "controlChangeNumber": 40,
       "name": "Undo/Redo",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 41,
-      "name": "Clear Selected Track",
+      "name": "Clr Sel Trk",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 42,
-      "name": "Clear All Tracks",
+      "name": "Clr All Trks",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -276,53 +439,87 @@
       "controlChangeNumber": 43,
       "name": "Loop FX On/Off",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 44,
-      "name": "Input FX On/Off",
+      "name": "Input FX",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 45,
-      "name": "Track FX On/Off",
+      "name": "Track FX",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 46,
-      "name": "Loop FX Type Select",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Loop FX Type",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 47,
-      "name": "Input FX Type Select",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "In FX Type Sel",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 48,
-      "name": "Reverse Playback",
+      "name": "Rev Play",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -330,10 +527,17 @@
       "controlChangeNumber": 49,
       "name": "Fade Out",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -341,104 +545,169 @@
       "controlChangeNumber": 50,
       "name": "Rhythm On/Off",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 51,
-      "name": "Rhythm Start/Stop",
+      "name": "Rhy Strt/Stop",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 52,
-      "name": "Rhythm Accent On/Off",
+      "name": "Rhythm Accent",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 53,
-      "name": "Rhythm Variation",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Rhythm Var",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 54,
-      "name": "Rhythm Kit Select",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Rhythm Kit Sel",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 55,
-      "name": "Rhythm Pattern Select",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Rhythm Pat Sel",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 56,
       "name": "Rhythm Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 57,
-      "name": "Rhythm Tempo Fine Adjust",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Rhy Fine Adj",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 58,
-      "name": "Rhythm Reverb Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Rhythm Rv Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 59,
-      "name": "Rhythm Fill Trigger",
+      "name": "Rhythm Fill Tr",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 60,
       "name": "Input Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 61,
-      "name": "Mic Input Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Mic Input Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 62,
-      "name": "Instrument Input Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Inst Input Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 63,
       "name": "Rhythm Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 64,
-      "name": "Track 6 Rec/Play/Dub",
+      "name": "Trk6 Rec/Play",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -446,10 +715,17 @@
       "controlChangeNumber": 65,
       "name": "Track 6 Stop",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
@@ -457,10 +733,17 @@
       "controlChangeNumber": 66,
       "name": "Track 1 Mute",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -468,10 +751,17 @@
       "controlChangeNumber": 67,
       "name": "Track 2 Mute",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -479,10 +769,17 @@
       "controlChangeNumber": 68,
       "name": "Track 3 Mute",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -490,10 +787,17 @@
       "controlChangeNumber": 69,
       "name": "Track 4 Mute",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -501,10 +805,17 @@
       "controlChangeNumber": 70,
       "name": "Track 5 Mute",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
@@ -512,154 +823,249 @@
       "controlChangeNumber": 71,
       "name": "Track 6 Mute",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Off", "value": 0 },
-          { "name": "On", "value": 127 }
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 72,
       "name": "Track 1 Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 73,
       "name": "Track 2 Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 74,
       "name": "Track 3 Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 75,
       "name": "Track 4 Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 76,
       "name": "Track 5 Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 77,
       "name": "Track 6 Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 78,
-      "name": "All Tracks Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "All Tracks Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 79,
       "name": "Track Pan",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 80,
       "name": "Output Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 81,
-      "name": "Loop Output Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Loop Out Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 82,
-      "name": "Dry Output Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Dry Output Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 83,
       "name": "Phones Level",
-      "valueRange": { "min": 0, "max": 127 }
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 84,
-      "name": "Loop FX Parameter 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Loop FX P1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 85,
-      "name": "Loop FX Parameter 2",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Loop FX P2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 86,
-      "name": "Loop FX Parameter 3",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Loop FX P3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 87,
-      "name": "Input FX Parameter 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "In FX Param 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 88,
-      "name": "Input FX Parameter 2",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "In FX Param 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 89,
-      "name": "Input FX Parameter 3",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "In FX Param 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 90,
-      "name": "Track FX Parameter 1",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Trk FX Param 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 91,
-      "name": "Track FX Parameter 2",
-      "valueRange": { "min": 0, "max": 127 }
+      "name": "Trk FX Param 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
     },
     {
       "controlChangeNumber": 92,
-      "name": "Assign 1 Trigger",
+      "name": "Assign 1 Trig",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 93,
-      "name": "Assign 2 Trigger",
+      "name": "Assign 2 Trig",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 94,
-      "name": "Assign 3 Trigger",
+      "name": "Assign 3 Trig",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     },
     {
       "controlChangeNumber": 95,
-      "name": "Assign 4 Trigger",
+      "name": "Assign 4 Trig",
       "valueRange": {
-        "min": 0, "max": 127,
+        "min": 0,
+        "max": 127,
         "discreteValues": [
-          { "name": "Release", "value": 0 },
-          { "name": "Press", "value": 127 }
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
         ]
       }
     }

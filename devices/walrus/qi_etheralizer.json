@@ -80,7 +80,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Chorus Mix/Level",
+      "name": "Chorus Mix/Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -126,7 +126,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Delay Mix/Level",
+      "name": "Delay Mix/Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -168,7 +168,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Grain Mix/Level",
+      "name": "Grain Mix/Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -244,7 +244,7 @@
     },
     {
       "controlChangeNumber": 30,
-      "name": "Delay Oscillation",
+      "name": "Delay Osc",
       "valueRange": {
         "min": 0,
         "max": 1,

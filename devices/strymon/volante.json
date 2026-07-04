@@ -126,7 +126,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Head 1 Playback Off/On",
+      "name": "Head 1 Play",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -144,7 +144,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Head 2 Playback Off/On",
+      "name": "Head 2 Play",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -162,7 +162,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Head 3 Playback Off/On",
+      "name": "Head 3 Play",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -180,7 +180,7 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "Head 4 Playback Off/On",
+      "name": "Head 4 Play",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -262,7 +262,7 @@
     },
     {
       "controlChangeNumber": 34,
-      "name": "Head 1 Feedback Off/On",
+      "name": "Head 1 Fdbk",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -280,7 +280,7 @@
     },
     {
       "controlChangeNumber": 35,
-      "name": "Head 2 Feedback Off/On",
+      "name": "Head 2 Fdbk",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -298,7 +298,7 @@
     },
     {
       "controlChangeNumber": 36,
-      "name": "Head 3 Feedback Off/On",
+      "name": "Head 3 Fdbk",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -316,7 +316,7 @@
     },
     {
       "controlChangeNumber": 37,
-      "name": "Head 4 Feedback Off/On",
+      "name": "Head 4 Fdbk",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -334,7 +334,7 @@
     },
     {
       "controlChangeNumber": 38,
-      "name": "Pause Ramp Speed",
+      "name": "Pause Ramp Sp",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -376,7 +376,7 @@
     },
     {
       "controlChangeNumber": 42,
-      "name": "Pause (No Ramp)",
+      "name": "Pause",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -430,7 +430,7 @@
     },
     {
       "controlChangeNumber": 45,
-      "name": "Infinite Hold (w/ Oscillation)",
+      "name": "Inf Hold w Osc",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -448,7 +448,7 @@
     },
     {
       "controlChangeNumber": 46,
-      "name": "Infinite Hold (w/o Oscillation)",
+      "name": "Inf Hold w/o",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -466,7 +466,7 @@
     },
     {
       "controlChangeNumber": 47,
-      "name": "SOS Repeats Level",
+      "name": "SOS Repeat Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -482,7 +482,7 @@
     },
     {
       "controlChangeNumber": 49,
-      "name": "SOS Record/Splice/Clear",
+      "name": "SOS Rec/Spl/C",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -496,7 +496,7 @@
     },
     {
       "controlChangeNumber": 50,
-      "name": "Exit SOS Looper",
+      "name": "Exit SOS Loop",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -510,7 +510,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression Off/On",
+      "name": "MIDI Expr",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -528,7 +528,7 @@
     },
     {
       "controlChangeNumber": 63,
-      "name": "MIDI Clock Off/On",
+      "name": "MIDI Clk",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -600,7 +600,7 @@
     },
     {
       "controlChangeNumber": 81,
-      "name": "Footswitch Favorite",
+      "name": "Stomp Favorite",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -704,7 +704,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

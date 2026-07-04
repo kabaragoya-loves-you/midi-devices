@@ -97,7 +97,7 @@
     },
     {
       "controlChangeNumber": 14,
-      "name": "Tap Subdivision",
+      "name": "Tap Subdiv",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -105,7 +105,7 @@
     },
     {
       "controlChangeNumber": 15,
-      "name": "Tremolo Boost/Cut",
+      "name": "Trem Bst/Cut",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -177,7 +177,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Reverb Pre-Delay",
+      "name": "Rv PreDly",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -185,7 +185,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Reverb Boost/Cut",
+      "name": "Rv Boost/Cut",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -211,7 +211,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "MIDI Clock Division",
+      "name": "MIDI Clock Div",
       "valueRange": {
         "min": 0,
         "max": 6,
@@ -303,7 +303,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression",
+      "name": "MIDI Expr",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -347,7 +347,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

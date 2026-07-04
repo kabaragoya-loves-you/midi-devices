@@ -24,7 +24,7 @@
     },
     {
       "controlChangeNumber": 11,
-      "name": "Compression Type",
+      "name": "Comp Type",
       "valueRange": {
         "min": 1,
         "max": 2
@@ -32,7 +32,7 @@
     },
     {
       "controlChangeNumber": 12,
-      "name": "Compression Level",
+      "name": "Comp Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -40,7 +40,7 @@
     },
     {
       "controlChangeNumber": 13,
-      "name": "Compression Off/On",
+      "name": "Comp On/Off",
       "valueRange": {
         "min": 0,
         "max": 127

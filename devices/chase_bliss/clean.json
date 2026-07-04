@@ -167,7 +167,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -281,7 +281,7 @@
     },
     {
       "controlChangeNumber": 61,
-      "name": "Left Bank - Dynamics DIP",
+      "name": "L: Dyn DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -300,7 +300,7 @@
     },
     {
       "controlChangeNumber": 62,
-      "name": "Left Bank - Attack DIP",
+      "name": "L: Attack DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -319,7 +319,7 @@
     },
     {
       "controlChangeNumber": 63,
-      "name": "Left Bank - EQ DIP",
+      "name": "L: EQ DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -338,7 +338,7 @@
     },
     {
       "controlChangeNumber": 64,
-      "name": "Left Bank - Dry DIP",
+      "name": "L: Dry DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -357,7 +357,7 @@
     },
     {
       "controlChangeNumber": 65,
-      "name": "Left Bank - Wet DIP",
+      "name": "L: Wet DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -376,7 +376,7 @@
     },
     {
       "controlChangeNumber": 66,
-      "name": "Left Bank - Bounce DIP",
+      "name": "L: Bounce DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -395,7 +395,7 @@
     },
     {
       "controlChangeNumber": 67,
-      "name": "Left Bank - Sweep DIP",
+      "name": "L: Sweep DIP",
       "additionalInfo": "B = 0 (Bottom), T = 1 or higher (Top)",
       "valueRange": {
         "min": 0,
@@ -414,7 +414,7 @@
     },
     {
       "controlChangeNumber": 68,
-      "name": "Left Bank - Polarity DIP",
+      "name": "L: Pol DIP",
       "additionalInfo": "F = 0 (Forward), R = 1 or higher (Reverse)",
       "valueRange": {
         "min": 0,
@@ -433,7 +433,7 @@
     },
     {
       "controlChangeNumber": 71,
-      "name": "Right Bank - MISO DIP",
+      "name": "R: MISO DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -452,7 +452,7 @@
     },
     {
       "controlChangeNumber": 72,
-      "name": "Right Bank - Spread DIP",
+      "name": "R: Spread DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -471,7 +471,7 @@
     },
     {
       "controlChangeNumber": 73,
-      "name": "Right Bank - Latch DIP",
+      "name": "R: Latch DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -490,7 +490,7 @@
     },
     {
       "controlChangeNumber": 74,
-      "name": "Right Bank - Sidechain DIP",
+      "name": "R: SideCh DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -509,7 +509,7 @@
     },
     {
       "controlChangeNumber": 75,
-      "name": "Right Bank - Noise Gate DIP",
+      "name": "R: Noise Gate",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -528,7 +528,7 @@
     },
     {
       "controlChangeNumber": 76,
-      "name": "Right Bank - Motion DIP",
+      "name": "R: Motion DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -547,7 +547,7 @@
     },
     {
       "controlChangeNumber": 77,
-      "name": "Right Bank - Swell Aux DIP",
+      "name": "R: Swell Aux D",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -566,7 +566,7 @@
     },
     {
       "controlChangeNumber": 78,
-      "name": "Right Bank - Dusty DIP",
+      "name": "R: Dusty DIP",
       "additionalInfo": "off = 0, on = 1 or higher",
       "valueRange": {
         "min": 0,

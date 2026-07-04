@@ -20,7 +20,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 3,
-      "name": "Compressor Threshold",
+      "name": "Comp Thresh",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -28,7 +28,7 @@
     },
     {
       "controlChangeNumber": 9,
-      "name": "Compressor Attack",
+      "name": "Comp Atk",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -36,7 +36,7 @@
     },
     {
       "controlChangeNumber": 14,
-      "name": "Compressor Release",
+      "name": "Comp Rel",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -108,7 +108,7 @@
     },
     {
       "controlChangeNumber": 89,
-      "name": "Reverb Diffusion",
+      "name": "Reverb Diff",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -116,7 +116,7 @@
     },
     {
       "controlChangeNumber": 90,
-      "name": "Reverb Dispersion",
+      "name": "Rv Disp",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -148,7 +148,7 @@
     },
     {
       "controlChangeNumber": 28,
-      "name": "Compressor Ratio",
+      "name": "Comp Ratio",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -248,7 +248,7 @@
     },
     {
       "controlChangeNumber": 107,
-      "name": "Compressor Mode",
+      "name": "Comp Mode",
       "valueRange": {
         "min": 0,
         "max": 1,

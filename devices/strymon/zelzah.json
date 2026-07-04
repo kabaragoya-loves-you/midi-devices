@@ -39,7 +39,7 @@
     },
     {
       "controlChangeNumber": 10,
-      "name": "Bypass/On 4-Stage",
+      "name": "Byp/On 4-Stage",
       "additionalInfo": "0=Bypass, 127=On",
       "valueRange": {
         "min": 0,
@@ -104,7 +104,7 @@
     },
     {
       "controlChangeNumber": 15,
-      "name": "Polarity 4-Stage",
+      "name": "Pol 4-Stage",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -122,7 +122,7 @@
     },
     {
       "controlChangeNumber": 16,
-      "name": "Stereo Spread 4-Stage",
+      "name": "St Sprd 4-St",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -130,7 +130,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Bypass/On 6-Stage",
+      "name": "Byp/On 6-Stage",
       "additionalInfo": "0=Bypass, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -149,7 +149,7 @@
     },
     {
       "controlChangeNumber": 18,
-      "name": "Resonance 6-Stage",
+      "name": "Res 6-Stage",
       "valueRange": {
         "min": 1,
         "max": 3,
@@ -195,7 +195,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Stereo Spread 6-Stage",
+      "name": "St Sprd 6-St",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -203,7 +203,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Series / Parallel / Split",
+      "name": "Ser/Par/Split",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -263,7 +263,7 @@
     },
     {
       "controlChangeNumber": 33,
-      "name": "Bypass/On A and B",
+      "name": "Byp/On A and B",
       "additionalInfo": "0=Bypass, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -282,7 +282,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression Off/On",
+      "name": "MIDI Expr",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -310,7 +310,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

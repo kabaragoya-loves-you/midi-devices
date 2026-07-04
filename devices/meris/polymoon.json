@@ -17,7 +17,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 4,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -147,7 +147,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "Early Modulations",
+      "name": "Early Mods",
       "additionalInfo": "Multi-range modulation table",
       "valueRange": {
         "min": 0,
@@ -222,7 +222,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Feedback Filter",
+      "name": "Fdbk Filter",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -238,7 +238,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Late Modulation",
+      "name": "Late Mod",
       "additionalInfo": "Same structure as Early Modulations table",
       "valueRange": {
         "min": 0,
@@ -313,7 +313,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "Dynamic Flanger Mode",
+      "name": "Dyn FL Mode",
       "additionalInfo": "0-32 = Envelope Down, 33-88 = Envelope Up, 89-127 = LFO",
       "valueRange": {
         "min": 0,
@@ -336,7 +336,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Dynamic Flanger Speed",
+      "name": "Dyn FL Speed",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -386,7 +386,7 @@
     },
     {
       "controlChangeNumber": 30,
-      "name": "Flanger Feedback",
+      "name": "FL Fdbk",
       "additionalInfo": "0-63 = Feedback Off, 64-127 = Feedback On",
       "valueRange": {
         "min": 0,

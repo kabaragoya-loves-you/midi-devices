@@ -126,7 +126,7 @@
     },
     {
       "controlChangeNumber": 15,
-      "name": "Filter Resonance",
+      "name": "Filter Res",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -142,7 +142,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Looper Playback Speed",
+      "name": "Loop Play Spd",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -150,7 +150,7 @@
     },
     {
       "controlChangeNumber": 18,
-      "name": "Looper Playback (Stepped)",
+      "name": "Looper Play",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -200,7 +200,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Looper Fade Time",
+      "name": "Loop Fade Time",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -226,7 +226,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Looper Playback Direction",
+      "name": "Loop Play Dir",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -262,7 +262,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Looper Only Mode",
+      "name": "Loop Only Mode",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -280,7 +280,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "Looper Burst Mode",
+      "name": "Loop Burst Md",
       "valueRange": {
         "min": 0,
         "max": 127,
@@ -298,7 +298,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Looper Quantized Mode",
+      "name": "Loop Quant Md",
       "valueRange": {
         "min": 0,
         "max": 127,

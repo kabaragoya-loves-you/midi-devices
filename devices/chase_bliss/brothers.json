@@ -64,7 +64,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Channel A Effect Select",
+      "name": "Ch A FX Sel",
       "additionalInfo": "1 = Boost, 2 = Drive, 3 = Fuzz",
       "valueRange": {
         "min": 1,
@@ -87,7 +87,7 @@
     },
     {
       "controlChangeNumber": 22,
-      "name": "PARA / A >> B / B >> A Select",
+      "name": "Para A>>B Sel",
       "additionalInfo": "1 = PARA, 2 = A >> B, 3 = B >> A",
       "valueRange": {
         "min": 1,
@@ -110,7 +110,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Channel B Effect Select",
+      "name": "Ch B FX Sel",
       "additionalInfo": "1 = Fuzz, 2 = Drive, 3 = Boost",
       "valueRange": {
         "min": 1,
@@ -142,7 +142,7 @@
     },
     {
       "controlChangeNumber": 102,
-      "name": "Bypass Switch (Last Saved Channels)",
+      "name": "Bypass Last Ch",
       "additionalInfo": "0 = bypass both channels, 127 = engage last saved channels",
       "valueRange": {
         "min": 0,
@@ -161,7 +161,7 @@
     },
     {
       "controlChangeNumber": 103,
-      "name": "Bypass Switch (Explicit Channel Routing)",
+      "name": "Bypass Ch Rt",
       "additionalInfo": "0 = bypass both; 45 = B only; 85 = A only; 127 = A+B",
       "valueRange": {
         "min": 0,

@@ -139,7 +139,7 @@
     },
     {
       "controlChangeNumber": 102,
-      "name": "Bypass / Engage",
+      "name": "Byp / Engage",
       "additionalInfo": "Pedal off = 0, pedal on = 1 or higher",
       "valueRange": {
         "min": 0,
@@ -205,7 +205,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "Clear (Both Hold)",
+      "name": "Clear",
       "additionalInfo": "Send any value to clear",
       "valueRange": {
         "min": 0,
@@ -214,7 +214,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "EOM (Expression Over MIDI)",
+      "name": "EOM",
       "additionalInfo": "0 = heel, 127 = toe (expression target set by dips)",
       "valueRange": {
         "min": 0,
@@ -223,7 +223,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "MIDI Clock Ignore",
+      "name": "Clk Ignore",
       "additionalInfo": "Ignore clock = 0, listen = 1 or higher",
       "valueRange": {
         "min": 0,

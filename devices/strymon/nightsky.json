@@ -18,7 +18,7 @@
   "controlChangeCommands": [
     {
       "controlChangeNumber": 11,
-      "name": "Mix - Reverb Level",
+      "name": "Mix: Rv Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -26,7 +26,7 @@
     },
     {
       "controlChangeNumber": 12,
-      "name": "Mix - Dry Level",
+      "name": "Mix: Dry Lvl",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -106,7 +106,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Decay - Pre-Delay",
+      "name": "Dec: Pre-Delay",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -122,7 +122,7 @@
     },
     {
       "controlChangeNumber": 19,
-      "name": "Decay - Texture",
+      "name": "Dec: Texture",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -144,7 +144,7 @@
     },
     {
       "controlChangeNumber": 20,
-      "name": "Decay - Size/Pitch",
+      "name": "Dec: Size/Pitc",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -152,7 +152,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Decay - Quantize",
+      "name": "Dec: Quantize",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -182,7 +182,7 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Tone - High Cut",
+      "name": "Tone: High Cut",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -208,7 +208,7 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Tone - Lowpass Q",
+      "name": "Tone: Lowpass",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -216,7 +216,7 @@
     },
     {
       "controlChangeNumber": 26,
-      "name": "Voice - Interval",
+      "name": "Voice: Interva",
       "additionalInfo": "Interval steps (0-25).",
       "valueRange": {
         "min": 0,
@@ -331,7 +331,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Voice - Scale Select",
+      "name": "Voice: Scale S",
       "valueRange": {
         "min": 0,
         "max": 7,
@@ -373,7 +373,7 @@
     },
     {
       "controlChangeNumber": 28,
-      "name": "Voice - Shimmer",
+      "name": "Voice: Shim",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -391,7 +391,7 @@
     },
     {
       "controlChangeNumber": 29,
-      "name": "Voice - Shimmer Level",
+      "name": "Voice: Shim Lv",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -399,7 +399,7 @@
     },
     {
       "controlChangeNumber": 30,
-      "name": "Voice - Glimmer",
+      "name": "Voice: Glimmer",
       "valueRange": {
         "min": 0,
         "max": 2,
@@ -421,7 +421,7 @@
     },
     {
       "controlChangeNumber": 31,
-      "name": "Voice - Glimmer Gain",
+      "name": "Voice: Glimmer",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -451,7 +451,7 @@
     },
     {
       "controlChangeNumber": 34,
-      "name": "Voice - Drive Level",
+      "name": "Voice: Drive L",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -524,7 +524,7 @@
     },
     {
       "controlChangeNumber": 42,
-      "name": "Sequencer Step 1 Off/On",
+      "name": "Seq St 1",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -533,7 +533,7 @@
     },
     {
       "controlChangeNumber": 43,
-      "name": "Sequencer Step 2 Off/On",
+      "name": "Seq St 2",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -542,7 +542,7 @@
     },
     {
       "controlChangeNumber": 44,
-      "name": "Sequencer Step 3 Off/On",
+      "name": "Seq St 3",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -551,7 +551,7 @@
     },
     {
       "controlChangeNumber": 45,
-      "name": "Sequencer Step 4 Off/On",
+      "name": "Seq St 4",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -560,7 +560,7 @@
     },
     {
       "controlChangeNumber": 46,
-      "name": "Sequencer Step 5 Off/On",
+      "name": "Seq St 5",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -569,7 +569,7 @@
     },
     {
       "controlChangeNumber": 47,
-      "name": "Sequencer Step 6 Off/On",
+      "name": "Seq St 6",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -578,7 +578,7 @@
     },
     {
       "controlChangeNumber": 48,
-      "name": "Sequencer Step 7 Off/On",
+      "name": "Seq St 7",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -587,7 +587,7 @@
     },
     {
       "controlChangeNumber": 49,
-      "name": "Sequencer Step 8 Off/On",
+      "name": "Seq St 8",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -596,7 +596,7 @@
     },
     {
       "controlChangeNumber": 50,
-      "name": "Sequencer Step 1 Size",
+      "name": "Seq St 1 Size",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -604,7 +604,7 @@
     },
     {
       "controlChangeNumber": 51,
-      "name": "Sequencer Step 2 Size",
+      "name": "Seq St 2 Size",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -612,7 +612,7 @@
     },
     {
       "controlChangeNumber": 52,
-      "name": "Sequencer Step 3 Size",
+      "name": "Seq St 3 Size",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -620,7 +620,7 @@
     },
     {
       "controlChangeNumber": 53,
-      "name": "Sequencer Step 4 Size",
+      "name": "Seq St 4 Size",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -628,7 +628,7 @@
     },
     {
       "controlChangeNumber": 54,
-      "name": "Sequencer Step 5 Size",
+      "name": "Seq St 5 Size",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -636,7 +636,7 @@
     },
     {
       "controlChangeNumber": 55,
-      "name": "Sequencer Step 6 Size",
+      "name": "Seq St 6 Size",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -644,7 +644,7 @@
     },
     {
       "controlChangeNumber": 56,
-      "name": "Sequencer Step 7 Size",
+      "name": "Seq St 7 Size",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -652,7 +652,7 @@
     },
     {
       "controlChangeNumber": 57,
-      "name": "Sequencer Step 8 Size",
+      "name": "Seq St 8 Size",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -668,7 +668,7 @@
     },
     {
       "controlChangeNumber": 60,
-      "name": "MIDI Expression Off/On",
+      "name": "MIDI Expr",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -687,7 +687,7 @@
     },
     {
       "controlChangeNumber": 63,
-      "name": "MIDI Clock Off/On",
+      "name": "MIDI Clk",
       "additionalInfo": "0=Off, 1-127=On",
       "valueRange": {
         "min": 0,
@@ -725,7 +725,7 @@
     },
     {
       "controlChangeNumber": 81,
-      "name": "Footswitch Favorite",
+      "name": "Stomp Favorite",
       "additionalInfo": "0=Release, 1-127=Press",
       "valueRange": {
         "min": 0,
@@ -744,7 +744,7 @@
     },
     {
       "controlChangeNumber": 82,
-      "name": "Footswitch Infinite",
+      "name": "Footswitch Inf",
       "additionalInfo": "0=Release, 1-127=Press",
       "valueRange": {
         "min": 0,
@@ -791,7 +791,7 @@
     },
     {
       "controlChangeNumber": 100,
-      "name": "Expression Pedal",
+      "name": "Expr Pedal",
       "valueRange": {
         "min": 0,
         "max": 127

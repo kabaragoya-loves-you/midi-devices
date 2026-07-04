@@ -88,7 +88,7 @@
     },
     {
       "controlChangeNumber": 16,
-      "name": "Attenuverter CV In 1",
+      "name": "Atten CV In 1",
       "additionalInfo": "[0-63] = [-1…0], [64-127] = [0…1]",
       "valueRange": {
         "min": 0,
@@ -107,7 +107,7 @@
     },
     {
       "controlChangeNumber": 17,
-      "name": "Attenuverter CV In 2",
+      "name": "Atten CV In 2",
       "additionalInfo": "[0-63] = [-1…0], [64-127] = [0…1]",
       "valueRange": {
         "min": 0,
@@ -126,7 +126,7 @@
     },
     {
       "controlChangeNumber": 18,
-      "name": "Attenuverter CV In 3",
+      "name": "Atten CV In 3",
       "additionalInfo": "[0-63] = [-1…0], [64-127] = [0…1]",
       "valueRange": {
         "min": 0,
@@ -145,7 +145,7 @@
     },
     {
       "controlChangeNumber": 19,
-      "name": "Attenuverter CV In 4",
+      "name": "Atten CV In 4",
       "additionalInfo": "[0-63] = [-1…0], [64-127] = [0…1]",
       "valueRange": {
         "min": 0,
@@ -187,7 +187,7 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Pitchtrack Mode",
+      "name": "Pitchtrack Md",
       "additionalInfo": "[0-42] = NOTE, [43-84] = TONE, [85-127] = V/OCT",
       "valueRange": {
         "min": 0,

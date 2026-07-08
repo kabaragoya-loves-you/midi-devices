@@ -1,16 +1,37 @@
 {
   "schema": 1,
-  "generatedAt": "2026-06-29T14:32:42Z",
-  "count": 226,
+  "generatedAt": "2026-07-08T03:36:43Z",
+  "count": 227,
   "devices": [
+    {
+      "slug": "ac_noises.continua@0",
+      "vendor": "AC Noises",
+      "product": "Continua",
+      "version": "0",
+      "path": "devices/ac_noises/continua.json",
+      "sha256": "f59fc0ab5e9ad8a7db0bf99cc03fed8868b3f12473a8aa79065c4b0d6862151e",
+      "size": 3889,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 18,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 2,
+        "bankSelectMode": "none"
+      }
+    },
     {
       "slug": "aerospace_audio.atmosphere_v2@0",
       "vendor": "Aerospace Audio",
       "product": "Atmosphere v2",
       "version": "0",
       "path": "devices/aerospace_audio/atmosphere_v2.json",
-      "sha256": "32119ad8180c61a06f363ad133e3bca861d0d40005752c430b6902579971c37a",
-      "size": 7015,
+      "sha256": "1f3bc9814799f7b0469e5ab2010d2afb392ebc83e16429847159c46ba2dd3829",
+      "size": 6993,
       "receives": [],
       "transmits": [],
       "ccCount": 9,
@@ -27,8 +48,8 @@
       "product": "Atmosphere v3",
       "version": "0",
       "path": "devices/aerospace_audio/atmosphere_v3.json",
-      "sha256": "e52fe0b61720836d3b94511aa0b0cfaa8d49c0c182fdf6eff6e3ce68362467f5",
-      "size": 6091,
+      "sha256": "6ec8157054f1cf48ecd7afeca50e24b4eb9e563e972fea320d76e6392ca457b6",
+      "size": 6077,
       "receives": [],
       "transmits": [],
       "ccCount": 11,
@@ -45,8 +66,8 @@
       "product": "Colour Theory",
       "version": "0",
       "path": "devices/alexander_pedals/colour_theory.json",
-      "sha256": "7a9b86996f6be08c16cef6b3240ba860130247b66710073c1ee873b2003097ec",
-      "size": 5899,
+      "sha256": "859127ceb843993c355f046f8cc2a0fd2bcb384ed0703f594c3443f8f2a80392",
+      "size": 8656,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -66,8 +87,8 @@
       "product": "Defender Neo",
       "version": "0",
       "path": "devices/alexander_pedals/defender_neo.json",
-      "sha256": "6b6a72a37810db82a4da3d4cb9149dd1150206f33682fc0d9c1e8618312ac925",
-      "size": 2483,
+      "sha256": "44fa346d70acbd5be3d59113ca1b2e43e88c38ed1765aae90979b6f53e63d2eb",
+      "size": 3369,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 11,
@@ -84,8 +105,8 @@
       "product": "Dynaflanger 213",
       "version": "0",
       "path": "devices/alexander_pedals/dynaflanger_213.json",
-      "sha256": "d5e64f7ab9c45b42377bfc36bbca68189eb229590fe6723ae2cae0c1661fd351",
-      "size": 4943,
+      "sha256": "515172563c14727b29592a2a00906600dae7b94af4bb42be43474eb8f638412b",
+      "size": 11243,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -105,8 +126,8 @@
       "product": "F.13N",
       "version": "0",
       "path": "devices/alexander_pedals/f13_n.json",
-      "sha256": "8ca61cb25ca10a48d19cb3a796017b133bb882e8e3b38b392a0116fe01d5f410",
-      "size": 2471,
+      "sha256": "73d35519d56104e120c3e5206ddbd4134a952f1a180db1bc12d2877d058d1775",
+      "size": 2889,
       "receives": [
         "PROGRAM_CHANGE",
         "NOTE_NUMBER"
@@ -126,8 +147,8 @@
       "product": "Fever Pitch",
       "version": "0",
       "path": "devices/alexander_pedals/fever_pitch.json",
-      "sha256": "45d13efdbe2a5d878aa4e29823f26b79cc7cc8981df6d2f2bb7acf7f6dab72a1",
-      "size": 4950,
+      "sha256": "2a457d727a233c0607e9825f27fe74cdcb54c0c258accc265e6624934c63bec1",
+      "size": 7303,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -168,8 +189,8 @@
       "product": "History Lesson v3",
       "version": "0",
       "path": "devices/alexander_pedals/history_lesson_v3.json",
-      "sha256": "81140895d8c33687d0fc0dc28fc570b99b40a5962564558bbed63fc99134a94d",
-      "size": 3054,
+      "sha256": "b9119d811b63d8413b245d164398c28f74f7dec0ffe469d9eb98c4c499b8abd6",
+      "size": 3708,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -189,8 +210,8 @@
       "product": "Luminous",
       "version": "0",
       "path": "devices/alexander_pedals/luminous.json",
-      "sha256": "33370063290064761b48b8ec607dad17bfc85701b5e3d36d116002d40742f265",
-      "size": 4923,
+      "sha256": "98bad7e36a06dd3c154250499b30196b92124b1dd1abcd5a515cbe565e645f93",
+      "size": 10599,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -210,8 +231,8 @@
       "product": "Marshmallow",
       "version": "0",
       "path": "devices/alexander_pedals/marshmallow.json",
-      "sha256": "b0e1773d38d6a61ca0e51b985ef4bb0b926826a8b4e7641e7c5d462ed3aaadc9",
-      "size": 3489,
+      "sha256": "15d91192a13b7989bdb3ccef652e4246840303da81b4b7190d2bf85c32d0458f",
+      "size": 4306,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 13,
@@ -228,8 +249,8 @@
       "product": "Neo-Matic",
       "version": "0",
       "path": "devices/alexander_pedals/neo-matic.json",
-      "sha256": "c5d6e7b1f64b6b0e9b08fdc0de7d4e36715a5ee8ef3e8ea5087ec1e3e82d0935",
-      "size": 2686,
+      "sha256": "11d24b6a4bfe967b20f346f24231a6eb5889369f338d103fd992cfbb15b5ba1c",
+      "size": 3357,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 12,
@@ -267,8 +288,8 @@
       "product": "Oblivion",
       "version": "0",
       "path": "devices/alexander_pedals/oblivion.json",
-      "sha256": "0ac6bcbbb3ed4769b7762df74f3c51496b97cda84b03c72a6e9f66f2090f8a02",
-      "size": 3441,
+      "sha256": "3b9fb8209b2b8b472aecc42cacb73a205dd53102a43cb78db033863f74d8a533",
+      "size": 4307,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 14,
@@ -285,8 +306,8 @@
       "product": "Quadrant Neo",
       "version": "0",
       "path": "devices/alexander_pedals/quadrant_neo.json",
-      "sha256": "e5eb39a9800091496cb54d5b8704f4286308a514b0d332b60e41b3e4fddbe58d",
-      "size": 2931,
+      "sha256": "317e5471e1d81c6aa19eade5ed530e2bd2fba6988c28adcfd32fd81f7d4f870f",
+      "size": 3634,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -306,8 +327,8 @@
       "product": "Radical Delay DX",
       "version": "0",
       "path": "devices/alexander_pedals/radical_delay_dx.json",
-      "sha256": "72279b4466e0ddcb3700d0d16997a1d05e7ffc387e6ce973d55aeed968264906",
-      "size": 3197,
+      "sha256": "44ff6473803175823966fad0d08d27d914c03021c1a40af65769c4972c25f410",
+      "size": 3884,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -327,8 +348,8 @@
       "product": "Rewind",
       "version": "0",
       "path": "devices/alexander_pedals/rewind.json",
-      "sha256": "08d4999ab60e874dd5fcb3302772c0a5ad41cfce3a4c06d4d0a196c6d109bbad",
-      "size": 4080,
+      "sha256": "9f57002fc1ba04384045288e64f565038f1b8029783681e585160565e8374d2f",
+      "size": 9869,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -348,8 +369,8 @@
       "product": "Sky 5000",
       "version": "0",
       "path": "devices/alexander_pedals/sky_5000.json",
-      "sha256": "002d479ca946b19cd468caaafe560b27d02131d974c7546a86830b85b9a7c3a3",
-      "size": 2907,
+      "sha256": "96b50c35c81f02a751255a1117a0c99e352efa76229f73eb9e9fefe0683d7fd8",
+      "size": 3693,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -369,8 +390,8 @@
       "product": "Space Force",
       "version": "0",
       "path": "devices/alexander_pedals/space_force.json",
-      "sha256": "cfc97a6fca1ad714819c4303638da6e814ba6d5f816de2650bd6dc922725372b",
-      "size": 3831,
+      "sha256": "241b631b3d971e8cd3998e907de8251bde3847a934302e74f3ba463667822c07",
+      "size": 7746,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -390,8 +411,8 @@
       "product": "Space Race Neo",
       "version": "0",
       "path": "devices/alexander_pedals/space_race_neo.json",
-      "sha256": "d86711e64ba6cb563d80985b6dd2051b164629ace200a78e08ffc90410c68959",
-      "size": 3095,
+      "sha256": "cec37dc008a137abdfa33b531a13774ce56c5e1893e975d018e1e25b6b74b486",
+      "size": 3749,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 12,
@@ -408,8 +429,8 @@
       "product": "Sugarcube",
       "version": "0",
       "path": "devices/alexander_pedals/sugarcube.json",
-      "sha256": "0e806472b648dbbde20edc01ee41f743df8d865e6ea28a35c7fbcb9ce0a485c0",
-      "size": 3103,
+      "sha256": "3d587560b4d02e0cc7e174606894c9b070d55c207dd9827131168172fdd4d263",
+      "size": 3739,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 12,
@@ -426,8 +447,8 @@
       "product": "Super Radical Delay",
       "version": "0",
       "path": "devices/alexander_pedals/super_radical_delay.json",
-      "sha256": "0f5689fcfadee0805af720d16b0bbf437350bac4423dbd338bfda59eb985043a",
-      "size": 3386,
+      "sha256": "46be609ca090246105290a29638d305018921105e01abd6205ddcfea911cf53e",
+      "size": 4397,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 14,
@@ -462,8 +483,8 @@
       "product": "Syntax Error",
       "version": "0",
       "path": "devices/alexander_pedals/syntax_error.json",
-      "sha256": "a0656c88cc967b1da4f9b1e17dada39221a8f3c4f221850c09981c10f3cd5d5c",
-      "size": 2905,
+      "sha256": "8a0e260d7dd1969c54650f5c3d0270624966f850835772dacfb6122c1b5f2222",
+      "size": 3782,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 13,
@@ -480,8 +501,8 @@
       "product": "Syntax Error 2",
       "version": "0",
       "path": "devices/alexander_pedals/syntax_error_2.json",
-      "sha256": "fd6f27f69bf6ce12a7f8f1c2cdab19030a02803834b9f0c9883758198936b649",
-      "size": 3784,
+      "sha256": "ffa698c03487f81ee0121370c1c8b123c97fb98cc23e5d97efd54779fef7978b",
+      "size": 4954,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 22,
@@ -498,8 +519,8 @@
       "product": "Wavelength",
       "version": "0",
       "path": "devices/alexander_pedals/wavelength.json",
-      "sha256": "329631d6f69765f888861bf8fd7e31d95cc17b88fe98744ed7152848c786c398",
-      "size": 3224,
+      "sha256": "50ba42277cf3a6db0c0f888493a639dcd7eb3af14881cc9cd1eb341784b07a50",
+      "size": 3912,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -519,8 +540,8 @@
       "product": "Kastle 2",
       "version": "0",
       "path": "devices/bastl_instruments/kastle_2.json",
-      "sha256": "abb148bbc792247841472ffe77615a75a1f96580033aa496e6b63150359fb38a",
-      "size": 2677,
+      "sha256": "073108f9356c46a3574294a5341dd436679814b8f93b9737a4e5dd7bc0332c14",
+      "size": 3191,
       "receives": [
         "CLOCK",
         "NOTE_NUMBER"
@@ -540,8 +561,8 @@
       "product": "Thyme+",
       "version": "0",
       "path": "devices/bastl_instruments/thyme+.json",
-      "sha256": "7ae5cef34f512e8aef743dbb09864063827203e7d02b980885eaab0b93fcb395",
-      "size": 13245,
+      "sha256": "f053136591d2e905e800b34578462da33c818e2abec663a9600c80d495046294",
+      "size": 15804,
       "receives": [
         "CLOCK",
         "NOTE_NUMBER"
@@ -561,8 +582,8 @@
       "product": "SeaBee",
       "version": "0",
       "path": "devices/beetronics/seabee.json",
-      "sha256": "999f4d6b16d72ef4f2d3a75ce9b2f68a8a7573612a5c4f119559ec05af8caf83",
-      "size": 6947,
+      "sha256": "1217d07e0a3b01471ec084a29822963ec0a234d08ac2ac116ccfe8695a1aaa65",
+      "size": 6879,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -582,8 +603,8 @@
       "product": "Art Van Delay",
       "version": "0",
       "path": "devices/bondi_effects/art_van_delay.json",
-      "sha256": "e77fabdb14f32fb047018e38b778ca003764b5b942b4e7837661f51ce15b97b5",
-      "size": 2439,
+      "sha256": "e479267ba6ac5172c66d8424e4625ca428f6fd6dea5ce4b0b2fab53276dc4872",
+      "size": 2433,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -603,8 +624,8 @@
       "product": "DD-200",
       "version": "0",
       "path": "devices/boss/dd-200.json",
-      "sha256": "a4275cb35242d2b53cb8d5401982784f8b57d235c7d0a3f6a250295f20ab95ee",
-      "size": 3014,
+      "sha256": "575dc7c5d440c8bb7bc9beb25fd1e6abc0a3a4476c7d80f2d9f7851f7af1256c",
+      "size": 3781,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -624,8 +645,8 @@
       "product": "DD-500",
       "version": "0",
       "path": "devices/boss/dd-500.json",
-      "sha256": "b9b70a16fe2bfe5a2ce6933f449cadc570d4afbb34835ebc8f8c9e6f553993a1",
-      "size": 3970,
+      "sha256": "85a96345fb8da860a0905d980c992784fb888a6327c5359fd926289263f4b3f6",
+      "size": 5089,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -645,8 +666,8 @@
       "product": "RC-500",
       "version": "0",
       "path": "devices/boss/rc-500.json",
-      "sha256": "3bba07a163fe48cb2d8269e4cf3980aa9d79dbdeb0c710e6155b1d28bad4d459",
-      "size": 14472,
+      "sha256": "217a097d6e717a98d9ccbf17c30a4ab3050f29ec863dd91c5f1c6a7ab578bd3c",
+      "size": 18705,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -666,8 +687,8 @@
       "product": "RC-600",
       "version": "0",
       "path": "devices/boss/rc-600.json",
-      "sha256": "ae954c947114844c9e9a3fa4847d2d2ef2927a044a4ab0f12f5cac5248cbd1b1",
-      "size": 16175,
+      "sha256": "0b72fa3dcaca3ea47189d008c395db9284312a0856b988ae24a98c13f8901b0d",
+      "size": 21028,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -705,8 +726,8 @@
       "product": "Big Time",
       "version": "0",
       "path": "devices/chase_bliss/big_time.json",
-      "sha256": "7d53dc1a2326f8bb50bf699560303f626fb4646e105b9d7e281edd9c4afcdd04",
-      "size": 13429,
+      "sha256": "3ec427b57314bbaa7b354dfed5ffb4f6360e5248a35d8ee99a821bb0879bdb56",
+      "size": 17008,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -728,8 +749,8 @@
       "product": "Billy Strings Wombtone",
       "version": "0",
       "path": "devices/chase_bliss/billy_strings_wombtone.json",
-      "sha256": "66fa4457c9d8dda73d178ed45481fc171c970e2cab75ed2c8fc96c8dfeba8980",
-      "size": 3573,
+      "sha256": "8344908339f95589d522597d178e863607ab655276d190860b15325e4ab03818",
+      "size": 3543,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -749,8 +770,8 @@
       "product": "Bliss Factory",
       "version": "0",
       "path": "devices/chase_bliss/bliss_factory.json",
-      "sha256": "f2176a25093262a42aa8a6638ca6b3eda191ee08b8332f5bed7262f023946722",
-      "size": 3890,
+      "sha256": "5b84326a758cef3d5fbf725b597669e37ad801ecbecfde2d40fd677adcb4727d",
+      "size": 3887,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 12,
@@ -767,8 +788,8 @@
       "product": "Blooper",
       "version": "0",
       "path": "devices/chase_bliss/blooper.json",
-      "sha256": "5d5e7ea713bbb8a64729e4f2f6114ba0e3ba4271ff5a4a4f62d171193fb10699",
-      "size": 8556,
+      "sha256": "5737ca251ca0e3c89f0797fa4affc7210ca77fe6fc29d4c3a11a2ce53832b35d",
+      "size": 9165,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -788,8 +809,8 @@
       "product": "Brothers",
       "version": "0",
       "path": "devices/chase_bliss/brothers.json",
-      "sha256": "c543013757538e16b2f4e66d2720ee7c2a42d4472438bf9fcd2fa32339703462",
-      "size": 4259,
+      "sha256": "944fee7c33ef938ff2d32102363d15de85f440f03d0e39c4af8956157ef0de2e",
+      "size": 4170,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 12,
@@ -806,8 +827,8 @@
       "product": "Brothers AM",
       "version": "0",
       "path": "devices/chase_bliss/brothers_am.json",
-      "sha256": "cfdc0b47e4475e7428727096104f83f17d84270a14ff63571ee56ec2757fac04",
-      "size": 10649,
+      "sha256": "ecd112048662b681b2b00bb4a054e63ea70210bf860d6f5aa6769591f6ac18c3",
+      "size": 10441,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 30,
@@ -824,8 +845,8 @@
       "product": "Clean",
       "version": "0",
       "path": "devices/chase_bliss/clean.json",
-      "sha256": "4d8c0ad8f0b020e85d1d254bb5d5b7972494fe422cf5b0a06824332fce54dc0a",
-      "size": 12744,
+      "sha256": "47d9f3281cfb625a05fc73327becd382cde1f1b394fdb491371e72489dea8155",
+      "size": 12550,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 35,
@@ -842,8 +863,8 @@
       "product": "Condor",
       "version": "0",
       "path": "devices/chase_bliss/condor.json",
-      "sha256": "3198b51778ead77efc0c2a5e17a00aeeed22f19c56e279bc182a8c8db574d40e",
-      "size": 3971,
+      "sha256": "e56a104e48ade3aa12f53f6bf90617446315d0e66cdb347683c8a952cb8ebbdf",
+      "size": 3937,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 12,
@@ -860,8 +881,8 @@
       "product": "Condor HiFi",
       "version": "0",
       "path": "devices/chase_bliss/condor_hifi.json",
-      "sha256": "716f3a0e7901fd9bc7434bab233f4c7e1cbdeaaf4c3e42aa2074a38f8b4a322c",
-      "size": 3737,
+      "sha256": "c385212ef55685a5619e76e10d319a6109917e14388270e23e741d890d413281",
+      "size": 3714,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 12,
@@ -878,8 +899,8 @@
       "product": "CXM 1978",
       "version": "0",
       "path": "devices/chase_bliss/cxm_1978.json",
-      "sha256": "4015a6acba1b4108b392d698521d4d8829cd7bae7d8f89e91b33a6745a7cd2dd",
-      "size": 4949,
+      "sha256": "7697f023d9402bc33ac991959cf1d28b570205f9244600ac25accc9e94638944",
+      "size": 4887,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 19,
@@ -896,8 +917,8 @@
       "product": "Dark World",
       "version": "0",
       "path": "devices/chase_bliss/dark_world.json",
-      "sha256": "13894cd2dc333b0fab424b694c5c0a3d25d0176ae2c36d359629b042b874e700",
-      "size": 3786,
+      "sha256": "1a724988edf5f4c99b93a27d16c8330b955ed077b90301316fb5f002280ba4ec",
+      "size": 3745,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 12,
@@ -914,8 +935,8 @@
       "product": "Generation Loss",
       "version": "0",
       "path": "devices/chase_bliss/generation_loss.json",
-      "sha256": "eb11e5d334305eaafa69a1fcff2f73175046a477be945f548236b275c3a56e22",
-      "size": 3524,
+      "sha256": "8f48fb8789205ff3ef40b7181ec152c36fef2f935da036e2b2e8ccea50fab709",
+      "size": 3495,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 12,
@@ -932,8 +953,8 @@
       "product": "Generation Loss MKII",
       "version": "0",
       "path": "devices/chase_bliss/generation_loss_mkii.json",
-      "sha256": "592602be1f6d0c9c289e5c68d0354b57af302d88ef864a97edb5dac5afd0eb43",
-      "size": 14568,
+      "sha256": "21249ebbd9505147f5436784c48ed36e12e2fab45f07ccd4cd99b0ed4f6a37c4",
+      "size": 14482,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 41,
@@ -950,8 +971,8 @@
       "product": "Gravitas",
       "version": "0",
       "path": "devices/chase_bliss/gravitas.json",
-      "sha256": "eb2b83108b361cea6ff11d5dacdff4c8fbc68ee516a89f5b61f35dead76dcea3",
-      "size": 3681,
+      "sha256": "6271f3eeb428173dfda34f2db3a6649a6f356bed7c952fb93595ddffbf05a448",
+      "size": 3669,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -971,8 +992,8 @@
       "product": "Habit",
       "version": "0",
       "path": "devices/chase_bliss/habit.json",
-      "sha256": "85a5571e68766e21c02f6e03225bcb2d37f5c2cc348df64dcf45d3305dc99f79",
-      "size": 5168,
+      "sha256": "3642cc64374b65de7bd573fa9c23c175cb0ad9488583ecc9444bed3f19344321",
+      "size": 5123,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -992,8 +1013,8 @@
       "product": "Lossy",
       "version": "0",
       "path": "devices/chase_bliss/lossy.json",
-      "sha256": "64c8797fc48cdac7bca149db596c0484e594e23147a4407cc963857a2fcf65eb",
-      "size": 13548,
+      "sha256": "a776241973b2ecb1dcccf80d3c91f61d8adca43f57a5a4a17b988f3e79c52c5c",
+      "size": 13509,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 43,
@@ -1010,8 +1031,8 @@
       "product": "Lost + Found",
       "version": "0",
       "path": "devices/chase_bliss/lost+found.json",
-      "sha256": "cf3d6f5a6db049a4672fa4271e7e152f811b67065f081d33f184ae22f9133551",
-      "size": 18964,
+      "sha256": "2a557f32c9f64cbafdac4a5bcdeb7c8cf9fd53c0876abf3b3ac2ed29eba25f63",
+      "size": 18918,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1031,8 +1052,8 @@
       "product": "MOOD",
       "version": "0",
       "path": "devices/chase_bliss/mood.json",
-      "sha256": "1791292690e29a0c5d34eef260a1aaff4b8537930c952f94c33630c6ce1a88d0",
-      "size": 5651,
+      "sha256": "08ab58a960ad2c272410161f29793a84f457a8db01694c01a09b54345b39a464",
+      "size": 5582,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1052,8 +1073,8 @@
       "product": "Mood MkII",
       "version": "0",
       "path": "devices/chase_bliss/mood_mkii.json",
-      "sha256": "cf86e1179caa55e32597bc3e3670c2405f59cec4e7e9ef304131a11ca460e9da",
-      "size": 17746,
+      "sha256": "7bbd0927f90c995fa10e66562b1d754de83f1badd18a9fca8d20634976769c61",
+      "size": 22906,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -1074,8 +1095,8 @@
       "product": "Onward",
       "version": "0",
       "path": "devices/chase_bliss/onward.json",
-      "sha256": "5a3cafc8ef4cdfdfd69135ec931a66ec02a30a3c771b5305aa7cad81e3a01e0c",
-      "size": 18422,
+      "sha256": "63914cc1c8fe99d70a28c107fda46ba7dd3403164d6eeff89750f312df3bb208",
+      "size": 18364,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1095,8 +1116,8 @@
       "product": "Preamp MKII",
       "version": "0",
       "path": "devices/chase_bliss/preamp_mkii.json",
-      "sha256": "6ceb971e7422821781bb410f801fb957dbcf66c9952447cd42fe9b3b8d0ef714",
-      "size": 4639,
+      "sha256": "8cb741ce406f964c26e63ed8da2d31193cdefb4fdeaad4502124d62461fc7312",
+      "size": 4616,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 14,
@@ -1113,8 +1134,8 @@
       "product": "Reverse Mode C",
       "version": "0",
       "path": "devices/chase_bliss/reverse_mode_c.json",
-      "sha256": "655c73a2251347b5886d0e40cd5a6181be721742a35095219f3b0d329b576dc3",
-      "size": 16589,
+      "sha256": "253f6f0fffc022194d002d49cb715f2e9fe417ebc6f56b1f735d3ddb0a047777",
+      "size": 16536,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1134,8 +1155,8 @@
       "product": "Spectre",
       "version": "0",
       "path": "devices/chase_bliss/spectre.json",
-      "sha256": "0e1394f61cea16cc034d892683517ddaddb28ea0ca758db39caeb1a676cfccbb",
-      "size": 3672,
+      "sha256": "41c0f4bf5b65d394eabfee0940243d4f10ab9f91c88436fb98c46b6a8bb38b78",
+      "size": 3662,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1155,8 +1176,8 @@
       "product": "Thermae",
       "version": "0",
       "path": "devices/chase_bliss/thermae.json",
-      "sha256": "38be8ee975cefe3e0641a8f1e9e1a68eb211d7622e2a9c99fa1ce8db9bbe24c9",
-      "size": 6599,
+      "sha256": "0223764261eb12aa19e1fceb3f1e8b90d323774a7a7b72103a91dbdd5a34df62",
+      "size": 6569,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1176,8 +1197,8 @@
       "product": "Tonal Recall",
       "version": "0",
       "path": "devices/chase_bliss/tonal_recall.json",
-      "sha256": "1829dd6a3fd875c0d541e45ee85435150358cffe6bdde03405fd20cc97635476",
-      "size": 3746,
+      "sha256": "0933124373ab49ea84d0bbb023d687e0dd838cb5976410da730ad859fae74760",
+      "size": 3736,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1197,8 +1218,8 @@
       "product": "Warped Vinyl HiFi",
       "version": "0",
       "path": "devices/chase_bliss/warped_vinyl_hifi.json",
-      "sha256": "a477b7cfb515518bb20ce1e4bb1f6fcdbf37669fa2d38e4427525450bd4a9522",
-      "size": 5245,
+      "sha256": "07a108bb2c28e02109d54f328be7cc35f937b19f345d5133f542fc139013e84a",
+      "size": 5232,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1218,8 +1239,8 @@
       "product": "Warped Vinyl MKII",
       "version": "0",
       "path": "devices/chase_bliss/warped_vinyl_mkii.json",
-      "sha256": "a3027831beacbff6670744001c1e8629a509d90a2c3f999499716da865c018d6",
-      "size": 3702,
+      "sha256": "0db78023bfbe87dc1a05aba6d112a860f5c6dfbbf080b4d39f8109615a5af0d2",
+      "size": 3692,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1239,8 +1260,8 @@
       "product": "Wombtone MKII",
       "version": "0",
       "path": "devices/chase_bliss/wombtone_mkii.json",
-      "sha256": "ec576ef8be09fd0ec48922da1136a73c6c19e3f49a84dc933ce64b813cb4fbd9",
-      "size": 3716,
+      "sha256": "3265018b215e86d64b1852415e73c1ca999ebebe3d6132bce7ea5aa17cdb7dbd",
+      "size": 3704,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1260,8 +1281,8 @@
       "product": "Arcades",
       "version": "0",
       "path": "devices/cooper_fx/arcades.json",
-      "sha256": "2507ee6f38e3ad0e62098bd448ae5a151b9a232289c6784a6382b4afe067ad84",
-      "size": 3678,
+      "sha256": "3fdfadb3990e5934cc43f321560cdaf6e9cc0a9f3df588a7d82e1c98a1a3a4ac",
+      "size": 4658,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1281,8 +1302,8 @@
       "product": "Outward v2",
       "version": "0",
       "path": "devices/cooper_fx/outward_v2.json",
-      "sha256": "50c11a2969562bce00715b5641d835a12772cc13f1ada058869dd870b74b47cd",
-      "size": 2909,
+      "sha256": "9592ccf499cb7d36cf2352982c9b1a46531ba8a7b032b389b382308c8aad8f56",
+      "size": 3644,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1302,8 +1323,8 @@
       "product": "ADAM",
       "version": "0",
       "path": "devices/darkglass/adam.json",
-      "sha256": "925d9fb7b0e17e8455b4cf85ce4d6da52f590a3cb3764ceb0b2c8f8446f0533e",
-      "size": 2983,
+      "sha256": "71f77d0719629f28d667f123b6d9f0eab506068ab6a5e2f39b0cfec1599cb0c3",
+      "size": 3861,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1323,8 +1344,8 @@
       "product": "Alpha Omega Photon",
       "version": "0",
       "path": "devices/darkglass/alpha_omega_photon.json",
-      "sha256": "9a2d00716a2c8a9748f49c535b7dcbdae9bce54d99a8739ee94144de897225b1",
-      "size": 4100,
+      "sha256": "ee553971b482a16c543a1e12ae6a1c182f713a430331c96f9ed2999b8cf958ea",
+      "size": 5316,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1344,8 +1365,8 @@
       "product": "Anagram",
       "version": "0",
       "path": "devices/darkglass/anagram.json",
-      "sha256": "afe21847bb2499a2ed7201361a5248dd2fd13e84bb7c3ba4b2a9deacc93c8b3e",
-      "size": 13298,
+      "sha256": "84fe0e47a92645bbe6469aa62579482eaf1a3fcdb73b2b3f2615014241e81502",
+      "size": 17345,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1365,8 +1386,8 @@
       "product": "Microtubes Infinity",
       "version": "0",
       "path": "devices/darkglass/microtubes_infinity.json",
-      "sha256": "a757e110cccff93a30dcf15a69770a849673ea66fbc07ae4d83a18d4c558bdc5",
-      "size": 2997,
+      "sha256": "54fed62621e8f52760ebcea6327b8a91f2a20afdc3c5dee67316f0aab9d136e2",
+      "size": 3997,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1738,8 +1759,8 @@
       "product": "Echosystem",
       "version": "0",
       "path": "devices/empress/echosystem.json",
-      "sha256": "600fb30f7ba93e100f5c4b43581204a1a1606c9a573834f68cb472309c755363",
-      "size": 4571,
+      "sha256": "ab6d8c03dcbc807a944a6bded4dfc3553a4aae639af4720ecf5ec07971a8d85f",
+      "size": 4511,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1759,8 +1780,8 @@
       "product": "Phaser",
       "version": "0",
       "path": "devices/empress/phaser.json",
-      "sha256": "7ca0276cb73cae0a964f0425d1fc8438364aa4ccbae5815c78e394f5c0a213de",
-      "size": 2698,
+      "sha256": "dbff74dc5ea3fccb73e0500f680ce285f8d4bfde53d2ab2fa730d285fb98c17b",
+      "size": 3401,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1780,8 +1801,8 @@
       "product": "Reverb",
       "version": "0",
       "path": "devices/empress/reverb.json",
-      "sha256": "256f3d81eb5b5013b9d096c472e469e804fd4be523a29f092f1954b6d58a14f6",
-      "size": 3950,
+      "sha256": "3d3426fc919b7ba8fbb34cc4a68e22b8bbc0776f4bc51d66dead5f9b30a177bb",
+      "size": 3928,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1801,8 +1822,8 @@
       "product": "Tremolo 2",
       "version": "0",
       "path": "devices/empress/tremolo_2.json",
-      "sha256": "7443a2542c3cb811974a235ec8b3f4e806e80196c47b20e5e2d1db400aa1f14a",
-      "size": 2038,
+      "sha256": "2dcee5d75fc7cd997e093865eaf84f4df62e25cfeec2eb9381dafb79c8b01c55",
+      "size": 2528,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1822,8 +1843,8 @@
       "product": "ZOIA",
       "version": "0",
       "path": "devices/empress/zoia.json",
-      "sha256": "0728d3eafccac1168ffccc474231039e2837421456f9376c860ebf812bd4757e",
-      "size": 7685,
+      "sha256": "34f502d476b7e577325aabd927660900932e0007c98125f789e3361743947f5e",
+      "size": 12455,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -1843,8 +1864,8 @@
       "product": "Echolocator",
       "version": "0",
       "path": "devices/erica_synths/echolocator.json",
-      "sha256": "bcfadad175b5b34a70d0ee869891186115d0fc5b776c505d2c28823134f9ef22",
-      "size": 2658,
+      "sha256": "b59bf66a3381e7eaa458d6a20a6f8cc858a477471e897ced1137e856cb8e8e4b",
+      "size": 2644,
       "receives": [
         "PROGRAM_CHANGE",
         "NOTE_NUMBER"
@@ -2275,8 +2296,8 @@
       "product": "AX8",
       "version": "0",
       "path": "devices/fractal_audio/ax8.json",
-      "sha256": "f57bc7370d05eb40c5f968ac93e7f9d2594daf776ca1aa7ca5a621d163319a61",
-      "size": 9581,
+      "sha256": "7417528f3e95cdacdde5e57ddcf1e7de5021c50cadf71402d131fba359d62e5a",
+      "size": 11450,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2363,8 +2384,8 @@
       "product": "FX8",
       "version": "0",
       "path": "devices/fractal_audio/fx8.json",
-      "sha256": "60f87634a0e1763af93b1621c129ccd358a85c80b97b5eb0fc75de3a5711ffd8",
-      "size": 12417,
+      "sha256": "1d720c984c19a5d320d9941eefd5a946dd616c5911f6073fb941c469725ade1b",
+      "size": 14749,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2407,8 +2428,8 @@
       "product": "Auto Chorus",
       "version": "0",
       "path": "devices/gamechanger_audio/auto_chorus.json",
-      "sha256": "3172a5bacb46257a833198b2cff91df9357471fd7edcf18930ca0f627ca2c572",
-      "size": 8125,
+      "sha256": "7881a803b7bf38262b6db3609a618b6fb61dcff40d28e71d99f585f9ebb77f1e",
+      "size": 8095,
       "receives": ["CLOCK"],
       "transmits": [],
       "ccCount": 21,
@@ -2425,8 +2446,8 @@
       "product": "Auto Delay",
       "version": "0",
       "path": "devices/gamechanger_audio/auto_delay.json",
-      "sha256": "fae16a9757d67ab245a01c8feb1787b52bbcd5117dbcbb20b84a106b270ba188",
-      "size": 8676,
+      "sha256": "509c249b49499762584eb77b351387c6feafab96e59a87b721e57278db098576",
+      "size": 8646,
       "receives": ["CLOCK"],
       "transmits": [],
       "ccCount": 22,
@@ -2443,8 +2464,8 @@
       "product": "Auto Reverb",
       "version": "0",
       "path": "devices/gamechanger_audio/auto_reverb.json",
-      "sha256": "f9b054955f0bf6fb7b175a403297206fcd1275f5336e556c50d481907247dc02",
-      "size": 8673,
+      "sha256": "43e6bc8324bc4e0104e06b4063f62840e6845247f71e7268d94fb4f12427ee60",
+      "size": 8643,
       "receives": ["CLOCK"],
       "transmits": [],
       "ccCount": 22,
@@ -2461,8 +2482,8 @@
       "product": "Bigsby",
       "version": "0",
       "path": "devices/gamechanger_audio/bigsby.json",
-      "sha256": "3c2cdbc9e57a9123363772dbe8c1906798c12fa800b57951d4151145abce8e7d",
-      "size": 6714,
+      "sha256": "34120aa2cb2df2887374d9b979f96727bd4d62a361b15fc16b90b9e16211ab44",
+      "size": 6550,
       "receives": [
         "PROGRAM_CHANGE",
         "PITCH_BEND",
@@ -2483,8 +2504,8 @@
       "product": "Motor Pedal",
       "version": "0",
       "path": "devices/gamechanger_audio/motor_pedal.json",
-      "sha256": "0ac8d9bf2a15d15cc705ac382ba96dd5d71244f383fe6e83b288b9dbb8a402d0",
-      "size": 5811,
+      "sha256": "5762ce9411459f297da6c6745bb78eff340e345302c2bad7de31b24f6c955955",
+      "size": 5789,
       "receives": [
         "PROGRAM_CHANGE",
         "NOTE_NUMBER"
@@ -2522,8 +2543,8 @@
       "product": "Chroma Console",
       "version": "0",
       "path": "devices/hologram_electronics/chroma_console.json",
-      "sha256": "c1c0aecaebf0e0e0a2c5387095fb625b872dd39bd076da9c6411fcba5e468361",
-      "size": 11907,
+      "sha256": "f3a726754e8eda0a2197186ffc96ee127f8161c5cdb254307548760c7085b818",
+      "size": 11765,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2543,8 +2564,8 @@
       "product": "Dream Sequence",
       "version": "0",
       "path": "devices/hologram_electronics/dream_sequence.json",
-      "sha256": "c6c020af1e15dd5779db4fe59381b9768e655c6f39734971a0ddb922f5b45aa6",
-      "size": 1513,
+      "sha256": "89865b64302b035c3d5aa5512337fd54e4b5f6c4b61b4f1a27d7ed0321ff9d6c",
+      "size": 1496,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2564,8 +2585,8 @@
       "product": "Microcosm",
       "version": "0",
       "path": "devices/hologram_electronics/microcosm.json",
-      "sha256": "6ba5936baa80aa26f5a5893b1ecd46d821259af9a2aec6242594c01f9730e8f8",
-      "size": 8496,
+      "sha256": "79a7e10612646c1ec8e736911823254a2d031b08d0bab5c7eca95d36f6fde65f",
+      "size": 8440,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2588,8 +2609,8 @@
       "product": "Asabi",
       "version": "0",
       "path": "devices/jackson_audio/asabi.json",
-      "sha256": "142766e958cf934964d3e9cf8ada0c7e25c5f7cf4cc13ec2657dd6742930d02b",
-      "size": 3408,
+      "sha256": "a1ae975ec1b52ffc4a753fc42a72f2877ee3403c9c7ce32f994d680daf67098a",
+      "size": 4214,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 17,
@@ -2606,8 +2627,8 @@
       "product": "Bloom v2",
       "version": "0",
       "path": "devices/jackson_audio/bloom_v2.json",
-      "sha256": "878e776e50ef21cd2d9decad54c21f949d17dc4f0b8a50bb245de3c2a2efeb15",
-      "size": 3694,
+      "sha256": "9945eb0f84aeb173d27de36bc6602cd733891dc085dcd12b93d55a93cf7c6f68",
+      "size": 4640,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 17,
@@ -2624,8 +2645,8 @@
       "product": "Broken Arrow v2",
       "version": "0",
       "path": "devices/jackson_audio/broken_arrow_v2.json",
-      "sha256": "dd10a9c6bd87b77b9003088164b4e70daf244571b430402f7a51ce107298ae92",
-      "size": 3320,
+      "sha256": "c255217f5f9fa169a9617b64dcae73a81ff8af6d08eeb03bf635e9f4ee0515e4",
+      "size": 4157,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 15,
@@ -2642,8 +2663,8 @@
       "product": "Golden Boy",
       "version": "0",
       "path": "devices/jackson_audio/golden_boy.json",
-      "sha256": "76587f92da71e7981f8731823a224d15d428dc87b0919fe641fa0d38936f6d66",
-      "size": 3305,
+      "sha256": "b6543fa7a18c93a8a68a850775b34696f4c94733d7b5ad69af3a24e54e39aabc",
+      "size": 4142,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 15,
@@ -2678,8 +2699,8 @@
       "product": "REDOX",
       "version": "0",
       "path": "devices/kilpatrick_audio/redox.json",
-      "sha256": "ca6b9237c36309758883bdb1d1f0f6efb0810722a28927283c39199dc9cc1777",
-      "size": 2013,
+      "sha256": "736d77614e3d42e1071073be853d7d8d7af27804d40266b74aed0a398bd6f94e",
+      "size": 2383,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 10,
@@ -2696,8 +2717,8 @@
       "product": "Ghosts",
       "version": "0",
       "path": "devices/kinotone/ghosts.json",
-      "sha256": "c7236c403ef61219c7d88af1c4af326ae3ce25f995737e9861001ba6638a954b",
-      "size": 8075,
+      "sha256": "2d7e1f38d00109bfb654721fe90f91d599c4df79e882890336cc224c2e4e67fc",
+      "size": 8038,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -2718,8 +2739,8 @@
       "product": "Ribbons",
       "version": "0",
       "path": "devices/kinotone/ribbons.json",
-      "sha256": "1b00a2612fbd88bc4df9adb89e7a90d40b402f7b85b205a48ff9c8c7c23ed038",
-      "size": 11725,
+      "sha256": "5604dbb0ffdc289c52d418160cded49324327e3b468763da530139ed986fbe9c",
+      "size": 11566,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -2740,8 +2761,8 @@
       "product": "Sparks",
       "version": "0",
       "path": "devices/kinotone/sparks.json",
-      "sha256": "641a8c6295e7fcdcc82196a0da4aa0953ab72df885bcdc54fa119369e2b6b794",
-      "size": 18010,
+      "sha256": "335add6544cf9816716a9b9978b29f595fe578353ca726bcaf9b2a0783efa21f",
+      "size": 17843,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2761,8 +2782,8 @@
       "product": "Enzo",
       "version": "0",
       "path": "devices/meris/enzo.json",
-      "sha256": "3b25f6ff3ca0b84dfc4ef587a9159cd15c5c0b0360c49edd01c71b7f98164ff6",
-      "size": 4851,
+      "sha256": "46e4d9ffaaab80aaa56c0ab19e7e59e46ce9a8a662e1bc8e90d0e59c38fc7230",
+      "size": 4819,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2782,8 +2803,8 @@
       "product": "Enzo X",
       "version": "0",
       "path": "devices/meris/enzo_x.json",
-      "sha256": "2bf018c83c5d0642815e323a0e2b4da32fb238a8b32308c2c49cf8663b9bc738",
-      "size": 18590,
+      "sha256": "c83bd66771fec462f91bf77247e6c0072ee1d7f34d0b621e6c76ccb5b0726e10",
+      "size": 21909,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2803,8 +2824,8 @@
       "product": "Hedra",
       "version": "0",
       "path": "devices/meris/hedra.json",
-      "sha256": "2903c87696bcbc1e9726f0c2bfda7dfafb9d630b8cc076bcda864f1ed8160ca5",
-      "size": 8799,
+      "sha256": "57570de8cc8ca95e0b7c4a569b101e3f99869fb5a0cc784d4706cf88eee87066",
+      "size": 8745,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2824,8 +2845,8 @@
       "product": "LVX",
       "version": "0",
       "path": "devices/meris/lvx.json",
-      "sha256": "9a1679c0b1d82dee53a9cd1323a4969835ceaf63d9cfac7d7b507cd7d2e6d972",
-      "size": 22538,
+      "sha256": "bfeaa397af90762c240feb2763e9a2c94fedd030506f56f7aecf920255d4b202",
+      "size": 35041,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2845,8 +2866,8 @@
       "product": "Mercury7",
       "version": "0",
       "path": "devices/meris/mercury_7.json",
-      "sha256": "ebf7695b4e038188ff2b3126a6bb06359f7203f326b6567f30bb7a9181348787",
-      "size": 3689,
+      "sha256": "3ae231d9dfd955b06d4ef7bfceeca2a906c4011d0582f1ff473c205d630def5e",
+      "size": 3672,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 16,
@@ -2863,8 +2884,8 @@
       "product": "Mercury X",
       "version": "0",
       "path": "devices/meris/mercury_x.json",
-      "sha256": "177154221999eebf6795405b9013bf2b97c95ec64751df124088cbc2800c2b4c",
-      "size": 17362,
+      "sha256": "a409719d91c336109de3f45d1610b4746c47ed28f3ae422880c4cc4db58bbf3d",
+      "size": 28957,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2884,8 +2905,8 @@
       "product": "Ottobit Jr.",
       "version": "0",
       "path": "devices/meris/ottobit_jr.json",
-      "sha256": "d71c7bc18be9c3c808fcb82c2d2c2f2d71605ba808309f079ef6e8e4f68c8443",
-      "size": 4237,
+      "sha256": "a30bd1c285e8f8c74bc3006f3b29f4d16431d4bb0e34bbe260d1f63ec321b034",
+      "size": 4231,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2905,8 +2926,8 @@
       "product": "Ottobit X",
       "version": "0",
       "path": "devices/meris/ottobit_x.json",
-      "sha256": "695b6bfe4082959339d424f71e347b88b1995979951fcd6b435f7d7816e072f1",
-      "size": 18038,
+      "sha256": "6731df60b0ff48d0ad9a976619a37d740aec8f12fe60d7ed8615e6bcadd20f32",
+      "size": 24241,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2926,8 +2947,8 @@
       "product": "Polymoon",
       "version": "0",
       "path": "devices/meris/polymoon.json",
-      "sha256": "cc111ccff2e20100e54898b0d05274a43bf333008aa93d8d2c97784fc681e570",
-      "size": 9262,
+      "sha256": "97ce00ac51571dcf2c86ad07facec469a7b7ff57b0be602f870248c95f2dcd41",
+      "size": 9211,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -2965,8 +2986,8 @@
       "product": "Vintage Ensemble",
       "version": "0",
       "path": "devices/mr_black/stereo_vintage_ensemble_professional.json",
-      "sha256": "73bd1f5f224c2ad4189cdb5447436d45ede3ac26b3051b4dab8235b827365c6d",
-      "size": 3427,
+      "sha256": "5d1ca8384c7100b82f6bcb099d7a0b1769453a14be60e6b9c5e223cfaed746b1",
+      "size": 4152,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -2987,8 +3008,8 @@
       "product": "Bathing Liminal Delay",
       "version": "0",
       "path": "devices/obne/bathing.json",
-      "sha256": "4ad9330c3b774f3c935dcf9833bcb0186d923829e5337a920fdbb4a0c7b91018",
-      "size": 8010,
+      "sha256": "ade19798cecd336747c12832332ad7bc54e74a596d51d3aa6ea4e87b3f48c28f",
+      "size": 7993,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3011,8 +3032,8 @@
       "product": "Black Fountain Stereo",
       "version": "0",
       "path": "devices/obne/black_fountain_stereo.json",
-      "sha256": "6e060d2de999982b2e81202ad2dae69b4b6ab89382c665ff75ca8544cc32f676",
-      "size": 6857,
+      "sha256": "4057c62b0fa166ef9d98a2cbd0bce5264974333b25ed3a58de30ed588f23d81d",
+      "size": 6840,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3035,8 +3056,8 @@
       "product": "Dark Star Stereo",
       "version": "0",
       "path": "devices/obne/dark_star_stereo.json",
-      "sha256": "f5862d58a675fd489fb33b429388532cd4b6a847165901eb184259fa4f6cd931",
-      "size": 5001,
+      "sha256": "707c8434acd9ea86e3b35a0d2433c903f71c8debf17ebdf6882bf5ff68ce8edd",
+      "size": 4995,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": ["PROGRAM_CHANGE"],
       "ccCount": 18,
@@ -3053,8 +3074,8 @@
       "product": "Setback",
       "version": "0",
       "path": "devices/obne/setback.json",
-      "sha256": "9768001a9ef5027f9f18b437cc6e613711a6957f80bf3aaf10fc57acb49293f1",
-      "size": 4576,
+      "sha256": "797fa8f34178fce9fa9a86bfc1203b80933b8e2ac0b3a011dc9157c49640fb72",
+      "size": 6044,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3074,8 +3095,8 @@
       "product": "Signal Blender Stereo",
       "version": "0",
       "path": "devices/obne/signal_blender_stereo.json",
-      "sha256": "c76f776a9141c4ddb72dafa65cce5eb68edd8dff08bcf9c34becb374cb10fa43",
-      "size": 4329,
+      "sha256": "8d09dc9a7274de4143c961d9a5d6d6328da479e95ec40d0a2f4c9416186a1eee",
+      "size": 4307,
       "receives": [],
       "transmits": [],
       "ccCount": 8,
@@ -3092,8 +3113,8 @@
       "product": "Sunlight",
       "version": "0",
       "path": "devices/obne/sunlight_stereo.json",
-      "sha256": "39375ddfa5a80f57f95f0880731ecb8a39fd8bda355311ab4e18700d3264069e",
-      "size": 9385,
+      "sha256": "5657b30ffd7d67f8c18a65543f9ad6e4e79d05f5cf204e4878baf852e5f14d2b",
+      "size": 9356,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3134,8 +3155,8 @@
       "product": "BIM",
       "version": "0",
       "path": "devices/oto_machines/bim.json",
-      "sha256": "ba01520be25f148fa6ada65fe95e7f053f7bbf7f87a61abf96913cb207c093f5",
-      "size": 3098,
+      "sha256": "39b06a6e9ae8858a81d192a11fd98590a8920253270a78fbfa35794eae33c1c7",
+      "size": 3732,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3155,8 +3176,8 @@
       "product": "Biscuit",
       "version": "0",
       "path": "devices/oto_machines/biscuit.json",
-      "sha256": "f91c3e61d76d2c0dbcb2d0b25b00816a34fd6b54e3d9cec748bffcca9ec99628",
-      "size": 10362,
+      "sha256": "a4bc92fe8eb26f895109910143985232ebf1c549318b86a8dae09d3976fd0a6c",
+      "size": 13844,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -3177,8 +3198,8 @@
       "product": "BOUM",
       "version": "0",
       "path": "devices/oto_machines/boum.json",
-      "sha256": "2355b616f18ffefba5983ae7ee1772653cf2d109438e774f13646275c9af89c4",
-      "size": 2007,
+      "sha256": "aa5e49ce5ff68bebbc1aaa6e8e2bebce3188e566947a19915f670a6191bfd04f",
+      "size": 2420,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 13,
@@ -3195,8 +3216,8 @@
       "product": "Ample",
       "version": "0",
       "path": "devices/poly_effects/ample.json",
-      "sha256": "7a29be64561368f0488257b8e93b4da437329ea1c442ee9f4df41a4cf5b1b3ed",
-      "size": 3198,
+      "sha256": "bbe1d00a0715aa47154ccd69aa164724adf11ac7ef2b92279297dd6e3651fa23",
+      "size": 3815,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 17,
@@ -3401,8 +3422,8 @@
       "product": "Particle 2",
       "version": "0",
       "path": "devices/red_panda/particle.json",
-      "sha256": "40861b86d4b367d5bac64f9ae1f8d275fcc7b5123414872dfad42b9825c716a6",
-      "size": 16964,
+      "sha256": "3f7f8d10f36183c5d3d47ff6647959a80de837458c65254c169aae02ad417e1b",
+      "size": 18289,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3484,8 +3505,8 @@
       "product": "Filterbank 2",
       "version": "0",
       "path": "devices/sherman/filterbank_2.json",
-      "sha256": "486898571524640d8cad4593cd7e434c6e1b1d4f1e21ff8a954f79a9a49b7ce3",
-      "size": 2090,
+      "sha256": "a4b7afab937af9ff9ad230df3e9afa378068841f2a999b5ef4db355ac2ebb7c0",
+      "size": 2338,
       "receives": [
         "PITCH_BEND",
         "CHANNEL_PRESSURE"
@@ -3582,8 +3603,8 @@
       "product": "Pathways",
       "version": "0",
       "path": "devices/source_audio/pathways.json",
-      "sha256": "2e11e75dc08a4545f2eded1c52484d710c1341901260a88db50cbf5ca217bf87",
-      "size": 6874,
+      "sha256": "6be8c122a7cd0a4225971d97be3fee5b29f8625ea42b2b1a22d5322f5afc1866",
+      "size": 8614,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3603,8 +3624,8 @@
       "product": "BigSky",
       "version": "0",
       "path": "devices/strymon/bigsky.json",
-      "sha256": "da82697ff0542c366044d84c78490e7a2f2ce6a82fb781e1e0680746b49e6f0f",
-      "size": 12945,
+      "sha256": "414676560ff369e560aac4b3b3c4348284287640c410fd9b91054ed21890a12d",
+      "size": 12747,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3624,8 +3645,8 @@
       "product": "BigSky MX",
       "version": "0",
       "path": "devices/strymon/bigsky_mx.json",
-      "sha256": "c5af1af0b855d6b54d830c6003c3ab583232ebed91d7867fa6156ea3f4b0f2db",
-      "size": 43533,
+      "sha256": "aa192a9c0fecc727840cd25dbe702d01d4baa9258301081ac6256795afed96e5",
+      "size": 42248,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3648,8 +3669,8 @@
       "product": "blueSky",
       "version": "0",
       "path": "devices/strymon/bluesky.json",
-      "sha256": "a3b86ba0df33bf5e3b0d1609d5adb7dc1a71de452b9fed6dbdd387c195458962",
-      "size": 3995,
+      "sha256": "3b10bb6fef7c4aa65387bae1a2db42268ec6e594c4fc8748d329580589bd913b",
+      "size": 3967,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3669,8 +3690,8 @@
       "product": "Brig",
       "version": "0",
       "path": "devices/strymon/brig.json",
-      "sha256": "424482e7d20b8405629901ded48c21f60bee49303a98b5f9f161c9214ce71ee0",
-      "size": 3699,
+      "sha256": "7b0a3d0bdbde8208bc50d3ddd24491f8729ba9e9f5b43ea5defacd5109622fb1",
+      "size": 3677,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3690,8 +3711,8 @@
       "product": "Cloudburst",
       "version": "0",
       "path": "devices/strymon/cloudburst.json",
-      "sha256": "c4c9dae3c0f661ae313e81f0ffe4283618c12f6e0e7ef59d9cc6e4a01dc5c8c1",
-      "size": 4392,
+      "sha256": "244bdf07b72a1398a88c6d8d7ff24b76a40820b5063c898cd4c8d030e8c09eed",
+      "size": 4347,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3711,8 +3732,8 @@
       "product": "Compadre",
       "version": "0",
       "path": "devices/strymon/compadre.json",
-      "sha256": "99b650b09f68f683d2443aa441341bc76ede88b4d10896b99c9fcd2da080bef1",
-      "size": 1987,
+      "sha256": "a8372ec23ec6d40cc7b39736e0e4252a8c63d4e64d33eddec991782533da162c",
+      "size": 1964,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 10,
@@ -3729,8 +3750,8 @@
       "product": "Deco",
       "version": "0",
       "path": "devices/strymon/deco.json",
-      "sha256": "e111fe189449d4b13736d8408653bd78950fe2529f582bc0c3a8fbe34f3cf161",
-      "size": 6605,
+      "sha256": "dda6af6635624c9ae1bacdba1b38395e4c5c697341723d74c59d6cfd3e4396f6",
+      "size": 6556,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3750,8 +3771,8 @@
       "product": "DIG",
       "version": "0",
       "path": "devices/strymon/dig.json",
-      "sha256": "13b3c351703e30877e0d9d8a3ee7013283cc5eeec3caaf83a70c8c7414bfdb08",
-      "size": 7108,
+      "sha256": "afdc403a251674aff8f51586a6452a006fa32968e4126440d1f1beb6b8d5a467",
+      "size": 7071,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3771,8 +3792,8 @@
       "product": "EC-1",
       "version": "0",
       "path": "devices/strymon/ec-1.json",
-      "sha256": "3c6eb653da0c5851c36fb49482f7bc74eb6158dd6a4f91e8e43958cd8c787336",
-      "size": 5401,
+      "sha256": "287e91f6a586c419d3d0f2d87928d4a172ce551fbf6c4df23d7d4039dbd301ff",
+      "size": 5373,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3795,8 +3816,8 @@
       "product": "El Capistan",
       "version": "0",
       "path": "devices/strymon/el_capistan.json",
-      "sha256": "97cb2d780584a4d4354faaa1c507a1ac07a1eaf74d8d8756e27b85c5434b7238",
-      "size": 6461,
+      "sha256": "b1f5c04815fa786bffde0476578551e2fc754fbaf34fd2d774611093611fcbf8",
+      "size": 6429,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3816,8 +3837,8 @@
       "product": "Flint",
       "version": "0",
       "path": "devices/strymon/flint.json",
-      "sha256": "1dd9aaa47247d8efe5869d419985319f4873d123b307073fc262552067163b40",
-      "size": 7019,
+      "sha256": "c51af16080c9d1fea2f92f4a19d21e2c4a684b67b3b1491cf3da5ee5a37d0ce8",
+      "size": 6981,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3837,8 +3858,8 @@
       "product": "Iridium",
       "version": "0",
       "path": "devices/strymon/iridium.json",
-      "sha256": "974429edf57d7661848c019c48f6be7609b71d2b996d1312f67318c67a04ec1b",
-      "size": 4958,
+      "sha256": "58f274da44e3c127cfc622a0f3bb990bf277fcacce8284bea15c9ba4a779a4d4",
+      "size": 4915,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 18,
@@ -3855,8 +3876,8 @@
       "product": "Lex",
       "version": "0",
       "path": "devices/strymon/lex.json",
-      "sha256": "bbd9cb649f0f161b7da5133067c7af0aaf46f69959323236ccb77418575cd70c",
-      "size": 6567,
+      "sha256": "43b515bc05ea00d5d2e892b8f18f20dbf43e10ab1ac1e585d4102ce94310cf7a",
+      "size": 6522,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3876,8 +3897,8 @@
       "product": "Mobius",
       "version": "0",
       "path": "devices/strymon/mobius.json",
-      "sha256": "416f7c830cd29bef86d40da6b63760c3925af96c665f857a7e2b076fe6fc3e57",
-      "size": 14027,
+      "sha256": "4706435f53156237f3533aa1d55578b47e64e3f84c5c23c89b9d2aecc6966f88",
+      "size": 14436,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3897,8 +3918,8 @@
       "product": "NightSky",
       "version": "0",
       "path": "devices/strymon/nightsky.json",
-      "sha256": "dc637d645973a3cc462ec581b76f59555d328083efd1b44cd7463005a867dbfa",
-      "size": 17082,
+      "sha256": "281caf941f30fdeeca69b497d747a314a39deaf9170d8d29eff82cff08b47f4d",
+      "size": 16802,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -3919,8 +3940,8 @@
       "product": "Olivera",
       "version": "0",
       "path": "devices/strymon/olivera.json",
-      "sha256": "cfdf7f6a2872620ccd6a645f3ed8479edb8088521b693f5b6829a6f3037e52ab",
-      "size": 4181,
+      "sha256": "0d9bb75e37a9fb31295434252182ab40a93dc545e405c66884c4c1870e640d4c",
+      "size": 4162,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -3943,8 +3964,8 @@
       "product": "Riverside",
       "version": "0",
       "path": "devices/strymon/riverside.json",
-      "sha256": "5ba9c6214aee8f69a1d4cc600d3c2b51215c65f0773cd28caf3c6dde96046c25",
-      "size": 4590,
+      "sha256": "c1764b1c6916d08cf2bd63a8c83f9c78ba1d4e895ff4a32184be534cb73af7db",
+      "size": 4555,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 16,
@@ -3961,8 +3982,8 @@
       "product": "Sunset",
       "version": "0",
       "path": "devices/strymon/sunset.json",
-      "sha256": "e9ba7c78924e31fe9e72420cb61335b09a92d131527350515ec5c651048a326c",
-      "size": 5609,
+      "sha256": "1f7d43c5a5052404b11109a676d698b07435a6add0426d9fe1c52c2939a589b6",
+      "size": 5576,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 18,
@@ -3979,8 +4000,8 @@
       "product": "TimeLine",
       "version": "0",
       "path": "devices/strymon/timeline.json",
-      "sha256": "6bf009bcc916b76173b294d128a8a436e265c241f224343c0e2ef00e3ee2b6f1",
-      "size": 11561,
+      "sha256": "78bfa82a25214a8a20ffda21816959556b055cf6ce5459f4f0d2e8672ad7105e",
+      "size": 11400,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4003,8 +4024,8 @@
       "product": "UltraViolet",
       "version": "0",
       "path": "devices/strymon/ultraviolet.json",
-      "sha256": "811b26880c878dc29b34526e21a46a1c0a5acaadcdc19a839c9d44bfa928c807",
-      "size": 3068,
+      "sha256": "cb5e57a65b37bcc4f25eaaa83630350b8f8f0bbc1380c3172e3d1b3cebe32fa5",
+      "size": 3033,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4024,8 +4045,8 @@
       "product": "Volante",
       "version": "0",
       "path": "devices/strymon/volante.json",
-      "sha256": "ff04c29c4e834cbbb35a104cf13ff897ffb87f7f746aa9b8dd72fff00a23b91b",
-      "size": 13697,
+      "sha256": "36835493379e4b741fc6ac15a0764175076280576d8057477bf59e2121c4f0cf",
+      "size": 14252,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
@@ -4046,8 +4067,8 @@
       "product": "Zelzah",
       "version": "0",
       "path": "devices/strymon/zelzah.json",
-      "sha256": "09d6c85b6f85d0e2993e37ea192def4f1290b386044ae8b35134bdb4c4e3a47a",
-      "size": 6613,
+      "sha256": "c5f92a760fa6767783d10ed249c09cf404af80eef6330ebf22541c046e942389",
+      "size": 6544,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4067,8 +4088,8 @@
       "product": "Red Mountain",
       "version": "0",
       "path": "devices/swindler_effects/red_mountain.json",
-      "sha256": "ec1e5ce02a496d071427160bbbd7a8a5e6e7066451807acdc0c199911ff7d544",
-      "size": 2511,
+      "sha256": "58bd164ec8e43212e0df88c8dc7807b0a1028a422f26ec29b723e663afba961e",
+      "size": 3319,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 8,
@@ -4085,8 +4106,8 @@
       "product": "The Gulf",
       "version": "0",
       "path": "devices/swindler_effects/the_gulf.json",
-      "sha256": "781deaf56cdbf94fdee5f67c3575fbf9809f848f1328328ea40c6ef653012686",
-      "size": 2145,
+      "sha256": "14f9c7db65906c432eca3cd5fe16026a78ee51455abe7bde005e2f021488c42b",
+      "size": 2745,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 8,
@@ -4209,8 +4230,8 @@
       "product": "Enigmatic '82",
       "version": "0",
       "path": "devices/universal_audio/enigmatic_82.json",
-      "sha256": "cadd8067e93886acea10e0f343450a2cf19226a972d324cbd06c67e225b75c8a",
-      "size": 5919,
+      "sha256": "3ea760161625cdfda555828236da75ba42e38b118bfa9a36818f004506367264",
+      "size": 8238,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4230,8 +4251,8 @@
       "product": "Galaxy '74",
       "version": "0",
       "path": "devices/universal_audio/galaxy_74.json",
-      "sha256": "c7f1013121cde763b8df91584db30d5c62939d8e665e21425fe4bfebebab14fa",
-      "size": 4378,
+      "sha256": "58af7ded0ca6597f9935c34763055b4e25a1860763f6199015117b0f49603ee8",
+      "size": 5517,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4251,8 +4272,8 @@
       "product": "Golden Reverberator",
       "version": "0",
       "path": "devices/universal_audio/golden_reverberator.json",
-      "sha256": "165d647385f480e9f68dabe60d5ed9e8c7030da1f4f9eace3f62dd982c4acc82",
-      "size": 3770,
+      "sha256": "e26620105b5dd8c1c85870e1a972b5dd2c59447c1b214fc3468ccb84e5cbb203",
+      "size": 4670,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4314,8 +4335,8 @@
       "product": "Max",
       "version": "0",
       "path": "devices/universal_audio/max.json",
-      "sha256": "1344a06a63d1701a195dbf44de6e4e84c59d11126d001087ed69eccd5f98c43d",
-      "size": 6149,
+      "sha256": "b244efbeed83e244bd0b4d42b257806491f2a478e7c686021e7915d458b69fdb",
+      "size": 7739,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 24,
@@ -4332,8 +4353,8 @@
       "product": "OX Stomp",
       "version": "0",
       "path": "devices/universal_audio/ox_stomp.json",
-      "sha256": "9715851947c3fa45286781fadbbc04c3a52bff12f2ec33051ebbe95732523b96",
-      "size": 3847,
+      "sha256": "c02158eb8957a9e8213ff6a93bf26db796d128afd08e01d9f307adcd8be77b3e",
+      "size": 4710,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4416,8 +4437,8 @@
       "product": "Paragraphs II",
       "version": "0",
       "path": "devices/vongon/paragraphs_ii.json",
-      "sha256": "d3202c96d0717bced37b26d721d187cd0fb0f9e2226dd55336da0da55e554f6e",
-      "size": 2440,
+      "sha256": "3b419c67b26d143c110629474b9d51f0fefe71cc2063fc21f5e7cf1612207fde",
+      "size": 3020,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 13,
@@ -4434,8 +4455,8 @@
       "product": "Polyphrase",
       "version": "0",
       "path": "devices/vongon/polyphrase.json",
-      "sha256": "6c70241b1bb8466b64497a563b2d2d5f8de3622a51ff1668e541fbde42b42d8a",
-      "size": 5759,
+      "sha256": "340d4d18b374cf6152659a40d1037ac171e036e321b91eb12df2721d111cbcdb",
+      "size": 5752,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4455,8 +4476,8 @@
       "product": "Rosetones",
       "version": "0",
       "path": "devices/vongon/rosetones.json",
-      "sha256": "45838d44875337f600e65cc1c91059f5e6678765f15c4e527cd75f2c4cf38699",
-      "size": 2116,
+      "sha256": "f833e4a1e8f5a1043fdb3bfab1cdf660a546bf1f0617ea71c898724175d3881d",
+      "size": 2615,
       "receives": [
         "PROGRAM_CHANGE",
         "NOTE_NUMBER"
@@ -4476,8 +4497,8 @@
       "product": "Solarfaze",
       "version": "0",
       "path": "devices/vongon/solarfaze.json",
-      "sha256": "73d6ada9fc2c4bcd57b5d5722a03ac56a02f3a3ba6935c707b742370db8fe08d",
-      "size": 5468,
+      "sha256": "a8a78ed503780addd31ee830e7181bd6e36b751c49fb58d4e018923016a00925",
+      "size": 5416,
       "receives": ["PROGRAM_CHANGE"],
       "transmits": [],
       "ccCount": 21,
@@ -4512,8 +4533,8 @@
       "product": "DFX-1",
       "version": "0",
       "path": "devices/walrus/dfx-1.json",
-      "sha256": "14ee7cda7ed325d80933ca431cd5a87aab61e34aa833e9350c69d7cda9a85690",
-      "size": 6326,
+      "sha256": "56484e3493d1f8226e89ba3bd8d15548186831ce7ffd5929fa05d7068f8b5feb",
+      "size": 6271,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4536,8 +4557,8 @@
       "product": "Mako MkII D1",
       "version": "0",
       "path": "devices/walrus/mako_mkii_d1.json",
-      "sha256": "cf8cc2222fb91399dd864fe9b61d2ffc9e250e84c04a0e896015e024526a1f1b",
-      "size": 7623,
+      "sha256": "82d1f3a3027b9e7f59f04453c22ecdba5696853bb3b9a00e9ae0a360868d942e",
+      "size": 7616,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4560,8 +4581,8 @@
       "product": "Mako MkII M1",
       "version": "0",
       "path": "devices/walrus/mako_mkii_m1.json",
-      "sha256": "5ec161e1669b06569618e3ea47b0713b0b18e4d8a28955c69ff1003affa7b87c",
-      "size": 7356,
+      "sha256": "86fb7b309a67668ace1046f29bd9aba72c585771326fafc6c4b1fd70a04c7f24",
+      "size": 7341,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4608,8 +4629,8 @@
       "product": "Meraki",
       "version": "0",
       "path": "devices/walrus/meraki.json",
-      "sha256": "26013c829d43b70738b5f038f297c4718a08c9a90de1bdb150fe7bbb9d5ee15d",
-      "size": 7569,
+      "sha256": "37e05277a84068ec70a645df29bee028416b252c1ebbb6cd4c838a7293e75353",
+      "size": 7556,
       "receives": ["CLOCK"],
       "transmits": [],
       "ccCount": 19,
@@ -4626,8 +4647,8 @@
       "product": "Qi Etherealizer",
       "version": "0",
       "path": "devices/walrus/qi_etheralizer.json",
-      "sha256": "c030b0d0a52cf460354d38d6af03d2c091e1c84d2d30566410dce47f6599c07f",
-      "size": 6977,
+      "sha256": "a53500360678a2b4f712f6ba08ac17c01af5a6970ecd55517dd8111fda1bd7eb",
+      "size": 6963,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
@@ -4650,8 +4671,8 @@
       "product": "Xero Polylooper",
       "version": "0",
       "path": "devices/walrus/xero_polylooper.json",
-      "sha256": "7ae938b316528a4c11d1a5bbe8897f46e0043e5712717dc2d319417995a2bd3d",
-      "size": 6486,
+      "sha256": "2b6de70eda2af8cf4ef2f8758a07b42abc5d8635289740f51587bdf3bd0cb8ce",
+      "size": 6480,
       "receives": ["CLOCK"],
       "transmits": ["CLOCK"],
       "ccCount": 17,

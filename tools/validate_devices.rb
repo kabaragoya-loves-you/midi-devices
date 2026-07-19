@@ -11,6 +11,7 @@
 #   - device object must contain displayName, manufacturer, model, version
 #   - Correct key names (controlChangeCommands, not "controls" or "controlChangeMessages")
 #   - Valid CC entry structure (including duplicate controlChangeNumber rejection)
+#   - Every CC requires valueRange with integer min/max; discreteValues use "name" (not "label")
 #   - x_pc custom extension format (incl. bankSelectMode: none, CC0, CC0_CC32)
 #   - x_midiTrs values (TYPE_A, TYPE_B, TYPE_TS, BOTH)
 #   - CC base name length (warn if >14 characters; x_variants names error at >14)
@@ -341,7 +342,7 @@ class DeviceValidator
       end
 
       unless entry.key?("name")
-        @warnings << "CC entry #{idx} (CC#{cc_num}): missing name"
+        @errors << "CC entry #{idx} (CC#{cc_num}): missing name"
       end
 
       name = entry["name"]
@@ -350,7 +351,9 @@ class DeviceValidator
                        "exceeds #{MAX_NAME_LENGTH} characters (#{name.length})"
       end
 
-      if entry.key?("valueRange")
+      unless entry.key?("valueRange")
+        @errors << "CC entry #{idx} (CC#{cc_num}): missing valueRange (min and max are required)"
+      else
         validate_value_range(entry["valueRange"], idx, cc_num)
       end
 
@@ -490,20 +493,65 @@ class DeviceValidator
   end
 
   def validate_value_range(range, idx, cc_num)
-    return unless range.is_a?(Hash)
+    unless range.is_a?(Hash)
+      @errors << "CC entry #{idx} (CC#{cc_num}): valueRange must be an object"
+      return
+    end
 
-    if range.key?("min") && range.key?("max")
-      min = range["min"]
-      max = range["max"]
+    min = range["min"]
+    max = range["max"]
+    unless min.is_a?(Integer)
+      @errors << "CC entry #{idx} (CC#{cc_num}): valueRange.min is required (integer)"
+    end
+    unless max.is_a?(Integer)
+      @errors << "CC entry #{idx} (CC#{cc_num}): valueRange.max is required (integer)"
+    end
+    if min.is_a?(Integer) && max.is_a?(Integer)
+      if min < 0 || min > 127
+        @errors << "CC entry #{idx} (CC#{cc_num}): valueRange.min #{min} out of range (0-127)"
+      end
+      if max < 0 || max > 127
+        @errors << "CC entry #{idx} (CC#{cc_num}): valueRange.max #{max} out of range (0-127)"
+      end
       if min > max
         @errors << "CC entry #{idx} (CC#{cc_num}): min (#{min}) > max (#{max})"
       end
     end
 
-    if range.key?("discreteValues")
-      dvs = range["discreteValues"]
-      unless dvs.is_a?(Array)
-        @errors << "CC entry #{idx} (CC#{cc_num}): discreteValues must be an array"
+    return unless range.key?("discreteValues")
+
+    dvs = range["discreteValues"]
+    unless dvs.is_a?(Array)
+      @errors << "CC entry #{idx} (CC#{cc_num}): discreteValues must be an array"
+      return
+    end
+
+    dvs.each_with_index do |dv, didx|
+      unless dv.is_a?(Hash)
+        @errors << "CC entry #{idx} (CC#{cc_num}): discreteValues[#{didx}] must be an object"
+        next
+      end
+
+      if dv.key?("label") && !dv.key?("name")
+        @errors << "CC entry #{idx} (CC#{cc_num}): discreteValues[#{didx}] uses 'label'; " \
+                   "must be 'name' (firmware ignores label)"
+      end
+      unless dv.key?("name") && dv["name"].is_a?(String) && !dv["name"].empty?
+        @errors << "CC entry #{idx} (CC#{cc_num}): discreteValues[#{didx}] missing name"
+      end
+      if !dv.key?("value") || !dv["value"].is_a?(Integer)
+        @errors << "CC entry #{idx} (CC#{cc_num}): discreteValues[#{didx}] missing integer value"
+      elsif min.is_a?(Integer) && max.is_a?(Integer)
+        v = dv["value"]
+        if v < min || v > max
+          @errors << "CC entry #{idx} (CC#{cc_num}): discreteValues[#{didx}] value #{v} " \
+                     "outside range #{min}-#{max}"
+        end
+      end
+
+      dv.each_key do |key|
+        next if %w[name value].include?(key)
+        @errors << "CC entry #{idx} (CC#{cc_num}): discreteValues[#{didx}] has unknown key '#{key}'"
       end
     end
   end

@@ -16,88 +16,234 @@
   "transmits": [],
   "controlChangeCommands": [
     {
-      "controlChangeNumber": 100,
-      "name": "Mode A"
+      "controlChangeNumber": 10,
+      "name": "Expr Pedal",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
-      "controlChangeNumber": 109,
-      "name": "Mode B"
+      "controlChangeNumber": 11,
+      "name": "Recall Preset",
+      "additionalInfo": "Send preset number to load",
+      "valueRange": { "min": 0, "max": 34 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Left St: Tap",
+      "additionalInfo": "64=tap; 127=hold until 0; 0=release",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Tap", "value": 64 },
+          { "name": "Hold", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Mid St: Scroll",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Right St: Byp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Shift Button",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Save Preset",
+      "additionalInfo": "0-35 selects destination slot",
+      "valueRange": { "min": 0, "max": 35 }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Eng Order Sw",
+      "additionalInfo": "Any value swaps engine order (dual mode)",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Swap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Solo Engine A",
+      "additionalInfo": "0=unsolo, 1-127=solo",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Solo Engine B",
+      "additionalInfo": "0=unsolo, 1-127=solo",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Unsolo", "value": 0 },
+          { "name": "Solo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Clk Listener A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Ignore", "value": 0 },
+          { "name": "Listen", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Clk Listener B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Ignore", "value": 0 },
+          { "name": "Listen", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Engage / Byp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engage", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Mode A",
+      "additionalInfo": "value = (mode * 8) + submode; e.g. Tape#2 = 9",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 101,
-      "name": "Dly T/Ratio A"
-    },
-    {
-      "controlChangeNumber": 110,
-      "name": "Dly T/Ratio B"
+      "name": "Dly T/Ratio A",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 102,
-      "name": "Mix A"
-    },
-    {
-      "controlChangeNumber": 111,
-      "name": "Mix B"
+      "name": "Mix A",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 103,
-      "name": "Volume A"
-    },
-    {
-      "controlChangeNumber": 112,
-      "name": "Volume B"
+      "name": "Volume A",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 104,
-      "name": "Feedback A"
-    },
-    {
-      "controlChangeNumber": 113,
-      "name": "Feedback B"
+      "name": "Feedback A",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 105,
-      "name": "Tone A"
-    },
-    {
-      "controlChangeNumber": 114,
-      "name": "Tone B"
+      "name": "Tone A",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 106,
-      "name": "Thing 1 A"
-    },
-    {
-      "controlChangeNumber": 115,
-      "name": "Thing 1 B"
+      "name": "Thing 1 A",
+      "additionalInfo": "Function depends on selected mode",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 107,
-      "name": "Thing 2 A"
-    },
-    {
-      "controlChangeNumber": 116,
-      "name": "Thing 2 B"
+      "name": "Thing 2 A",
+      "additionalInfo": "Function depends on selected mode",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 108,
-      "name": "Delay Source",
+      "name": "Delay Source A",
       "valueRange": {
         "min": 0,
         "max": 2,
         "discreteValues": [
-          {
-            "value": 0,
-            "label": "Global"
-          },
-          {
-            "value": 1,
-            "label": "Local"
-          },
-          {
-            "value": 2,
-            "label": "Knob"
-          }
+          { "name": "Global", "value": 0 },
+          { "name": "Local", "value": 1 },
+          { "name": "Knob", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Mode B",
+      "additionalInfo": "value = (mode * 8) + submode; e.g. Tape#2 = 9",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Dly T/Ratio B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Mix B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Volume B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Feedback B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Tone B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Thing 1 B",
+      "additionalInfo": "Function depends on selected mode",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Thing 2 B",
+      "additionalInfo": "Function depends on selected mode",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Delay Source B",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Global", "value": 0 },
+          { "name": "Local", "value": 1 },
+          { "name": "Knob", "value": 2 }
         ]
       }
     },
@@ -108,110 +254,10 @@
         "min": 0,
         "max": 3,
         "discreteValues": [
-          {
-            "value": 0,
-            "label": "Trails"
-          },
-          {
-            "value": 1,
-            "label": "Parallel"
-          },
-          {
-            "value": 2,
-            "label": "Serial"
-          },
-          {
-            "value": 3,
-            "label": "Left/Right"
-          }
-        ]
-      }
-    },
-    {
-      "controlChangeNumber": 60,
-      "name": "Engage / Byp",
-      "valueRange": {
-        "discreteValues": [
-          {
-            "value": 0,
-            "label": "Bypass"
-          },
-          {
-            "value": 127,
-            "label": "Engage"
-          }
-        ]
-      }
-    },
-    {
-      "controlChangeNumber": 11,
-      "name": "Recall Preset"
-    },
-    {
-      "controlChangeNumber": 10,
-      "name": "Expr Pedal"
-    },
-    {
-      "controlChangeNumber": 35,
-      "name": "Left St: Tap"
-    },
-    {
-      "controlChangeNumber": 36,
-      "name": "Mid St: Scroll"
-    },
-    {
-      "controlChangeNumber": 37,
-      "name": "Right St: Byp"
-    },
-    {
-      "controlChangeNumber": 38,
-      "name": "Shift Button"
-    },
-    {
-      "controlChangeNumber": 39,
-      "name": "Save Preset"
-    },
-    {
-      "controlChangeNumber": 40,
-      "name": "Eng Order Sw"
-    },
-    {
-      "controlChangeNumber": 41,
-      "name": "Solo Engine A"
-    },
-    {
-      "controlChangeNumber": 42,
-      "name": "Solo Engine B"
-    },
-    {
-      "controlChangeNumber": 51,
-      "name": "Clk Listener A",
-      "valueRange": {
-        "discreteValues": [
-          {
-            "value": 0,
-            "label": "Ignore MIDI Clock"
-          },
-          {
-            "value": 127,
-            "label": "Listen for MIDI Clock"
-          }
-        ]
-      }
-    },
-    {
-      "controlChangeNumber": 52,
-      "name": "Clk Listener B",
-      "valueRange": {
-        "discreteValues": [
-          {
-            "value": 0,
-            "label": "Ignore MIDI Clock"
-          },
-          {
-            "value": 127,
-            "label": "Listen for MIDI Clock"
-          }
+          { "name": "Trails", "value": 0 },
+          { "name": "Parallel", "value": 1 },
+          { "name": "Serial", "value": 2 },
+          { "name": "Left/Right", "value": 3 }
         ]
       }
     }

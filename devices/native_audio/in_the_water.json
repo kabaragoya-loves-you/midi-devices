@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Native Audio In the Water",
+  "displayName": "In the Water",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Native Audio",
+    "model": "In the Water",
+    "version": ""
+  },
+  "receives": [
+    "NOTE_NUMBER",
+    "PITCH_BEND",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Ripples",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Reflections",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Waveform LP",
+      "additionalInfo": "Only active while a drone is playing",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Waveform Rez",
+      "additionalInfo": "Only active while a drone is playing",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Waveform Lvl",
+      "additionalInfo": "Only active while a drone is playing",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Sim Reflect",
+      "additionalInfo": "0=release, 1-127=press; cannot open main menu",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Sim Wave Gen",
+      "additionalInfo": "0=release, 1-127=press; cannot open main menu",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Expression",
+      "additionalInfo": "Drives Expression Assign binding; assign once with a physical pedal first",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Reflect Tog",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Tap Tempo",
+      "additionalInfo": "Averages interval; range 100-2000 ms; resets after 3 s idle",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Division",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "16th", "value": 8 },
+          { "name": "Dot 16th", "value": 27 },
+          { "name": "8th", "value": 45 },
+          { "name": "Qtr Trip", "value": 63 },
+          { "name": "Dot 8th", "value": 81 },
+          { "name": "Quarter", "value": 100 },
+          { "name": "Half", "value": 118 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Clock Enable",
+      "additionalInfo": "Default Off; tap tempo overrides clock; tempo clamped to 200-2000 ms",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Trails",
+      "additionalInfo": "Live setting only; reverts to global after power cycle",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Stereo",
+      "additionalInfo": "Live setting only; reverts to global after power cycle",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "MISO", "value": 0 },
+          { "name": "SISO", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "MIDI Channel",
+      "additionalInfo": "0=omni, 1-16=lock (saved to flash); heard on every channel",
+      "valueRange": {
+        "min": 0,
+        "max": 16,
+        "discreteValues": [
+          { "name": "Omni", "value": 0 },
+          { "name": "Ch 1", "value": 1 },
+          { "name": "Ch 2", "value": 2 },
+          { "name": "Ch 3", "value": 3 },
+          { "name": "Ch 4", "value": 4 },
+          { "name": "Ch 5", "value": 5 },
+          { "name": "Ch 6", "value": 6 },
+          { "name": "Ch 7", "value": 7 },
+          { "name": "Ch 8", "value": 8 },
+          { "name": "Ch 9", "value": 9 },
+          { "name": "Ch 10", "value": 10 },
+          { "name": "Ch 11", "value": 11 },
+          { "name": "Ch 12", "value": 12 },
+          { "name": "Ch 13", "value": 13 },
+          { "name": "Ch 14", "value": 14 },
+          { "name": "Ch 15", "value": 15 },
+          { "name": "Ch 16", "value": 16 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Hotone Verbera",
+  "displayName": "Verbera",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Hotone",
+    "model": "Verbera",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Preset Bank",
+      "x_mandatory": true,
+      "additionalInfo": "Standard MIDI map (fw ≥1.2.1). Not CC0. 0-63 + PC 0-99 = presets 1-100; 64-127 + PC 0-99 = 101-200. Pedal MENU MIDI FILE = Standard.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "1-100", "value": 0 },
+          { "name": "101-200", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "IR Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "IR Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "IR Attack",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "XR Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "XR Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Global Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Global Predly",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Global Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Preset Vol",
+      "valueRange": { "min": 0, "max": 24 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Octave Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "IR Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "XR Damp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "MOD Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "MOD Select",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "DeepSea", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Tone Model",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "L/H Pass", "value": 0 },
+          { "name": "Low Pass", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Active",
+      "additionalInfo": "0-63=On, 64-127=Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "On", "value": 0 },
+          { "name": "Off", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Freeze",
+      "additionalInfo": "0-63=On, 64-127=Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "On", "value": 0 },
+          { "name": "Off", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "FS Mode",
+      "additionalInfo": "Preset or Control footswitch mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Preset", "value": 0 },
+          { "name": "Control", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Next Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Prev Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Previous", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Next IR",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next IR", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Prev IR",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev IR", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Kill Dry",
+      "additionalInfo": "0-63=On, 64-127=Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "On", "value": 0 },
+          { "name": "Off", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "MNT Freeze",
+      "additionalInfo": "0-63=On, 64-127=Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "On", "value": 0 },
+          { "name": "Off", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-07-08T05:48:52Z",
-  "count": 227,
+  "generatedAt": "2026-07-25T19:40:32Z",
+  "count": 234,
   "devices": [
     {
       "slug": "ac_noises.continua@0",
@@ -1759,14 +1759,14 @@
       "product": "Echosystem",
       "version": "0",
       "path": "devices/empress/echosystem.json",
-      "sha256": "ab6d8c03dcbc807a944a6bded4dfc3553a4aae639af4720ecf5ec07971a8d85f",
-      "size": 4511,
+      "sha256": "949556dce44bb84ab46ae2ec29dfd242fd0e5b1db12eaf76bc5ef71a3a1d1109",
+      "size": 6978,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
       ],
       "transmits": [],
-      "ccCount": 31,
+      "ccCount": 32,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
@@ -2604,6 +2604,123 @@
       }
     },
     {
+      "slug": "hotone_audio.ampero@0",
+      "vendor": "Hotone",
+      "product": "Ampero",
+      "version": "0",
+      "path": "devices/hotone_audio/ampero.json",
+      "sha256": "84be5014763763c7897cd7f512bf4734d4918caf8ad836bee0207e03c839c4c5",
+      "size": 11088,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 47,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 99,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "hotone_audio.ampero_ii@0",
+      "vendor": "Hotone",
+      "product": "Ampero II",
+      "version": "0",
+      "path": "devices/hotone_audio/ampero_ii.json",
+      "sha256": "390c5c2caef6567366cc8142c3a211cb70e9e3c75a7b1bae3dfd4d872b6440f4",
+      "size": 18103,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 55,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelectMode": "CC0"
+      }
+    },
+    {
+      "slug": "hotone_audio.ampero_ii_stage@0",
+      "vendor": "Hotone",
+      "product": "Ampero II Stage",
+      "version": "0",
+      "path": "devices/hotone_audio/ampero_ii_stage.json",
+      "sha256": "10513f90b4b61afac6aac1068c405c050d586cf935dd01b32d497844db61672e",
+      "size": 15521,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 58,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelectMode": "CC0"
+      }
+    },
+    {
+      "slug": "hotone_audio.ampero_ii_stomp@0",
+      "vendor": "Hotone",
+      "product": "Ampero II Stomp",
+      "version": "0",
+      "path": "devices/hotone_audio/ampero_ii_stomp.json",
+      "sha256": "d4adfa0e7b210bacf8ce2cf4818c861b11fbc17a85eef8924daab80d87d21a15",
+      "size": 17708,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 54,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 300,
+        "bankSelectMode": "CC0"
+      }
+    },
+    {
+      "slug": "hotone_audio.freqlux@0",
+      "vendor": "Hotone",
+      "product": "Freqlux",
+      "version": "0",
+      "path": "devices/hotone_audio/freqlux.json",
+      "sha256": "329fdb956c7db5a99c97e5e6be8791747ff92f61e2e43446dc9029a4a4c7b688",
+      "size": 11013,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 53,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "hotone_audio.verbera@0",
+      "vendor": "Hotone",
+      "product": "Verbera",
+      "version": "0",
+      "path": "devices/hotone_audio/verbera.json",
+      "sha256": "dda54e4f53de4f04d7258c9aa3341106caeafde05cc13cf1bbc21294f760ab20",
+      "size": 5663,
+      "receives": ["PROGRAM_CHANGE"],
+      "transmits": [],
+      "ccCount": 25,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 100,
+        "bankSelectMode": "none"
+      }
+    },
+    {
       "slug": "jackson_audio.asabi@0",
       "vendor": "Jackson Audio",
       "product": "Asabi",
@@ -2999,6 +3116,28 @@
       "x_pc": {
         "indexBase": 0,
         "count": 8,
+        "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "native_audio.in_the_water@0",
+      "vendor": "Native Audio",
+      "product": "In the Water",
+      "version": "0",
+      "path": "devices/native_audio/in_the_water.json",
+      "sha256": "ab448c11ad0c3d0980a3f1c4eac007d3ad60f3c38ad338bdcb63d690a1242b41",
+      "size": 5625,
+      "receives": [
+        "NOTE_NUMBER",
+        "PITCH_BEND",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 16,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 0,
         "bankSelectMode": "none"
       }
     },

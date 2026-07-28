@@ -1,0 +1,428 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Hotone Freqlux",
+  "displayName": "Freqlux",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Hotone",
+    "model": "Freqlux",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Preset Bank",
+      "x_mandatory": true,
+      "additionalInfo": "Not CC0. 0-63 + PC 0-99 = presets 1-100; 64-127 + PC 0-99 = presets 101-200. Firmware PC bank select cannot drive CC14.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "1-100", "value": 0 },
+          { "name": "101-200", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "H1 Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "name": "Poly", "value": 0 },
+          { "name": "Key", "value": 1 },
+          { "name": "Detune", "value": 2 },
+          { "name": "Arp", "value": 3 },
+          { "name": "Mod Only", "value": 4 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "H1 Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "H1 Pitch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "H1 Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "H1 Swell",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "H1 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "H1 Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "H1 Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "H1 Time ms",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "H1 Time Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "1/16", "value": 4 },
+          { "name": "1/8T", "value": 12 },
+          { "name": "1/8D", "value": 23 },
+          { "name": "1/8", "value": 35 },
+          { "name": "1/4T", "value": 46 },
+          { "name": "1/4D", "value": 58 },
+          { "name": "1/4", "value": 70 },
+          { "name": "1/2T", "value": 82 },
+          { "name": "1/2D", "value": 93 },
+          { "name": "1/2", "value": 105 },
+          { "name": "1/1", "value": 119 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "H1 Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "H1 FX Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "H1 Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "H1 Tremolo",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "H2 Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "name": "Poly", "value": 0 },
+          { "name": "Key", "value": 1 },
+          { "name": "Detune", "value": 2 },
+          { "name": "Arp", "value": 3 },
+          { "name": "Mod Only", "value": 4 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "H2 Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "H2 Pitch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "H2 Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "H2 Swell",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "H2 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "H2 Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "H2 Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "H2 Time ms",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "H2 Time Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "1/16", "value": 4 },
+          { "name": "1/8T", "value": 12 },
+          { "name": "1/8D", "value": 23 },
+          { "name": "1/8", "value": 35 },
+          { "name": "1/4T", "value": 46 },
+          { "name": "1/4D", "value": 58 },
+          { "name": "1/4", "value": 70 },
+          { "name": "1/2T", "value": 82 },
+          { "name": "1/2D", "value": 93 },
+          { "name": "1/2", "value": 105 },
+          { "name": "1/1", "value": 119 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "H2 Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "H2 FX Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "H2 Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "H2 Tremolo",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "H3 Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "name": "Poly", "value": 0 },
+          { "name": "Key", "value": 1 },
+          { "name": "Detune", "value": 2 },
+          { "name": "Arp", "value": 3 },
+          { "name": "Mod Only", "value": 4 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "H3 Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "H3 Pitch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "H3 Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "H3 Swell",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "H3 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "H3 Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "H3 Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "H3 Time ms",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "H3 Time Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "1/16", "value": 4 },
+          { "name": "1/8T", "value": 12 },
+          { "name": "1/8D", "value": 23 },
+          { "name": "1/8", "value": 35 },
+          { "name": "1/4T", "value": 46 },
+          { "name": "1/4D", "value": 58 },
+          { "name": "1/4", "value": 70 },
+          { "name": "1/2T", "value": 82 },
+          { "name": "1/2D", "value": 93 },
+          { "name": "1/2", "value": 105 },
+          { "name": "1/1", "value": 119 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "H3 Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "H3 FX Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "H3 Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "H3 Tremolo",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Global Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Flux Attack",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Flux Release",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Active",
+      "additionalInfo": "0-63=On, 64-127=Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "On", "value": 0 },
+          { "name": "Off", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Flux",
+      "additionalInfo": "0-63=On, 64-127=Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "On", "value": 0 },
+          { "name": "Off", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Auto Flux ATK",
+      "additionalInfo": "0-63=On, 64-127=Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "On", "value": 0 },
+          { "name": "Off", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Auto Flux Both",
+      "additionalInfo": "ATK+RLS; 0-63=On, 64-127=Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "On", "value": 0 },
+          { "name": "Off", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "FS Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Preset", "value": 0 },
+          { "name": "Control", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Next Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Prev Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Previous", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -98,26 +98,16 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "Rv Mix/Place",
+      "name": "Reverb",
       "additionalInfo": "0-63: Pre Resonator Mix, 64-127: Post Resonator Mix",
       "valueRange": {
         "min": 0,
-        "max": 127,
-        "discreteValues": [
-          {
-            "value": 0,
-            "name": "Pre Res Mix"
-          },
-          {
-            "value": 64,
-            "name": "Post Res Mix"
-          }
-        ]
+        "max": 127
       }
     },
     {
       "controlChangeNumber": 25,
-      "name": "Reverb Decay",
+      "name": "Time",
       "valueRange": {
         "min": 0,
         "max": 127

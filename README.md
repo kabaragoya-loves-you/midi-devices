@@ -8,47 +8,95 @@ This repository contains device profiles in JSON format that describe the MIDI i
 
 ## Schema
 
-Device profiles are based on the [Open MIDI RTC JSON schema](https://github.com/Open-MIDI-RTC/MIDI-RTC-Schema) with several custom extensions prefixed with `x_`:
+Device profiles conform to `schemaVersion` `"0.1.1"`, based on the [Open MIDI RTC JSON schema](https://github.com/Open-MIDI-RTC/MIDI-RTC-Schema) with several Storm Summoner extensions prefixed with `x_`. The extension schema lives in `web/schemas/storm-summoner-extensions.schema.json`, and the authoritative, step-by-step authoring guide is [`DEVICE_AUTHORING.md`](DEVICE_AUTHORING.md).
 
-### Custom Extensions
+Validate any change before committing:
 
-**Program Change Support**
-```json
-"receives": ["PROGRAM_CHANGE"]
+```bash
+ruby tools/validate_devices.rb
 ```
 
-**Program Change Configuration**
+Unknown `x_`-prefixed keys are rejected, so only the extensions below are allowed.
 
-Simple count-based:
+### Top-level extensions
+
+**Program change / presets (`x_pc`)** — always present, even when the device has no presets:
+
 ```json
-"x_pc": { "indexBase": 0, "count": 36 }
+"x_pc": { "indexBase": 0, "count": 128, "bankSelectMode": "none" }
 ```
 
-Named presets:
-```json
-"x_pc": { "indexBase": 0, "names": ["Hall", "Plate", "Spring", "..."] }
-```
+- `indexBase` — `0` or `1`, matching how the device numbers its presets.
+- `count` — total number of presets (`0` if the device has none).
+- `bankSelectMode` — `"none"`, `"CC0"`, or `"CC0_CC32"`, depending on how the device reaches banks beyond 128 presets.
 
-Bank select support:
-```json
-"x_pc": { "indexBase": 0, "count": 128, "bankSelect": true }
-```
+**TRS/TS MIDI wiring (`x_midiTrs`)** — the physical MIDI TRS/TS wiring standard the device expects:
 
-**Program Change Notes**
-```json
-"x_pcNote": "Responds to CC#0/32 bank select before PC."
-```
-
-**TRS/TS MIDI Wiring Type**
 ```json
 "x_midiTrs": "TYPE_A"
 ```
 
-Specifies the physical MIDI TRS/TS wiring standard required:
-- `BOTH` - MIDI signal sent on both TRS/RTS polarities (default)
-- `TYPE_A` - MIDI signal on tip (standard for Empress, 1010music, Red Panda, etc.)
-- `TYPE_B` - MIDI signal on ring (Chase Bliss Audio)
-- `TYPE_TS` - Tip/Sleeve (Disaster Area, Source Audio, etc.)
+- `BOTH` — signal sent on both TRS/RTS polarities (default when unknown)
+- `TYPE_A` — signal on tip (Empress, 1010music, Red Panda, etc.)
+- `TYPE_B` — signal on ring (Chase Bliss Audio)
+- `TYPE_TS` — tip/sleeve (Disaster Area, Source Audio, etc.)
+
+**Default MIDI channel (`x_midiChannel`)** — the device's factory/default MIDI channel (1–16):
+
+```json
+"x_midiChannel": 1
+```
+
+### Control change parameters
+
+Each `controlChangeCommands` entry describes one CC parameter. The minimal form for a continuous control is:
+
+```json
+{ "controlChangeNumber": 14, "name": "Mix", "valueRange": { "min": 0, "max": 127 } }
+```
+
+- `name` — display label. Keep to **14 characters or fewer**; the device screen is small. `validate_devices.rb` emits a warning for longer base names, and rejects over-length `x_variants` names outright.
+- `valueRange` — `min`/`max` bound the control. Tighten `max` to the highest useful value (a toggle is `"max": 1`, a four-way selector is `"max": 3`); reserve `"max": 127` for genuinely continuous or banded parameters.
+- `discreteValues` — optional array of named states inside `valueRange`:
+  - **2 or more** entries render a pick-one list/dropdown (modes, shapes, subdivisions).
+  - **exactly 1** entry renders a momentary "verb" trigger (tap, reset, record) that fires on any value.
+- `additionalInfo` — optional author-only note. It is **never shown** in any UI, so `name` must stand on its own.
+
+### Mode-dependent CCs (`x_variants`, `x_mandatory`, `x_noop`)
+
+Some devices reuse one CC for different functions depending on a *mode* selected by another CC. There is always **exactly one entry per CC number**; mode-specific behavior is expressed with extensions rather than duplicate entries.
+
+**`x_variants`** overrides an entry's `name`, `valueRange`, and/or `additionalInfo` when a constraint on a gating CC matches:
+
+```json
+{
+  "controlChangeNumber": 102,
+  "name": "Bypass",
+  "valueRange": {
+    "min": 0, "max": 1,
+    "discreteValues": [ { "name": "Off", "value": 0 }, { "name": "On", "value": 1 } ]
+  },
+  "x_variants": [
+    {
+      "constraint": { "cc": 24, "op": ">=", "value": 3 },
+      "name": "Play/Stop",
+      "valueRange": {
+        "min": 0, "max": 1,
+        "discreteValues": [ { "name": "Toggle", "value": 1 } ]
+      }
+    }
+  ]
+}
+```
+
+- `constraint` is `{ "cc": <gating CC>, "op": <operator>, "value": <int> }`, where `op` is one of `<`, `<=`, `>`, `>=`, `==`, `!=`, evaluated as *(current gating CC value)* `op` *value*. The gating CC must be a defined `controlChangeNumber` in the same file.
+- Variants are evaluated **in array order; first match wins**. The base entry is the default-mode (gating value 0) behavior — never author a redundant variant that just restates it.
+
+**`x_mandatory`** marks a gate CC — the one other CCs constrain against. Each scene keeps a required, non-deletable CC-defaults entry for it, which is the source of truth for mode resolution and is transmitted on scene load. A gate CC has no `x_variants` of its own.
+
+**`x_noop`** (boolean) hides a CC in the modes where it does nothing — e.g. a looper's Record/Play footswitch in the delay modes — instead of showing an inert control. It can sit on a variant (hide only while that constraint matches) or on the base entry (hidden by default, with variants supplying the active modes). A no-op only filters editing/rendering; it does not change what the device transmits.
+
+See [`DEVICE_AUTHORING.md`](DEVICE_AUTHORING.md) for the full rules, the multi-mode matrix workflow, and the variant anti-patterns to avoid.
 
 ## Structure
 
@@ -59,12 +107,16 @@ devices/
 ```
 
 Each device file contains:
+- `schemaVersion` - Schema version (currently `"0.1.1"`)
 - `implementationVersion` - Version of the device profile (increment when updating)
+- `title` / `displayName` - Full name (search/lists) and short name (device screen)
+- `device` - Manufacturer/model metadata
 - `receives` / `transmits` - Supported MIDI message types
-- `controlChangeCommands` - CC parameter definitions
+- `controlChangeCommands` - CC parameter definitions (with optional `x_variants` / `x_mandatory` / `x_noop`)
 - `nrpnCommands` - NRPN parameter definitions (if supported)
-- `x_pc` - Program change configuration (if supported)
-- `x_midiTrs` - TRS/TS MIDI wiring type (if applicable)
+- `x_pc` - Program change configuration (always present)
+- `x_midiTrs` - TRS/TS MIDI wiring type
+- `x_midiChannel` - Default MIDI channel
 
 ## Manifest
 
@@ -96,11 +148,12 @@ ruby tools/verify_manifest.rb
 
 ## Contributing
 
-Contributions of new device profiles are welcome! Please ensure:
+Contributions of new device profiles are welcome! See [`DEVICE_AUTHORING.md`](DEVICE_AUTHORING.md) for the full authoring guide, then ensure:
 1. Device files follow the naming convention: `devices/vendor/product.json`
 2. The `implementationVersion` field is set appropriately
-3. The manifest is rebuilt after adding/updating devices
-4. The manifest passes verification
+3. The file passes `ruby tools/validate_devices.rb` (no errors)
+4. The manifest is rebuilt after adding/updating devices
+5. The manifest passes verification
 
 ## License
 

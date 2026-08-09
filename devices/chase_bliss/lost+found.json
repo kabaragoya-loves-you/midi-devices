@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.1",
-  "implementationVersion": "0",
+  "implementationVersion": "1",
   "title": "Chase Bliss Lost + Found",
   "displayName": "Lost + Found",
   "device": {
@@ -310,6 +310,29 @@
           {
             "value": 3,
             "name": "R Only"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Resonator Type",
+      "additionalInfo": "Clean = 0-1, Hybrid = 2, Dirty = 3-127 (Sympathetic Resonator)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Clean"
+          },
+          {
+            "value": 2,
+            "name": "Hybrid"
+          },
+          {
+            "value": 3,
+            "name": "Dirty"
           }
         ]
       }

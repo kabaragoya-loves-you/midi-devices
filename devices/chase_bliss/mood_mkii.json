@@ -1,12 +1,12 @@
 {
   "schemaVersion": "0.1.1",
-  "implementationVersion": "0",
-  "title": "Chase Bliss Mood MkII",
-  "displayName": "Mood MkII",
+  "implementationVersion": "1",
+  "title": "Chase Bliss MOOD MkII",
+  "displayName": "MOOD MkII",
   "device": {
     "displayName": "",
     "manufacturer": "Chase Bliss",
-    "model": "Mood MkII",
+    "model": "MOOD MkII",
     "version": ""
   },
   "receives": [
@@ -16,6 +16,14 @@
   ],
   "transmits": [],
   "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Pitch Bend",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
     {
       "controlChangeNumber": 1,
       "name": "Mod Wheel",
@@ -28,36 +36,8 @@
     {
       "controlChangeNumber": 14,
       "name": "Time",
-      "valueRange": {
-        "min": 0,
-        "max": 127,
-        "discreteValues": [
-          {
-            "value": 0,
-            "name": "1/32 Note"
-          },
-          {
-            "value": 13,
-            "name": "1/16 Note"
-          },
-          {
-            "value": 37,
-            "name": "1/8 Triplet"
-          },
-          {
-            "value": 62,
-            "name": "1/8 Note"
-          },
-          {
-            "value": 85,
-            "name": "Dotted 1/8"
-          },
-          {
-            "value": 111,
-            "name": "1/4 Note"
-          }
-        ]
-      }
+      "additionalInfo": "TODO: restore discrete subdivisions gated on Sync (CC31) value 1 or 3 (unknown which; default No Sync=2 is continuous). discreteValues: [{value:0,name:\"1/32 Note\"},{value:13,name:\"1/16 Note\"},{value:37,name:\"1/8 Triplet\"},{value:62,name:\"1/8 Note\"},{value:85,name:\"Dotted 1/8\"},{value:111,name:\"1/4 Note\"}]",
+      "valueRange": { "min": 0, "max": 127 }
     },
     {
       "controlChangeNumber": 15,
@@ -70,40 +50,30 @@
     {
       "controlChangeNumber": 16,
       "name": "Length",
-      "valueRange": {
-        "min": 0,
-        "max": 127,
-        "discreteValues": [
-          {
-            "value": 0,
-            "name": "x 1/32"
-          },
-          {
-            "value": 13,
-            "name": "x 1/16"
-          },
-          {
-            "value": 37,
-            "name": "x 1/8"
-          },
-          {
-            "value": 62,
-            "name": "x 1/4"
-          },
-          {
-            "value": 85,
-            "name": "x 1/2"
-          },
-          {
-            "value": 111,
-            "name": "x 1"
+      "additionalInfo": "Continuous unless Looper Mode (CC23) is Tape (2), where rhythmic multipliers apply.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 23, "op": "==", "value": 2 },
+          "additionalInfo": "Tape mode: rhythmic length multipliers.",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 0, "name": "x 1/32" },
+              { "value": 13, "name": "x 1/16" },
+              { "value": 37, "name": "x 1/8" },
+              { "value": 62, "name": "x 1/4" },
+              { "value": 85, "name": "x 1/2" },
+              { "value": 111, "name": "x 1" }
+            ]
           }
-        ]
-      }
+        }
+      ]
     },
     {
       "controlChangeNumber": 17,
-      "name": "Modify (Wet)",
+      "name": "Modify Wet",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -112,134 +82,76 @@
     {
       "controlChangeNumber": 18,
       "name": "Clock",
+      "additionalInfo": "Discrete sample rates by default; free 0-127 when Dip: Smooth (CC78) is On.",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
-          {
-            "value": 0,
-            "name": "2k"
-          },
-          {
-            "value": 5,
-            "name": "3k"
-          },
-          {
-            "value": 16,
-            "name": "4k"
-          },
-          {
-            "value": 29,
-            "name": "6k"
-          },
-          {
-            "value": 41,
-            "name": "8k"
-          },
-          {
-            "value": 54,
-            "name": "12k"
-          },
-          {
-            "value": 70,
-            "name": "16k"
-          },
-          {
-            "value": 84,
-            "name": "24k"
-          },
-          {
-            "value": 96,
-            "name": "32k"
-          },
-          {
-            "value": 110,
-            "name": "48k"
-          },
-          {
-            "value": 122,
-            "name": "64k"
-          }
+          { "value": 0, "name": "2k" },
+          { "value": 5, "name": "3k" },
+          { "value": 16, "name": "4k" },
+          { "value": 29, "name": "6k" },
+          { "value": 41, "name": "8k" },
+          { "value": 54, "name": "12k" },
+          { "value": 70, "name": "16k" },
+          { "value": 84, "name": "24k" },
+          { "value": 96, "name": "32k" },
+          { "value": 110, "name": "48k" },
+          { "value": 122, "name": "64k" }
         ]
-      }
+      },
+      "x_variants": [
+        {
+          "constraint": { "cc": 78, "op": "==", "value": 1 },
+          "additionalInfo": "Smooth dip On: free continuous clock rate.",
+          "valueRange": { "min": 0, "max": 127 }
+        }
+      ]
     },
     {
       "controlChangeNumber": 19,
-      "name": "Tape/Str Speed",
-      "valueRange": {
-        "min": 0,
-        "max": 127,
-        "discreteValues": [
-          {
-            "value": 0,
-            "name": "Tape 4x Rev"
-          },
-          {
-            "value": 5,
-            "name": "Tape 2x Rev"
-          },
-          {
-            "value": 24,
-            "name": "Tape 1x Rev"
-          },
-          {
-            "value": 43,
-            "name": "Tape .5x Rev"
-          },
-          {
-            "value": 62,
-            "name": "Tape .5x Fwd"
-          },
-          {
-            "value": 85,
-            "name": "Tape 1x Fwd"
-          },
-          {
-            "value": 98,
-            "name": "Tape 2x Fwd"
-          },
-          {
-            "value": 120,
-            "name": "Tape 4x Fwd"
-          },
-          {
-            "value": 1,
-            "name": "Str No Rev"
-          },
-          {
-            "value": 16,
-            "name": "Str 1.5x Rev"
-          },
-          {
-            "value": 31,
-            "name": "Str 2x Rev"
-          },
-          {
-            "value": 47,
-            "name": "Str 4x Rev"
-          },
-          {
-            "value": 61,
-            "name": "Str Stalled"
-          },
-          {
-            "value": 81,
-            "name": "Str 4x Fwd"
-          },
-          {
-            "value": 97,
-            "name": "Str 2x Fwd"
-          },
-          {
-            "value": 112,
-            "name": "Str 1.5x Fwd"
-          },
-          {
-            "value": 127,
-            "name": "Str No Fwd"
+      "name": "Modify Loop",
+      "additionalInfo": "Continuous in Env (CC23=1). Tape (2) and Stretch (3) use mode-specific named points.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 23, "op": "==", "value": 2 },
+          "additionalInfo": "Tape mode: tape-speed modify points.",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 0, "name": "4x Rev" },
+              { "value": 5, "name": "2x Rev" },
+              { "value": 24, "name": "1x Rev" },
+              { "value": 43, "name": ".5x Rev" },
+              { "value": 62, "name": ".5x Fwd" },
+              { "value": 85, "name": "1x Fwd" },
+              { "value": 98, "name": "2x Fwd" },
+              { "value": 120, "name": "4x Fwd" }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "constraint": { "cc": 23, "op": "==", "value": 3 },
+          "additionalInfo": "Stretch mode: stretch-factor modify points.",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 1, "name": "No Rev" },
+              { "value": 16, "name": "1.5x Rev" },
+              { "value": 31, "name": "2x Rev" },
+              { "value": 47, "name": "4x Rev" },
+              { "value": 61, "name": "Stalled" },
+              { "value": 81, "name": "4x Fwd" },
+              { "value": 97, "name": "2x Fwd" },
+              { "value": 112, "name": "1.5x Fwd" },
+              { "value": 127, "name": "No Fwd" }
+            ]
+          }
+        }
+      ]
     },
     {
       "controlChangeNumber": 20,
@@ -251,13 +163,13 @@
     },
     {
       "controlChangeNumber": 21,
-      "name": "Wet Channel",
+      "name": "Wet Mode",
       "valueRange": {
-        "min": 0,
+        "min": 1,
         "max": 3,
         "discreteValues": [
           {
-            "value": 0,
+            "value": 1,
             "name": "Reverb"
           },
           {
@@ -275,11 +187,11 @@
       "controlChangeNumber": 22,
       "name": "Routing",
       "valueRange": {
-        "min": 0,
+        "min": 1,
         "max": 3,
         "discreteValues": [
           {
-            "value": 0,
+            "value": 1,
             "name": "IN"
           },
           {
@@ -295,13 +207,15 @@
     },
     {
       "controlChangeNumber": 23,
-      "name": "Micro-Looper",
+      "name": "Looper Mode",
+      "x_mandatory": true,
+      "additionalInfo": "Gate CC: Env=1, Tape=2, Stretch=3. Gates Length (CC16) and Modify Loop (CC19) discretes.",
       "valueRange": {
-        "min": 0,
+        "min": 1,
         "max": 3,
         "discreteValues": [
           {
-            "value": 0,
+            "value": 1,
             "name": "Env"
           },
           {
@@ -317,7 +231,7 @@
     },
     {
       "controlChangeNumber": 24,
-      "name": "St Width (Wet)",
+      "name": "Stereo Width",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -325,37 +239,37 @@
     },
     {
       "controlChangeNumber": 25,
-      "name": "Ramping Wave",
+      "name": "Ramp Waveform",
       "valueRange": {
         "min": 0,
         "max": 127,
         "discreteValues": [
           {
             "value": 0,
-            "name": "Sine"
-          },
-          {
-            "value": 15,
             "name": "Triangle"
           },
           {
-            "value": 55,
-            "name": "Wave"
-          },
-          {
-            "value": 81,
+            "value": 15,
             "name": "Square"
           },
           {
+            "value": 55,
+            "name": "Sine"
+          },
+          {
+            "value": 81,
+            "name": "Random"
+          },
+          {
             "value": 127,
-            "name": "Constant"
+            "name": "Smooth Rand"
           }
         ]
       }
     },
     {
       "controlChangeNumber": 26,
-      "name": "Fade (Loop)",
+      "name": "Fade",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -363,7 +277,7 @@
     },
     {
       "controlChangeNumber": 27,
-      "name": "Tone (Wet)",
+      "name": "Tone",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -371,7 +285,7 @@
     },
     {
       "controlChangeNumber": 28,
-      "name": "Level Balance",
+      "name": "Balance",
       "valueRange": {
         "min": 0,
         "max": 127
@@ -389,11 +303,11 @@
       "controlChangeNumber": 31,
       "name": "Sync",
       "valueRange": {
-        "min": 0,
+        "min": 1,
         "max": 3,
         "discreteValues": [
           {
-            "value": 0,
+            "value": 1,
             "name": "Loop > Wet"
           },
           {
@@ -411,11 +325,11 @@
       "controlChangeNumber": 32,
       "name": "Spread",
       "valueRange": {
-        "min": 0,
+        "min": 1,
         "max": 3,
         "discreteValues": [
           {
-            "value": 0,
+            "value": 1,
             "name": "Wet Only"
           },
           {
@@ -433,11 +347,11 @@
       "controlChangeNumber": 33,
       "name": "Buffer Length",
       "valueRange": {
-        "min": 0,
+        "min": 1,
         "max": 2,
         "discreteValues": [
           {
-            "value": 0,
+            "value": 1,
             "name": "Half"
           },
           {
@@ -485,7 +399,7 @@
     },
     {
       "controlChangeNumber": 53,
-      "name": "Clock Div",
+      "name": "Wet Clock Div",
       "valueRange": {
         "min": 0,
         "max": 7,
@@ -527,7 +441,7 @@
     },
     {
       "controlChangeNumber": 54,
-      "name": "Clock Div",
+      "name": "Loop Clock Div",
       "valueRange": {
         "min": 0,
         "max": 7,
@@ -569,7 +483,7 @@
     },
     {
       "controlChangeNumber": 55,
-      "name": "True Byp Mode",
+      "name": "True Bypass",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -589,8 +503,14 @@
       "controlChangeNumber": 56,
       "name": "Factory Reset",
       "valueRange": {
-        "min": 0,
-        "max": 127
+        "min": 1,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 1,
+            "name": "Reset"
+          }
+        ]
       }
     },
     {
@@ -950,6 +870,8 @@
     {
       "controlChangeNumber": 78,
       "name": "Dip: Smooth",
+      "x_mandatory": true,
+      "additionalInfo": "Gate CC: On (1) makes Clock (CC18) a free 0-127 range instead of discrete sample rates.",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1020,7 +942,7 @@
     },
     {
       "controlChangeNumber": 102,
-      "name": "Bypass (Loop)",
+      "name": "Bypass Loop",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1038,7 +960,7 @@
     },
     {
       "controlChangeNumber": 103,
-      "name": "Bypass (Wet)",
+      "name": "Bypass Wet",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1074,7 +996,7 @@
     },
     {
       "controlChangeNumber": 105,
-      "name": "Freeze (Wet)",
+      "name": "Freeze",
       "valueRange": {
         "min": 0,
         "max": 1,
@@ -1092,7 +1014,7 @@
     },
     {
       "controlChangeNumber": 106,
-      "name": "Overdub (Loop)",
+      "name": "Overdub",
       "valueRange": {
         "min": 0,
         "max": 1,

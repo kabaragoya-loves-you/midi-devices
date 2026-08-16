@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-07-25T19:40:32Z",
+  "generatedAt": "2026-08-15T04:10:51Z",
   "count": 234,
   "devices": [
     {
@@ -1026,19 +1026,19 @@
       }
     },
     {
-      "slug": "chase_bliss.lost+found@0",
+      "slug": "chase_bliss.lost+found@1",
       "vendor": "Chase Bliss",
       "product": "Lost + Found",
-      "version": "0",
+      "version": "1",
       "path": "devices/chase_bliss/lost+found.json",
-      "sha256": "2a557f32c9f64cbafdac4a5bcdeb7c8cf9fd53c0876abf3b3ac2ed29eba25f63",
-      "size": 18918,
+      "sha256": "bdc758227771b94426ea1afb28c1eed4841891df8953daa5d21bc1298625fb73",
+      "size": 19446,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK"
       ],
       "transmits": [],
-      "ccCount": 51,
+      "ccCount": 52,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 1,
@@ -1068,20 +1068,20 @@
       }
     },
     {
-      "slug": "chase_bliss.mood_mkii@0",
+      "slug": "chase_bliss.mood_mkii@1",
       "vendor": "Chase Bliss",
-      "product": "Mood MkII",
-      "version": "0",
+      "product": "MOOD MkII",
+      "version": "1",
       "path": "devices/chase_bliss/mood_mkii.json",
-      "sha256": "7bbd0927f90c995fa10e66562b1d754de83f1badd18a9fca8d20634976769c61",
-      "size": 22906,
+      "sha256": "0cd9b4ce0ce98b70e9f136a458b69f8417d62619247479176849d3a3b96ad2dd",
+      "size": 23337,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",
         "NOTE_NUMBER"
       ],
       "transmits": [],
-      "ccCount": 59,
+      "ccCount": 60,
       "nrpnCount": 0,
       "x_pc": {
         "indexBase": 0,
@@ -2834,8 +2834,8 @@
       "product": "Ghosts",
       "version": "0",
       "path": "devices/kinotone/ghosts.json",
-      "sha256": "2d7e1f38d00109bfb654721fe90f91d599c4df79e882890336cc224c2e4e67fc",
-      "size": 8038,
+      "sha256": "0322bcff3b1683632f4780647d69698078506ac6e25048aa6c76a46eb1ded1b5",
+      "size": 7808,
       "receives": [
         "PROGRAM_CHANGE",
         "CLOCK",

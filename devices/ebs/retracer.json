@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "title": "EBS Retracer Delay",
+  "displayName": "Retracer",
+  "device": {
+    "displayName": "",
+    "manufacturer": "EBS",
+    "model": "Retracer Delay Workstation",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 256,
+    "bankSelectMode": "CC0_CC32",
+    "additionalInfo": "Preset recall via PC; bank select CC0/CC32 per setup; no fixed parameter CC map."
+  }
+}

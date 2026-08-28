@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Multiplier",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Banded tap ratios per manual"
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Wave Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Banded sine/saw/ramp/tri/square"
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Spacing",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Harm Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Phase",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Out",
+            "value": 0
+          },
+          {
+            "name": "In",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Moment",
+            "value": 0
+          },
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "LFO Invert",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Invert",
+            "value": 0
+          },
+          {
+            "name": "Factory",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Clock Ign",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "Omni Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Omni On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "title": "Zeppelin Design Labs Quaverato",
+  "displayName": "Quaverato",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Zeppelin Design Labs",
+    "model": "Quaverato",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  }
+}

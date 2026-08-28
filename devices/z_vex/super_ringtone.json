@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "x_pc": {
+    "indexBase": 0,
+    "count": 8,
+    "bankSelectMode": "none",
+    "additionalInfo": "MIDI clock sync only; no parameter CC map."
+  },
+  "title": "Z. Vex Super Ringtone",
+  "displayName": "Super Ring",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Z. Vex",
+    "model": "Super Ringtone",
+    "version": ""
+  }
+}

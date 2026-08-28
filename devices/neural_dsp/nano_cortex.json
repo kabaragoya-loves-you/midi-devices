@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Neural DSP Nano Cortex",
+  "displayName": "Nano Cortex",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Neural DSP",
+    "model": "Nano Cortex",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Expression",
+      "additionalInfo": "Expression pedal position. 0=heel, 127=toe. NanOS 2.1+; EXP/MIDI input must be set to MIDI in Cortex Cloud.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "In Gate",
+      "additionalInfo": "INPUT GATE slot bypass. 0-63 off, 64-127 on.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Capture",
+      "additionalInfo": "CAPTURE slot bypass. 0-63 off, 64-127 on.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Cab/IR",
+      "additionalInfo": "CAB/IR slot bypass. 0-63 off, 64-127 on.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "FX 1",
+      "additionalInfo": "FX Slot 1 bypass. 0-63 off, 64-127 on.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "FX 2",
+      "additionalInfo": "FX Slot 2 bypass. 0-63 off, 64-127 on.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "FX 3",
+      "additionalInfo": "FX Slot 3 bypass. 0-63 off, 64-127 on.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "FX 4",
+      "additionalInfo": "FX Slot 4 bypass. 0-63 off, 64-127 on.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "FX 5",
+      "additionalInfo": "FX Slot 5 bypass. 0-63 off, 64-127 on.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Tap Tempo",
+      "additionalInfo": "Tap tempo control. Any value 0-127.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Tuner",
+      "additionalInfo": "Tuner access. 0-63 off, 64-127 on.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 64,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

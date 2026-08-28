@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Matthews Effects Botanist",
+  "displayName": "Botanist",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Matthews Effects",
+    "model": "Botanist",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bypass",
+      "additionalInfo": "0=bypass; 1=engage; 2=toggle",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engage", "value": 1 },
+          { "name": "Toggle", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Algorithm",
+      "additionalInfo": "0=Harmonic Tremolo; 1=Chorus; 2=Phaser",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Harm Trem", "value": 0 },
+          { "name": "Chorus", "value": 1 },
+          { "name": "Phaser", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "MIDI Channel",
+      "additionalInfo": "0-16",
+      "valueRange": {
+        "min": 0,
+        "max": 16
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 7,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0=bypass toggle; PC 1-6=presets 1-6 per Matthews MIDI chart."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Matthews Effects Botanist MIDI CC/PC chart (user)."
+}

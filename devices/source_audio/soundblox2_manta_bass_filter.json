@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 36,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Frequency",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Mod Source",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Res",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Output",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Distortion",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Dist Type",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Effect",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Direct Mod",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "title": "Source Audio Soundblox 2 MANTA Bass Filter",
+  "displayName": "SB2 MANTA",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Soundblox 2 MANTA Bass Filter (SA223)",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "Requires Neuro Hub (SA164) for MIDI; hard-mapped CC block per Soundblox 2 line."
+  }
+}

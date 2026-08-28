@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "VTR Effects Narciso Delay",
+  "displayName": "Narciso",
+  "device": {
+    "displayName": "",
+    "manufacturer": "VTR Effects",
+    "model": "Narciso Delay",
+    "version": "2.0.0"
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "≥64 ON / <64 OFF."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Algorithm",
+      "valueRange": {
+        "min": 0,
+        "max": 15,
+        "discreteValues": [
+          { "name": "Digital", "value": 0 },
+          { "name": "Analog", "value": 1 },
+          { "name": "Tape", "value": 2 },
+          { "name": "Overnotes", "value": 3 },
+          { "name": "D-Space", "value": 4 },
+          { "name": "Resonant", "value": 5 },
+          { "name": "Dual", "value": 6 },
+          { "name": "Reverse", "value": 7 },
+          { "name": "Tap3", "value": 8 },
+          { "name": "Tape Echo", "value": 9 },
+          { "name": "Dynamic", "value": 10 },
+          { "name": "Verbdly", "value": 11 }
+        ]
+      },
+      "additionalInfo": "FW 2.0.0 range 0–15. Discrete labels 0–11 = Gold Series twelve modes in product order; 12–15 undocumented. Charm (CC3) meaning varies per algorithm on OLED."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Charm",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Mode-dependent; label shown on display."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Feed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Mix / attenuation."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Preset Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 0 }
+        ]
+      },
+      "additionalInfo": "Value 0 advances among the 99 stored presets (not the queue)."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Preset Dn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 0 }
+        ]
+      },
+      "additionalInfo": "Value 0 steps previous among the 99 stored presets (not the queue)."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Figure",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Quarter", "value": 15 },
+          { "name": "Eighth", "value": 47 },
+          { "name": "Dot 8th", "value": 79 },
+          { "name": "Triplet", "value": 111 }
+        ]
+      },
+      "additionalInfo": "0–31 quarter, 32–63 eighth, 64–95 dotted eighth, 96–127 triplet."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value = tap-tempo press."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1–99 recall presets 1–99. PC 0 ignored."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "Narciso Delay firmware 2.0.0 MIDI table. All VTR Effects MIDI TRS is Type B."
+}

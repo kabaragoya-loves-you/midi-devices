@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Ramble FX Kismet",
+  "displayName": "Kismet",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Ramble FX",
+    "model": "Kismet",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 102,
+      "name": "Toggle/Cycle",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Below 63 off; 64-127 on."
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Below 63 bypassed; 64-127 on."
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Bypass Flip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Flip", "value": 127 }]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Mids",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=heel, 127=toe. Also used for MIDI expression control."
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "Omni Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Omni Off", "value": 0 }]
+      },
+      "additionalInfo": "Must be sent on current channel."
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Omni On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Omni On", "value": 1 }]
+      },
+      "additionalInfo": "Responds to all channels when on."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 101,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0=Live Settings; 1-4=onboard presets; 5=expression slot; 6-100=preset or expression positions."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "3.5mm MIDI adapter (sold separately). 100% analog path with digital control."
+}

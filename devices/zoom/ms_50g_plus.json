@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Zoom MS-50G+",
+  "displayName": "MS-50G+",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Zoom",
+    "model": "MS-50G+",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1,
+  "additionalInfo": "MS-50G+ operation manual — PC patch recall; no fixed parameter CC map."
+}

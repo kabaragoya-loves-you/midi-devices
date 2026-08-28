@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "title": "G-Lab DR-3 Dual Reverb",
+  "displayName": "DR-3 Reverb",
+  "device": {
+    "displayName": "",
+    "manufacturer": "G-Lab",
+    "model": "DR-3 Dual Reverb",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 4,
+    "bankSelectMode": "none",
+    "additionalInfo": "No MIDI jack; A/B/on/off via foot pedal or SD-1 CTRL OUT Program Change when linked."
+  }
+}

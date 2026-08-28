@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "VTR Effects Loki Modulation",
+  "displayName": "Loki",
+  "device": {
+    "displayName": "",
+    "manufacturer": "VTR Effects",
+    "model": "Loki Modulation",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "≥64 ON / <64 OFF."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Algorithm",
+      "x_mandatory": true,
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          { "name": "Chorus", "value": 0 },
+          { "name": "HarmChorus", "value": 1 },
+          { "name": "Flanger", "value": 2 },
+          { "name": "Phaser", "value": 3 },
+          { "name": "Tremolo", "value": 4 },
+          { "name": "Warmwave", "value": 5 },
+          { "name": "Vibrato", "value": 6 },
+          { "name": "Octave", "value": 7 },
+          { "name": "Envelope", "value": 8 }
+        ]
+      },
+      "additionalInfo": "Gate CC for CC9 (Figure). Values 0–8 = Gold Series nine algorithms in product order; older docs used CC2 1–6 for Chorus–HarmWave only. Diamond/Spade (CC3/CC5) labels change per algorithm on the display."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Bar 1",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Mode-dependent (Diamond). Exact label shown on OLED per algorithm; factory MIDI table does not rename per mode."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Bar 2 / Clubs — rate across timed algorithms."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Bar 3 / Spade — depth; OLED label may change per algorithm."
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Level",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Output attenuation 0–100%."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Preset Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 0 }
+        ]
+      },
+      "additionalInfo": "Value 0 advances preset (1→2…→99). Steps the 99 stored presets, not the queue order."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Preset Dn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value steps previous preset among the 99 stored presets."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Figure",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Quarter", "value": 15 },
+          { "name": "Eighth", "value": 47 },
+          { "name": "Dot 8th", "value": 79 },
+          { "name": "Triplet", "value": 111 }
+        ]
+      },
+      "additionalInfo": "0–31 quarter, 32–63 eighth, 64–95 dotted eighth, 96–127 triplet. No effect in Octave or Envelope.",
+      "x_variants": [
+        {
+          "constraint": { "cc": 2, "op": "==", "value": 7 },
+          "x_noop": true
+        },
+        {
+          "constraint": { "cc": 2, "op": "==", "value": 8 },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value = tap-tempo press."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1–99 recall presets 1–99. PC 0 ignored."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "VTR Effects Loki MIDI table (PT). All VTR Effects MIDI TRS is Type B. CC2 Algorithm is the variant gate; CC9 Figure is no-op for Octave/Envelope."
+}

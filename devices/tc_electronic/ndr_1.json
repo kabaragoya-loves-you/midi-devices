@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Nova Drive NDR-1",
+  "displayName": "NDR-1",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Nova Drive NDR-1",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 21,
+      "name": "OD On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on per manual."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Dist On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on per manual."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "OD Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "OD Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "OD Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "OD Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Dist Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Dist Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Dist Bass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Dist Treble",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "O->D",
+            "value": 21
+          },
+          {
+            "name": "D->O",
+            "value": 64
+          },
+          {
+            "name": "Parallel",
+            "value": 106
+          }
+        ]
+      },
+      "additionalInfo": "[0;42]=O->D, [43;84]=D->O, [85;127]=Parallel."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 18,
+    "bankSelectMode": "none",
+    "additionalInfo": "18 preset locations recalled via Program Change. Default MIDI channel 2."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2,
+  "additionalInfo": "Combined MIDI IN/OUT on single 5-pin DIN jack."
+}

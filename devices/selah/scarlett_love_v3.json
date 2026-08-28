@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Selah Scarlett Love V3",
+  "displayName": "Scarlett V3",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Selah",
+    "model": "Scarlett Love V3",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "x_midiTrs": "TYPE_TS",
+  "x_midiChannel": 1,
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 29,
+      "name": "Tog Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Pedal On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Pedal Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Tog Clip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "TS Clip",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Plexi Clip",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Ge Clip",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "Default CC assignments; all CC numbers learnable via MIDI learn."
+  }
+}

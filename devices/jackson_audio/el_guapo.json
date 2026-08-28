@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Jackson Audio El Guapo",
+  "displayName": "El Guapo",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Jackson Audio",
+    "model": "El Guapo",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Dist On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Drive On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Dist Clip",
+      "valueRange": {
+        "min": 1,
+        "max": 4,
+        "discreteValues": [
+          {
+            "name": "Guv'nor",
+            "value": 1
+          },
+          {
+            "name": "Rat",
+            "value": 2
+          },
+          {
+            "name": "Asym HG",
+            "value": 3
+          },
+          {
+            "name": "Sym HG",
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Gain Cycle",
+      "valueRange": {
+        "min": 1,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "OD Clip",
+      "valueRange": {
+        "min": 1,
+        "max": 4,
+        "discreteValues": [
+          {
+            "name": "Marshall",
+            "value": 1
+          },
+          {
+            "name": "TS",
+            "value": 2
+          },
+          {
+            "name": "Timmy",
+            "value": 3
+          },
+          {
+            "name": "KoT",
+            "value": 4
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

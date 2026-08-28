@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "IK Multimedia AmpliTube X-Drive",
+  "displayName": "X-Drive",
+  "device": {
+    "displayName": "",
+    "manufacturer": "IK Multimedia",
+    "model": "AmpliTube X-Drive",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Patch Bank",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      },
+      "additionalInfo": "AmpliTube X-GEAR User Manual — MIDI Specifications."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "AmpliTube X-GEAR User Manual — MIDI Specifications."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Preset On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "X-Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Model",
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      },
+      "additionalInfo": "Per-model parameter CCs vary; gate via CC14."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Global MIDI CC table only. Per-model parameter CCs vary with CC14 — see manual algorithm sections."
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Kernom Elipse",
+  "displayName": "Elipse",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Kernom",
+    "model": "Elipse",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Shape",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Mood",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Speed",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Depth",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Mix",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Swirl",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Exp",
+      "additionalInfo": "Expression pedal position via MIDI.",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "FS Preset",
+      "additionalInfo": "Elipse MIDI table lists FS preset with no min/max. Ridge sibling documents 0-127; treated as favorite-preset footswitch (0=off, 127=on).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "FS On/Off",
+      "additionalInfo": "Elipse MIDI table lists FS ON/OFF with no min/max. Ridge sibling documents 0-127; 0=bypass, 127=engaged.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Tap Tempo",
+      "additionalInfo": "Assign to an external MIDI footswitch; tap two or more times to sync LFO speed. Ignored when MIDI clock sync mode is enabled.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Tempo Subdiv",
+      "additionalInfo": "Not saved in presets. Persist until a new CC86 is received. Value 50 restores standard 1:1 quarter-note speed range.",
+      "valueRange": {
+        "min": 10,
+        "max": 120,
+        "discreteValues": [
+          { "name": "Whole", "value": 10 },
+          { "name": "Half", "value": 20 },
+          { "name": "Dot Quarter", "value": 30 },
+          { "name": "Quarter", "value": 50 },
+          { "name": "Dot 8th", "value": 60 },
+          { "name": "Qtr Triplet", "value": 70 },
+          { "name": "8th", "value": 90 },
+          { "name": "8th Triplet", "value": 100 },
+          { "name": "16th", "value": 110 },
+          { "name": "16th Triplet", "value": 120 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "BOSS GX-10",
+  "displayName": "GX-10",
+  "device": {
+    "displayName": "",
+    "manufacturer": "BOSS",
+    "model": "GX-10",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 297,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

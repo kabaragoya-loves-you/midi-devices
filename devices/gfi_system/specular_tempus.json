@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "GFI System Specular Tempus",
+  "displayName": "Specular Tempus",
+  "device": {
+    "displayName": "",
+    "manufacturer": "GFI System",
+    "model": "Specular Tempus",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Blend",
+      "additionalInfo": "Default CC map (firmware v3.8). SpecLab can reassign each function to any CC 0-99.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Decay/Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Param",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Intensity/Rpts",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Load Patch A",
+      "additionalInfo": "Any value loads patch A of the current bank",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Load", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Load Patch B",
+      "additionalInfo": "Any value loads patch B of the current bank",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Load", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Bank Down",
+      "additionalInfo": "Any value scrolls bank down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bank Down", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Bank Up",
+      "additionalInfo": "Any value scrolls bank up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bank Up", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Kill Dry",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Aux-Out Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Tap Tempo",
+      "additionalInfo": "Any value taps tempo; only Global-tempo presets follow MIDI Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 15
+}

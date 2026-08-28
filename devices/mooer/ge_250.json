@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Mooer GE-250",
+  "displayName": "GE-250",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Mooer",
+    "model": "GE-250",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 255,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "Two MIDI banks (CC0=0/1) with 128 presets each; PC mapping user-editable."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC mapping is user-configurable per CC number in Slave mode (factory default Empty). See GE series manual CC Mapping list."
+}

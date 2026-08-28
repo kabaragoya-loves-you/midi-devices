@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Rebel line: remote bypass only. Factory MIDI channel/CC preassigned per model; typical factory channel 4 (see manual). G-Lab stomps often use CC 102."
+    }
+  ],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 4,
+  "title": "G-Lab QR-1 Quiver Reverb",
+  "displayName": "QR-1 Reverb",
+  "device": {
+    "displayName": "",
+    "manufacturer": "G-Lab",
+    "model": "QR-1 Quiver Reverb",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Fender Tone Master Pro",
+  "displayName": "TM Pro",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Fender",
+    "model": "Tone Master Pro",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Bank 1", "value": 0 },
+          { "name": "Bank 2", "value": 1 },
+          { "name": "Bank 3", "value": 2 },
+          { "name": "Bank 4", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "EXP 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "EXP 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "MIDI EXP 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "MIDI EXP 4",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Master Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "FS/Scene",
+      "additionalInfo": "Firmware v1.7+: alternate footswitch/scene control. Values 8-9 unused.",
+      "valueRange": {
+        "min": 0,
+        "max": 17,
+        "discreteValues": [
+          { "name": "En FS1", "value": 0 },
+          { "name": "En FS2", "value": 1 },
+          { "name": "En FS3", "value": 2 },
+          { "name": "En FS4", "value": 3 },
+          { "name": "En FS5", "value": 4 },
+          { "name": "En FS6", "value": 5 },
+          { "name": "En FS7", "value": 6 },
+          { "name": "En FS8", "value": 7 },
+          { "name": "Dis FS1", "value": 10 },
+          { "name": "Dis FS2", "value": 11 },
+          { "name": "Dis FS3", "value": 12 },
+          { "name": "Dis FS4", "value": 13 },
+          { "name": "Dis FS5", "value": 14 },
+          { "name": "Dis FS6", "value": 15 },
+          { "name": "Dis FS7", "value": 16 },
+          { "name": "Dis FS8", "value": 17 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Tap Tempo",
+      "additionalInfo": "Values 64-127 trigger tap tempo.",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Toe Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Amp Ctrl Tip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Amp Ctrl Ring",
+      "additionalInfo": "Manual labels this Amp Control 1 (Ring); rear-panel AMP CTRL ring contact.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Next Song",
+      "additionalInfo": "Firmware v1.7+: values 64-127 advance to next song.",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Prev Song",
+      "additionalInfo": "Firmware v1.7+: values 64-127 go to previous song.",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Loop Rec",
+      "additionalInfo": "Values 64-127 trigger record/overdub.",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Rec", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Loop Play",
+      "additionalInfo": "Values 64-127 toggle play/stop.",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Toggle", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Loop 1-Shot",
+      "additionalInfo": "Values 64-127 trigger one-shot playback.",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "1-Shot", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Loop Undo",
+      "additionalInfo": "Values 64-127 trigger undo.",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Undo", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Loop Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Full", "value": 0 },
+          { "name": "Half", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Loop Reverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Forward", "value": 0 },
+          { "name": "Reverse", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Loop Vol +",
+      "additionalInfo": "Values 64-127 increase looper volume.",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Up", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Loop Vol -",
+      "additionalInfo": "Values 64-127 decrease looper volume.",
+      "valueRange": {
+        "min": 64,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Down", "value": 64 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 504,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "504 presets in 4 banks of 128 (last bank PC 0-119). Send CC0 bank then PC."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI In and Out/Thru. Receive channel configurable 1-16 or Omni in Global Settings>I/O>MIDI."
+}

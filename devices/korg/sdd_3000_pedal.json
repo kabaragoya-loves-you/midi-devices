@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Korg SDD-3000 Pedal",
+  "displayName": "SDD-3000",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Korg",
+    "model": "SDD-3000 Pedal",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Delay Type",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "L Delay MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "L Delay LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Lch Note",
+      "valueRange": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "L Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "R Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Flags",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "LCF",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "HCF",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Waveform",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Intensity",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Frequency",
+      "valueRange": {
+        "min": 0,
+        "max": 63
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Balance",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Ducking",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 80,
+    "bankSelectMode": "none",
+    "additionalInfo": "CC 0-95 = PdC (Pedal Control) per Korg MIDI impl; params 14+ in TABLE 1."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

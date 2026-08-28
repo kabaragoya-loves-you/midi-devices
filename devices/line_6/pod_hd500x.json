@@ -1,0 +1,441 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 POD HD500X",
+  "displayName": "HD500X",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "POD HD500X",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank MSB",
+      "additionalInfo": "Setlist select with CC32; values 0-7 = Setlists 1-8. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Set 1",
+            "value": 0
+          },
+          {
+            "name": "Set 2",
+            "value": 1
+          },
+          {
+            "name": "Set 3",
+            "value": 2
+          },
+          {
+            "name": "Set 4",
+            "value": 3
+          },
+          {
+            "name": "Set 5",
+            "value": 4
+          },
+          {
+            "name": "Set 6",
+            "value": 5
+          },
+          {
+            "name": "Set 7",
+            "value": 6
+          },
+          {
+            "name": "Set 8",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "EXP 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "EXP 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Bank LSB",
+      "additionalInfo": "Setlist select (0-7) paired with CC0. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Set 1",
+            "value": 0
+          },
+          {
+            "name": "Set 2",
+            "value": 1
+          },
+          {
+            "name": "Set 3",
+            "value": 2
+          },
+          {
+            "name": "Set 4",
+            "value": 3
+          },
+          {
+            "name": "Set 5",
+            "value": 4
+          },
+          {
+            "name": "Set 6",
+            "value": 5
+          },
+          {
+            "name": "Set 7",
+            "value": 6
+          },
+          {
+            "name": "Set 8",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "FS1 Asgn",
+      "additionalInfo": "Toggles FS1 assignment on/off. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "FS2 Asgn",
+      "additionalInfo": "Toggles FS2 assignment on/off. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "FS3 Asgn",
+      "additionalInfo": "Toggles FS3 assignment on/off. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "FS4 Asgn",
+      "additionalInfo": "Toggles FS4 assignment on/off. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "FS5 Asgn",
+      "additionalInfo": "Toggles FS5 assignment on/off. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "FS6 Asgn",
+      "additionalInfo": "Toggles FS6 assignment on/off. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "FS7 Asgn",
+      "additionalInfo": "Toggles FS7 assignment on/off. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "FS8 Asgn",
+      "additionalInfo": "Toggles FS8 assignment on/off. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "EXP Toe Asg",
+      "additionalInfo": "Toggles EXP toe switch assignment on/off. POD HD500X Advanced Guide Appendix B MIDI Control Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Loop Rec/Dub",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Overdub",
+            "value": 0
+          },
+          {
+            "name": "Record",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "POD HD500X Advanced Guide Appendix B MIDI Control Reference."
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Loop Play/St",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Stop",
+            "value": 0
+          },
+          {
+            "name": "Play",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "POD HD500X Advanced Guide Appendix B MIDI Control Reference."
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Loop Once",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Play Once",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Loop Undo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Undo",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Loop Dir",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Forward",
+            "value": 0
+          },
+          {
+            "name": "Reverse",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "POD HD500X Advanced Guide Appendix B MIDI Control Reference."
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Loop Pre/Post",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Pre",
+            "value": 0
+          },
+          {
+            "name": "Post",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "POD HD500X Advanced Guide Appendix B MIDI Control Reference."
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Loop Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Full",
+            "value": 0
+          },
+          {
+            "name": "Half",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "POD HD500X Advanced Guide Appendix B MIDI Control Reference."
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Tuner Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "POD HD500X Advanced Guide Appendix B MIDI Control Reference."
+    },
+    {
+      "controlChangeNumber": 99,
+      "name": "Looper Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "POD HD500X Advanced Guide Appendix B MIDI Control Reference."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 64,
+    "bankSelectMode": "CC0_CC32",
+    "additionalInfo": "64 presets per setlist (01A-16D); 8 setlists via CC0+CC32 bank select. Appendix B."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

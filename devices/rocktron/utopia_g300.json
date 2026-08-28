@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Rocktron Utopia G300",
+  "displayName": "G300",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Rocktron",
+    "model": "Utopia G300",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "MIDI receive/transmit is program change only; no CC implementation in manual."
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "T-Rex Betavibe",
+  "displayName": "Betavibe",
+  "device": {
+    "displayName": "",
+    "manufacturer": "T-Rex",
+    "model": "Betavibe",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Speed Exp",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Speed expression pedal. Active only with MIDI button down."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value = tap. Active only with MIDI button down."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "On/Off (bypass). Active only with MIDI button down."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "T-Rex Betavibe manual. MIDI button up = local knobs/footswitches; down = MIDI only (CC1 Speed Exp, CC22 Tap, CC23 Bypass). SPEED knob and SLOW/FAST–TAP footswitch deactivated in MIDI mode. Physical MODE up = Tap Tempo; MODE down = Slow/Fast Leslie ramp — those MODE behaviors are local only, not separate MIDI CCs. Complete MIDI map is CC1, 22, 23."
+}

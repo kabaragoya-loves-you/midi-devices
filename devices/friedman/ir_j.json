@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Friedman IR-J",
+  "displayName": "IR-J",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Friedman",
+    "model": "IR-J",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 24,
+      "name": "Channel",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Channel",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Boost",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Loop Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Loop Bypass",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "IR Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "IR Bypass",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "IR Select",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "1",
+            "value": 0
+          },
+          {
+            "name": "2",
+            "value": 1
+          },
+          {
+            "name": "3",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Presence",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Deep",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "LP Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

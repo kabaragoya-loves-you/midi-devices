@@ -1,0 +1,504 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Plethora X3",
+  "displayName": "Plethora X3",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Plethora X3",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 67,
+      "name": "P1 Pot1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 1 potmeter 1 modifier."
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "P1 Pot2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 1 potmeter 2 modifier."
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "P1 Pot3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 1 potmeter 3 modifier."
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "P1 MASH",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 1 MASH modifier."
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "P1 Expr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 1 expression modifier."
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "P2 Pot1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 2 potmeter 1 modifier."
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "P2 Pot2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 2 potmeter 2 modifier."
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "P2 Pot3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 2 potmeter 3 modifier."
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "P2 MASH",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 2 MASH modifier."
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "P2 Expr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 2 expression modifier."
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "P3 Pot1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 3 potmeter 1 modifier."
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "P3 Pot2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 3 potmeter 2 modifier."
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "P3 Pot3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 3 potmeter 3 modifier."
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "P3 MASH",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 3 MASH modifier."
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "P3 Expr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal 3 expression modifier."
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Global Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Global MIDI tap tempo. Any value triggers a tap."
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Tuner on/off. 0-63=off, 64-127=on."
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Board Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Down",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Board down. Per device CC TABLE; 64-127 triggers."
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Board Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Up",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Board up. Per device CC TABLE; 64-127 triggers."
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Global Expr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Global expression modifier."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "FS1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Footswitch 1 slot bypass/engage. 0-63=bypass, 64-127=engage."
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "FS2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Footswitch 2 slot bypass/engage. 0-63=bypass, 64-127=engage."
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "FS3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Footswitch 3 slot bypass/engage. 0-63=bypass, 64-127=engage."
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Hot Knob 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Hot Knobz 1. Also controls parameter knobs in EDIT mode."
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Hot Knob 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Hot Knobz 2. Also controls parameter knobs in EDIT mode."
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Hot Knob 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Hot Knobz 3. Also controls parameter knobs in EDIT mode."
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "FS1",
+            "value": 12
+          },
+          {
+            "name": "FS2",
+            "value": 37
+          },
+          {
+            "name": "FS3",
+            "value": 63
+          }
+        ]
+      },
+      "additionalInfo": "Loop. Value selects FS1-FS3 slot band. Per device CC TABLE."
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Record",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "FS1",
+            "value": 12
+          },
+          {
+            "name": "FS2",
+            "value": 37
+          },
+          {
+            "name": "FS3",
+            "value": 63
+          }
+        ]
+      },
+      "additionalInfo": "Record. Value selects FS1-FS3 slot band. Per device CC TABLE."
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "FS1",
+            "value": 12
+          },
+          {
+            "name": "FS2",
+            "value": 37
+          },
+          {
+            "name": "FS3",
+            "value": 63
+          }
+        ]
+      },
+      "additionalInfo": "Loop. Value selects FS1-FS3 slot band. Per device CC TABLE."
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "FS1",
+            "value": 12
+          },
+          {
+            "name": "FS2",
+            "value": 37
+          },
+          {
+            "name": "FS3",
+            "value": 63
+          }
+        ]
+      },
+      "additionalInfo": "Play. Value selects FS1-FS3 slot band. Per device CC TABLE."
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "FS1",
+            "value": 12
+          },
+          {
+            "name": "FS2",
+            "value": 37
+          },
+          {
+            "name": "FS3",
+            "value": 63
+          }
+        ]
+      },
+      "additionalInfo": "Loop. Value selects FS1-FS3 slot band. Per device CC TABLE."
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Clear",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "FS1",
+            "value": 12
+          },
+          {
+            "name": "FS2",
+            "value": 37
+          },
+          {
+            "name": "FS3",
+            "value": 63
+          }
+        ]
+      },
+      "additionalInfo": "Clear. Value selects FS1-FS3 slot band. Per device CC TABLE."
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "FS1",
+            "value": 12
+          },
+          {
+            "name": "FS2",
+            "value": 37
+          },
+          {
+            "name": "FS3",
+            "value": 63
+          }
+        ]
+      },
+      "additionalInfo": "Loop. Value selects FS1-FS3 slot band. Per device CC TABLE."
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Pause",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "FS1",
+            "value": 12
+          },
+          {
+            "name": "FS2",
+            "value": 37
+          },
+          {
+            "name": "FS3",
+            "value": 63
+          }
+        ]
+      },
+      "additionalInfo": "Pause. Value selects FS1-FS3 slot band. Per device CC TABLE."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 127,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC recalls board 0-126. Channel at SETTINGS > GLOBAL > MIDI > CHANNEL SELECT."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN/THRU. CC map per FW v1.4.3+ release notes and onboard CC TABLE (SETTINGS > GLOBAL > MIDI > CC TABLE). Requires FW 1.2.18+ for full CC map."
+}

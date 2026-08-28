@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Sonuus Voluum",
+  "displayName": "Voluum",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Sonuus",
+    "model": "Voluum",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      },
+      "additionalInfo": "With CC32: factory bank 0, user bank 1."
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Bank LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Default modwheel pair; MSB CC1 + LSB CC33."
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "LFO LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Default volume pair; MSB CC7 + LSB CC39."
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Volume LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Compressor",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Default expression pair; MSB CC11 + LSB CC43."
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Compress LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Limiter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Default effect1 pair; MSB CC12 + LSB CC44."
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Limiter LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 140,
+    "bankSelectMode": "CC0_CC32",
+    "additionalInfo": "40 factory F00-F39 + 100 user P00-P99; per-effect CtL CC reassignable in editor."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

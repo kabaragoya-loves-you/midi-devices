@@ -1,0 +1,1455 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Ventris Dual Reverb",
+  "displayName": "Ventris",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Ventris Dual Reverb",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Engine A",
+      "x_mandatory": true,
+      "additionalInfo": "Selects and loads reverb engine into A. Gates EngP1-5 A and Eng Spec A (CC15-20).",
+      "valueRange": {
+        "min": 0,
+        "max": 13,
+        "discreteValues": [
+          {
+            "name": "Room",
+            "value": 0
+          },
+          {
+            "name": "Hall",
+            "value": 1
+          },
+          {
+            "name": "E-Dome",
+            "value": 2
+          },
+          {
+            "name": "True Spring",
+            "value": 3
+          },
+          {
+            "name": "Plate",
+            "value": 4
+          },
+          {
+            "name": "Lo-Fi",
+            "value": 5
+          },
+          {
+            "name": "Modverb",
+            "value": 6
+          },
+          {
+            "name": "Shimmer",
+            "value": 7
+          },
+          {
+            "name": "Echoverb",
+            "value": 8
+          },
+          {
+            "name": "Swell",
+            "value": 9
+          },
+          {
+            "name": "Offspring",
+            "value": 10
+          },
+          {
+            "name": "Reverse",
+            "value": 11
+          },
+          {
+            "name": "Outbd Spring",
+            "value": 12
+          },
+          {
+            "name": "Metal Box",
+            "value": 13
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Time A",
+      "additionalInfo": "Ratio of min/max delay times",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Mix A",
+      "additionalInfo": "50/50 wet/dry near value 95",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Pre-Delay A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Treble A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Output A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Bass A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Diffusion A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Mod Depth A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Mod Rate A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "PD Feedback A",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "PD Mod Depth",
+      "additionalInfo": "Pre-Delay Mod Depth A (MIDI chart omits A suffix)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Size A",
+      "additionalInfo": "Engine-dependent option count (e.g. True Spring 6, Hall 5, Echoverb 1). See Neuro Desktop Editor.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Low Cut A",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Offspring",
+            "value": 0
+          },
+          {
+            "name": "20Hz",
+            "value": 1
+          },
+          {
+            "name": "100Hz",
+            "value": 2
+          },
+          {
+            "name": "125Hz",
+            "value": 3
+          },
+          {
+            "name": "150Hz",
+            "value": 4
+          },
+          {
+            "name": "200Hz",
+            "value": 5
+          },
+          {
+            "name": "250Hz",
+            "value": 6
+          },
+          {
+            "name": "Default",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "PD Fdbk HiCut",
+      "additionalInfo": "Reverb A engine-specific parameter (gated by Engine A CC1).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Diff Mod Depth"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Metallic Mix"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Distortion"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Depth"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Pitch/Norm XF"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 9
+          },
+          "name": "Env Gain"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 10
+          },
+          "name": "Master Offset"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 11
+          },
+          "name": "Delay Curve",
+          "valueRange": { "min": 0, "max": 5 }
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 12
+          },
+          "name": "Drive"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "PD Fdbk LoCut",
+      "additionalInfo": "Reverb A engine-specific parameter (gated by Engine A CC1).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Reverb Level"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Quantize",
+          "valueRange": { "min": 0, "max": 9 }
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Rate"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Pitch Mod"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 9
+          },
+          "name": "Swell Time"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 10
+          },
+          "name": "Master PreDly"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 11
+          },
+          "name": "Curve Filter",
+          "valueRange": { "min": 0, "max": 2 }
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 12
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Early Ref Lvl",
+      "additionalInfo": "Reverb A engine-specific parameter (gated by Engine A CC1).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Sample Rate"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Shape",
+          "valueRange": { "min": 0, "max": 4 }
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Pitch Interv",
+          "valueRange": { "min": 0, "max": 26 }
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 9
+          },
+          "name": "Swell Send"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 11
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 12
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Reverb Level",
+      "additionalInfo": "Reverb A engine-specific parameter (gated by Engine A CC1).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Destruct Mix"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Options",
+          "valueRange": { "min": 0, "max": 7 }
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Pitch Fdbk"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 9
+          },
+          "name": "Swell Dry"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 11
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 12
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Early/Rev XF",
+      "additionalInfo": "Reverb A engine-specific parameter (gated by Engine A CC1).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Destruct HC"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Spread"
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 7
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 9
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 10
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 11
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 12
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Eng Spec A",
+      "x_noop": true,
+      "additionalInfo": "Engine-specific Reverb A param; inactive for Room. Gated by Engine A (CC1).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Mod Noise",
+          "valueRange": { "min": 0, "max": 127 }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Engine B",
+      "x_mandatory": true,
+      "additionalInfo": "Selects and loads reverb engine into B. Gates EngP1-5 B and Eng Spec B (CC39-44).",
+      "valueRange": {
+        "min": 0,
+        "max": 13,
+        "discreteValues": [
+          {
+            "name": "Room",
+            "value": 0
+          },
+          {
+            "name": "Hall",
+            "value": 1
+          },
+          {
+            "name": "E-Dome",
+            "value": 2
+          },
+          {
+            "name": "True Spring",
+            "value": 3
+          },
+          {
+            "name": "Plate",
+            "value": 4
+          },
+          {
+            "name": "Lo-Fi",
+            "value": 5
+          },
+          {
+            "name": "Modverb",
+            "value": 6
+          },
+          {
+            "name": "Shimmer",
+            "value": 7
+          },
+          {
+            "name": "Echoverb",
+            "value": 8
+          },
+          {
+            "name": "Swell",
+            "value": 9
+          },
+          {
+            "name": "Offspring",
+            "value": 10
+          },
+          {
+            "name": "Reverse",
+            "value": 11
+          },
+          {
+            "name": "Outbd Spring",
+            "value": 12
+          },
+          {
+            "name": "Metal Box",
+            "value": 13
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Time B",
+      "additionalInfo": "Ratio of min/max delay times",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Mix B",
+      "additionalInfo": "50/50 wet/dry near value 95",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Pre-Delay B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Treble B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Output B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Bass B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Diffusion B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Mod Depth B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Mod Rate B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "PD Feedback B",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "PD Mod DepthB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Size B",
+      "additionalInfo": "Engine-dependent option count (e.g. True Spring 6, Hall 5, Echoverb 1). See Neuro Desktop Editor.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Low Cut B",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Offspring",
+            "value": 0
+          },
+          {
+            "name": "20Hz",
+            "value": 1
+          },
+          {
+            "name": "100Hz",
+            "value": 2
+          },
+          {
+            "name": "125Hz",
+            "value": 3
+          },
+          {
+            "name": "150Hz",
+            "value": 4
+          },
+          {
+            "name": "200Hz",
+            "value": 5
+          },
+          {
+            "name": "250Hz",
+            "value": 6
+          },
+          {
+            "name": "Default",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "PD Fdbk HiCut",
+      "additionalInfo": "Reverb B engine-specific parameter (gated by Engine B CC25).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 1
+          },
+          "name": "Diff Mod Depth"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Metallic Mix"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Distortion"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Depth"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Pitch/Norm XF"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 9
+          },
+          "name": "Env Gain"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 10
+          },
+          "name": "Master Offset"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 11
+          },
+          "name": "Delay Curve",
+          "valueRange": { "min": 0, "max": 5 }
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 12
+          },
+          "name": "Drive"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "PD Fdbk LoCut",
+      "additionalInfo": "Reverb B engine-specific parameter (gated by Engine B CC25).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 4
+          },
+          "name": "Reverb Level"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Quantize",
+          "valueRange": { "min": 0, "max": 9 }
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Rate"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Pitch Mod"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 9
+          },
+          "name": "Swell Time"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 10
+          },
+          "name": "Master PreDly"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 11
+          },
+          "name": "Curve Filter",
+          "valueRange": { "min": 0, "max": 2 }
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 12
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Early Ref Lvl",
+      "additionalInfo": "Reverb B engine-specific parameter (gated by Engine B CC25).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Sample Rate"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Shape",
+          "valueRange": { "min": 0, "max": 4 }
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Pitch Interv",
+          "valueRange": { "min": 0, "max": 26 }
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 9
+          },
+          "name": "Swell Send"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 11
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 12
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Reverb Level",
+      "additionalInfo": "Reverb B engine-specific parameter (gated by Engine B CC25).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Destruct Mix"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Options",
+          "valueRange": { "min": 0, "max": 7 }
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 7
+          },
+          "name": "Pitch Fdbk"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 9
+          },
+          "name": "Swell Dry"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 11
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 12
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Early/Rev XF",
+      "additionalInfo": "Reverb B engine-specific parameter (gated by Engine B CC25).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 3
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 4
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Destruct HC"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 6
+          },
+          "name": "Trem Spread"
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 7
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 9
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 10
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 11
+          },
+          "x_noop": true
+        },
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 12
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Eng Spec B",
+      "x_noop": true,
+      "additionalInfo": "Engine-specific Reverb B param; inactive for Room. Gated by Engine B (CC25).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 25,
+            "op": "==",
+            "value": 5
+          },
+          "name": "Mod Noise",
+          "valueRange": { "min": 0, "max": 127 }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Dual Mode",
+      "x_mandatory": true,
+      "additionalInfo": "Gates A/B Crossfade (dual only). Mode 0=A has no spillover.",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "Reverb A",
+            "value": 0
+          },
+          {
+            "name": "Reverb B",
+            "value": 1
+          },
+          {
+            "name": "A+B Parallel",
+            "value": 2
+          },
+          {
+            "name": "A+B Cascade",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "I/O Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Auto",
+            "value": 0
+          },
+          {
+            "name": "Mono->Stereo",
+            "value": 1
+          },
+          {
+            "name": "Stereo",
+            "value": 2
+          },
+          {
+            "name": "Mono+Dry2",
+            "value": 3
+          },
+          {
+            "name": "Wet->Mono",
+            "value": 4
+          },
+          {
+            "name": "Dual Mono",
+            "value": 5
+          },
+          {
+            "name": "Mono->Indep",
+            "value": 6
+          },
+          {
+            "name": "Ext Loop",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Reverb Send",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "A/B Crossfade",
+      "additionalInfo": "Dual modes only (Parallel/Cascade). Fade from all A to all B.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 50,
+            "op": "<",
+            "value": 2
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Preset Down",
+      "additionalInfo": "Any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Preset Up",
+      "additionalInfo": "Any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "additionalInfo": "Same as tapping the OPTION footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Remote Hold",
+      "additionalInfo": "Any value; sustains the reverb trail of the active reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Hold",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Remote Expr",
+      "additionalInfo": "Overrides all expression inputs",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "Bypass",
+      "additionalInfo": "0-64 Bypass, 65-127 Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Toggle Bypass",
+      "additionalInfo": "Any value toggles bypass/engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Recall Bypass",
+      "additionalInfo": "Value selects preset number; recalls that preset in bypass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Recall Engage",
+      "additionalInfo": "Value selects preset number; recalls that preset engaged",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

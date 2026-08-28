@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "OBNE MTET",
+  "displayName": "MTET",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Old Blood Noise Endeavors",
+    "model": "MTET",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Exp 1 MSB",
+      "additionalInfo": "Expression out 1. 0-127 maps to 8-bit even values 0-254 (MSB*2). Pair with CC 11 LSB for odd steps.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Exp 2 MSB",
+      "additionalInfo": "Expression out 2. 0-127 maps to 8-bit even values 0-254 (MSB*2). Pair with CC 12 LSB for odd steps.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Exp 3 MSB",
+      "additionalInfo": "Expression out 3. 0-127 maps to 8-bit even values 0-254 (MSB*2). Pair with CC 13 LSB for odd steps.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Exp 4 MSB",
+      "additionalInfo": "Expression out 4. 0-127 maps to 8-bit even values 0-254 (MSB*2). Pair with CC 14 LSB for odd steps.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Exp 1 LSB",
+      "additionalInfo": "Fine-tunes expression out 1. Combined 8-bit value = MSB*2 + LSB (0 or 1). Manual example: CC 1 = 100 then CC 11 = 0 -> 200; CC 11 = 1 -> 201.",
+      "valueRange": { "min": 0, "max": 1 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Exp 2 LSB",
+      "additionalInfo": "Fine-tunes expression out 2. Combined 8-bit value = MSB*2 + LSB (0 or 1).",
+      "valueRange": { "min": 0, "max": 1 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Exp 3 LSB",
+      "additionalInfo": "Fine-tunes expression out 3. Combined 8-bit value = MSB*2 + LSB (0 or 1).",
+      "valueRange": { "min": 0, "max": 1 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Exp 4 LSB",
+      "additionalInfo": "Fine-tunes expression out 4. Combined 8-bit value = MSB*2 + LSB (0 or 1).",
+      "valueRange": { "min": 0, "max": 1 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "MIDI Channel",
+      "additionalInfo": "1-16. Must be sent on the current channel. EXP 1-4 LEDs blink the new channel on success and at power-up.",
+      "valueRange": { "min": 1, "max": 16 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

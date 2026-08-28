@@ -89,7 +89,7 @@ Some devices reuse one CC for different functions depending on a *mode* selected
 }
 ```
 
-- `constraint` is `{ "cc": <gating CC>, "op": <operator>, "value": <int> }`, where `op` is one of `<`, `<=`, `>`, `>=`, `==`, `!=`, evaluated as *(current gating CC value)* `op` *value*. The gating CC must be a defined `controlChangeNumber` in the same file.
+- `constraint` is either `{ "cc": <gating CC>, "op": <operator>, "value": <int> }` or `{ "clock": true }` / `{ "clock": false }`. `op` is one of `<`, `<=`, `>`, `>=`, `==`, `!=`, evaluated as *(current gating CC value)* `op` *value*. The gating CC must be a defined `controlChangeNumber` in the same file. `{ "clock": true }` matches when Storm Summoner is generating MIDI clock (Internal or analog Sync, and both send_clock flags). MIDI-source / thru / third-party clock are not modeled.
 - Variants are evaluated **in array order; first match wins**. The base entry is the default-mode (gating value 0) behavior — never author a redundant variant that just restates it.
 
 **`x_mandatory`** marks a gate CC — the one other CCs constrain against. Each scene keeps a required, non-deletable CC-defaults entry for it, which is the source of truth for mode resolution and is transmitted on scene load. A gate CC has no `x_variants` of its own.

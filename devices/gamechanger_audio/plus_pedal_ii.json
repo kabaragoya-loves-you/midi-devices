@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Gamechanger Audio Plus Pedal II",
+  "displayName": "Plus Pedal II",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Gamechanger Audio",
+    "model": "Plus Pedal II",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 8,
+      "name": "Level MSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Layers MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "1 Layer", "value": 5 },
+          { "name": "2 Layers", "value": 17 },
+          { "name": "3 Layers", "value": 29 },
+          { "name": "4 Layers", "value": 40 },
+          { "name": "5 Layers", "value": 52 },
+          { "name": "6 Layers", "value": 64 },
+          { "name": "7 Layers", "value": 75 },
+          { "name": "8 Layers", "value": 87 },
+          { "name": "9 Layers", "value": 99 },
+          { "name": "10 Layers", "value": 110 },
+          { "name": "Inf", "value": 122 }
+        ]
+      },
+      "additionalInfo": "0–11=1, 12–23=2, 24–34=3, 35–46=4, 47–58=5, 59–69=6, 70–81=7, 82–93=8, 94–104=9, 105–116=10, 117–127=Inf."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Rise MSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Decay MSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Tone MSB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Resonance MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Lower Harm", "value": 0 },
+          { "name": "No Harm", "value": 64 },
+          { "name": "Upper Harm", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Lower Harmonics, 64 None, 65–127 Upper."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Brass Ped MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Brass pedal position."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Catch Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Single", "value": 21 },
+          { "name": "Group", "value": 64 },
+          { "name": "All", "value": 106 }
+        ]
+      },
+      "additionalInfo": "0–42 Single, 43–85 Group, 86–127 All."
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Hold Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "None", "value": 21 },
+          { "name": "First", "value": 64 },
+          { "name": "All", "value": 106 }
+        ]
+      },
+      "additionalInfo": "0–42 None, 43–85 First, 86–127 All."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Kill Dry",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Dry On", "value": 0 },
+          { "name": "Kill Dry", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Dry On, 64–127 Kill Dry."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "FX Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Post", "value": 21 },
+          { "name": "FX Loop", "value": 64 },
+          { "name": "Pre", "value": 106 }
+        ]
+      },
+      "additionalInfo": "0–42 Post, 43–85 FX Loop, 86–127 Pre."
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "FSW State",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 15 },
+          { "name": "Wet", "value": 47 },
+          { "name": "Latch", "value": 79 },
+          { "name": "Hide", "value": 111 }
+        ]
+      },
+      "additionalInfo": "0–31 Off (Normal), 32–63 Wet, 64–95 Latch, 96–127 Hide. MIDI FSW state does not update optional footswitch LED."
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Level LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC8."
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Layers LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC9."
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Rise LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC10."
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Decay LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC11."
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Tone LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC12."
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Reson LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC13."
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Brass Ped LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC14."
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Catch LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC15."
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Hold LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC16."
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Kill Dry LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC17."
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "FX Loop LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC18."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "FSW State LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC19."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "PLUS PEDAL II MIDI chart (vendor-confirmed CC8–19 MSB / CC40–51 LSB). USB-C USB-MIDI only (no TRS MIDI jack); x_midiTrs unused. Each param has 7-bit MSB and 14-bit MSB+LSB (LSB = MSB+32). MIDI channel set at power-up: hold brass pedal, turn LAYERS."
+}

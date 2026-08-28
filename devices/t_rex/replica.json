@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "T-Rex Replica",
+  "displayName": "Replica",
+  "device": {
+    "displayName": "",
+    "manufacturer": "T-Rex",
+    "model": "Replica",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Any CC20 triggers tap; value ignored."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Delay On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Replica User Manual — MIDI CC 20 tap, CC 21 bypass."
+}

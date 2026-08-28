@@ -1,0 +1,1228 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Artifakt Lo-Fi Elements",
+  "displayName": "Artifakt",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Artifakt Lo-Fi Elements",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=Full Dry, 127=Full Wet"
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Bass Level",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=-12dB, 64=0dB, 127=+12dB"
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Mid Level",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=-12dB, 64=0dB, 127=+12dB"
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Treble Level",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=-12dB, 64=0dB, 127=+12dB"
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Output",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=-Inf, 64=0dB, 127=+6dB"
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Trem Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Trem Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "SigFail En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Signal Failure Enable"
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "SigFail Drop",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Signal Failure Dropouts"
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Vinyl Noise",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Vinyl Noise Enable"
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Vinyl RPM",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "16",
+            "value": 0
+          },
+          {
+            "name": "33",
+            "value": 1
+          },
+          {
+            "name": "45",
+            "value": 2
+          },
+          {
+            "name": "78",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Vinyl Out Lvl",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "HumNoise En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Hum/Noise Generator Enable"
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "HumNoise Lvl",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Ladder En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Ladder Filter Enable"
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Ladder Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Ladder Q",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Ladder LFO",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Ladder Filter LFO Depth"
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Ladder SelfMod",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Ladder Filter Self-Modulation"
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Comp Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Comp Amount",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Compressor Compression"
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Comp Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "OldGear En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "OldGear LoCut",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=10Hz, 127=1kHz"
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "OldGear HiCut",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=500Hz, 127=20kHz"
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "OldGear Gain",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=-12dB, 64=0dB, 127=+12dB"
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "OldGear Type",
+      "valueRange": {
+        "min": 0,
+        "max": 12,
+        "discreteValues": [
+          {
+            "name": "Graphic EQ",
+            "value": 0
+          },
+          {
+            "name": "Portable Amp",
+            "value": 1
+          },
+          {
+            "name": "Victrola",
+            "value": 2
+          },
+          {
+            "name": "Clock Radio",
+            "value": 3
+          },
+          {
+            "name": "Bullhorn",
+            "value": 4
+          },
+          {
+            "name": "Antique Phone",
+            "value": 5
+          },
+          {
+            "name": "Cell Phone",
+            "value": 6
+          },
+          {
+            "name": "Intercom",
+            "value": 7
+          },
+          {
+            "name": "Full Range",
+            "value": 8
+          },
+          {
+            "name": "Range Lim 1",
+            "value": 9
+          },
+          {
+            "name": "Range Lim 2",
+            "value": 10
+          },
+          {
+            "name": "Range Lim 3",
+            "value": 11
+          },
+          {
+            "name": "Old Time Rad",
+            "value": 12
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "DestMix En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Destruction Mixer Enable"
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Dest Clean",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Destruction Mixer Clean Level"
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Dest Mix",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=Full Dry, 127=Full Wet"
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "RingMod En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "RingMod Pitch",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "RingMod LFO",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "RingMod Lvl",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Level OR Wet/Dry"
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Dist Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Dist Type",
+      "valueRange": {
+        "min": 0,
+        "max": 15,
+        "discreteValues": [
+          {
+            "name": "Digital Clip",
+            "value": 0
+          },
+          {
+            "name": "Overdrive",
+            "value": 1
+          },
+          {
+            "name": "Asymmetric",
+            "value": 2
+          },
+          {
+            "name": "Hard Clip",
+            "value": 3
+          },
+          {
+            "name": "Diode",
+            "value": 4
+          },
+          {
+            "name": "Smooth Diode",
+            "value": 5
+          },
+          {
+            "name": "Gated",
+            "value": 6
+          },
+          {
+            "name": "Octave",
+            "value": 7
+          },
+          {
+            "name": "Smooth Oct",
+            "value": 8
+          },
+          {
+            "name": "Fold",
+            "value": 9
+          },
+          {
+            "name": "Extra Fold",
+            "value": 10
+          },
+          {
+            "name": "Fold Octave",
+            "value": 11
+          },
+          {
+            "name": "Diode Oct",
+            "value": 12
+          },
+          {
+            "name": "Fold Sm Oct",
+            "value": 13
+          },
+          {
+            "name": "Gate Dio Oct",
+            "value": 14
+          },
+          {
+            "name": "Gate Fold Oct",
+            "value": 15
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Dist Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Dist Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Dist LFO",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Dist Lvl",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Level OR Wet/Dry"
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Quant En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Quant Type",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "Half Bits",
+            "value": 0
+          },
+          {
+            "name": "Missing High",
+            "value": 1
+          },
+          {
+            "name": "Missing Low",
+            "value": 2
+          },
+          {
+            "name": "Single Bit",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Quant Intens",
+      "valueRange": {
+        "min": 0,
+        "max": 9,
+        "discreteValues": [
+          {
+            "name": "0",
+            "value": 0
+          },
+          {
+            "name": "1",
+            "value": 1
+          },
+          {
+            "name": "2",
+            "value": 2
+          },
+          {
+            "name": "3",
+            "value": 3
+          },
+          {
+            "name": "4",
+            "value": 4
+          },
+          {
+            "name": "5",
+            "value": 5
+          },
+          {
+            "name": "6",
+            "value": 6
+          },
+          {
+            "name": "7",
+            "value": 7
+          },
+          {
+            "name": "8",
+            "value": 8
+          },
+          {
+            "name": "9",
+            "value": 9
+          }
+        ]
+      },
+      "additionalInfo": "0=Min, 9=Max"
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Quant Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Quant Lvl",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Level OR Wet/Dry"
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "SRate En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Sample Rate Enable"
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Sample Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "SRate LFO",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "SRate Lvl",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Level OR Wet/Dry"
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "DlyRvb En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "DlyRvb Type",
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          {
+            "name": "Ping-Pong",
+            "value": 0
+          },
+          {
+            "name": "Dual Delay",
+            "value": 1
+          },
+          {
+            "name": "Chorus I",
+            "value": 2
+          },
+          {
+            "name": "Flanger",
+            "value": 3
+          },
+          {
+            "name": "Vinyl Warp",
+            "value": 4
+          },
+          {
+            "name": "Chorus II",
+            "value": 5
+          },
+          {
+            "name": "Reverb",
+            "value": 6
+          },
+          {
+            "name": "Slapback",
+            "value": 7
+          },
+          {
+            "name": "Thru-Zero",
+            "value": 8
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "DlyRvb Mix",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=Full Dry, 127=Full Wet"
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "DlyRvb Lvl",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "DlyRvb Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "DlyRvb Fdbk",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "DlyRvb Diff",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "DlyRvb ModD",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Modulation Depth"
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "DlyRvb ModR",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Modulation Rate"
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "DlyRvb Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          {
+            "name": "Sine",
+            "value": 0
+          },
+          {
+            "name": "Triangle",
+            "value": 1
+          },
+          {
+            "name": "Random",
+            "value": 2
+          },
+          {
+            "name": "Wow/Flutter",
+            "value": 3
+          },
+          {
+            "name": "Warp",
+            "value": 4
+          },
+          {
+            "name": "Sample Hold",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "DlyRvb Noise",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Modulation Random Noise"
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "DlyRvb HiCut",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Feedback High Cut"
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "DlyRvb LoCut",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Feedback Low Cut"
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "DlyRvb Sat",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Glitch En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Glitch Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "3k/2.4s",
+            "value": 0
+          },
+          {
+            "name": "6k/1.2s",
+            "value": 1
+          },
+          {
+            "name": "12k/600ms",
+            "value": 2
+          },
+          {
+            "name": "24k/300ms",
+            "value": 3
+          }
+        ]
+      },
+      "additionalInfo": "Sample rate / loop length"
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Glitch Pat",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Octaves",
+            "value": 0
+          },
+          {
+            "name": "Oct+Fifths",
+            "value": 1
+          },
+          {
+            "name": "Major Triad",
+            "value": 2
+          },
+          {
+            "name": "Minor Triad",
+            "value": 3
+          },
+          {
+            "name": "Major Scale",
+            "value": 4
+          },
+          {
+            "name": "Minor b7",
+            "value": 5
+          },
+          {
+            "name": "Chromatic",
+            "value": 6
+          },
+          {
+            "name": "Pentatonic",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Glitch PMin",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Shift Pitch Min"
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Glitch PMax",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Shift Pitch Max"
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Glitch Mix",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=Full Dry, 127=Full Wet"
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Glitch Out",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Glitch AutoR",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Auto LFO Rate"
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Glitch Ratio",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Auto On/Off Ratio; 64=50/50"
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Glitch EnvUp",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Envelope Threshold Up"
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Glitch EnvDn",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Envelope Threshold Down"
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Main LFO Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Main LFO Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 10,
+        "discreteValues": [
+          {
+            "name": "Sine",
+            "value": 0
+          },
+          {
+            "name": "Pluck",
+            "value": 1
+          },
+          {
+            "name": "Triangle",
+            "value": 2
+          },
+          {
+            "name": "Square",
+            "value": 3
+          },
+          {
+            "name": "Opto",
+            "value": 4
+          },
+          {
+            "name": "Saw Up",
+            "value": 5
+          },
+          {
+            "name": "Saw Down",
+            "value": 6
+          },
+          {
+            "name": "Four Step",
+            "value": 7
+          },
+          {
+            "name": "Sample Hold",
+            "value": 8
+          },
+          {
+            "name": "Random",
+            "value": 9
+          },
+          {
+            "name": "Rnd Clipped",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Env Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Envelope Control Enable"
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Env Sens",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Envelope Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Env MainLFO",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Envelope Depth - Main LFO Depth; 64=No Effect"
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Env DlyRvbLFO",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Envelope Depth - Delay/Reverb LFO Depth; 64=No Effect"
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Env Ladder",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Envelope Depth - Ladder Filter Frequency; 64=No Effect"
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "DestMix Out",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "ExtCtrl En",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "External Control Enable"
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Glitch Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "<=63 Off, >63 On"
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Glitch Stop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "<=63 Off, >63 On"
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Glitch Expr",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Main LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Remote Tap Tempo - Main LFO; any value"
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Remote Expr",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Remote Expression Pedal"
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Engaged/Bypass; <=63 Off, >63 On"
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Recall Bypass",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Preset Number=CC Value; recalled bypassed. User Guide cites CC83; default MIDI map uses CC103."
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Recall Engage",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Preset Number=CC Value; recalled engaged. User Guide cites CC84; default MIDI map uses CC104."
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Toggle Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Engaged/Bypass Toggle; any value"
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Inc Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Inc",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Increment Preset; any value"
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Dec Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Dec",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Decrement Preset; any value"
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

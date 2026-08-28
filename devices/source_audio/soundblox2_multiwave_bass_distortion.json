@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 12,
+      "name": "Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Clean Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Output",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Treble",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Bass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Effect",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Morph",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "title": "Source Audio Soundblox 2 Multiwave Bass Distortion",
+  "displayName": "SB2 MWBD",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Soundblox 2 Multiwave Bass Distortion (SA221)",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "Requires Neuro Hub (SA164) for MIDI; hard-mapped CC block per Soundblox 2 line."
+  }
+}

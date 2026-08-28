@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Korg AX3000G",
+  "displayName": "AX3000G",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Korg",
+    "model": "AX3000G",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 96,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "MIDI program change for presets; no fixed CC table in manual."
+}

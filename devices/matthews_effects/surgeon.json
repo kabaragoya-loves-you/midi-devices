@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Matthews Effects Surgeon",
+  "displayName": "Surgeon",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Matthews Effects",
+    "model": "Surgeon",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bypass",
+      "additionalInfo": "0=bypass (current tails); 1=engage; 2=bypass with tails; 3=bypass without tails; 4=toggle",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engage", "value": 1 },
+          { "name": "Bypass Tails", "value": 2 },
+          { "name": "Bypass NoTail", "value": 3 },
+          { "name": "Toggle", "value": 4 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Dry Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Wet Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Dose",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Regen",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Pulse",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Mutation",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Algorithm",
+      "additionalInfo": "0-15 Eq Dly; 16-31 Eq Dly Alt; 32-47 Mod Dly; 48-63 Mod Dly Alt; 64-79 Filt Dly; 80-95 Filt Dly Alt; 96-111 Dual Dly; 112-127 Dual Dly Alt. Mutation role varies by algorithm.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Eq Delay", "value": 0 },
+          { "name": "Eq Delay Alt", "value": 16 },
+          { "name": "Mod Delay", "value": 32 },
+          { "name": "Mod Dly Alt", "value": 48 },
+          { "name": "Filter Dly", "value": 64 },
+          { "name": "Filt Dly Alt", "value": 80 },
+          { "name": "Dual Delay", "value": 96 },
+          { "name": "Dual Dly Alt", "value": 112 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "DIV",
+      "additionalInfo": "Synced to Pulse: 0-24 half; 25-49 dotted quarter; 50-74 quarter; 75-99 dotted eighth; 100-127 eighth",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "1/2", "value": 0 },
+          { "name": "Dot 1/4", "value": 25 },
+          { "name": "1/4", "value": 50 },
+          { "name": "Dot 1/8", "value": 75 },
+          { "name": "1/8", "value": 100 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Ramp",
+      "additionalInfo": "0=reset to knobs; 1=trigger; 2=trigger then reset once",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Reset", "value": 0 },
+          { "name": "Trigger", "value": 1 },
+          { "name": "Trig+Reset", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Tails Mode",
+      "additionalInfo": "0=Off; 1=On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Exp Assign",
+      "additionalInfo": "Any value enters Expression Assign Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Enter", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Ramp Assign",
+      "additionalInfo": "Any value enters Ramp Assign Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Enter", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Tap",
+      "additionalInfo": "Any value triggers tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Prev Preset",
+      "additionalInfo": "Decrements through presets by given value (1-10)",
+      "valueRange": {
+        "min": 1,
+        "max": 10
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Next Preset",
+      "additionalInfo": "Increments through presets by given value (1-10)",
+      "valueRange": {
+        "min": 1,
+        "max": 10
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "MIDI Clock",
+      "additionalInfo": "0=Off; 1=On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Clear Presets",
+      "additionalInfo": "Any value clears all presets",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Clear All", "value": 0 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0=bypass toggle (current tails); PC 1-127=presets 1-127. Four presets onboard; rest via MIDI."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Matthews Effects Surgeon MIDI CC chart (user). 3.5mm TRS or USB MIDI. Receives MIDI clock for delay sync (CC17 enables)."
+}

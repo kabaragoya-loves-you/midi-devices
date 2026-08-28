@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "DSM Humboldt Simplifier X",
+  "displayName": "Simplifier X",
+  "device": {
+    "displayName": "",
+    "manufacturer": "DSM Humboldt",
+    "model": "Simplifier X",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "Analog amp/cab simulator. TRS footswitch only; no MIDI port."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Analog amp/cab simulator. TRS footswitch jack only (contact closure); no MIDI port."
+}

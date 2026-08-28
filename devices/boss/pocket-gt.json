@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss Pocket GT",
+  "displayName": "Pocket GT",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "Pocket GT",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 150,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1,
+  "additionalInfo": "Bluetooth MIDI only (no DIN/TRS jack). EV-1-WL/FS-1-WL functions assigned in BOSS Tone Studio; no published fixed CC map on the unit."
+}

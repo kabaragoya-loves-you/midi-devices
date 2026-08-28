@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "title": "3Degrees Audio Bygones V3",
+  "displayName": "Bygones V3",
+  "device": {
+    "displayName": "",
+    "manufacturer": "3Degrees Audio",
+    "model": "Bygones V3",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 7,
+    "bankSelectMode": "none",
+    "additionalInfo": "Type A TRS MIDI; full CC control confirmed but no public factory CC map."
+  }
+}

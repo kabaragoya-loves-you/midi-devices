@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "One Control OC-M MDSL",
+  "displayName": "MDSL",
+  "device": {
+    "displayName": "",
+    "manufacturer": "One Control",
+    "model": "Minimal Series MIDI Dual Stereo Loop",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 102,
+      "name": "Loop Ctrl",
+      "x_mandatory": true,
+      "additionalInfo": "CC mode only. PC mode uses PC 10/11/20/21/30/31 instead.",
+      "valueRange": {
+        "min": 10,
+        "max": 31,
+        "discreteValues": [
+          {
+            "name": "L1 Bypass",
+            "value": 10
+          },
+          {
+            "name": "L1 On",
+            "value": 11
+          },
+          {
+            "name": "L2 Bypass",
+            "value": 20
+          },
+          {
+            "name": "L2 On",
+            "value": 21
+          },
+          {
+            "name": "Both Bypass",
+            "value": 30
+          },
+          {
+            "name": "Both On",
+            "value": 31
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 32,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 80=PC mode, 81=CC mode, 90/91 power-up loop state. Loop PC 10-31 in PC mode."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss RC-202 Loop Station",
+  "displayName": "RC-202",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "RC-202",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 80,
+      "name": "CC80 Func",
+      "additionalInfo": "CTL Source CC#80. Assign target in CTL Target. Responds to value 127 (momentary).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "CC81 Func",
+      "additionalInfo": "CTL Source CC#81. Assign target in CTL Target.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "CC82 Func",
+      "additionalInfo": "CTL Source CC#82. Assign target in CTL Target.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "CC83 Func",
+      "additionalInfo": "CTL Source CC#83. Assign target in CTL Target.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "CC84 Func",
+      "additionalInfo": "CTL Source CC#84. Assign target in CTL Target.",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 64,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Phrase memories 1-1–8-8 (PC 1-64). Ignores Bank Select (CC0/CC32)."
+}

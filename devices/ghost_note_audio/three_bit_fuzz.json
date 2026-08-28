@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "device": {
+    "displayName": "",
+    "version": "",
+    "manufacturer": "Ghost Note Audio",
+    "model": "3 Bit Fuzz"
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "title": "Ghost Note Audio 3 Bit Fuzz",
+  "displayName": "3 Bit Fuzz",
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Low",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "High",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Scoop",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Curve",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Shift",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Gate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Phase",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Preset Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Active",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 2,
+    "bankSelectMode": "none",
+    "additionalInfo": "Two user presets via Preset footswitch; PC not listed."
+  },
+  "additionalInfo": "Daedalus Manual-3BitFuzz.pdf MIDI CC table. Hold MODE+PRESET to set MIDI channel 0\u201315."
+}

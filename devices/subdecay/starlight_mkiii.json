@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "SubDecay Starlight MkIII",
+  "displayName": "Starlight 3",
+  "device": {
+    "displayName": "",
+    "manufacturer": "SubDecay",
+    "model": "Starlight MkIII",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Soften LFO",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Modes 2-8 only; not saved to preset."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Gate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Manual LFO rate; when MIDI clock sync on, same CC selects division (0-12=16 beats … 115-127=1/16)."
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Manual",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Regen",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Warp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "HPF",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "LFO Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 10,
+        "discreteValues": [
+          { "name": "Env Up", "value": 0 },
+          { "name": "Env Down", "value": 1 },
+          { "name": "Step Tri", "value": 2 },
+          { "name": "Step Ramp", "value": 3 },
+          { "name": "Step Saw", "value": 4 },
+          { "name": "Step Rnd", "value": 5 },
+          { "name": "Tri Sq Mix", "value": 6 },
+          { "name": "Tri Rnd", "value": 7 },
+          { "name": "Triangle", "value": 8 },
+          { "name": "Inf Rise", "value": 9 },
+          { "name": "Inf Fall", "value": 10 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "LPF",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engage", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "Bypass Tgl",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Toggle", "value": 1 }]
+      }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Synth On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Enable", "value": 1 }]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 11,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-10 recall flanger presets; PC >10 ignored."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

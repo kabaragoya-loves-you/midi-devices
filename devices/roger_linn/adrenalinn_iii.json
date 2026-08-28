@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Roger Linn AdrenaLinn III",
+  "displayName": "AdrenaLinn III",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Roger Linn Design",
+    "model": "AdrenaLinn III",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP",
+    "TRANSPORT_CONTINUE"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 32,
+      "name": "PC Bank",
+      "x_mandatory": true,
+      "additionalInfo": "MIDI Implementation v3.0 \u2014 selects meaning of incoming PC 0-99. CC1-99 and CC64-69/80-83 are preset-assignable modulation/footswitch sources, not fixed maps.",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          {
+            "name": "Pres 0-99",
+            "value": 0
+          },
+          {
+            "name": "Pres 100-199",
+            "value": 1
+          },
+          {
+            "name": "Beat 0-99",
+            "value": 2
+          },
+          {
+            "name": "Beat 100-199",
+            "value": 3
+          },
+          {
+            "name": "Ignore PC",
+            "value": 4
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

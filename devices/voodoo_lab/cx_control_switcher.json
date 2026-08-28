@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Voodoo Lab Control Switcher",
+  "displayName": "Ctrl Switch",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Voodoo Lab",
+    "model": "Control Switcher",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 80,
+      "name": "Switch 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Switch 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Switch 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Switch 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "Default CC group 80-83; eight groups selectable at power-up. PC/CC enable configurable."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,258 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Moog MF-105M MIDI MuRF",
+  "displayName": "MF-105M",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Moog",
+    "model": "MF-105M MIDI MuRF",
+    "version": ""
+  },
+  "receives": [
+    "NOTE_NUMBER",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Envelope",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "LFO Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Output",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Filter 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Filter 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Filter 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Filter 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Filter 5",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Filter 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Filter 7",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Filter 8",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Staccato",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Env Scale",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "LFO On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Freq Bass/Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bass",
+            "value": 0
+          },
+          {
+            "name": "Mids",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Pat Clk Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Pat Reset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Reset",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "MIDI Channel",
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Prostage Remote Wah Wah",
+  "displayName": "Remote Wah",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Prostage",
+    "model": "Remote Wah Wah",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "PITCH_BEND"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 7,
+      "name": "Wah",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Wah position in Wah mode. Prostage Hi Res pitch bend also recognized.",
+      "x_variants": [
+        {
+          "constraint": { "cc": 75, "op": "==", "value": 127 },
+          "name": "Volume",
+          "additionalInfo": "VCA / Volume mode."
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Factory Tap CC for Auto Wah rate; remappable via SysEx. No MIDI Clock."
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Keep Init",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Do Not Change Initial Position — keep wah/volume from previous preset on PC recall (ignored when switching Wah↔Volume presets)."
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Curve",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Linear", "value": 0 },
+          { "name": "Log", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Active", "value": 0 },
+          { "name": "Bypassed", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Instant Access. 0 = Active, 127 = Bypass."
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Wah/VCA",
+      "x_mandatory": true,
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Wah", "value": 0 },
+          { "name": "VCA", "value": 127 }
+        ]
+      },
+      "additionalInfo": "WahWah / VCA operating mode."
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Wah Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Contour",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Contour Boost enable."
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Auto Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Auto Wah",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Sine", "value": 1 },
+          { "name": "Peak", "value": 2 }
+        ]
+      },
+      "additionalInfo": "Wah mode: Auto Wah curve. Mutually exclusive with Auto Enable.",
+      "x_variants": [
+        {
+          "constraint": { "cc": 75, "op": "==", "value": 127 },
+          "name": "Lowest",
+          "valueRange": { "min": 0, "max": 127 },
+          "additionalInfo": "Volume mode: heel-down floor −100 dB … 0 dB."
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "In Gain",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "WahWah Input Gain −15 dB … +4 dB."
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Q Factor",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Wide … Steep."
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Coil Rating",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Flat … Sharp."
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Wah Freq",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "162/486 Hz … 2.2/6.6 kHz."
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Contour Freq",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Contour Boost Frequency 450 Hz … 3.4 kHz."
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Out Gain",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Output gain 0 dB … +31 dB."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0–127 = 128 presets. Store via SysEx (F0 00 20 75 00 7F [XX] F7)."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Prostage Remote WahWah manual §6.1 (Jan 2014). 5-pin DIN MIDI In + Out/Thru. Factory channel 1; Omni/channel via SysEx. MIDI Clock No/No — Auto Wah rate via Tap CC14 or SysEx speed. Pitch bend = Hi Res expression. Older sibling of WAHryTone (SysEx device byte 00 vs 01)."
+}

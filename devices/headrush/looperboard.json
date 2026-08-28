@@ -1,0 +1,496 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "HeadRush Looperboard",
+  "displayName": "Looperboard",
+  "device": {
+    "displayName": "",
+    "manufacturer": "HeadRush",
+    "model": "Looperboard",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "FS Actions",
+      "valueRange": {
+        "min": 0,
+        "max": 66,
+        "discreteValues": [
+          {
+            "name": "Start/Stop All",
+            "value": 0
+          },
+          {
+            "name": "FX 1 Toggle",
+            "value": 1
+          },
+          {
+            "name": "FX 2 Toggle",
+            "value": 2
+          },
+          {
+            "name": "FX 3 Toggle",
+            "value": 3
+          },
+          {
+            "name": "FX 4 Toggle",
+            "value": 4
+          },
+          {
+            "name": "Tap Tempo",
+            "value": 6
+          },
+          {
+            "name": "Track 1 Stop",
+            "value": 7
+          },
+          {
+            "name": "Track 2 Stop",
+            "value": 8
+          },
+          {
+            "name": "Track 3 Stop",
+            "value": 9
+          },
+          {
+            "name": "Track 4 Stop",
+            "value": 10
+          },
+          {
+            "name": "Track 1 Rec/OD",
+            "value": 11
+          },
+          {
+            "name": "Track 2 Rec/OD",
+            "value": 12
+          },
+          {
+            "name": "Track 3 Rec/OD",
+            "value": 13
+          },
+          {
+            "name": "Track 4 Rec/OD",
+            "value": 14
+          },
+          {
+            "name": "All Half Len",
+            "value": 15
+          },
+          {
+            "name": "All Dbl Len",
+            "value": 16
+          },
+          {
+            "name": "All Half Spd",
+            "value": 17
+          },
+          {
+            "name": "All Dbl Spd",
+            "value": 18
+          },
+          {
+            "name": "Trk1 Reverse",
+            "value": 25
+          },
+          {
+            "name": "Trk2 Reverse",
+            "value": 26
+          },
+          {
+            "name": "Trk3 Reverse",
+            "value": 27
+          },
+          {
+            "name": "Trk4 Reverse",
+            "value": 28
+          },
+          {
+            "name": "All Reverse",
+            "value": 29
+          },
+          {
+            "name": "Trk1 Fade",
+            "value": 30
+          },
+          {
+            "name": "Trk2 Fade",
+            "value": 31
+          },
+          {
+            "name": "Trk3 Fade",
+            "value": 32
+          },
+          {
+            "name": "Trk4 Fade",
+            "value": 33
+          },
+          {
+            "name": "All Fade",
+            "value": 34
+          },
+          {
+            "name": "Trk1 +1/2 Step",
+            "value": 35
+          },
+          {
+            "name": "Trk2 +1/2 Step",
+            "value": 36
+          },
+          {
+            "name": "Trk3 +1/2 Step",
+            "value": 37
+          },
+          {
+            "name": "Trk4 +1/2 Step",
+            "value": 38
+          },
+          {
+            "name": "Trk1 -1/2 Step",
+            "value": 39
+          },
+          {
+            "name": "Trk2 -1/2 Step",
+            "value": 40
+          },
+          {
+            "name": "Trk3 -1/2 Step",
+            "value": 41
+          },
+          {
+            "name": "Trk4 -1/2 Step",
+            "value": 42
+          },
+          {
+            "name": "All +1/2 Step",
+            "value": 43
+          },
+          {
+            "name": "All -1/2 Step",
+            "value": 44
+          },
+          {
+            "name": "Trk1 Undo/Redo",
+            "value": 45
+          },
+          {
+            "name": "Trk2 Undo/Redo",
+            "value": 46
+          },
+          {
+            "name": "Trk3 Undo/Redo",
+            "value": 47
+          },
+          {
+            "name": "Trk4 Undo/Redo",
+            "value": 48
+          },
+          {
+            "name": "Trk1 Clear",
+            "value": 49
+          },
+          {
+            "name": "Trk2 Clear",
+            "value": 50
+          },
+          {
+            "name": "Trk3 Clear",
+            "value": 51
+          },
+          {
+            "name": "Trk4 Clear",
+            "value": 52
+          },
+          {
+            "name": "Trk1 Peel",
+            "value": 53
+          },
+          {
+            "name": "Trk2 Peel",
+            "value": 54
+          },
+          {
+            "name": "Trk3 Peel",
+            "value": 55
+          },
+          {
+            "name": "Trk4 Peel",
+            "value": 56
+          },
+          {
+            "name": "B.Trk Rewind",
+            "value": 57
+          },
+          {
+            "name": "B.Trk Stop",
+            "value": 58
+          },
+          {
+            "name": "B.Trk Play/Pause",
+            "value": 59
+          },
+          {
+            "name": "B.Trk Fwd",
+            "value": 60
+          },
+          {
+            "name": "B.Trk Prev",
+            "value": 63
+          },
+          {
+            "name": "B.Trk Next",
+            "value": 64
+          },
+          {
+            "name": "Load Prev Loop",
+            "value": 65
+          },
+          {
+            "name": "Load Next Loop",
+            "value": 66
+          }
+        ]
+      },
+      "additionalInfo": "Also available via MIDI Note messages with same data values."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Master Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Phones Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Track 1 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Track 2 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Track 3 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Track 4 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Track 1 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Track 2 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Track 3 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Track 4 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "B.Trk Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "B.Trk Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Click Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Click Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Output 1 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Output 2 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Output 3 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Output 4 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Input 1 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Input 2 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Input 3 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Input 4 Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Fade Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Trk1 Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "Trk2 Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Trk3 Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 98,
+      "name": "Trk4 Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

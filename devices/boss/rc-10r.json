@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss RC-10R Rhythm Loop Station",
+  "displayName": "RC-10R",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "RC-10R",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC1-31 and CC64-95 user-assignable via Setup>MIDI>CTL (not fixed factory map). Separate RX NOTE CH for rhythm kit notes (PC 1-16). Ignores Bank Select (CC0/CC32). Phrase memory PC 1-99."
+}

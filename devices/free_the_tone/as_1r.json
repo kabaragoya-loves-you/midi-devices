@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Free The Tone AS-1R Ambi Space",
+  "displayName": "AS-1R",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Free The Tone",
+    "model": "AS-1R",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 65,
+      "name": "Effect On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Pre Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "Mode",
+      "valueRange": {
+        "min": 1,
+        "max": 6,
+        "discreteValues": [
+          {
+            "name": "Spring",
+            "value": 1
+          },
+          {
+            "name": "Plate",
+            "value": 2
+          },
+          {
+            "name": "Room",
+            "value": 3
+          },
+          {
+            "name": "Hall",
+            "value": 4
+          },
+          {
+            "name": "Cave",
+            "value": 5
+          },
+          {
+            "name": "Serene",
+            "value": 6
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Noise Engineering Batverb",
+  "displayName": "Batverb",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Noise Engineering",
+    "model": "Batverb",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 11,
+      "name": "EXP",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Input Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "DOOM",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Shimmer",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Blend",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Regen",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Output",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "HPF",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "LPF",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "EXP Target",
+      "valueRange": {
+        "min": 0,
+        "max": 120,
+        "discreteValues": [
+          {
+            "name": "Default",
+            "value": 0
+          },
+          {
+            "name": "DOOM",
+            "value": 15
+          },
+          {
+            "name": "Shimmer",
+            "value": 30
+          },
+          {
+            "name": "Blend",
+            "value": 45
+          },
+          {
+            "name": "Time",
+            "value": 60
+          },
+          {
+            "name": "Regen",
+            "value": 75
+          },
+          {
+            "name": "HPF",
+            "value": 90
+          },
+          {
+            "name": "LPF",
+            "value": 105
+          },
+          {
+            "name": "Duck Amt",
+            "value": 120
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Duck Amt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Focus",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Left",
+            "value": 0
+          },
+          {
+            "name": "Center",
+            "value": 64
+          },
+          {
+            "name": "Right",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Grit",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Left",
+            "value": 0
+          },
+          {
+            "name": "Center",
+            "value": 64
+          },
+          {
+            "name": "Right",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Duck",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Left",
+            "value": 0
+          },
+          {
+            "name": "Center",
+            "value": 64
+          },
+          {
+            "name": "Right",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none",
+    "additionalInfo": "Hold bat button to save preset to PC slot"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

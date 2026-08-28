@@ -19,8 +19,10 @@
   "x_pc": {
     "indexBase": 0,
     "count": 128,
-    "bankSelectMode": "none"
+    "bankSelectMode": "none",
+    "additionalInfo": "PC numbers match set-list slot numbers on the preset screen. No fixed factory CC map — MIDI learn per control (hold more / triple-dots, press slider, then MIDI icon)."
   },
-  "x_midiTrs": "TYPE_A",
-  "x_midiChannel": 1
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1,
+  "additionalInfo": "Hector/Beebo/Digit manual. Before Beebo serial 338: Type B TRS In. Serial 338+: Type A In / Type B Out. MIDI clock sync without patch routing. Notes and CCs also bind via learn (e.g. Loopler)."
 }

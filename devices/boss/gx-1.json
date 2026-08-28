@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "BOSS GX-1",
+  "displayName": "GX-1",
+  "device": {
+    "displayName": "",
+    "manufacturer": "BOSS",
+    "model": "GX-1",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 198,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

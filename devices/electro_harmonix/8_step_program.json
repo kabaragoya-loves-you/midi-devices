@@ -1,0 +1,321 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Electro-Harmonix 8 Step Program",
+  "displayName": "8 Step",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Electro-Harmonix",
+    "model": "8 Step Program",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP",
+    "TRANSPORT_CONTINUE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Step 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Step 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Step 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Step 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Step 5",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Step 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Step 7",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Step 8",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Glide",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "Forward",
+            "value": 0
+          },
+          {
+            "name": "Reverse",
+            "value": 1
+          },
+          {
+            "name": "Bounce",
+            "value": 2
+          },
+          {
+            "name": "Random",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Seq Length",
+      "valueRange": {
+        "min": 1,
+        "max": 8
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-100=0-100%; 101-127 amplify below-max steps"
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Tap Divide",
+      "valueRange": {
+        "min": 0,
+        "max": 6
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Exp Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Play Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Loop",
+            "value": 0
+          },
+          {
+            "name": "1-Shot",
+            "value": 1
+          },
+          {
+            "name": "Step-Thru",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Enc Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Play FSW",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Stop",
+            "value": 0
+          },
+          {
+            "name": "Start",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Step-Thru: both 0 and 127 advance"
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Reset FSW",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Reset FSW",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Tap FSW",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap FSW",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Tap Div Btn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap Div Btn",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Exp Mode Btn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Exp Mode Btn",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Enc Mode Btn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Enc Mode Btn",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Jump Step",
+      "valueRange": {
+        "min": 1,
+        "max": 8
+      },
+      "additionalInfo": "Ignored while sequencer running"
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Save Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Load Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-99 load; 100-127 unload preset"
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,390 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Pigtronix Infinity",
+  "displayName": "Infinity",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Pigtronix",
+    "model": "Infinity",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "Varispeed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Global Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Loop 1 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Loop 2 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Loop Aging",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Stop Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Series",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle on any value"
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Input Split",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle on any value"
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Sync Multi",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Stop FTSW",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Loop 1 FTSW",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Loop 2 FTSW",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Undo FTSW",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Reverse FTSW",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Pitch Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Pitch Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Pitch Recall",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Stutter",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Stutter",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Erase",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Erase",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Erase+Rec",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Erase+Rec",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Reverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Reverse",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Loop-assignable via value 0-3"
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Undo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Undo",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Loop-assignable via value 0-3"
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Preset Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset Down",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Preset Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset Up",
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 50,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

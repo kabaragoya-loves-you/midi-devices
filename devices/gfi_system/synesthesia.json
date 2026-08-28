@@ -1,0 +1,465 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "GFI System Synesthesia",
+  "displayName": "Synesthesia",
+  "device": {
+    "displayName": "",
+    "manufacturer": "GFI System",
+    "model": "Synesthesia",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "DSP X",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Default CC map (MIDI Implementation v2.4.x). SymmLab can reassign CC numbers."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "DSP Y",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Ramp X",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Ramp Y",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "X Tap Div",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Ignore",
+            "value": 0
+          },
+          {
+            "name": "4:1",
+            "value": 1
+          },
+          {
+            "name": "2:1",
+            "value": 2
+          },
+          {
+            "name": "1:1",
+            "value": 3
+          },
+          {
+            "name": "1:2",
+            "value": 4
+          },
+          {
+            "name": "1:3",
+            "value": 5
+          },
+          {
+            "name": "1:4",
+            "value": 6
+          },
+          {
+            "name": "3:4",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Y Tap Div",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Ignore",
+            "value": 0
+          },
+          {
+            "name": "4:1",
+            "value": 1
+          },
+          {
+            "name": "2:1",
+            "value": 2
+          },
+          {
+            "name": "1:1",
+            "value": 3
+          },
+          {
+            "name": "1:2",
+            "value": 4
+          },
+          {
+            "name": "1:3",
+            "value": 5
+          },
+          {
+            "name": "1:4",
+            "value": 6
+          },
+          {
+            "name": "3:4",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "X Algorithm",
+      "valueRange": {
+        "min": 0,
+        "max": 36
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Y Algorithm",
+      "valueRange": {
+        "min": 0,
+        "max": 36
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Pre/Post",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Pre",
+            "value": 0
+          },
+          {
+            "name": "Post",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "DSP Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Cascade",
+            "value": 0
+          },
+          {
+            "name": "Mixture",
+            "value": 1
+          },
+          {
+            "name": "Split",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Load Patch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Patch A",
+            "value": 0
+          },
+          {
+            "name": "Patch B",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Rotor Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Toggle rotor speed; any value"
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Reset Seq",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Reset",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Reset sequence; any value"
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Bank Scroll",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bank Down",
+            "value": 0
+          },
+          {
+            "name": "Bank Up",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "X Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "X Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "X Tweak",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "X SP1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Max varies by algorithm"
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "X SP2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Max varies by algorithm"
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "X SP3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Max varies by algorithm"
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Y Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Y Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Y Tweak",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Y SP1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Max varies by algorithm"
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Y SP2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Max varies by algorithm"
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Y SP3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Max varies by algorithm"
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Patch Scroll",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Patch Down",
+            "value": 0
+          },
+          {
+            "name": "Patch Up",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 15
+}

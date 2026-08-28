@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Yamaha DG-Stomp",
+  "displayName": "DG-Stomp",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Yamaha",
+    "model": "DG-Stomp",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC receive table 1-128 maps to patches; CC 1-31 and 64-95 user-assignable (no factory CC map)."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

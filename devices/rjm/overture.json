@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "RJM Music Overture",
+  "displayName": "Overture",
+  "device": {
+    "displayName": "",
+    "manufacturer": "RJM Music",
+    "model": "Overture",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Exp Pedal",
+      "additionalInfo": "Default expression pedal CC; maps to user-defined heel/toe knob targets.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "additionalInfo": "0=0% volume, 127=100% volume.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Exp Volume",
+      "additionalInfo": "0=0% volume, 127=current volume knob setting.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Boost Lvl",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Active",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Active", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Drive Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Clean Boost", "value": 10 },
+          { "name": "Classic", "value": 31 },
+          { "name": "Boutique", "value": 52 },
+          { "name": "Versatile", "value": 74 },
+          { "name": "Smooth", "value": 95 },
+          { "name": "Crunch", "value": 116 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Bank",
+      "additionalInfo": "Selects front-panel preset bank (presets 1-4 vs 5-8).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bank 1", "value": 0 },
+          { "name": "Bank 2", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-99 recall presets 1-100. PC 127 bypasses; next PC 0-99 re-activates."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN and USB-C MIDI. Default CC map; reassignable in RJM editor. Default MIDI channel 1."
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss ME-90",
+  "displayName": "ME-90",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "ME-90",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "additionalInfo": "Expression pedal. Official ME-90 Reference Manual / FS-1-WL Connection Guide: CC#11, 0-127. USB/Bluetooth MIDI only (no DIN/TRS MIDI jack).",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "CTL Pedal",
+      "additionalInfo": "[CTL] pedal. Press=127, release=0. In memory mode assigns multi-effect on/off or one knob value; in manual mode turns REV on/off.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "EXP SW",
+      "additionalInfo": "Pedal effect ON/OFF (EXP SW / expression toe switch). ON=127, OFF=0.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 72,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

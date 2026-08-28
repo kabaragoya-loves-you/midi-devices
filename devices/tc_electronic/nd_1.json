@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Nova Delay ND-1",
+  "displayName": "ND-1",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Nova Delay ND-1",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 9,
+    "bankSelectMode": "none",
+    "additionalInfo": "9 preset locations (P1-P9). No DIN MIDI jack on pedal."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Optional TC G-Switch on footswitch input provides preset/on-off/tap control via external MIDI modules; pedal has no factory-published CC map or DIN MIDI port."
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss RC-5 Loop Station",
+  "displayName": "RC-5",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "RC-5",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 80,
+      "name": "CC80 Func",
+      "additionalInfo": "Setup>Control CC#80 FUNC. User assigns target (track/rhythm/memory). Boss looper CC often needs 127 then 0.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "CC81 Func",
+      "additionalInfo": "Setup>Control CC#81 FUNC. User assigns target.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "CC82 Func",
+      "additionalInfo": "Setup>Control CC#82 FUNC. User assigns target.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "CC83 Func",
+      "additionalInfo": "Setup>Control CC#83 FUNC. User assigns target.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "CC84 Func",
+      "additionalInfo": "Setup>Control CC#84 FUNC. User assigns target.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "CC85 Func",
+      "additionalInfo": "Setup>Control CC#85 FUNC. User assigns target.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "CC86 Func",
+      "additionalInfo": "Setup>Control CC#86 FUNC. User assigns target.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "CC87 Func",
+      "additionalInfo": "Setup>Control CC#87 FUNC. User assigns target.",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Ignores Bank Select (CC0/CC32). PC 1-99 only. SYNC CLOCK AUTO/MIDI/USB to receive clock."
+}

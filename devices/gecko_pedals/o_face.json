@@ -1,0 +1,539 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Gecko Pedals O-Face",
+  "displayName": "O-Face",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Gecko Pedals",
+    "model": "O-Face",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 darkest, 127 brightest."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Enabled", "value": 1 },
+          { "name": "Toggle", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value simulates a tap-tempo input."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Bypass Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 Released, 1–127 Pressed."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Tap Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 Released, 1–127 Pressed."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Gain Mod Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 Released, 1–127 Pressed."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Tone Mod Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 Released, 1–127 Pressed."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Vol Mod Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 Released, 1–127 Pressed."
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "G En",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Gain mod enable. 0 Disabled, 1–127 Enabled."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "G Free Spd",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "G Idx Spd",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "1/5", "value": 0 },
+          { "name": "1/4", "value": 1 },
+          { "name": "1/3", "value": 2 },
+          { "name": "1/2", "value": 3 },
+          { "name": "2/3", "value": 4 },
+          { "name": "3/4", "value": 5 },
+          { "name": "4/5", "value": 6 },
+          { "name": "1:1", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "G Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "G Phase",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 = 0°, 127 = 180°."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "G Wave",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Square", "value": 0 },
+          { "name": "Clip Sine", "value": 32 },
+          { "name": "Sine", "value": 64 },
+          { "name": "Triangle", "value": 96 },
+          { "name": "Sawtooth", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "T En",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Tone mod enable. 0 Disabled, 1–127 Enabled."
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "T Free Spd",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "T Idx Spd",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "1/5", "value": 0 },
+          { "name": "1/4", "value": 1 },
+          { "name": "1/3", "value": 2 },
+          { "name": "1/2", "value": 3 },
+          { "name": "2/3", "value": 4 },
+          { "name": "3/4", "value": 5 },
+          { "name": "4/5", "value": 6 },
+          { "name": "1:1", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "T Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "T Phase",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 = 0°, 127 = 180°."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "T Wave",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Square", "value": 0 },
+          { "name": "Clip Sine", "value": 32 },
+          { "name": "Sine", "value": 64 },
+          { "name": "Triangle", "value": 96 },
+          { "name": "Sawtooth", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "V En",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Volume mod enable. 0 Disabled, 1–127 Enabled."
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "V Free Spd",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "V Idx Spd",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "1/5", "value": 0 },
+          { "name": "1/4", "value": 1 },
+          { "name": "1/3", "value": 2 },
+          { "name": "1/2", "value": 3 },
+          { "name": "2/3", "value": 4 },
+          { "name": "3/4", "value": 5 },
+          { "name": "4/5", "value": 6 },
+          { "name": "1:1", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "V Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "V Phase",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 = 0°, 127 = 180°."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "V Wave",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Square", "value": 0 },
+          { "name": "Clip Sine", "value": 32 },
+          { "name": "Sine", "value": 64 },
+          { "name": "Triangle", "value": 96 },
+          { "name": "Sawtooth", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Spd Set En",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Tap-hold speed setpoint enable."
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Dpth Set En",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Tap-hold depth setpoint enable."
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Spd Setpt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Dpth Setpt",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Ramp Time",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 = ½ sec, 127 = 5 sec."
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "LP Filter",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Neutral tone low-pass. 0 none, 127 max."
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "HP Filter",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Neutral tone high-pass. 0 none, 127 max."
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Tap Subdiv",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "name": "1X", "value": 0 },
+          { "name": "1.5X", "value": 1 },
+          { "name": "2X", "value": 2 },
+          { "name": "3X", "value": 3 },
+          { "name": "4X", "value": 4 }
+        ]
+      },
+      "additionalInfo": "1.5X = dotted eighth."
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Act Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 12,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "1", "value": 1 },
+          { "name": "2", "value": 2 },
+          { "name": "3", "value": 3 },
+          { "name": "4", "value": 4 },
+          { "name": "5", "value": 5 },
+          { "name": "6", "value": 6 },
+          { "name": "7", "value": 7 },
+          { "name": "8", "value": 8 },
+          { "name": "9", "value": 9 },
+          { "name": "10", "value": 10 },
+          { "name": "11", "value": 11 },
+          { "name": "12", "value": 12 }
+        ]
+      },
+      "additionalInfo": "0 deactivates; 1–12 activate preset."
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Preset Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value advances to next preset."
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Preset Dn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value goes to previous preset."
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Store Preset",
+      "valueRange": {
+        "min": 1,
+        "max": 12,
+        "discreteValues": [
+          { "name": "1", "value": 1 },
+          { "name": "2", "value": 2 },
+          { "name": "3", "value": 3 },
+          { "name": "4", "value": 4 },
+          { "name": "5", "value": 5 },
+          { "name": "6", "value": 6 },
+          { "name": "7", "value": 7 },
+          { "name": "8", "value": 8 },
+          { "name": "9", "value": 9 },
+          { "name": "10", "value": 10 },
+          { "name": "11", "value": 11 },
+          { "name": "12", "value": 12 }
+        ]
+      },
+      "additionalInfo": "Value 1–12 stores current state to that preset."
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Save State",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 Disable, 1–127 Enable startup save state."
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Clock Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Disable", "value": 0 },
+          { "name": "Receive", "value": 1 },
+          { "name": "Generate", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "MIDI Ch",
+      "valueRange": {
+        "min": 0,
+        "max": 17,
+        "discreteValues": [
+          { "name": "Omni", "value": 0 },
+          { "name": "Ch 1", "value": 1 },
+          { "name": "Ch 2", "value": 2 },
+          { "name": "Ch 3", "value": 3 },
+          { "name": "Ch 4", "value": 4 },
+          { "name": "Ch 5", "value": 5 },
+          { "name": "Ch 6", "value": 6 },
+          { "name": "Ch 7", "value": 7 },
+          { "name": "Ch 8", "value": 8 },
+          { "name": "Ch 9", "value": 9 },
+          { "name": "Ch 10", "value": 10 },
+          { "name": "Ch 11", "value": 11 },
+          { "name": "Ch 12", "value": 12 },
+          { "name": "Ch 13", "value": 13 },
+          { "name": "Ch 14", "value": 14 },
+          { "name": "Ch 15", "value": 15 },
+          { "name": "Ch 16", "value": 16 },
+          { "name": "Disabled", "value": 17 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 99,
+      "name": "Reset All",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Reset", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value resets to default (all three mod pushbuttons)."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 13,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0 turns off active preset; PC 1–12 enable presets (4–12 MIDI-only)."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Gecko Pedals O-Face MIDI chart. 3.5mm Type-A TRS. Clock ignore/receive/generate via CC44. Physical/preset changes override prior MIDI settings."
+}

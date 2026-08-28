@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Morningstar Engineering ML5",
+  "displayName": "ML5",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Morningstar Engineering",
+    "model": "ML5",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "All Loops",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 bypass all; 64-127 engage all (Mode 1)."
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Loop A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Mode 1 engage/bypass."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Loop B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Mode 1 engage/bypass."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Loop C",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Mode 1 engage/bypass."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Loop D",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Mode 1 engage/bypass."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Loop E",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Mode 1 engage/bypass."
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Tgl Loop A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Mode 1; any value toggles."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Tgl Loop B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Mode 1; any value toggles."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Tgl Loop C",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Mode 1; any value toggles."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Tgl Loop D",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Mode 1; any value toggles."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Tgl Loop E",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Mode 1; any value toggles."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "Presets saved in Learn mode by PC; loop states stored per PC."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "ML5 User Manual Mode 1 (default). Mode 2 (hold Switch A at power-up): CC9 all loops; CC20-24 engage/bypass A-E; CC25-29 toggle A-E."
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "One Control Crocodile Tail Loop OC10",
+  "displayName": "OC10",
+  "device": {
+    "displayName": "",
+    "manufacturer": "One Control",
+    "model": "Crocodile Tail Loop OC10",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 70,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-69 recalls programs (Bank1/PGM1 = 0). MIDI channel 0 in manual; TX/RX per program."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

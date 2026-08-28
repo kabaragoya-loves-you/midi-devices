@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Polyend Endless",
+  "displayName": "Endless",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Polyend",
+    "model": "Endless",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "USB-C drag-and-drop effect loading only; no MIDI I/O."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "USB-C is drag-and-drop effect loading only; no MIDI I/O documented."
+}

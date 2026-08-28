@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Sonulab StompStation Pro",
+  "displayName": "Stomp Pro",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Sonulab",
+    "model": "StompStation Pro",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Drive On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on per StompStation Pro manual §13.2."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Mod Pre On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Amp On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "IR On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Reverb On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Mod Post On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Tremolo On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Comp On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Gate On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Delay On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Tuner On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 63 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 50,
+    "bankSelectMode": "none",
+    "additionalInfo": "50 preset slots; per-preset MIDI PC mapping in VoidX Control app; CC32-127 assignable to Master controllers."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

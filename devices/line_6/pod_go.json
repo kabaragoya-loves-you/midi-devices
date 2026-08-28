@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 POD Go",
+  "displayName": "POD Go",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "POD Go",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "EXP 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "EXP 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Setlist",
+      "additionalInfo": "Selects Factory (0) or User (1) setlist before PC 0-127. Hardware has 256 presets across two setlists.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Factory", "value": 0 },
+          { "name": "User", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "FS1",
+      "additionalInfo": "Emulates footswitch 1.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "FS2",
+      "additionalInfo": "Emulates footswitch 2.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "FS3",
+      "additionalInfo": "Emulates footswitch 3.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "FS4",
+      "additionalInfo": "Emulates footswitch 4.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "FS5",
+      "additionalInfo": "Emulates footswitch 5.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "FS6",
+      "additionalInfo": "Emulates footswitch 6.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "FS7",
+      "additionalInfo": "Emulates footswitch 7 (external EXP 2 / FS7-8 jack).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "FS8",
+      "additionalInfo": "Emulates footswitch 8 (external EXP 2 / FS7-8 jack).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Loop Rec/Dub",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Overdub", "value": 0 },
+          { "name": "Record", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Loop Play/St",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stop", "value": 0 },
+          { "name": "Play", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Loop Once",
+      "additionalInfo": "Values 0-63 ignored.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Play Once", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Loop Undo",
+      "additionalInfo": "Values 0-63 ignored.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Undo/Redo", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Tap Tempo",
+      "additionalInfo": "Values 0-63 ignored.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Loop Dir",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Forward", "value": 0 },
+          { "name": "Reverse", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Loop Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Full", "value": 0 },
+          { "name": "Half", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Tuner",
+      "additionalInfo": "Manual lists 0-127 tuner screen on/off; treated as any-value toggle.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Toggle", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Snapshot",
+      "additionalInfo": "0-3 select snapshots 1-4; 8=next; 9=previous.",
+      "valueRange": {
+        "min": 0,
+        "max": 9,
+        "discreteValues": [
+          { "name": "Snap 1", "value": 0 },
+          { "name": "Snap 2", "value": 1 },
+          { "name": "Snap 3", "value": 2 },
+          { "name": "Snap 4", "value": 3 },
+          { "name": "Next", "value": 8 },
+          { "name": "Previous", "value": 9 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

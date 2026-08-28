@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Programmable EQ",
+  "displayName": "Prog EQ",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Programmable EQ (SA170)",
+    "version": "1"
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 30,
+      "name": "Output",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engage", "value": 127 }
+        ]
+      },
+      "additionalInfo": "<64 Bypass, ≥64 Engage."
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Out Unity",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Output limited to unity."
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Scroll Spd",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Auto Scroll speed."
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Auto Scroll",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "<64 Off, ≥64 On."
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Band 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Band 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Band 3",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Band 4",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Band 5",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Band 6",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Band 7",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Band 8",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 5,
+    "bankSelectMode": "none",
+    "additionalInfo": "Defaults: PC 1–4 = presets 1–4; PC 5 = bypass. Unit can reassign any PC to a preset (or bypass) on save — last PC received is bound."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Source Audio Programmable EQ v1 (SA170) MIDI CONTROL table. CC30–34 + CC35–42 band levels. Unrelated to EQ2’s larger CC0+ map. MIDI channel is a Backpage parameter."
+}

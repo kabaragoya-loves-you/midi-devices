@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Tech 21 SansAmp Programmable Bass Driver DI Elite",
+  "displayName": "Bass Driver DI Elite",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Tech 21",
+    "model": "SansAmp Programmable Bass Driver DI Elite",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "Program Change recalls Studio Mode locations (128). Performance Mode has 3 additional footswitch slots; PC mapping for those is unit/app dependent."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "3.5mm Type A MIDI via included Tech 21 MIDI Driver. No MIDI CC parameter map — deep editing (amps, IRs, effects, EQ) is app/SysEx only. Hardware MIDI is PC for preset recall plus the Tech 21 software protocol."
+}

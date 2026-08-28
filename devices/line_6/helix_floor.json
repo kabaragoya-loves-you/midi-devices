@@ -1,0 +1,437 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 Helix Floor",
+  "displayName": "Helix Floor",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "Helix Floor",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank MSB",
+      "additionalInfo": "Helix 3.80 Owner's Manual MIDI CC Additional Controls. Values 0–7. Pair with CC32 (setlist) / PC for bank addressing; Storm Summoner x_pc covers one setlist (128 presets).",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "0", "value": 0 },
+          { "name": "1", "value": 1 },
+          { "name": "2", "value": 2 },
+          { "name": "3", "value": 3 },
+          { "name": "4", "value": 4 },
+          { "name": "5", "value": 5 },
+          { "name": "6", "value": 6 },
+          { "name": "7", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "EXP 1",
+      "additionalInfo": "Emulates EXP 1 pedal. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "EXP 2",
+      "additionalInfo": "Emulates EXP 2 pedal. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "EXP 3",
+      "additionalInfo": "Emulates EXP 3 pedal. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Setlist",
+      "additionalInfo": "Bank LSB — setlist select (0–7 = Setlists 1–8). Helix 3.80 Owner's Manual MIDI CC / Setlist menu helper text (CC32).",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Setlist 1", "value": 0 },
+          { "name": "Setlist 2", "value": 1 },
+          { "name": "Setlist 3", "value": 2 },
+          { "name": "Setlist 4", "value": 3 },
+          { "name": "Setlist 5", "value": 4 },
+          { "name": "Setlist 6", "value": 5 },
+          { "name": "Setlist 7", "value": 6 },
+          { "name": "Setlist 8", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "FS1",
+      "additionalInfo": "Emulates FS1. CC49–59 follow Stomp/Preset/Snapshot footswitch mode. Helix 3.80 Owner's Manual MIDI CC.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "FS2",
+      "additionalInfo": "Emulates FS2. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "FS3",
+      "additionalInfo": "Emulates FS3. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "FS4",
+      "additionalInfo": "Emulates FS4. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "FS5",
+      "additionalInfo": "Emulates FS5. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "FS7",
+      "additionalInfo": "Emulates FS7 (no FS6 — MODE is CC71). Helix 3.80 Owner's Manual MIDI CC.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "FS8",
+      "additionalInfo": "Emulates FS8. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "FS9",
+      "additionalInfo": "Emulates FS9. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "FS10",
+      "additionalInfo": "Emulates FS10. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "FS11",
+      "additionalInfo": "Emulates FS11. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "EXP Toe Sw",
+      "additionalInfo": "Emulates EXP toe switch. Helix 3.80 Owner's Manual MIDI CC Pedal and Footswitch Assignments.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Rec/Overdub",
+      "additionalInfo": "Looper Record/Overdub (FS8). 0–63 Overdub; 64–127 Record. Helix 3.80 Owner's Manual MIDI CC Looper Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Overdub", "value": 0 },
+          { "name": "Record", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Play/Stop",
+      "additionalInfo": "Looper Play/Stop (FS9). 0–63 Stop; 64–127 Play. Helix 3.80 Owner's Manual MIDI CC Looper Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stop", "value": 0 },
+          { "name": "Play", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Play Once",
+      "additionalInfo": "Looper Play Once (FS3). Values 64–127. Helix 3.80 Owner's Manual MIDI CC Looper Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Play Once", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Undo/Redo",
+      "additionalInfo": "Looper Undo/Redo (FS2). Values 64–127. Helix 3.80 Owner's Manual MIDI CC Looper Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Undo/Redo", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Tap Tempo",
+      "additionalInfo": "Tap Tempo. Values 64–127. Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Fwd/Reverse",
+      "additionalInfo": "Looper Forward/Reverse (FS11). 0–63 Forward; 64–127 Reverse. Helix 3.80 Owner's Manual MIDI CC Looper Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Forward", "value": 0 },
+          { "name": "Reverse", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Full/Half",
+      "additionalInfo": "Looper Full/Half Speed (FS10). 0–63 Full; 64–127 Half. Helix 3.80 Owner's Manual MIDI CC Looper Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Full", "value": 0 },
+          { "name": "Half", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Loop On/Off",
+      "additionalInfo": "Looper block on/off; also enters/exits Looper footswitch mode. 0–63 Off; 64–127 On. Helix 3.80 Owner's Manual MIDI CC Looper Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Tuner",
+      "additionalInfo": "Tuner screen on/off. Manual lists 0–127 without value bands; Off/On extremes used. Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Snapshot",
+      "additionalInfo": "0–7 = Snapshot 1–8; 8 = Next; 9 = Previous. Snapshot CC auto-send optional in Global Settings > MIDI/Tempo. Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 9,
+        "discreteValues": [
+          { "name": "Snap 1", "value": 0 },
+          { "name": "Snap 2", "value": 1 },
+          { "name": "Snap 3", "value": 2 },
+          { "name": "Snap 4", "value": 3 },
+          { "name": "Snap 5", "value": 4 },
+          { "name": "Snap 6", "value": 5 },
+          { "name": "Snap 7", "value": 6 },
+          { "name": "Snap 8", "value": 7 },
+          { "name": "Next", "value": 8 },
+          { "name": "Previous", "value": 9 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Mode Switch",
+      "additionalInfo": "Engages the MODE switch. Values 0–127. Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Preset ±",
+      "additionalInfo": "Previous/Next preset. 0–63 Previous; 64–127 Next. Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Previous", "value": 0 },
+          { "name": "Next", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Prm Knob 1",
+      "additionalInfo": "Parameter Knob 1 (global control of currently displayed knob). Helix 3.80 Owner's Manual MIDI CC Additional Controls. Not a fixed per-block parameter map.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Prm Knob 2",
+      "additionalInfo": "Parameter Knob 2 (global). Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Prm Knob 3",
+      "additionalInfo": "Parameter Knob 3 (global). Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Prm Knob 4",
+      "additionalInfo": "Parameter Knob 4 (global). Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Prm Knob 5",
+      "additionalInfo": "Parameter Knob 5 (global). Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Prm Knob 6",
+      "additionalInfo": "Parameter Knob 6 (global). Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Page L/R",
+      "additionalInfo": "Page Left/Right buttons. 0–63 Page Left; 64–127 Page Right. Helix 3.80 Owner's Manual MIDI CC Additional Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Page Left", "value": 0 },
+          { "name": "Page Right", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

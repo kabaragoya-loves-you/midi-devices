@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Flower Pedals Deluxe",
+  "displayName": "Deluxe",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Flower Pedals",
+    "model": "Deluxe",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 5,
+    "bankSelectMode": "none",
+    "additionalInfo": "Type A TRS MIDI; full param control confirmed but no fixed CC table in manual."
+  }
+}

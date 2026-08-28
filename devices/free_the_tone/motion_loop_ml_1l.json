@@ -1,0 +1,234 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Free The Tone Motion Loop ML-1L",
+  "displayName": "ML-1L",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Free The Tone",
+    "model": "Motion Loop ML-1L",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 40,
+      "name": "Octave",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Pitch Value",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Pitch Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Pitch Shift",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Slow Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Loop Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Loop Lvl -",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Loop Lvl +",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Reset Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Retrig Set",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Retrig Sens",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Retrig Fade",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "BPM Setting",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Rate Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Fade Curve",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Filter Range",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Filter Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Soft Clip",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Effect Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Dly Subdiv",
+      "valueRange": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Dly Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Dly Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Dly Trail",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Dry Setup",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Effect On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

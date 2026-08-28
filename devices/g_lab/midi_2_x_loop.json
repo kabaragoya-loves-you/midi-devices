@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "G-Lab MIDI 2 X LOOP-er",
+  "displayName": "M2L",
+  "device": {
+    "displayName": "",
+    "manufacturer": "G-Lab",
+    "model": "MIDI 2 x Loop",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 80,
+      "name": "Loop 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on"
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Loop 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on"
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Mute On",
+            "value": 0
+          },
+          {
+            "name": "Mute Off",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "All Loops",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "All On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "Restore",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Restore",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 101,
+    "bankSelectMode": "none",
+    "additionalInfo": "Same PC/CC scheme as M4L with two loops (CC 80-81)"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

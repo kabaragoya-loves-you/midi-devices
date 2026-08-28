@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "BOSS ES-5",
+  "displayName": "ES-5",
+  "device": {
+    "displayName": "",
+    "manufacturer": "BOSS",
+    "model": "ES-5",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 200,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

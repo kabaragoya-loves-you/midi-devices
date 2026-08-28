@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Zoom MS-80IR+",
+  "displayName": "MS-80IR+",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Zoom",
+    "model": "MS-80IR+",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 81,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1,
+  "additionalInfo": "MIDI implementation chart: program change 0-80 recognized; control change not recognized."
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Zoom MS-60B+",
+  "displayName": "MS-60B+",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Zoom",
+    "model": "MS-60B+",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1,
+  "additionalInfo": "MIDI impl: program change 0-99; control change not recognized."
+}

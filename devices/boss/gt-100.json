@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "BOSS GT-100",
+  "displayName": "GT-100",
+  "device": {
+    "displayName": "",
+    "manufacturer": "BOSS",
+    "model": "GT-100",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "additionalInfo": "Bank Select MSB (CC0). FIX map: 0=U01-1..U25-4, 1=U26-1..U50-4, 2=P01-1..P25-4, 3=P26-1..P50-4; PC 0-127 within bank. CTL/EXP CCs are user Assign only (CC1-31, CC64-95). GT-100 MIDI Implementation v1.00.",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "U01-U25", "value": 0 },
+          { "name": "U26-U50", "value": 1 },
+          { "name": "P01-P25", "value": 2 },
+          { "name": "P26-P50", "value": 3 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 400,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

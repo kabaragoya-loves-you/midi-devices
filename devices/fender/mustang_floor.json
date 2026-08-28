@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Fender Mustang Floor",
+  "displayName": "Mustang Floor",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Fender",
+    "model": "Mustang Floor",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 7,
+      "name": "Pedal Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "All FX Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Stomp Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Mod Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Delay Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Reverb Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Amp Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Stomp Effect",
+      "valueRange": {
+        "min": 0,
+        "max": 13
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Stomp Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Stomp Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Stomp Low",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Stomp Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Stomp High",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Mod Effect",
+      "valueRange": {
+        "min": 0,
+        "max": 13
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Mod Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Mod Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Mod Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Mod Avg Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Mod LR Phase",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Delay Effect",
+      "valueRange": {
+        "min": 0,
+        "max": 9
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Delay Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Delay Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Delay Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Delay Bright",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Delay Atten",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Delay Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Reverb Effect",
+      "valueRange": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Reverb Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Reverb Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Reverb Dwell",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Reverb Diff",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Reverb Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Amp Model",
+      "valueRange": {
+        "min": 0,
+        "max": 13
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Amp Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Amp Ch Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Amp Treble",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Amp Middle",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Amp Bass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Amp Sag",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Amp Bias",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Noise Gate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Gate Type",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Cab Type",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Cab Pres",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-99 select presets. CC appendix in Advanced Owner's Manual."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

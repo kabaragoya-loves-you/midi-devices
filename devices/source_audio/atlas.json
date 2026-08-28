@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Atlas Compressor",
+  "displayName": "Atlas",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Atlas Compressor",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 100,
+      "name": "Remote Expr",
+      "additionalInfo": "Factory Remote Expression Pedal. Parameter targets assigned in Neuro Editor. Atlas User Guide MIDI CC table; full map via Device > Edit Device MIDI Map.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "On/Off",
+      "additionalInfo": "Factory Engaged/Bypass. Value bands not listed in published Atlas User Guide table; use Neuro Device MIDI Map for ranges. Canonical extremes used here.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Recall Bypass",
+      "additionalInfo": "Factory Preset Recall (OFF). CC value 0–127 selects preset (Neuro display 1–128); recalls bypassed. Prefer Program Change when available. Atlas User Guide / Source Audio MIDI Features.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Recall Engage",
+      "additionalInfo": "Factory Preset Recall (ON). CC value 0–127 selects preset (Neuro display 1–128); recalls engaged. Prefer Program Change when available. Atlas User Guide / Source Audio MIDI Features.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Toggle Bypass",
+      "additionalInfo": "Factory Engaged/Bypass Toggle. Any value toggles engage/bypass. Atlas User Guide MIDI CC table.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

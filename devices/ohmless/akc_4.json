@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Ohmless Pedals AKC-4",
+  "displayName": "AKC-4",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Ohmless Pedals",
+    "model": "AKC-4",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Off",
+          "value": 0
+        },
+        {
+          "name": "On",
+          "value": 64
+        }
+      ],
+      "additionalInfo": "0=Off; 1-127=On."
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Off",
+          "value": 0
+        },
+        {
+          "name": "On",
+          "value": 64
+        }
+      ],
+      "additionalInfo": "0=Off; 1-127=On."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Clipping",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Klon",
+          "value": 1
+        },
+        {
+          "name": "Schottky/Si",
+          "value": 2
+        },
+        {
+          "name": "Silicone",
+          "value": 3
+        },
+        {
+          "name": "Mosfet",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Boost Route",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Pre Drive",
+          "value": 1
+        },
+        {
+          "name": "Post Drive",
+          "value": 2
+        }
+      ]
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "AKC-4 manual: switching-only MIDI via 6.35mm TRS Type A. Learn channel by power-up drive footswitch hold."
+}

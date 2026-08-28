@@ -1,0 +1,584 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Free The Tone FF-1Y Future Factory",
+  "displayName": "FF-1Y",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Free The Tone",
+    "model": "FF-1Y",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 35,
+      "name": "Dry A+B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Dry A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Dry B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Mix A",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Tone A",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Fdbk A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Bass A",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Mid A",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Treble A",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Time A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Subdiv A",
+      "valueRange": {
+        "min": 1,
+        "max": 10,
+        "discreteValues": [
+          {
+            "name": "Whole",
+            "value": 1
+          },
+          {
+            "name": "Half",
+            "value": 2
+          },
+          {
+            "name": "Dot Qtr",
+            "value": 3
+          },
+          {
+            "name": "Tri/4",
+            "value": 4
+          },
+          {
+            "name": "Quarter",
+            "value": 5
+          },
+          {
+            "name": "Dot 8th",
+            "value": 6
+          },
+          {
+            "name": "Tri/2",
+            "value": 7
+          },
+          {
+            "name": "Eighth",
+            "value": 8
+          },
+          {
+            "name": "Tri/1",
+            "value": 9
+          },
+          {
+            "name": "16th",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Mod Rate A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Mod Depth A",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Mix B",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Tone B",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Fdbk B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Bass B",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Mid B",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Treble B",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Time B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Subdiv B",
+      "valueRange": {
+        "min": 1,
+        "max": 10,
+        "discreteValues": [
+          {
+            "name": "Whole",
+            "value": 1
+          },
+          {
+            "name": "Half",
+            "value": 2
+          },
+          {
+            "name": "Dot Qtr",
+            "value": 3
+          },
+          {
+            "name": "Tri/4",
+            "value": 4
+          },
+          {
+            "name": "Quarter",
+            "value": 5
+          },
+          {
+            "name": "Dot 8th",
+            "value": 6
+          },
+          {
+            "name": "Tri/2",
+            "value": 7
+          },
+          {
+            "name": "Eighth",
+            "value": 8
+          },
+          {
+            "name": "Tri/1",
+            "value": 9
+          },
+          {
+            "name": "16th",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Mod Rate B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Mod Depth B",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Effect On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Tap A+B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap A+B",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Mix A+B",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Tone A+B",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Fdbk A+B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Bass A+B",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Mid A+B",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Treble A+B",
+      "valueRange": {
+        "min": 1,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Time A+B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Subdiv A+B",
+      "valueRange": {
+        "min": 1,
+        "max": 10,
+        "discreteValues": [
+          {
+            "name": "Whole",
+            "value": 1
+          },
+          {
+            "name": "Half",
+            "value": 2
+          },
+          {
+            "name": "Dot Qtr",
+            "value": 3
+          },
+          {
+            "name": "Tri/4",
+            "value": 4
+          },
+          {
+            "name": "Quarter",
+            "value": 5
+          },
+          {
+            "name": "Dot 8th",
+            "value": 6
+          },
+          {
+            "name": "Tri/2",
+            "value": 7
+          },
+          {
+            "name": "Eighth",
+            "value": 8
+          },
+          {
+            "name": "Tri/1",
+            "value": 9
+          },
+          {
+            "name": "16th",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Mod Rate A+B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Mod Depth A+B",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Signal Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Stereo",
+            "value": 0
+          },
+          {
+            "name": "Series",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Trail",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Pan Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Pan Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Output Lvl",
+      "valueRange": {
+        "min": 37,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Tap A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap A",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Tap B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap B",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Soft Clip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

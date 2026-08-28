@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss SY-1000 Guitar Synthesizer",
+  "displayName": "SY-1000",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "SY-1000",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "additionalInfo": "Bank Select MSB (CC0). LSB (CC32) received as 0. FIX RX PC MAP: 200 patches (U01-1–P50-4) via PROGRAM MAP BANK1–BANK4. CC1-31 and CC64-95 user-assignable via ASSIGN SOURCE; no fixed factory CC map.",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Bank 0", "value": 0 },
+          { "name": "Bank 1", "value": 1 },
+          { "name": "Bank 2", "value": 2 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 200,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN and OUT/THRU. SYNC CLOCK must be AUTO/MIDI/USB (not INTERNAL) to receive clock."
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Two Notes Le Lead",
+  "displayName": "Le Lead",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Two Notes",
+    "model": "Le Lead",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 11-15: Ch A, Ch B, Cold Fusion, Hot Fusion, Bypass. Default mapping; reassignable via MIDI Learn."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

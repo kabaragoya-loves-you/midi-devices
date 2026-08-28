@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Decibel Eleven Time After Time",
+  "displayName": "Time After Time",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Decibel Eleven",
+    "model": "Time After Time",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 34,
+      "name": "Delay Time",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Pickup: CC ignored until value matches knob position."
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Pickup: CC ignored until value matches knob position."
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Mod Depth",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Pickup: CC ignored until value matches knob position."
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Mod Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Slow", "value": 0 },
+          { "name": "Fast", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 slow; 64-127 fast."
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Mix Level",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Pickup: CC ignored until value matches knob position."
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Tap Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Toggle", "value": 1 }]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Toggle", "value": 1 }]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Tap", "value": 1 }]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "128 PC slots; each learn-mapped to one of 11 onboard presets or bypass (hold footswitch until LEDs flash). Clock sync in TAP MODE only; ignores Start/Continue/Stop and MTC."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Decibel Eleven Time After Time Operation Manual. Hold B footswitch at power-on to set MIDI channel 1-16 (10-16 shown as 0-6 with center yellow LED). Soft takeover: CCs ignored until value matches knob. Expression can map to knobs, Tap Mode, Mod Speed."
+}

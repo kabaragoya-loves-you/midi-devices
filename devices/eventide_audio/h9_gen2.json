@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Eventide H9 Harmonizer Gen 2",
+  "displayName": "H9 Gen 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Eventide Audio",
+    "model": "H9 Harmonizer Gen 2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "PITCH_BEND",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "PITCH_BEND",
+    "CLOCK"
+  ],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 1000,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC0-CC99 assignable on the device; no factory default CC map. PC receive map is user-configurable via Eventide Control."
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio L.A. Lady Overdrive",
+  "displayName": "L.A. Lady",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "L.A. Lady Overdrive",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

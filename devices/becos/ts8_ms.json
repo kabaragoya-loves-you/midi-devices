@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Becos TS8-MS",
+  "displayName": "TS8-MS",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Becos",
+    "model": "TS8-MS",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 80,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=relay off, 64-127=relay on."
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Relay 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Tip-to-ground external relay."
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Relay 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Ring-to-ground external relay."
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "All Relays",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Bypass + R1 + R2 together; send only one combo CC per preset."
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Byp + R1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "R1 + R2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Byp + R2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "Responds to PC 49-57 (displayed as PC 50-58) for relay combos; does not store presets."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

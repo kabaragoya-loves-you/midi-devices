@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "VOX ToneLab LE",
+  "displayName": "ToneLab LE",
+  "device": {
+    "displayName": "",
+    "manufacturer": "VOX",
+    "model": "ToneLab LE",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 120,
+    "bankSelectMode": "none",
+    "additionalInfo": "CC 0-95 (VC.C) when GLOBAL CCHG I/O is On; maps to program parameters per VOX MIDI impl TABLE 1."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Ibanez LD303 Layer Delayer",
+  "displayName": "LD303",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Ibanez",
+    "model": "LD303 Layer Delayer",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "Delay Time",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "BPM/time when CC16 in 106-127 range; see manual delay-time table."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Resonance",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Filter Cut",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0-106 filter cutoff; 106-127 selects BPM/time mode for CC3."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "16th1 Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "16th2 Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "16th3 Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "16th4 Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Tri2 Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Tri3 Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Pan Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Tail Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Effect",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Time Disp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Toggle", "value": 1 }]
+      },
+      "additionalInfo": "Toggles BPM vs delay-time display."
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 32 },
+          { "name": "Next", "value": 96 }
+        ]
+      },
+      "additionalInfo": "0-63 decrement preset; 64-127 increment preset."
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Bank",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 32 },
+          { "name": "Next", "value": 96 }
+        ]
+      },
+      "additionalInfo": "0-63 decrement bank; 64-127 increment bank."
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Tap", "value": 127 }]
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Pan Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 0 },
+          { "name": "Next", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Pan Mode",
+      "valueRange": {
+        "min": 1,
+        "max": 9,
+        "discreteValues": [
+          { "name": "A/N", "value": 1 },
+          { "name": "TRW", "value": 2 },
+          { "name": "LRW", "value": 3 },
+          { "name": "RLW", "value": 4 },
+          { "name": "PPW", "value": 5 },
+          { "name": "TRN", "value": 6 },
+          { "name": "LRN", "value": 7 },
+          { "name": "RLN", "value": 8 },
+          { "name": "PPN", "value": 9 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 50,
+    "bankSelectMode": "none",
+    "additionalInfo": "MIDI PC 1-50 maps to presets 01A-10E per manual appendix."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,581 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Mooer Ocean Machine",
+  "displayName": "Ocean Machine",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Mooer",
+    "model": "Ocean Machine",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "Reverb Type",
+      "valueRange": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Delay B Type",
+      "valueRange": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Delay A Type",
+      "valueRange": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Tempo B",
+      "valueRange": {
+        "min": 0,
+        "max": 14
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Tempo A",
+      "valueRange": {
+        "min": 0,
+        "max": 14
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Shimmer",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Reverb On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "On >=64; Off <64"
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Delay A On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "On >=64; Off <64"
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Delay B On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "On >=64; Off <64"
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Looper I/O",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": {
+        "info": "In >=64; Out <64"
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Rec/Dub",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Stop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Clear All",
+      "valueRange": {
+        "min": 0,
+        "max": 12,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Half Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": {
+        "info": "0-1 in manual table"
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Reverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "On >=64; Off <64"
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Wireless Expr",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 19
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Expr Min",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "EQ On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "On >=64; Off <64"
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "L.Freq",
+      "valueRange": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Bass",
+      "valueRange": {
+        "min": 0,
+        "max": 24
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 24
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Treble",
+      "valueRange": {
+        "min": 0,
+        "max": 24
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "H.Freq",
+      "valueRange": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Input Level",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Output Level",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Master Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Loop Level",
+      "valueRange": {
+        "min": 0,
+        "max": 60
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "R.Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Low pass >=73; Flat 55-72; High pass <=54"
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "R.Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "R.P1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "R.P2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Feedback A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Time A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "D.Tone A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "D.Mix A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "A.P1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "A.P2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Pingpong A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "On >=64; Off <64"
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Feedback B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Time B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "D.Tone B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "D.Mix B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "B.P1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "B.P2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Pingpong B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "On >=64; Off <64"
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "R.Tone 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Manual lists R.Tone remap at CC66"
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "B.Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "A.Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Merge",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "On >=64; Off <64"
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 24,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,354 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 DL4 MkII",
+  "displayName": "DL4 MkII",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "DL4 MkII",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Delay Model",
+      "additionalInfo": "Preset mode only.",
+      "valueRange": {
+        "min": 0,
+        "max": 29,
+        "discreteValues": [
+          { "name": "Vintage Dig", "value": 0 },
+          { "name": "Crisscross", "value": 1 },
+          { "name": "Euclidean", "value": 2 },
+          { "name": "Dual Delay", "value": 3 },
+          { "name": "Pitch Echo", "value": 4 },
+          { "name": "ADT", "value": 5 },
+          { "name": "Ducked", "value": 6 },
+          { "name": "Harmony", "value": 7 },
+          { "name": "Heliosphere", "value": 8 },
+          { "name": "Transistor", "value": 9 },
+          { "name": "Cosmos", "value": 10 },
+          { "name": "Multi Pass", "value": 11 },
+          { "name": "Adriatic", "value": 12 },
+          { "name": "Elephant Man", "value": 13 },
+          { "name": "Glitch", "value": 14 },
+          { "name": "Digital", "value": 15 },
+          { "name": "Dig w/ Mod", "value": 16 },
+          { "name": "Echo Platter", "value": 17 },
+          { "name": "Stereo", "value": 18 },
+          { "name": "Ping Pong", "value": 19 },
+          { "name": "Reverse", "value": 20 },
+          { "name": "Dynamic", "value": 21 },
+          { "name": "Auto-Vol", "value": 22 },
+          { "name": "Tube Echo", "value": 23 },
+          { "name": "Tape Echo", "value": 24 },
+          { "name": "Multi-Head", "value": 25 },
+          { "name": "Sweep", "value": 26 },
+          { "name": "Analog", "value": 27 },
+          { "name": "Analog Mod", "value": 28 },
+          { "name": "Lo Res Delay", "value": 29 }
+        ]
+      },
+      "x_variants": [
+        { "constraint": { "cc": 9, "op": ">=", "value": 64 }, "x_noop": true }
+      ]
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Reverb Model",
+      "additionalInfo": "Preset mode only.",
+      "valueRange": {
+        "min": 0,
+        "max": 15,
+        "discreteValues": [
+          { "name": "Room", "value": 0 },
+          { "name": "Searchlights", "value": 1 },
+          { "name": "Particle Verb", "value": 2 },
+          { "name": "Double Tank", "value": 3 },
+          { "name": "Octo", "value": 4 },
+          { "name": "Tile", "value": 5 },
+          { "name": "Ducking", "value": 6 },
+          { "name": "Plateaux", "value": 7 },
+          { "name": "Cave", "value": 8 },
+          { "name": "Plate", "value": 9 },
+          { "name": "Ganymede", "value": 10 },
+          { "name": "Chamber", "value": 11 },
+          { "name": "Hot Springs", "value": 12 },
+          { "name": "Hall", "value": 13 },
+          { "name": "Glitz", "value": 14 },
+          { "name": "Reverb Off", "value": 15 }
+        ]
+      },
+      "x_variants": [
+        { "constraint": { "cc": 9, "op": ">=", "value": 64 }, "x_noop": true }
+      ]
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Expression",
+      "additionalInfo": "EXP assignments must be created with a pedal/footswitch on the EXP jack first. Works in Preset and Classic Looper modes.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Preset Bypass",
+      "additionalInfo": "Same as pressing the active preset switch. Preset mode only.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Engaged", "value": 0 },
+          { "name": "Bypass", "value": 127 }
+        ]
+      },
+      "x_variants": [
+        { "constraint": { "cc": 9, "op": ">=", "value": 64 }, "x_noop": true }
+      ]
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Classic Loop",
+      "x_mandatory": true,
+      "additionalInfo": "Gates Preset vs Classic Looper parameter meanings for CC11/13-16 and hides Preset-only CCs when On.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Delay Time",
+      "additionalInfo": "Preset mode: delay time. Classic Looper: echo time.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 9, "op": ">=", "value": 64 },
+          "name": "Echo Time",
+          "additionalInfo": "Classic Looper built-in echo time."
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Time Subdiv",
+      "additionalInfo": "Preset mode only.",
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          { "name": "1/8 Trip", "value": 0 },
+          { "name": "1/8", "value": 1 },
+          { "name": "1/8 Dot", "value": 2 },
+          { "name": "1/4 Trip", "value": 3 },
+          { "name": "1/4", "value": 4 },
+          { "name": "1/4 Dot", "value": 5 },
+          { "name": "1/2 Trip", "value": 6 },
+          { "name": "1/2", "value": 7 },
+          { "name": "1/2 Dot", "value": 8 }
+        ]
+      },
+      "x_variants": [
+        { "constraint": { "cc": 9, "op": ">=", "value": 64 }, "x_noop": true }
+      ]
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Delay Rpts",
+      "additionalInfo": "Preset mode: delay feedback. Classic Looper: echo repeats.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 9, "op": ">=", "value": 64 },
+          "name": "Echo Rpts",
+          "additionalInfo": "Classic Looper built-in echo repeats."
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Delay Tweak",
+      "additionalInfo": "Preset mode: delay Tweak. Classic Looper: echo mod depth/speed.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 9, "op": ">=", "value": 64 },
+          "name": "Echo Mod",
+          "additionalInfo": "Classic Looper echo modulation depth and speed."
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Delay Tweez",
+      "additionalInfo": "Preset mode: delay Tweez. Classic Looper: echo volume.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 9, "op": ">=", "value": 64 },
+          "name": "Echo Vol",
+          "additionalInfo": "Classic Looper echo volume (0=off, 127=50/50)."
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mix",
+      "additionalInfo": "Preset mode: delay mix. Classic Looper: loop playback volume.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 9, "op": ">=", "value": 64 },
+          "name": "Loop Volume",
+          "additionalInfo": "Classic Looper loop playback level (also affects 1 Switch Looper)."
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Reverb Decay",
+      "additionalInfo": "Preset mode only.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        { "constraint": { "cc": 9, "op": ">=", "value": 64 }, "x_noop": true }
+      ]
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Reverb Predly",
+      "additionalInfo": "Reverb Predelay/Diffusion. Preset mode only.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        { "constraint": { "cc": 9, "op": ">=", "value": 64 }, "x_noop": true }
+      ]
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Rev Delay Rte",
+      "additionalInfo": "Preset mode only.",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Rev>Delay", "value": 0 },
+          { "name": "Parallel", "value": 1 },
+          { "name": "Delay>Rev", "value": 2 }
+        ]
+      },
+      "x_variants": [
+        { "constraint": { "cc": 9, "op": ">=", "value": 64 }, "x_noop": true }
+      ]
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Reverb Mix",
+      "additionalInfo": "Reverb Mix (DSP Dry Path) / Reverb Level (Analog Dry Path). Preset mode only.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        { "constraint": { "cc": 9, "op": ">=", "value": 64 }, "x_noop": true }
+      ]
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Loop Rec/Dub",
+      "additionalInfo": "Responds in Preset and Classic Looper modes.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Overdub", "value": 0 },
+          { "name": "Record", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Loop Play/St",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stop", "value": 0 },
+          { "name": "Play", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Loop Once",
+      "additionalInfo": "Values 0-63 ignored.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Play Once", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Loop Undo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Undo", "value": 0 },
+          { "name": "Redo", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Tap Tempo",
+      "additionalInfo": "Values 0-63 ignored.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Loop Dir",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Forward", "value": 0 },
+          { "name": "Reverse", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Loop Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Full", "value": 0 },
+          { "name": "Half", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

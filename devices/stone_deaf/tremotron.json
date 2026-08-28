@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Stone Deaf Effects Tremotron",
+  "displayName": "Tremotron",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Stone Deaf Effects",
+    "model": "Tremotron",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 14,
+        "discreteValues": [
+          { "name": "Sine", "value": 0 },
+          { "name": "Saw", "value": 1 },
+          { "name": "Saw/Tri 1", "value": 2 },
+          { "name": "Saw/Tri 2", "value": 3 },
+          { "name": "Triangle", "value": 4 },
+          { "name": "Rev Saw/T1", "value": 5 },
+          { "name": "Rev Saw/T2", "value": 6 },
+          { "name": "Rev Saw", "value": 7 },
+          { "name": "SQ short 1", "value": 8 },
+          { "name": "SQ short 2", "value": 9 },
+          { "name": "SQ short 3", "value": 10 },
+          { "name": "Square", "value": 11 },
+          { "name": "SQ long 1", "value": 12 },
+          { "name": "SQ long 2", "value": 13 },
+          { "name": "SQ long 3", "value": 14 }
+        ]
+      },
+      "additionalInfo": "Factory MIDI Guide: Shape values 0–14. Shape names from Electra One community mapping."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "LFO 2 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Secondary LFO. 0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Rate 2",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Secondary Rate (relative). Factory map is continuous 0–127."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Depth 2",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Secondary Depth."
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Shape 2",
+      "valueRange": {
+        "min": 0,
+        "max": 14,
+        "discreteValues": [
+          { "name": "Sine", "value": 0 },
+          { "name": "Saw", "value": 1 },
+          { "name": "Saw/Tri 1", "value": 2 },
+          { "name": "Saw/Tri 2", "value": 3 },
+          { "name": "Triangle", "value": 4 },
+          { "name": "Rev Saw/T1", "value": 5 },
+          { "name": "Rev Saw/T2", "value": 6 },
+          { "name": "Rev Saw", "value": 7 },
+          { "name": "SQ short 1", "value": 8 },
+          { "name": "SQ short 2", "value": 9 },
+          { "name": "SQ short 3", "value": 10 },
+          { "name": "Square", "value": 11 },
+          { "name": "SQ long 1", "value": 12 },
+          { "name": "SQ long 2", "value": 13 },
+          { "name": "SQ long 3", "value": 14 }
+        ]
+      },
+      "additionalInfo": "Secondary Shape. Same 0–14 as CC22. Page 11 FX Loop example for CC26 is a manual error — table lists Secondary Shape."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Tap Div",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "1/4", "value": 12 },
+          { "name": "Dot 1/8", "value": 37 },
+          { "name": "Trip 1/8", "value": 62 },
+          { "name": "1/8", "value": 87 },
+          { "name": "1/16", "value": 112 },
+          { "name": "1/64", "value": 126 }
+        ]
+      },
+      "additionalInfo": "0–24 crotchet (1/4); 25–49 dotted quaver; 50–74 (manual label garbled — treated as triplet 1/8); 75–99 quaver (1/8); 100–124 semi-quaver (1/16); 125–127 hemi-demi-semi-quaver / ring mod (1/64)."
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "MIDI Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "MIDI Beat Clock On/Off. 0–63 Off, 64–127 On. When on, clock overrides Rate."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "128 presets via PC 0–127. Footswitch banks of 4; selecting a PC sets the bank for footswitch cycling."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Stone Deaf Tremotron MIDI Guide (pp. 8–11). Hold Bypass 5s while bypassed for setup: Depth sets channel 1–16; Shape toggles global beat clock (green=on, red=off). Factory CC table is 20–27, 29–30 only — no Tone, Level, or tap CC. No CC28."
+}

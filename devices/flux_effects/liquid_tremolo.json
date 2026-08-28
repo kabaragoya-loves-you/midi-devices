@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Flux Effects Liquid Tremolo",
+  "displayName": "Liquid Tremolo",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Flux Effects",
+    "model": "Liquid Tremolo",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 16,
+      "name": "Contour",
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          { "name": "Live", "value": 0 },
+          { "name": "Spin", "value": 1 },
+          { "name": "Smooth", "value": 2 },
+          { "name": "Thick", "value": 3 },
+          { "name": "Hard", "value": 4 },
+          { "name": "Slice", "value": 5 },
+          { "name": "Plink", "value": 6 },
+          { "name": "Whip", "value": 7 },
+          { "name": "Custom", "value": 8 }
+        ]
+      },
+      "additionalInfo": "0=Live uses knob setting."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Speed MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "BPM 20-1440 with CC49 LSB; send LSB first."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 to 40.5 dB."
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Live", "value": 0 },
+          { "name": "Manual", "value": 1 },
+          { "name": "TapSync", "value": 2 },
+          { "name": "Expression", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Tap Div",
+      "valueRange": { "min": 1, "max": 4 },
+      "additionalInfo": "Denominator for BPM calcs."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Tap Mult",
+      "valueRange": { "min": 1, "max": 6 },
+      "additionalInfo": "Numerator for BPM calcs."
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Stereo Field",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 to 180 degrees."
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Speed LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Send before CC17 MSB."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Clock Recv",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Ignore", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Default on."
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Clock Out",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "MIDI OUT clock; default off."
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Start Recv",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Ignore", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Re-syncs contour; default on."
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "CC Transmit",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Echo CC on MIDI OUT; default off."
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Mute Xmit",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Disable all TX when bypassed (v3.05+)."
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "TapSync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Tap", "value": 1 }]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0=heel, 127=toe."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Active", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 48,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0=Live mode. PC 1-48 recall presets; save via hold Bypass+TapSync within 5s."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Included TRS adapter to DIN MIDI IN. MIDI THRU on pedal; OUT sends optional clock/CC."
+}

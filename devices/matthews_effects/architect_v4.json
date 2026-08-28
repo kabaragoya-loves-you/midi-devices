@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Matthews Effects Architect V4",
+  "displayName": "Architect V4",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Matthews Effects",
+    "model": "Architect V4",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Effect On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      },
+      "additionalInfo": "0=bypass,1=on,2=toggle"
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Clipping",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      },
+      "additionalInfo": "0=JFET,1=LED,2=Silicon,3=Germanium"
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Boost On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      },
+      "additionalInfo": "0=bypass,1=on,2=toggle"
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Boost Circuit",
+      "valueRange": {
+        "min": 1,
+        "max": 2
+      },
+      "additionalInfo": "1=Silicon,2=MOSFET"
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Signal Order",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      },
+      "additionalInfo": "0=OD first,1=Boost first"
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "MIDI Channel",
+      "valueRange": {
+        "min": 0,
+        "max": 16
+      },
+      "additionalInfo": "Sets MIDI receive channel"
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 2,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0=toggle overdrive, PC 1=toggle boost per Matthews MIDI manual."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

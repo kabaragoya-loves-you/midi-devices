@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Rocktron Cyborg Reverb",
+  "displayName": "Cyborg Verb",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Rocktron",
+    "model": "Cyborg Reverb",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 6,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 1 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Same Cyborg-family CC6 bypass as Cyborg Delay manual."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "64 user presets via optional MIDI breakout; no parameter CC map in manual."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

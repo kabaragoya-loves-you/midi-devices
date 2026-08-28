@@ -1,0 +1,229 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Pigtronix Echolution 3",
+  "displayName": "Echolution 3",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Pigtronix",
+    "model": "Echolution 3",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 12,
+      "name": "Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "LFO Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mod Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Time Btn",
+      "valueRange": {
+        "min": 3,
+        "max": 5
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "SFX Btn",
+      "valueRange": {
+        "min": 3,
+        "max": 6
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Taps Btn",
+      "valueRange": {
+        "min": 3,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Bypass Btn",
+      "valueRange": {
+        "min": 3,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "LFO Mod Btn",
+      "valueRange": {
+        "min": 3,
+        "max": 10
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          },
+          {
+            "name": "Explicit On",
+            "value": 3
+          },
+          {
+            "name": "Explicit Off",
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Jump/Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Freeze/Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Loop Open",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Loop Open",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Momentary 1 opens; another closes loop"
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "2nd Tap Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "MIDI Clk In",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 4,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

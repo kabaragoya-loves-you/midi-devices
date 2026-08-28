@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Chase Bliss Ayahuasca",
+  "displayName": "Ayahuasca",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "Ayahuasca",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Color",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Sway",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Ramp",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Note Div",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "name": "Whole", "value": 0 },
+          { "name": "Half", "value": 1 },
+          { "name": "1/4 Triplet", "value": 2 },
+          { "name": "Quarter", "value": 3 },
+          { "name": "Eighth", "value": 4 },
+          { "name": "Sixteenth", "value": 5 }
+        ]
+      },
+      "additionalInfo": "CC21 index base 0 per ChaseBlissEditor Ayahuasca definition."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Clk Ignore",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Ignore Clock", "value": 0 },
+          { "name": "Listen Clock", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Send any value to simulate tap footswitch."
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0=heel, 127=toe; target set by dips."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypassed", "value": 0 },
+          { "name": "Engage/Ramp", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Engage resets ramp if already engaged."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 122,
+    "bankSelectMode": "none",
+    "additionalInfo": "122 presets; CC map from ChaseBlissEditor cb_pedal_definitions.py (Gravitas-family layout)."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 4
+}

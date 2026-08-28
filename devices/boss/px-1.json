@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss PX-1 Plugout FX",
+  "displayName": "PX-1",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "PX-1",
+    "version": ""
+  },
+  "receives": [
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "TRS MIDI IN receives MIDI clock only; no CC or PC control. USB-C also accepts clock from a DAW."
+}

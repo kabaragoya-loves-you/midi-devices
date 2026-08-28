@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Servus! Pedale A Sound Odyssey",
+  "displayName": "Sound Odyssey",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Servus!",
+    "model": "A Sound Odyssey",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 12,
+      "name": "Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Space",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Exp Assign",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Reverb",
+          "value": 0
+        },
+        {
+          "name": "No Exp",
+          "value": 64
+        },
+        {
+          "name": "Space",
+          "value": 127
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Off",
+          "value": 0
+        },
+        {
+          "name": "On",
+          "value": 127
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Save Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Save",
+          "value": 127
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Preset Dn",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Down",
+          "value": 127
+        }
+      ]
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "6 banks x 128 presets via Program Change 0-127. Boots to bank 1 preset 1 (PC 0). Bank select not documented as CC."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Servus A Sound Odyssey manual. Default MIDI channel 3; learn channel by power-up preset hold. CC 0 CCW / 127 CW for knob positions."
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Matthews Effects Traveler",
+  "displayName": "Traveler",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Matthews Effects",
+    "model": "Traveler",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bypass",
+      "additionalInfo": "0=Off; 1=On; 2=Toggle",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 },
+          { "name": "Toggle", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "M",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Algorithm",
+      "additionalInfo": "0=Vintage; 1=Shimmer; 2=Mod",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Vintage", "value": 0 },
+          { "name": "Shimmer", "value": 1 },
+          { "name": "Mod", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "MIDI Channel",
+      "additionalInfo": "1-16",
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 7,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0=bypass toggle; PC 1-6=presets 1-6 per Matthews MIDI Command chart."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Matthews Effects Traveler MIDI Command chart (user)."
+}

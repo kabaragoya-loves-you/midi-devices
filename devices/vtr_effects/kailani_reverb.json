@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "VTR Effects Kailani Reverb",
+  "displayName": "Kailani",
+  "device": {
+    "displayName": "",
+    "manufacturer": "VTR Effects",
+    "model": "Kailani Reverb",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "≥64 ON / <64 OFF."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Algorithm",
+      "valueRange": {
+        "min": 0,
+        "max": 15,
+        "discreteValues": [
+          { "name": "Spring", "value": 0 },
+          { "name": "Hall", "value": 1 },
+          { "name": "Plate", "value": 2 },
+          { "name": "Room", "value": 3 },
+          { "name": "Cathedral", "value": 4 },
+          { "name": "Lo-Fi", "value": 5 },
+          { "name": "Shimmer", "value": 6 },
+          { "name": "Dive", "value": 7 },
+          { "name": "Ephemeral", "value": 8 },
+          { "name": "Expand", "value": 9 },
+          { "name": "Divided", "value": 10 },
+          { "name": "Infinity", "value": 11 },
+          { "name": "Mod", "value": 12 },
+          { "name": "VerbDly", "value": 13 },
+          { "name": "NoShmr", "value": 14 }
+        ]
+      },
+      "additionalInfo": "Range 0–15. Labels 0–14 = Gold Series modes in product order; value 15 undocumented. Sky/Sea meaning may change per algorithm on OLED."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Sky",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Sea",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Mix / attenuation."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Preset Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 0 }
+        ]
+      },
+      "additionalInfo": "Value 0 advances among the 99 stored presets (not the queue)."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Preset Dn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 0 }
+        ]
+      },
+      "additionalInfo": "Value 0 steps previous among the 99 stored presets (not the queue)."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1–99 recall presets 1–99. PC 0 ignored."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "Kailani Reverb MIDI table. All VTR Effects MIDI TRS is Type B. Chart documents CC1–8 only (no Figure/Tap CCs)."
+}

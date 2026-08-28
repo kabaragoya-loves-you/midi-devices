@@ -1,0 +1,320 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Collider Delay+Reverb",
+  "displayName": "Collider",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Collider Delay+Reverb",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "A Engine",
+      "additionalInfo": "Selects and loads Delay (& Reverb) engines into side A. Factory default MIDI map (Collider MIDI Guide).",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          { "name": "Digital", "value": 0 },
+          { "name": "Analog", "value": 1 },
+          { "name": "Tape", "value": 2 },
+          { "name": "Reverse", "value": 3 },
+          { "name": "Oil Can", "value": 4 },
+          { "name": "Room", "value": 5 },
+          { "name": "Hall", "value": 6 },
+          { "name": "True Spring", "value": 7 },
+          { "name": "Plate", "value": 8 },
+          { "name": "Shimmer", "value": 9 },
+          { "name": "E-Dome", "value": 10 },
+          { "name": "Swell", "value": 11 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "A Time",
+      "additionalInfo": "Sets min and max delay times (delay engines); meaning follows loaded A engine",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "A Mix",
+      "additionalInfo": "50/50 point at approx. 95",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "A Feedback",
+      "additionalInfo": "Delay regeneration amount when A is a delay engine",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "A Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "A Control 1",
+      "additionalInfo": "Whatever parameter is assigned to CONTROL 1 for the loaded A engine (Neuro)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "A Control 2",
+      "additionalInfo": "Whatever parameter is assigned to CONTROL 2 for the loaded A engine (Neuro)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "A Output",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "A Tap Div",
+      "additionalInfo": "Delay side tap tempo beat division",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "name": "Quarter", "value": 0 },
+          { "name": "Dot Eighth", "value": 1 },
+          { "name": "Golden Ratio", "value": 2 },
+          { "name": "Eighth", "value": 3 },
+          { "name": "Triplet", "value": 4 },
+          { "name": "Sixteenth", "value": 5 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "B Engine",
+      "additionalInfo": "Selects and loads Reverb (& Delay) engines into side B. Factory default MIDI map (Collider MIDI Guide).",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          { "name": "Digital", "value": 0 },
+          { "name": "Analog", "value": 1 },
+          { "name": "Tape", "value": 2 },
+          { "name": "Reverse", "value": 3 },
+          { "name": "Oil Can", "value": 4 },
+          { "name": "Room", "value": 5 },
+          { "name": "Hall", "value": 6 },
+          { "name": "True Spring", "value": 7 },
+          { "name": "Plate", "value": 8 },
+          { "name": "Shimmer", "value": 9 },
+          { "name": "E-Dome", "value": 10 },
+          { "name": "Swell", "value": 11 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "B Time",
+      "additionalInfo": "Sets Pre Delay of the Reverb when B is a reverb engine",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "B Mix",
+      "additionalInfo": "50/50 point at approx. 95",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "B Feedback",
+      "additionalInfo": "Sets the decay rate of the Reverb when B is a reverb engine",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "B Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "B Control 1",
+      "additionalInfo": "Whatever parameter is assigned to CONTROL 1 for the loaded B engine (Neuro)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "B Control 2",
+      "additionalInfo": "Whatever parameter is assigned to CONTROL 2 for the loaded B engine (Neuro)",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "B Output",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "B Tap Div",
+      "additionalInfo": "Reverb/B-side tap tempo beat division (relevant when B loads a delay engine)",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          { "name": "Quarter", "value": 0 },
+          { "name": "Dot Eighth", "value": 1 },
+          { "name": "Golden Ratio", "value": 2 },
+          { "name": "Eighth", "value": 3 },
+          { "name": "Triplet", "value": 4 },
+          { "name": "Sixteenth", "value": 5 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Stereo Div",
+      "additionalInfo": "Official MIDI Guide lists both Delay (A) Stereo Division and Reverb (B) Stereo Division on CC 24 (0–5). Single CC entry required; division labels not named in the guide.",
+      "valueRange": { "min": 0, "max": 5 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Preset Down",
+      "additionalInfo": "Any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Preset Up",
+      "additionalInfo": "Any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "additionalInfo": "Same as tapping the DELAY/TAP footswitch; any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Remote Hold",
+      "additionalInfo": "Same as pressing the REVERB footswitch (hold when reverb engaged); any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Remote Expr",
+      "additionalInfo": "Overrides all expression inputs",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "A Bypass",
+      "additionalInfo": "0–64 Bypass, 65–127 Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "A Bypass Tog",
+      "additionalInfo": "Toggle Delay (A) Bypass/Engage; any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "B Bypass",
+      "additionalInfo": "0–64 Bypass, 65–127 Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "B Bypass Tog",
+      "additionalInfo": "Toggle Reverb (B) Bypass/Engage; any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "PC Both Off",
+      "additionalInfo": "CC value 0–127 selects preset (Neuro display 1–128); recalls with Delay(A) & Reverb(B) bypassed. Prefer Program Change when available.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "PC Dly On",
+      "additionalInfo": "CC value 0–127 selects preset; recalls with Delay(A) engaged. Prefer Program Change when available.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "PC Both On",
+      "additionalInfo": "CC value 0–127 selects preset; recalls with Delay(A) & Reverb(B) engaged. Prefer Program Change when available.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "PC Rev On",
+      "additionalInfo": "CC value 0–127 selects preset; recalls with Reverb(B) engaged. Prefer Program Change when available.",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

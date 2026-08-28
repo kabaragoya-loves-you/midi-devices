@@ -1,0 +1,447 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "HeadRush MX5",
+  "displayName": "MX5",
+  "device": {
+    "displayName": "",
+    "manufacturer": "HeadRush",
+    "model": "MX5",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 50,
+      "name": "FS1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simulate footswitch press (127) then release (0)."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "FS2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simulate footswitch press (127) then release (0)."
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "FS3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simulate footswitch press (127) then release (0)."
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Send repeatedly to set tempo."
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Looper 1/2 Spd",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Looper 2X Spd",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Looper 1/2 Lp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Looper 2X Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Looper Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Looper Rec",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Looper Insert",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Looper Peel",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Looper Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Looper Reverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Block 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 1 on/off."
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Block 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 2 on/off."
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Block 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 3 on/off."
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Block 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 4 on/off."
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Block 5",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 5 on/off."
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Block 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 6 on/off."
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Block 7",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 7 on/off."
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Block 8",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 8 on/off."
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Block 9",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 9 on/off."
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Block 10",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 10 on/off."
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Block 11",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Toggle block 11 on/off."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_TS",
+  "x_midiChannel": 1
+}

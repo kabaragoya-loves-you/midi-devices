@@ -1,0 +1,338 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Cornerstone Nucleo",
+  "displayName": "Nucleo",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Cornerstone",
+    "model": "Nucleo",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0\u201363 off; 64\u2013127 on."
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass Type",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "True",
+            "value": 0
+          },
+          {
+            "name": "Buffered",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0\u201363 true; 64\u2013127 buffered."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Bypass Chg",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Bypass on preset recall."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Dry Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Analog",
+            "value": 0
+          },
+          {
+            "name": "Hybrid",
+            "value": 1
+          },
+          {
+            "name": "Digital",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Vol On Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Unity",
+            "value": 0
+          },
+          {
+            "name": "User",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Buffered bypass output volume behavior."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "MIDI Channel",
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Bypass Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0 released; 1\u201363 pressed; 64\u2013127 held."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Freeze Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0 released; 1\u201363 pressed; 64\u2013127 held."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Mode Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Room",
+            "value": 0
+          },
+          {
+            "name": "Hall",
+            "value": 1
+          },
+          {
+            "name": "Reactor",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Blend",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Mod",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Air",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Flux",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Frz Pitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Modulation rate 0.5\u201320 Hz."
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Pitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Air secondary; -1 to +1 octave blend."
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Gran Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Pre Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Max 290 ms."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Diffusion",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Freeze Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Output Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Character",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Lo-Fi",
+            "value": 0
+          },
+          {
+            "name": "Vintage",
+            "value": 1
+          },
+          {
+            "name": "Normal",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Speed BPM",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Granular BPM sync; send half desired BPM."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Frz Pch Rst",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "128 presets; PC active only when rocker switch is in PRST position."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Nucleo Manual V3 MIDI map. TYPE-A TRS IN/OUT; USB MIDI also supported."
+}

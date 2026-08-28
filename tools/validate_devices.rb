@@ -15,7 +15,7 @@
 #   - x_pc custom extension format (incl. bankSelectMode: none, CC0, CC0_CC32)
 #   - x_midiTrs values (TYPE_A, TYPE_B, TYPE_TS, BOTH)
 #   - CC base name length (warn if >14 characters; x_variants names error at >14)
-#   - x_variants / x_mandatory CC extensions (constraint shape, ops, gating cc, name length, discrete bounds)
+#   - x_variants / x_mandatory CC extensions (constraint shape: CC compare XOR clock flag, ops, gating cc, name length, discrete bounds)
 #   - Strict "x_" whitelist: any unknown x_-prefixed key is an error
 #   - receives/transmits values match MIDI RTC JSON schema
 #
@@ -425,6 +425,33 @@ class DeviceValidator
   def validate_variant_constraint(constraint, idx, cc_num, vidx, defined_cc_numbers)
     unless constraint.is_a?(Hash)
       @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] constraint must be an object"
+      return
+    end
+
+    has_clock = constraint.key?("clock")
+    has_cc = constraint.key?("cc") || constraint.key?("op") || constraint.key?("value")
+
+    if has_clock && has_cc
+      @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] constraint cannot mix " \
+                 "clock with cc/op/value"
+      return
+    end
+
+    if has_clock
+      unless constraint["clock"] == true || constraint["clock"] == false
+        @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] constraint.clock " \
+                   "must be a boolean"
+      end
+      constraint.each_key do |key|
+        next if key == "clock"
+        @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] constraint has " \
+                   "unknown key '#{key}'"
+      end
+      receives = @json["receives"]
+      unless receives.is_a?(Array) && receives.include?("CLOCK")
+        @errors << "CC entry #{idx} (CC#{cc_num}): x_variants[#{vidx}] clock constraint " \
+                   "requires receives to include CLOCK"
+      end
       return
     end
 

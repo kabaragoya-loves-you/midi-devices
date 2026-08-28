@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Shift Line Everest II",
+  "displayName": "Everest II",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Shift Line",
+    "model": "Everest II",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 7,
+      "name": "Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Stereo",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "DL Regen",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "DL Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Delay Type",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "PingPong",
+            "value": 21
+          },
+          {
+            "name": "Reverse",
+            "value": 64
+          },
+          {
+            "name": "Stereo",
+            "value": 106
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "RV Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "RV Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "BEAT",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Down",
+            "value": 21
+          },
+          {
+            "name": "Center",
+            "value": 64
+          },
+          {
+            "name": "Up",
+            "value": 106
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "DL Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "DL SRR",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "RV SRR",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Favorite",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Manual",
+            "value": 0
+          },
+          {
+            "name": "Favorite",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Clock Src",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Internal",
+            "value": 0
+          },
+          {
+            "name": "External",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=bypass, 64-127=engaged; use 0/127"
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Tails",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Kill+Tails",
+            "value": 21
+          },
+          {
+            "name": "Tails On",
+            "value": 64
+          },
+          {
+            "name": "Tails Off",
+            "value": 106
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "TAP",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 12,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-2=Blue, 3-5=Red, 6-8=Magenta, 9-11=Cyan banks"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

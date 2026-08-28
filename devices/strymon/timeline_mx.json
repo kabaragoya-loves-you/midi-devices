@@ -1,0 +1,1843 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Strymon TimeLine MX",
+  "displayName": "TimeLine MX",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Strymon",
+    "model": "TimeLine MX",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Bank 0",
+            "value": 0
+          },
+          {
+            "name": "Bank 1",
+            "value": 1
+          },
+          {
+            "name": "Bank 2",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "D1: Type",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          {
+            "name": "Spectral",
+            "value": 0
+          },
+          {
+            "name": "Reverse",
+            "value": 1
+          },
+          {
+            "name": "Ice",
+            "value": 2
+          },
+          {
+            "name": "Lo Fi",
+            "value": 3
+          },
+          {
+            "name": "Filter",
+            "value": 4
+          },
+          {
+            "name": "Reverb",
+            "value": 5
+          },
+          {
+            "name": "dTape",
+            "value": 6
+          },
+          {
+            "name": "dBucket",
+            "value": 7
+          },
+          {
+            "name": "Digital",
+            "value": 8
+          },
+          {
+            "name": "Drum",
+            "value": 9
+          },
+          {
+            "name": "Oil Can",
+            "value": 10
+          },
+          {
+            "name": "MultiTap",
+            "value": 11
+          }
+        ]
+      },
+      "x_mandatory": true
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "D2: Type",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          {
+            "name": "Spectral",
+            "value": 0
+          },
+          {
+            "name": "Reverse",
+            "value": 1
+          },
+          {
+            "name": "Ice",
+            "value": 2
+          },
+          {
+            "name": "Lo Fi",
+            "value": 3
+          },
+          {
+            "name": "Filter",
+            "value": 4
+          },
+          {
+            "name": "Reverb",
+            "value": 5
+          },
+          {
+            "name": "dTape",
+            "value": 6
+          },
+          {
+            "name": "dBucket",
+            "value": 7
+          },
+          {
+            "name": "Digital",
+            "value": 8
+          },
+          {
+            "name": "Drum",
+            "value": 9
+          },
+          {
+            "name": "Oil Can",
+            "value": 10
+          },
+          {
+            "name": "MultiTap",
+            "value": 11
+          }
+        ]
+      },
+      "x_mandatory": true
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "D1: Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "D2: Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "D1: Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "D2: Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "D1: Out Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "D2: Out Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "D1: Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 16,
+        "discreteValues": [
+          {
+            "name": "Full Left",
+            "value": 0
+          },
+          {
+            "name": "Center",
+            "value": 8
+          },
+          {
+            "name": "Full Right",
+            "value": 16
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "D2: Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 16,
+        "discreteValues": [
+          {
+            "name": "Full Left",
+            "value": 0
+          },
+          {
+            "name": "Center",
+            "value": 8
+          },
+          {
+            "name": "Full Right",
+            "value": 16
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "D1: Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "D2: Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "D1: Grit",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "D2: Grit",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "D1: Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "D2: Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "D1: TAP Div",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Quarter",
+            "value": 0
+          },
+          {
+            "name": "Dot 8th",
+            "value": 1
+          },
+          {
+            "name": "Eighth",
+            "value": 2
+          },
+          {
+            "name": "Triplet",
+            "value": 3
+          },
+          {
+            "name": "16th",
+            "value": 4
+          },
+          {
+            "name": "Golden",
+            "value": 5
+          },
+          {
+            "name": "Silver",
+            "value": 6
+          },
+          {
+            "name": "Free",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "D2: TAP Div",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          {
+            "name": "Quarter",
+            "value": 0
+          },
+          {
+            "name": "Dot 8th",
+            "value": 1
+          },
+          {
+            "name": "Eighth",
+            "value": 2
+          },
+          {
+            "name": "Triplet",
+            "value": 3
+          },
+          {
+            "name": "16th",
+            "value": 4
+          },
+          {
+            "name": "Golden",
+            "value": 5
+          },
+          {
+            "name": "Silver",
+            "value": 6
+          },
+          {
+            "name": "Free",
+            "value": 7
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "D1: Param 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "D2: Param 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "D1: Param 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "D2: Param 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "D1: Swell",
+      "valueRange": {
+        "min": 0,
+        "max": 28
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "D2: Swell",
+      "valueRange": {
+        "min": 0,
+        "max": 28
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "D1: Duck Rel",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "D2: Duck Rel",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "D1: Duck Sens",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "D2: Duck Sens",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "D1: Density",
+      "valueRange": {
+        "min": 0,
+        "max": 14
+      },
+      "additionalInfo": "Spectral: Density; dTape: Crinkle; else Mod Speed",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "D1: Crinkle",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": ">=",
+            "value": 1
+          },
+          "name": "D1: Mod Spd",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          },
+          "additionalInfo": "Types other than Spectral and dTape"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "D2: Density",
+      "valueRange": {
+        "min": 0,
+        "max": 14
+      },
+      "additionalInfo": "Spectral: Density; dTape: Crinkle; else Mod Speed",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 6
+          },
+          "name": "D2: Crinkle",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": ">=",
+            "value": 1
+          },
+          "name": "D2: Mod Spd",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          },
+          "additionalInfo": "Types other than Spectral and dTape"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "D1: Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypassed",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "D2: Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypassed",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "D1: Stretch",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Spectral: Stretch (manual 0-255); dTape: Wow/Flutter; else Mod Depth",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 1,
+            "op": "==",
+            "value": 6
+          },
+          "name": "D1: Wow/Flut",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        },
+        {
+          "constraint": {
+            "cc": 1,
+            "op": ">=",
+            "value": 1
+          },
+          "name": "D1: Mod Depth",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          },
+          "additionalInfo": "Types other than Spectral and dTape"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "D2: Stretch",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Spectral: Stretch (manual 0-255); dTape: Wow/Flutter; else Mod Depth",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 2,
+            "op": "==",
+            "value": 6
+          },
+          "name": "D2: Wow/Flut",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        },
+        {
+          "constraint": {
+            "cc": 2,
+            "op": ">=",
+            "value": 1
+          },
+          "name": "D2: Mod Depth",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          },
+          "additionalInfo": "Types other than Spectral and dTape"
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "D1: Smear",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "D2: Smear",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "D1: Hi Pass",
+      "valueRange": {
+        "min": 0,
+        "max": 19
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "D2: Hi Pass",
+      "valueRange": {
+        "min": 0,
+        "max": 19
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "D1: Low Cont",
+      "valueRange": {
+        "min": 0,
+        "max": 21
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "D2: Low Cont",
+      "valueRange": {
+        "min": 0,
+        "max": 21
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "D1: dTape Vo",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "MX",
+            "value": 0
+          },
+          {
+            "name": "Classic",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "D2: dTape Vo",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "MX",
+            "value": 0
+          },
+          {
+            "name": "Classic",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "D1: dBkt Voice",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "MX",
+            "value": 0
+          },
+          {
+            "name": "Classic",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "D2: dBkt Voice",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "MX",
+            "value": 0
+          },
+          {
+            "name": "Classic",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "D1: DIG RptDyn",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "D2: DIG RptDyn",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "D1: DIG Vo",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "MX",
+            "value": 0
+          },
+          {
+            "name": "Classic",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "D2: DIG Vo",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "MX",
+            "value": 0
+          },
+          {
+            "name": "Classic",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "D1: Head Sel",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Long",
+            "value": 0
+          },
+          {
+            "name": "Short",
+            "value": 1
+          },
+          {
+            "name": "Both",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "D2: Head Sel",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Long",
+            "value": 0
+          },
+          {
+            "name": "Short",
+            "value": 1
+          },
+          {
+            "name": "Both",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "D1: Ice Intvl",
+      "valueRange": {
+        "min": 0,
+        "max": 27
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "D2: Ice Intvl",
+      "valueRange": {
+        "min": 0,
+        "max": 27
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "D1: Ice Slice",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Short",
+            "value": 0
+          },
+          {
+            "name": "Medium",
+            "value": 1
+          },
+          {
+            "name": "Long",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "D2: Ice Slice",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Short",
+            "value": 0
+          },
+          {
+            "name": "Medium",
+            "value": 1
+          },
+          {
+            "name": "Long",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "D1: Ice Blend",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "D2: Ice Blend",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "D1: LoFi Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "D2: LoFi Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "D1: LoFi Bits",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "D2: LoFi Bits",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "D1: LoFi Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "D2: LoFi Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "D1: LoFi Vinyl",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "D2: LoFi Vinyl",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "D1: LoFi Filt",
+      "valueRange": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "D2: LoFi Filt",
+      "valueRange": {
+        "min": 0,
+        "max": 8
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "D1: Filt LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "D2: Filt LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "D1: Filt Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 34
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "D2: Filt Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 34
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "D1: Filt Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "D2: Filt Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "D1: Filt Q",
+      "valueRange": {
+        "min": 0,
+        "max": 11
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "D2: Filt Q",
+      "valueRange": {
+        "min": 0,
+        "max": 11
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "D1: Trem LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "D2: Trem LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "A Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Press",
+            "value": 0
+          },
+          {
+            "name": "Release",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "B Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Press",
+            "value": 0
+          },
+          {
+            "name": "Release",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "TAP Footswitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Press",
+            "value": 0
+          },
+          {
+            "name": "Release",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Value Enc",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Scroll CCW",
+            "value": 0
+          },
+          {
+            "name": "Scroll CW",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Loop Pre/Post",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "D1: Trem Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 34
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "D2: Trem Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 34
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "D1: Trem Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "D2: Trem Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "D1: MT Grid",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "16th",
+            "value": 0
+          },
+          {
+            "name": "Swing16",
+            "value": 1
+          },
+          {
+            "name": "Triplet",
+            "value": 2
+          },
+          {
+            "name": "Off",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "D2: MT Grid",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "16th",
+            "value": 0
+          },
+          {
+            "name": "Swing16",
+            "value": 1
+          },
+          {
+            "name": "Triplet",
+            "value": 2
+          },
+          {
+            "name": "Off",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "D1: MT Pattern",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "D2: MT Pattern",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote TAP",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "D1: MT Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          {
+            "name": "1 Beat",
+            "value": 0
+          },
+          {
+            "name": "2 Beat",
+            "value": 1
+          },
+          {
+            "name": "3 Beat",
+            "value": 2
+          },
+          {
+            "name": "4 Beat",
+            "value": 3
+          },
+          {
+            "name": "Parallel",
+            "value": 4
+          },
+          {
+            "name": "Input",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 96,
+      "name": "D2: MT Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          {
+            "name": "1 Beat",
+            "value": 0
+          },
+          {
+            "name": "2 Beat",
+            "value": 1
+          },
+          {
+            "name": "3 Beat",
+            "value": 2
+          },
+          {
+            "name": "4 Beat",
+            "value": 3
+          },
+          {
+            "name": "Parallel",
+            "value": 4
+          },
+          {
+            "name": "Input",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Infinite",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 98,
+      "name": "Loop Undo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 99,
+      "name": "Loop Redo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expr Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Preset Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypassed",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "D1: Grain Shp",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          {
+            "name": "Soft",
+            "value": 0
+          },
+          {
+            "name": "Swell",
+            "value": 1
+          },
+          {
+            "name": "Soft Pluck",
+            "value": 2
+          },
+          {
+            "name": "Pluck",
+            "value": 3
+          },
+          {
+            "name": "Bounce",
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "D2: Grain Shp",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          {
+            "name": "Soft",
+            "value": 0
+          },
+          {
+            "name": "Swell",
+            "value": 1
+          },
+          {
+            "name": "Soft Pluck",
+            "value": 2
+          },
+          {
+            "name": "Pluck",
+            "value": 3
+          },
+          {
+            "name": "Bounce",
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "D1: Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Forward",
+            "value": 0
+          },
+          {
+            "name": "Reverse",
+            "value": 1
+          },
+          {
+            "name": "Both",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "D2: Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Forward",
+            "value": 0
+          },
+          {
+            "name": "Reverse",
+            "value": 1
+          },
+          {
+            "name": "Both",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "D1: Octave",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "D2: Octave",
+      "valueRange": {
+        "min": 0,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "D1: Dens Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "D2: Dens Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "D1: In Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "D2: In Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "D1: Drum LoCut",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "D2: Drum LoCut",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "D1: Drum Space",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "Even",
+            "value": 0
+          },
+          {
+            "name": "Triplet",
+            "value": 1
+          },
+          {
+            "name": "Golden",
+            "value": 2
+          },
+          {
+            "name": "Silver",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "D2: Drum Space",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "Even",
+            "value": 0
+          },
+          {
+            "name": "Triplet",
+            "value": 1
+          },
+          {
+            "name": "Golden",
+            "value": 2
+          },
+          {
+            "name": "Silver",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Loop Record",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 120,
+      "name": "Loop Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 121,
+      "name": "Loop Stop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 122,
+      "name": "Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 60
+      }
+    },
+    {
+      "controlChangeNumber": 123,
+      "name": "Persist",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "Dual Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "Parallel",
+            "value": 1
+          },
+          {
+            "name": "Ser 1>>2",
+            "value": 2
+          },
+          {
+            "name": "Ser 1<<2",
+            "value": 3
+          },
+          {
+            "name": "Split L|R",
+            "value": 4
+          },
+          {
+            "name": "Split R|L",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Loop Fwd/Rev",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 126,
+      "name": "Loop 1/2 Spd",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 127,
+      "name": "Looper Level",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

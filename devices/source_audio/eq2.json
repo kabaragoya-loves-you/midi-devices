@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio EQ2 Programmable EQ",
+  "displayName": "EQ2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "EQ2 Programmable EQ (SA270)",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Master Vol",
+      "additionalInfo": "0=-inf, 64=unity, 127=+12dB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "In1 Trim",
+      "additionalInfo": "0=-inf, 64=unity, 127=+6dB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "In2 Trim",
+      "additionalInfo": "0=-inf, 64=unity, 127=+6dB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "C1 B1 Lvl",
+      "additionalInfo": "0=-18dB, 18=0dB, 36=+18dB",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "C1 B2 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "C1 B3 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "C1 B4 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "C1 B5 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "C1 B6 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "C1 B7 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "C1 B8 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "C1 B9 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "C1 B10 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "C2 B1 Lvl",
+      "additionalInfo": "0=-18dB, 18=0dB, 36=+18dB",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "C2 B2 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "C2 B3 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "C2 B4 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "C2 B5 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "C2 B6 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "C2 B7 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "C2 B8 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "C2 B9 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "C2 B10 Lvl",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "C1 B1 Freq",
+      "additionalInfo": "20 Hz to 20 kHz, log spaced",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "C1 B2 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "C1 B3 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "C1 B4 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "C1 B5 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "C1 B6 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "C1 B7 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "C1 B8 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "C1 B9 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "C1 B10 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "C2 B1 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "C2 B2 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "C2 B3 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "C2 B4 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "C2 B5 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "C2 B6 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "C2 B7 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "C2 B8 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "C2 B9 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "C2 B10 Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "C1 B1 Q",
+      "additionalInfo": "0=0.5, 5=1.0 (default), 95=10.0",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "C1 B2 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "C1 B3 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "C1 B4 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "C1 B5 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "C1 B6 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "C1 B7 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "C1 B8 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "C1 B9 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "C1 B10 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "C2 B1 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "C2 B2 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "C2 B3 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "C2 B4 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "C2 B5 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "C2 B6 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "C2 B7 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "C2 B8 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "C2 B9 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "C2 B10 Q",
+      "valueRange": { "min": 0, "max": 95 }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "C1 Gain",
+      "additionalInfo": "0=-18dB, 18=0dB, 36=+18dB",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "C2 Gain",
+      "additionalInfo": "0=-18dB, 18=0dB, 36=+18dB",
+      "valueRange": { "min": 0, "max": 36 }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "C1 HPF",
+      "additionalInfo": "0=10Hz, 28=80Hz (0.5Hz/step). MIDI map; firmware 1.16+ editor allows up to 250Hz",
+      "valueRange": { "min": 0, "max": 28 }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "C2 HPF",
+      "additionalInfo": "0=10Hz, 28=80Hz (0.5Hz/step). MIDI map; firmware 1.16+ editor allows up to 250Hz",
+      "valueRange": { "min": 0, "max": 28 }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Routing",
+      "additionalInfo": "0=Auto Detect, 1=Mono->Stereo, 2=Stereo->Stereo, 3=Stereo->Mono; value 4 listed in MIDI map but name truncated in PDF",
+      "valueRange": { "min": 0, "max": 4 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Preset Down",
+      "additionalInfo": "Any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Preset Up",
+      "additionalInfo": "Any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Tuner",
+      "additionalInfo": "Any value enables; any subsequent MIDI CC disables tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Enable",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Remote Switch",
+      "additionalInfo": "Latching only; any value",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Remote Expr",
+      "additionalInfo": "MIDI as External Control Source",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "Bypass",
+      "additionalInfo": "Value < 64 = Bypass, Value >= 64 Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Toggle Bypass",
+      "additionalInfo": "Any value toggles bypass/engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Recall Bypass",
+      "additionalInfo": "Value selects preset 0-127; loads in bypassed state",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Recall Engage",
+      "additionalInfo": "Value selects preset 0-127; loads in engaged state",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

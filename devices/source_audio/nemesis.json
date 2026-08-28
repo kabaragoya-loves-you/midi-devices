@@ -1,0 +1,478 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Nemesis Delay",
+  "displayName": "Nemesis",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Nemesis Delay",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Engine",
+      "x_mandatory": true,
+      "additionalInfo": "Factory Delay Engine. Loads engine with all parameters. Gates Pitch Shift (CC24) and Octave Shift (CC50).",
+      "valueRange": {
+        "min": 0,
+        "max": 23,
+        "discreteValues": [
+          { "name": "Digital", "value": 0 },
+          { "name": "Diffuse", "value": 1 },
+          { "name": "Analog", "value": 2 },
+          { "name": "Tape", "value": 3 },
+          { "name": "Noise Tape", "value": 4 },
+          { "name": "Degrade", "value": 5 },
+          { "name": "Shifter", "value": 6 },
+          { "name": "Helix", "value": 7 },
+          { "name": "Reverse", "value": 8 },
+          { "name": "Sweeper", "value": 9 },
+          { "name": "Rhythmic", "value": 10 },
+          { "name": "Slapback", "value": 11 },
+          { "name": "Resonant", "value": 12 },
+          { "name": "Tremolo", "value": 13 },
+          { "name": "Seq Filters", "value": 14 },
+          { "name": "Dub", "value": 15 },
+          { "name": "Chorus", "value": 16 },
+          { "name": "Flanger", "value": 17 },
+          { "name": "Double Helix", "value": 18 },
+          { "name": "Complex Rhy", "value": 19 },
+          { "name": "Lo-Fi Retro", "value": 20 },
+          { "name": "Warped Rec", "value": 21 },
+          { "name": "Cmpd Shifter", "value": 22 },
+          { "name": "Oil Can", "value": 23 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Delay Time",
+      "additionalInfo": "Ratio of maximum delay time; mapping is non-linear",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Max Delay",
+      "additionalInfo": "0=~10ms, 63=~1.3s, 127=2.6s",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Mix",
+      "additionalInfo": "Obeys alternate mix knob behaviour if that global option is set",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Mod Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Mod Rate",
+      "additionalInfo": "Tape-style engines: tape speed; other engines: 0.1Hz–10Hz",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Intensity",
+      "additionalInfo": "Assignable; meaning differs per effect engine",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Output",
+      "additionalInfo": "0=silent, 52=0dB, 127=+8dB",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Diffusion",
+      "additionalInfo": "Turning on or off briefly mutes the delay line",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Distortion",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "High Pass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Low Pass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Sample Rate",
+      "additionalInfo": "Sample rate reduction / aliasing",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Sweep Freq",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Sweep Q",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Sweep Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Sweep Mix",
+      "additionalInfo": "Only applies to Tap 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Wow Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Wow Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Wow Noise",
+      "additionalInfo": "Tape age; >50 becomes noise/distortion",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Tremolo Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Pitch Shift",
+      "x_noop": true,
+      "additionalInfo": "Only Shifter/Reverse/Helix/Double Helix. See Pitch Shift Table in Nemesis MIDI Implementation (0–125).",
+      "valueRange": { "min": 0, "max": 125 },
+      "x_variants": [
+        { "constraint": { "cc": 1, "op": "==", "value": 6 } },
+        { "constraint": { "cc": 1, "op": "==", "value": 7 } },
+        { "constraint": { "cc": 1, "op": "==", "value": 8 } },
+        { "constraint": { "cc": 1, "op": "==", "value": 18 } }
+      ]
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Tap1 Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Tap1 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Tap2 Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Tap2 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Tap2 Delay",
+      "additionalInfo": "Tap 2 time as percentage of main delay time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Input LPF",
+      "additionalInfo": "Applied to both wet and dry",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Feedback Max",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "1.00x", "value": 0 },
+          { "name": "1.25x", "value": 1 },
+          { "name": "1.50x", "value": 2 },
+          { "name": "2.00x", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "LFO Lock",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Free", "value": 0 },
+          { "name": "Lock", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Inv Left Wet",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "In Phase", "value": 0 },
+          { "name": "Out Phase", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Inv Right Wet",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "In Phase", "value": 0 },
+          { "name": "Out Phase", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "I/O Routing",
+      "additionalInfo": "Documented: 0=Auto, 1=Mono HW bypass, 2=Wet/Dry split, 3=Mono soft bypass, 4=Stereo, 5=Feedback insert, 6=External loop pre-delay. Values 7–15 undocumented.",
+      "valueRange": { "min": 0, "max": 15 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Multi Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Effect Def", "value": 0 },
+          { "name": "Tap1 Only", "value": 1 },
+          { "name": "Tap2 Only", "value": 2 },
+          { "name": "Both Taps", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Merge Stereo",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Stereo", "value": 0 },
+          { "name": "Merged", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Bypass",
+      "additionalInfo": "<=63 bypass, >=64 engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Intens Remap",
+      "valueRange": {
+        "min": 0,
+        "max": 14,
+        "discreteValues": [
+          { "name": "Default", "value": 0 },
+          { "name": "Output", "value": 1 },
+          { "name": "Diffusion", "value": 2 },
+          { "name": "Distortion", "value": 3 },
+          { "name": "Low Cut", "value": 4 },
+          { "name": "High Cut", "value": 5 },
+          { "name": "Sample Rate", "value": 6 },
+          { "name": "Sweep Freq", "value": 7 },
+          { "name": "Sweep Q", "value": 8 },
+          { "name": "Sweep Depth", "value": 9 },
+          { "name": "Sweep Mix", "value": 10 },
+          { "name": "Wow Noise", "value": 11 },
+          { "name": "Tremolo Depth", "value": 12 },
+          { "name": "Pitch Control", "value": 13 },
+          { "name": "Delay Send", "value": 14 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Mod Remap",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Time Mod", "value": 0 },
+          { "name": "Tape Mod", "value": 1 },
+          { "name": "Filter Mod", "value": 2 },
+          { "name": "Tremolo Depth", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Rate Remap",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Mod Rate", "value": 0 },
+          { "name": "Tape Speed", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Tempo Div",
+      "valueRange": {
+        "min": 0,
+        "max": 14,
+        "discreteValues": [
+          { "name": "Whole", "value": 0 },
+          { "name": "Dot Half", "value": 1 },
+          { "name": "Half", "value": 2 },
+          { "name": "Golden", "value": 3 },
+          { "name": "Dot Quarter", "value": 4 },
+          { "name": "Swing Qtr", "value": 5 },
+          { "name": "Quarter", "value": 6 },
+          { "name": "Dot 8th", "value": 7 },
+          { "name": "Swing 8th", "value": 8 },
+          { "name": "Inv Golden", "value": 9 },
+          { "name": "Eighth", "value": 10 },
+          { "name": "Triplet", "value": 11 },
+          { "name": "16th", "value": 12 },
+          { "name": "Sextuplet", "value": 13 },
+          { "name": "32nd", "value": 14 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Octave Shift",
+      "x_noop": true,
+      "additionalInfo": "Only Shifter/Reverse/Helix/Double Helix. 0=octave down, 63=unison, 125≈octave up (table max 125).",
+      "valueRange": { "min": 0, "max": 125 },
+      "x_variants": [
+        { "constraint": { "cc": 1, "op": "==", "value": 6 } },
+        { "constraint": { "cc": 1, "op": "==", "value": 7 } },
+        { "constraint": { "cc": 1, "op": "==", "value": 8 } },
+        { "constraint": { "cc": 1, "op": "==", "value": 18 } }
+      ]
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Delay Send",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Input Level",
+      "additionalInfo": "Dry signal level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Preset Down",
+      "additionalInfo": "Any value; wraps within hardware bank (1–4 or extended 1–8)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Preset Up",
+      "additionalInfo": "Any value; wraps within hardware bank (1–4 or extended 1–8)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Infinite Hold",
+      "additionalInfo": "<=63 off, >=64 on",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "On/Off",
+      "additionalInfo": "Footswitch-equivalent bypass; <=63 bypass, >=64 engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "title": "TC Electronic G-Natural",
+  "displayName": "G-Natural",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "G-Natural",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "Preset PC recall; global tap-tempo TX/RX via user-defined CC in utility only."
+  }
+}

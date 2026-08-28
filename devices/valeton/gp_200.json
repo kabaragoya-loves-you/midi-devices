@@ -1,0 +1,766 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Valeton GP-200",
+  "displayName": "GP-200",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Valeton",
+    "model": "GP-200",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      },
+      "additionalInfo": "01-A~32-D: CC0=1 PC=0-127; 33-A~64-D: CC0=0 PC=0-127"
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Patch Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Exp 1",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Exp 1 A/B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "A",
+            "value": 21
+          },
+          {
+            "name": "B",
+            "value": 106
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "QA Para 1",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "QA Knob 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Down",
+            "value": 21
+          },
+          {
+            "name": "Up",
+            "value": 106
+          }
+        ]
+      },
+      "additionalInfo": "0-63 down one step; 64-127 up one step"
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "QA Knob 2",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "QA Knob 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Down",
+            "value": 21
+          },
+          {
+            "name": "Up",
+            "value": 106
+          }
+        ]
+      },
+      "additionalInfo": "0-63 down one step; 64-127 up one step"
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "QA Knob 3",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "QA Knob 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Down",
+            "value": 21
+          },
+          {
+            "name": "Up",
+            "value": 106
+          }
+        ]
+      },
+      "additionalInfo": "0-63 down one step; 64-127 up one step"
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Bank -",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Initial mode"
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Bank +",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Initial mode"
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Patch -",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Patch +",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Bank - Wait",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Wait mode"
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Bank + Wait",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Wait mode"
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Bank Wait",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Wait mode"
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "PRE On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on"
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "DST On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on"
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "AMP On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on"
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "NR On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on"
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "CAB On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on"
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "EQ On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on"
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "DLY On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on"
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "RVB On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on"
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "WAH On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on"
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Looper",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Loop Rec",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Loop AutoRec",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Loop Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Stop",
+            "value": 0
+          },
+          {
+            "name": "Play",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Loop Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Loop Reverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Delete Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Loop Rec Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Loop PB Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Loop Place",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Rear",
+            "value": 0
+          },
+          {
+            "name": "Front",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "CTRL 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "CTRL 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "CTRL 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "CTRL 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Tempo MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      },
+      "additionalInfo": "Used with CC74"
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Tempo LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "CC73=0: 40-127 BPM; CC73=1: 128-250 BPM"
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "CTRL 5",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "CTRL 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "CTRL 7",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "CTRL 8",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Drum Menu",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Drum Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Stop",
+            "value": 0
+          },
+          {
+            "name": "Play",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Drum Type",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Drum Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 256,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "64 banks x 4 patches; CC0 bank MSB with PC."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

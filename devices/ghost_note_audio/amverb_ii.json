@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Ghost Note Audio Amverb II",
+  "displayName": "Amverb II",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Ghost Note Audio",
+    "model": "Amverb II",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Input",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Input gain ±12 dB; unity near center."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Output",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Output gain -30 dB to 0 dB."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Low Shelf",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Low shelf EQ ±6 dB."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Program",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Scrolls through 8 programs in the selected bank."
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "High Shelf",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "High shelf EQ ±6 dB."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Low Freq",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Low shelf corner 60 Hz–600 Hz (hold BANK for alt knob)."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "High Freq",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "High shelf corner 1 kHz–10 kHz (hold BANK for alt knob)."
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Bank",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Selects one of 8 program banks."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Tails",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Off = relay true bypass; On = trails bypass."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Stereo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Dual Mono", "value": 0 },
+          { "name": "Stereo", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Preset Sw",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Preset footswitch; two user presets store knob state."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Active",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Effect active / bypass footswitch."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 64,
+    "bankSelectMode": "none",
+    "additionalInfo": "64 factory programs (8 banks × 8). Manual documents CC5/CC13; PC not listed."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Daedalus Manual-Amverb-II.pdf MIDI CC table. Hold MODE+PRESET to set MIDI channel 0–15."
+}

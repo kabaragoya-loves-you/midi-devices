@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Sonuus Wahoo",
+  "displayName": "Wahoo",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Sonuus",
+    "model": "Wahoo",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      },
+      "additionalInfo": "With CC32: factory bank 0, user bank 1."
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Bank LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pedal CtL mode; MSB CC11 + LSB CC43 on filter channels 1-2."
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Expression LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Cutoff",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Remote rEM mode on filter channels 1-2."
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Resonance",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Remote rEM mode on filter channels 1-2."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 200,
+    "bankSelectMode": "CC0_CC32",
+    "additionalInfo": "100 factory F00-F99 + 100 user P00-P99."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

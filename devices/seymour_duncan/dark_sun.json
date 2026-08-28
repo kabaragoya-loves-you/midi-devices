@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Seymour Duncan Dark Sun",
+  "displayName": "Dark Sun",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Seymour Duncan",
+    "model": "Dark Sun",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank",
+      "valueRange": {
+        "min": 0,
+        "max": 31
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Delay Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "RT60",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Delay Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Reverb Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Tweak Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Tweak Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Delay Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Tweak Blend",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Delay Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Saturation",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Dyn Threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Tweak LPF",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Tweak HPF",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "BPM MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "14-bit BPM; MS byte."
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Delay ms MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "14-bit delay ms; MS byte."
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Patch Dec",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Patch",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Patch Inc",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Patch",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "BPM LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Delay ms LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Trail Repeats",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 101,
+      "name": "Time Display",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      },
+      "additionalInfo": "BPM vs tempo display mode."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

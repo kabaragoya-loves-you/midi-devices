@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 Echo Park",
+  "displayName": "Echo Park",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "Echo Park",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "ToneCore delay pedal; no MIDI jack or USB MIDI."
+  },
+  "x_midiTrs": "TYPE_TS",
+  "x_midiChannel": 1,
+  "additionalInfo": "No MIDI. ToneCore Echo Park Pilot's Guide Rev F documents analog I/O and tap tempo footswitch only."
+}

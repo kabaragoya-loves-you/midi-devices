@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Wampler Pantheon Deluxe",
+  "displayName": "Pantheon DLX",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Wampler",
+    "model": "Pantheon Deluxe",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Ch1 State",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Ch2 State",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "All Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "All Off",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Ch1 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Ch1 On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Ch2 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Ch2 On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Both On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Both On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Preset Inc",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Preset Dec",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "MIDI Ch",
+      "valueRange": {
+        "min": 0,
+        "max": 16
+      },
+      "additionalInfo": "0-15=channel 1-16; 16=omni."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Wampler Pantheon Deluxe MIDI addendum."
+}

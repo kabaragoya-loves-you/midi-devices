@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Selah Quartz Timer",
+  "displayName": "Quartz Timer",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Selah",
+    "model": "Quartz Timer",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 44,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Remote tap — any value simulates onboard foot-tap / BPM. Factory fixed incoming utility CC."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0–99 recalls Quartz presets. Outgoing MIDI Stacks (PC/CC/Note chains per preset) are user-programmed in the editor — not a factory parameter map."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Selah Effects Quartz Timer (V1–V3; company defunct). Incoming: PC 0–99, CC44 tap, MIDI Clock slave (24 PPQN). Transmits MIDI Clock as master; Thru/merge of real-time. No fixed effect-parameter CC table — stacks are user-defined outbound. V3 TRS polarity via hardware dips for Chase Bliss / Empress / Meris style targets. Distinct from Scarlett Love."
+}

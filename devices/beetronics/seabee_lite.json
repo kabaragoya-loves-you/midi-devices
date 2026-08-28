@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Beetronics SeaBee Lite",
+  "displayName": "SeaBee Lite",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Beetronics",
+    "model": "SeaBee Lite",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Expr Pedal",
+      "additionalInfo": "Target selected by Exp Mode (CC20): Rate, Depth, or Feedback.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "No Tone" },
+          { "value": 1, "name": "HP Tone" },
+          { "value": 2, "name": "LP Tone" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Waveform",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Classic" },
+          { "value": 1, "name": "Warblee" },
+          { "value": 2, "name": "Flangee" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Chorus/Vibee",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 0, "name": "Vibee" },
+          { "value": 1, "name": "Chorus" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Exp Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "value": 0, "name": "Rate" },
+          { "value": 1, "name": "Depth" },
+          { "value": 2, "name": "Feedback" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "additionalInfo": "Values >63: bypass on; values <=63: bypass off.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Bypass Off" },
+          { "value": 127, "name": "Bypass On" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Extra Tap",
+      "additionalInfo": "Any value triggers extra tap.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Tap" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Extra Tap P+R",
+      "additionalInfo": "Values >63: press; values <=63: release.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Release" },
+          { "value": 127, "name": "Press" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Reset LFO",
+      "additionalInfo": "Any value resets the LFO.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Reset" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Dbl Click Act",
+      "additionalInfo": "Any value triggers the double-click action.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Trigger" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Ramp Trigger",
+      "additionalInfo": "Any value triggers the ramp.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "value": 1, "name": "Trigger" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Ramp Trig P+R",
+      "additionalInfo": "Values >63: press; values <=63: release.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Release" },
+          { "value": 127, "name": "Press" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Clk Enable",
+      "additionalInfo": "Values >63: MIDI clock on; values <=63: MIDI clock off.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "Off" },
+          { "value": 127, "name": "On" }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_TS",
+  "x_midiChannel": 11
+}

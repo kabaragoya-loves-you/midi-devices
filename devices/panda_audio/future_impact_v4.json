@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Panda Audio Future Impact v4",
+  "displayName": "FI v4",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Panda Audio",
+    "model": "Future Impact v4",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1,
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Vibrato",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Filter Cut",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Scroll Dn",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Toggle",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Filter Cut",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Scroll Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 198,
+    "bankSelectMode": "none",
+    "additionalInfo": "99 VA + 99 FM programs; most synthesis params via SysEx/editor."
+  }
+}

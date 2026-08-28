@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Plethora X1",
+  "displayName": "Plethora X1",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Plethora X1",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "7 boards with A/B slots (14 TonePrint slots). No external MIDI port; preset recall is front-panel only."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "No 5-pin DIN or TRS MIDI jack. USB-C and Bluetooth are for TonePrint app editing only, not external MIDI control."
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss SY-300 Guitar Synthesizer",
+  "displayName": "SY-300",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "SY-300",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP",
+    "TRANSPORT_CONTINUE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "additionalInfo": "Bank Select MSB (CC0). FIX map: 0=U01-U99 (PC 0-98), 1=P01-P70 (PC 0-69); LSB (CC32) received as 0. CC1-31 and CC64-95 are user-assignable via patch CTL/EXP Assign (SOURCE NUMBER); no fixed factory CC map.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "User", "value": 0 },
+          { "name": "Preset", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 169,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN and OUT/THRU. Clock/transport sync requires SYSTEM > MIDI > SYNC CLOCK set to AUTO, MIDI (AUTO), or USB (AUTO). MAP SELECT FIX vs PROG changes PC-to-patch mapping."
+}

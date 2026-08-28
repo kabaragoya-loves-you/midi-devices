@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "VTR Effects Dream Machine",
+  "displayName": "Dream Machine",
+  "device": {
+    "displayName": "",
+    "manufacturer": "VTR Effects",
+    "model": "Dream Machine",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "127 ON / 0 OFF."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Delay Mode",
+      "valueRange": {
+        "min": 1,
+        "max": 6,
+        "discreteValues": [
+          { "name": "Digital", "value": 1 },
+          { "name": "Analog", "value": 2 },
+          { "name": "Tape", "value": 3 },
+          { "name": "Overnotes", "value": 4 },
+          { "name": "PitchShift", "value": 5 },
+          { "name": "Lo-Fi", "value": 6 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Dream",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Emotion",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Repeat",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value simulates the physical TAP switch."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 50,
+    "bankSelectMode": "none",
+    "additionalInfo": "50 preset slots; PC numbering assumed 0–49 (CC chart did not document PC base)."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "VTR Effects MIDI chart (PT→EN). All VTR Effects MIDI TRS is Type B. CC2 modes: Digital / Analog / Tape / Overnotes / PitchShift / Lo-Fi."
+}

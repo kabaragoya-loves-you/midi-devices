@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 M5 Stompbox Modeler",
+  "displayName": "M5",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "M5 Stompbox Modeler",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "EXP Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "FX Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M5 Pilot's Guide Rev A MIDI Reference Tables."
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Tap Tempo",
+      "additionalInfo": "Values 64-127. M5 Pilot's Guide Rev A MIDI Reference Tables.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Tuner Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Exit",
+            "value": 0
+          },
+          {
+            "name": "Enter",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M5 Pilot's Guide Rev A MIDI Reference Tables."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 24,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-23 = Presets 01-24 per M5 Pilot's Guide."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

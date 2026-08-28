@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Rebel line: remote bypass only. Factory MIDI channel/CC preassigned per model; typical factory channel 2 (see manual). G-Lab stomps often use CC 102."
+    }
+  ],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 2,
+  "title": "G-Lab CC-1 Clutter Chorus",
+  "displayName": "CC-1 Chorus",
+  "device": {
+    "displayName": "",
+    "manufacturer": "G-Lab",
+    "model": "CC-1 Clutter Chorus",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Seymour Duncan Andromeda",
+  "displayName": "Andromeda",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Seymour Duncan",
+    "model": "Andromeda",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank",
+      "valueRange": {
+        "min": 0,
+        "max": 31
+      },
+      "additionalInfo": "32 banks \u00d7 4 presets; PC also recalls presets 0-127 sequentially."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Delay Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Modulation",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Delay Type",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      },
+      "additionalInfo": "8-way delay type selector."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Tap Value",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      },
+      "additionalInfo": "Tap tempo subdivision / delay ratio."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Saturation",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Dyn Threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Dyn Type",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Hard",
+            "value": 0
+          },
+          {
+            "name": "Soft",
+            "value": 1
+          },
+          {
+            "name": "Off",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Dyn Dest",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Mix",
+            "value": 0
+          },
+          {
+            "name": "Mod",
+            "value": 1
+          },
+          {
+            "name": "Saturation",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "BPM MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "14-bit BPM; MS byte. Receiving MSB clears LSB."
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "ms MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "14-bit delay ms; MS byte. Receiving MSB clears LSB."
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "BPM LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "ms LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Remote",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Any value triggers remote tap tempo."
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

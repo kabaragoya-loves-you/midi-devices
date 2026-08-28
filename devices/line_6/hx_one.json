@@ -1,0 +1,377 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 HX One",
+  "displayName": "HX One",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "HX One",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "On Toggle",
+      "additionalInfo": "Any value toggles effect on/off. Looper models ignore this CC.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Toggle", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Flux Toggle",
+      "additionalInfo": "Any value emulates FLUX switch. Tap tempo is CC93.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Toggle", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Expression",
+      "additionalInfo": "Requires Settings > Pedal Jack = ExpFS4.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Bypass",
+      "additionalInfo": "Absolute bypass/engage. Independent of CC1 toggle. Looper models ignore this CC.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engage", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "View",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Home", "value": 0 },
+          { "name": "Preset List", "value": 1 },
+          { "name": "Tuner", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Param 1",
+      "additionalInfo": "Model-dependent parameter slot 1.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Param 2",
+      "additionalInfo": "Model-dependent parameter slot 2.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Param 3",
+      "additionalInfo": "Model-dependent parameter slot 3.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Param 4",
+      "additionalInfo": "Model-dependent parameter slot 4.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Param 5",
+      "additionalInfo": "Model-dependent parameter slot 5.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Param 6",
+      "additionalInfo": "Model-dependent parameter slot 6.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Param 7",
+      "additionalInfo": "Model-dependent parameter slot 7.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Param 8",
+      "additionalInfo": "Model-dependent parameter slot 8.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Param 9",
+      "additionalInfo": "Model-dependent parameter slot 9.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Param 10",
+      "additionalInfo": "Model-dependent parameter slot 10.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Param 11",
+      "additionalInfo": "Model-dependent parameter slot 11. CC32 is reserved.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Param 12",
+      "additionalInfo": "Model-dependent parameter slot 12.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Param 13",
+      "additionalInfo": "Model-dependent parameter slot 13.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Param 14",
+      "additionalInfo": "Model-dependent parameter slot 14.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Param 15",
+      "additionalInfo": "Model-dependent parameter slot 15.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Param 16",
+      "additionalInfo": "Model-dependent parameter slot 16.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Param 17",
+      "additionalInfo": "Model-dependent parameter slot 17.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Param 18",
+      "additionalInfo": "Model-dependent parameter slot 18.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Param 19",
+      "additionalInfo": "Model-dependent parameter slot 19.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Param 20",
+      "additionalInfo": "Model-dependent parameter slot 20.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Param 21",
+      "additionalInfo": "Model-dependent parameter slot 21.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Param 22",
+      "additionalInfo": "Model-dependent parameter slot 22.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Param 23",
+      "additionalInfo": "Model-dependent parameter slot 23.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Param 24",
+      "additionalInfo": "Model-dependent parameter slot 24.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Flux OnTime",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Flux OnCurve",
+      "valueRange": {
+        "min": 0,
+        "max": 10,
+        "discreteValues": [
+          { "name": "Slow 5", "value": 0 },
+          { "name": "Slow 4", "value": 1 },
+          { "name": "Slow 3", "value": 2 },
+          { "name": "Slow 2", "value": 3 },
+          { "name": "Slow 1", "value": 4 },
+          { "name": "Linear", "value": 5 },
+          { "name": "Fast 1", "value": 6 },
+          { "name": "Fast 2", "value": 7 },
+          { "name": "Fast 3", "value": 8 },
+          { "name": "Fast 4", "value": 9 },
+          { "name": "Fast 5", "value": 10 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Flux OffTime",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Flux OffCurve",
+      "valueRange": {
+        "min": 0,
+        "max": 10,
+        "discreteValues": [
+          { "name": "Slow 5", "value": 0 },
+          { "name": "Slow 4", "value": 1 },
+          { "name": "Slow 3", "value": 2 },
+          { "name": "Slow 2", "value": 3 },
+          { "name": "Slow 1", "value": 4 },
+          { "name": "Linear", "value": 5 },
+          { "name": "Fast 1", "value": 6 },
+          { "name": "Fast 2", "value": 7 },
+          { "name": "Fast 3", "value": 8 },
+          { "name": "Fast 4", "value": 9 },
+          { "name": "Fast 5", "value": 10 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Loop Rec/Dub",
+      "additionalInfo": "Simple Looper: Overdub only while playing/recording; Record only when stopped or empty. Shuffling Looper: Record/Play/Stop only.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Overdub", "value": 0 },
+          { "name": "Record", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Loop Play/St",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stop", "value": 0 },
+          { "name": "Play", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Loop Once",
+      "additionalInfo": "Values 0-63 ignored. Simple Looper only.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Play Once", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Loop Undo",
+      "additionalInfo": "Values 0-63 ignored. Toggles undo/redo. Simple Looper only.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Undo/Redo", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Loop Dir",
+      "additionalInfo": "Simple Looper only.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Forward", "value": 0 },
+          { "name": "Reverse", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Loop Speed",
+      "additionalInfo": "Simple Looper only.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Full", "value": 0 },
+          { "name": "Half", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Preset Step",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 0 },
+          { "name": "Previous", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 POD Express",
+  "displayName": "POD Express",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "POD Express",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "21 on-device preset slots (Guitar/Bass/Black variants). No external MIDI preset recall."
+  },
+  "x_midiTrs": "TYPE_TS",
+  "x_midiChannel": 1,
+  "additionalInfo": "No 5-pin DIN or USB MIDI. USB-C is audio/class-compliant data only. TRS jacks are expression pedal and optional FS3/FS4 footswitches, not MIDI."
+}

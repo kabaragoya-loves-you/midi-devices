@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "BOSS DM-101",
+  "displayName": "DM-101",
+  "device": {
+    "displayName": "",
+    "manufacturer": "BOSS",
+    "model": "DM-101",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 17,
+      "name": "Delay Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "MSB; pair with CC 49 LSB for 14-bit"
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Intensity",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Mod Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Mod Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Variation",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "MSB; pair with CC 54 LSB for 14-bit"
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Effect On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=OFF, 64-127=ON per MIDI impl chart"
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Delay LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "LSB for CC 17 delay time"
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Variation LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "LSB for CC 22 variation"
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Release",
+            "value": 0
+          },
+          {
+            "name": "Press",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,351 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Moog MF-108M Cluster Flux",
+  "displayName": "MF-108M",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Moog",
+    "model": "MF-108M Cluster Flux",
+    "version": ""
+  },
+  "receives": [
+    "NOTE_NUMBER",
+    "PITCH_BEND",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 5,
+      "name": "Time Slew",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "MSB; pair with CC 37 LSB"
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Output",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "MSB; pair with CC 39 LSB"
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "MSB; pair with CC 44 LSB"
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "MSB; pair with CC 45 LSB"
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "MSB; pair with CC 46 LSB"
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "LFO Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "MSB; pair with CC 47 LSB"
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "LFO Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "MSB; pair with CC 48 LSB"
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Time Slew LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Output LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Time LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Feedback LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Mix LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "LFO Rate LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "LFO Amt LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "LFO Wave",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-15=Sine,16-31=Tri,32-47=Squ,48-63=Saw,64-79=Ramp,80-95=S&H,96-127=Smooth S&H"
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "LFO Clk Div",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Rhythmic divisions when synced to MIDI clock"
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "LFO Reset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Reset",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "LFO Note Rst",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Range",
+      "additionalInfo": "0-63=Flange, 64-127=Chorus",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Flange",
+            "value": 0
+          },
+          {
+            "name": "Chorus",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Time Mult",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-31=Norm,32-63=x2,64-95=x4,96-127=x8"
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "LFO Sync En",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Note Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Note Spill",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Mod to LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Pitch Bend",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Pitch bend amount for delay time; see manual bands"
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Tap Tempo A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

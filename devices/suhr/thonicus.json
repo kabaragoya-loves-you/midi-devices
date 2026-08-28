@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Suhr Thornicus",
+  "displayName": "Thornicus",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Suhr",
+    "model": "Thornicus",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Pedal Off, 64–127 Pedal On. Turns on/off whatever channel is currently active."
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Fuzz",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Fuzz Off, 64–127 Fuzz On (left side)."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Octave",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Octave Off, 64–127 Octave On (right side)."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "Hold Fuzz 10s then send PC to save/recall active channel; no knob storage."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Suhr CONTROLLER CHANGES (CC#s) table — complete map is CC0–2 only (Pedal / Fuzz / Octave). No continuous parameter CCs."
+}

@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Electro-Harmonix 1440",
+  "displayName": "1440",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Electro-Harmonix",
+    "model": "1440",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "Button Press",
+      "additionalInfo": "Values 1-70 mimic MIDI PC functions",
+      "valueRange": {
+        "min": 1,
+        "max": 70,
+        "discreteValues": [
+          {
+            "name": "Loop 1",
+            "value": 1
+          },
+          {
+            "name": "Loop 2",
+            "value": 2
+          },
+          {
+            "name": "Loop 3",
+            "value": 3
+          },
+          {
+            "name": "Loop 4",
+            "value": 4
+          },
+          {
+            "name": "Loop 5",
+            "value": 5
+          },
+          {
+            "name": "Loop 6",
+            "value": 6
+          },
+          {
+            "name": "Loop 7",
+            "value": 7
+          },
+          {
+            "name": "Loop 8",
+            "value": 8
+          },
+          {
+            "name": "Loop 9",
+            "value": 9
+          },
+          {
+            "name": "Loop 10",
+            "value": 10
+          },
+          {
+            "name": "Loop 11",
+            "value": 11
+          },
+          {
+            "name": "Loop 12",
+            "value": 12
+          },
+          {
+            "name": "Loop 13",
+            "value": 13
+          },
+          {
+            "name": "Loop 14",
+            "value": 14
+          },
+          {
+            "name": "Loop 15",
+            "value": 15
+          },
+          {
+            "name": "Loop 16",
+            "value": 16
+          },
+          {
+            "name": "Loop 17",
+            "value": 17
+          },
+          {
+            "name": "Loop 18",
+            "value": 18
+          },
+          {
+            "name": "Loop 19",
+            "value": 19
+          },
+          {
+            "name": "Loop 20",
+            "value": 20
+          },
+          {
+            "name": "Loop FSW",
+            "value": 21
+          },
+          {
+            "name": "Stop FSW",
+            "value": 22
+          },
+          {
+            "name": "Undo/Redo",
+            "value": 23
+          },
+          {
+            "name": "Reverse",
+            "value": 24
+          },
+          {
+            "name": "Octave",
+            "value": 25
+          },
+          {
+            "name": "1 Shot",
+            "value": 26
+          },
+          {
+            "name": "Ext CLK",
+            "value": 27
+          },
+          {
+            "name": "Mode Press",
+            "value": 28
+          },
+          {
+            "name": "Mode Up",
+            "value": 29
+          },
+          {
+            "name": "Mode Down",
+            "value": 30
+          },
+          {
+            "name": "Stop Fn",
+            "value": 31
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Overdub",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Tempo Res",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Coarse",
+            "value": 0
+          },
+          {
+            "name": "Fine",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Fadeout",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      },
+      "additionalInfo": "0=disabled, 1=1s, 2=2s, etc."
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Loop Select",
+      "valueRange": {
+        "min": 1,
+        "max": 20
+      }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "EXTC",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "SWFX",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 31,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 M9",
+  "displayName": "M9",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "M9",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "EXP 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "EXP 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "FX1-A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "FX1-B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "FX2-A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "FX2-B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "FX3-A",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "FX3-B",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Byp All+Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Undo Byp",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Byp All-Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Undo Byp",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Loop Play/St",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Stop",
+            "value": 0
+          },
+          {
+            "name": "Play",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Loop Half",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Loop Rec/Dub",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Overdub",
+            "value": 0
+          },
+          {
+            "name": "Record",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Tap Tempo",
+      "additionalInfo": "Two taps set tempo. M9 Advanced Guide Appendix A MIDI Reference.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Tuner Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Exit",
+            "value": 0
+          },
+          {
+            "name": "Enter",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Loop Once",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Play Once",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Loop Undo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Undo/Redo",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Loop Pre/Post",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Pre",
+            "value": 0
+          },
+          {
+            "name": "Post",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Loop Reverse",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Looper Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Exit",
+            "value": 0
+          },
+          {
+            "name": "Enter",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "M9 Advanced Guide Appendix A MIDI Reference."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 24,
+    "bankSelectMode": "none",
+    "additionalInfo": "24 Scenes in 4 folders; PC 0-23 per M9 Advanced Guide Appendix A Scene Select table."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

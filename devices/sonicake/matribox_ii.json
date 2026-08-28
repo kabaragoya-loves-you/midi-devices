@@ -1,0 +1,524 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Sonicake Matribox II",
+  "displayName": "Matribox II",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Sonicake",
+    "model": "Matribox II",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      },
+      "additionalInfo": "CC0=0 PC 0-125 bank A; CC0=1 PC 0-71 bank B."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Preset Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "EXP 1",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "EXP 1 A/B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 A, 64-127 B."
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Quick Para 1",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Quick Knob 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 step down, 64-127 step up."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Quick Para 2",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Quick Knob 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 step down, 64-127 step up."
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Quick Para 3",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Quick Knob 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 step down, 64-127 step up."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Bank - Init",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Bank + Init",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Preset -",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Preset +",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Bank - Wait",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Bank + Wait",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Bank Wait",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Footswitch Md",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 Preset mode, 64-127 Stomp mode."
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "FX1 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "FX2 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "AMP On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "NR On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "CAB On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "EQ On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "MOD On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "DLY On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "RVB On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "VOL On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Tuner On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Looper On",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Loop Record",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Loop Auto Rec",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Loop Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 Stop, 64-127 Play."
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Loop Undo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Loop Delete",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Loop Rec Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Loop Play Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Loop Place",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      },
+      "additionalInfo": "0-63 Rear, 64-127 Front."
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "BPM MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "BPM LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "With CC68: 40-250 BPM."
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "CTRL 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "CTRL 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "CTRL 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Drum Menu",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Drum Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-63 Stop, 64-127 Play."
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Drum Rhythm",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      }
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Drum Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 198,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "198 preset slots; 1/8 TRS MIDI jacks; same map on Matribox II Pro firmware."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "VTR Effects IGNIS Amp Modeler",
+  "displayName": "IGNIS",
+  "device": {
+    "displayName": "",
+    "manufacturer": "VTR Effects",
+    "model": "IGNIS Amp Modeler",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Chart lists CC1 Bypass; value thresholds not printed — authored as Off=0 / On=127 (VTR family convention)."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Open", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Opens the tuner. Chart does not specify value; any-value trigger."
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Preset Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Next preset. Chart does not specify value; any-value trigger."
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Preset Dn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Previous preset. Chart does not specify value; any-value trigger."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 10,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1–10 recall presets 1–10."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "VTR Effects IGNIS Amp Modeler MIDI page. MIDI channel and MIDI Through set in Global Menu (MIDI → Channel / Through). All VTR Effects MIDI TRS is Type B. No continuous amp/IR parameter CCs in this chart."
+}

@@ -1,0 +1,363 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Wampler Terraform",
+  "displayName": "Terraform",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Wampler",
+    "model": "Terraform",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Wampler Terraform Addendum Oct 2023 \u2014 0=off, 1-127=on."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Program",
+      "additionalInfo": "Oct 2023 addendum mod program select.",
+      "valueRange": {
+        "min": 0,
+        "max": 10,
+        "discreteValues": [
+          {
+            "name": "Autowah",
+            "value": 0
+          },
+          {
+            "name": "Env Filter",
+            "value": 1
+          },
+          {
+            "name": "Flanger",
+            "value": 2
+          },
+          {
+            "name": "Phaser",
+            "value": 3
+          },
+          {
+            "name": "UVibe",
+            "value": 4
+          },
+          {
+            "name": "Rotary",
+            "value": 5
+          },
+          {
+            "name": "Autoswell",
+            "value": 6
+          },
+          {
+            "name": "Tremolo",
+            "value": 7
+          },
+          {
+            "name": "Harm Trem",
+            "value": 8
+          },
+          {
+            "name": "Chorus",
+            "value": 9
+          },
+          {
+            "name": "Dimension",
+            "value": 10
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Mod Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Mod Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Variable",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Output Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Output Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Phaser Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Rotary Spd",
+      "additionalInfo": "0=fast (tremolo), 1-127=slow (chorale).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Fast",
+            "value": 0
+          },
+          {
+            "name": "Slow",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Subdivision",
+      "valueRange": {
+        "min": 0,
+        "max": 14,
+        "discreteValues": [
+          {
+            "name": "Quarter",
+            "value": 0
+          },
+          {
+            "name": "Dot 8th",
+            "value": 1
+          },
+          {
+            "name": "Eighth",
+            "value": 2
+          },
+          {
+            "name": "16th",
+            "value": 3
+          },
+          {
+            "name": "Half",
+            "value": 4
+          },
+          {
+            "name": "Whole",
+            "value": 5
+          },
+          {
+            "name": "Dot Qtr",
+            "value": 6
+          },
+          {
+            "name": "Tri Qtr",
+            "value": 7
+          },
+          {
+            "name": "Dot 16",
+            "value": 8
+          },
+          {
+            "name": "Dot Half",
+            "value": 9
+          },
+          {
+            "name": "Dot Whole",
+            "value": 10
+          },
+          {
+            "name": "Tri 16",
+            "value": 11
+          },
+          {
+            "name": "Tri 8th",
+            "value": 12
+          },
+          {
+            "name": "Tri Half",
+            "value": 13
+          },
+          {
+            "name": "Tri Whole",
+            "value": 14
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Rate High ms",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      },
+      "additionalInfo": "Mod Rate high byte; pair with CC13 for 14-bit ms period."
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Rate Low ms",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Mod Rate low byte; pair with CC12."
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Tap Tempo",
+      "additionalInfo": "Manual specifies value 0 triggers tap tempo.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 0
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Preset Dec",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Decrements preset; value=0 reloads current preset."
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Preset Inc",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Increments preset; value=0 reloads current preset."
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Tempo Sw Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap Tempo",
+            "value": 0
+          },
+          {
+            "name": "Preset Inc",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Stereo",
+            "value": 0
+          },
+          {
+            "name": "Pre/Post",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 99,
+      "name": "MIDI Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0=ignore MIDI Clock, 1-127=follow."
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Nova System",
+  "displayName": "Nova System",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Nova System",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "No fixed factory CC map; assign CC 0-127 per function in MIDI CC menu (Tap, DRV, CMP, NG, EQ, BST, MOD, PIT, DLY, REV, Exp)."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

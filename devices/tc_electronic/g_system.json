@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic G-System",
+  "displayName": "G-System",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "G-System",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 300,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "CC0 bank select then PC: 0=Factory, 1=User 1-100, 2=User 101-200. 300 preset locations."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "MIDI IN/OUT. Implementation chart accepts CC 0-127 but no fixed factory CC-to-parameter map; parameters are edited on-unit or via G-System software dump."
+}

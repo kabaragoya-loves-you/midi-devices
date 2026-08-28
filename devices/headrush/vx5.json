@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "HeadRush AutoTune VX5",
+  "displayName": "VX5",
+  "device": {
+    "displayName": "",
+    "manufacturer": "HeadRush",
+    "model": "AutoTune VX5",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 16,
+      "name": "FS A/B Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Disable",
+            "value": 0
+          },
+          {
+            "name": "Mode A",
+            "value": 1
+          },
+          {
+            "name": "Mode B",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Talk Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Disable",
+            "value": 0
+          },
+          {
+            "name": "Enable",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 disable; 64-127 enable"
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Preset Bank",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Bank 1",
+            "value": 0
+          },
+          {
+            "name": "Bank 2",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Bank 1 presets 1-128; Bank 2 presets 129-250"
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 250,
+    "bankSelectMode": "none",
+    "additionalInfo": "Bank via CC32 (0=bank1 PC 0-127, 1=bank2 PC 0-121). Receives on all channels."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "USB MIDI only for external control. Receives on all MIDI channels."
+}

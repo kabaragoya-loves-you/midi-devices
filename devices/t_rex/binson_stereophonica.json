@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "T-Rex Binson Stereophonica",
+  "displayName": "Stereophonica",
+  "device": {
+    "displayName": "",
+    "manufacturer": "T-Rex",
+    "model": "Binson Stereophonica",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Off",
+          "value": 0
+        },
+        {
+          "name": "On",
+          "value": 127
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Head 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Off",
+          "value": 0
+        },
+        {
+          "name": "On",
+          "value": 127
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Head 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Off",
+          "value": 0
+        },
+        {
+          "name": "On",
+          "value": 127
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Head 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Off",
+          "value": 0
+        },
+        {
+          "name": "On",
+          "value": 127
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Head 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "discreteValues": [
+        {
+          "name": "Off",
+          "value": 0
+        },
+        {
+          "name": "On",
+          "value": 127
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Echo",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Repeat",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN/OUT. CC map from T-Rex product documentation (CC20-27); firmware may change assignments."
+}

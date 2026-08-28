@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "NuX Trident NME-5",
+  "displayName": "Trident",
+  "device": {
+    "displayName": "",
+    "manufacturer": "NuX",
+    "model": "Trident NME-5",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Exp",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Global / Wah / Volume expression."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Out Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Scene 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value selects Scene 1."
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Scene 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value selects Scene 2."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Scene 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value selects Scene 3."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "FX/Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Mod",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Exit", "value": 0 },
+          { "name": "Enter", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Newer firmwares. 0–63 Exit, 64–127 Enter."
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Phrase Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Hold", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Newer firmwares. Any value triggers looper phrase hold."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 96,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Factory default MIDI map from Trident Edit (Settings → MIDI). Assignments are remappable in the editor. 3.5mm TRS MIDI I/O with included DIN adapters."
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Ultrawave Bass Distortion Lab",
+  "displayName": "Ultrawave Bass",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Ultrawave Bass Distortion Lab",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "SA251. No factory default CC map; assign CC0-CC127 per parameter in Neuro Device > Edit Device MIDI Map."
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic 2290P",
+  "displayName": "2290P",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "2290P",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "128 presets in 64 boards (A/B footswitches). PC mapping configurable in 2290 P desktop app."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN and OUT/THRU. CC assignments are user-configurable in the 2290 P desktop app; no fixed factory CC map published."
+}

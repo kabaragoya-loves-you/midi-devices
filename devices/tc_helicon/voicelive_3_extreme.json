@@ -1,0 +1,590 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC-Helicon VoiceLive 3 Extreme",
+  "displayName": "VL3 Extreme",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC-Helicon",
+    "model": "VoiceLive 3 Extreme",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Harm Vib Bst",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Harmony Vibrato Boost."
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Gtr Rhythmic",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar Rhythmic."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Gtr Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar Delay."
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Gtr Comp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar Compressor."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Gtr uMod",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar uMod."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Gtr Octaver",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar Octaver."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Gtr Amp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar Amp."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Gtr Wah",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar Wah."
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Gtr Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar Boost."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Harm Key",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          {
+            "name": "C",
+            "value": 0
+          },
+          {
+            "name": "C#",
+            "value": 1
+          },
+          {
+            "name": "D",
+            "value": 2
+          },
+          {
+            "name": "D#",
+            "value": 3
+          },
+          {
+            "name": "E",
+            "value": 4
+          },
+          {
+            "name": "F",
+            "value": 5
+          },
+          {
+            "name": "F#",
+            "value": 6
+          },
+          {
+            "name": "G",
+            "value": 7
+          },
+          {
+            "name": "G#",
+            "value": 8
+          },
+          {
+            "name": "A",
+            "value": 9
+          },
+          {
+            "name": "A#",
+            "value": 10
+          },
+          {
+            "name": "B",
+            "value": 11
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Harmony key."
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Harm Scale",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          {
+            "name": "MAJ1",
+            "value": 0
+          },
+          {
+            "name": "MAJ2",
+            "value": 1
+          },
+          {
+            "name": "MAJ3",
+            "value": 2
+          },
+          {
+            "name": "MIN1",
+            "value": 3
+          },
+          {
+            "name": "MIN2",
+            "value": 4
+          },
+          {
+            "name": "MIN3",
+            "value": 5
+          },
+          {
+            "name": "CUST",
+            "value": 6
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Harmony scale."
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Gtr Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar Reverb."
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Gtr HIT",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Guitar HIT."
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Voc Vocoder",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Vocoder/Synth."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Voc Rhythmic",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Rhythmic."
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Voc HIT",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal HIT."
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Voc Choir",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Choir."
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Voc Harmony",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Harmony."
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Voc Double",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Double."
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Voc Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Reverb."
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Voc HardTune",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal HardTune."
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Step",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Step number; manual: value 1=Step 1, 2=Step 2, etc."
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Voc uMod",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal uMod."
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Voc Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Delay."
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Voc Trans",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Vocal Transducer."
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Harm Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Harmony Hold."
+    },
+    {
+      "controlChangeNumber": 123,
+      "name": "All Notes Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "All Notes Off command."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 500,
+    "bankSelectMode": "CC0_CC32",
+    "additionalInfo": "500 preset memory (250 factory + user). Same MIDI CC appendix as VoiceLive 3."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN/OUT and USB MIDI. CC list from Reference Manual appendix. Effect toggles: 1-63=off, 64-127=on."
+}

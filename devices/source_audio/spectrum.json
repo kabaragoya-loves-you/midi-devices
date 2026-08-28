@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Spectrum Intelligent Filter",
+  "displayName": "Spectrum",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Spectrum Intelligent Filter",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 100,
+      "name": "Remote Expr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Factory Remote Expression Pedal. Additional targets via Neuro Device > Edit Device MIDI Map."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Factory Engaged/Bypass. Value bands per One Series User Guide; canonical extremes used here."
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Recall Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Factory Preset Recall (OFF). CC value selects preset 0-127; recalls bypassed."
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Recall Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Factory Preset Recall (ON). CC value selects preset 0-127; recalls engaged."
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Toggle Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Factory Engaged/Bypass Toggle. Any value toggles."
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Factory Remote Tap Tempo; externally control LFO rate."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

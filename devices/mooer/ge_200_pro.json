@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Mooer GE-200 Pro",
+  "displayName": "GE200 Pro",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Mooer",
+    "model": "GE-200 Pro",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 200,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "Two MIDI banks (CC0=0/1) with PC 0-127 each; PC mapping user-editable."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC mapping user-configurable in Slave mode (factory default Empty). See Mooer manual CC Mapping list."
+}

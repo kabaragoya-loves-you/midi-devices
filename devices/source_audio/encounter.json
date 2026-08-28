@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio Encounter",
+  "displayName": "Encounter",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Encounter",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 105,
+      "name": "Rcl BothByp",
+      "additionalInfo": "Recall preset by slot (CC value). Both Delay and Reverb bypassed. Encounter User Guide p.21.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Rcl Dly On",
+      "additionalInfo": "Recall preset by slot (CC value). Delay engaged, Reverb bypassed. Encounter User Guide p.21.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Rcl Rvb On",
+      "additionalInfo": "Recall preset by slot (CC value). Delay bypassed, Reverb engaged. Encounter User Guide p.21.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Rcl Both On",
+      "additionalInfo": "Recall preset by slot (CC value). Delay and Reverb both engaged. Encounter User Guide p.21.",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

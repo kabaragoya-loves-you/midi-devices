@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Seymour Duncan Silver Lake",
+  "displayName": "Silver Lake",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Seymour Duncan",
+    "model": "Silver Lake",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "128 preset slots via Program Change. No fixed factory CC map — parameters assigned via pedal MIDI learn."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "128 presets; CC assignments are user-defined (MIDI learn), not a published factory map."
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Lehle 1at3 SGoS",
+  "displayName": "SGoS",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Lehle",
+    "model": "1at3 SGoS",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "Receives PC only; switching states freely assignable to any PC. No CC control."
+}

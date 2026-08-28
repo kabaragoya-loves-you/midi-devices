@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Polyend Press",
+  "displayName": "Press",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Polyend",
+    "model": "Press",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "Analog stereo compressor; no MIDI port."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Analog stereo compressor; no MIDI port."
+}

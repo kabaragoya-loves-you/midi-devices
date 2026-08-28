@@ -1,0 +1,432 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "RJM Music Mini Effect Gizmo X",
+  "displayName": "MEG X",
+  "device": {
+    "displayName": "",
+    "manufacturer": "RJM Music",
+    "model": "Mini Effect Gizmo X",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank MSB",
+      "x_mandatory": true,
+      "additionalInfo": "Banks 0-7 (1024 presets). preset = bank*128 + PC. Reassignable in editor.",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Loop 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Loop 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Loop 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Loop 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Loop 5",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Loop 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Loop 7",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Loop 8",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Loop 9",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Loop 10",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Loop 11",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Loop 12",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Func Sw 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Func Sw 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Input",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Output(s)",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Out 1 L",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Out 2 R",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Out L/R",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "Tuner Out",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Buffer",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Int Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 64
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "1024 presets via bank select + PC. Loops 7-12 require Split Mono feature."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

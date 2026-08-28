@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Neunaber Neuron",
+  "displayName": "Neuron",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Neunaber",
+    "model": "Neuron",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 102,
+      "name": "Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Compression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Low",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "High",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "LPF",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Gate Thresh",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "HPF",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "LED Color",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          {
+            "name": "Red",
+            "value": 0
+          },
+          {
+            "name": "Blue",
+            "value": 1
+          },
+          {
+            "name": "Green",
+            "value": 2
+          },
+          {
+            "name": "Yellow",
+            "value": 3
+          },
+          {
+            "name": "Magenta",
+            "value": 4
+          },
+          {
+            "name": "Cyan",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engaged",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "1-127=engage"
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Save Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Save Preset",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Spkr Sim",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "1-127=on"
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Tilt EQ",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 25,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

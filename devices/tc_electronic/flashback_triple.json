@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Flashback Triple Delay",
+  "displayName": "FB Triple",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Flashback Triple Delay",
+    "version": ""
+  },
+  "receives": [
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "No preset recall via MIDI documented."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN/THRU on MIDI channel 1. Manual documents MIDI Clock tempo sync only; no factory CC map published."
+}

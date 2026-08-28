@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss MS-3",
+  "displayName": "MS-3",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "MS-3",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 200,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1
+}

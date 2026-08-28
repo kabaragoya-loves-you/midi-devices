@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss GT-10B Bass Effects Processor",
+  "displayName": "GT-10B",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "GT-10B",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "additionalInfo": "Bank Select MSB (CC0). FIX map: MSB 0-3 + PC per owner manual p.89-90. CC32 and CC0≥4 ignored. CC1-31 and CC64-95 user-assignable via CTL/EXP Assign SOURCE.",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Bank 0", "value": 0 },
+          { "name": "Bank 1", "value": 1 },
+          { "name": "Bank 2", "value": 2 },
+          { "name": "Bank 3", "value": 3 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 320,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

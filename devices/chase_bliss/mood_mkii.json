@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.1.1",
-  "implementationVersion": "1",
+  "implementationVersion": "3",
   "title": "Chase Bliss MOOD MkII",
   "displayName": "MOOD MkII",
   "device": {
@@ -36,8 +36,42 @@
     {
       "controlChangeNumber": 14,
       "name": "Time",
-      "additionalInfo": "TODO: restore discrete subdivisions gated on Sync (CC31) value 1 or 3 (unknown which; default No Sync=2 is continuous). discreteValues: [{value:0,name:\"1/32 Note\"},{value:13,name:\"1/16 Note\"},{value:37,name:\"1/8 Triplet\"},{value:62,name:\"1/8 Note\"},{value:85,name:\"Dotted 1/8\"},{value:111,name:\"1/4 Note\"}]",
-      "valueRange": { "min": 0, "max": 127 }
+      "additionalInfo": "Continuous by default (incl. CC31=1 Loop>Wet, where Time sets overall micro-loop length). Synced Time chart when Wet>Loop (CC31=3) or when Storm Summoner is generating MIDI clock (Internal/Sync).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 31, "op": "==", "value": 3 },
+          "additionalInfo": "Wet>Loop: rhythmic delay subdivisions for the Wet channel (Synced Time chart).",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 0, "name": "1/32 Note" },
+              { "value": 13, "name": "1/16 Note" },
+              { "value": 37, "name": "1/8 Triplet" },
+              { "value": 62, "name": "1/8 Note" },
+              { "value": 85, "name": "Dotted 1/8" },
+              { "value": 111, "name": "1/4 Note" }
+            ]
+          }
+        },
+        {
+          "constraint": { "clock": true },
+          "additionalInfo": "Generated MIDI clock (Internal/Sync): same Synced Time chart as Wet>Loop.",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 0, "name": "1/32 Note" },
+              { "value": 13, "name": "1/16 Note" },
+              { "value": 37, "name": "1/8 Triplet" },
+              { "value": 62, "name": "1/8 Note" },
+              { "value": 85, "name": "Dotted 1/8" },
+              { "value": 111, "name": "1/4 Note" }
+            ]
+          }
+        }
+      ]
     },
     {
       "controlChangeNumber": 15,
@@ -50,12 +84,28 @@
     {
       "controlChangeNumber": 16,
       "name": "Length",
-      "additionalInfo": "Continuous unless Looper Mode (CC23) is Tape (2), where rhythmic multipliers apply.",
+      "additionalInfo": "Continuous unless Loop>Wet sync (CC31=1) or Storm Summoner is generating MIDI clock (Internal/Sync), where Tape Mode subdivision multipliers apply.",
       "valueRange": { "min": 0, "max": 127 },
       "x_variants": [
         {
-          "constraint": { "cc": 23, "op": "==", "value": 2 },
-          "additionalInfo": "Tape mode: rhythmic length multipliers.",
+          "constraint": { "cc": 31, "op": "==", "value": 1 },
+          "additionalInfo": "Loop>Wet: Length sets subdivisions of the micro-loop (Tape Mode subdivision chart).",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 0, "name": "x 1/32" },
+              { "value": 13, "name": "x 1/16" },
+              { "value": 37, "name": "x 1/8" },
+              { "value": 62, "name": "x 1/4" },
+              { "value": 85, "name": "x 1/2" },
+              { "value": 111, "name": "x 1" }
+            ]
+          }
+        },
+        {
+          "constraint": { "clock": true },
+          "additionalInfo": "Generated MIDI clock (Internal/Sync): same Tape Mode subdivision chart as Loop>Wet.",
           "valueRange": {
             "min": 0,
             "max": 127,
@@ -209,7 +259,7 @@
       "controlChangeNumber": 23,
       "name": "Looper Mode",
       "x_mandatory": true,
-      "additionalInfo": "Gate CC: Env=1, Tape=2, Stretch=3. Gates Length (CC16) and Modify Loop (CC19) discretes.",
+      "additionalInfo": "Gate CC: Env=1, Tape=2, Stretch=3. Gates Modify Loop (CC19) discretes.",
       "valueRange": {
         "min": 1,
         "max": 3,
@@ -302,6 +352,8 @@
     {
       "controlChangeNumber": 31,
       "name": "Sync",
+      "x_mandatory": true,
+      "additionalInfo": "Gate CC: Loop>Wet=1 (Length CC16 discretes), No Sync=2, Wet>Loop=3 (Time CC14 Synced Time chart). Generated MIDI clock (Internal/Sync) also enables those charts via clock-gated variants.",
       "valueRange": {
         "min": 1,
         "max": 3,

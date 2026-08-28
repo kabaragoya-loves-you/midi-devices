@@ -1,0 +1,1305 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Two Notes OPUS",
+  "displayName": "OPUS",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Two Notes",
+    "model": "OPUS",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Preset Mode",
+      "x_mandatory": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "DynIR Engine",
+            "value": 0
+          },
+          {
+            "name": "IR Loader",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Gate",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "NG Mode",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Soft",
+            "value": 0
+          },
+          {
+            "name": "Hard",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "NG Threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 80
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Preamp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Preamp Model",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 9,
+        "discreteValues": [
+          {
+            "name": "Foundry",
+            "value": 0
+          },
+          {
+            "name": "Foxy",
+            "value": 1
+          },
+          {
+            "name": "Albion",
+            "value": 2
+          },
+          {
+            "name": "NiftyFifty",
+            "value": 3
+          },
+          {
+            "name": "Peggy",
+            "value": 4
+          },
+          {
+            "name": "Tanger",
+            "value": 5
+          },
+          {
+            "name": "Eldorado",
+            "value": 6
+          },
+          {
+            "name": "Aviator",
+            "value": 7
+          },
+          {
+            "name": "Gemini",
+            "value": 8
+          },
+          {
+            "name": "Flatback",
+            "value": 9
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Treble",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Middle",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Bass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Power Amp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "PA Model",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart. SE/PP tube models."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "PA Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Contour",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "PA Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Tube Type",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Triode",
+            "value": 0
+          },
+          {
+            "name": "Pentode",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Miking",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Virtual Cab",
+      "valueRange": {
+        "min": 0,
+        "max": 63
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Mic A Model",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Mic B Model",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Mic A Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Mic A Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mic A Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Mic A Phase",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "Invert",
+            "value": 1
+          }
+        ]
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Mic B Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Mic B Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Mic B Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Mic B Phase",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "Invert",
+            "value": 1
+          }
+        ]
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Mic A Axis",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Mic A Dist",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Mic A Position",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Front",
+            "value": 0
+          },
+          {
+            "name": "Back",
+            "value": 1
+          }
+        ]
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Mic B Axis",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Mic B Dist",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Mic B Position",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Front",
+            "value": 0
+          },
+          {
+            "name": "Back",
+            "value": 1
+          }
+        ]
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "x_noop": true
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "IR File A",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "name": "IR File A",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "IR File B",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "name": "IR File B",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "IR Folder A",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "name": "IR Folder A",
+          "valueRange": {
+            "min": 0,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "IR Folder B",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 0,
+            "op": "==",
+            "value": 1
+          },
+          "name": "IR Folder B",
+          "valueRange": {
+            "min": 0,
+            "max": 3
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "EQ",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "EQ Mode",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Guitar",
+            "value": 0
+          },
+          {
+            "name": "Bass",
+            "value": 1
+          },
+          {
+            "name": "Custom",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Low Cut Freq",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 39,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Low Cut Freq",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Gain Low",
+      "valueRange": {
+        "min": 0,
+        "max": 30
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Low Freq",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 39,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Low Freq",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Gain LowMid",
+      "valueRange": {
+        "min": 0,
+        "max": 30
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "LowMid Freq",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 39,
+            "op": "==",
+            "value": 2
+          },
+          "name": "LowMid Freq",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Gain Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 30
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Mid Freq",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 39,
+            "op": "==",
+            "value": 2
+          },
+          "name": "Mid Freq",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Gain HiMid",
+      "valueRange": {
+        "min": 0,
+        "max": 30
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "HiMid Freq",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 39,
+            "op": "==",
+            "value": 2
+          },
+          "name": "HiMid Freq",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Gain High",
+      "valueRange": {
+        "min": 0,
+        "max": 30
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "High Freq",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 39,
+            "op": "==",
+            "value": 2
+          },
+          "name": "High Freq",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "High Cut Freq",
+      "x_noop": true,
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "x_variants": [
+        {
+          "constraint": {
+            "cc": 39,
+            "op": "==",
+            "value": 2
+          },
+          "name": "High Cut Freq",
+          "valueRange": {
+            "min": 0,
+            "max": 127
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Enhancer",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Instrument",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Guitar",
+            "value": 0
+          },
+          {
+            "name": "Bass",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Enh Dry/Wet",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Body",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Thickness",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Brilliance",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Rev Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 12
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Rev Type",
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Room",
+            "value": 0
+          },
+          {
+            "name": "Ambience",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Rev Dry/Wet",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Rev Size",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Rev Echo",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Rev Color",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Preset Level",
+      "valueRange": {
+        "min": 0,
+        "max": 107
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Master Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Master Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Preset Select",
+      "valueRange": {
+        "min": 0,
+        "max": 99
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "OPUS User Manual \u2014 MIDI Chart."
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Preset Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Preset Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 99,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Keeley RK2000 Funk Siren Delay",
+  "displayName": "RK2000",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Keeley",
+    "model": "RK2000",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 11,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Delay output level."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Modulation frequency when MOD active."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Input",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Delay offset."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Modulation width when MOD active."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Subdivision",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          { "name": "Quarter", "value": 0 },
+          { "name": "Eighth", "value": 1 },
+          { "name": "Dot 1/8", "value": 2 },
+          { "name": "Triplet", "value": 3 },
+          { "name": "Sixteenth", "value": 4 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Clear Memory",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Clear", "value": 1 }]
+      },
+      "additionalInfo": "Any value clears delay memory."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Clock Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Off, 64-127=On. On by default."
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Tap", "value": 1 }]
+      },
+      "additionalInfo": "Any value sets delay offset via external tap."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Delay Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Off, 64-127=On."
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Off, 64-127=On."
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Mod",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Off, 64-127=On."
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Bypass Type",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Buffered", "value": 0 },
+          { "name": "True", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Buffered, 64-127=True bypass."
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Off, 64-127=On."
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Dry Signal",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Off, 64-127=On."
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Remote Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Momentary", "value": 0 },
+          { "name": "Latching", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Momentary, 64-127=Latching."
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Remote Ring",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Modulation", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Bypass, 64-127=Modulation."
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Ping-Pong",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Off, 64-127=On."
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Inverse Phase",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63=Off, 64-127=On. Inverse feedback."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 127,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "EXP/MIDI jack must be in MIDI mode (power-up). Hold RIGHT while powering on for channel setup (Preset cycles 1-16)."
+}

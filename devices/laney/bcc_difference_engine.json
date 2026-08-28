@@ -1,0 +1,450 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Laney Black Country Customs The Difference Engine",
+  "displayName": "Diff Engine",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Laney",
+    "model": "Black Country Customs The Difference Engine",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Preset Sel",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Time L MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Time R MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Time Lft MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Time Rgt MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Tape Spd MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Attack MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Release MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Delay Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Repeat",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Colour",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Time Link",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "MultiHd En",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Lvl Left",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Lvl Right",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Mod Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Mod Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Wow Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Wow Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Flut Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Flut Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Comp En",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Comp Thresh",
+      "valueRange": {
+        "min": 0,
+        "max": 120
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Comp Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Dyn Thresh",
+      "valueRange": {
+        "min": 0,
+        "max": 120
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Dyn Ratio",
+      "valueRange": {
+        "min": 0,
+        "max": 10
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Dyn Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 18
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Gate En",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Time L LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Time R LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Time Lft LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Time Rgt LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Tape Spd LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Attack LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Release LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Phase L",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Phase R",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Dry L",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Dry R",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Dly L",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Dly R",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Head Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Head1 Dist",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Head2 Dist",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Head3 Dist",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Head1 Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Head2 Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Head3 Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Freeze",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

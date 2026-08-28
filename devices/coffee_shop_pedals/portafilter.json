@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Coffee Shop Pedals Portafilter",
+  "displayName": "Portafilter",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Coffee Shop Pedals",
+    "model": "Portafilter",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "OD1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = Off, 1–127 = On."
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "OD2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = Off, 1–127 = On."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "OD1 Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "OD1 Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "OD1 Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "OD1 Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "OD2 Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "OD2 Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "OD2 Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "OD2 Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Order",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "OD2>OD1", "value": 0 },
+          { "name": "OD1>OD2", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = OD2→OD1, 1–127 = OD1→OD2."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "OD1 Style",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "name": "TS", "value": 1 },
+          { "name": "BB", "value": 2 },
+          { "name": "KC", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "OD1 Mids",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Flat", "value": 1 },
+          { "name": "Scoop", "value": 2 },
+          { "name": "Boost", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "OD1 Clip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Soft", "value": 0 },
+          { "name": "Hard", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = Soft, 1–127 = Hard."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "OD2 Style",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "name": "TS", "value": 1 },
+          { "name": "BB", "value": 2 },
+          { "name": "KC", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "OD2 Mids",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Flat", "value": 1 },
+          { "name": "Scoop", "value": 2 },
+          { "name": "Boost", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "OD2 Clip",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Soft", "value": 0 },
+          { "name": "Hard", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = Soft, 1–127 = Hard."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 20,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1 = preset 1 (Live Knobs, red). PC 2–6 = onboard (green/blue/yellow/cyan/purple). PC 7–20 = MIDI-only (white bypass LEDs); empty slots do nothing. Footswitches return to presets 1–6 when a MIDI preset is active."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Coffee Shop Pedals Portafilter manual pp. 12–13. Dual overdrive. Last used preset recalled on power-up. TYPE_A same as Cold Brew sibling."
+}

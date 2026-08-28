@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Drive",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Clean Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Dist Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Output",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Morph",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "title": "Source Audio Soundblox Pro Multiwave Bass Distortion",
+  "displayName": "SB Pro MWBD",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "Soundblox Pro Multiwave Bass Distortion (SA141)",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 7,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1-6 recall presets; PC 7 bypass."
+  }
+}

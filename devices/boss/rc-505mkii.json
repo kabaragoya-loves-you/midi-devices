@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss RC-505mkII Loop Station",
+  "displayName": "RC-505mkII",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "RC-505mkII",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC1-31 and CC64-95 user-assignable via ASSIGN (SOURCE=MIDI CC#). 16 assigns per memory. Ignores Bank Select (CC0/CC32). Memory PC 1-99."
+}

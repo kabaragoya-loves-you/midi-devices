@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "BOSS GT-1000CORE",
+  "displayName": "GT-1000CORE",
+  "device": {
+    "displayName": "",
+    "manufacturer": "BOSS",
+    "model": "GT-1000CORE",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "additionalInfo": "Bank Select MSB (CC0). FIX map: 0=U001-U125, 1=U126-U250, 2=P001-P125, 3=P126-P250; PC 0-124 within bank. LSB (CC32) received as 0. Parameter/footswitch CCs are user Assign only (CC1-31, CC64-95) — not fixed factory map.",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "U001-U125", "value": 0 },
+          { "name": "U126-U250", "value": 1 },
+          { "name": "P001-P125", "value": 2 },
+          { "name": "P126-P250", "value": 3 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 500,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

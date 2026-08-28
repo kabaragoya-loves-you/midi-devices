@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss SL-20 Slicer",
+  "displayName": "SL-20",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "SL-20",
+    "version": ""
+  },
+  "receives": [
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_CONTINUE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN only (MIDI slave). Receives Timing Clock, Start, and Continue only; no CC or Program Change. Tempo knob and tap pedal disabled while receiving MIDI clock."
+}

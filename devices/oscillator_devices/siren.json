@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Oscillator Devices SIREN",
+  "displayName": "SIREN",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Oscillator Devices",
+    "model": "SIREN",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Vol A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Vol B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Vol A+B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Sine A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Sine B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Sine AB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "LFO Spd A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "LFO Spd B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "LFO Spd AB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "Mix",
+            "value": 1
+          },
+          {
+            "name": "Split",
+            "value": 2
+          },
+          {
+            "name": "Par FX",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Phase B",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "additionalInfo": "Manual v3.1: CC21-25, 41-45, 61-65 LFO waveforms with depth 0-127."
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Medea Tech GreenFox",
+  "displayName": "GreenFox",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Medea Tech",
+    "model": "GreenFox",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1,
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 10,
+    "bankSelectMode": "none",
+    "additionalInfo": "MIDI PC preset recall; assign preset number via SET button."
+  }
+}

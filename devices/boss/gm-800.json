@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss GM-800 Guitar Synthesizer",
+  "displayName": "GM-800",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "GM-800",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER",
+    "CHANNEL_PRESSURE",
+    "PITCH_BEND",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "additionalInfo": "Bank Select MSB (CC0). Scene select: MSB=0, LSB=0 (CC32), PC 1-100 on Scene Rx Channel.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Modulation",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Pan",
+      "additionalInfo": "00H=Left, 40H=Center, 7FH=Right",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Hold",
+      "additionalInfo": "Ignored when MIDI SETTINGS NOTE/PT SRC is GK IN",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Sostenuto",
+      "additionalInfo": "Ignored when MIDI SETTINGS NOTE/PT SRC is GK IN",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Soft",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Legato",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Resonance",
+      "additionalInfo": "Relative change; 40H=0, 00H=-64, 7FH=+63",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Release",
+      "additionalInfo": "Relative change; 40H=0, 00H=-64, 7FH=+63",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Attack",
+      "additionalInfo": "Relative change; 40H=0, 00H=-64, 7FH=+63",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Cutoff",
+      "additionalInfo": "Relative change; 40H=0, 00H=-64, 7FH=+63",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Decay",
+      "additionalInfo": "Relative change; 40H=0, 00H=-64, 7FH=+63",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Vib Rate",
+      "additionalInfo": "Relative change; Part 1-4 only",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Vib Depth",
+      "additionalInfo": "Relative change; Part 1-4 only",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Vib Delay",
+      "additionalInfo": "Relative change; Part 1-4 only",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Portamento",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Reverb Send",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Chorus Send",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 100,
+    "bankSelectMode": "CC0_CC32"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC1-31 and CC64-95 also assignable via ASSIGN SOURCE. CC32 (LSB) should be 0 for scene bank select."
+}

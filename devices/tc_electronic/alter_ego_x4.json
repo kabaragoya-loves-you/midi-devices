@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Alter Ego X4",
+  "displayName": "Alter Ego X4",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Alter Ego X4",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 3,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0=Preset A, 1=Preset B, 2=Preset C (manual lists #001-#003). MIDI Omni."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN/THRU. MIDI Clock syncs delay tempo. No factory CC parameter map published."
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Coffee Shop Pedals Cortado",
+  "displayName": "Cortado",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Coffee Shop Pedals",
+    "model": "Cortado",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0 = Live knobs (preset off). PC 1–3 = onboard (red/green/blue). PC 4–20 = MIDI-only (light blue); empty slots do nothing. PC 126 = pedal Off. PC 127 = pedal On (no preset). Any PC 0–20 turns the pedal On. Save MIDI presets: hold PRESET 3s (LED white), then send PC 4–20. PC 21–125 unused."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Coffee Shop Pedals Cortado MIDI page — Program Change only; no CC parameter map. TYPE_A same as Cold Brew / Portafilter / London Fog siblings."
+}

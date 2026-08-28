@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "title": "Yamaha UD-Stomp",
+  "displayName": "UD-Stomp",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Yamaha",
+    "model": "UD-Stomp",
+    "version": ""
+  },
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "External control via utility-assigned parameters; no fixed factory CC parameter map."
+  }
+}

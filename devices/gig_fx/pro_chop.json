@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Gig-FX Pro-Chop",
+  "displayName": "Pro-Chop",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Gig-FX",
+    "model": "Pro-Chop",
+    "version": ""
+  },
+  "receives": [
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Pro-Chop manual: MIDI clock sync only (1/2/3/4/8 modulations per beat). No factory CC map."
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Zander Circuitry Duplo",
+  "displayName": "Duplo",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Zander Circuitry",
+    "model": "Duplo",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Ctrl 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Patch Sel",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Tap Subdiv",
+      "valueRange": {
+        "min": 1,
+        "max": 5,
+        "discreteValues": [
+          {
+            "name": "1/4",
+            "value": 1
+          },
+          {
+            "name": "Dot 1/8",
+            "value": 2
+          },
+          {
+            "name": "1/8",
+            "value": 3
+          },
+          {
+            "name": "Triplet",
+            "value": 4
+          },
+          {
+            "name": "1/16",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Toggle",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  }
+}

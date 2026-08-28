@@ -1,0 +1,352 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Two Notes Torpedo C.A.B.",
+  "displayName": "Torpedo C.A.B.",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Two Notes",
+    "model": "Torpedo C.A.B.",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "PA On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "PA Model",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "PA Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Presence",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Character",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Triode",
+            "value": 0
+          },
+          {
+            "name": "Pentode",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Cab/Mic On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Cab Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          {
+            "name": "Cab/Mic",
+            "value": 0
+          },
+          {
+            "name": "User 0",
+            "value": 1
+          },
+          {
+            "name": "User 1",
+            "value": 2
+          },
+          {
+            "name": "User 2",
+            "value": 3
+          },
+          {
+            "name": "User 3",
+            "value": 4
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Cab",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "User 0 File",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "User 1 File",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "User 2 File",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "User 3 File",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Mic",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Distance",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Center",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Position",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Back",
+            "value": 0
+          },
+          {
+            "name": "Front",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "EQ On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "EQ Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Guitar",
+            "value": 0
+          },
+          {
+            "name": "Bass",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "EQ Low",
+      "valueRange": {
+        "min": 0,
+        "max": 40
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "EQ LowMid",
+      "valueRange": {
+        "min": 0,
+        "max": 40
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "EQ Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 40
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "EQ HiMid",
+      "valueRange": {
+        "min": 0,
+        "max": 40
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "EQ High",
+      "valueRange": {
+        "min": 0,
+        "max": 40
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Preset Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 107
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Out Level",
+      "valueRange": {
+        "min": 0,
+        "max": 107
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Active",
+            "value": 1
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Torpedo C.A.B. User Manual V4 firmware — MIDI map Table 5.1."
+}

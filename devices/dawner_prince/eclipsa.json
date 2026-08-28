@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Dawner Prince Eclipsa",
+  "displayName": "Eclipsa",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Dawner Prince",
+    "model": "Eclipsa",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 21,
+      "name": "Slow Speed",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Rotor speed in Slow mode."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Fast Speed",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Rotor speed in Fast mode."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Rotary cabinet vs static cabinet."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Inertia",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Acceleration / deceleration time."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Distance",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Mic distance from cabinet."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = Off, 127 = On."
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Slow/Fast",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Slow", "value": 0 },
+          { "name": "Fast", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Bypass Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Buffer", "value": 0 },
+          { "name": "True Bypass", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Brake",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Stops the rotors."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "MIDI Ch",
+      "valueRange": {
+        "min": 0,
+        "max": 15,
+        "discreteValues": [
+          { "name": "Ch 1", "value": 0 },
+          { "name": "Ch 2", "value": 1 },
+          { "name": "Ch 3", "value": 2 },
+          { "name": "Ch 4", "value": 3 },
+          { "name": "Ch 5", "value": 4 },
+          { "name": "Ch 6", "value": 5 },
+          { "name": "Ch 7", "value": 6 },
+          { "name": "Ch 8", "value": 7 },
+          { "name": "Ch 9", "value": 8 },
+          { "name": "Ch 10", "value": 9 },
+          { "name": "Ch 11", "value": 10 },
+          { "name": "Ch 12", "value": 11 },
+          { "name": "Ch 13", "value": 12 },
+          { "name": "Ch 14", "value": 13 },
+          { "name": "Ch 15", "value": 14 },
+          { "name": "Ch 16", "value": 15 }
+        ]
+      },
+      "additionalInfo": "Config: value 0–15 = channel 1–16. Set in power-up learn mode (hold both footswitches); accepted on any channel."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1–127 = user presets. PC 128 = Live Mode (physical knobs/switches). Save: hold both footswitches, send PC 1–127."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Dawner Prince Eclipsa manual. Mini-TRS MIDI In/Thru, Type A. MIDI Thru passes unchanged."
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "NuX Amp Academy Stomp NGS-6",
+  "displayName": "Amp Academy",
+  "device": {
+    "displayName": "",
+    "manufacturer": "NuX",
+    "model": "Amp Academy Stomp NGS-6",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Exp",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Expression / volume."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Scene 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value selects Scene 1."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Scene 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value selects Scene 2."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Scene 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Any value selects Scene 3."
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Channel",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "A", "value": 0 },
+          { "name": "B", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Channel A, 64–127 Channel B. Prefer absolute 0/127 over toggle."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "NR",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Noise reduction block. 0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "EFX",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Overdrive/distortion block. 0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Amp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Off, 64–127 On."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 Off, 64–127 On."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 27,
+    "bankSelectMode": "none",
+    "additionalInfo": "27 preset slots with 3 scenes each."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Factory default MIDI map from Amp Academy Editor. Assignments are remappable. 3.5mm TRS MIDI I/O. Prefer absolute ON (127) / OFF (0) for bypass/channel CCs rather than toggles."
+}

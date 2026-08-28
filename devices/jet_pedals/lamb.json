@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "JET Pedals Lamb Overdrive",
+  "displayName": "Lamb",
+  "device": {
+    "displayName": "",
+    "manufacturer": "JET Pedals",
+    "model": "Lamb Overdrive",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 19,
+      "name": "Volume",
+      "valueRange": { "min": 1, "max": 8 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Gain",
+      "valueRange": { "min": 1, "max": 8 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Tone",
+      "valueRange": { "min": 1, "max": 8 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mid Boost",
+      "valueRange": { "min": 1, "max": 8 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off; 64-127 on."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Preset Sw",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off; 64-127 on."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Preset +",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Next", "value": 1 }]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Preset -",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [{ "name": "Prev", "value": 1 }]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Circuit",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Cyan", "value": 21 },
+          { "name": "White", "value": 64 },
+          { "name": "Yellow", "value": 106 }
+        ]
+      },
+      "additionalInfo": "0-42 Cyan; 43-85 White; 86-127 Yellow."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Snapshot",
+      "valueRange": { "min": 3, "max": 100 },
+      "additionalInfo": "Sends current settings to preset slot matching CC value."
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Lead Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0-63 off; 64-127 lead boost on."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 101,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-2 factory colors; PC 3-100 CC Snapshot slots."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

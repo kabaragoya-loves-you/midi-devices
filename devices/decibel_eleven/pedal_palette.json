@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Decibel Eleven Pedal Palette",
+  "displayName": "Pedal Palette",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Decibel Eleven",
+    "model": "Pedal Palette",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "128 presets; PC 0-127. Sends PC in PRESET mode when MIDI channel configured."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,374 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Morningstar Engineering ML10X",
+  "displayName": "ML10X",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Morningstar Engineering",
+    "model": "ML10X",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Change Bank",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "All Loops",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Scroll Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Scroll Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Unmute",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Toggle Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "A Tip Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "A Ring Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "B Tip Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "B Ring Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "C Tip Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "C Ring Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "D Tip Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "D Ring Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "E Tip Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "E Ring Eng",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Simple presets only."
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Tgl A Tip",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Tgl A Ring",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Tgl B Tip",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Tgl B Ring",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Tgl C Tip",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Tgl C Ring",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Tgl D Tip",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Tgl D Ring",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Tgl E Tip",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Tgl E Ring",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Simple presets only; any value toggles."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "4 banks \u00d7 128 presets; send CC0 bank (0-3) before PC."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "ML10X User Manual MIDI Implementation. Loop CCs apply to Simple presets only. 5-pin DIN IN/THRU; USB for editor/firmware."
+}

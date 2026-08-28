@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Valeton VLP-200",
+  "displayName": "VLP-200",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Valeton",
+    "model": "VLP-200",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "FS Action",
+      "valueRange": {
+        "min": 0,
+        "max": 24
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Loop 1 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Loop 2 Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Drum Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Project Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 0
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Project Dn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 0
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "Project-based looper; CC5/6 change project. CC map matches VLP-400 firmware."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

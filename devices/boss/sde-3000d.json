@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Boss SDE-3000D",
+  "displayName": "SDE-3000D",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Boss",
+    "model": "SDE-3000D",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "CC1-31 and CC64-95 received when MIDI CC IN=ON; each maps to a user-chosen parameter in SETUP>MIDI>CC# (not fixed factory map). Ignores Bank Select (CC0/CC32). SDE-3000EVH uses the same MIDI implementation."
+}

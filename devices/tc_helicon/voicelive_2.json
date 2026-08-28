@@ -1,0 +1,825 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC-Helicon VoiceLive 2",
+  "displayName": "VoiceLive 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC-Helicon",
+    "model": "VoiceLive 2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER",
+    "CLOCK"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Vib Amt",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Vib Style must not be 0."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Voice4 Voic",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Voicing Voice4."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Output Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Gtr Rev Sty",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0 to # of styles available."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Dry Pan",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Center=64; 127 values map to 201 pan values."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Harm Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Lead Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Double Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Human Style",
+      "valueRange": {
+        "min": 0,
+        "max": 6
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Voice2 Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Voice2 Gndr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Gender Voice2."
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Human Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Voice3 Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Gtr Rev Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Voice3 Gndr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Gender Voice3."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Vib Style",
+      "valueRange": {
+        "min": 0,
+        "max": 7
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Voice4 Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Gtr Mod Sty",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0 to # of styles available."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Voice4 Gndr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Gender Voice4."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Gtr Mod Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Voice1 Gndr",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Gender Voice1."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Harm Key",
+      "valueRange": {
+        "min": 0,
+        "max": 11,
+        "discreteValues": [
+          {
+            "name": "C",
+            "value": 0
+          },
+          {
+            "name": "C#",
+            "value": 1
+          },
+          {
+            "name": "D",
+            "value": 2
+          },
+          {
+            "name": "Eb",
+            "value": 3
+          },
+          {
+            "name": "E",
+            "value": 4
+          },
+          {
+            "name": "F",
+            "value": 5
+          },
+          {
+            "name": "F#",
+            "value": 6
+          },
+          {
+            "name": "G",
+            "value": 7
+          },
+          {
+            "name": "G#",
+            "value": 8
+          },
+          {
+            "name": "A",
+            "value": 9
+          },
+          {
+            "name": "Bb",
+            "value": 10
+          },
+          {
+            "name": "B",
+            "value": 11
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Harm Scale",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          {
+            "name": "Maj1",
+            "value": 0
+          },
+          {
+            "name": "Maj2",
+            "value": 1
+          },
+          {
+            "name": "Maj3",
+            "value": 2
+          },
+          {
+            "name": "Min1",
+            "value": 3
+          },
+          {
+            "name": "Min2",
+            "value": 4
+          },
+          {
+            "name": "Min3",
+            "value": 5
+          },
+          {
+            "name": "Custom",
+            "value": 6
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Doubling Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0=Doubling off, 1-127 mapped."
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Voice1 Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "HT Key",
+      "valueRange": {
+        "min": 0,
+        "max": 11
+      },
+      "additionalInfo": "HardTune Key; any value de-activates Follow Harmony."
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "HT Scale",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          {
+            "name": "Major",
+            "value": 0
+          },
+          {
+            "name": "Min-Har",
+            "value": 1
+          },
+          {
+            "name": "Min-Nat",
+            "value": 2
+          },
+          {
+            "name": "Min-Asc",
+            "value": 3
+          },
+          {
+            "name": "Chromatic",
+            "value": 4
+          },
+          {
+            "name": "Custom",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "HT Window",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "uMod Style",
+      "valueRange": {
+        "min": 0,
+        "max": 24
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Delay Style",
+      "valueRange": {
+        "min": 0,
+        "max": 12
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Reverb Style",
+      "valueRange": {
+        "min": 0,
+        "max": 30
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Double Style",
+      "valueRange": {
+        "min": 0,
+        "max": 5
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "HT Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Trans Style",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Harm Style",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0 to # of styles in mode; N/A for Notes modes."
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "HT Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Aux Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Voice2 Voic",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Voicing Voice2."
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Delay Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Sustain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Active in MIDI Naturalplay and MIDI Notes modes."
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Choir Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0=Choir off, 1-127 mapped."
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Choir Style",
+      "valueRange": {
+        "min": 0,
+        "max": 14
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Voices Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Dly/Rev Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Delay/Reverb Level."
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Voice3 Voic",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Voicing Voice3."
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Voice1 Voic",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Voicing Voice1."
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "uMod Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Reverb Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "FX",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "On sets HardTune and Transducer to preset on/off status."
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Out Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Pitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0=off."
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Guitar FX",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Guitar Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Harmony",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Footswitch On/Off."
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Double",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on per manual."
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on per manual."
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "HardTune",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "FX button must be active first."
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Bypass only, no tuner mode. 0-63 off, 64-127 on."
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Step",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0=Step 1, 1=Step 2, etc."
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "uMod",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on per manual."
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on per manual."
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Trans",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "FX button must be active first."
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Harm Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on per manual."
+    },
+    {
+      "controlChangeNumber": 123,
+      "name": "All Notes Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "Bank select CC0 (0-3) then PC 0-127. ~400 preset locations across 4 banks."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN and USB. Full CC map from User Manual MIDI Implementation chart (pages 98-100)."
+}

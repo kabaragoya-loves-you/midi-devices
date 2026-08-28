@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Ditto X4",
+  "displayName": "Ditto X4",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Ditto X4",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "L1 Rec/Dub",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 1 Rec/Dub/Start. Send 127 to trigger; alternate value for next trigger."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "L1 Stop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 1 Stop."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "L1 Clear",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 1 Clear."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "L1 Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "L1 Store",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 1 Hold to Store."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "L1 Clr Back",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 1 Clear Backtrack."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "L2 Rec/Dub",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 2 Rec/Dub/Start."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "L2 Stop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 2 Stop."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "L2 Clear",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 2 Clear."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "L2 Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "L2 Store",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 2 Hold to Store."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "L2 Clr Back",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper 2 Clear Backtrack."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Decay Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Decay level."
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "All Stop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "All Loops Stop."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "All Clear",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "All Loops Clear."
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "FX On/Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=off, 64-127=on per manual."
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Par/Ser",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Parallel/Serial Toggle."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 7,
+    "bankSelectMode": "none",
+    "additionalInfo": "FX engine recall via PC 1-7. MIDI channel 4 is hardcoded."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 4,
+  "additionalInfo": "5-pin DIN MIDI IN only (no MIDI Out). FW 1.3+ adds MIDI Start/Stop sync. CC map from Ditto X4 MIDI spec; CC triggers typically use value 127."
+}

@@ -1,0 +1,335 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "OBNE Parting",
+  "displayName": "Parting",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Old Blood Noise Endeavors",
+    "model": "Parting",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Shape",
+      "additionalInfo": "Sine 0-18; Square 19-36; Rev Saw 37-54; Saw 55-72; Rand Sine 73-90; Rand Sq 91-108; Envelope 109-127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Sine", "value": 0 },
+          { "name": "Square", "value": 19 },
+          { "name": "Rev Saw", "value": 37 },
+          { "name": "Saw", "value": 55 },
+          { "name": "Rand Sine", "value": 73 },
+          { "name": "Rand Sq", "value": 91 },
+          { "name": "Envelope", "value": 109 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Dissolve",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Chance",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Smear",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Glitch",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Width",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "LFO Subdiv",
+      "additionalInfo": "÷4 0-18; ÷3 19-36; ÷2 37-54; x1 55-72; x2 73-90; x3 91-108; x4 109-127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "/4", "value": 0 },
+          { "name": "/3", "value": 19 },
+          { "name": "/2", "value": 37 },
+          { "name": "x1", "value": 55 },
+          { "name": "x2", "value": 73 },
+          { "name": "x3", "value": 91 },
+          { "name": "x4", "value": 109 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Dly Subdiv",
+      "additionalInfo": "16th 0-21; dot16 22-42; 8th 43-63; triplet 64-84; dot8 85-105; quarter 106-127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "16th", "value": 0 },
+          { "name": "Dot 16th", "value": 22 },
+          { "name": "8th", "value": 43 },
+          { "name": "Triplet", "value": 64 },
+          { "name": "Dot 8th", "value": 85 },
+          { "name": "Quarter", "value": 106 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Mod Mode",
+      "additionalInfo": "0-63 Tremolo; 64-127 Vibrato",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tremolo", "value": 0 },
+          { "name": "Vibrato", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Filter Mode",
+      "additionalInfo": "0-63 Low Pass; 64-127 High Pass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Low Pass", "value": 0 },
+          { "name": "High Pass", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Mix Mode",
+      "additionalInfo": "0-63 Standard; 64-127 Modified",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Standard", "value": 0 },
+          { "name": "Modified", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "On/Off Sw",
+      "additionalInfo": "0-63 On; 64-127 Off",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "On", "value": 0 },
+          { "name": "Off", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Tap Tempo Sw",
+      "additionalInfo": "Tap pulse at value 0 only; no response for 1-127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Half Time Sw",
+      "additionalInfo": "0-63 Normal; 64-127 Half Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "Half Time", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Pres Save Sw",
+      "additionalInfo": "Cancel 0-42; Start 43-85; Confirm 86-127. Save: CC89 start, PC slot, CC89 confirm.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Cancel", "value": 0 },
+          { "name": "Start Save", "value": 43 },
+          { "name": "Confirm", "value": 86 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "MIDI Channel",
+      "additionalInfo": "1-16",
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Trails Setting",
+      "additionalInfo": "0-63 Off; 64-127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Stereo Setting",
+      "additionalInfo": "0-42 Mono; 43-85 Mono In Stereo Out; 86-127 Stereo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Mono", "value": 0 },
+          { "name": "Mono>Stereo", "value": 43 },
+          { "name": "Stereo", "value": 86 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Clock Mode",
+      "additionalInfo": "0-31 In+Thru; 32-63 In Only; 64-95 Out Only; 96-127 Deactivate",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "In+Thru", "value": 0 },
+          { "name": "In Only", "value": 32 },
+          { "name": "Out Only", "value": 64 },
+          { "name": "Deactivate", "value": 96 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Aux Setting",
+      "additionalInfo": "0-42 Tap Tempo; 43-85 Half Speed; 86-127 Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap Tempo", "value": 0 },
+          { "name": "Half Speed", "value": 43 },
+          { "name": "Preset", "value": 86 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 127,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1-127 recall presets. PC 128 = Live mode (knob positions). Preset save via CC89 sequence per manual."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Parting instruction manual (OBNE x Emily Hopkins). 3.5mm TRS Type A MIDI In/Out; Out also sends/thru clock per CC105."
+}

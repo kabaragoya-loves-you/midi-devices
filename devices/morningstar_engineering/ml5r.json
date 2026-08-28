@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Morningstar Engineering ML5R",
+  "displayName": "ML5R",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Morningstar Engineering",
+    "model": "ML5R",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Preset Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Decrease preset."
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Preset Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Increase preset."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Loop A",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-41 bypass; 42-84 toggle; 85-127 engage."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Loop B",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-41 bypass; 42-84 toggle; 85-127 engage."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Loop C",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-41 bypass; 42-84 toggle; 85-127 engage."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Loop D",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-41 bypass; 42-84 toggle; 85-127 engage."
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Loop E",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0-41 bypass; 42-84 toggle; 85-127 engage."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Loop Order",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Values 0-119; see manual Loop Order Table."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Order Hold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Set order; apply routing when CC12 sent."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Loop Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 31
+      },
+      "additionalInfo": "Binary table 0-31 for A-E engage states."
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Persist Byp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Engage",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Temporary; not saved on power cycle."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Mute",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63 off; 64-127 on."
+    },
+    {
+      "controlChangeNumber": 126,
+      "name": "Show Order",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Any value shows loop order."
+    },
+    {
+      "controlChangeNumber": 127,
+      "name": "Save Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Save current settings; 3 s timeout after save."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "ML5R User Manual MIDI Implementation chart. 5-pin DIN IN/THRU."
+}

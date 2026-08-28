@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Flux Effects Slipstream",
+  "displayName": "Slipstream",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Flux Effects",
+    "model": "Slipstream",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "Delay MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "50–1100 ms (14-bit with CC35 LSB). Send LSB first, then MSB."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Decay",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Repeat decay — mute to max."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Wet Level",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Mute to unity."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Repeat Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "LPF", "value": 0 },
+          { "name": "Neutral", "value": 64 },
+          { "name": "HPF", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–63 LPF; 64 neutral; 65–127 HPF."
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Live", "value": 0 },
+          { "name": "Manual", "value": 1 },
+          { "name": "TapSync", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Tap Mult",
+      "valueRange": { "min": 1, "max": 4 },
+      "additionalInfo": "Tap tempo multiplier."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Tap Div",
+      "valueRange": { "min": 1, "max": 6 },
+      "additionalInfo": "Tap tempo divider."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Slip Rate",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0.5–7.0 Hz."
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Slip Width",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Off to max."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Slip Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "Glitch", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Delay LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Send before CC3 MSB."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Clock Recv",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Incoming clock overrides local tempo."
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Clock Out",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "MIDI OUT base tempo clock."
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "CC Transmit",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Echo CC on MIDI OUT."
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "TapSync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Heel-down to toe-down."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Active", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 41,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0 = Live. PC 1–40 recall presets (first 5 also on panel). Save: hold PRE, send PC 1–40."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 5,
+  "additionalInfo": "Flux Effects Slipstream MIDI guide. MiniDIN6 In/Out/Thru via included DIN adapter. Default ch 5 — hold TAPSYNC at power-up, turn TIME/DIV (5 LEDs). Clock in/out at base tempo before tap mult/div. MIDI Reset restarts processor."
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Coffee Shop Pedals Cold Brew",
+  "displayName": "Cold Brew",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Coffee Shop Pedals",
+    "model": "Cold Brew",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = Off, 1–127 = On."
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Waveform",
+      "valueRange": {
+        "min": 1,
+        "max": 4,
+        "discreteValues": [
+          { "name": "Sine", "value": 1 },
+          { "name": "Triangle", "value": 2 },
+          { "name": "Random", "value": 3 },
+          { "name": "Tri-Chorus", "value": 4 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Lofi Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Lag",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Lofi Select",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Vinyl", "value": 0 },
+          { "name": "Tape", "value": 1 },
+          { "name": "Radio", "value": 2 },
+          { "name": "Aliaser", "value": 3 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 = default lofi tone; 1–127 = tone sweep."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Hold Depth",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Hold Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Hold Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Clock Listen",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Listen", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = don't listen; 1–127 = listen to MIDI clock."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Tap Div",
+      "valueRange": {
+        "min": 1,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Quarter", "value": 1 },
+          { "name": "Eighth", "value": 2 },
+          { "name": "Triplets", "value": 3 }
+        ]
+      },
+      "additionalInfo": "1 = quarter (green), 2 = eighth (yellow), 3 = triplets (red)."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 21,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0 = Live knobs (preset off). PC 1–3 = onboard presets (red/green/blue LED). PC 4–20 = MIDI-only presets (cyan); empty slots do nothing. Footswitches still cycle 1–3 when a MIDI preset is active."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Coffee Shop Pedals Cold Brew manual pp. 12–13. No CC10. Last used preset recalled on power-up."
+}

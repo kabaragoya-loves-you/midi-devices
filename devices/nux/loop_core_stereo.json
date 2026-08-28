@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "NuX Loop Core Stereo",
+  "displayName": "Loop Core",
+  "device": {
+    "displayName": "",
+    "manufacturer": "NuX",
+    "model": "Loop Core Stereo",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 40,
+      "name": "Track Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Up", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Track Dn",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Down", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Transport",
+      "valueRange": {
+        "min": 0,
+        "max": 6,
+        "discreteValues": [
+          { "name": "Play/Stop", "value": 0 },
+          { "name": "Rec", "value": 2 },
+          { "name": "Dub", "value": 3 },
+          { "name": "Undo", "value": 4 },
+          { "name": "Redo", "value": 5 },
+          { "name": "Clear", "value": 6 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Loop Lvl +",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Loop Lvl -",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Drum/Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Drum Play", "value": 0 },
+          { "name": "Tap Tempo", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Tempo +",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Tempo -",
+      "valueRange": { "min": 1, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Beat Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Switch", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Cycles 4/4, 3/4, Shuffle."
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Style +",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Up", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Style -",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Down", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Drum Lvl +",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Drum Lvl -",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Save/Delete",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Save", "value": 0 },
+          { "name": "Delete", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Save # +",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Up", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Save # -",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Down", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Bright +",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Up", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Bright -",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Down", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "REC Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Instant", "value": 0 },
+          { "name": "Detect", "value": 1 },
+          { "name": "Pre-beat", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "DUB Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Dub+Play", "value": 0 },
+          { "name": "Hit Twice", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "STOP Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 3,
+        "discreteValues": [
+          { "name": "Normal", "value": 0 },
+          { "name": "One Shot", "value": 1 },
+          { "name": "Fine Stop", "value": 2 },
+          { "name": "Fade Out", "value": 3 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelectMode": "none",
+    "additionalInfo": "99 phrase memories; CC on channels 1-16."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Nux MG-50Li",
+  "displayName": "MG-50Li",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Nux",
+    "model": "MG-50Li",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 297,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "150 factory + 147 user presets; no published CC implementation chart."
+}

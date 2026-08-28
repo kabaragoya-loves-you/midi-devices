@@ -1,0 +1,342 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Backline Engineering RiffBox II",
+  "displayName": "RiffBox II",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Backline Engineering",
+    "model": "RiffBox II",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Event Span",
+      "valueRange": {
+        "min": 2,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Match Events",
+      "valueRange": {
+        "min": 2,
+        "max": 6
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mem Bank 1",
+      "valueRange": {
+        "min": 1,
+        "max": 125
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Mem Bank 2",
+      "valueRange": {
+        "min": 1,
+        "max": 125
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Record Mode",
+      "valueRange": {
+        "min": 1,
+        "max": 7
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Play Mode",
+      "valueRange": {
+        "min": 1,
+        "max": 7
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Play Count",
+      "valueRange": {
+        "min": 1,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "LP Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Loop Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Clk Out En",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Clk N/L Loop",
+      "valueRange": {
+        "min": 2,
+        "max": 100
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Clk Offset",
+      "valueRange": {
+        "min": 0,
+        "max": 24
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Rec Toggle",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Toggle record start/stop/abort."
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "3btn Footswt",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Press 1",
+            "value": 1
+          },
+          {
+            "name": "Press 2",
+            "value": 2
+          },
+          {
+            "name": "Press 3",
+            "value": 3
+          }
+        ]
+      },
+      "additionalInfo": "Three-button footswitch emulation."
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Cmd 34",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Manual lists CC34 value 1; parameter name not given."
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "New Layer",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Undo Layer",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Undo layer recording."
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Lo Play Ev 1",
+      "valueRange": {
+        "min": 1,
+        "max": 100
+      },
+      "additionalInfo": "Low playback event 1-100."
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Lo Play Ev 2",
+      "valueRange": {
+        "min": 1,
+        "max": 100
+      },
+      "additionalInfo": "Low playback event 101-200."
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Hi Play Ev 1",
+      "valueRange": {
+        "min": 1,
+        "max": 100
+      },
+      "additionalInfo": "High playback event 1-100."
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Hi Play Ev 2",
+      "valueRange": {
+        "min": 1,
+        "max": 100
+      },
+      "additionalInfo": "High playback event 101-200."
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Shrink Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Reduce playback loop length."
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Expand Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Expand playback loop length."
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Save Preset",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 1
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Input Sens",
+      "valueRange": {
+        "min": 0,
+        "max": 9
+      }
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Active Screen",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 50,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "RiffBoxII User Manual MIDI Implementation table. 5-pin DIN MIDI IN/OUT/THRU."
+}

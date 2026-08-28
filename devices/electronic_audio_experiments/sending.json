@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Electronic Audio Experiments Sending",
+  "displayName": "Sending",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Electronic Audio Experiments",
+    "model": "Sending",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 12,
+      "name": "Color",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Filter",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Amount",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Level Trim",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Mix Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Crossfade",
+            "value": 0
+          },
+          {
+            "name": "Effect",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "0-63=crossfade, 64-127=effect only."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Ramp Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Chaos",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "LFO Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Sine",
+            "value": 21
+          },
+          {
+            "name": "Square",
+            "value": 64
+          },
+          {
+            "name": "Tri",
+            "value": 106
+          }
+        ]
+      },
+      "additionalInfo": "0-42=sine, 43-85=square, 86-127=triangle."
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Tap Div",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Tap divisions; see Sending V2 Manual Rev B Table 2."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Clk Divisor",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "Half",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Ign Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Value >63 registers tap."
+    },
+    {
+      "controlChangeNumber": 97,
+      "name": "FB Swell",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Swell",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Value >63 activates feedback swell."
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "Active",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Bypass Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Standard",
+            "value": 0
+          },
+          {
+            "name": "Trails",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 32,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_TS",
+  "x_midiChannel": 1,
+  "additionalInfo": "Sending V2 Manual Rev B Appendix A Table 2. TRS Tip Active MIDI."
+}

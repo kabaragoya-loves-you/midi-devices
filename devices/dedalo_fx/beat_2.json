@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Dedalo FX Beat 2",
+  "displayName": "Beat 2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Dedalo FX",
+    "model": "Beat 2",
+    "version": "2024"
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER",
+    "CLOCK",
+    "TRANSPORT_START",
+    "TRANSPORT_STOP",
+    "TRANSPORT_CONTINUE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none",
+    "additionalInfo": "16 pattern slots (PC 0–15). PC ≥16 remapped with AND (PC 16 = PC 0, etc.). Fixed MIDI ch 10 GM drum map; TRS MIDI/SYNC auto-detect."
+  },
+  "x_midiTrs": "BOTH",
+  "x_midiChannel": 1,
+  "additionalInfo": "Vendor confirms no CC parameter control. PC, notes (ch 10), clock, and transport only. Same MIDI behavior as Beat."
+}

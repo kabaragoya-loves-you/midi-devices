@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "G-Lab MWW-1 Wowee-Wah",
+  "displayName": "Wowee-Wah",
+  "device": {
+    "displayName": "",
+    "manufacturer": "G-Lab",
+    "model": "MWW-1 Wowee-Wah",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 86,
+      "name": "Set All",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      },
+      "additionalInfo": "Sets all tone switches per PC formula"
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Bass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Low",
+            "value": 0
+          },
+          {
+            "name": "High",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Deep",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Low",
+            "value": 0
+          },
+          {
+            "name": "High",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Q Factor",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Low",
+            "value": 0
+          },
+          {
+            "name": "High",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Volume",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Low",
+            "value": 0
+          },
+          {
+            "name": "High",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 16,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1-15 tone combos; PC 16 = all switches LOW"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Flashback 2 X4",
+  "displayName": "Flashback 2 X4",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Flashback 2 X4",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Subdivision",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Modifier 2 / Subdivision."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Delay Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Modifier 3 / Delay time."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Feedback",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Modifier 4 / Feedback."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Delay Lvl",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Modifier 1 / Delay level."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "MASH",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "MASH switch (active FX engine)."
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Loop Record",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper Record."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Loop Play",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper Play/Pause."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Loop Once",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper Play Once."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Loop Undo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper Undo/Redo."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Loop Clear",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Looper Stop+Clear."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Exp Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Expression pedal; jack must be unplugged for CC control."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Engaged",
+            "value": 0
+          },
+          {
+            "name": "Bypass",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Active FX engine bypass. CC 0-63=FX On, 64-127=FX Off."
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Tap tempo."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 7,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1=Bypass All, 2-4=Bank 1 A-C, 5-7=Bank 2 A-C. MIDI receive channel 6."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 6,
+  "additionalInfo": "5-pin DIN MIDI IN/THRU. MIDI Clock overrides Delay Time knob."
+}

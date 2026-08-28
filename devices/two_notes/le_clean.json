@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Two Notes Le Clean",
+  "displayName": "Le Clean",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Two Notes",
+    "model": "Le Clean",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1-5: Ch A, Ch B, Cold Fusion, Hot Fusion, Bypass. Default mapping; reassignable via MIDI Learn."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

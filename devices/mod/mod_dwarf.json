@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "MOD Dwarf",
+  "displayName": "MOD Dwarf",
+  "device": {
+    "displayName": "",
+    "manufacturer": "MOD",
+    "model": "Dwarf",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "Separate PC channels for pedalboards vs snapshots in device MIDI settings."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "No fixed incoming CC map; parameters use MIDI Learn per pedalboard. PC recalls pedalboards and/or snapshots per device settings."
+}

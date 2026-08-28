@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Source Audio C4 Synth",
+  "displayName": "C4 Synth",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Source Audio",
+    "model": "C4 Synth",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 93,
+      "name": "Remote Tap",
+      "additionalInfo": "Factory External Tap Tempo. Any value taps LFO rate (SA249 C4 Synth User Guide MIDI map).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Remote Expr",
+      "additionalInfo": "Factory External Expression Control. Parameter targets assigned in Neuro Editor.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "On/Off",
+      "additionalInfo": "Factory Engage/Bypass. Manual body: 0–63 bypass, 64–127 engage (table text says 0–64 / 65–127).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Engaged", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Recall Bypass",
+      "additionalInfo": "Factory Preset Recall (Off). CC value 0–127 selects preset (Neuro display 1–128); recalls bypassed. Prefer Program Change when available.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Recall Engage",
+      "additionalInfo": "Factory Preset Recall (On). CC value 0–127 selects preset (Neuro display 1–128); recalls engaged. Prefer Program Change when available.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Toggle Bypass",
+      "additionalInfo": "Factory Engage/Bypass Toggle. Any value toggles engage/bypass.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trigger", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Roland GR-20",
+  "displayName": "GR-20",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Roland",
+    "model": "GR-20",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 128,
+    "bankSelectMode": "CC0_CC32"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "GR-20 guitar synth; PC patch select. Limited realtime CC per Roland MIDI spec."
+}

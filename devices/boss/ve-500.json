@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "BOSS VE-500",
+  "displayName": "VE-500",
+  "device": {
+    "displayName": "",
+    "manufacturer": "BOSS",
+    "model": "VE-500",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bank Select",
+      "additionalInfo": "Bank Select MSB (CC0). Received LSB (CC32) ignored per VE-500 Parameter Guide. CC1-31 and CC64-95 are Assign-only (no fixed factory knob map). VE-500 MIDI Implementation Chart v1.00.",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

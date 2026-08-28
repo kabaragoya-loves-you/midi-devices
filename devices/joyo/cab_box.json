@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "JOYO CAB BOX",
+  "displayName": "CAB BOX",
+  "device": {
+    "displayName": "",
+    "manufacturer": "JOYO",
+    "model": "CAB BOX",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "128 tone store positions map 1:1 to MIDI program change. Long-press HOME 2s for MIDI channel."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

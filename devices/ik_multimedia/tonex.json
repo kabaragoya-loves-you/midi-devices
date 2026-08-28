@@ -1,0 +1,1301 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "IK Multimedia ToneX Pedal",
+  "displayName": "ToneX",
+  "device": {
+    "displayName": "",
+    "manufacturer": "IK Multimedia",
+    "model": "ToneX Pedal",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Patch Bank",
+      "valueRange": {
+        "min": 0,
+        "max": 1
+      },
+      "additionalInfo": "Bank 0 = presets 00A-42B; Bank 1 = presets 42C-49C."
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "DLY Position",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Pre Amp",
+            "value": 0
+          },
+          {
+            "name": "Post Amp",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "DLY Power",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "DLY Type",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "name": "Digital",
+            "value": 0
+          },
+          {
+            "name": "Tape",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Dig DLY Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Dig DLY Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Dig DLY Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Dig DLY Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "Ping Pong",
+            "value": 64
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Dig DLY Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tuner",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Preset On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Gate Position",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "First",
+            "value": 0
+          },
+          {
+            "name": "Post Amp",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Gate Power",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Gate Threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Gate Release",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Gate Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Comp Power",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Comp Threshold",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Comp Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Comp Attack",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Comp Position",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Bass",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Bass Hz",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Mid",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Mid Q",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Mid Hz",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Treble",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Treble Hz",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "EQ Position",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "MOD Position",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Pre Amp",
+            "value": 0
+          },
+          {
+            "name": "Post Amp",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "MOD Power",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "MOD Type",
+      "valueRange": {
+        "min": 0,
+        "max": 4,
+        "discreteValues": [
+          {
+            "name": "Chorus",
+            "value": 0
+          },
+          {
+            "name": "Tremolo",
+            "value": 1
+          },
+          {
+            "name": "Phaser",
+            "value": 2
+          },
+          {
+            "name": "Flanger",
+            "value": 3
+          },
+          {
+            "name": "Rotary",
+            "value": 4
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Chorus Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Chorus Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Chorus Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 37,
+      "name": "Chorus Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 38,
+      "name": "Tremolo Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 39,
+      "name": "Tremolo Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Tremolo Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Tremolo Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 42,
+      "name": "Tremolo Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Phaser Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Phaser Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Phaser Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Phaser Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Flanger Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Flanger Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Flanger Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Flanger Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Flanger Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Rotary Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Rotary Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Rotary Radius",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Rotary Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Rotary Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Spr1 Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "Spr1 PreDLY",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Spr1 Color",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Spr1 Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Spr2 Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Spr2 PreDLY",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Spr2 Color",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Spr2 Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Spr3 Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Spr3 PreDLY",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Spr3 Color",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Spr3 Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Room Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Room PreDLY",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Room Color",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Room Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Reverb Power",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Plate Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Plate PreDLY",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Plate Color",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Plate Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Spr4 Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Spr4 PreDLY",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Spr4 Color",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Spr4 Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "REV Position",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Post Amp",
+            "value": 0
+          },
+          {
+            "name": "Last",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "REV Type",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          {
+            "name": "Spring 1",
+            "value": 0
+          },
+          {
+            "name": "Spring 2",
+            "value": 1
+          },
+          {
+            "name": "Spring 3",
+            "value": 2
+          },
+          {
+            "name": "Spring 4",
+            "value": 3
+          },
+          {
+            "name": "Room",
+            "value": 4
+          },
+          {
+            "name": "Plate",
+            "value": 5
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Preset Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Preset Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "BPM",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Bank Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bank",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "Bank Up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bank",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Tape DLY Sync",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Tape DLY Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tape DLY Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Tape DLY Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Normal",
+            "value": 0
+          },
+          {
+            "name": "Ping Pong",
+            "value": 64
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Tape DLY Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Model Vol",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Model Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Presence",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "VIR Reso",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Mic 1 Type",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Cond",
+            "value": 0
+          },
+          {
+            "name": "Dyn",
+            "value": 1
+          },
+          {
+            "name": "RBN",
+            "value": 2
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Mic 1 X",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Mic 1 Z",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "Mic 2 Type",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Cond",
+            "value": 0
+          },
+          {
+            "name": "Dyn",
+            "value": 1
+          },
+          {
+            "name": "RBN",
+            "value": 2
+          }
+        ]
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "Mic 2 X",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "Mic 2 Z",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "Mic Blend",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "TONEX Pedal User Manual \u2014 MIDI specifications."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 150,
+    "bankSelectMode": "CC0"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

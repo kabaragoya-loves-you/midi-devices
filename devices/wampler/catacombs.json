@@ -1,0 +1,429 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Wampler Catacombs",
+  "displayName": "Catacombs",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Wampler",
+    "model": "Catacombs",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Delay State",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Reverb State",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Delay Prog",
+      "valueRange": {
+        "min": 0,
+        "max": 5,
+        "discreteValues": [
+          {
+            "name": "ANLG",
+            "value": 0
+          },
+          {
+            "name": "BBD",
+            "value": 1
+          },
+          {
+            "name": "FTE",
+            "value": 2
+          },
+          {
+            "name": "SPC",
+            "value": 3
+          },
+          {
+            "name": "TAPE",
+            "value": 4
+          },
+          {
+            "name": "DIGI",
+            "value": 5
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "DLY Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "0=20ms, 127=2000ms."
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "DLY Time Hi",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "DLY Time Lo",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "DLY Fdbk",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "DLY Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "DLY Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Rev Prog",
+      "valueRange": {
+        "min": 6,
+        "max": 10,
+        "discreteValues": [
+          {
+            "name": "Shimmer",
+            "value": 6
+          },
+          {
+            "name": "Plate",
+            "value": 7
+          },
+          {
+            "name": "Spring",
+            "value": 8
+          },
+          {
+            "name": "Room",
+            "value": 9
+          },
+          {
+            "name": "Hall",
+            "value": 10
+          }
+        ]
+      },
+      "additionalInfo": "Values 6-10 select program; else defaults to Hall."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Rev Shimmer",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Rev Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Rev Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Rev Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mod Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Mod Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Subdivision",
+      "valueRange": {
+        "min": 0,
+        "max": 14,
+        "discreteValues": [
+          {
+            "name": "Quarter",
+            "value": 0
+          },
+          {
+            "name": "Dot 8th",
+            "value": 1
+          },
+          {
+            "name": "Eighth",
+            "value": 2
+          },
+          {
+            "name": "16th",
+            "value": 3
+          },
+          {
+            "name": "Half",
+            "value": 4
+          },
+          {
+            "name": "Whole",
+            "value": 5
+          },
+          {
+            "name": "Dot Qtr",
+            "value": 6
+          },
+          {
+            "name": "Tri Qtr",
+            "value": 7
+          },
+          {
+            "name": "Dot 16",
+            "value": 8
+          },
+          {
+            "name": "Dot Half",
+            "value": 9
+          },
+          {
+            "name": "Dot Whole",
+            "value": 10
+          },
+          {
+            "name": "Tri 16",
+            "value": 11
+          },
+          {
+            "name": "Tri 8th",
+            "value": 12
+          },
+          {
+            "name": "Tri Half",
+            "value": 13
+          },
+          {
+            "name": "Tri Whole",
+            "value": 14
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 0
+          }
+        ]
+      },
+      "additionalInfo": "Catacombs Manual Nov 2024 — val=0 triggers tap."
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Preset Dec",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Decrement preset; val=0 reloads current."
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Preset Inc",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Preset",
+            "value": 1
+          }
+        ]
+      },
+      "additionalInfo": "Increment preset; val=0 reloads current."
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "FS Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap Tempo",
+            "value": 0
+          },
+          {
+            "name": "Preset Inc",
+            "value": 1
+          },
+          {
+            "name": "Rev Sep",
+            "value": 2
+          }
+        ]
+      },
+      "additionalInfo": "0 or 3-127=tap tempo; 1=preset inc; 2=reverb separate bypass."
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "name": "Parallel",
+            "value": 0
+          },
+          {
+            "name": "Ser D->R",
+            "value": 1
+          },
+          {
+            "name": "Ser R->D",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 99,
+      "name": "MIDI Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Catacombs Manual Nov 2024 — MIDI CC Messages."
+}

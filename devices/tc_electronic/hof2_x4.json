@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "TC Electronic Hall Of Fame 2 X4",
+  "displayName": "HOF2 X4",
+  "device": {
+    "displayName": "",
+    "manufacturer": "TC Electronic",
+    "model": "Hall Of Fame 2 X4",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Decay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Modifier 3 / Decay."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Pre Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Modifier 4 / Pre Delay."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Modifier 1 / Tone."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Modifier 2 / Level."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "MASH",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Trigger",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "MASH switch (active FX engine)."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Exp Pedal",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Expression pedal; jack must be unplugged for CC control."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Engaged",
+            "value": 0
+          },
+          {
+            "name": "Bypass",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Active FX engine bypass. CC 0-63=FX On, 64-127=FX Off."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 9,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1=Bypass All, 2-5=Bank 1 presets A-D, 6-9=Bank 2 presets A-D. MIDI receive channel 5."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 5,
+  "additionalInfo": "5-pin DIN MIDI IN/THRU. PC loads preset and un-bypasses. Modifier knobs may map additional parameters via TonePrint."
+}

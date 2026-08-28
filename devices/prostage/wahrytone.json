@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Prostage WAHryTone",
+  "displayName": "WAHryTone",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Prostage",
+    "model": "WAHryTone",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "PITCH_BEND"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 7,
+      "name": "Wah",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Wah position in Wah modes. Prostage Hi Res pitch bend also recognized. Not all modes use this for sound.",
+      "x_variants": [
+        {
+          "constraint": { "cc": 80, "op": "==", "value": 5 },
+          "name": "Volume",
+          "additionalInfo": "Volume mode: expression / VCA level."
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Tap",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Factory Tap CC; remappable via SysEx F0 00 20 75 01 75 XX F7. No MIDI Clock sync."
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Recall Pos",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Effect position applied at preset recall (when Update Pos is on)."
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Dyn Invert",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Dynamic Wah invert direction."
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Update Pos",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Preset Recall updates Position."
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Curve",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Linear", "value": 0 },
+          { "name": "Log", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "True Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Wah/VCA",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Wah", "value": 0 },
+          { "name": "VCA", "value": 127 }
+        ]
+      },
+      "additionalInfo": "WahWah / VCA operating mode toggle."
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Wah Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Contour",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Contour Boost enable."
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Auto Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Op Mode",
+      "x_mandatory": true,
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          { "name": "Wah", "value": 0 },
+          { "name": "Wah+Contour", "value": 1 },
+          { "name": "Contour", "value": 2 },
+          { "name": "Treble Boost", "value": 3 },
+          { "name": "Tremolo", "value": 4 },
+          { "name": "Volume", "value": 5 },
+          { "name": "True Bypass", "value": 6 },
+          { "name": "Buf Bypass", "value": 7 },
+          { "name": "Tuner", "value": 8 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Time Fine",
+      "valueRange": { "min": 0, "max": 99 },
+      "additionalInfo": "Auto Wah / Tremolo time fine (1/1000 s). If fine and coarse are both 0, time is kept across preset change."
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Time Coarse",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Auto Wah / Tremolo time coarse (1/10 s)."
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Dyn Thresh",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Dynamic Wah Threshold."
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Dyn Sense",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Dynamic Wah Sense."
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Dyn Decay",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Dynamic Wah Decay."
+    },
+    {
+      "controlChangeNumber": 88,
+      "name": "Auto Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 7,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Sine", "value": 1 },
+          { "name": "Peak", "value": 2 },
+          { "name": "Saw Up", "value": 3 },
+          { "name": "Saw Down", "value": 4 },
+          { "name": "Square", "value": 5 },
+          { "name": "Dynamic", "value": 6 },
+          { "name": "Frequency", "value": 7 }
+        ]
+      },
+      "additionalInfo": "§7.1 table says 0–6; MIDI chart and mode list include 7 = Frequency."
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Range",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Wah: 180%…0%. Volume: −100 dB…0 dB."
+    },
+    {
+      "controlChangeNumber": 90,
+      "name": "In Gain",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "WahWah Input Gain −15 dB … +4 dB."
+    },
+    {
+      "controlChangeNumber": 91,
+      "name": "Q Factor",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Wide … Steep."
+    },
+    {
+      "controlChangeNumber": 92,
+      "name": "Coil Rating",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Flat … Sharp."
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Wah Freq",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "162/486 Hz … 2.2/6.6 kHz."
+    },
+    {
+      "controlChangeNumber": 94,
+      "name": "Contour Freq",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Contour Boost Frequency 450 Hz … 3.4 kHz."
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Out Gain",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Output gain 0 dB … +25 dB."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0–127 = 128 presets. Store/name/delete via SysEx (device ID 01), not CC."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Prostage WAHryTone manual §7. 5-pin DIN MIDI In + Out/Thru. Factory Omni; channel via SysEx. MIDI Clock not recognized (impl chart No/No) — tempo via Tap CC14 or Time Fine/Coarse. Pitch bend = Hi Res expression. Different product from older Remote WahWah."
+}

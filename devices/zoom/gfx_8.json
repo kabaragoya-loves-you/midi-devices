@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Zoom GFX-8",
+  "displayName": "GFX-8",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Zoom",
+    "model": "GFX-8",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 240,
+    "bankSelectMode": "CC0",
+    "additionalInfo": "240 patches; CC0/32 bank. CC7 volume; CC64-95 effect on/off per impl chart (CD-ROM detail)."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1
+}

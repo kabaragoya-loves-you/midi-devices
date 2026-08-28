@@ -1,0 +1,324 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Electro-Harmonix POG III",
+  "displayName": "POG III",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Electro-Harmonix",
+    "model": "POG III",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "NOTE_NUMBER",
+    "VELOCITY_NOTE_ON",
+    "PITCH_BEND"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Detune",
+      "additionalInfo": "Mod wheel controls Detune slider",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Exp Coarse",
+      "additionalInfo": "Expression MSB; pair with CC 36 for 14-bit",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Master Vol",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Input Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Exp Fine",
+      "additionalInfo": "Expression LSB; pair with CC 4",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Left Out",
+      "additionalInfo": "0=Disable, 1-127=Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Right Out",
+      "additionalInfo": "0=Disable, 1-127=Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Direct Out",
+      "additionalInfo": "0=Disable, 1-127=Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "EXP Enable",
+      "additionalInfo": "0=Disable, 1-127=Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Focus",
+      "additionalInfo": "0=Disable, 1-127=Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Dry Attack",
+      "additionalInfo": "0=Disable, 1-127=Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Dry Filter",
+      "additionalInfo": "0=Disable, 1-127=Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Dry Detune",
+      "additionalInfo": "0=Disable, 1-127=Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Home Screen",
+      "additionalInfo": "Home view select 0-4",
+      "valueRange": { "min": 0, "max": 4 }
+    },
+    {
+      "controlChangeNumber": 79,
+      "name": "Effect",
+      "additionalInfo": "0=Bypass, 1-127=Effect",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Effect", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Save Preset",
+      "additionalInfo": "Saves to preset slot data value + 1",
+      "valueRange": { "min": 0, "max": 99 }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Load+Effect",
+      "additionalInfo": "Load preset data+1 with effect on",
+      "valueRange": { "min": 0, "max": 99 }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Load+Bypass",
+      "additionalInfo": "Load preset data+1 in bypass",
+      "valueRange": { "min": 0, "max": 99 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Dry Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "-2 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "-1 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "+5th Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "+1 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "+2 Pan",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Q",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "Env",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Spread",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Dry Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 112,
+      "name": "-2 Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 113,
+      "name": "-1 Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 114,
+      "name": "+5th Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 115,
+      "name": "+1 Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 116,
+      "name": "+2 Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 117,
+      "name": "Attack",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 118,
+      "name": "Filter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "Detune",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 122,
+      "name": "Local Ctrl",
+      "additionalInfo": "Must be sent on channel 16; 0=Off, 1=On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 124,
+      "name": "Omni Off",
+      "additionalInfo": "Must be sent on channel 16",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Enable", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 125,
+      "name": "Omni On",
+      "additionalInfo": "Must be sent on channel 16",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Enable", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 100,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

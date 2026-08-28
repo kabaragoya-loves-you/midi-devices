@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Positive Grid BIAS Modulation",
+  "displayName": "BIAS Mod",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Positive Grid",
+    "model": "BIAS Modulation",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 10,
+      "name": "Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Depth",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Intensity",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Rate",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 40,
+      "name": "Tweak 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 41,
+      "name": "Tweak 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 60,
+      "name": "BPM Sync",
+      "additionalInfo": "0=Off; 1=On",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "LFO",
+      "valueRange": {
+        "min": 0,
+        "max": 3
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "FS A",
+      "additionalInfo": "0=Up; 127=Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Up", "value": 0 },
+          { "name": "Down", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "FS B",
+      "additionalInfo": "0=Up; 127=Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Up", "value": 0 },
+          { "name": "Down", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "FS C",
+      "additionalInfo": "0=Up; 127=Down",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Up", "value": 0 },
+          { "name": "Down", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Tap Tempo",
+      "additionalInfo": "0=First step; 127=Second step",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Step 1", "value": 0 },
+          { "name": "Step 2", "value": 127 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 20,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-19 = Presets 1-20 per manual."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN MIDI IN/THRU. Default channel 1; channel 1-16 or Omni via BIAS Pedal app. MIDI clock syncs BPM (CC60 enables BPM sync)."
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "RJM Music Full English",
+  "displayName": "Full English",
+  "device": {
+    "displayName": "",
+    "manufacturer": "RJM Music",
+    "model": "Full English",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 4,
+      "name": "Exp Pedal",
+      "additionalInfo": "Default expression pedal CC; maps to user-defined heel/toe knob targets.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "additionalInfo": "0=0% volume, 127=100% volume.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Exp Volume",
+      "additionalInfo": "0=0% volume, 127=current volume knob setting.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Drive",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Mid",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Treble",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Active",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Active", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Drive Mode",
+      "additionalInfo": "Manual MIDI table copies Overture mode labels; six bands map to Push/Blues/Royal/Imperial/Shred/Stack in order.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Push", "value": 10 },
+          { "name": "Blues", "value": 31 },
+          { "name": "Royal", "value": 52 },
+          { "name": "Imperial", "value": 74 },
+          { "name": "Shred", "value": 95 },
+          { "name": "Stack", "value": 116 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Bank",
+      "additionalInfo": "Selects front-panel preset bank (presets 1-4 vs 5-8).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Bank 1", "value": 0 },
+          { "name": "Bank 2", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Preset -",
+      "additionalInfo": "Any value steps to previous preset.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Prev", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Preset +",
+      "additionalInfo": "Any value steps to next preset.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Next", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 100,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0-99 recall presets 1-100. PC 127 bypasses; next PC 0-99 re-activates."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "5-pin DIN and USB-C MIDI. Default CC map; reassignable in RJM editor. Default MIDI channel 1."
+}

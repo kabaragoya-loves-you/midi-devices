@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "VTR Effects Helios Overdrive",
+  "displayName": "Helios",
+  "device": {
+    "displayName": "",
+    "manufacturer": "VTR Effects",
+    "model": "Helios Overdrive",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "127 ON / 0 OFF."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Clipping",
+      "valueRange": {
+        "min": 0,
+        "max": 15
+      },
+      "additionalInfo": "Clipping type select (0–15)."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Level",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 99,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1–99 recall presets 1–99."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "VTR Effects Helios MIDI table. All VTR Effects MIDI TRS is Type B."
+}

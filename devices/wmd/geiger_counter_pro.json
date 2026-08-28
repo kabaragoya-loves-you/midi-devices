@@ -1,0 +1,279 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "WMD Geiger Counter Pro",
+  "displayName": "Geiger Pro",
+  "device": {
+    "displayName": "",
+    "manufacturer": "WMD",
+    "model": "Geiger Counter Pro",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 7,
+      "name": "Level",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Gain",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Tone",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Filter MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Bit Depth MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Sample MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Bank MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Table MSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Settings",
+      "valueRange": {
+        "min": 1,
+        "max": 88,
+        "discreteValues": [
+          {
+            "name": "Bypass FX",
+            "value": 1
+          },
+          {
+            "name": "Enable FX",
+            "value": 2
+          },
+          {
+            "name": "Tone Off",
+            "value": 11
+          },
+          {
+            "name": "Tone On",
+            "value": 12
+          },
+          {
+            "name": "Dry On",
+            "value": 17
+          },
+          {
+            "name": "Dry Off",
+            "value": 18
+          },
+          {
+            "name": "SR Normal",
+            "value": 21
+          },
+          {
+            "name": "SR Fine",
+            "value": 22
+          },
+          {
+            "name": "Bits Post WT",
+            "value": 31
+          },
+          {
+            "name": "Bits Pre WT",
+            "value": 32
+          },
+          {
+            "name": "Bits Mode",
+            "value": 33
+          },
+          {
+            "name": "Mask Mode",
+            "value": 34
+          },
+          {
+            "name": "Full Bits",
+            "value": 35
+          },
+          {
+            "name": "Morph Off",
+            "value": 41
+          },
+          {
+            "name": "Morph On",
+            "value": 42
+          },
+          {
+            "name": "Randomize",
+            "value": 50
+          },
+          {
+            "name": "Save Preset",
+            "value": 60
+          },
+          {
+            "name": "CV1 None",
+            "value": 70
+          },
+          {
+            "name": "CV1 Gain",
+            "value": 71
+          },
+          {
+            "name": "CV1 Tone",
+            "value": 72
+          },
+          {
+            "name": "CV1 Samples",
+            "value": 73
+          },
+          {
+            "name": "CV1 Bits",
+            "value": 74
+          },
+          {
+            "name": "CV1 Bank",
+            "value": 75
+          },
+          {
+            "name": "CV1 Table",
+            "value": 76
+          },
+          {
+            "name": "CV1 Blend",
+            "value": 77
+          },
+          {
+            "name": "CV1 Filter",
+            "value": 78
+          },
+          {
+            "name": "CV2 None",
+            "value": 80
+          },
+          {
+            "name": "CV2 Gain",
+            "value": 81
+          },
+          {
+            "name": "CV2 Tone",
+            "value": 82
+          },
+          {
+            "name": "CV2 Samples",
+            "value": 83
+          },
+          {
+            "name": "CV2 Bits",
+            "value": 84
+          },
+          {
+            "name": "CV2 Bank",
+            "value": 85
+          },
+          {
+            "name": "CV2 Table",
+            "value": 86
+          },
+          {
+            "name": "CV2 Blend",
+            "value": 87
+          },
+          {
+            "name": "CV2 Filter",
+            "value": 88
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "Filter LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Bit Depth LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Sample LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Table LSB",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 16,
+    "bankSelectMode": "none"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "VTR Effects Venator Drive",
+  "displayName": "Venator",
+  "device": {
+    "displayName": "",
+    "manufacturer": "VTR Effects",
+    "model": "Venator Drive",
+    "version": "2.0.0"
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "≥64 ON / <64 OFF. CC overrides knob until the physical control is moved."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Clipping",
+      "valueRange": {
+        "min": 1,
+        "max": 11,
+        "discreteValues": [
+          { "name": "1", "value": 1 },
+          { "name": "2", "value": 2 },
+          { "name": "3", "value": 3 },
+          { "name": "4", "value": 4 },
+          { "name": "5", "value": 5 },
+          { "name": "6", "value": 6 },
+          { "name": "7", "value": 7 },
+          { "name": "8", "value": 8 },
+          { "name": "9", "value": 9 },
+          { "name": "10", "value": 10 },
+          { "name": "11", "value": 11 }
+        ]
+      },
+      "additionalInfo": "Out-of-range values fall back to mode 1."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Level",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Bass",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 15,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0 = Live mode (knobs). PC 1–7 = Bank 1 presets 1–7. PC 8–14 = Bank 2 presets 1–7. PC ≥15 ignored."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 1,
+  "additionalInfo": "Firmware V2.0.0 MIDI table. All VTR Effects MIDI TRS is Type B (P2). Also USB Type-B for USB-MIDI / VTRStudio. Default boot: bypassed, bank 1, live mode, clipping 1. Start mode changeable to last preset via VTRStudio."
+}

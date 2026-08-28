@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Line 6 POD XT Live",
+  "displayName": "POD XT Live",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Line 6",
+    "model": "POD XT Live",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [
+    "PROGRAM_CHANGE"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Tweak 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Wah Pos",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Vol Pedal",
+      "additionalInfo": "Realtime; not saved in channel. PODxt Live Manual Rev C Appendix C PODxt MIDI Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Gate",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Stomp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Comp",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Delay",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Reverb",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Wah",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Mod",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Tap Tempo",
+      "additionalInfo": "64-127 = tap. PODxt Live Manual Rev C Appendix C PODxt MIDI Controls.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Tap",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 69,
+      "name": "Tuner",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Amp Switch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Amp On/Off",
+            "value": 0
+          },
+          {
+            "name": "Comp On/Off",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live only. PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Amp Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Bypass",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "PODxt Live Manual Rev C Appendix C PODxt MIDI Controls."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "128 channel memories (32 banks x ABCD); PC 0 = 1A per Appendix B."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Subset of Appendix C RX CCs only; full amp/FX parameter map is in Line 6 MIDI CC Reference / Appendix C."
+}

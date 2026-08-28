@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Coffee Shop Pedals London Fog",
+  "displayName": "London Fog",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Coffee Shop Pedals",
+    "model": "London Fog",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = Off, >0 = On."
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "Program",
+      "valueRange": {
+        "min": 1,
+        "max": 4,
+        "discreteValues": [
+          { "name": "New", "value": 1 },
+          { "name": "Old", "value": 2 },
+          { "name": "Vintage", "value": 3 },
+          { "name": "Dual", "value": 4 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Control",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Repeats",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Play Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Direction",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "Forward", "value": 0 },
+          { "name": "Reverse", "value": 1 },
+          { "name": "Both", "value": 2 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 8,
+      "name": "Bypass Type",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "DSP", "value": 0 },
+          { "name": "True", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = DSP bypass, >0 = true bypass."
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Global Time",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Global", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = not global, >0 = global."
+    },
+    {
+      "controlChangeNumber": 10,
+      "name": "Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Trails", "value": 0 },
+          { "name": "No Trails", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = trails, >0 = no trails."
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Bend Speed",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Bend Timer",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Speed Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Smooth", "value": 0 },
+          { "name": "Stepped", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Playback speed mode. 0 = smooth, >0 = stepped."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Clock Listen",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Listen", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = don't listen, >0 = listen. Syncs to 0xF8 clock without requiring start/stop."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Tap Div",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          { "name": "1/4", "value": 0 },
+          { "name": "Dot 1/8", "value": 1 },
+          { "name": "1/8", "value": 2 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 21,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0 = Live knobs (preset off). PC 1–3 = onboard (red/green/blue). PC 4–20 = MIDI-only (light blue); empty slots do nothing. Save MIDI presets: hold both footswitches 3s, then send PC 4–20."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Coffee Shop Pedals London Fog manual pp. 13–14. TYPE_A same as Cold Brew / Portafilter siblings."
+}

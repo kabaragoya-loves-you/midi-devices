@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "G-Lab SD-1 Smooth Delay",
+  "displayName": "SD-1 Delay",
+  "device": {
+    "displayName": "",
+    "manufacturer": "G-Lab",
+    "model": "SD-1 Smooth Delay",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 80,
+      "name": "Engage",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Respects HARD/SOFT OFF MODE switch"
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Delay Time",
+      "valueRange": {
+        "min": 4,
+        "max": 127
+      },
+      "additionalInfo": "ms = value x 10 + 10; 0/127 alternately = tap tempo"
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1-4 preset types; PC 5-128 user presets"
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

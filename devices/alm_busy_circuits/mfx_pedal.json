@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "ALM Busy Circuits MFX Pedal",
+  "displayName": "MFX Pedal",
+  "device": {
+    "displayName": "",
+    "manufacturer": "ALM Busy Circuits",
+    "model": "MFX Pedal",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "MIDI CC 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Assignable to effect parameter via Utility program"
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "MIDI CC 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Assignable to effect parameter via Utility program"
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "MIDI CC 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Assignable to effect parameter via Utility program"
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "MIDI CC 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      },
+      "additionalInfo": "Assignable to effect parameter via Utility program"
+    },
+    {
+      "controlChangeNumber": 70,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "Firmware v113+: PC switches user presets. CC 1-4 map to assigned parameters per program."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1
+}

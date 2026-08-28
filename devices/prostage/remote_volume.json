@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Prostage Remote Volume",
+  "displayName": "Remote Volume",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Prostage",
+    "model": "Remote Volume",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "PITCH_BEND"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 7,
+      "name": "Volume",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Expression pedal / Initial Position. Prostage foot controllers can use Hi Res pitch bend instead for higher resolution."
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Keep Init",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Do Not Change Initial Position — keep volume from previous preset on PC recall."
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Curve",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Linear", "value": 0 },
+          { "name": "Log", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Active", "value": 0 },
+          { "name": "Bypassed", "value": 127 }
+        ]
+      },
+      "additionalInfo": "True bypass. 0 = Active, 127 = Bypassed."
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Lowest",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Heel-down floor: −100 dB … 0 dB."
+    },
+    {
+      "controlChangeNumber": 95,
+      "name": "Out Gain",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Output gain 0 dB … +31 dB."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0–127 = 128 presets. Store via SysEx (F0 00 20 75 00 7F [XX] F7), not CC."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Prostage Remote Volume (VCA) manual §6. 5-pin DIN MIDI In + Out/Thru (Thru by default; Out for System Manager dump). Factory Omni; channel via SysEx F0 00 20 75 00 70 XY F7. Pitch bend = Hi Res volume (recognized per MIDI implementation chart)."
+}

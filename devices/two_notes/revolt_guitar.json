@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Two Notes ReVolt Guitar",
+  "displayName": "ReVolt Guitar",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Two Notes",
+    "model": "ReVolt Guitar",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 14,
+      "name": "FX Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Default CC14; user-assignable in setup."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Boost",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          {
+            "name": "Off",
+            "value": 0
+          },
+          {
+            "name": "On",
+            "value": 127
+          }
+        ]
+      },
+      "additionalInfo": "Default CC15; user-assignable in setup."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 7,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC base + offsets per channel/boost/bypass; MIDI Learn assigns PC numbers."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "ReVolt Guitar User Manual — MIDI setup; CC numbers are configurable."
+}

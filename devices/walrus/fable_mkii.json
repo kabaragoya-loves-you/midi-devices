@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Walrus Audio Fable MkII",
+  "displayName": "Fable MkII",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Walrus Audio",
+    "model": "Fable MkII",
+    "version": ""
+  },
+  "receives": [
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 9,
+      "name": "Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 4
+      },
+      "additionalInfo": "Clock drives Time 100–1000 ms in modes 1–3 and 5 (CC 0–4 map). Mode 4: clock warps Time via sample-rate stretch."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Feedback",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Regen",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Mod",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "X",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Time",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Tone",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Width",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Mod Rate",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Mod Shape",
+      "valueRange": {
+        "min": 0,
+        "max": 2
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Shift -/+",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Ramp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Expr Dest",
+      "valueRange": {
+        "min": 0,
+        "max": 12,
+        "discreteValues": [
+          { "name": "Feedback", "value": 0 },
+          { "name": "Regen", "value": 1 },
+          { "name": "Mod", "value": 2 },
+          { "name": "Mix", "value": 3 },
+          { "name": "X", "value": 4 },
+          { "name": "Time", "value": 5 },
+          { "name": "Tone", "value": 6 },
+          { "name": "Width", "value": 7 },
+          { "name": "Mod Rate", "value": 8 },
+          { "name": "Mod Shape", "value": 9 },
+          { "name": "-/+ Shift", "value": 10 },
+          { "name": "Shift Ramp", "value": 11 },
+          { "name": "Ext Tap", "value": 12 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          { "name": "Bypass", "value": 0 },
+          { "name": "Active", "value": 1 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Tap Enable",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Enable Tap Tempo."
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Ign Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Follow", "value": 0 },
+          { "name": "Ignore", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0 = follow clock; 1–127 = ignore MIDI clock."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "No Program Change / preset map published yet — awaiting vendor confirmation."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Walrus Fable MkII MIDI page (same CC map as Lore MkII). Hold Tap/Shift at power-on to learn channel. CLOCK drives Time (and Mode 4 sample-rate warp). Preset/PC support unconfirmed."
+}

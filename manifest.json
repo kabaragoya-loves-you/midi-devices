@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-28T00:14:28Z",
-  "count": 623,
+  "generatedAt": "2026-10-14T04:04:55Z",
+  "count": 627,
   "devices": [
     {
       "slug": "3_degrees_audio.bygones_v3@0",
@@ -1722,6 +1722,29 @@
         "count": 122,
         "bankSelectMode": "none",
         "additionalInfo": "122 presets; CC map from ChaseBlissEditor cb_pedal_definitions.py (Gravitas-family layout)."
+      }
+    },
+    {
+      "slug": "chase_bliss.bad_mood@1",
+      "vendor": "Chase Bliss",
+      "product": "BAD MOOD",
+      "version": "1",
+      "path": "devices/chase_bliss/bad_mood.json",
+      "sha256": "91ff0939b8f1f54cee7f7d8199a329226a5d2a988c1369880fa9689bef901b5b",
+      "size": 24615,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [],
+      "ccCount": 62,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 122,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC 0 = Live. PC 1–122 presets (slot 1 = right panel toggle, slot 2 = left). Save: hold both footswitches + PC. No factory presets beyond slots 1–2."
       }
     },
     {
@@ -6639,6 +6662,28 @@
         "count": 10,
         "bankSelectMode": "none",
         "additionalInfo": "MIDI PC preset recall; assign preset number via SET button."
+      }
+    },
+    {
+      "slug": "mentha_works.monk_echo@0",
+      "vendor": "Mentha Works",
+      "product": "Monk Echo",
+      "version": "0",
+      "path": "devices/mentha_works/monk_echo.json",
+      "sha256": "4e95e73cb37e8d91ff77b4a060ddd15adbedc57a5083527e4d98527992448918",
+      "size": 8505,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": ["CLOCK"],
+      "ccCount": 35,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 100,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC 1–100 recall presets and activate (exit bypass). PC 101 = start save; next PC 1–100 writes that slot. PC 111–118 toggle LED buttons 1–8. PC 121 bypass on; PC 122 activate; PC 123 toggle bypass."
       }
     },
     {
@@ -12085,6 +12130,44 @@
         "indexBase": 0,
         "count": 128,
         "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "walrus.fable_mkii@0",
+      "vendor": "Walrus Audio",
+      "product": "Fable MkII",
+      "version": "0",
+      "path": "devices/walrus/fable_mkii.json",
+      "sha256": "a5ed9246793fb365452893457b8cba9b04cb635ad5f755ae7943d0a189c36270",
+      "size": 4266,
+      "receives": ["CLOCK"],
+      "transmits": [],
+      "ccCount": 17,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 0,
+        "bankSelectMode": "none",
+        "additionalInfo": "No Program Change / preset map published yet — awaiting vendor confirmation."
+      }
+    },
+    {
+      "slug": "walrus.lore_mkii@0",
+      "vendor": "Walrus Audio",
+      "product": "Lore MkII",
+      "version": "0",
+      "path": "devices/walrus/lore_mkii.json",
+      "sha256": "a9d95a1ea153ea4f77fbbe80cd974b0c50652a94aaf93192b329650166d7ca2a",
+      "size": 4235,
+      "receives": ["CLOCK"],
+      "transmits": [],
+      "ccCount": 17,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 0,
+        "bankSelectMode": "none",
+        "additionalInfo": "No Program Change / preset map published yet — awaiting vendor confirmation."
       }
     },
     {

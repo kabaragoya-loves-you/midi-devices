@@ -1,0 +1,301 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Mentha Works Monk Echo",
+  "displayName": "Monk Echo",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Mentha Works",
+    "model": "Monk Echo",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [
+    "CLOCK"
+  ],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 1,
+      "name": "Macro MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC33 LSB. MSB alone is fine for Storm Summoner."
+    },
+    {
+      "controlChangeNumber": 2,
+      "name": "High-pass MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC34 LSB."
+    },
+    {
+      "controlChangeNumber": 3,
+      "name": "Low-pass MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC35 LSB."
+    },
+    {
+      "controlChangeNumber": 4,
+      "name": "Delay Width",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Delay width MSB. 14-bit with CC36 LSB."
+    },
+    {
+      "controlChangeNumber": 5,
+      "name": "Subdivisions",
+      "valueRange": { "min": 1, "max": 18 }
+    },
+    {
+      "controlChangeNumber": 6,
+      "name": "Macro Ramp",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Knob 1 MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC43 LSB."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Knob 2 MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC44 LSB."
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Knob 3 MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC45 LSB."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Knob 4 MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC46 LSB."
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Knob 5 MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC47 LSB."
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Knob 6 MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC48 LSB."
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Knob 7 MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC49 LSB."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Knob 8 MSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC50 LSB."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Button 1",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–64 Off; 65–127 On."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Button 2",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–64 Off; 65–127 On."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Button 3",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–64 Off; 65–127 On."
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Button 4",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–64 Off; 65–127 On."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Button 5",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–64 Off; 65–127 On."
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Button 6",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–64 Off; 65–127 On."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Button 7",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–64 Off; 65–127 On."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Button 8",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–64 Off; 65–127 On."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Active", "value": 0 },
+          { "name": "Bypassed", "value": 127 }
+        ]
+      },
+      "additionalInfo": "0–64 Active (bypass off); 65–127 Bypassed. Matches PC 122 / 121."
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Macro LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC1 MSB."
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "High-pass LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC2 MSB."
+    },
+    {
+      "controlChangeNumber": 35,
+      "name": "Low-pass LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC3 MSB."
+    },
+    {
+      "controlChangeNumber": 36,
+      "name": "Dly Width LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC4 MSB."
+    },
+    {
+      "controlChangeNumber": 43,
+      "name": "Knob 1 LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC11 MSB."
+    },
+    {
+      "controlChangeNumber": 44,
+      "name": "Knob 2 LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC12 MSB."
+    },
+    {
+      "controlChangeNumber": 45,
+      "name": "Knob 3 LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC13 MSB."
+    },
+    {
+      "controlChangeNumber": 46,
+      "name": "Knob 4 LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC14 MSB."
+    },
+    {
+      "controlChangeNumber": 47,
+      "name": "Knob 5 LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC15 MSB."
+    },
+    {
+      "controlChangeNumber": 48,
+      "name": "Knob 6 LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC16 MSB."
+    },
+    {
+      "controlChangeNumber": 49,
+      "name": "Knob 7 LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC17 MSB."
+    },
+    {
+      "controlChangeNumber": 50,
+      "name": "Knob 8 LSB",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "14-bit with CC18 MSB."
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 100,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1–100 recall presets and activate (exit bypass). PC 101 = start save; next PC 1–100 writes that slot. PC 111–118 toggle LED buttons 1–8. PC 121 bypass on; PC 122 activate; PC 123 toggle bypass."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Mentha Works Monk Echo MIDI map. DIN-5 IN/OUT classified TYPE_A (Storm Summoner convention). MIDI clock 24 PPQN syncs delay, reverb pre-delay, and pitch grains; can TX clock. Thru / Out / Merge routing and channel are system settings. USB-C MIDI coming soon."
+}

@@ -1,0 +1,1002 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "1",
+  "title": "Chase Bliss BAD MOOD",
+  "displayName": "BAD MOOD",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Chase Bliss",
+    "model": "BAD MOOD",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK",
+    "NOTE_NUMBER"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 0,
+      "name": "Pitch Bend",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 1,
+      "name": "Mod Wheel",
+      "additionalInfo": "Synth mode modulation",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Time",
+      "additionalInfo": "Continuous by default (incl. CC31=1 Loop>Wet, where Time sets overall micro-loop length). Synced Time chart when Wet>Loop (CC31=3) or when Storm Summoner is generating MIDI clock (Internal/Sync).",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 31, "op": ">=", "value": 3 },
+          "additionalInfo": "Wet>Loop: rhythmic delay subdivisions for the Wet channel (Synced Time chart).",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 0, "name": "1/32 Note" },
+              { "value": 13, "name": "1/16 Note" },
+              { "value": 37, "name": "1/8 Triplet" },
+              { "value": 62, "name": "1/8 Note" },
+              { "value": 85, "name": "Dotted 1/8" },
+              { "value": 111, "name": "1/4 Note" }
+            ]
+          }
+        },
+        {
+          "constraint": { "clock": true },
+          "additionalInfo": "Generated MIDI clock (Internal/Sync): same Synced Time chart as Wet>Loop.",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 0, "name": "1/32 Note" },
+              { "value": 13, "name": "1/16 Note" },
+              { "value": 37, "name": "1/8 Triplet" },
+              { "value": 62, "name": "1/8 Note" },
+              { "value": 85, "name": "Dotted 1/8" },
+              { "value": 111, "name": "1/4 Note" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Mix",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Length",
+      "additionalInfo": "Continuous unless Loop>Wet sync (CC31=1) or Storm Summoner is generating MIDI clock (Internal/Sync), where Tape Mode subdivision multipliers apply.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 31, "op": "==", "value": 0 },
+          "additionalInfo": "Loop>Wet: Length sets subdivisions of the micro-loop (Tape Mode subdivision chart).",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 0, "name": "x 1/32" },
+              { "value": 13, "name": "x 1/16" },
+              { "value": 37, "name": "x 1/8" },
+              { "value": 62, "name": "x 1/4" },
+              { "value": 85, "name": "x 1/2" },
+              { "value": 111, "name": "x 1" }
+            ]
+          }
+        },
+        {
+          "constraint": { "clock": true },
+          "additionalInfo": "Generated MIDI clock (Internal/Sync): same Tape Mode subdivision chart as Loop>Wet.",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 0, "name": "x 1/32" },
+              { "value": 13, "name": "x 1/16" },
+              { "value": 37, "name": "x 1/8" },
+              { "value": 62, "name": "x 1/4" },
+              { "value": 85, "name": "x 1/2" },
+              { "value": 111, "name": "x 1" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Modify Wet",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Flip mode (CC21>2): stacked harmony chord table across MODIFY sweep — see MIDI manual."
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Clock",
+      "additionalInfo": "Discrete sample rates by default; free 0–127 when Dip: Smooth (CC77) is On.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "value": 0, "name": "2k" },
+          { "value": 5, "name": "3k" },
+          { "value": 16, "name": "4k" },
+          { "value": 29, "name": "6k" },
+          { "value": 41, "name": "8k" },
+          { "value": 54, "name": "12k" },
+          { "value": 70, "name": "16k" },
+          { "value": 84, "name": "24k" },
+          { "value": 96, "name": "32k" },
+          { "value": 110, "name": "48k" },
+          { "value": 122, "name": "64k" }
+        ]
+      },
+      "x_variants": [
+        {
+          "constraint": { "cc": 77, "op": "==", "value": 1 },
+          "additionalInfo": "Smooth dip On: free continuous clock rate.",
+          "valueRange": { "min": 0, "max": 127 }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Modify Loop",
+      "additionalInfo": "Continuous in Burst (CC23 0–1). Radio (CC23=2): station select. Mask (CC23>2): continuous.",
+      "valueRange": { "min": 0, "max": 127 },
+      "x_variants": [
+        {
+          "constraint": { "cc": 23, "op": "==", "value": 2 },
+          "name": "Radio Sta",
+          "additionalInfo": "Radio mode station scan.",
+          "valueRange": {
+            "min": 0,
+            "max": 127,
+            "discreteValues": [
+              { "value": 12, "name": "Tape" },
+              { "value": 38, "name": "Ambient" },
+              { "value": 64, "name": "Orchestral" },
+              { "value": 90, "name": "Shoegaze" },
+              { "value": 115, "name": "Dance" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Ramp Speed",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Wet Mode",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Soup", "value": 0 },
+          { "name": "Relay", "value": 2 },
+          { "name": "Flip", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Soup=0–1, Relay=2, Flip=>2."
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Routing",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "IN", "value": 0 },
+          { "name": "Loop + IN", "value": 2 },
+          { "name": "Loop", "value": 127 }
+        ]
+      },
+      "additionalInfo": "IN=0–1, Loop+IN=2, Loop=>2."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Looper Mode",
+      "x_mandatory": true,
+      "additionalInfo": "Gate CC: Burst=0–1, Radio=2, Mask=>2. Gates Modify Loop (CC19) Radio stations.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Burst", "value": 0 },
+          { "name": "Radio", "value": 2 },
+          { "name": "Mask", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Cross",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Hidden menu: dynamic amp/freq modulation intensity."
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Balance",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Hidden menu: relative loudness between channels."
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Fade",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "EQ",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Hidden menu EQ."
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Glue",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Hidden menu: global saturator / destroyer."
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Blend",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Hidden menu: blend clean micro-loop when routed through Wet."
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Master Vol",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Hidden menu master volume."
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Sync",
+      "x_mandatory": true,
+      "additionalInfo": "Gate CC: Loop>Wet=0–1, No Sync=2, Wet>Loop=>2. Generated MIDI clock also enables sync charts.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Loop > Wet", "value": 0 },
+          { "name": "No Sync", "value": 2 },
+          { "name": "Wet > Loop", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Wet Only", "value": 0 },
+          { "name": "Both", "value": 2 },
+          { "name": "Loop Only", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Wet only=0–1, Both=2, Loop only=>2."
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Cross Input",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "Input", "value": 2 },
+          { "name": "Mode", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Cross modulation source: off=0–1, Input=2, other=>2."
+    },
+    {
+      "controlChangeNumber": 51,
+      "name": "Clk Ignore",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Ignore"
+          },
+          {
+            "value": 1,
+            "name": "Follow"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 52,
+      "name": "Stop Ramping",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Stop"
+          },
+          {
+            "value": 1,
+            "name": "Resume"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 53,
+      "name": "Wet Clock Div",
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          { "value": 0, "name": "1/32 Note" },
+          { "value": 1, "name": "1/16 Note" },
+          { "value": 2, "name": "1/8 Triplet" },
+          { "value": 3, "name": "1/8 Note" },
+          { "value": 4, "name": "1/4 Note" },
+          { "value": 5, "name": "1/2 Note" },
+          { "value": 6, "name": "Dotted 1/2" },
+          { "value": 7, "name": "Whole Note" },
+          { "value": 8, "name": "Double Whole" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 54,
+      "name": "Loop Clock Div",
+      "valueRange": {
+        "min": 0,
+        "max": 8,
+        "discreteValues": [
+          { "value": 0, "name": "1/32 Note" },
+          { "value": 1, "name": "1/16 Note" },
+          { "value": 2, "name": "1/8 Triplet" },
+          { "value": 3, "name": "1/8 Note" },
+          { "value": 4, "name": "1/4 Note" },
+          { "value": 5, "name": "1/2 Note" },
+          { "value": 6, "name": "Dotted 1/2" },
+          { "value": 7, "name": "Whole Note" },
+          { "value": 8, "name": "Double Whole" }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 55,
+      "name": "True Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Buffered"
+          },
+          {
+            "value": 1,
+            "name": "True Bypass"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 56,
+      "name": "Factory Reset",
+      "valueRange": {
+        "min": 1,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 1,
+            "name": "Reset"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 57,
+      "name": "Octave Xpose",
+      "additionalInfo": "Synth mode octave shift",
+      "valueRange": {
+        "min": 1,
+        "max": 9,
+        "discreteValues": [
+          {
+            "value": 1,
+            "name": "+12 Semi"
+          },
+          {
+            "value": 2,
+            "name": "+24 Semi"
+          },
+          {
+            "value": 3,
+            "name": "+36 Semi"
+          },
+          {
+            "value": 4,
+            "name": "+48 Semi"
+          },
+          {
+            "value": 5,
+            "name": "+60 Semi"
+          },
+          {
+            "value": 6,
+            "name": "+72 Semi"
+          },
+          {
+            "value": 7,
+            "name": "+84 Semi"
+          },
+          {
+            "value": 8,
+            "name": "+96 Semi"
+          },
+          {
+            "value": 9,
+            "name": "+108 Semi"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 58,
+      "name": "Output Type",
+      "additionalInfo": "Synth mode output behavior",
+      "valueRange": {
+        "min": 0,
+        "max": 2,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Open"
+          },
+          {
+            "value": 1,
+            "name": "On/Off"
+          },
+          {
+            "value": 2,
+            "name": "ADSR"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 59,
+      "name": "Exit Synth",
+      "valueRange": {
+        "min": 1,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 1,
+            "name": "Exit Synth"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "EQ Per Ch",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Wet EQ", "value": 0 },
+          { "name": "Both EQ", "value": 2 },
+          { "name": "Loop EQ", "value": 127 }
+        ]
+      },
+      "additionalInfo": "Global. Wet only=0–1, Both=2 (default), Loop only=>2."
+    },
+    {
+      "controlChangeNumber": 61,
+      "name": "Dip: Time",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 62,
+      "name": "Dip: Modify",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 63,
+      "name": "Dip: Clock",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 64,
+      "name": "Dip: Modify",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 65,
+      "name": "Dip: Length",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 66,
+      "name": "Dip: Bounce",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 67,
+      "name": "Dip: Sweep",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "B"
+          },
+          {
+            "value": 1,
+            "name": "T"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 68,
+      "name": "Dip: Polarity",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "F"
+          },
+          {
+            "value": 1,
+            "name": "R"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 71,
+      "name": "Dip: Miso",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 72,
+      "name": "Dip: Spread",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 73,
+      "name": "Dip: Dry Kill",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 74,
+      "name": "Dip: Trails",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 75,
+      "name": "Dip: Latch",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 76,
+      "name": "Dip: Half",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 77,
+      "name": "Dip: Smooth",
+      "x_mandatory": true,
+      "additionalInfo": "Gate CC: On (1) makes Clock (CC18) a free 0–127 range instead of discrete sample rates.",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 78,
+      "name": "Dip: Dry Glue",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 80,
+      "name": "Attack",
+      "additionalInfo": "Synth mode ADSR",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 81,
+      "name": "Decay",
+      "additionalInfo": "Synth mode ADSR",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 82,
+      "name": "Sustain",
+      "additionalInfo": "Synth mode ADSR",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 83,
+      "name": "Release",
+      "additionalInfo": "Synth mode ADSR",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 84,
+      "name": "Portamento",
+      "additionalInfo": "Synth mode glide",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 93,
+      "name": "Tap Tempo",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap", "value": 1 }
+        ]
+      },
+      "additionalInfo": "Exit tap mode: hold footswitch and turn TIME."
+    },
+    {
+      "controlChangeNumber": 100,
+      "name": "Expression",
+      "valueRange": {
+        "min": 0,
+        "max": 127
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Bypass Loop",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Bypass Wet",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Hidden Menu",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Freeze",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Overdub",
+      "valueRange": {
+        "min": 0,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 0,
+            "name": "Off"
+          },
+          {
+            "value": 1,
+            "name": "On"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "MIDI Reset",
+      "valueRange": {
+        "min": 1,
+        "max": 1,
+        "discreteValues": [
+          {
+            "value": 1,
+            "name": "Reset"
+          }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 111,
+      "name": "Preset Save",
+      "valueRange": {
+        "min": 0,
+        "max": 122
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 122,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0 = Live. PC 1–122 presets (slot 1 = right panel toggle, slot 2 = left). Save: hold both footswitches + PC. No factory presets beyond slots 1–2."
+  },
+  "x_midiTrs": "TYPE_B",
+  "x_midiChannel": 2,
+  "additionalInfo": "Chase Bliss BAD MOOD MIDI Manual. TRS via MIDIbox (ring). Default ch 2 — hold both stomps at power-up, send PC on desired channel. CC24 Cross, CC28 Glue, CC30 Master Vol, CC85 EQ Per Ch. Synth mode via NOTE_NUMBER."
+}

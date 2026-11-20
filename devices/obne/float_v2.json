@@ -1,0 +1,288 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "OBNE Float V2",
+  "displayName": "Float V2",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Old Blood Noise Endeavors",
+    "model": "Float V2",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Rate 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 15,
+      "name": "Rate 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Subdiv 1",
+      "additionalInfo": "÷4 0–18; ÷3 19–36; ÷2 37–54; x1 55–72; x2 73–90; x3 91–108; x4 109–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "÷4", "value": 9 },
+          { "name": "÷3", "value": 27 },
+          { "name": "÷2", "value": 45 },
+          { "name": "x1", "value": 63 },
+          { "name": "x2", "value": 81 },
+          { "name": "x3", "value": 99 },
+          { "name": "x4", "value": 118 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Subdiv 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Depth 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Depth 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Shape 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Shape 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Cutoff 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Cutoff 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Sens 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Sens 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Attack 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Attack 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Res 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Res 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Vol 1",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Vol 2",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 32,
+      "name": "Filt Mode 1",
+      "additionalInfo": "1 LPF; 2 BPF; 3 LPF+BPF; 4 HPF; 5 HPF+LPF; 6 HPF+BPF; 7 all. 0 and 8–127 unused.",
+      "valueRange": {
+        "min": 1,
+        "max": 7,
+        "discreteValues": [
+          { "name": "LPF", "value": 1 },
+          { "name": "BPF", "value": 2 },
+          { "name": "LPF+BPF", "value": 3 },
+          { "name": "HPF", "value": 4 },
+          { "name": "HPF+LPF", "value": 5 },
+          { "name": "HPF+BPF", "value": 6 },
+          { "name": "All", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 33,
+      "name": "Filt Mode 2",
+      "additionalInfo": "Same bands as Filter Mode 1.",
+      "valueRange": {
+        "min": 1,
+        "max": 7,
+        "discreteValues": [
+          { "name": "LPF", "value": 1 },
+          { "name": "BPF", "value": 2 },
+          { "name": "LPF+BPF", "value": 3 },
+          { "name": "HPF", "value": 4 },
+          { "name": "HPF+LPF", "value": 5 },
+          { "name": "HPF+BPF", "value": 6 },
+          { "name": "All", "value": 7 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 34,
+      "name": "Sync",
+      "additionalInfo": "Off 0–42; On 43–85; Hard Sync 86–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 43 },
+          { "name": "Hard Sync", "value": 86 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 85,
+      "name": "Filter 1",
+      "additionalInfo": "0–63 Off; 64–127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 86,
+      "name": "Filter 2",
+      "additionalInfo": "0–63 Off; 64–127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 87,
+      "name": "Tap",
+      "additionalInfo": "Value 0 = tap pulse; 1–127 ignored.",
+      "valueRange": {
+        "min": 0,
+        "max": 0,
+        "discreteValues": [
+          { "name": "Tap", "value": 0 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 89,
+      "name": "Pres Save Sw",
+      "additionalInfo": "Cancel 0–42; Start 43–85; Confirm 86–127. Save: CC89 start, PC slot, CC89 confirm.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Cancel", "value": 0 },
+          { "name": "Start Save", "value": 43 },
+          { "name": "Confirm", "value": 86 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "MIDI Channel",
+      "additionalInfo": "1–16",
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Stereo Setting",
+      "additionalInfo": "0–31 Mono Parallel; 32–63 Mono In Stereo Out; 64–95 Stereo; 96–127 Mono Series",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Mono Par", "value": 0 },
+          { "name": "Mono>Stereo", "value": 32 },
+          { "name": "Stereo", "value": 64 },
+          { "name": "Mono Series", "value": 96 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Clock Mode",
+      "additionalInfo": "0–63 Listen; 64–127 Ignore",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Listen", "value": 0 },
+          { "name": "Ignore", "value": 64 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "FS Mode",
+      "additionalInfo": "0–63 Tap Tempo; 64–127 Preset Switching",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Tap Tempo", "value": 0 },
+          { "name": "Presets", "value": 64 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 1,
+    "count": 127,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 1–127 recall presets. PC 128 = Live mode (knobs). On 0–127 controllers: PC 0–126 = presets 1–127, PC 127 = Live. Save: CC89 Start, PC slot, CC89 Confirm."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "OBNE Float V2 MIDI FUNCTIONS / CC chart. 3.5mm TRS Type A In/Out; Out is MIDI Thru."
+}

@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Normal Devices Whether",
+  "displayName": "Whether",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Normal Devices",
+    "model": "Whether",
+    "version": ""
+  },
+  "receives": [
+    "PROGRAM_CHANGE",
+    "CLOCK"
+  ],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 3,
+      "name": "Grain Rate",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 ≈ 700 ms (slowest); 127 ≈ 6 ms (fastest)."
+    },
+    {
+      "controlChangeNumber": 7,
+      "name": "Input Gain",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 9,
+      "name": "Grain Size",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 11,
+      "name": "Expression",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Drives parameters mapped to expression."
+    },
+    {
+      "controlChangeNumber": 12,
+      "name": "Octave",
+      "additionalInfo": "−1: 0–12; blend −1→0: 13–57; 0: 58–69; blend 0→+1: 70–101; +1: 102–114; blend +1→+2: 115–120; +2: 121–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "−1 Oct", "value": 6 },
+          { "name": "0 Oct", "value": 63 },
+          { "name": "+1 Oct", "value": 108 },
+          { "name": "+2 Oct", "value": 124 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 13,
+      "name": "Reverb Mix",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 = dry; 127 = fully wet."
+    },
+    {
+      "controlChangeNumber": 14,
+      "name": "Wet/Dry Mix",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 = dry; 127 = fully wet."
+    },
+    {
+      "controlChangeNumber": 16,
+      "name": "Scatter",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 17,
+      "name": "Grain Pos",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 18,
+      "name": "Failure",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Logarithmic curve."
+    },
+    {
+      "controlChangeNumber": 19,
+      "name": "Instability",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 20,
+      "name": "Filter Cutoff",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 ≈ 40 Hz; 127 ≈ 20 kHz (logarithmic)."
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Sample Length",
+      "additionalInfo": "150ms 0–14; 300ms 15–28; 600ms 29–42; 1s 43–56; 2s 57–71; 4s 72–85; 8s 86–99; 12s 100–113; 16s 114–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "150ms", "value": 7 },
+          { "name": "300ms", "value": 21 },
+          { "name": "600ms", "value": 35 },
+          { "name": "1s", "value": 49 },
+          { "name": "2s", "value": 64 },
+          { "name": "4s", "value": 78 },
+          { "name": "8s", "value": 92 },
+          { "name": "12s", "value": 106 },
+          { "name": "16s", "value": 120 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Grain Shape",
+      "additionalInfo": "0 ramp down; 1–62 blend to bell; 63–64 bell; 65–126 blend to ramp up; 127 ramp up",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Ramp Down", "value": 0 },
+          { "name": "Bell", "value": 63 },
+          { "name": "Ramp Up", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Pitch Drift",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Reverb Decay",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Grain Dir",
+      "additionalInfo": "0–6 always forward; 7–120 probability blend toward backward; 121–127 always backward",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Forward", "value": 0 },
+          { "name": "Blend", "value": 63 },
+          { "name": "Backward", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Grain Width",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Grain stereo width."
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Shift",
+      "additionalInfo": "0–6 = −12 st; 7–57 stepped below; 58–69 = 0; 70–120 stepped above; 121–127 = +12 st",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "−12 st", "value": 0 },
+          { "name": "0 st", "value": 63 },
+          { "name": "+12 st", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 102,
+      "name": "Preset Recall",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "Same as PC: 0–3 panel; 4–126 MIDI-only; 127 Live."
+    },
+    {
+      "controlChangeNumber": 103,
+      "name": "Mode",
+      "additionalInfo": "Mode 1: 0–42; Mode 2: 43–84; Mode 3: 85–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Mode 1", "value": 0 },
+          { "name": "Mode 2", "value": 43 },
+          { "name": "Mode 3", "value": 85 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 104,
+      "name": "Freeze",
+      "additionalInfo": "0–63 Off; 64–127 On",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 105,
+      "name": "Bypass",
+      "additionalInfo": "0–63 DSP active; 64–127 bypassed",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Active", "value": 0 },
+          { "name": "Bypassed", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 106,
+      "name": "Preset Save",
+      "valueRange": { "min": 0, "max": 126 },
+      "additionalInfo": "Saves current sound to slot 0–126 directly."
+    },
+    {
+      "controlChangeNumber": 107,
+      "name": "Audio Mode",
+      "additionalInfo": "Stereo 0–42; MISO 43–84; Mono 85–127",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Stereo", "value": 0 },
+          { "name": "MISO", "value": 43 },
+          { "name": "Mono", "value": 85 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 108,
+      "name": "Bypass Type",
+      "additionalInfo": "0–63 Buffered; 64–127 True Bypass",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Buffered", "value": 0 },
+          { "name": "True Bypass", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 109,
+      "name": "MIDI Channel",
+      "additionalInfo": "1–16 sets channel; 0 and >16 ignored.",
+      "valueRange": {
+        "min": 1,
+        "max": 16
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 128,
+    "bankSelectMode": "none",
+    "additionalInfo": "PC 0–3 = panel presets (LEDs); PC 4–126 = MIDI-only; PC 127 = Live. Also via CC102. Save via CC106 value = slot (0–126). PC requires firmware 1.1.0+. Taxonomy: count 128 includes Live at 127."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Normal Devices Whether MIDI map. Default ch 1 (CC109). CLOCK can drive grain density subdivisions. TYPE_A default (TRS wiring not stated in excerpt)."
+}

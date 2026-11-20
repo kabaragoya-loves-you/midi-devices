@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "0.1.1",
+  "implementationVersion": "0",
+  "title": "Native Audio Sweet Pine",
+  "displayName": "Sweet Pine",
+  "device": {
+    "displayName": "",
+    "manufacturer": "Native Audio",
+    "model": "Sweet Pine",
+    "version": ""
+  },
+  "receives": [],
+  "transmits": [],
+  "controlChangeCommands": [
+    {
+      "controlChangeNumber": 20,
+      "name": "Loop Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 21,
+      "name": "Fragments",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 22,
+      "name": "Voices",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "64 = noon."
+    },
+    {
+      "controlChangeNumber": 23,
+      "name": "Reverb Mix",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 24,
+      "name": "Dream",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 25,
+      "name": "Sustain",
+      "valueRange": { "min": 0, "max": 127 },
+      "additionalInfo": "0 = fully left (no sustain)."
+    },
+    {
+      "controlChangeNumber": 26,
+      "name": "Reverb Sw",
+      "additionalInfo": "0 = release; 1–127 = press. Momentary; cannot open main menu via MIDI.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 27,
+      "name": "Micro-Loop Sw",
+      "additionalInfo": "0 = release; 1–127 = press. Momentary; hold with loop on for memory hold.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Press", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 28,
+      "name": "Expression",
+      "additionalInfo": "Drives Expression Assign binding; assign once with a physical pedal first. Jack must be MIDI mode.",
+      "valueRange": { "min": 0, "max": 127 }
+    },
+    {
+      "controlChangeNumber": 29,
+      "name": "Reverb",
+      "additionalInfo": "Absolute set (not toggle). Intermediate values ignored.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 30,
+      "name": "Micro-Loop",
+      "additionalInfo": "Absolute set. 0 turns off all micro-loop sound including held memory (uses fade).",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 31,
+      "name": "Inf Hold",
+      "additionalInfo": "127 = hold current micro-loop (loop must be on; if off, acts as On). 0 = release hold.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Release", "value": 0 },
+          { "name": "Hold", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 110,
+      "name": "Trails",
+      "additionalInfo": "0–63 Off; 64–127 On. Live only; reverts to Global Settings after power cycle. Stereo MISO/SISO is Global Settings only — no CC.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Off", "value": 0 },
+          { "name": "On", "value": 127 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 119,
+      "name": "MIDI Channel",
+      "additionalInfo": "0 = omni (default ship); 1–16 = lock (flash). In omni, heard on all channels; once locked, only on that channel.",
+      "valueRange": {
+        "min": 0,
+        "max": 16,
+        "discreteValues": [
+          { "name": "Omni", "value": 0 },
+          { "name": "Ch 1", "value": 1 },
+          { "name": "Ch 2", "value": 2 },
+          { "name": "Ch 3", "value": 3 },
+          { "name": "Ch 4", "value": 4 },
+          { "name": "Ch 5", "value": 5 },
+          { "name": "Ch 6", "value": 6 },
+          { "name": "Ch 7", "value": 7 },
+          { "name": "Ch 8", "value": 8 },
+          { "name": "Ch 9", "value": 9 },
+          { "name": "Ch 10", "value": 10 },
+          { "name": "Ch 11", "value": 11 },
+          { "name": "Ch 12", "value": 12 },
+          { "name": "Ch 13", "value": 13 },
+          { "name": "Ch 14", "value": 14 },
+          { "name": "Ch 15", "value": 15 },
+          { "name": "Ch 16", "value": 16 }
+        ]
+      }
+    },
+    {
+      "controlChangeNumber": 121,
+      "name": "Reset Knobs",
+      "additionalInfo": "Returns every knob to current physical panel position.",
+      "valueRange": {
+        "min": 0,
+        "max": 127,
+        "discreteValues": [
+          { "name": "Reset", "value": 1 }
+        ]
+      }
+    }
+  ],
+  "x_pc": {
+    "indexBase": 0,
+    "count": 0,
+    "bankSelectMode": "none",
+    "additionalInfo": "No Program Change map in published MIDI sheet."
+  },
+  "x_midiTrs": "TYPE_A",
+  "x_midiChannel": 1,
+  "additionalInfo": "Native Audio Sweet Pine MIDI sheet. TRS Type A; jack must be set to MIDI in Global Settings. No USB MIDI. Last-moved knob or CC owns control. Ships omni (CC119)."
+}

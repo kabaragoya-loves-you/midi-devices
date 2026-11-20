@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-14T04:04:55Z",
-  "count": 627,
+  "generatedAt": "2026-11-19T22:17:48Z",
+  "count": 631,
   "devices": [
     {
       "slug": "3_degrees_audio.bygones_v3@0",
@@ -7378,6 +7378,25 @@
       }
     },
     {
+      "slug": "native_audio.sweet_pine@0",
+      "vendor": "Native Audio",
+      "product": "Sweet Pine",
+      "version": "0",
+      "path": "devices/native_audio/sweet_pine.json",
+      "sha256": "45643350d067e9f5b4a60fde6205ada840070a425d5ce28af3f62398d9e6ceb9",
+      "size": 5542,
+      "receives": [],
+      "transmits": [],
+      "ccCount": 15,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 0,
+        "bankSelectMode": "none",
+        "additionalInfo": "No Program Change map in published MIDI sheet."
+      }
+    },
+    {
       "slug": "neunaber.illumine@0",
       "vendor": "Neunaber",
       "product": "Illumine",
@@ -7496,6 +7515,28 @@
         "count": 16,
         "bankSelectMode": "none",
         "additionalInfo": "Hold bat button to save preset to PC slot"
+      }
+    },
+    {
+      "slug": "normal_devices.whether@0",
+      "vendor": "Normal Devices",
+      "product": "Whether",
+      "version": "0",
+      "path": "devices/normal_devices/whether.json",
+      "sha256": "b6c6214da9aeea8ffa895bbabfec777d85590d0814472238e63f27347f2d1ba7",
+      "size": 8110,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 27,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 0,
+        "count": 128,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC 0–3 = panel presets (LEDs); PC 4–126 = MIDI-only; PC 127 = Live. Also via CC102. Save via CC106 value = slot (0–126). PC requires firmware 1.1.0+. Taxonomy: count 128 includes Live at 127."
       }
     },
     {
@@ -7677,6 +7718,54 @@
         "indexBase": 0,
         "count": 128,
         "bankSelectMode": "none"
+      }
+    },
+    {
+      "slug": "obne.float_v2@0",
+      "vendor": "Old Blood Noise Endeavors",
+      "product": "Float V2",
+      "version": "0",
+      "path": "devices/obne/float_v2.json",
+      "sha256": "89238a031796c54049f93af9c3c6a39ad74d6cc263a5cdc4bbf2043f3d3f542d",
+      "size": 7902,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK"
+      ],
+      "transmits": [],
+      "ccCount": 30,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 127,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC 1–127 recall presets. PC 128 = Live mode (knobs). On 0–127 controllers: PC 0–126 = presets 1–127, PC 127 = Live. Save: CC89 Start, PC slot, CC89 Confirm."
+      }
+    },
+    {
+      "slug": "obne.iota@0",
+      "vendor": "Old Blood Noise Endeavors",
+      "product": "Iota",
+      "version": "0",
+      "path": "devices/obne/iota.json",
+      "sha256": "959388e1f006c02a702e1057edf128cf92cc02f1d4f52354a4caeb0138a73463",
+      "size": 10076,
+      "receives": [
+        "PROGRAM_CHANGE",
+        "CLOCK",
+        "NOTE_NUMBER"
+      ],
+      "transmits": [
+        "CLOCK",
+        "NOTE_NUMBER"
+      ],
+      "ccCount": 32,
+      "nrpnCount": 0,
+      "x_pc": {
+        "indexBase": 1,
+        "count": 127,
+        "bankSelectMode": "none",
+        "additionalInfo": "PC 1–127 recall presets. PC 128 = Live mode (knobs). On 0–127 controllers: PC 0–126 = presets 1–127, PC 127 = Live. Save: CC90 Start, PC slot, CC90 Confirm."
       }
     },
     {
